@@ -168,29 +168,55 @@ Check for YAML frontmatter (`---` block). Create if missing.
 
 **Title Generation:**
 
-Generate 3 candidate titles with different angles/styles. Present to user for selection:
+Whether or not a title already exists, always run the title optimization flow (unless `auto_select_title` is set).
+
+**Preparation** — read the full text and extract:
+- Core argument (one sentence: "what is this article about?")
+- Most impactful opinion or conclusion
+- Reader pain point or curiosity trigger
+- Most memorable metaphor or golden quote
+
+**Generate 3-4 style-differentiated candidates:**
+
+| Style | Characteristics | Example |
+|-------|----------------|---------|
+| Subversive | Deny common practice, create conflict | "All de-AI-flavor prompts are wrong" |
+| Solution | Give the answer directly, promise value | "One recipe to make AI write in your voice" |
+| Suspense | Reveal half, spark curiosity | "It took me six months to find how to remove AI flavor" |
+| Concrete number | Use numbers for credibility | "150 lines of docs taught AI my writing style" |
+
+Present to user:
 
 ```
 Pick a title:
 
-1. [Title A] — [angle/style note]
-2. [Title B] — [angle/style note]
-3. [Title C] — [angle/style note]
+1. [Title A] — (recommended)
+2. [Title B] — [style note]
+3. [Title C] — [style note]
 
 Enter number, or type a custom title:
 ```
 
-Title principles:
-- Engaging, sparks reading interest
-- Captures core message or most compelling angle
-- Accurate, avoids clickbait
-- Vary angles: e.g. story-driven, conclusion-driven, question-driven
+Put the strongest hook first and mark it (recommended).
 
-If frontmatter already has `title`, skip selection and use it. If first line is H1, extract to frontmatter as default title but still offer alternatives.
+**Title principles:**
+- **Hook in first 5 chars**: create information gap or cognitive conflict
+- **Specific > abstract**: "150 lines" beats "a document"
+- **Negation > affirmation**: "you're doing it wrong" beats "the right way"
+- **Conversational**: like chatting with a friend, not a paper title
+- **Max ~25 chars**: longer titles get truncated in feeds
+- **Accurate, not clickbait**: the article must deliver what the title promises
+
+**Prohibited patterns:**
+- "浅谈 XX"、"关于 XX 的思考"、"XX 的探索与实践"
+- "震惊！"、"万字长文"、"建议收藏"
+- Pure questions without direction: "AI 写作的未来在哪里？"
+
+If first line is H1, extract to frontmatter and remove from body. If frontmatter already has `title`, include it as context but still generate fresh candidates.
 
 **Summary Generation:**
 
-Generate 3 candidate summaries with different focuses. Present to user for selection:
+Generate 3 candidate summaries with different angles. Present to user:
 
 ```
 Pick a summary:
@@ -202,11 +228,17 @@ Pick a summary:
 Enter number, or type a custom summary:
 ```
 
-Summary principles:
+**Summary principles:**
 - 80-150 characters, precise and information-rich
-- Convey article's core value, not just topic
-- Vary focuses: e.g. problem-driven, result-driven, insight-driven
-- Avoid generic descriptions like "本文介绍了..."
+- Convey **core value** to the reader, not just the topic
+- Vary angles: problem-driven, result-driven, insight-driven
+- **Hook the reader**: make them want to read the full article
+- Use concrete details (numbers, outcomes, specific methods) over vague descriptions
+
+**Prohibited patterns:**
+- "本文介绍了..."、"本文探讨了..."
+- Pure topic description without value proposition
+- Repeating the title in different words
 
 If frontmatter already has `summary`, skip selection and use it.
 
@@ -240,9 +272,11 @@ Apply formatting guided by the Step 2 analysis. The goal is making the content s
 
 **Formatting principles — what TO do:**
 - Preserve the author's voice, tone, and every word
-- Use bold sparingly for genuinely important points
+- **Bold key conclusions and core takeaways** — the sentences a reader would highlight
 - Extract parallel items from prose into lists only when the structure is clearly there
-- Add headings where the topic genuinely shifts
+- Add headings where the topic genuinely shifts — prefer vivid, specific headings over generic ones (e.g., "3 天搞定 vs 传统方案" over "方案对比")
+- Use tables for comparisons or structured data buried in prose
+- Use blockquotes for golden quotes, memorable statements, or important warnings
 - Fix obvious typos (based on Step 2 findings)
 
 ### Step 5: Save Formatted File
@@ -319,7 +353,7 @@ Display a report summarizing all changes made:
 - Tables created: X
 - Code markers added: X
 - Blockquotes added: X
-- Typos fixed: X [list each: "原文" → "修正"]
+- Typos fixed: X [list each: "original" → "corrected"]
 
 **Typography Script:**
 - CJK spacing: [applied/skipped]
