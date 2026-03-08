@@ -198,6 +198,7 @@ If no `preferred_style` (present Core Styles first):
 | `hand-drawn` | Relaxed, reflective, casual |
 | `editorial` | Processes, data, journalism |
 | `scene` | Narratives, emotional, lifestyle |
+| `poster` | Opinion, editorial, cultural, cinematic |
 
 Style selection based on Type × Style compatibility matrix (styles.md).
 Full specs: `styles/<style>.md`

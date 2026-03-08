@@ -16,6 +16,8 @@ Analyze articles, identify illustration positions, generate images with Type × 
 
 Combine freely: `--type infographic --style blueprint`
 
+Or use presets: `--preset tech-explainer` → type + style in one flag. See [Style Presets](references/style-presets.md).
+
 ## Types
 
 | Type | Best For |
@@ -86,7 +88,7 @@ Full procedures: [references/workflow.md](references/workflow.md#step-2-setup--a
 |---|---------|
 | **Q1: Type** | [Recommended], infographic, scene, flowchart, comparison, framework, timeline, mixed |
 | **Q2: Density** | minimal (1-2), balanced (3-5), per-section (Recommended), rich (6+) |
-| **Q3: Style** | [Recommended], minimal-flat, sci-fi, hand-drawn, editorial, scene, Other |
+| **Q3: Style** | [Recommended], minimal-flat, sci-fi, hand-drawn, editorial, scene, poster, Other |
 | Q4: Language | When article language ≠ EXTEND.md setting |
 
 Full procedures: [references/workflow.md](references/workflow.md#step-3-confirm-settings-)
@@ -158,5 +160,6 @@ illustrations/{topic-slug}/
 | [references/workflow.md](references/workflow.md) | Detailed procedures |
 | [references/usage.md](references/usage.md) | Command syntax |
 | [references/styles.md](references/styles.md) | Style gallery |
+| [references/style-presets.md](references/style-presets.md) | Preset shortcuts (type + style) |
 | [references/prompt-construction.md](references/prompt-construction.md) | Prompt templates |
 | [references/config/first-time-setup.md](references/config/first-time-setup.md) | First-time setup |
