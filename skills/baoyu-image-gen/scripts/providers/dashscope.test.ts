@@ -5,7 +5,7 @@ import {
   getSizeFromAspectRatio,
   normalizeSize,
   parseAspectRatio,
-} from "../../../skills/baoyu-image-gen/scripts/providers/dashscope.ts";
+} from "./dashscope.ts";
 
 test("DashScope aspect-ratio parsing accepts numeric ratios only", () => {
   assert.deepEqual(parseAspectRatio("3:2"), { width: 3, height: 2 });

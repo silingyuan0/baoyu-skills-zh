@@ -4,18 +4,18 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 
-import { syncSharedSkillPackages } from "../scripts/lib/shared-skill-packages.mjs";
+import { syncSharedSkillPackages } from "./shared-skill-packages.mjs";
 
-async function makeTempDir(prefix) {
+async function makeTempDir(prefix: string): Promise<string> {
   return fs.mkdtemp(path.join(os.tmpdir(), prefix));
 }
 
-async function writeFile(filePath, contents = "") {
+async function writeFile(filePath: string, contents = ""): Promise<void> {
   await fs.mkdir(path.dirname(filePath), { recursive: true });
   await fs.writeFile(filePath, contents);
 }
 
-async function writeJson(filePath, value) {
+async function writeJson(filePath: string, value: unknown): Promise<void> {
   await writeFile(filePath, `${JSON.stringify(value, null, 2)}\n`);
 }
 
@@ -53,13 +53,13 @@ test("syncSharedSkillPackages vendors workspace packages into skill scripts", as
 
   const updatedPackageJson = JSON.parse(
     await fs.readFile(path.join(consumerDir, "package.json"), "utf8"),
-  );
+  ) as { dependencies: Record<string, string> };
   assert.equal(updatedPackageJson.dependencies["baoyu-md"], "file:./vendor/baoyu-md");
   assert.equal(updatedPackageJson.dependencies.kleur, "^4.1.5");
 
   const vendoredPackageJson = JSON.parse(
     await fs.readFile(path.join(consumerDir, "vendor", "baoyu-md", "package.json"), "utf8"),
-  );
+  ) as { name: string };
   assert.equal(vendoredPackageJson.name, "baoyu-md");
 
   const vendoredFile = await fs.readFile(

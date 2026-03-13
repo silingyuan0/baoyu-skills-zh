@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
-import test from "node:test";
+import test, { type TestContext } from "node:test";
 
+import type { CliArgs } from "../types.ts";
 import {
   addAspectRatioToPrompt,
   buildGoogleUrl,
@@ -11,10 +12,13 @@ import {
   isGoogleImagen,
   isGoogleMultimodal,
   normalizeGoogleModelId,
-} from "../../../skills/baoyu-image-gen/scripts/providers/google.ts";
+} from "./google.ts";
 
-function useEnv(t, values) {
-  const previous = new Map();
+function useEnv(
+  t: TestContext,
+  values: Record<string, string | null>,
+): void {
+  const previous = new Map<string, string | undefined>();
   for (const [key, value] of Object.entries(values)) {
     previous.set(key, process.env[key]);
     if (value == null) {
@@ -35,6 +39,27 @@ function useEnv(t, values) {
   });
 }
 
+function makeArgs(overrides: Partial<CliArgs> = {}): CliArgs {
+  return {
+    prompt: null,
+    promptFiles: [],
+    imagePath: null,
+    provider: null,
+    model: null,
+    aspectRatio: null,
+    size: null,
+    quality: null,
+    imageSize: null,
+    referenceImages: [],
+    n: 1,
+    batchFile: null,
+    jobs: null,
+    json: false,
+    help: false,
+    ...overrides,
+  };
+}
+
 test("Google provider helpers normalize model IDs and select image size defaults", () => {
   assert.equal(
     normalizeGoogleModelId("models/gemini-3.1-flash-image-preview"),
@@ -42,14 +67,8 @@ test("Google provider helpers normalize model IDs and select image size defaults
   );
   assert.equal(isGoogleMultimodal("models/gemini-3-pro-image-preview"), true);
   assert.equal(isGoogleImagen("imagen-3.0-generate-002"), true);
-  assert.equal(
-    getGoogleImageSize({ imageSize: null, quality: "2k" }),
-    "2K",
-  );
-  assert.equal(
-    getGoogleImageSize({ imageSize: "4K", quality: "normal" }),
-    "4K",
-  );
+  assert.equal(getGoogleImageSize(makeArgs({ imageSize: null, quality: "2k" })), "2K");
+  assert.equal(getGoogleImageSize(makeArgs({ imageSize: "4K", quality: "normal" })), "4K");
 });
 
 test("Google URL builder appends v1beta when the base URL does not already include it", (t) => {

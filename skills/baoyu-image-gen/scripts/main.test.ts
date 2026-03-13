@@ -2,8 +2,9 @@ import assert from "node:assert/strict";
 import fs from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
-import test from "node:test";
+import test, { type TestContext } from "node:test";
 
+import type { CliArgs, ExtendConfig } from "./types.ts";
 import {
   createTaskArgs,
   detectProvider,
@@ -16,9 +17,9 @@ import {
   normalizeOutputImagePath,
   parseArgs,
   parseSimpleYaml,
-} from "../../../skills/baoyu-image-gen/scripts/main.ts";
+} from "./main.ts";
 
-function makeArgs(overrides = {}) {
+function makeArgs(overrides: Partial<CliArgs> = {}): CliArgs {
   return {
     prompt: null,
     promptFiles: [],
@@ -39,8 +40,11 @@ function makeArgs(overrides = {}) {
   };
 }
 
-function useEnv(t, values) {
-  const previous = new Map();
+function useEnv(
+  t: TestContext,
+  values: Record<string, string | null>,
+): void {
+  const previous = new Map<string, string | undefined>();
   for (const [key, value] of Object.entries(values)) {
     previous.set(key, process.env[key]);
     if (value == null) {
@@ -61,7 +65,7 @@ function useEnv(t, values) {
   });
 }
 
-async function makeTempDir(prefix) {
+async function makeTempDir(prefix: string): Promise<string> {
   return fs.mkdtemp(path.join(os.tmpdir(), prefix));
 }
 
@@ -161,7 +165,7 @@ test("mergeConfig only fills values missing from CLI args", () => {
       default_quality: "2k",
       default_aspect_ratio: "3:2",
       default_image_size: "2K",
-    },
+    } satisfies Partial<ExtendConfig>,
   );
 
   assert.equal(merged.provider, "openai");
@@ -219,7 +223,7 @@ test("batch worker and provider-rate-limit configuration prefer env over EXTEND 
     BAOYU_IMAGE_GEN_GOOGLE_START_INTERVAL_MS: "450",
   });
 
-  const extendConfig = {
+  const extendConfig: Partial<ExtendConfig> = {
     batch: {
       max_workers: 7,
       provider_limits: {
@@ -263,7 +267,7 @@ test("loadBatchTasks and createTaskArgs resolve batch-relative paths", async (t)
   const loaded = await loadBatchTasks(batchFile);
   assert.equal(loaded.jobs, 2);
   assert.equal(loaded.batchDir, path.dirname(batchFile));
-  assert.equal(loaded.tasks[0].id, "hero");
+  assert.equal(loaded.tasks[0]?.id, "hero");
 
   const taskArgs = createTaskArgs(
     makeArgs({
@@ -271,7 +275,7 @@ test("loadBatchTasks and createTaskArgs resolve batch-relative paths", async (t)
       quality: "2k",
       json: true,
     }),
-    loaded.tasks[0],
+    loaded.tasks[0]!,
     loaded.batchDir,
   );
 

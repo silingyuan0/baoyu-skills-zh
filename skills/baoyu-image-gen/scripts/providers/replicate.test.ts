@@ -1,17 +1,30 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
+import type { CliArgs } from "../types.ts";
 import {
   buildInput,
   extractOutputUrl,
   parseModelId,
-} from "../../../skills/baoyu-image-gen/scripts/providers/replicate.ts";
+} from "./replicate.ts";
 
-function makeArgs(overrides = {}) {
+function makeArgs(overrides: Partial<CliArgs> = {}): CliArgs {
   return {
+    prompt: null,
+    promptFiles: [],
+    imagePath: null,
+    provider: null,
+    model: null,
     aspectRatio: null,
+    size: null,
     quality: null,
+    imageSize: null,
+    referenceImages: [],
     n: 1,
+    batchFile: null,
+    jobs: null,
+    json: false,
+    help: false,
     ...overrides,
   };
 }
@@ -69,20 +82,20 @@ test("Replicate input builder maps aspect ratio, image count, quality, and refs"
 
 test("Replicate output extraction supports string, array, and object URLs", () => {
   assert.equal(
-    extractOutputUrl({ output: "https://example.com/a.png" }),
+    extractOutputUrl({ output: "https://example.com/a.png" } as never),
     "https://example.com/a.png",
   );
   assert.equal(
-    extractOutputUrl({ output: ["https://example.com/b.png"] }),
+    extractOutputUrl({ output: ["https://example.com/b.png"] } as never),
     "https://example.com/b.png",
   );
   assert.equal(
-    extractOutputUrl({ output: { url: "https://example.com/c.png" } }),
+    extractOutputUrl({ output: { url: "https://example.com/c.png" } } as never),
     "https://example.com/c.png",
   );
 
   assert.throws(
-    () => extractOutputUrl({ output: { invalid: true } }),
+    () => extractOutputUrl({ output: { invalid: true } } as never),
     /Unexpected Replicate output format/,
   );
 });

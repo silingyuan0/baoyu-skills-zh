@@ -7,18 +7,18 @@ import test from "node:test";
 import {
   listReleaseFiles,
   validateSelfContainedRelease,
-} from "../scripts/lib/release-files.mjs";
+} from "./release-files.mjs";
 
-async function makeTempDir(prefix) {
+async function makeTempDir(prefix: string): Promise<string> {
   return fs.mkdtemp(path.join(os.tmpdir(), prefix));
 }
 
-async function writeFile(filePath, contents = "") {
+async function writeFile(filePath: string, contents = ""): Promise<void> {
   await fs.mkdir(path.dirname(filePath), { recursive: true });
   await fs.writeFile(filePath, contents);
 }
 
-async function writeJson(filePath, value) {
+async function writeJson(filePath: string, value: unknown): Promise<void> {
   await writeFile(filePath, `${JSON.stringify(value, null, 2)}\n`);
 }
 

@@ -6,7 +6,7 @@ import {
   getMimeType,
   getOpenAISize,
   parseAspectRatio,
-} from "../../../skills/baoyu-image-gen/scripts/providers/openai.ts";
+} from "./openai.ts";
 
 test("OpenAI aspect-ratio parsing and size selection match model families", () => {
   assert.deepEqual(parseAspectRatio("16:9"), { width: 16, height: 9 });
