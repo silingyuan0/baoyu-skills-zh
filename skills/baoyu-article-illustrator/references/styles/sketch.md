@@ -1,57 +1,57 @@
 # sketch
 
-Raw, authentic notebook-style illustration for ideas and processes
+创意和过程的原始真实笔记本风格插图
 
-## Design Aesthetic
+## 设计美学
 
-Hand-drawn sketch aesthetic that feels authentic and in-progress. Pencil-on-paper quality with intentional imperfection. Suggests thinking, brainstorming, and creative exploration. Raw and honest visual approach that invites collaboration.
+让人感到原汁原味和未完成感的手绘草图美学。铅笔纸质感与刻意的瑕疵。暗示思考、头脑风暴和创意探索。邀请协作的原始诚实视觉方法。
 
-## Background
+## 背景
 
-- Color: Off-White Paper (#F7FAFC) or Cream (#FAFAFA)
-- Texture: Paper texture with visible grain
+- 颜色：米白色纸张（#F7FAFC）或奶油色（#FAFAFA）
+- 纹理：可见颗粒感的纸张纹理
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
+| 角色 | 颜色 | Hex | 用途 |
 |------|-------|-----|-------|
-| Background | Paper White | #F7FAFC | Primary background |
-| Primary | Pencil Gray | #4A5568 | Main sketch lines |
-| Secondary | Light Gray | #A0AEC0 | Shading, soft marks |
-| Highlight Blue | Note Blue | #3182CE | Highlight color |
-| Highlight Red | Mark Red | #E53E3E | Emphasis color |
-| Highlight Yellow | Marker Yellow | #F6E05E | Highlighter effect |
-| Text | Charcoal | #2D3748 | Text elements |
+| 背景 | 纸张白 | #F7FAFC | 主背景 |
+| 主色 | 铅笔灰 | #4A5568 | 主草图线条 |
+| 次要色 | 浅灰色 | #A0AEC0 | 阴影、柔和标记 |
+| 高光蓝 | 笔记蓝 | #3182CE | 高光颜色 |
+| 高光红 | 标记红 | #E53E3E | 强调颜色 |
+| 高光黄 | 荧光黄 | #F6E05E | 荧光笔效果 |
+| 文本 | 炭灰色 | #2D3748 | 文本元素 |
 
-## Visual Elements
+## 视觉元素
 
-- Rough sketch lines with natural variation
-- Arrows and directional pointers
-- Handwritten labels and notes
-- Crossed-out marks and corrections
-- Underlines and emphasis marks
-- Simple diagram shapes
-- Margin notes style
-- Quick icon sketches
+- 带自然变化的粗略草图线条
+- 箭头和方向指针
+- 手写标签和笔记
+- 删除线和更正标记
+- 下划线和强调标记
+- 简单图表形状
+- 边注风格
+- 快速图标草图
 
-## Style Rules
+## 风格规则
 
-### Do
+### 宜
 
-- Use pencil-like line quality
-- Include natural imperfections
-- Add handwritten annotations
-- Create diagram-style layouts
-- Show thinking process
+- 使用铅笔般线条质感
+- 包含自然瑕疵
+- 添加手写注释
+- 创建图表风格布局
+- 展示思考过程
 
-### Don't
+### 忌
 
-- Use perfect geometric shapes
-- Add polished or refined elements
-- Create colorful compositions
-- Use digital effects
-- Make it look finished
+- 使用完美几何形状
+- 添加精致或完美元素
+- 创建多彩构图
+- 使用数字效果
+- 使其看起来完成
 
-## Best For
+## 适用于
 
-Ideas in progress, brainstorming articles, thought processes, concept exploration, draft-stage thinking, planning content, problem-solving pieces
+进行中的想法、头脑风暴文章、思考过程、概念探索、起草阶段思考、规划内容、问题解决文章

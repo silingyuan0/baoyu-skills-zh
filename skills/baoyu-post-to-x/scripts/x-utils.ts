@@ -109,7 +109,7 @@ export async function launchChrome(
     profileDir,
     port,
     url,
-    extraArgs: ['--start-maximized'],
+    extraArgs: ['--start-maximized', '--ozone-platform=wayland'],
   });
 
   return { chrome, port };

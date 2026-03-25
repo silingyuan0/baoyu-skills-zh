@@ -3,11 +3,11 @@ name: cute
 category: sweet
 ---
 
-# Cute Style
+# 可爱风格
 
-Sweet, adorable, girly - classic Xiaohongshu aesthetic.
+甜美、可爱、少女风——经典小红书美学。
 
-## Element Combination
+## 元素组合
 
 ```yaml
 canvas:
@@ -31,42 +31,42 @@ decorations:
   frames: polaroid | tape-corners
 ```
 
-## Color Palette
+## 调色板
 
-| Role | Colors | Hex |
+| 角色 | 颜色 | Hex |
 |------|--------|-----|
-| Primary | Pink, peach, mint, lavender | #FED7E2, #FEEBC8, #C6F6D5, #E9D8FD |
-| Background | Cream, soft pink | #FFFAF0, #FFF5F7 |
-| Accents | Hot pink, coral | #FF69B4, #FF6B6B |
+| 主色 | 粉色、蜜桃色、薄荷色、薰衣草色 | #FED7E2, #FEEBC8, #C6F6D5, #E9D8FD |
+| 背景 | 奶油色、柔粉色 | #FFFAF0, #FFF5F7 |
+| 点缀色 | 亮粉、珊瑚色 | #FF69B4, #FF6B6B |
 
-## Visual Elements
+## 视觉元素
 
-- Hearts, stars, sparkles, cute faces
-- Ribbon decorations, sticker-style
-- Cute stickers, emoji icons
-- Soft, rounded shapes
+- 爱心、星星、闪光、可爱表情
+- 丝带装饰、贴纸风格
+- 可爱贴纸、emoji 图标
+- 柔和圆润的形状
 
-## Typography
+## 排版
 
-- Rounded, bubbly hand lettering
-- Soft shadows, playful decorations
-- Pink/pastel color accents on text
+- 圆润饱满的手写体
+- 柔和阴影、俏皮装饰
+- 粉色/柔和色调文字点缀
 
-## Best Layout Pairings
+## 最佳布局搭配
 
-| Layout | Compatibility | Use Case |
+| 布局 | 兼容性 | 适用场景 |
 |--------|---------------|----------|
-| sparse | ✓✓ | Covers, emotional impact |
-| balanced | ✓✓ | Standard cute content |
-| dense | ✓ | Cute knowledge cards |
-| list | ✓✓ | Checklists, cute rankings |
-| comparison | ✓ | Before/after transformations |
-| flow | ✓ | Cute step guides |
+| sparse | ✓✓ | 封面、情感冲击 |
+| balanced | ✓✓ | 标准可爱内容 |
+| dense | ✓ | 可爱知识卡 |
+| list | ✓✓ | 清单、可爱排行 |
+| comparison | ✓ | 前后对比 |
+| flow | ✓ | 可爱步骤指南 |
 
-## Best For
+## 最适合
 
-- Lifestyle content
-- Beauty and skincare
-- Fashion and style
-- Daily tips and hacks
-- Personal shares
+- 生活方式内容
+- 美妆护肤
+- 时尚穿搭
+- 日常技巧与妙招
+- 个人分享

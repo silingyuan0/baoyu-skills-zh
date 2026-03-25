@@ -1,96 +1,94 @@
-# Typography System
+# 文字排版系统
 
-Text styling elements for Xiaohongshu infographics.
+## 花字
 
-## Decorated Text (花字)
+用于强调和视觉吸引力的风格化文字处理。
 
-Stylized text treatments for emphasis and visual appeal.
-
-| Name | Description | Use Case |
+| 名称 | 描述 | 适用于 |
 |------|-------------|----------|
-| gradient | Gradient color fill | Title emphasis, modern feel |
-| stroke-text | Outlined text with stroke | Cover headlines, high visibility |
-| shadow-3d | 3D shadow/extrusion effect | Key terms, depth |
-| highlight | Highlighter marker effect | Critical information, key points |
-| neon | Neon glow effect | Tech content, night aesthetic |
-| handwritten | Authentic handwritten style | Personal touch, casual |
-| bubble | Rounded, inflated letterforms | Cute, playful content |
-| brush | Brush stroke texture | Artistic, dynamic |
+| gradient | 渐变色填充 | 标题强调、现代感 |
+| stroke-text | 带描边的轮廓文字 | 封面标题、高可见度 |
+| shadow-3d | 3D 阴影/突出效果 | 关键词、深度 |
+| highlight | 高光笔效果 | 关键信息、要点 |
+| neon | 霓虹发光效果 | 科技内容、夜间美学 |
+| handwritten | 真实手写风格 | 个人感、休闲 |
+| bubble | 圆润、膨胀的字形 | 可爱、活泼内容 |
+| brush | 笔刷纹理 | 艺术感、动态 |
 
-## Tags & Labels (标签)
+## 标签
 
-Structured text containers.
+结构化文字容器。
 
-| Name | Description | Use Case |
+| 名称 | 描述 | 适用于 |
 |------|-------------|----------|
-| black-white | Black background, white text | Brand names, prices, categories |
-| white-black | White background, black text | Clean labels, minimal style |
-| bubble | Speech bubble style | Dialogue, annotations, callouts |
-| pointer | Arrow pointer with label | Product callouts, pointing to features |
-| ribbon | Ribbon/banner shape | Special offers, highlights |
-| stamp | Stamp/seal style | Authenticity, recommendations |
-| pill | Rounded pill shape | Tags, categories, keywords |
+| black-white | 黑底白字 | 品牌名、价格、分类 |
+| white-black | 白底黑字 | 干净标签、简约风格 |
+| bubble | 对话气泡风格 | 对话、注释、标注 |
+| pointer | 带标签的箭头指针 | 产品标注、指向特点 |
+| ribbon | 丝带/横幅形状 | 特别优惠、高亮 |
+| stamp | 印章风格 | 真实性、推荐 |
+| pill | 圆角胶囊形状 | 标签、分类、关键词 |
 
-## Text Hierarchy
+## 文字层级
 
-Recommended text sizing for visual hierarchy.
+建议的文字大小以建立视觉层级。
 
-| Level | Role | Relative Size | Style |
+| 级别 | 作用 | 相对大小 | 风格 |
 |-------|------|---------------|-------|
-| H1 | Main title | 100% | Bold, decorated |
-| H2 | Section header | 70-80% | Semi-bold |
-| H3 | Subsection | 50-60% | Medium weight |
-| Body | Content text | 40-50% | Regular |
-| Caption | Small notes | 30-35% | Light |
+| H1 | 主标题 | 100% | 粗体、装饰 |
+| H2 | 章节标题 | 70-80% | 半粗体 |
+| H3 | 子章节 | 50-60% | 中等字重 |
+| 正文 | 内容文字 | 40-50% | 常规 |
+| 说明 | 小注释 | 30-35% | 细体 |
 
-## Text Direction
+## 文字方向
 
-| Direction | Description | Use Case |
+| 方向 | 描述 | 适用于 |
 |-----------|-------------|----------|
-| horizontal | Standard left-to-right | Default for most content |
-| vertical | Top-to-bottom columns | Magazine style, traditional Chinese |
-| curved | Text following a curve | Decorative, around shapes |
-| diagonal | Angled text | Dynamic compositions |
+| horizontal | 标准从左到右 | 大多数内容的默认 |
+| vertical | 从上到下的列 | 杂志风格、传统中文 |
+| curved | 沿曲线排列的文字 | 装饰性、环绕形状 |
+| diagonal | 倾斜文字 | 动态构图 |
 
-## Text Effects
+## 文字效果
 
-| Effect | Description | Use Case |
+| 效果 | 描述 | 适用于 |
 |--------|-------------|----------|
-| shadow | Drop shadow behind text | Readability on busy backgrounds |
-| outline | Outline around letterforms | High contrast visibility |
-| glow | Soft glow around text | Dreamy, emphasis |
-| underline-wavy | Wavy underline decoration | Playful emphasis |
-| strikethrough | Crossed out text | Before/after, corrections |
+| shadow | 文字后的投影 | 在复杂背景上的可读性 |
+| outline | 字形周围的轮廓 | 高对比度可见度 |
+| glow | 文字周围的柔和发光 | 梦幻、强调 |
+| underline-wavy | 波浪下划线装饰 | 活泼强调 |
+| strikethrough | 删除线文字 | 前后对比、修正 |
 
-## Language Considerations
+## 语言注意事项
 
-### Chinese Text (中文)
-- Punctuation: 「」（）、。！？
-- Spacing: No spaces between characters
-- Line height: 1.5-1.8x for readability
+### 中文文本
+- 标点：，。！？「」（）
+- 间距：字符间无空格
+- 行高：1.5-1.8 倍以确保可读性
 
-### Mixed Text
-- English in Chinese context: Maintain consistent baseline
-- Numbers: Use consistent number style (lining vs old-style)
+### 混排文本
+- 中文语境中的英文：保持一致的基线
+- 数字：使用一致的数字风格（齐整 vs 老式）
 
-## Style-Specific Typography
+## 风格特定排版
 
-### Cute Style
-- Rounded, bubbly hand lettering
-- Soft shadows, playful decorations
-- Pink/pastel color accents
+### 可爱风格
+- 圆润、泡泡手写字体
+- 柔和阴影、活泼装饰
+- 粉色/粉彩色调点缀
 
-### Notion Style
-- Clean hand-drawn lettering
-- Simple sans-serif labels
-- Minimal decoration
+### Notion 风格
+- 干净的手写字体
+- 简单的无衬线标签
+- 最少装饰
 
-### Bold Style
-- Impactful hand lettering with shadows
-- High contrast colors
-- Strong outlines
+### Bold 风格
+- 有阴影的醒目手写字体
+- 高对比度颜色
+- 强烈的轮廓
 
-### Chalkboard Style
-- Chalk texture on all text
-- Visible imperfections
-- Multi-color chalk variety
+### 粉笔风格
+- 所有文字的粉笔纹理
+- 可见的不完美
+- 多色彩笔变化

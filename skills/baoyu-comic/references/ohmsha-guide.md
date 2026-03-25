@@ -1,85 +1,85 @@
-# Ohmsha Manga Guide Style
+# Ohmsha 漫画指南风格
 
-Guidelines for `--style ohmsha` educational manga comics.
+`--style ohmsha` 教育漫画的指南。
 
-## Character Setup
+## 角色设置
 
-| Role | Default | Traits |
+| 角色 | 默认 | 特征 |
 |------|---------|--------|
-| Student (Role A) | 大雄 | Confused, asks basic but crucial questions, represents reader |
-| Mentor (Role B) | 哆啦A梦 | Knowledgeable, patient, uses gadgets as technical metaphors |
-| Antagonist (Role C, optional) | 胖虎 | Represents misunderstanding, or "noise" in the data |
+| 学生（角色 A） | 大雄 | 困惑、问基础但关键的问题、代表读者 |
+| 导师（角色 B） | 哆啦A梦 | 知识渊博、耐心、使用小工具作为技术隐喻 |
+| 反派（角色 C，可选） | 胖虎 | 代表误解，或数据中的"噪声" |
 
-Custom characters: `--characters "Student:小明,Mentor:教授,Antagonist:Bug怪"`
+自定义角色：`--characters "Student:小明,Mentor:教授,Antagonist:Bug怪"`
 
-## Character Reference Sheet Style
+## 角色参考表风格
 
-For Ohmsha style, use manga/anime style with:
-- Exaggerated expressions for educational clarity
-- Simple, distinctive silhouettes
-- Bright, saturated color palettes
-- Chibi/SD (super-deformed) variants for comedic reactions
+对于 Ohmsha 风格，使用漫画/动漫风格：
+- 为教育清晰度夸张表情
+- 简单、独特的轮廓
+- 明亮、饱和的调色板
+- Q版/SD（超变形）变体用于喜剧反应
 
-## Outline Spec Block
+## 大纲规格块
 
-Every ohmsha outline must start with:
+每个 ohmsha 大纲必须以以下内容开头：
 
 ```markdown
 【漫画规格单】
-- Language: [Same as input content]
+- Language: [与输入内容相同]
 - Style: Ohmsha (Manga Guide), Full Color
 - Layout: Vertical Scrolling Comic (竖版条漫)
-- Characters: [List character names and roles]
+- Characters: [列出角色名称和角色]
 - Character Reference: characters/characters.png
 - Page Limit: ≤20 pages
 ```
 
-## Visual Metaphor Rules (Critical)
+## 视觉隐喻规则（关键）
 
-**NEVER** create "talking heads" panels. Every technical concept must become:
+**永远不要**创建"头像对话"面板。每个技术概念必须变成：
 
-1. **A tangible gadget/prop** - Something characters can hold, use, demonstrate
-2. **An action scene** - Characters doing something that illustrates the concept
-3. **A visual environment** - Stepping into a metaphorical space
+1. **一个可触摸的小工具/道具** - 角色可以持有、使用、展示的东西
+2. **一个动作场景** - 角色做一些能够说明概念的事情
+3. **一个视觉环境** - 进入一个隐喻空间
 
-### Examples
+### 示例
 
-| Concept | Bad (Talking Heads) | Good (Visual Metaphor) |
+| 概念 | 不好（头像对话） | 好（视觉隐喻） |
 |---------|---------------------|------------------------|
-| Word embeddings | Characters discussing vectors | 哆啦A梦拿出"词向量压缩机"，把书本压缩成彩色小球 |
-| Gradient descent | Explaining math formula | 大雄在山谷地形上滚球，寻找最低点 |
-| Neural network | Diagram on whiteboard | 角色走进由发光节点组成的网络迷宫 |
+| 词嵌入 | 角色讨论向量 | 哆啦A梦拿出"词向量压缩机"，把书本压缩成彩色小球 |
+| 梯度下降 | 解释数学公式 | 大雄在山谷地形上滚球，寻找最低点 |
+| 神经网络 | 白板上的图表 | 角色走进由发光节点组成的网络迷宫 |
 
-## Page Title Convention
+## 页面标题惯例
 
-Avoid AI-style "Title: Subtitle" format. Use narrative descriptions:
+避免 AI 风格的"标题：副标题"格式。使用叙事描述：
 
-- ❌ "Page 3: Introduction to Neural Networks"
-- ✓ "Page 3: 大雄被海量单词淹没，哆啦A梦拿出'词向量压缩机'"
+- 错误："第3页：神经网络介绍"
+- 正确："第3页：大雄被海量单词淹没，哆啦A梦拿出'词向量压缩机'"
 
-## Ending Requirements
+## 结尾要求
 
-- NO generic endings ("What will you choose?", "Thanks for reading")
-- End with: Technical summary moment OR character achieving a small goal
-- Final panel: Sense of accomplishment, not open-ended question
+- 不要通用结尾（"你会选择什么？"、"感谢阅读"）
+- 以技术总结时刻结尾 OR 角色实现一个小目标
+- 最后一格：成就感，而非开放式问题
 
-### Good Endings
+### 好的结尾
 
-- Student successfully applies learned concept
-- Visual callback to opening problem, now solved
-- Mentor gives summary while student demonstrates understanding
+- 学生成功应用所学概念
+- 视觉回调到开场问题，现在已解决
+- 导师总结而学生展示理解
 
-### Bad Endings
+### 坏的结尾
 
-- "What do you think?" open questions
-- "Thanks for reading this tutorial"
-- Cliffhanger without resolution
+- "你怎么想？"开放式问题
+- "感谢阅读本教程"
+- 没有解决的悬念
 
-## Layout Preference
+## 版面布局偏好
 
-Ohmsha style typically uses:
-- `webtoon` (vertical scrolling) - Primary choice
-- `dense` - For information-heavy sections
-- `mixed` - For varied pacing
+Ohmsha 风格通常使用：
+- `webtoon`（垂直滚动）- 首选
+- `dense` - 用于信息密集的部分
+- `mixed` - 用于变化节奏
 
-Avoid `cinematic` and `splash` for educational content.
+避免对教育内容使用 `cinematic` 和 `splash`。

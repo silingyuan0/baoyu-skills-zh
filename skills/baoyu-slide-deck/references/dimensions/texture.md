@@ -1,60 +1,60 @@
-# Texture Dimension
+# 纹理维度
 
-Visual texture and background treatment.
+视觉纹理和背景处理。
 
-## Options
+## 选项
 
-| Option | Background | Visual Elements | Best For |
+| 选项 | 背景 | 视觉元素 | 适用于 |
 |--------|------------|-----------------|----------|
-| `clean` | Pure solid color, no texture | Clean lines, geometric shapes | Executive, minimal, corporate |
-| `grid` | Subtle grid overlay | Grid lines, schematics, technical diagrams | Technical, architecture, engineering |
-| `organic` | Soft textures, hand-drawn feel | Brush strokes, watercolor, sketchy lines | Creative, educational, friendly |
-| `pixel` | Chunky pixels, 8-bit aesthetic | Pixel art, retro game elements | Gaming, developer, nostalgic |
-| `paper` | Aged/textured paper | Vintage elements, stamps, weathering | Historical, heritage, storytelling |
+| `clean` | 纯实色，无纹理 | 干净线条、几何形状 | 高管、极简、企业 |
+| `grid` | 微妙的网格叠加 | 网格线、原理图、技术图表 | 技术、架构、工程 |
+| `organic` | 柔和纹理、手绘感 |  brush 笔触、水彩、 sketch 线条 | 创意、教育、友好 |
+| `pixel` | 块状像素、8位美学 | 像素艺术、复古游戏元素 | 游戏、开发者、怀旧 |
+| `paper` | 年旧/纹理纸张 | 复古元素、印章、做旧效果 | 历史、遗产、故事讲述 |
 
-## Rendering Guidelines
+## 渲染指南
 
 ### clean
 
-- Solid background colors with no visible texture
-- Crisp, sharp edges on all elements
-- Digital precision and clarity
-- Maximum contrast for readability
+- 纯色背景，无可见纹理
+- 所有元素边缘清晰锐利
+- 数字精度和清晰度
+- 最大对比度以提高可读性
 
 ### grid
 
-- Light grid overlay (5-10% opacity)
-- Engineering paper or blueprint feel
-- Alignment guides visible but subtle
-- Technical drawing aesthetic
+- 轻网格叠加（5-10%不透明度）
+- 工程图纸或蓝图感觉
+- 对齐 guides 可见但微妙
+- 技术绘图美学
 
 ### organic
 
-- Paper grain or canvas texture
-- Imperfect edges, natural variations
-- Hand-painted color fills
-- Casual, approachable feel
+- 纸张颗粒或画布纹理
+- 不完美的边缘、自然变化
+- 手绘色彩填充
+- 休闲、平易近人的感觉
 
 ### pixel
 
-- Visible pixel grid (chunky, not fine)
-- 8-bit color palette aesthetic
-- Aliased edges (no smoothing)
-- Retro game UI elements
+- 可见像素网格（块状，非精细）
+- 8位调色板美学
+- 锯齿状边缘（无平滑）
+- 复古游戏 UI 元素
 
 ### paper
 
-- Aged paper texture (subtle creases, discoloration)
-- Vintage printing artifacts
-- Sepia or warm tones
-- Historical document feel
+- 年旧纸张纹理（微妙折痕、变色）
+- 复古印刷伪影
+- 棕褐色或暖色调
+- 历史文档感觉
 
-## Combination Notes
+## 组合说明
 
-| Texture | Works Best With | Avoid With |
+| 纹理 | 最适合与 | 避免与 |
 |---------|-----------------|------------|
-| clean | professional, neutral moods | handwritten typography |
-| grid | cool, professional moods | handwritten, vibrant moods |
-| organic | warm, vibrant moods | technical typography |
-| pixel | vibrant, dark moods | editorial typography |
-| paper | warm moods | geometric typography, minimal density |
+| clean | professional, neutral 氛围 | handwritten 排版 |
+| grid | cool, professional 氛围 | handwritten, vibrant 氛围 |
+| organic | warm, vibrant 氛围 | technical 排版 |
+| pixel | vibrant, dark 氛围 | editorial 排版 |
+| paper | warm 氛围 | geometric 排版, minimal 密度 |

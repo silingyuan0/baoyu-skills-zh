@@ -1,72 +1,72 @@
 # vector-illustration
 
-Flat vector illustration style with clear black outlines and retro soft color palette
+扁平矢量插图风格，带清晰黑色轮廓和复古柔和色彩调色板
 
-## Design Aesthetic
+## 设计美学
 
-Flat vector illustration with no gradients or 3D effects. Clear, uniform-thickness black outlines on all elements. Geometric simplification reducing complex objects to basic shapes. Toy model aesthetic that's cute, playful, and approachable. Panoramic horizontal compositions work well.
+无渐变或3D效果的扁平矢量插图。所有元素上清晰、均匀粗细的黑色轮廓。将复杂物体简化为基本形状的几何简化。玩具模型美学，可爱、活泼、平易近人。全景横向构图效果最佳。
 
-## Background
+## 背景
 
-- Color: Cream Off-White (#F5F0E6)
-- Texture: Subtle paper texture, warm nostalgic feel reminiscent of vintage prints
+- 颜色：奶油米白 (#F5F0E6)
+- 纹理：微妙纸张纹理，温暖怀旧感，让人想起复古印刷
 
-## Typography
+## 排版
 
-### Primary Font (Headlines)
+### 主字体（标题）
 
-Large, bold retro serif for titles conveying authority and elegance. Think classic advertising posters. Clean letterforms with strong presence.
+大号粗体复古衬线，用于传达权威和优雅的标题。想想经典广告海报。干净字母形态与强大存在感。
 
-### Secondary Font (Subtitles)
+### 辅助字体（副标题）
 
-All-caps sans-serif inside colored rectangular blocks. Label-like appearance. High contrast against block color.
+彩色矩形块内的大写无衬线。标签般的外观。与块颜色的高对比度。
 
-### Body Font
+### 正文字体
 
-Clean geometric sans-serif for readability. Futura, Avenir, or similar. Consistent weight throughout.
+为可读性而设计的干净几何无衬线。Futura、Avenir 或类似。整个过程一致的字重。
 
-## Color Palette
+## 色彩调色板
 
-| Role | Color | Hex | Usage |
+| 角色 | 颜色 | 十六进制 | 用途 |
 |------|-------|-----|-------|
-| Background | Cream Off-White | #F5F0E6 | Primary background |
-| Outlines | Deep Charcoal | #2D2D2D | All element outlines |
-| Primary Text | Black | #1A1A1A | Headlines, body |
-| Accent 1 | Coral Red | #E07A5F | Primary accent, warmth |
-| Accent 2 | Mint Green | #81B29A | Secondary accent, nature |
-| Accent 3 | Mustard Yellow | #F2CC8F | Highlights, energy |
-| Accent 4 | Burnt Orange | #D4764A | Tertiary accent |
-| Accent 5 | Rock Blue | #577590 | Cool balance, tech |
+| 背景 | 奶油米白 | #F5F0E6 | 主背景 |
+| 轮廓 | 深炭色 | #2D2D2D | 所有元素轮廓 |
+| 主文字 | 黑 | #1A1A1A | 标题、正文 |
+| 强调1 | 珊瑚红 | #E07A5F | 主强调、温暖 |
+| 强调2 | 薄荷绿 | #81B29A | 次要强调、自然 |
+| 强调3 | 芥末黄 | #F2CC8F | 高亮、能量 |
+| 强调4 | 焦橙色 | #D4764A | 第三强调 |
+| 强调5 | 岩蓝 | #577590 | 冷平衡、科技 |
 
-## Visual Elements
+## 视觉元素
 
-- All objects have closed black outlines (coloring book style)
-- Rounded line endings, avoid sharp corners
-- Trees simplified to lollipop or triangle shapes
-- Buildings simplified to rectangular blocks with grid windows
-- 2.5D perspective (isometric-like but more free-form)
-- Depth through layering and overlap, not atmospheric perspective
-- Decorative geometric elements: radiating lines (sunbursts), pill-shaped clouds, dots, stars
-- People as simple geometric figures with minimal facial detail
+- 所有物体都有封闭黑色轮廓（涂色书风格）
+- 圆润的线条末端，避免尖角
+- 树木简化为棒棒糖或三角形形状
+- 建筑物简化为带网格窗户的矩形块
+- 2.5D透视（类似等轴测但更自由形式）
+- 通过分层和重叠产生深度，而非大气透视
+- 装饰几何元素：辐射线（太阳爆发）、药丸形云、点、星星
+- 作为简单几何人物的人，最小面部细节
 
-## Style Rules
+## 样式规则
 
-### Do
+### 做
 
-- Maintain consistent outline thickness throughout
-- Use soft, vintage color palette
-- Simplify all objects to basic geometric shapes
-- Create depth through layering
-- Add playful decorative elements
+- 始终保持一致的轮廓粗细
+- 使用柔和的复古色彩调色板
+- 将所有物体简化为基本几何形状
+- 通过分层创建深度
+- 添加活泼的装饰元素
 
-### Don't
+### 不做
 
-- Use gradients or realistic shading
-- Create photorealistic elements
-- Use thin or varying line weights
-- Include complex detailed illustrations
-- Add slide numbers, footers, or logos
+- 使用渐变或逼真阴影
+- 创建逼真元素
+- 使用细或变化的线宽
+- 包含复杂详细的插图
+- 添加幻灯片编号、页脚或徽标
 
-## Best For
+## 最佳适用场景
 
-Educational presentations, creative proposals, children's content, brand showcases, warm approachable topics, explainer content
+教育演示、创意提案、儿童内容、品牌展示、温暖平易近人的主题、解释性内容

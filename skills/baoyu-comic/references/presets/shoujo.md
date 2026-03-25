@@ -2,115 +2,115 @@
 
 少女预设 - Classic shoujo manga with romantic aesthetics
 
-## Base Configuration
+## 基础配置
 
-| Dimension | Value |
+| 维度 | 值 |
 |-----------|-------|
-| Art Style | manga |
-| Tone | romantic |
-| Layout | standard (default) |
+| 艺术风格 | manga |
+| 基调 | romantic |
+| 布局 | standard（默认）|
 
-Equivalent to: `--art manga --tone romantic`
+等同于：`--art manga --tone romantic`
 
-## Unique Rules
+## 独特规则
 
-This preset includes special rules beyond the art+tone combination. When `--style shoujo` is used, ALL rules below must be applied.
+此预设包含超出 art+tone 组合的特殊规则。使用 `--style shoujo` 时，必须应用以下所有规则。
 
-### Decorative Elements (Required)
+### 装饰元素（必需）
 
-Every emotional moment must include decorative elements:
+每个情感时刻必须包含装饰元素：
 
-| Emotion | Required Decorations |
+| 情感 | 必需装饰 |
 |---------|---------------------|
-| Love | Floating hearts, sparkles, rose petals |
-| Longing | Feathers, bubbles, distant sparkles |
-| Joy | Flowers blooming, light bursts, stars |
-| Sadness | Falling petals, fading sparkles |
-| Shyness | Soft sparkles, floating bubbles |
-| Realization | Radiating lines with sparkles |
+| 爱 | 漂浮的心、闪光、玫瑰花瓣 |
+| 渴望 | 羽毛、气泡、远方闪光 |
+| 喜悦 | 绽放的花朵、光芒爆发、星星 |
+| 悲伤 | 飘落的花瓣、褪色的闪光 |
+| 害羞 | 柔和闪光、漂浮的气泡 |
+| 顿悟 | 带闪光的辐射线 |
 
-### Eye Detail Requirements
+### 眼睛细节要求
 
-Eyes are critical in shoujo style:
+眼睛在少女风格中至关重要：
 
-| Aspect | Treatment |
+| 方面 | 处理 |
 |--------|-----------|
-| Size | Larger than standard manga (1.2x) |
-| Highlights | Multiple (3-5), placed for emotion |
-| Reflection | Scene reflection in emotional moments |
-| Sparkle | Built-in sparkle effects |
-| Tears | Crystalline, detailed teardrops |
+| 大小 | 比标准漫画大（1.2倍）|
+| 高光 | 多个（3-5个），放置表达情感 |
+| 反射 | 情感时刻的场景反射 |
+| 闪光 | 内置闪光效果 |
+| 眼泪 | 水晶般详细的泪珠 |
 
-### Character Beauty Standards
+### 角色美丽标准
 
-| Feature | Treatment |
+| 特征 | 处理 |
 |---------|-----------|
-| Hair | Flowing, detailed strands, shine highlights |
-| Skin | Porcelain, soft blush on cheeks |
-| Lips | Soft, slightly glossy |
-| Hands | Elegant, expressive gestures |
-| Posture | Graceful, elegant poses |
+| 头发 | 飘逸、详细发丝、光泽高光 |
+| 皮肤 | 瓷器感、面颊柔和红晕 |
+| 嘴唇 | 柔和、略光泽 |
+| 手 | 优雅、表达手势 |
+| 姿势 | 优雅、优美姿势 |
 
-### Background Effects
+### 背景效果
 
-**Abstract backgrounds** for emotional moments:
+**情感时刻的抽象背景**：
 
-| Moment Type | Background |
+| 时刻类型 | 背景 |
 |-------------|-----------|
-| Love confession | Soft gradient + floating flowers |
-| Shock | Screen tone speed lines + sparkles |
-| Memory | Dreamy blur + scattered petals |
-| Realization | Radial lines + light burst |
-| Intimate | Soft focus + floating elements |
+| 爱之告白 | 柔和渐变 + 漂浮花朵 |
+| 震惊 | 网纸速度线 + 闪光 |
+| 记忆 | 梦幻模糊 + 散落花瓣 |
+| 顿悟 | 辐射线 + 光芒爆发 |
+| 亲密 | 柔焦 + 漂浮元素 |
 
-### Panel Flow
+### 面板流程
 
-- Overlap panels for intimate moments
-- Break panel borders for emotional impact
-- Float decorative elements between panels
-- Use screen tone gradients for mood
-- Irregular panel shapes for drama
+- 重叠面板用于亲密时刻
+- 打破面板边框增强情感冲击
+- 在面板之间漂浮装饰元素
+- 使用网纸渐变营造氛围
+- 不规则面板形状增强戏剧性
 
-### Emotional Beat Timing
+### 情感节拍计时
 
-Slow down pacing for emotional impact:
+放慢节奏以增强情感冲击：
 
-| Scene Type | Panel Treatment |
+| 场景类型 | 面板处理 |
 |------------|-----------------|
-| Confession | Multiple small panels, then splash |
-| Eye contact | Close-up sequence |
-| Touch | Slow-motion panel breakdown |
-| Realization | Build-up panels then impact |
+| 告白 | 多个小面板，然后是 splash page |
+| 眼神接触 | 特写序列 |
+| 触碰 | 慢动作面板分解 |
+| 顿悟 | 积累面板然后冲击 |
 
-### Color Palette Application
+### 调色板应用
 
-| Scene Type | Palette |
+| 场景类型 | 调色板 |
 |------------|---------|
-| Romantic | Pink, lavender, rose gold |
-| Happy | Soft yellow, peach, sky blue |
-| Sad | Pale blue, silver, gray lavender |
-| Dramatic | Deep rose, purple, contrast |
+| 浪漫 | 粉色、薰衣草、玫瑰金 |
+| 快乐 | 柔黄、桃色、天蓝 |
+| 悲伤 | 淡蓝、银色、灰薰衣草 |
+| 戏剧 | 深玫瑰、紫、对比 |
 
-### Screen Tone Usage
+### 网纸使用
 
-| Mood | Tone Pattern |
+| 氛围 | 网纸图案 |
 |------|-------------|
-| Neutral | Clean, minimal |
-| Romantic | Soft gradient overlays |
-| Dramatic | Heavy contrast tones |
-| Dreamy | Soft dot patterns |
+| 中性 | 干净、最少 |
+| 浪漫 | 柔和渐变叠加 |
+| 戏剧 | 重对比色调 |
+| 梦幻 | 柔和点图案 |
 
-## Quality Markers
+## 质量标记
 
-- ✓ Large, sparkling detailed eyes
-- ✓ Decorative elements in emotional moments
-- ✓ Flowing, beautiful character designs
-- ✓ Soft, pastel color palette
-- ✓ Elegant panel compositions
-- ✓ Screen tone mood effects
-- ✓ Romantic atmosphere throughout
-- ✓ Beautiful, expressive poses
+- ✓ 大、闪光细节的眼睛
+- ✓ 情感时刻的装饰元素
+- ✓ 飘逸、美丽的角色设计
+- ✓ 柔和、粉彩调色板
+- ✓ 优雅的面板构图
+- ✓ 氛围网纸效果
+- ✓ 整体浪漫氛围
+- ✓ 美丽、表达姿势
 
-## Best For
+## 适用于
 
-Romance stories, coming-of-age, friendship narratives, school life, emotional drama, love stories
+浪漫故事、成长故事、友谊叙事、学校生活、情感戏剧、爱情故事

@@ -1,4 +1,5 @@
 import path from "node:path";
+import { spawn } from "node:child_process";
 import { mkdir, writeFile } from "node:fs/promises";
 
 type MediaKind = "image" | "video";
@@ -39,6 +40,7 @@ const IMAGE_EXTENSIONS = new Set([
 ]);
 
 const VIDEO_EXTENSIONS = new Set(["mp4", "m4v", "mov", "webm", "mkv"]);
+const M3U8_EXTENSIONS = new Set(["m3u8"]);
 
 const MIME_EXTENSION_MAP: Record<string, string> = {
   "image/jpeg": "jpg",
@@ -164,6 +166,31 @@ function resolveFileStem(rawUrl: string, extension: string): string {
   }
 }
 
+function downloadWithFfmpeg(m3u8Url: string, outputPath: string): Promise<void> {
+  return new Promise((resolve, reject) => {
+    const args = [
+      "-hide_banner", "-loglevel", "warning",
+      "-user_agent", DOWNLOAD_USER_AGENT,
+      "-protocol_whitelist", "file,http,https,tls,tcp",
+      "-i", m3u8Url,
+      "-c", "copy",
+      "-bsf:a", "aac_adtstoasc",
+      "-movflags", "+faststart",
+      "-y",
+      outputPath,
+    ];
+    const proc = spawn("ffmpeg", args, { stdio: ["ignore", "pipe", "pipe"] });
+    const stderr: Buffer[] = [];
+    proc.stdout?.on("data", () => {});
+    proc.stderr?.on("data", (chunk) => stderr.push(chunk));
+    proc.on("close", (code) => {
+      if (code === 0) resolve();
+      else reject(new Error(`ffmpeg exited with code ${code}: ${Buffer.concat(stderr).toString().trim()}`));
+    });
+    proc.on("error", reject);
+  });
+}
+
 function buildFileName(kind: MediaKind, index: number, sourceUrl: string, extension: string): string {
   const stem = resolveFileStem(sourceUrl, extension);
   const prefix = kind === "image" ? "img" : "video";
@@ -244,6 +271,32 @@ export async function localizeMarkdownMedia(
 
   for (const candidate of candidates) {
     try {
+      // Skip URLs that don't look like media: no image/video extension and no image hint
+      if (candidate.hint !== "image") {
+        const ext = resolveExtensionFromUrl(candidate.url);
+        if (!resolveKindFromExtension(ext) && !M3U8_EXTENSIONS.has(ext ?? "")) continue;
+      }
+
+      const urlExt = resolveExtensionFromUrl(candidate.url);
+
+      // Handle HLS .m3u8 playlists with ffmpeg
+      if (urlExt && M3U8_EXTENSIONS.has(urlExt)) {
+        log(`[url-to-markdown] Downloading video (HLS): ${candidate.url}`);
+        const nextIndex = downloadedVideos + 1;
+        const dirName = "videos";
+        const targetDir = path.join(markdownDir, dirName);
+        await mkdir(targetDir, { recursive: true });
+
+        const fileName = buildFileName("video", nextIndex, candidate.url, "mp4");
+        const absolutePath = path.join(targetDir, fileName);
+        const relativePath = path.posix.join(dirName, fileName);
+
+        await downloadWithFfmpeg(candidate.url, absolutePath);
+        replacements.set(candidate.url, relativePath);
+        downloadedVideos = nextIndex;
+        continue;
+      }
+
       const response = await fetch(candidate.url, {
         method: "GET",
         redirect: "follow",

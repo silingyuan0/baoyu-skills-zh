@@ -1,98 +1,98 @@
-Create a knowledge biography comic page following these guidelines:
+遵循这些指南创建知识传记漫画页面：
 
-## Image Specifications
+## 图像规格
 
-- **Type**: Comic book page with multiple panels
-- **Orientation**: Portrait (vertical)
-- **Aspect Ratio**: 2:3
-- **Style**: See style-specific reference for visual guidelines
+- **类型**：多面板漫画书页面
+- **方向**：竖版（垂直）
+- **宽高比**：2:3
+- **风格**：参见特定风格的参考指南
 
-## Panel Structure
+## 面板结构
 
-### Panel Borders
-- Clean black lines (1-2px) around each panel
-- White gutters between panels (8-12px)
-- Panels arranged for clear reading flow
-- Variety in panel sizes for visual rhythm
+### 面板边框
+- 每个面板周围清晰的黑色线条（1-2px）
+- 面板之间的白色 gutter（8-12px）
+- 面板排列以获得清晰的阅读流
+- 面板尺寸变化以获得视觉节奏
 
-### Panel Composition
-- Clear focal points in each panel
-- Proper use of foreground, midground, background
-- Camera angles vary: eye level, bird's eye, low angle, close-up, wide shot
-- Action flows logically between panels
-- Negative space used intentionally
+### 面板构图
+- 每个面板中有清晰的焦点
+- 正确使用前景、中景、背景
+- 镜头角度变化：平视、鸟瞰、低角度、特写、远景
+- 面板之间的动作逻辑流畅
+- 留白巧妙运用
 
-## Text Elements
+## 文本元素
 
-### Speech Bubbles
-- **Dialogue**: Oval/elliptical bubbles with pointed tails
-- White fill with thin black outline
-- Tail points clearly to speaker
-- Hand-lettered style font (not computer-generated)
+### 对话气泡
+- **对话**：带尖尾巴的椭圆/椭圆形气泡
+- 白色填充，黑色细轮廓
+- 尾巴清晰指向说话者
+- 手绘 lettering 风格字体（非计算机生成）
 
-### Narrator Boxes
-- **Fourth Wall/Narrator**: Rectangular boxes
-- Often positioned at panel edges (top or bottom)
-- Slightly different fill color (cream or light yellow)
-- Used for commentary, time jumps, explanations
+### 叙述者框
+- **第四面墙/叙述者**：矩形框
+- 通常位于面板边缘（顶部或底部）
+- 略有不同的填充色（米色或浅黄色）
+- 用于评论、时间跳跃、解释
 
-### Thought Bubbles
-- Cloud-shaped with bubble trail leading to thinker
-- Softer outline than speech bubbles
-- For internal monologue
+### 思考气泡
+- 云形状，带有通向思考者的气泡尾迹
+- 轮廓比对话气泡更柔和
+- 用于内心独白
 
-### Caption Bars
-- Rectangular bars at panel edges
-- Time and place information
-- "Meanwhile...", "Three years later..." type transitions
-- Darker fill with white text, or vice versa
+### 标题栏
+- 位于面板边缘的矩形条
+- 时间和地点信息
+- "与此同时……"、"三年后……"类型的过渡
+- 更深的填充配白色文本，或反之
 
-### Typography
-- Hand-drawn lettering style throughout
-- Bold for emphasis and key terms
-- Consistent letter sizing
-- Chinese text: use full-width punctuation ""，。！
-- Clear hierarchy: titles > dialogue > captions
+### 排版
+- 整个手绘 lettering 风格
+- 强调和关键词的粗体
+- 一致的字母大小
+- 中文文本：使用全角标点符号""，.！"
+- 清晰的层次：标题 > 对话 > 标题栏
 
-## Scientific/Concept Visualization
+## 科学/概念可视化
 
-When depicting abstract concepts:
+当描绘抽象概念时：
 
-| Concept | Visual Metaphor |
+| 概念 | 视觉隐喻 |
 |---------|----------------|
-| Neural networks | Glowing nodes connected by clean lines |
-| Data flow | Luminous particles along simple paths |
-| Algorithms | Geometric patterns, building blocks |
-| Logic/proof | Interlocking puzzle pieces |
-| Discovery | Light breaking through darkness |
-| Uncertainty | Forking paths, question marks |
-| Time | Clock motifs, calendar pages |
+| 神经网络 | 发光节点与清晰线条连接 |
+| 数据流 | 沿简单路径的发光粒子 |
+| 算法 | 几何图案、构建块 |
+| 逻辑/证明 | 互锁的拼图碎片 |
+| 发现 | 黑暗中的破晓之光 |
+| 不确定性 | 分叉路径、问号 |
+| 时间 | 钟表图案、日历页 |
 
-- Integrate diagrams naturally into narrative panels
-- Use inset panels or thought-bubble style for explanations
-- Simplified iconography over realistic depiction
+- 将图表自然地整合到叙事面板中
+- 使用内嵌面板或思考气泡风格进行解释
+- 简化的图标而不是写实描绘
 
-## Fourth Wall / Narrator Character
+## 第四面墙 / 叙述者角色
 
-When depicting narrator characters addressing the reader:
-- Character may look directly out of panel
-- Can appear in "present day" framing scenes
-- Distinct visual treatment from main timeline
-- Often at page edges or in dedicated panels
-- May comment on or question the events shown
+当描绘面向读者的叙述者角色时：
+- 角色可以直接看向面板外
+- 可以出现在"当今"的框架场景中
+- 与主时间线有明显的视觉区别
+- 通常位于页面边缘或专用面板中
+- 可以评论或质疑所展示的事件
 
-## Historical Accuracy
+## 历史准确性
 
-- Research period-specific details: costumes, technology, architecture
-- Show aging naturally for characters across time periods
-- Iconic items and locations rendered recognizably
-- Balance accuracy with stylization
+- 研究特定时期的细节：服装、科技、建筑
+- 展现跨时间段的角色自然老化
+- 标志性的物品和地点要可识别地呈现
+- 在准确性和风格化之间取得平衡
 
-## Language
+## 语言
 
-- All text in Chinese (中文) unless source material is in another language
-- Use Chinese full-width punctuation: ""，。！
+- 所有文本使用中文（中文），除非源材料使用其他语言
+- 使用中文全角标点：""，.！"
 
 ---
 
-Please generate the comic page based on the content provided below:
+请根据下面提供的内容生成漫画页面：

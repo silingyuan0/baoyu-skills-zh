@@ -1,67 +1,67 @@
 # pixel-art
 
-Retro 8-bit pixel art aesthetic with nostalgic gaming visual style
+复古 8 位像素艺术美学，怀旧游戏视觉风格
 
-## Design Aesthetic
+## 设计美学
 
-Pixelated retro aesthetic reminiscent of classic 8-bit and 16-bit era games. Chunky pixels, limited color palettes, and nostalgic gaming references. Simple geometric shapes rendered in blocky pixel form. Fun, playful, and immediately recognizable retro tech aesthetic.
+像素化复古美学，让人联想到经典 8 位和 16 位时代游戏。块状像素、有限调色板和怀旧游戏参考。简单的几何形状以方块像素形式渲染。有趣、俏皮且极具辨识度的复古科技美学。
 
-## Background
+## 背景
 
-- Color: Light Blue (#87CEEB) or Soft Lavender (#E6E6FA)
-- Texture: Subtle pixel grid pattern, CRT scanline effect optional
+- 颜色：浅蓝（#87CEEB）或柔薰衣草色（#E6E6FA）
+- 纹理：细微像素网格图案，可选 CRT 扫描线效果
 
-## Typography
+## 排版
 
-### Primary Font (Headlines)
+### 主字体（标题）
 
-Pixelated bitmap font style. Chunky, blocky letterforms with visible pixel structure. All caps for maximum readability. Render as actual pixel art, not smooth vectors.
+像素化位图字体风格。粗块状字母形态，可见的像素结构。全大写以获得最大可读性。渲染为实际像素艺术，而非平滑矢量。
 
-### Secondary Font (Body)
+### 辅助字体（正文）
 
-Smaller pixel font with consistent 8x8 or 16x16 character grid. High contrast against background. Limited anti-aliasing to maintain retro feel.
+更小的像素字体，保持一致的 8x8 或 16x16 字符网格。与背景形成高对比。有限的抗锯齿以保持复古感。
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
-|------|-------|-----|-------|
-| Background | Light Blue | #87CEEB | Primary background |
-| Alt Background | Soft Lavender | #E6E6FA | Secondary backgrounds |
-| Primary Text | Dark Navy | #1A1A2E | Headlines, body text |
-| Accent 1 | Pixel Green | #00FF00 | Success, highlights |
-| Accent 2 | Pixel Red | #FF0000 | Alerts, emphasis |
-| Accent 3 | Pixel Yellow | #FFFF00 | Warnings, energy |
-| Accent 4 | Pixel Cyan | #00FFFF | Info, tech elements |
-| Accent 5 | Pixel Magenta | #FF00FF | Special elements |
+| 角色 | 颜色 | 色值 | 用途 |
+|------|------|------|------|
+| 背景 | Light Blue | #87CEEB | 主要背景 |
+| 辅助背景 | Soft Lavender | #E6E6FA | 辅助背景 |
+| 主文本 | Dark Navy | #1A1A2E | 标题、正文 |
+| 强调色 1 | Pixel Green | #00FF00 | 成功、高亮 |
+| 强调色 2 | Pixel Red | #FF0000 | 警告、强调 |
+| 强调色 3 | Pixel Yellow | #FFFF00 | 警示、能量 |
+| 强调色 4 | Pixel Cyan | #00FFFF | 信息、科技元素 |
+| 强调色 5 | Pixel Magenta | #FF00FF | 特殊元素 |
 
-## Visual Elements
+## 视觉元素
 
-- All elements rendered with visible pixel structure
-- Simple iconography: notepad, checkboxes, gears, rockets, play buttons
-- Text bubbles and speech boxes with pixel borders
-- 8-bit style decorative elements: stars, hearts, arrows
-- Progress bars with chunky pixel segments
-- Dithering patterns for gradients and shadows
-- Limited to 16-32 color palette per slide
+- 所有元素以可见的像素结构渲染
+- 简单图标：记事本、复选框、齿轮、火箭、播放按钮
+- 带像素边框的文字气泡和对话框
+- 8 位风格装饰元素：星星、爱心、箭头
+- 块状像素段组成的进度条
+- 用于渐变和阴影的抖动处理（dithering）图案
+- 每张幻灯片限制在 16-32 色调色板
 
-## Style Rules
+## 风格规则
 
-### Do
+### 推荐做法
 
-- Maintain consistent pixel grid throughout
-- Use limited color palette (16-32 colors max)
-- Create blocky, geometric shapes
-- Add nostalgic gaming references where appropriate
-- Use dithering for color transitions
+- 全文保持一致的像素网格
+- 使用有限调色板（最多 16-32 色）
+- 创建方块状的几何形状
+- 在适当处添加怀旧游戏参考
+- 使用抖动处理进行颜色过渡
 
-### Don't
+### 避免事项
 
-- Use smooth gradients or anti-aliasing
-- Create photorealistic elements
-- Use thin lines or fine details
-- Add modern glossy effects
-- Add slide numbers, footers, or logos
+- 使用平滑渐变或抗锯齿
+- 创建照片写实元素
+- 使用细线或精细细节
+- 添加现代光泽效果
+- 添加幻灯片编号、页脚或标志
 
-## Best For
+## 适用场景
 
-Gaming presentations, tech tutorials, nostalgic content, developer talks, retro-themed events, educational content for younger audiences, creative tech presentations
+游戏演示、科技教程、怀旧内容、开发者演讲、复古主题活动、面向年轻受众的教育内容、创意科技演示

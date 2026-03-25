@@ -3,11 +3,11 @@ name: fresh
 category: natural
 ---
 
-# Fresh Style
+# 清新风格
 
-Clean, refreshing, natural aesthetic.
+清爽、清新、自然美学。
 
-## Element Combination
+## 元素组合
 
 ```yaml
 canvas:
@@ -31,42 +31,42 @@ decorations:
   frames: rounded-rect | none
 ```
 
-## Color Palette
+## 调色板
 
-| Role | Colors | Hex |
+| 角色 | 颜色 | Hex |
 |------|--------|-----|
-| Primary | Mint green, sky blue, light yellow | #9AE6B4, #90CDF4, #FAF089 |
-| Background | Pure white, soft mint | #FFFFFF, #F0FFF4 |
-| Accents | Leaf green, water blue | #48BB78, #4299E1 |
+| 主色 | 薄荷绿、天空蓝、浅黄 | #9AE6B4, #90CDF4, #FAF089 |
+| 背景 | 纯白、柔薄荷 | #FFFFFF, #F0FFF4 |
+| 点缀色 | 叶绿色、水蓝色 | #48BB78, #4299E1 |
 
-## Visual Elements
+## 视觉元素
 
-- Plant leaves, clouds, water drops
-- Simple geometric shapes
-- Breathing room, open composition
-- Natural, organic elements
+- 植物叶片、云朵、水滴
+- 简约几何形状
+- 呼吸感、开放构图
+- 自然有机元素
 
-## Typography
+## 排版
 
-- Clean, light hand lettering with breathing room
-- Airy spacing
-- Fresh color accents
+- 干净轻盈的手写体，留有呼吸空间
+- 疏朗间距
+- 清新色彩点缀
 
-## Best Layout Pairings
+## 最佳布局搭配
 
-| Layout | Compatibility | Use Case |
+| 布局 | 兼容性 | 适用场景 |
 |--------|---------------|----------|
-| sparse | ✓✓ | Clean covers |
-| balanced | ✓✓ | Standard fresh content |
-| dense | ✓ | Organized information |
-| list | ✓ | Wellness tips |
-| comparison | ✓ | Before/after health |
-| flow | ✓✓ | Organic processes |
+| sparse | ✓✓ | 清爽封面 |
+| balanced | ✓✓ | 标准清新内容 |
+| dense | ✓ | 有条理的信息 |
+| list | ✓ | 健康小贴士 |
+| comparison | ✓ | 前后健康对比 |
+| flow | ✓✓ | 有机流程 |
 
-## Best For
+## 最适合
 
-- Health and wellness
-- Minimalist lifestyle
-- Self-care content
-- Nature-related topics
-- Clean living tips
+- 健康与养生
+- 极简生活
+- 自我护理内容
+- 自然相关话题
+- 简洁生活技巧

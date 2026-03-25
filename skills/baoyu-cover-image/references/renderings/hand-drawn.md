@@ -1,40 +1,40 @@
-# hand-drawn
+# 手绘
 
-Sketchy, organic, personal
+素描感、有机、个性化
 
-## Core Characteristics
+## 核心特征
 
-Hand-drawn illustration with visible imperfections, organic line quality, and personal touch. Feels like a skilled artist's sketchbook or whiteboard drawing.
+手绘插图，以可见的不完美感、有机的线条质感和个人化的笔触为特征。类似于熟练画家的速写本或白板绘图。
 
-## Lines
+## 线条
 
-- Sketchy, organic, slightly imperfect strokes
-- Variable line weight (thicker at pressure points)
-- Wavy connectors and arrows
-- Natural hand tremor visible
+- 素描感、有机、略带不完美的笔触
+- 可变线宽（在施力点更粗）
+- 波浪形连接线和箭头
+- 可见的自然手部抖动
 
-## Texture
+## 纹理
 
-- Paper grain and subtle surface texture
-- Pencil/pen/marker texture on strokes
-- Casual fills with visible brush direction
+- 纸张纹理和微妙的表面质感
+- 笔触上的铅笔/钢笔/马克笔质感
+- 可见笔触方向的随意填充
 
-## Depth
+## 深度
 
-- Minimal: light hand-drawn shadows or hatching
-- No realistic depth or perspective
-- Simple layering with overlap
+- 极简：轻微的手绘阴影或排线
+- 无真实深度或透视
+- 通过重叠实现简单分层
 
-## Element Vocabulary
+## 元素词汇
 
-- Doodles, organic shapes, hand-lettered labels
-- Conceptual icons with sketchy quality
-- Connection lines with hand-drawn wavy feel
-- Stars, arrows, underlines, circles, checkmarks
-- Stick figures and simple characters
+- 涂鸦、有机形状、手写标签
+- 带有素描质感的概念图标
+- 带有手绘波浪感的连接线
+- 星星、箭头、下划线、圆圈、勾选标记
+- 火柴人和简单角色
 
-## Typography Approach
+## 排版方式
 
-- Hand-lettered or marker-style text
-- Bouncy baselines, organic feel
-- Variable sizes for emphasis hierarchy
+- 手写体或马克笔风格文字
+- 弹跳基线，有机质感
+- 可变大小用于强调层级

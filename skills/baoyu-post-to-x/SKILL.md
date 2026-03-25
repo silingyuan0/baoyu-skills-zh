@@ -1,6 +1,6 @@
 ---
 name: baoyu-post-to-x
-description: Posts content and articles to X (Twitter). Supports regular posts with images/videos and X Articles (long-form Markdown). Uses real Chrome with CDP to bypass anti-automation. Use when user asks to "post to X", "tweet", "publish to Twitter", or "share on X".
+description: 向 X（Twitter）发布内容和文章。支持带图片/视频的常规帖子和 X 文章（长篇 Markdown）。使用真实 Chrome 配合 CDP 绕过反自动化检测。当用户要求"发布到 X"、"发推"、"发布到 Twitter"或"分享到 X"时使用。
 version: 1.56.1
 metadata:
   openclaw:
@@ -11,35 +11,35 @@ metadata:
         - npx
 ---
 
-# Post to X (Twitter)
+# 发布到 X（Twitter）
 
-Posts text, images, videos, and long-form articles to X via real Chrome browser (bypasses anti-bot detection).
+通过真实 Chrome 浏览器（绕过反自动化检测）发布文本、图片、视频和长篇文章到 X。
 
-## Script Directory
+## 脚本目录
 
-**Important**: All scripts are located in the `scripts/` subdirectory of this skill.
+**重要**：所有脚本位于本 skill 的 `scripts/` 子目录中。
 
-**Agent Execution Instructions**:
-1. Determine this SKILL.md file's directory path as `{baseDir}`
-2. Script path = `{baseDir}/scripts/<script-name>.ts`
-3. Replace all `{baseDir}` in this document with the actual path
-4. Resolve `${BUN_X}` runtime: if `bun` installed → `bun`; if `npx` available → `npx -y bun`; else suggest installing bun
+**智能体执行说明**：
+1. 将此 SKILL.md 文件所在目录路径确定为 `{baseDir}`
+2. 脚本路径 = `{baseDir}/scripts/<脚本名>.ts`
+3. 将本文档中所有 `{baseDir}` 替换为实际路径
+4. 解析 `${BUN_X}` 运行时：如已安装 `bun` → `bun`；如 `npx` 可用 → `npx -y bun`；否则建议安装 bun
 
-**Script Reference**:
-| Script | Purpose |
+**脚本参考**：
+| 脚本 | 用途 |
 |--------|---------|
-| `scripts/x-browser.ts` | Regular posts (text + images) |
-| `scripts/x-video.ts` | Video posts (text + video) |
-| `scripts/x-quote.ts` | Quote tweet with comment |
-| `scripts/x-article.ts` | Long-form article publishing (Markdown) |
-| `scripts/md-to-html.ts` | Markdown → HTML conversion |
-| `scripts/copy-to-clipboard.ts` | Copy content to clipboard |
-| `scripts/paste-from-clipboard.ts` | Send real paste keystroke |
-| `scripts/check-paste-permissions.ts` | Verify environment & permissions |
+| `scripts/x-browser.ts` | 常规帖子（文本 + 图片）|
+| `scripts/x-video.ts` | 视频帖子（文本 + 视频）|
+| `scripts/x-quote.ts` | 带评论的引用推文 |
+| `scripts/x-article.ts` | 长篇文章发布（Markdown）|
+| `scripts/md-to-html.ts` | Markdown → HTML 转换 |
+| `scripts/copy-to-clipboard.ts` | 内容复制到剪贴板 |
+| `scripts/paste-from-clipboard.ts` | 发送真实粘贴按键 |
+| `scripts/check-paste-permissions.ts` | 验证环境与权限 |
 
-## Preferences (EXTEND.md)
+## 偏好设置（EXTEND.md）
 
-Check EXTEND.md existence (priority order):
+检查 EXTEND.md 是否存在（优先级顺序）：
 
 ```bash
 # macOS, Linux, WSL, Git Bash
@@ -57,167 +57,167 @@ if (Test-Path "$HOME/.baoyu-skills/baoyu-post-to-x/EXTEND.md") { "user" }
 ```
 
 ┌──────────────────────────────────────────────────┬───────────────────┐
-│                       Path                       │     Location      │
+│                       路径                        │       位置        │
 ├──────────────────────────────────────────────────┼───────────────────┤
-│ .baoyu-skills/baoyu-post-to-x/EXTEND.md          │ Project directory │
+│ .baoyu-skills/baoyu-post-to-x/EXTEND.md          │ 项目目录         │
 ├──────────────────────────────────────────────────┼───────────────────┤
-│ $HOME/.baoyu-skills/baoyu-post-to-x/EXTEND.md    │ User home         │
+│ $HOME/.baoyu-skills/baoyu-post-to-x/EXTEND.md    │ 用户主目录        │
 └──────────────────────────────────────────────────┴───────────────────┘
 
 ┌───────────┬───────────────────────────────────────────────────────────────────────────┐
-│  Result   │                                  Action                                   │
+│   结果    │                                  操作                                    │
 ├───────────┼───────────────────────────────────────────────────────────────────────────┤
-│ Found     │ Read, parse, apply settings                                               │
+│ 找到     │ 读取、解析、应用设置                                                       │
 ├───────────┼───────────────────────────────────────────────────────────────────────────┤
-│ Not found │ Use defaults                                                              │
+│ 未找到   │ 使用默认值                                                                │
 └───────────┴───────────────────────────────────────────────────────────────────────────┘
 
-**EXTEND.md Supports**: Default Chrome profile
+**EXTEND.md 支持**：默认 Chrome 配置文件
 
-## Prerequisites
+## 前置要求
 
-- Google Chrome or Chromium
-- `bun` runtime
-- First run: log in to X manually (session saved)
+- Google Chrome 或 Chromium
+- `bun` 运行时
+- 首次运行：手动登录 X（会话保存）
 
-## Pre-flight Check (Optional)
+## 飞行前检查（可选）
 
-Before first use, suggest running the environment check. User can skip if they prefer.
+首次使用前，建议运行环境检查。如用户偏好，可跳过。
 
 ```bash
 ${BUN_X} {baseDir}/scripts/check-paste-permissions.ts
 ```
 
-Checks: Chrome, profile isolation, Bun, Accessibility, clipboard, paste keystroke, Chrome conflicts.
+检查项：Chrome、配置文件隔离、Bun、辅助功能、剪贴板、粘贴按键、Chrome 冲突。
 
-**If any check fails**, provide fix guidance per item:
+**如有任何检查失败**，按项目提供修复指导：
 
-| Check | Fix |
+| 检查项 | 修复 |
 |-------|-----|
-| Chrome | Install Chrome or set `X_BROWSER_CHROME_PATH` env var |
-| Profile dir | Shared profile at `baoyu-skills/chrome-profile` (see CLAUDE.md Chrome Profile section) |
-| Bun runtime | `brew install oven-sh/bun/bun` (macOS) or `npm install -g bun` |
-| Accessibility (macOS) | System Settings → Privacy & Security → Accessibility → enable terminal app |
-| Clipboard copy | Ensure Swift/AppKit available (macOS Xcode CLI tools: `xcode-select --install`) |
-| Paste keystroke (macOS) | Same as Accessibility fix above |
-| Paste keystroke (Linux) | Install `xdotool` (X11) or `ydotool` (Wayland) |
+| Chrome | 安装 Chrome 或设置 `X_BROWSER_CHROME_PATH` 环境变量 |
+| 配置文件目录 | 共享配置文件位于 `baoyu-skills/chrome-profile`（参见 CLAUDE.md Chrome 配置文件章节）|
+| Bun 运行时 | `brew install oven-sh/bun/bun`（macOS）或 `npm install -g bun` |
+| 辅助功能（macOS）| 系统设置 → 隐私与安全 → 辅助功能 → 启用终端应用 |
+| 剪贴板复制 | 确保 Swift/AppKit 可用（macOS Xcode CLI 工具：`xcode-select --install`）|
+| 粘贴按键（macOS）| 同辅助功能修复 |
+| 粘贴按键（Linux）| 安装 `xdotool`（X11）或 `ydotool`（Wayland）|
 
-## References
+## 参考
 
-- **Regular Posts**: See `references/regular-posts.md` for manual workflow, troubleshooting, and technical details
-- **X Articles**: See `references/articles.md` for long-form article publishing guide
+- **常规帖子**：参见 `references/regular-posts.md` 了解手动工作流、故障排除和技术细节
+- **X 文章**：参见 `references/articles.md` 了解长篇文章发布指南
 
 ---
 
-## Post Type Selection
+## 帖子类型选择
 
-Unless the user explicitly specifies the post type:
-- **Plain text** + within 10,000 characters → **Regular Post** (Premium members support up to 10,000 characters, non-Premium: 280)
-- **Markdown file** (.md) → **X Article**
+除非用户明确指定帖子类型：
+- **纯文本** + 少于 10,000 字符 → **常规帖子**（Premium 会员支持最多 10,000 字符，非 Premium：280）
+- **Markdown 文件**（.md）→ **X 文章**
 
-## Regular Posts
+## 常规帖子
 
 ```bash
 ${BUN_X} {baseDir}/scripts/x-browser.ts "Hello!" --image ./photo.png
 ```
 
-**Parameters**:
-| Parameter | Description |
+**参数**：
+| 参数 | 描述 |
 |-----------|-------------|
-| `<text>` | Post content (positional) |
-| `--image <path>` | Image file (repeatable, max 4) |
-| `--profile <dir>` | Custom Chrome profile |
+| `<text>` | 帖子内容（位置参数）|
+| `--image <path>` | 图片文件（可重复，最多 4 张）|
+| `--profile <dir>` | 自定义 Chrome 配置文件 |
 
-**Note**: Script opens browser with content filled in. User reviews and publishes manually.
+**注**：脚本打开浏览器并填入内容。用户审核并手动发布。
 
 ---
 
-## Video Posts
+## 视频帖子
 
-Text + video file.
+文本 + 视频文件。
 
 ```bash
 ${BUN_X} {baseDir}/scripts/x-video.ts "Check this out!" --video ./clip.mp4
 ```
 
-**Parameters**:
-| Parameter | Description |
+**参数**：
+| 参数 | 描述 |
 |-----------|-------------|
-| `<text>` | Post content (positional) |
-| `--video <path>` | Video file (MP4, MOV, WebM) |
-| `--profile <dir>` | Custom Chrome profile |
+| `<text>` | 帖子内容（位置参数）|
+| `--video <path>` | 视频文件（MP4、MOV、WebM）|
+| `--profile <dir>` | 自定义 Chrome 配置文件 |
 
-**Note**: Script opens browser with content filled in. User reviews and publishes manually.
+**注**：脚本打开浏览器并填入内容。用户审核并手动发布。
 
-**Limits**: Regular 140s max, Premium 60min. Processing: 30-60s.
+**限制**：常规 140 秒最长，Premium 60 分钟。处理时间：30-60 秒。
 
 ---
 
-## Quote Tweets
+## 引用推文
 
-Quote an existing tweet with comment.
+带评论引用现有推文。
 
 ```bash
 ${BUN_X} {baseDir}/scripts/x-quote.ts https://x.com/user/status/123 "Great insight!"
 ```
 
-**Parameters**:
-| Parameter | Description |
+**参数**：
+| 参数 | 描述 |
 |-----------|-------------|
-| `<tweet-url>` | URL to quote (positional) |
-| `<comment>` | Comment text (positional, optional) |
-| `--profile <dir>` | Custom Chrome profile |
+| `<tweet-url>` | 要引用的 URL（位置参数）|
+| `<comment>` | 评论文本（位置参数，可选）|
+| `--profile <dir>` | 自定义 Chrome 配置文件 |
 
-**Note**: Script opens browser with content filled in. User reviews and publishes manually.
+**注**：脚本打开浏览器并填入内容。用户审核并手动发布。
 
 ---
 
-## X Articles
+## X 文章
 
-Long-form Markdown articles (requires X Premium).
+长篇 Markdown 文章（需要 X Premium）。
 
 ```bash
 ${BUN_X} {baseDir}/scripts/x-article.ts article.md
 ${BUN_X} {baseDir}/scripts/x-article.ts article.md --cover ./cover.jpg
 ```
 
-**Parameters**:
-| Parameter | Description |
+**参数**：
+| 参数 | 描述 |
 |-----------|-------------|
-| `<markdown>` | Markdown file (positional) |
-| `--cover <path>` | Cover image |
-| `--title <text>` | Override title |
+| `<markdown>` | Markdown 文件（位置参数）|
+| `--cover <path>` | 封面图片 |
+| `--title <text>` | 覆盖标题 |
 
-**Frontmatter**: `title`, `cover_image` supported in YAML front matter.
+**前置元数据**：支持 YAML 前置元数据中的 `title`、`cover_image`。
 
-**Note**: Script opens browser with article filled in. User reviews and publishes manually.
+**注**：脚本打开浏览器并填入文章内容。用户审核并手动发布。
 
-**Post-Composition Check**: The script automatically verifies after all images are inserted:
-- Remaining `XIMGPH_` placeholders in editor content
-- Expected vs actual image count
+**发布后检查**：脚本在所有图片插入后自动验证：
+- 编辑器内容中剩余的 `XIMGPH_` 占位符
+- 预期 vs 实际图片数量
 
-If the check fails (warnings in output), alert the user with the specific issues before they publish.
+如检查失败（输出中有警告），在用户发布前提醒具体问题。
 
 ---
 
-## Troubleshooting
+## 故障排除
 
-### Chrome debug port not ready
+### Chrome 调试端口未就绪
 
-If a script fails with `Chrome debug port not ready` or `Unable to connect`, kill existing Chrome CDP instances first, then retry:
+如脚本失败并显示 `Chrome debug port not ready` 或 `Unable to connect`，首先终止现有 Chrome CDP 实例，然后重试：
 
 ```bash
 pkill -f "Chrome.*remote-debugging-port" 2>/dev/null; pkill -f "Chromium.*remote-debugging-port" 2>/dev/null; sleep 2
 ```
 
-**Important**: This should be done automatically — when encountering this error, kill Chrome CDP instances and retry the command without asking the user.
+**重要**：这应自动完成——遇到此错误时，终止 Chrome CDP 实例并重试命令，无需询问用户。
 
-## Notes
+## 注意事项
 
-- First run: manual login required (session persists)
-- All scripts only fill content into the browser, user must review and publish manually
-- Cross-platform: macOS, Linux, Windows
+- 首次运行：需要手动登录（会话保持）
+- 所有脚本仅将内容填入浏览器，用户必须审核并手动发布
+- 跨平台：macOS、Linux、Windows
 
-## Extension Support
+## 扩展支持
 
-Custom configurations via EXTEND.md. See **Preferences** section for paths and supported options.
+通过 EXTEND.md 自定义配置。见**偏好设置**章节了解路径和支持的选项。

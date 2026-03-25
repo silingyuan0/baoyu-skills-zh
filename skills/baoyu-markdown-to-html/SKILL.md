@@ -1,6 +1,6 @@
 ---
 name: baoyu-markdown-to-html
-description: Converts Markdown to styled HTML with WeChat-compatible themes. Supports code highlighting, math, PlantUML, footnotes, alerts, infographics, and optional bottom citations for external links. Use when user asks for "markdown to html", "convert md to html", "md转html", "微信外链转底部引用", or needs styled HTML output from markdown.
+description: 将 Markdown 转换为带样式的 HTML，支持微信公众号兼容主题。支持代码高亮、数学公式、PlantUML、脚注、提示框、信息图以及可选的外链底部引用。当用户要求"markdown to html"、"md 转 html"、"微信外链转底部引用"或需要将 Markdown 转换为带样式的 HTML 时使用。
 version: 1.56.1
 metadata:
   openclaw:
@@ -11,21 +11,21 @@ metadata:
         - npx
 ---
 
-# Markdown to HTML Converter
+# Markdown 转 HTML 转换器
 
-Converts Markdown files to beautifully styled HTML with inline CSS, optimized for WeChat Official Account and other platforms.
+将 Markdown 文件转换为带内联 CSS 样式的精美 HTML，针对微信公众号等平台优化。
 
-## Script Directory
+## 脚本目录
 
-**Agent Execution**: Determine this SKILL.md directory as `{baseDir}`. Resolve `${BUN_X}` runtime: if `bun` installed → `bun`; if `npx` available → `npx -y bun`; else suggest installing bun. Replace `{baseDir}` and `${BUN_X}` with actual values.
+**代理执行**：将本 SKILL.md 所在目录确定为 `{baseDir}`。解析 `${BUN_X}` 运行时：如果已安装 `bun` 则使用 `bun`；如果可用 `npx` 则使用 `npx -y bun`；否则提示安装 bun。将 `{baseDir}` 和 `${BUN_X}` 替换为实际值。
 
-| Script | Purpose |
+| 脚本 | 用途 |
 |--------|---------|
-| `scripts/main.ts` | Main entry point |
+| `scripts/main.ts` | 主入口 |
 
-## Preferences (EXTEND.md)
+## 偏好设置（EXTEND.md）
 
-Check EXTEND.md existence (priority order):
+检查 EXTEND.md 是否存在（按以下优先级顺序）：
 
 ```bash
 # macOS, Linux, WSL, Git Bash
@@ -58,43 +58,43 @@ if (Test-Path "$HOME/.baoyu-skills/baoyu-markdown-to-html/EXTEND.md") { "user" }
 │ Not found │ Use defaults                                                              │
 └───────────┴───────────────────────────────────────────────────────────────────────────┘
 
-**EXTEND.md Supports**: Default theme | Custom CSS variables | Code block style
+**EXTEND.md 支持**：默认主题 | 自定义 CSS 变量 | 代码块样式
 
-## Workflow
+## 工作流
 
-### Step 0: Pre-check (Chinese Content)
+### 步骤 0：预检查（中文内容）
 
-**Condition**: Only execute if input file contains Chinese text.
+**条件**：仅在输入文件包含中文时执行。
 
-**Detection**:
-1. Read input markdown file
-2. Check if content contains CJK characters (Chinese/Japanese/Korean)
-3. If no CJK content → skip to Step 1
+**检测**：
+1. 读取输入 Markdown 文件
+2. 检查内容是否包含中日韩文字
+3. 如果无中日韩内容 → 跳至步骤 1
 
-**Format Suggestion**:
+**格式建议**：
 
-If CJK content detected AND `baoyu-format-markdown` skill is available:
+如果检测到中日韩内容且 `baoyu-format-markdown` 技能可用：
 
-Use `AskUserQuestion` to ask whether to format first. Formatting can fix:
-- Bold markers with punctuation inside causing `**` parse failures
-- CJK/English spacing issues
+使用 `AskUserQuestion` 询问是否先格式化。格式化可以修复：
+- 标点符号在粗体标记内导致的 `**` 解析失败
+- 中日韩/英文间距问题
 
-**If user agrees**: Invoke `baoyu-format-markdown` skill to format the file, then use formatted file as input.
+**如果用户同意**：调用 `baoyu-format-markdown` 技能格式化文件，然后使用格式化后的文件作为输入。
 
-**If user declines**: Continue with original file.
+**如果用户拒绝**：继续使用原始文件。
 
-### Step 1: Determine Theme
+### 步骤 1：确定主题
 
-**Theme resolution order** (first match wins):
-1. User explicitly specified theme (CLI `--theme` or conversation)
-2. EXTEND.md `default_theme` (this skill's own EXTEND.md, checked in Step 0)
-3. `baoyu-post-to-wechat` EXTEND.md `default_theme` (cross-skill fallback)
-4. If none found → use AskUserQuestion to confirm
+**主题解析顺序**（首个匹配项生效）：
+1. 用户明确指定的主题（CLI `--theme` 或对话中指定）
+2. EXTEND.md 中的 `default_theme`（本技能自身的 EXTEND.md，在步骤 0 中检查）
+3. `baoyu-post-to-wechat` EXTEND.md 中的 `default_theme`（跨技能回退）
+4. 如果均未找到 → 使用 `AskUserQuestion` 确认
 
-**Cross-skill EXTEND.md check** (only if this skill's EXTEND.md has no `default_theme`):
+**跨技能 EXTEND.md 检查**（仅在本技能的 EXTEND.md 无 `default_theme` 时执行）：
 
 ```bash
-# Check baoyu-post-to-wechat EXTEND.md for default_theme
+# 检查 baoyu-post-to-wechat EXTEND.md 中的 default_theme
 test -f "$HOME/.baoyu-skills/baoyu-post-to-wechat/EXTEND.md" && grep -o 'default_theme:.*' "$HOME/.baoyu-skills/baoyu-post-to-wechat/EXTEND.md"
 ```
 
@@ -103,107 +103,107 @@ test -f "$HOME/.baoyu-skills/baoyu-post-to-wechat/EXTEND.md" && grep -o 'default
 if (Test-Path "$HOME/.baoyu-skills/baoyu-post-to-wechat/EXTEND.md") { Select-String -Pattern 'default_theme:.*' -Path "$HOME/.baoyu-skills/baoyu-post-to-wechat/EXTEND.md" | ForEach-Object { $_.Matches.Value } }
 ```
 
-**If theme is resolved from EXTEND.md**: Use it directly, do NOT ask the user.
+**如果主题从 EXTEND.md 解析到**：直接使用，不询问用户。
 
-**If no default found**: Use AskUserQuestion to confirm:
+**如果未找到默认主题**：使用 `AskUserQuestion` 确认：
 
-| Theme | Description |
+| 主题 | 说明 |
 |-------|-------------|
-| `default` (Recommended) | Classic - traditional layout, centered title with bottom border, H2 with white text on colored background |
-| `grace` | Elegant - text shadow, rounded cards, refined blockquotes |
-| `simple` | Minimal - modern minimalist, asymmetric rounded corners, clean whitespace |
-| `modern` | Modern - large radius, pill-shaped titles, relaxed line height (pair with `--color red` for traditional red-gold style) |
+| `default`（推荐） | 经典 - 传统布局，居中标题带底边框，H2 使用白字彩色背景 |
+| `grace` | 优雅 - 文字阴影，圆角卡片，精致引用 |
+| `simple` | 极简 - 现代简约，非对称圆角，干净留白 |
+| `modern` | 现代 - 大圆角，药丸形标题，宽松行高（搭配 `--color red` 呈现传统红金风格） |
 
-### Step 1.5: Determine Citation Mode
+### 步骤 1.5：确定引用模式
 
-**Default**: Off. Do not ask by default.
+**默认**：关闭。默认不询问。
 
-**Enable only if the user explicitly asks** for "微信外链转底部引用", "底部引用", "文末引用", or passes `--cite`.
+**仅在用户明确要求** "微信外链转底部引用"、"底部引用"、"文末引用"，或传入 `--cite` 时启用。
 
-**Behavior when enabled**:
-- Ordinary external links are rendered with numbered superscripts and collected under a final `引用链接` section.
-- `https://mp.weixin.qq.com/...` links stay as direct links and are not moved to the bottom.
-- Bare links where link text equals URL stay inline.
+**启用时的行为**：
+- 普通外链以编号上标渲染，并收集在末尾的 `引用链接` 段落下。
+- `https://mp.weixin.qq.com/...` 链接保持为直接链接，不移至底部。
+- 链接文本等于 URL 的裸链接保持内联。
 
-### Step 2: Convert
+### 步骤 2：转换
 
 ```bash
 ${BUN_X} {baseDir}/scripts/main.ts <markdown_file> --theme <theme> [--cite]
 ```
 
-### Step 3: Report Result
+### 步骤 3：报告结果
 
-Display the output path from JSON result. If backup was created, mention it.
+从 JSON 结果中显示输出路径。如果创建了备份则提及。
 
-## Usage
+## 用法
 
 ```bash
 ${BUN_X} {baseDir}/scripts/main.ts <markdown_file> [options]
 ```
 
-**Options:**
+**选项：**
 
-| Option | Description | Default |
+| 选项 | 说明 | 默认值 |
 |--------|-------------|---------|
-| `--theme <name>` | Theme name (default, grace, simple, modern) | default |
-| `--color <name\|hex>` | Primary color: preset name or hex value | theme default |
-| `--font-family <name>` | Font: sans, serif, serif-cjk, mono, or CSS value | theme default |
-| `--font-size <N>` | Font size: 14px, 15px, 16px, 17px, 18px | 16px |
-| `--title <title>` | Override title from frontmatter | |
-| `--cite` | Convert external links to bottom citations, append `引用链接` section | false (off) |
-| `--keep-title` | Keep the first heading in content | false (removed) |
-| `--help` | Show help | |
+| `--theme <name>` | 主题名称（default、grace、simple、modern） | default |
+| `--color <name\|hex>` | 主色：预设名称或十六进制值 | 主题默认 |
+| `--font-family <name>` | 字体：sans、serif、serif-cjk、mono 或 CSS 值 | 主题默认 |
+| `--font-size <N>` | 字号：14px、15px、16px、17px、18px | 16px |
+| `--title <title>` | 覆盖前置元数据中的标题 | |
+| `--cite` | 将外链转为底部引用，追加 `引用链接` 段落 | false（关闭） |
+| `--keep-title` | 保留内容中的第一个标题 | false（移除） |
+| `--help` | 显示帮助 | |
 
-**Color Presets:**
+**颜色预设：**
 
-| Name | Hex | Label |
+| 名称 | 十六进制 | 标签 |
 |------|-----|-------|
-| blue | #0F4C81 | Classic Blue |
-| green | #009874 | Emerald Green |
-| vermilion | #FA5151 | Vibrant Vermilion |
-| yellow | #FECE00 | Lemon Yellow |
-| purple | #92617E | Lavender Purple |
-| sky | #55C9EA | Sky Blue |
-| rose | #B76E79 | Rose Gold |
-| olive | #556B2F | Olive Green |
-| black | #333333 | Graphite Black |
-| gray | #A9A9A9 | Smoke Gray |
-| pink | #FFB7C5 | Sakura Pink |
-| red | #A93226 | China Red |
-| orange | #D97757 | Warm Orange (modern default) |
+| blue | #0F4C81 | 经典蓝 |
+| green | #009874 | 翡翠绿 |
+| vermilion | #FA5151 | 朱红 |
+| yellow | #FECE00 | 柠檬黄 |
+| purple | #92617E | 薰衣草紫 |
+| sky | #55C9EA | 天空蓝 |
+| rose | #B76E79 | 玫瑰金 |
+| olive | #556B2F | 橄榄绿 |
+| black | #333333 | 石墨黑 |
+| gray | #A9A9A9 | 烟灰色 |
+| pink | #FFB7C5 | 樱花粉 |
+| red | #A93226 | 中国红 |
+| orange | #D97757 | 暖橙（modern 默认） |
 
-**Examples:**
+**示例：**
 
 ```bash
-# Basic conversion (uses default theme, removes first heading)
+# 基本转换（使用默认主题，移除第一个标题）
 ${BUN_X} {baseDir}/scripts/main.ts article.md
 
-# With specific theme
+# 指定主题
 ${BUN_X} {baseDir}/scripts/main.ts article.md --theme grace
 
-# Theme with custom color
+# 主题搭配自定义颜色
 ${BUN_X} {baseDir}/scripts/main.ts article.md --theme modern --color red
 
-# Enable bottom citations for ordinary external links
+# 启用普通外链底部引用
 ${BUN_X} {baseDir}/scripts/main.ts article.md --cite
 
-# Keep the first heading in content
+# 保留内容中的第一个标题
 ${BUN_X} {baseDir}/scripts/main.ts article.md --keep-title
 
-# Override title
+# 覆盖标题
 ${BUN_X} {baseDir}/scripts/main.ts article.md --title "My Article"
 ```
 
-## Output
+## 输出
 
-**File location**: Same directory as input markdown file.
-- Input: `/path/to/article.md`
-- Output: `/path/to/article.html`
+**文件位置**：与输入 Markdown 文件相同目录。
+- 输入：`/path/to/article.md`
+- 输出：`/path/to/article.html`
 
-**Conflict handling**: If HTML file already exists, it will be backed up first:
-- Backup: `/path/to/article.html.bak-YYYYMMDDHHMMSS`
+**冲突处理**：如果 HTML 文件已存在，将先进行备份：
+- 备份：`/path/to/article.html.bak-YYYYMMDDHHMMSS`
 
-**JSON output to stdout:**
+**JSON 输出到 stdout：**
 
 ```json
 {
@@ -222,37 +222,37 @@ ${BUN_X} {baseDir}/scripts/main.ts article.md --title "My Article"
 }
 ```
 
-## Themes
+## 主题
 
-| Theme | Description |
+| 主题 | 说明 |
 |-------|-------------|
-| `default` | Classic - traditional layout, centered title with bottom border, H2 with white text on colored background |
-| `grace` | Elegant - text shadow, rounded cards, refined blockquotes (by @brzhang) |
-| `simple` | Minimal - modern minimalist, asymmetric rounded corners, clean whitespace (by @okooo5km) |
-| `modern` | Modern - large radius, pill-shaped titles, relaxed line height (pair with `--color red` for traditional red-gold style) |
+| `default` | 经典 - 传统布局，居中标题带底边框，H2 使用白字彩色背景 |
+| `grace` | 优雅 - 文字阴影，圆角卡片，精致引用（by @brzhang） |
+| `simple` | 极简 - 现代简约，非对称圆角，干净留白（by @okooo5km） |
+| `modern` | 现代 - 大圆角，药丸形标题，宽松行高（搭配 `--color red` 呈现传统红金风格） |
 
-## Supported Markdown Features
+## 支持的 Markdown 特性
 
-| Feature | Syntax |
+| 特性 | 语法 |
 |---------|--------|
-| Headings | `# H1` to `###### H6` |
-| Bold/Italic | `**bold**`, `*italic*` |
-| Code blocks | ` ```lang ` with syntax highlighting |
-| Inline code | `` `code` `` |
-| Tables | GitHub-flavored markdown tables |
-| Images | `![alt](src)` |
-| Links | `[text](url)`; add `--cite` to move ordinary external links into bottom references |
-| Blockquotes | `> quote` |
-| Lists | `-` unordered, `1.` ordered |
-| Alerts | `> [!NOTE]`, `> [!WARNING]`, etc. |
-| Footnotes | `[^1]` references |
-| Ruby text | `{base|annotation}` |
-| Mermaid | ` ```mermaid ` diagrams |
-| PlantUML | ` ```plantuml ` diagrams |
+| 标题 | `# H1` 到 `###### H6` |
+| 粗体/斜体 | `**粗体**`、`*斜体*` |
+| 代码块 | ` ```lang ` 带语法高亮 |
+| 行内代码 | `` `code` `` |
+| 表格 | GitHub 风格 Markdown 表格 |
+| 图片 | `![alt](src)` |
+| 链接 | `[text](url)`；添加 `--cite` 将普通外链移至底部引用 |
+| 引用 | `> 引用` |
+| 列表 | `-` 无序列表，`1.` 有序列表 |
+| 提示框 | `> [!NOTE]`、`> [!WARNING]` 等 |
+| 脚注 | `[^1]` 引用 |
+| 注音 | `{base|annotation}` |
+| Mermaid | ` ```mermaid ` 图表 |
+| PlantUML | ` ```plantuml ` 图表 |
 
-## Frontmatter
+## 前置元数据
 
-Supports YAML frontmatter for metadata:
+支持 YAML 前置元数据：
 
 ```yaml
 ---
@@ -262,8 +262,8 @@ description: Article summary
 ---
 ```
 
-If no title is found, extracts from first H1/H2 heading or uses filename.
+如果未找到标题，从第一个 H1/H2 标题提取，或使用文件名。
 
-## Extension Support
+## 扩展支持
 
-Custom configurations via EXTEND.md. See **Preferences** section for paths and supported options.
+通过 EXTEND.md 自定义配置。路径和支持的选项参见**偏好设置**部分。

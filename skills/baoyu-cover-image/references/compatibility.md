@@ -1,8 +1,8 @@
-# Compatibility Matrices
+# 兼容性矩阵
 
-✓✓ = highly recommended | ✓ = compatible | ✗ = not recommended
+✓✓ = 强烈推荐 | ✓ = 兼容 | ✗ = 不推荐
 
-## Palette × Rendering
+## 调色板 × 渲染方式
 
 | | flat-vector | hand-drawn | painterly | digital | pixel | chalk | screen-print |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -17,7 +17,7 @@
 | retro | ✓✓ | ✓✓ | ✓ | ✓✓ | ✓ | ✗ | ✓✓ |
 | duotone | ✓ | ✗ | ✗ | ✓ | ✗ | ✗ | ✓✓ |
 
-## Type × Rendering
+## 类型 × 渲染方式
 
 | | flat-vector | hand-drawn | painterly | digital | pixel | chalk | screen-print |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -28,7 +28,7 @@
 | scene | ✗ | ✓ | ✓✓ | ✓ | ✓ | ✗ | ✓ |
 | minimal | ✓✓ | ✓ | ✓ | ✓✓ | ✗ | ✗ | ✓✓ |
 
-## Type × Text
+## 类型 × 文本
 
 | | none | title-only | title-subtitle | text-rich |
 |---|:---:|:---:|:---:|:---:|
@@ -39,7 +39,7 @@
 | scene | ✓✓ | ✓ | ✓ | ✗ |
 | minimal | ✓✓ | ✓✓ | ✓ | ✗ |
 
-## Type × Mood
+## 类型 × 氛围
 
 | | subtle | balanced | bold |
 |---|:---:|:---:|:---:|
@@ -50,7 +50,7 @@
 | scene | ✓✓ | ✓✓ | ✓ |
 | minimal | ✓✓ | ✓✓ | ✗ |
 
-## Font × Rendering
+## 字体 × 渲染方式
 
 | | flat-vector | hand-drawn | painterly | digital | pixel | chalk | screen-print |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|

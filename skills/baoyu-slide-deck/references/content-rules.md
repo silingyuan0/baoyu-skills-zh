@@ -1,95 +1,99 @@
-# Content & Style Rules
+# 内容与样式规则
 
-Guidelines for slide deck content quality and style consistency.
+幻灯片内容质量和样式一致性的指南。
 
-## Content Rules
+## 内容规则
 
-### 1. Respect Reader Attention
-- Each slide should communicate ONE main idea
-- Remove redundant information
-- Prioritize clarity over comprehensiveness
+### 1. 尊重读者注意力
+- 每张幻灯片应传达一个主要观点
+- 删除冗余信息
+- 优先考虑清晰度而非全面性
 
-### 2. Data Traceability
-- All statistics must include source attribution
-- Cite sources directly on slides with data
-- Use specific numbers over vague claims
+### 2. 数据可追溯性
+- 所有统计数据必须包含来源归属
+- 直接在有数据的幻灯片上引用来源
+- 使用具体数字而非模糊说法
 
-### 3. Self-Contained Prompts
-- Every detail must be in the image prompt
-- No external references (e.g., "like slide 2")
-- Include all colors, layouts, and content explicitly
+### 3. 自包含提示词
+- 每个细节必须在图片提示词中
+- 无外部引用（如"像幻灯片2"）
+- 明确包含所有颜色、布局和内容
 
-### 4. No Placeholders
-- Every element must be fully specified
-- No "[insert data here]" or "TBD"
-- All text content finalized before generation
+### 4. 无占位符
+- 每个元素必须完全指定
+- 无"[在此插入数据]"或"TBD"
+- 生成前最终确定所有文本内容
 
-## Style Rules
+## 样式规则
 
-### 1. Narrative Headlines
-Headlines tell the story, not label the content.
+### 1. 叙事性标题
 
-| Bad | Good |
+标题讲述故事，而非标签内容。
+
+| 不好 | 好 |
 |-----|------|
-| "Key Statistics" | "Usage doubled in 6 months" |
-| "Our Solution" | "One platform replaces five tools" |
-| "Benefits" | "Teams save 10 hours weekly" |
+| "关键统计数据" | "6个月内使用量翻倍" |
+| "我们的解决方案" | "一个平台替代五个工具" |
+| "收益" | "团队每周节省10小时" |
 
-### 2. Avoid AI Clichés
-Remove these patterns:
-- "Dive into", "explore", "journey"
-- "Let's look at", "let me show you"
-- "Exciting", "amazing", "revolutionary"
-- "In conclusion", "to summarize"
+### 2. 避免人工智能陈词滥调
 
-### 3. Meaningful Back Cover
-Not just "Thank you" or "Questions?"
+移除这些模式：
+- "深入了解"、"探索"、"旅程"
+- "让我们看看"、"让我展示给你"
+- "令人兴奋"、"惊人"、"革命性"
+- "总之"、"总结"
 
-Include one of:
-- Clear call-to-action
-- Memorable key takeaway
-- Thought-provoking closing statement
-- Contact information with purpose
+### 3. 有意义的封底
 
-### 4. Consistent Visual Language
-Throughout the deck:
-- Same icon style
-- Same color usage patterns
-- Same layout grid system
-- Same typography hierarchy
+不仅仅是"谢谢"或"有问题吗？"
 
-## Slide Structure
+包括以下之一：
+- 明确的行动号召
+- 令人难忘的关键收获
+- 发人深省的结尾陈述
+- 带目的的联系方式
 
-| Position | Type | Purpose |
+### 4. 一致的视觉语言
+
+在整个幻灯片中：
+- 相同的图标样式
+- 相同的颜色使用模式
+- 相同的布局网格系统
+- 相同的排版层次
+
+## 幻灯片结构
+
+| 位置 | 类型 | 目的 |
 |----------|------|---------|
-| 1 | Cover | Title, visual hook, topic introduction |
-| 2 to N-1 | Content | Key points, data, explanations |
-| N | Back Cover | Summary, call-to-action, memorable close |
+| 1 | 封面 | 标题、视觉钩子、主题介绍 |
+| 2 到 N-1 | 内容 | 关键点、数据、解释 |
+| N | 封底 | 摘要、行动号召、难忘结尾 |
 
-## Key Specifications
+## 关键规格
 
-| Specification | Value |
+| 规格 | 值 |
 |---------------|-------|
-| Aspect Ratio | 16:9 (landscape) |
-| Slide Count | Dynamic based on content |
-| Required Slides | Cover + Back Cover minimum |
-| Footers | None (no slide numbers, logos) |
-| Language Priority | `--lang` → source language → ask user |
-| Tone | Direct, confident (avoid AI phrases) |
+| 宽高比 | 16:9（横向） |
+| 幻灯片数量 | 根据内容动态 |
+| 必需幻灯片 | 封面 + 封底最低 |
+| 页脚 | 无（无幻灯片编号、徽标） |
+| 语言优先级 | `--lang` → 源语言 → 询问用户 |
+| 语气 | 直接、自信（避免人工智能短语） |
 
-## Style Quick Reference
+## 样式快速参考
 
-| Style | Visual Summary |
+| 样式 | 视觉摘要 |
 |-------|----------------|
-| `sketch-notes` | Hand-drawn, warm off-white, conceptual icons |
-| `blueprint` | Technical schematics, grid texture, blue tones |
-| `bold-editorial` | High contrast, dark backgrounds, magazine impact |
-| `vector-illustration` | Flat vector, black outlines, retro colors |
-| `minimal` | Maximum whitespace, single accent, zen-like |
-| `storytelling` | Full-bleed imagery, cinematic, emotional |
-| `warm` | Soft gradients, rounded shapes, wellness palette |
-| `notion` | Dashboard aesthetic, clean data viz, SaaS-inspired |
-| `corporate` | Navy/gold, structured layouts, business polish |
-| `playful` | Vibrant coral/teal/yellow, dynamic, energetic |
+| `sketch-notes` | 手绘、温暖米白、概念图标 |
+| `blueprint` | 技术原理图、网格纹理、蓝色调 |
+| `bold-editorial` | 高对比度、深色背景、杂志冲击 |
+| `vector-illustration` | 平面矢量、黑色轮廓、复古色彩 |
+| `minimal` | 最大留白、单色强调、禅意 |
+| `storytelling` | 全出血图像、电影感、情感 |
+| `warm` | 柔和渐变、圆润形状、健康色调 |
+| `notion` | 仪表板美学、干净数据可视化、SaaS风格 |
+| `corporate` | 海军蓝/金色、结构化布局、商务精致 |
+| `playful` | 充满活力的珊瑚/青色/黄色、动态、活力 |
 
-Full style specifications: `references/styles/<style>.md`
+完整样式规格：`references/styles/<style>.md`

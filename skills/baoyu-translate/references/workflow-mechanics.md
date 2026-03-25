@@ -1,25 +1,25 @@
-# Workflow Mechanics
+# 工作流机制
 
-Details for source materialization, output directory creation, and conflict resolution.
+源文件准备、输出目录创建和冲突解决的详细说明。
 
-## Materialize Source
+## 准备源文件
 
-| Input Type | Action |
+| 输入类型 | 操作 |
 |------------|--------|
-| File | Use as-is (no copy needed) |
-| Inline text | Save to `translate/{slug}.md` |
-| URL | Fetch content, save to `translate/{slug}.md` |
+| 文件 | 直接使用（无需复制） |
+| 内联文本 | 保存到 `translate/{slug}.md` |
+| URL | 获取内容，保存到 `translate/{slug}.md` |
 
-`{slug}`: 2-4 word kebab-case slug derived from content topic.
+`{slug}`：根据内容主题生成的 2-4 个单词的 kebab-case 短标识。
 
-## Create Output Directory
+## 创建输出目录
 
-Create a subdirectory next to the source file: `{source-dir}/{source-basename}-{target-lang}/`
+在源文件旁边创建子目录：`{source-dir}/{source-basename}-{target-lang}/`
 
-Examples:
+示例：
 - `posts/article.md` → `posts/article-zh/`
 - `translate/ai-future.md` → `translate/ai-future-zh/`
 
-## Conflict Resolution
+## 冲突解决
 
-If the output directory already exists, rename the existing one to `{name}.backup-YYYYMMDD-HHMMSS/` before creating the new one. Never overwrite existing results.
+如果输出目录已存在，将现有目录重命名为 `{name}.backup-YYYYMMDD-HHMMSS/`，然后创建新目录。绝不覆盖已有结果。

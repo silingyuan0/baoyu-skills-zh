@@ -1,6 +1,6 @@
 ---
 name: baoyu-compress-image
-description: Compresses images to WebP (default) or PNG with automatic tool selection. Use when user asks to "compress image", "optimize image", "convert to webp", or reduce image file size.
+description: 将图片压缩为 WebP（默认）或 PNG 格式，自动选择最佳压缩工具。当用户要求"压缩图片"、"优化图片"、"转换为 webp"或减小图片文件大小时使用。
 version: 1.56.1
 metadata:
   openclaw:
@@ -11,21 +11,21 @@ metadata:
         - npx
 ---
 
-# Image Compressor
+# 图片压缩工具
 
-Compresses images using best available tool (sips → cwebp → ImageMagick → Sharp).
+使用最佳可用工具（sips → cwebp → ImageMagick → Sharp）压缩图片。
 
-## Script Directory
+## 脚本目录
 
-Scripts in `scripts/` subdirectory. `{baseDir}` = this SKILL.md's directory path. Resolve `${BUN_X}` runtime: if `bun` installed → `bun`; if `npx` available → `npx -y bun`; else suggest installing bun. Replace `{baseDir}` and `${BUN_X}` with actual values.
+脚本位于 `scripts/` 子目录。`{baseDir}` = 本 SKILL.md 所在目录路径。解析 `${BUN_X}` 运行时：如果已安装 `bun` 则使用 `bun`；如果可用 `npx` 则使用 `npx -y bun`；否则提示安装 bun。将 `{baseDir}` 和 `${BUN_X}` 替换为实际值。
 
-| Script | Purpose |
+| 脚本 | 用途 |
 |--------|---------|
-| `scripts/main.ts` | Image compression CLI |
+| `scripts/main.ts` | 图片压缩命令行工具 |
 
-## Preferences (EXTEND.md)
+## 偏好设置（EXTEND.md）
 
-Check EXTEND.md existence (priority order):
+检查 EXTEND.md 是否存在（按以下优先级顺序）：
 
 ```bash
 # macOS, Linux, WSL, Git Bash
@@ -58,47 +58,47 @@ if (Test-Path "$HOME/.baoyu-skills/baoyu-compress-image/EXTEND.md") { "user" }
 │ Not found │ Use defaults                                                              │
 └───────────┴───────────────────────────────────────────────────────────────────────────┘
 
-**EXTEND.md Supports**: Default format | Default quality | Keep original preference
+**EXTEND.md 支持**：默认格式 | 默认质量 | 保留原始文件偏好
 
-## Usage
+## 用法
 
 ```bash
 ${BUN_X} {baseDir}/scripts/main.ts <input> [options]
 ```
 
-## Options
+## 选项
 
-| Option | Short | Description | Default |
+| 选项 | 短选项 | 说明 | 默认值 |
 |--------|-------|-------------|---------|
-| `<input>` | | File or directory | Required |
-| `--output` | `-o` | Output path | Same path, new ext |
+| `<input>` | | 文件或目录 | 必填 |
+| `--output` | `-o` | 输出路径 | 同路径，新扩展名 |
 | `--format` | `-f` | webp, png, jpeg | webp |
-| `--quality` | `-q` | Quality 0-100 | 80 |
-| `--keep` | `-k` | Keep original | false |
-| `--recursive` | `-r` | Process subdirs | false |
-| `--json` | | JSON output | false |
+| `--quality` | `-q` | 质量 0-100 | 80 |
+| `--keep` | `-k` | 保留原始文件 | false |
+| `--recursive` | `-r` | 递归处理子目录 | false |
+| `--json` | | JSON 输出 | false |
 
-## Examples
+## 示例
 
 ```bash
-# Single file → WebP (replaces original)
+# 单文件 → WebP（替换原始文件）
 ${BUN_X} {baseDir}/scripts/main.ts image.png
 
-# Keep PNG format
+# 保持 PNG 格式
 ${BUN_X} {baseDir}/scripts/main.ts image.png -f png --keep
 
-# Directory recursive
+# 目录递归
 ${BUN_X} {baseDir}/scripts/main.ts ./images/ -r -q 75
 
-# JSON output
+# JSON 输出
 ${BUN_X} {baseDir}/scripts/main.ts image.png --json
 ```
 
-**Output**:
+**输出**：
 ```
 image.png → image.webp (245KB → 89KB, 64% reduction)
 ```
 
-## Extension Support
+## 扩展支持
 
-Custom configurations via EXTEND.md. See **Preferences** section for paths and supported options.
+通过 EXTEND.md 自定义配置。路径和支持的选项参见**偏好设置**部分。

@@ -1,143 +1,143 @@
-# Storyboard Template
+# 分镜故事板模板
 
-## Storyboard Document Format
+## 分镜文档格式
 
 ```markdown
 ---
-title: "[Comic Title]"
-topic: "[topic description]"
-time_span: "[e.g., 1912-1954]"
-narrative_approach: "[chronological/thematic/character-focused]"
-recommended_style: "[style name]"
-recommended_layout: "[layout name or varies]"
-aspect_ratio: "3:4"    # 3:4 (portrait), 4:3 (landscape), 16:9 (widescreen)
-language: "[zh/en/ja/etc.]"
+title: "[漫画标题]"
+topic: "[主题描述]"
+time_span: "[例如 1912-1954]"
+narrative_approach: "[按时间顺序/主题/角色聚焦]"
+recommended_style: "[风格名称]"
+recommended_layout: "[布局名称或变化]"
+aspect_ratio: "3:4"    # 3:4 (竖版), 4:3 (横版), 16:9 (宽屏)
+language: "[zh/en/ja/等]"
 page_count: [N]
 generated: "YYYY-MM-DD HH:mm"
 ---
 
-# [Comic Title] - Knowledge Comic Storyboard
+# [漫画标题] - 知识漫画分镜故事板
 
-**Character Reference**: characters/characters.png
-
----
-
-## Cover
-
-**Filename**: 00-cover-[slug].png
-**Core Message**: [one-liner]
-
-**Visual Design**:
-- Title typography style
-- Main visual composition
-- Color scheme
-- Subtitle / time span notation
-
-**Visual Prompt**:
-[Detailed image generation prompt]
+**角色参考**：characters/characters.png
 
 ---
 
-## Page 1 / N
+## 封面
 
-**Filename**: 01-page-[slug].png
-**Layout**: [standard/cinematic/dense/splash/mixed]
-**Narrative Layer**: [Main narrative / Narrator layer / Mixed]
-**Core Message**: [What this page conveys]
+**文件名**：00-cover-[slug].png
+**核心信息**：[一句话描述]
 
-### Panel Layout
+**视觉设计**：
+- 标题排版风格
+- 主要视觉构图
+- 配色方案
+- 副标题 / 时间跨度标注
 
-**Panel Count**: X
-**Layout Type**: [grid/irregular/splash]
-
-#### Panel 1 (Size: 1/3 page, Position: Top)
-
-**Scene**: [Time, location]
-**Image Description**:
-- Camera angle: [bird's eye / low angle / eye level / close-up / wide shot]
-- Characters: [pose, expression, action]
-- Environment: [scene details, period markers]
-- Lighting: [atmosphere description]
-- Color tone: [palette reference]
-
-**Text Elements**:
-- Dialogue bubble (oval): "Character line"
-- Narrator box (rectangular): 「Narrator commentary」
-- Caption bar: [Background info text]
-
-#### Panel 2...
-
-**Page Hook**: [Cliffhanger or transition at page end]
-
-**Visual Prompt**:
-[Full page image generation prompt]
+**视觉提示词**：
+[详细的图像生成提示词]
 
 ---
 
-## Page 2 / N
+## 第 1 / N 页
+
+**文件名**：01-page-[slug].png
+**版面布局**：[standard/cinematic/dense/splash/mixed]
+**叙事层**：[主叙事 / 叙述者层 / 混合]
+**核心信息**：[本页传达的内容]
+
+### 面板布局
+
+**面板数量**：X
+**布局类型**：[grid/不规则/splash]
+
+#### 面板 1（尺寸：1/3页，位置：顶部）
+
+**场景**：[时间，地点]
+**图像描述**：
+- 镜头角度：[鸟瞰 / 低角度 / 平视 / 特写 / 远景]
+- 角色：[姿势，表情，动作]
+- 环境：[场景细节，时代标志]
+- 照明：[氛围描述]
+- 色调：[调色板参考]
+
+**文本元素**：
+- 对话气泡（椭圆形）："角色台词"
+- 叙述者框（矩形）：「叙述者评论」
+- 标题栏：[背景信息文本]
+
+#### 面板 2...
+
+**页面钩子**：[页面结尾的悬念或过渡]
+
+**视觉提示词**：
+[完整页面图像生成提示词]
+
+---
+
+## 第 2 / N 页
 ...
 ```
 
-## Cover Design Principles
+## 封面设计原则
 
-- Academic gravitas with visual appeal
-- Title typography reflecting knowledge/science theme
-- Composition hinting at core theme (character silhouette, iconic symbol, concept diagram)
-- Subtitle or time span for epic scope
+- 学术庄重感与视觉吸引力
+- 反映知识/科学主题的标题排版
+- 暗示核心主题的构图（角色剪影、标志性符号、概念图）
+- 用于史诗范围的副标题或时间跨度
 
-## Panel Composition Guidelines
+## 面板构图指南
 
-| Panel Type | Recommended Count | Usage |
+| 面板类型 | 推荐数量 | 用途 |
 |-----------|-------------------|-------|
-| Main narrative | 3-5 per page | Story progression |
-| Concept diagram | 1-2 per page | Visualize abstractions |
-| Narrator panel | 0-1 per page | Commentary, transition |
-| Splash (full/half) | Occasional | Major moments |
+| 主叙事 | 每页 3-5 | 故事推进 |
+| 概念图 | 每页 1-2 | 可视化抽象概念 |
+| 叙述者面板 | 每页 0-1 | 评论、过渡 |
+| Splash（全幅/半幅） | 偶尔 | 重要时刻 |
 
-## Panel Size Reference
+## 面板尺寸参考
 
-- **Full page (Splash)**: Major moments, key breakthroughs
-- **Half page**: Important scenes, turning points
-- **1/3 page**: Standard narrative panels
-- **1/4 or smaller**: Quick progression, sequential action
+- **全页（Splash）**：重要时刻、关键突破
+- **半页**：重要场景、转折点
+- **1/3 页**：标准叙事面板
+- **1/4 或更小**：快速推进、顺序动作
 
-## Concept Visualization Techniques
+## 概念可视化技术
 
-Transform abstract concepts into concrete visuals:
+将抽象概念转化为具体视觉：
 
-| Abstract Concept | Visual Approach |
-|-----------------|-----------------|
-| Neural network | Glowing nodes with connecting lines |
-| Gradient descent | Ball rolling down valley terrain |
-| Data flow | Luminous particles flowing through pipes |
-| Algorithm iteration | Ascending spiral staircase |
-| Breakthrough moment | Shattering barrier, piercing light |
-| Logical proof | Building blocks assembling |
-| Uncertainty | Forking paths, fog, multiple shadows |
+| 抽象概念 | 视觉方法 |
+|-----------------|----------------|
+| 神经网络 | 带连接线的发光节点 |
+| 梯度下降 | 球在山谷地形上滚动 |
+| 数据流 | 发光粒子在管道中流动 |
+| 算法迭代 | 上升螺旋楼梯 |
+| 突破时刻 | 破碎的屏障、穿透的光 |
+| 逻辑证明 | 正在组装的构建块 |
+| 不确定性 | 分叉路径、雾、多个影子 |
 
-## Text Element Design
+## 文本元素设计
 
-| Text Type | Style | Usage |
+| 文本类型 | 风格 | 用途 |
 |-----------|-------|-------|
-| Character dialogue | Oval speech bubble | Main narrative speech |
-| Narrator commentary | Rectangular box | Explanation, commentary |
-| Caption bar | Edge-mounted rectangle | Time, location info |
-| Thought bubble | Cloud shape | Character inner monologue |
-| Term label | Bold / special color | First appearance of technical terms |
+| 角色对话 | 椭圆形对话气泡 | 主要叙事对话 |
+| 叙述者评论 | 矩形框 | 解释、评论 |
+| 标题栏 | 边缘安装的矩形 | 时间、地点信息 |
+| 思考气泡 | 云形状 | 角色内心独白 |
+| 术语标签 | 粗体 / 特殊颜色 | 技术术语首次出现 |
 
-## Prompt Structure for Consistency
+## 用于一致性的提示词结构
 
-Each page prompt should include character reference:
+每个页面提示词应包含角色参考：
 
 ```
-[CHARACTER REFERENCE]
-(Key details from characters.md for characters in this page)
+[角色参考]
+（来自 characters.md 的关键细节，用于本页面中的角色）
 
-[PAGE CONTENT]
-(Specific scene, panel layout, and visual elements)
+[页面内容]
+（特定场景、面板布局和视觉元素）
 
-[CONSISTENCY REMINDER]
-Maintain exact character appearances as defined in character reference.
-- [Character A]: [key identifying features]
-- [Character B]: [key identifying features]
+[一致性提醒]
+保持角色参考中定义的确切角色外观。
+- [角色 A]：[关键识别特征]
+- [角色 B]：[关键识别特征]
 ```

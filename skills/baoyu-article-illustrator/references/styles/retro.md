@@ -1,59 +1,59 @@
 # retro
 
-80s/90s nostalgic aesthetic with vibrant colors and geometric patterns
+80/90 年代怀旧美学，鲜艳色彩与几何图案
 
-## Design Aesthetic
+## 设计美学
 
-Nostalgic retro aesthetic inspired by 80s and 90s design trends. Vibrant neon colors, geometric patterns, and Memphis design influence. Energetic, fun, and unapologetically bold. Perfect for content that embraces nostalgia or playful energy.
+受 80 和 90 年代设计趋势启发的怀旧复古美学。鲜艳的霓虹色彩、几何图案和 Memphis 设计风格。充满活力、趣味十足且大胆不羁。适合拥抱怀旧感或活泼能量的内容。
 
-## Background
+## 背景
 
-- Color: Deep Purple (#2D1B4E) or Dark Teal (#0F4C5C)
-- Texture: Subtle grid patterns or geometric shapes
+- 颜色：深紫（#2D1B4E）或深青（#0F4C5C）
+- 纹理：细微网格图案或几何形状
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
-|------|-------|-----|-------|
-| Background | Deep Purple | #2D1B4E | Primary background |
-| Alt Background | Dark Teal | #0F4C5C | Alternative |
-| Primary | Hot Pink | #FF1493 | Main accent |
-| Secondary | Electric Cyan | #00FFFF | Supporting |
-| Tertiary | Neon Yellow | #FFFF00 | Highlights |
-| Accent 1 | Lime Green | #32CD32 | Energy |
-| Accent 2 | Orange | #FF6B35 | Warmth |
-| Text | White | #FFFFFF | Text elements |
-| Grid | Light Purple | #9D8EC0 | Grid lines |
+| 角色 | 颜色 | 色值 | 用途 |
+|------|------|------|------|
+| 背景 | 深紫 | #2D1B4E | 主背景 |
+| 备选背景 | 深青 | #0F4C5C | 替代背景 |
+| 主色 | 玫红 | #FF1493 | 主要强调 |
+| 次色 | 电光青 | #00FFFF | 辅助 |
+| 第三色 | 霓虹黄 | #FFFF00 | 高亮 |
+| 强调色 1 | 青柠绿 | #32CD32 | 活力 |
+| 强调色 2 | 橙色 | #FF6B35 | 温暖 |
+| 文字 | 白色 | #FFFFFF | 文字元素 |
+| 网格 | 浅紫 | #9D8EC0 | 网格线 |
 
-## Visual Elements
+## 视觉元素
 
-- Geometric patterns (triangles, circles)
-- Grid backgrounds and lines
-- Neon glow effects
-- Memphis design shapes
-- Zigzag and wavy patterns
-- Retro computer graphics
-- Bold outline strokes
-- Gradient sunsets
+- 几何图案（三角形、圆形）
+- 网格背景和线条
+- 霓虹光晕效果
+- Memphis 设计形状
+- 锯齿和波浪图案
+- 复古电脑图形
+- 粗描边
+- 渐变日落
 
-## Style Rules
+## 风格规则
 
-### Do
+### 推荐做法
 
-- Use bold neon colors
-- Create geometric patterns
-- Add retro typography
-- Include Memphis-style shapes
-- Embrace maximalism
+- 使用大胆的霓虹色彩
+- 创建几何图案
+- 添加复古排版
+- 加入 Memphis 风格形状
+- 拥抱极繁主义
 
-### Don't
+### 避免做法
 
-- Use muted or subtle colors
-- Create minimal compositions
-- Add modern flat design
-- Make it look contemporary
-- Use understated elements
+- 使用柔和或低调的色彩
+- 创建极简构图
+- 添加现代扁平设计
+- 使其看起来过于当代
+- 使用含蓄的元素
 
-## Best For
+## 适用场景
 
-Pop culture articles, gaming content, music and entertainment, nostalgia pieces, youth-focused content, creative industry, party and event content
+流行文化文章、游戏内容、音乐与娱乐、怀旧主题、面向年轻群体的内容、创意产业、派对与活动内容

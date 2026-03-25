@@ -1,92 +1,90 @@
-# Image Processing Layer
+# 图像处理层
 
-Visual effects applied to image elements in Xiaohongshu infographics.
+## AI 抠图
 
-## AI Cutout (抠图)
+主体提取样式，用于产品/人物隔离。
 
-Subject extraction styles for product/figure isolation.
-
-| Name | Description | Use Case |
+| 名称 | 描述 | 适用于 |
 |------|-------------|----------|
-| clean | Sharp edges, precise boundaries | Product photography, tech items |
-| soft | Soft transition, feathered edges | Portrait cutout, organic subjects |
-| stylized | Hand-drawn edge treatment | Artistic compositions |
+| clean | 清晰边缘、精确边界 | 产品摄影、科技产品 |
+| soft | 柔和过渡、羽化边缘 | 人像抠图、有机主体 |
+| stylized | 手绘边缘处理 | 艺术构图 |
 
-## Stroke Effects (描边)
+## 描边效果
 
-Border treatments for cutout elements.
+抠图元素的边框处理。
 
-| Name | Description | Use Case |
+| 名称 | 描述 | 适用于 |
 |------|-------------|----------|
-| white-solid | White solid line border | Classic sticker feel, high contrast |
-| colored-solid | Colored solid line border | Playful vibe, brand colors |
-| dashed | Dashed/dotted border | Handmade aesthetic, casual |
-| double | Double-layer stroke | Emphasis effect, premium feel |
-| glow | Soft outer glow | Dreamy, soft aesthetic |
-| shadow | Drop shadow effect | Depth, floating element |
+| white-solid | 白色实线边框 | 经典贴纸感、高对比度 |
+| colored-solid | 彩色实线边框 | 活泼风格、品牌色 |
+| dashed | 虚线/点线边框 | 手工美学、休闲 |
+| double | 双层描边 | 强调效果、高级感 |
+| glow | 柔和外发光 | 梦幻、柔和美学 |
+| shadow | 投影效果 | 深度、悬浮元素 |
 
-**Stroke Width Guidelines**:
-- Thin: 2-4px - Subtle, elegant
-- Medium: 5-8px - Standard visibility
-- Thick: 10-15px - Bold emphasis
+**描边宽度指南**：
+- 细：2-4px - 微妙、优雅
+- 中：5-8px - 标准可见度
+- 粗：10-15px - 大胆强调
 
-## Filters (滤镜)
+## 滤镜
 
-Color grading and mood presets popular on XHS.
+小红书上流行的颜色分级和氛围预设。
 
-| Name | Chinese | Description | Mood |
+| 名称 | 中文 | 描述 | 氛围 |
 |------|---------|-------------|------|
-| clear-glow | 清透感 | Transparent, radiant, luminous | Fresh, youthful |
-| film-grain | 胶片感 | Vintage film aesthetic, grain texture | Nostalgic, artistic |
-| cream-skin | 奶油肌 | Smooth, creamy complexion tones | Soft, flattering |
-| japanese-magazine | 日杂感 | Lifestyle magazine aesthetic | Curated, aspirational |
-| high-saturation | 高饱和 | Vibrant, punchy colors | Energetic, eye-catching |
-| muted-tones | 莫兰迪 | Morandi-style desaturated palette | Sophisticated, calm |
-| warm-tone | 暖色调 | Golden hour warmth | Cozy, inviting |
-| cool-tone | 冷色调 | Blue-shifted coolness | Modern, clean |
+| clear-glow | 清透感 | 透明、发光、透亮 | 新鲜、年轻 |
+| film-grain | 胶片感 | 复古胶片美学、颗粒纹理 | 怀旧、艺术 |
+| cream-skin | 奶油肌 | 光滑、奶油肤色调 | 柔和、显气质 |
+| japanese-magazine | 日杂感 | 生活杂志美学 | 精致、向往 |
+| high-saturation | 高饱和 | 鲜艳、醒目的颜色 | 有活力、吸睛 |
+| muted-tones | 莫兰迪 | 莫兰迪风格低饱和色调 | 精致、平静 |
+| warm-tone | 暖色调 | 黄金时刻温暖感 | 舒适、亲切 |
+| cool-tone | 冷色调 | 蓝色偏移冷调 | 现代、干净 |
 
-## Texture Overlays
+## 纹理叠加
 
-Additional texture effects.
+额外的纹理效果。
 
-| Name | Description | Use Case |
+| 名称 | 描述 | 适用于 |
 |------|-------------|----------|
-| paper | Paper or fabric texture | Handmade feel |
-| noise | Fine grain noise | Analog aesthetic |
-| halftone | Dot pattern | Retro print style |
-| scratch | Light scratch marks | Vintage wear |
+| paper | 纸张或织物纹理 | 手工感 |
+| noise | 细颗粒噪点 | 模拟质感 |
+| halftone | 点图案 | 复古印刷风格 |
+| scratch | 轻微划痕 | 复古磨损 |
 
-## Blending Modes
+## 混合模式
 
-For layered compositions.
+用于分层组合。
 
-| Mode | Effect | Use Case |
+| 模式 | 效果 | 适用于 |
 |------|--------|----------|
-| multiply | Darken, merge | Shadow effects |
-| screen | Lighten, glow | Light effects |
-| overlay | Contrast boost | Vibrant compositions |
-| soft-light | Subtle blending | Natural layering |
+| multiply | 变暗、合并 | 阴影效果 |
+| screen | 变亮、发光 | 光效 |
+| overlay | 对比增强 | 鲜艳组合 |
+| soft-light | 微妙混合 | 自然分层 |
 
-## Effect Combinations
+## 效果组合
 
-Common effect stacks for different styles:
+不同风格常见的效果堆栈：
 
-### Cute Style
-- Filter: clear-glow or cream-skin
-- Stroke: white-solid (medium)
-- Texture: none
+### 可爱风格
+- 滤镜：清透感或奶油肌
+- 描边：白色实线（中）
+- 纹理：无
 
-### Notion Style
-- Filter: none or muted-tones
-- Stroke: white-solid (thin) or none
-- Texture: paper (subtle)
+### Notion 风格
+- 滤镜：无或莫兰迪
+- 描边：白色实线（细）或无
+- 纹理：纸张（微妙）
 
-### Retro Style
-- Filter: film-grain
-- Stroke: double or dashed
-- Texture: halftone, scratch
+### 复古风格
+- 滤镜：胶片感
+- 描边：双线或虚线
+- 纹理：半色调、划痕
 
-### Bold Style
-- Filter: high-saturation
-- Stroke: colored-solid (thick)
-- Texture: none
+### Bold 风格
+- 滤镜：高饱和
+- 描边：彩色实线（粗）
+- 纹理：无

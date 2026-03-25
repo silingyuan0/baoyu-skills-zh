@@ -2,74 +2,74 @@
 
 清线画风 - Uniform lines, flat colors, European comic tradition
 
-## Overview
+## 概述
 
-Classic European comic style originating from Hergé's Tintin. Characterized by clean, uniform outlines and flat color fills without gradients. Creates a timeless, accessible aesthetic suitable for educational and narrative content.
+源于 Hergé 的 Tintin（丁丁历险记）的经典欧洲漫画风格。特征为干净、均匀的轮廓线和没有渐变的平坦色块填充。创造永恒、平易近人的美感，适合教育和叙事内容。
 
-## Line Work
+## 线条工作
 
-- Uniform, clean outlines with consistent weight (2px)
-- No hatching or cross-hatching for shading
-- Sharp, precise edges on all elements
-- Black ink outlines on all figures and objects
-- Shadows indicated through flat color areas, not line techniques
+- 均匀、干净的轮廓线，粗细一致（2px）
+- 无排线或交叉排线进行阴影处理
+- 所有元素边缘清晰精确
+- 所有人物和物体使用黑色墨水轮廓线
+- 阴影通过平坦色块表示，而非线条技巧
 
-## Character Design
+## 人物设计
 
-- Slightly stylized/cartoonish characters with realistic proportions
-- Distinctive, recognizable facial features
-- Expressive faces with clear emotions
-- Period-appropriate clothing with attention to detail
-- Consistent character appearance across panels
-- 6-7 head height proportions
+- 略带风格化/卡通化的人物，比例写实
+- 独特、可辨认的面部特征
+- 表情丰富，情感清晰
+- 符合时代的服装，注重细节
+- 跨面板的人物外观一致
+- 6-7 头身
 
-## Background Treatment
+## 背景处理
 
-- Detailed, realistic backgrounds with architectural accuracy
-- Period-specific props and technology
-- Clear spatial depth and perspective
-- Environmental storytelling through details
-- Contrast between simplified characters and detailed backgrounds
+- 细节丰富、写实背景，建筑精确
+- 符合时代的道具和技术
+- 清晰的空间深度和透视
+- 通过细节进行环境叙事
+- 简化人物与细节背景的对比
 
-## Color Approach
+## 色彩方法
 
-- Flat colors without gradients (true to Ligne Claire tradition)
-- Limited palette per page for cohesion
-- Colors support narrative mood
-- Consistent lighting logic within scenes
+- 平坦色彩，无渐变（符合清线传统）
+- 每页限制调色板以保持统一
+- 色彩支持叙事基调
+- 场景内一致的光照逻辑
 
-## Default Color Palette
+## 默认调色板
 
-| Role | Color | Hex |
+| 角色 | 颜色 | Hex |
 |------|-------|-----|
-| Primary Blue | Clean blue | #3182CE |
-| Primary Red | Classic red | #E53E3E |
-| Primary Yellow | Warm yellow | #ECC94B |
-| Skin | Warm tan | #F7CFAE |
-| Background Light | Light cream | #FFFAF0 |
-| Background Sky | Sky blue | #BEE3F8 |
+| 主蓝色 | 干净蓝 | #3182CE |
+| 主红色 | 经典红 | #E53E3E |
+| 主黄色 | 暖黄 | #ECC94B |
+| 肤色 | 暖棕 | #F7CFAE |
+| 背景亮色 | 浅奶油色 | #FFFAF0 |
+| 背景天空色 | 天蓝色 | #BEE3F8 |
 
-## Quality Markers
+## 质量标记
 
-- ✓ Clean, uniform line weight throughout
-- ✓ Flat colors without gradients
-- ✓ Detailed backgrounds, stylized characters
-- ✓ Clear panel borders and reading flow
-- ✓ Hand-drawn text style
-- ✓ Proper perspective in environments
+- ✓ 整体干净、均匀的线条粗细
+- ✓ 平坦色彩，无渐变
+- ✓ 细节背景、风格化人物
+- ✓ 清晰的面板边框和阅读流程
+- ✓ 手绘文字风格
+- ✓ 环境中正确的透视
 
-## Compatibility
+## 兼容性
 
-| Tone | Fit | Notes |
+| 基调 | 适合度 | 备注 |
 |------|-----|-------|
-| neutral | ✓✓ | Classic combination |
-| warm | ✓✓ | Nostalgic stories |
-| dramatic | ✓ | Works with high contrast |
-| vintage | ✓ | Period pieces |
-| romantic | ✗ | Style mismatch |
-| energetic | ✓ | Lighter stories |
-| action | ✗ | Lacks dynamic lines |
+| neutral | ✓✓ | 经典组合 |
+| warm | ✓✓ | 怀旧故事 |
+| dramatic | ✓ | 高对比度作品 |
+| vintage | ✓ | 时代作品 |
+| romantic | ✗ | 风格不匹配 |
+| energetic | ✓ | 较轻的故事 |
+| action | ✗ | 缺乏动态线条 |
 
-## Best For
+## 适用于
 
-Educational content, balanced narratives, biography comics, historical stories
+教育内容、平衡叙事、传记漫画、历史故事

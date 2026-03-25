@@ -1,182 +1,182 @@
-# Infographic Content Analysis Framework
+# 信息图内容分析框架
 
-Deep analysis framework applying instructional design principles to infographic creation.
+应用教学设计原则进行信息图创建的深度分析框架。
 
-## Purpose
+## 目的
 
-Before creating an infographic, thoroughly analyze the source material to:
-- Understand the content at a deep level
-- Identify clear learning objectives for the viewer
-- Structure information for maximum clarity and retention
-- Match content to optimal layout×style combinations
-- Preserve all source data verbatim
+在创建信息图之前，彻底分析源材料以：
+- 深度理解内容
+- 为观众识别清晰的学习目标
+- 为最大清晰度和 retention 组织信息
+- 将内容匹配到最佳布局×风格组合
+- 保留所有源数据逐字
 
-## Instructional Design Mindset
+## 教学设计思维
 
-Approach content analysis as a **world-class instructional designer**:
+以**世界级教学设计师**的方式处理内容分析：
 
-| Principle | Application |
+| 原则 | 应用 |
 |-----------|-------------|
-| **Deep Understanding** | Read the entire document before analyzing any part |
-| **Learner-Centered** | Focus on what the viewer needs to understand |
-| **Visual Storytelling** | Use visuals to communicate, not just decorate |
-| **Cognitive Load** | Simplify complex ideas without losing accuracy |
-| **Data Integrity** | Never alter, summarize, or paraphrase source facts |
+| **深度理解** | 在分析任何部分之前阅读整个文档 |
+| **以学习者为中心** | 关注观众需要理解什么 |
+| **视觉讲故事** | 使用视觉来传达，而不仅仅是装饰 |
+| **认知负荷** | 简化复杂想法而不损失准确性 |
+| **数据完整性** | 绝不改变、总结或改写源事实 |
 
-## Analysis Dimensions
+## 分析维度
 
-### 1. Content Type Classification
+### 1. 内容类型分类
 
-| Type | Characteristics | Best Layout | Best Style |
+| 类型 | 特征 | 最佳布局 | 最佳风格 |
 |------|-----------------|-------------|------------|
-| **Timeline/History** | Sequential events, dates, progression | linear-progression | craft-handmade, aged-academia |
-| **Process/Tutorial** | Step-by-step instructions, how-to | linear-progression, winding-roadmap | ikea-manual, technical-schematic |
-| **Comparison** | A vs B, pros/cons, before-after | binary-comparison, comparison-matrix | corporate-memphis, bold-graphic |
-| **Hierarchy** | Levels, priorities, pyramids | hierarchical-layers, tree-branching | craft-handmade, corporate-memphis |
-| **Relationships** | Connections, overlaps, influences | venn-diagram, hub-spoke, jigsaw | craft-handmade, subway-map |
-| **Data/Metrics** | Statistics, KPIs, measurements | dashboard, periodic-table | corporate-memphis, technical-schematic |
-| **Cycle/Loop** | Recurring processes, feedback loops | circular-flow | craft-handmade, technical-schematic |
-| **System/Structure** | Components, architecture, anatomy | structural-breakdown, bento-grid | technical-schematic, ikea-manual |
-| **Journey/Narrative** | Stories, user flows, milestones | winding-roadmap, story-mountain | storybook-watercolor, comic-strip |
-| **Overview/Summary** | Multiple topics, feature highlights | bento-grid, periodic-table, dense-modules | chalkboard, bold-graphic |
-| **Product/Buying Guide** | Multi-dimension comparisons, specs, pitfalls | dense-modules | morandi-journal, pop-laboratory, retro-pop-grid |
+| **时间线/历史** | 顺序事件、日期、进程 | linear-progression | craft-handmade, aged-academia |
+| **流程/教程** | 步骤说明、如何做 | linear-progression, winding-roadmap | ikea-manual, technical-schematic |
+| **比较** | A vs B、优缺点、前后 | binary-comparison, comparison-matrix | corporate-memphis, bold-graphic |
+| **层级** | 层级、优先级、金字塔 | hierarchical-layers, tree-branching | craft-handmade, corporate-memphis |
+| **关系** | 连接、重叠、影响 | venn-diagram, hub-spoke, jigsaw | craft-handmade, subway-map |
+| **数据/指标** | 统计、KPI、测量 | dashboard, periodic-table | corporate-memphis, technical-schematic |
+| **循环/环路** | 重复流程、反馈环路 | circular-flow | craft-handmade, technical-schematic |
+| **系统/结构** | 组件、架构、解剖 | structural-breakdown, bento-grid | technical-schematic, ikea-manual |
+| **旅程/叙事** | 故事、用户流程、里程碑 | winding-roadmap, story-mountain | storybook-watercolor, comic-strip |
+| **总览/总结** | 多主题、功能亮点 | bento-grid, periodic-table, dense-modules | chalkboard, bold-graphic |
+| **产品/购买指南** | 多维度比较、规格、陷阱 | dense-modules | morandi-journal, pop-laboratory, retro-pop-grid |
 
-### 2. Learning Objective Identification
+### 2. 学习目标识别
 
-Every infographic should have 1-3 clear learning objectives.
+每个信息图应有1-3个清晰的学习目标。
 
-**Good Learning Objectives**:
-- Specific and measurable
-- Focus on what the viewer will understand, not just see
-- Written from the viewer's perspective
+**良好的学习目标**：
+- 具体且可衡量
+- 关注观众将理解什么，而不仅仅是看到什么
+- 从观众的角度编写
 
-**Format**: "After viewing this infographic, the viewer will understand..."
+**格式**: "观看此信息图后，观众将理解..."
 
-| Content Aspect | Objective Type |
+| 内容方面 | 目标类型 |
 |----------------|----------------|
-| Core concept | "...what [topic] is and why it matters" |
-| Process | "...how to [accomplish something]" |
-| Comparison | "...the key differences between [A] and [B]" |
-| Relationships | "...how [elements] connect to each other" |
-| Data | "...the significance of [key statistics]" |
+| 核心概念 | "...什么是[主题]及其重要性" |
+| 流程 | "...如何[完成某事]" |
+| 比较 | "...A和B之间的关键区别" |
+| 关系 | "...各元素如何相互关联" |
+| 数据 | "...关键统计的重要性" |
 
-### 3. Audience Analysis
+### 3. 受众分析
 
-| Factor | Questions | Impact |
+| 因素 | 问题 | 影响 |
 |--------|-----------|--------|
-| **Knowledge Level** | What do they already know? | Determines complexity depth |
-| **Context** | Why are they viewing this? | Determines emphasis points |
-| **Expectations** | What do they hope to learn? | Determines success criteria |
-| **Visual Preferences** | Professional, playful, technical? | Influences style choice |
+| **知识水平** | 他们已经知道什么？ | 决定复杂度深度 |
+| **背景** | 他们为什么观看这个？ | 决定强调重点 |
+| **期望** | 他们希望学到什么？ | 决定成功标准 |
+| **视觉偏好** | 专业、有趣、技术？ | 影响风格选择 |
 
-### 4. Complexity Assessment
+### 4. 复杂度评估
 
-| Level | Indicators | Layout Recommendation |
+| 级别 | 指标 | 布局推荐 |
 |-------|------------|----------------------|
-| **Simple** (3-5 points) | Few main concepts, clear relationships | sparse layouts, single focus |
-| **Moderate** (6-8 points) | Multiple concepts, some relationships | balanced layouts, clear sections |
-| **Complex** (9+ points) | Many concepts, intricate relationships | dense layouts, multiple sections |
+| **简单**（3-5个点） | 几个主要概念，清晰关系 | 稀疏布局，单一焦点 |
+| **中等**（6-8个点） | 多个概念，有些关系 | 平衡布局，清晰部分 |
+| **复杂**（9+个点） | 许多概念，复杂关系 | 密集布局，多个部分 |
 
-### 5. Visual Opportunity Mapping
+### 5. 视觉机会映射
 
-Identify what can be shown rather than told:
+识别可以展示而非讲述的内容：
 
-| Content Element | Visual Treatment |
+| 内容元素 | 视觉处理 |
 |-----------------|------------------|
-| Numbers/Statistics | Large, highlighted numerals |
-| Comparisons | Side-by-side, split screen |
-| Processes | Arrows, numbered steps, flow |
-| Hierarchies | Pyramids, layers, size differences |
-| Relationships | Lines, connections, overlapping shapes |
-| Categories | Color coding, grouping, sections |
-| Timelines | Horizontal/vertical progression |
-| Quotes | Callout boxes, quotation marks |
+| 数字/统计 | 大号、高亮数字 |
+| 比较 | 并排、分屏 |
+| 流程 | 箭头、编号步骤、流程 |
+| 层级 | 金字塔、层级、大小差异 |
+| 关系 | 线条、连接、重叠形状 |
+| 分类 | 颜色编码、分组、部分 |
+| 时间线 | 水平/垂直进度 |
+| 引用 | 标注框、引号 |
 
-### 6. Data Verbatim Extraction
+### 6. 数据逐字提取
 
-**Critical**: All factual information must be preserved exactly as written in the source.
+**关键**: 所有事实信息必须完全按照书面形式保留。
 
-| Data Type | Handling Rule |
+| 数据类型 | 处理规则 |
 |-----------|---------------|
-| **Statistics** | Copy exactly: "73%" not "about 70%" |
-| **Quotes** | Copy word-for-word with attribution |
-| **Names** | Preserve exact spelling |
-| **Dates** | Keep original format |
-| **Technical Terms** | Do not simplify or substitute |
-| **Lists** | Preserve order and wording |
+| **统计** | 完全复制："73%" 不是 "约70%" |
+| **引用** | 逐字复制并归属 |
+| **名称** | 保留准确拼写 |
+| **日期** | 保持原始格式 |
+| **技术术语** | 不简化或替换 |
+| **列表** | 保留顺序和措辞 |
 
-**Never**:
-- Round numbers
-- Paraphrase quotes
-- Substitute simpler words
-- Add implied information
-- Remove context that affects meaning
+**永远不要**：
+- 四舍五入数字
+- 改写引用
+- 替换更简单的词汇
+- 添加隐含信息
+- 删除影响意义的上下文
 
-## Output Format
+## 输出格式
 
-Save analysis results to `analysis.md`:
+将分析结果保存到 `analysis.md`：
 
 ```yaml
 ---
-title: "[Main topic title]"
-topic: "[educational/technical/business/creative/etc.]"
-data_type: "[timeline/hierarchy/comparison/process/etc.]"
-complexity: "[simple/moderate/complex]"
-point_count: [number of main points]
-source_language: "[detected language]"
-user_language: "[user's language]"
+title: "[主要主题标题]"
+topic: "[教育/技术/商业/创意等]"
+data_type: "[时间线/层级/比较/流程等]"
+complexity: "[简单/中等/复杂]"
+point_count: [主要点数]
+source_language: "[检测到的语言]"
+user_language: "[用户的语言]"
 ---
 
-## Main Topic
-[1-2 sentence summary of what this content is about]
+## 主要主题
+[1-2句话总结此内容是关于什么的]
 
-## Learning Objectives
-After viewing this infographic, the viewer should understand:
-1. [Primary objective]
-2. [Secondary objective]
-3. [Tertiary objective if applicable]
+## 学习目标
+观看此信息图后，观众应理解：
+1. [主要目标]
+2. [次要目标]
+3. [如有第三目标]
 
-## Target Audience
-- **Knowledge Level**: [Beginner/Intermediate/Expert]
-- **Context**: [Why they're viewing this]
-- **Expectations**: [What they hope to learn]
+## 目标受众
+- **知识水平**: [初学者/中级/专家]
+- **背景**: [他们为什么观看这个]
+- **期望**: [他们希望学到什么]
 
-## Content Type Analysis
-- **Data Structure**: [How information relates to itself]
-- **Key Relationships**: [What connects to what]
-- **Visual Opportunities**: [What can be shown rather than told]
+## 内容类型分析
+- **数据结构**: [信息如何自身关联]
+- **关键关系**: [什么连接到什么]
+- **视觉机会**: [什么可以展示而非讲述]
 
-## Key Data Points (Verbatim)
-[All statistics, quotes, and critical facts exactly as they appear in source]
-- "[Exact data point 1]"
-- "[Exact data point 2]"
-- "[Exact quote with attribution]"
+## 关键数据点（逐字）
+[所有统计、引用和关键事实完全按照源中的形式]
+- "[确切数据点1]"
+- "[确切数据点2]"
+- "[带归属的确切引用]"
 
-## Layout × Style Signals
-- Content type: [type] → suggests [layout]
-- Tone: [tone] → suggests [style]
-- Audience: [audience] → suggests [style]
-- Complexity: [level] → suggests [layout density]
+## 布局 × 风格信号
+- 内容类型: [类型] → 建议 [布局]
+- 语气: [语气] → 建议 [风格]
+- 受众: [受众] → 建议 [风格]
+- 复杂度: [级别] → 建议 [布局密度]
 
-## Design Instructions (from user input)
-[Any style, color, layout, or visual preferences extracted from user's steering prompt]
+## 设计说明（来自用户输入）
+[从用户的指导提示词中提取的任何风格、颜色、布局或视觉偏好]
 
-## Recommended Combinations
-1. **[Layout] + [Style]** (Recommended): [Brief rationale]
-2. **[Layout] + [Style]**: [Brief rationale]
-3. **[Layout] + [Style]**: [Brief rationale]
+## 推荐组合
+1. **[布局] + [风格]**（推荐）：[简要理由]
+2. **[布局] + [风格]**：[简要理由]
+3. **[布局] + [风格]**：[简要理由]
 ```
 
-## Analysis Checklist
+## 分析检查清单
 
-Before proceeding to structured content generation:
+在继续结构化内容生成之前：
 
-- [ ] Have I read the entire source document?
-- [ ] Can I summarize the main topic in 1-2 sentences?
-- [ ] Have I identified 1-3 clear learning objectives?
-- [ ] Do I understand the target audience?
-- [ ] Have I classified the content type correctly?
-- [ ] Have I extracted all data points verbatim?
-- [ ] Have I identified visual opportunities?
-- [ ] Have I extracted design instructions from user input?
-- [ ] Have I recommended 3 layout×style combinations?
+- [ ] 我是否阅读了整个源文档？
+- [ ] 我是否可以用1-2句话总结主要主题？
+- [ ] 我是否识别了1-3个清晰的学习目标？
+- [ ] 我是否理解目标受众？
+- [ ] 我是否正确分类了内容类型？
+- [ ] 我是否逐字提取了所有数据点？
+- [ ] 我是否识别了视觉机会？
+- [ ] 我是否从用户输入中提取了设计说明？
+- [ ] 我是否推荐了3个布局×风格组合？

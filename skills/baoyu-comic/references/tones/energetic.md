@@ -1,105 +1,105 @@
 # energetic
 
-活力基调 - Bright, dynamic, exciting
+活力基调 - 明亮、动态、充满兴奋
 
-## Overview
+## 概述
 
-High-energy atmosphere for exciting, discovery-filled content. Bright colors, dynamic compositions, and movement create engaging visuals for younger audiences.
+高能量的氛围，适用于充满兴奋和发现的内容。鲜艳的色彩、动态的构图和运动感为年轻受众创造引人入胜的视觉画面。
 
-## Mood Characteristics
+## 情感特征
 
-- Excitement and wonder
-- Discovery and learning
-- Energy and enthusiasm
-- Movement and action
-- Youthful spirit
+- 兴奋与惊奇
+- 发现与学习
+- 能量与热情
+- 运动与行动
+- 年轻活力
 
-## Color Modifiers
+## 颜色修正
 
-When applied to any art style:
+应用于任何画风时：
 
-| Adjustment | Direction |
-|------------|-----------|
-| Saturation | High (vibrant) |
-| Contrast | Medium-high |
-| Temperature | Variable, punchy |
-| Brightness | Bright, clean |
+| 调整项 | 方向 |
+|--------|------|
+| 饱和度 | 高（鲜艳） |
+| 对比度 | 中高 |
+| 色温 | 变化的、鲜明的 |
+| 亮度 | 明亮、清晰 |
 
-## Color Palette
+## 调色板
 
-Shift toward vibrant tones:
+偏移为鲜艳色调：
 
-| Role | Color | Hex |
-|------|-------|-----|
-| Primary Red | Bright red | #F56565 |
-| Primary Yellow | Sunny yellow | #F6E05E |
-| Primary Blue | Sky blue | #63B3ED |
-| Accent 1 | Magenta | #D53F8C |
-| Accent 2 | Lime green | #68D391 |
-| Background | Clean white | #FFFFFF |
-| Background Alt | Bright pastels | Various |
+| 角色 | 颜色 | 色值 |
+|------|------|------|
+| 主色红 | 明亮红 | #F56565 |
+| 主色黄 | 阳光黄 | #F6E05E |
+| 主色蓝 | 天空蓝 | #63B3ED |
+| 强调色 1 | 品红 | #D53F8C |
+| 强调色 2 | 青柠绿 | #68D391 |
+| 背景 | 纯白 | #FFFFFF |
+| 备选背景 | 明亮柔和色 | 多种 |
 
-## Lighting
+## 光照
 
-- Bright, clear lighting
-- Clean shadows
-- High energy
-- Spotlight effects for emphasis
-- Dynamic light sources
+- 明亮、清晰的光线
+- 干净的阴影
+- 高能量
+- 聚光灯效果用于强调
+- 动态光源
 
-## Dynamic Elements
+## 动态元素
 
-**Energy effects** (add to compositions):
+**能量效果**（添加到构图中）：
 
-| Element | Usage |
-|---------|-------|
-| Speed lines | Motion, excitement |
-| Sparkles | Discoveries |
-| Burst effects | Aha moments |
-| Motion blur | Fast action |
-| Star bursts | Emphasis |
-| Sweat drops | Effort/surprise |
+| 元素 | 用途 |
+|------|------|
+| 速度线 | 运动、兴奋 |
+| 星光 | 发现 |
+| 爆发效果 | 顿悟时刻 |
+| 运动模糊 | 快速动作 |
+| 星芒 | 强调 |
+| 汗珠 | 努力/惊讶 |
 
-## Emotional Range
+## 情感范围
 
-| Emotion | Expression |
-|---------|-----------|
-| Excitement | Wide eyes, big smile |
-| Surprise | Dramatic reaction |
-| Determination | Intense focus |
-| Wonder | Sparkling eyes |
+| 情感 | 表达方式 |
+|------|----------|
+| 兴奋 | 睁大眼睛、灿烂笑容 |
+| 惊讶 | 夸张的反应 |
+| 决心 | 高度专注 |
+| 惊奇 | 闪闪发光的眼睛 |
 
-## Composition
+## 构图
 
-- Dynamic angles
-- Action-oriented layouts
-- Movement emphasis
-- Clean, punchy designs
-- Energy flows
+- 动态角度
+- 动作导向的布局
+- 强调运动感
+- 干净、有力的设计
+- 能量流动线
 
-## Visual Style
+## 视觉风格
 
-- Expressive, animated characters
-- Wide eyes, big reactions
-- Dynamic poses
-- Motion and action focus
-- Simplified backgrounds for energy
+- 表情丰富、动画感强的角色
+- 睁大的眼睛、夸张的反应
+- 动态姿势
+- 以运动和动作为核心
+- 简化背景以突出能量
 
-## Best For
+## 适合场景
 
-- Science explanations
-- "Aha" moments
-- Young audience content
-- Discovery narratives
-- Learning adventures
-- Action tutorials
+- 科学解说
+- 顿悟时刻
+- 年轻受众内容
+- 发现叙事
+- 学习冒险
+- 动作教程
 
-## Combination Notes
+## 搭配建议
 
-Works especially well with:
-- manga: shonen energy
-- chalk: fun education
+特别适合与以下画风搭配：
+- manga：少年系能量
+- chalk：趣味教育
 
-Avoid with:
-- realistic: style mismatch
-- ink-brush: style mismatch
+避免搭配：
+- realistic：风格不匹配
+- ink-brush：风格不匹配

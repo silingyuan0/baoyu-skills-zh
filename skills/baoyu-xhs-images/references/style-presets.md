@@ -1,8 +1,8 @@
-# Style Presets
+# 风格预设
 
-`--preset X` expands to a style + layout combination. Users can override either dimension.
+`--preset X` 展开为风格 + 布局组合。用户可覆盖任一维度。
 
-| --preset | Style | Layout |
+| --preset | 风格 | 布局 |
 |----------|-------|--------|
 | `knowledge-card` | `notion` | `dense` |
 | `checklist` | `notion` | `list` |
@@ -28,9 +28,9 @@
 | `editorial` | `screen-print` | `balanced` |
 | `cinematic` | `screen-print` | `comparison` |
 
-## Override Examples
+## 覆盖示例
 
-- `--preset knowledge-card --style chalkboard` = chalkboard style with dense layout
-- `--preset poster --layout quadrant` = screen-print style with quadrant layout
+- `--preset knowledge-card --style chalkboard` = 带密集布局的粉笔风格
+- `--preset poster --layout quadrant` = 带四象限布局的丝网印刷风格
 
-Explicit `--style`/`--layout` flags always override preset values.
+显式的 `--style`/`--layout` 参数始终覆盖预设值。

@@ -1,41 +1,41 @@
 # jigsaw
 
-Interlocking puzzle pieces showing how parts fit together.
+相互嵌合的拼图块，展示各部分如何组合在一起。
 
-## Structure
+## 结构
 
-- Puzzle pieces that interlock
-- Each piece represents a component
-- Connections show relationships
-- Can be assembled or exploded view
-- Missing piece highlights gaps
+- 相互嵌合的拼图块
+- 每个拼图块代表一个组件
+- 连接展示相互关系
+- 可为组装视图或爆炸拆分视图
+- 缺失的拼图块突出显示缺口
 
-## Best For
+## 最佳适用
 
-- Component relationships
-- Team/skill fit
-- Strategy pieces
-- Integration concepts
-- Completeness assessments
+- 组件之间的关系
+- 团队/技能匹配
+- 战略组成部分
+- 集成概念
+- 完整性评估
 
-## Visual Elements
+## 视觉元素
 
-- Classic puzzle piece shapes
-- Distinct colors per piece
-- Interlocking edges visible
-- Icons or labels per piece
-- Optional missing piece
+- 经典拼图块形状
+- 每个拼图块采用不同颜色
+- 可见的嵌合边缘
+- 每个拼图块配有图标或标签
+- 可选的缺失拼图块
 
-## Text Placement
+## 文本布局
 
-- Title at top
-- Piece labels inside or beside
-- Connection descriptions
-- Missing piece explanation
-- Assembly context
+- 标题置于顶部
+- 拼图块标签位于内部或旁边
+- 连接关系说明
+- 缺失拼图块解释
+- 组装背景说明
 
-## Recommended Pairings
+## 推荐搭配
 
-- `cartoon-hand-drawn`: Friendly integration concepts
-- `paper-cutout`: Tactile puzzle feel
-- `corporate-memphis`: Business strategy pieces
+- `cartoon-hand-drawn`：友好的集成概念
+- `paper-cutout`：触觉拼图质感
+- `corporate-memphis`：商业战略组成部分

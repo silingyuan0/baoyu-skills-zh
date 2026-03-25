@@ -1,6 +1,6 @@
-# Step 3: Prompt Template
+# 步骤 3：提示词模板
 
-Save to `prompts/cover.md`:
+保存到 `prompts/cover.md`：
 
 ```markdown
 ---
@@ -16,12 +16,12 @@ references:
     usage: direct | style | palette
 ---
 
-# Content Context
+# 内容上下文
 Article title: [full original title from source]
 Content summary: [2-3 sentence summary of key points and themes]
 Keywords: [5-8 key terms extracted from content]
 
-# Visual Design
+# 视觉设计
 Cover theme: [2-3 words visual interpretation]
 Type: [confirmed type]
 Palette: [confirmed palette]
@@ -32,27 +32,27 @@ Mood: [confirmed mood]
 Aspect ratio: [confirmed ratio]
 Language: [confirmed language]
 
-# Text Elements
+# 文本元素
 [Based on text level:]
 - none: "No text elements"
 - title-only: "Title: [exact title from source or user]"
 - title-subtitle: "Title: [title] / Subtitle: [context]"
 - text-rich: "Title: [title] / Subtitle: [context] / Tags: [2-4 keywords]"
 
-# Mood Application
+# 氛围应用
 [Based on mood level:]
 - subtle: "Use low contrast, muted colors, light visual weight, calm aesthetic"
 - balanced: "Use medium contrast, normal saturation, balanced visual weight"
 - bold: "Use high contrast, vivid saturated colors, heavy visual weight, dynamic energy"
 
-# Font Application
+# 字体应用
 [Based on font style:]
 - clean: "Use clean geometric sans-serif typography. Modern, minimal letterforms."
 - handwritten: "Use warm hand-lettered typography with organic brush strokes. Friendly, personal feel."
 - serif: "Use elegant serif typography with refined letterforms. Classic, editorial character."
 - display: "Use bold decorative display typography. Heavy, expressive headlines."
 
-# Composition
+# 构图
 Type composition:
 - [Type-specific layout and structure]
 
@@ -71,69 +71,69 @@ Palette notes: [key characteristics from palette definition]
 [Reference images section if provided — REQUIRED, see below]
 ```
 
-## Reference-Driven Design ⚠️ HIGH PRIORITY
+## 参考图驱动设计 ⚠️ 高优先级
 
-When reference images are provided, they are the **primary visual input** and MUST strongly influence the output. The cover should look like it belongs to the same visual family as the references.
+当提供参考图时，它们是**主要视觉输入**，必须强烈影响输出。封面应该看起来与参考图属于同一视觉家族。
 
-**Passing `--ref` alone is NOT enough.** Image generation models often ignore reference images unless the prompt text explicitly describes what to reproduce. Always combine `--ref` with detailed textual instructions.
+**仅传递 `--ref` 是不够的。** 图像生成模型经常忽略参考图，除非提示词文本明确描述要复制的内容。始终将 `--ref` 与详细文本指令结合使用。
 
-## Content-Driven Design
+## 内容驱动设计
 
-- Article title and summary inform the visual metaphor choice
-- Keywords guide decorative elements and symbols
-- The skill controls visual style; the content drives meaning
+- 文章标题和摘要决定视觉隐喻选择
+- 关键词指导装饰元素和符号
+- 技能控制视觉风格；内容驱动含义
 
-## Visual Element Selection
+## 视觉元素选择
 
-Match content themes to icon vocabulary:
+将内容主题匹配到图标词汇：
 
-| Content Theme | Suggested Elements |
+| 内容主题 | 建议元素 |
 |---------------|-------------------|
-| Programming/Dev | Code window, terminal, API brackets, gear |
-| AI/ML | Brain, neural network, robot, circuit |
-| Growth/Business | Chart, rocket, plant, mountain, arrow |
-| Security | Lock, shield, key, fingerprint |
-| Communication | Speech bubble, megaphone, mail, handshake |
-| Tools/Methods | Wrench, checklist, pencil, puzzle |
+| 编程/开发 | 代码窗口、终端、API 括号、齿轮 |
+| AI/机器学习 | 大脑、神经网络、机器人、电路 |
+| 增长/商业 | 图表、火箭、植物、山脉、箭头 |
+| 安全 | 锁、盾牌、钥匙、指纹 |
+| 通信 | 对话气泡、扩音器、邮件、握手 |
+| 工具/方法 | 扳手、检查清单、铅笔、拼图 |
 
-Full library: [../visual-elements.md](../visual-elements.md)
+完整库：[../visual-elements.md](../visual-elements.md)
 
-## Type-Specific Composition
+## 类型特定构图
 
-| Type | Composition Guidelines |
+| 类型 | 构图指南 |
 |------|------------------------|
-| `hero` | Large focal visual (60-70% area), title overlay on visual, dramatic composition |
-| `conceptual` | Abstract shapes representing core concepts, information hierarchy, clean zones |
-| `typography` | Title as primary element (40%+ area), minimal supporting visuals, strong hierarchy |
-| `metaphor` | Concrete object/scene representing abstract idea, symbolic elements, emotional resonance |
-| `scene` | Atmospheric environment, narrative elements, mood-setting lighting and colors |
-| `minimal` | Single focal element, generous whitespace (60%+), essential shapes only |
+| `hero` | 大型焦点视觉（60-70% 区域），标题叠加在视觉上，戏剧性构图 |
+| `conceptual` | 代表核心概念的抽象形状，信息层级，干净的区域 |
+| `typography` | 标题作为主要元素（40%+ 区域），最少的支持视觉，强烈的层级 |
+| `metaphor` | 代表抽象概念的具体对象/场景，象征性元素，情感共鸣 |
+| `scene` | 氛围环境，叙事元素，营造氛围的灯光和颜色 |
+| `minimal` | 单一焦点元素，大量留白（60%+），仅必要形状 |
 
-## Title Guidelines
+## 标题指南
 
-When text level includes title:
-- **Source**: Use the exact title provided by user, or extract from source content
-- **Do NOT invent titles**: Stay faithful to the original
-- Match confirmed language
+当文本级别包含标题时：
+- **来源**：使用用户提供的准确标题，或从源内容中提取
+- **不得杜撰标题**：忠实于原文
+- 匹配确认的语言
 
-## Watermark Application
+## 水印应用
 
-If enabled in preferences, add to prompt:
+如果启用了水印，添加到提示词：
 
 ```
 Include a subtle watermark "[content]" positioned at [position].
 The watermark should be legible but not distracting from the main content.
 ```
 
-Reference: `config/watermark-guide.md`
+参考：`config/watermark-guide.md`
 
-## Reference Image Handling
+## 参考图处理
 
-When user provides reference images (`--ref` or pasted images):
+当用户提供参考图（`--ref` 或粘贴的图片）时：
 
-### ⚠️ CRITICAL - Frontmatter References
+### ⚠️ 重要 - 前置元数据参考
 
-**MUST add `references` field in YAML frontmatter** when reference files are saved to `refs/`:
+**当参考文件保存到 `refs/` 时，必须在 YAML 前置元数据中添加 `references` 字段**：
 
 ```yaml
 ---
@@ -147,107 +147,107 @@ references:
 ---
 ```
 
-| Field | Description |
+| 字段 | 描述 |
 |-------|-------------|
-| `ref_id` | Sequential number (01, 02, ...) |
-| `filename` | Relative path from prompt file's parent directory |
+| `ref_id` | 序列号（01、02、...） |
+| `filename` | 相对于提示词文件父目录的相对路径 |
 | `usage` | `direct` / `style` / `palette` |
 
-**Omit `references` field entirely** if no reference files saved (style extracted verbally only).
+**如果没有保存参考文件（仅口头提取风格），则完全省略 `references` 字段**。
 
-### When to Include References in Frontmatter
+### 何时在前置元数据中包含参考
 
-| Situation | Frontmatter Action | Generation Action |
+| 情况 | 前置元数据操作 | 生成操作 |
 |-----------|-------------------|-------------------|
-| Reference file saved to `refs/` | Add to `references` list ✓ | Pass via `--ref` parameter |
-| Style extracted verbally (no file) | Omit `references` field | Describe in prompt body only |
-| File path in frontmatter but doesn't exist | ERROR - fix or remove | Generation will fail |
+| 参考文件保存到 `refs/` | 添加到 `references` 列表 ✓ | 通过 `--ref` 参数传递 |
+| 风格口头提取（无文件） | 省略 `references` 字段 | 仅在提示词正文中描述 |
+| 前置元数据中有文件路径但不存在 | 错误 - 修复或删除 | 生成将失败 |
 
-**Before writing prompt with references, verify**: `test -f refs/ref-NN-{slug}.{ext}`
+**在写包含参考的提示词之前，验证**：`test -f refs/ref-NN-{slug}.{ext}`
 
-### Reference Usage Types
+### 参考用途类型
 
-| Usage | When to Use | Generation Action |
+| 用途 | 使用时机 | 生成操作 |
 |-------|-------------|-------------------|
-| `direct` | Reference matches desired output closely | Pass to `--ref` parameter |
-| `style` | Extract visual style characteristics only | Describe style in prompt text |
-| `palette` | Extract color palette only | Include colors in prompt |
+| `direct` | 参考与期望输出密切匹配 | 传递到 `--ref` 参数 |
+| `style` | 仅提取视觉风格特征 | 在提示词文本中描述风格 |
+| `palette` | 仅提取配色方案 | 在提示词中包含颜色 |
 
-### Step 1: Analyze References
+### 步骤 1：分析参考
 
-For each reference image, extract:
-- **Style**: Rendering technique, line quality, texture
-- **Composition**: Layout, visual hierarchy, focal points
-- **Color mood**: Palette characteristics (without specific colors)
-- **Elements**: Key visual elements and symbols used
+对于每个参考图，提取：
+- **风格**：渲染技术、线条质量、纹理
+- **构图**：布局、视觉层级、焦点
+- **颜色氛围**：配色特征（无具体颜色）
+- **元素**：使用的关键视觉元素和符号
 
-### Step 2: Embed in Prompt ⚠️ CRITICAL
+### 步骤 2：嵌入提示词 ⚠️ 重要
 
-**Passing `--ref` alone is NOT enough.** Image generation models frequently ignore reference images unless the prompt text explicitly and forcefully describes what to reproduce. You MUST always write detailed textual instructions regardless of whether `--ref` is used.
+**仅传递 `--ref` 是不够的。** 图像生成模型经常忽略参考图，除非提示词文本明确且有力地描述要复制的内容。无论是否使用 `--ref`，你必须始终写详细的文本指令。
 
-**If file saved (with or without `--ref` support)**:
-- Pass ref images via `--ref` parameter if skill supports it
-- **ALWAYS** add a detailed mandatory section in the prompt body:
-
-```
-# Reference Style — MUST INCORPORATE
-
-CRITICAL: The generated cover MUST visually reference the provided images. The cover must feel like it belongs to the same visual family.
-
-## From Ref 1 ([filename]) — REQUIRED elements:
-- [Brand element]: [Specific description of logo/wordmark treatment, e.g., "The logo uses vertical parallel lines (|||) for the letter 'm'. Reproduce this exact treatment."]
-- [Signature pattern]: [Specific description, e.g., "Woven intersecting curves forming a diamond/lozenge grid pattern. This MUST appear prominently as a banner, border, or background section."]
-- [Colors]: [Exact hex values, e.g., "Dark teal #2D4A3E background, cream #F5F0E0 text"]
-- [Typography]: [Specific treatment, e.g., "Uppercase text with wide letter-spacing"]
-- [Layout element]: [Specific spatial element, e.g., "Bottom banner strip in dark color"]
-
-## From Ref 1 ([filename]) — Characters (if people present):
-- **Character 1**: [Appearance, e.g., "Woman, long wavy blonde hair"] → MUST stylize: [e.g., "flat-vector, simplified face, keep blonde hair, label: 'Nicole Forsgren'"]
-- **Character 2**: [Appearance, e.g., "Man, short dark hair, stubble"] → MUST stylize: [e.g., "flat-vector, simplified face, keep dark hair, label: 'Gergely Orosz'"]
-- **Placement**: [e.g., "Right third, side by side, facing left toward main visual"]
-- **Style**: Match rendering style, NOT photorealistic
-
-## From Ref 2 ([filename]) — REQUIRED elements:
-[Same detailed breakdown]
-
-## Integration approach:
-[Specific layout instruction describing how reference elements combine with the cover content, e.g., "Use a SPLIT LAYOUT: main illustration area (warm cream background) occupies ~65% of the image, while a dark teal BANNER STRIP (with the woven line pattern from Ref 2) runs along the bottom ~35%, containing branding elements from Ref 1."]
-```
-
-**Key rules**:
-- Each visual element gets its own bullet with "MUST" or "REQUIRED"
-- Descriptions must be **specific enough to reproduce** — not vague ("clean style")
-- The integration approach must describe **exact spatial arrangement**
-- After generation, verify reference elements are visible; if not, strengthen and regenerate
-
-**If style/palette extracted verbally (NO file saved)**:
-- DO NOT add references metadata to prompt
-- Append extracted info directly to prompt body using the same MUST INCORPORATE format above:
+**如果文件已保存（有无 `--ref` 支持）**：
+- 如果技能支持，通过 `--ref` 参数传递参考图
+- **始终**在提示词正文添加详细的强制性部分：
 
 ```
-# Reference Style — MUST INCORPORATE (extracted from visual analysis)
+# 参考风格 — 必须融入
 
-CRITICAL: Apply these specific visual elements extracted from the reference images.
+关键：生成的封面必须视觉上引用提供的图片。封面必须感觉属于同一视觉家族。
 
-## REQUIRED elements:
-- [Same detailed bullet format as above]
+## 来自参考 1（[filename]）— 必需元素：
+- [品牌元素]：[Logo/文字标识处理的具体描述，例如："Logo 使用垂直平行线（|||）表示字母 'm'。复制此确切处理方式。"]
+- [标志性图案]：[具体描述，例如："编织交叉曲线形成菱形/菱形网格图案。这必须作为横幅、边框或背景部分突出显示。"]
+- [颜色]：[精确的十六进制值，例如："深青色 #2D4A3E 背景，米色 #F5F0E0 文字"]
+- [排版]：[具体处理，例如："大写文字，宽字间距"]
+- [布局元素]：[具体空间元素，例如："深色底边横幅条带"]
 
-## Integration approach:
-[Same spatial layout instruction]
+## 来自参考 1（[filename]）— 人物（如有）：
+- **人物 1**：[外貌，例如："女性，波浪金色长发"] → 必须风格化：[例如："扁平矢量，简化面部，保持金色头发，标注：'Nicole Forsgren'"]
+- **人物 2**：[外貌，例如："男性，短黑发，络腮胡"] → 必须风格化：[例如："扁平矢量，简化面部，保持黑色头发，标注：'Gergely Orosz'"]
+- **位置**：[例如："右侧三分之一，并排，面向左朝向主视觉"]
+- **风格**：匹配渲染风格，非写实
+
+## 来自参考 2（[filename]）— 必需元素：
+[相同的详细分解]
+
+## 整合方法：
+[具体的布局指令，描述参考元素如何与封面内容结合，例如："使用分割布局：主插图区域（暖米色背景）占图像约 65%，而深青色横幅条带（带来自参考 2 的编织线条图案）沿底部约 35% 运行，包含来自参考 1 的品牌元素。"]
 ```
 
-### Reference Analysis Template
+**关键规则**：
+- 每个视觉元素获得自己的带"MUST"或"REQUIRED"的要点
+- 描述必须**足够具体以供复制**——而非模糊的（"简洁风格"）
+- 整合方法必须描述**精确的空间排列**
+- 生成后，验证参考元素可见；如不可见，则加强并重新生成
 
-Use this format when analyzing reference images. Extract **specific, concrete, reproducible** details — not vague summaries.
+**如果风格/配色口头提取（未保存文件）**：
+- 不将参考元数据添加到提示词
+- 使用与上述相同的必须融入格式将提取的信息直接追加到提示词正文：
 
-| Aspect | Analysis Points | Good Example | Bad Example |
+```
+# 参考风格 — 必须融入（从视觉分析提取）
+
+关键：应用从参考图中提取的这些特定视觉元素。
+
+## 必需元素：
+[与上述相同的详细要点格式]
+
+## 整合方法：
+[相同的空间布局指令]
+```
+
+### 参考分析模板
+
+分析参考图时使用此格式。提取**具体、可复制、可重现**的细节——而非模糊的总结。
+
+| 方面 | 分析要点 | 好示例 | 差示例 |
 |--------|-----------------|--------------|-------------|
-| **Brand elements** | Logos, wordmarks, distinctive typography | "Logo 'm' formed by 3 vertical lines" | "Has a logo" |
-| **Signature patterns** | Unique motifs, textures, geometric patterns | "Woven curves forming diamond grid" | "Has patterns" |
-| **Colors** | Exact hex values or close approximations | "#2D4A3E dark teal, #F5F0E0 cream" | "Dark and light" |
-| **Layout** | Spatial zones, banner placement, proportions | "Bottom 30% is dark banner with branding" | "Has a banner" |
-| **Typography** | Font style, weight, case, spacing, position | "Uppercase, wide letter-spacing, right-aligned" | "Has text" |
-| **Rendering** | Line quality, texture, depth treatment | "Topographic contour lines as background texture" | "Clean style" |
-| **Elements** | Icon vocabulary, decorative motifs | "Geometric intersecting line ornaments at corners" | "Has decorations" |
+| **品牌元素** | Logo、文字标识、独特排版 | "Logo 'm' 由 3 条垂直线组成" | "有一个 Logo" |
+| **标志性图案** | 独特图案、纹理、几何图案 | "编织曲线形成菱形网格" | "有图案" |
+| **颜色** | 精确的十六进制值或近似值 | "#2D4A3E 深青色，#F5F0E0 米色" | "深色和浅色" |
+| **布局** | 空间区域、横幅放置、比例 | "底部 30% 是带品牌标识的深色横幅" | "有条横幅" |
+| **排版** | 字体样式、粗细、大小写、间距、位置 | "大写，宽字间距，右对齐" | "有文字" |
+| **渲染** | 线条质量、纹理、深度处理 | "作为背景纹理的等高线" | "简洁风格" |
+| **元素** | 图标词汇、装饰图案 | "角落的几何交叉线条装饰" | "有装饰" |
 
-**Output**: Each extracted element should be written as a **copy-pasteable prompt instruction** prefixed with "MUST" or "REQUIRED".
+**输出**：每个提取的元素应写为**可复制粘贴的提示词指令**，前面带有"MUST"或"REQUIRED"。

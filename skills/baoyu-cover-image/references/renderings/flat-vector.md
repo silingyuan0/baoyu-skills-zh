@@ -1,42 +1,42 @@
-# flat-vector
+# 扁平矢量
 
-Clean, modern, geometric illustration
+简洁、现代、几何插图
 
-## Core Characteristics
+## 核心特征
 
-Flat design with clean outlines, uniform fills, and no texture or depth. Think modern app icons, infographic illustrations, and vector-based editorial art.
+扁平设计，以干净的轮廓、均匀的填充、无纹理和深度为特征。类似于现代应用图标、信息图插图和矢量社论艺术。
 
-## Lines
+## 线条
 
-- Clean outlines with uniform stroke weight
-- Closed shapes (coloring-book style)
-- Rounded line endings, avoid sharp corners
-- Consistent stroke width throughout
+- 统一笔画粗细的干净轮廓
+- 闭合形状（涂色书风格）
+- 圆润线尾，避免锐利转角
+- 全程一致的笔画宽度
 
-## Texture
+## 纹理
 
-- None: smooth, flat color fills only
-- No gradients, shadows, or noise
-- Solid color blocks
+- 无纹理：仅光滑的平面色块填充
+- 无渐变、阴影或噪点
+- 纯色块
 
-## Depth
+## 深度
 
-- Flat: no shadows, no perspective
-- 2D layering with overlap for depth illusion
-- Optional 2.5D isometric layering (front/back occlusion, no atmospheric perspective)
-- No 3D effects or bevels
+- 扁平：无阴影、无透视
+- 通过重叠实现 2D 分层以产生深度错觉
+- 可选的 2.5D 等距分层（前后遮挡，无大气透视）
+- 无 3D 效果或斜角
 
-## Element Vocabulary
+## 元素词汇
 
-- Geometric icons and simple shapes
-- Bold outlined objects with clean fills
-- Geometric simplification: complex objects → basic shapes (trees → lollipop/triangle, buildings → rectangles)
-- "Toy model" aesthetic: cute, rounded proportions
-- Decorative: dots, lines, sunbursts, pill-shaped clouds, small stars
-- Isolated elements on clean backgrounds
+- 几何图标和简单形状
+- 带有干净填充的粗轮廓对象
+- 几何简化：复杂对象 → 基本形状（树 → 棒棒糖/三角形，建筑 → 矩形）
+- "玩具模型"美学：可爱、圆润的比例
+- 装饰元素：圆点、线条、放射线、胶囊形云朵、小星星
+- 干净背景上的独立元素
 
-## Typography Approach
+## 排版方式
 
-- Clean sans-serif or bold geometric lettering
-- Strong readability, consistent weight
-- Easily scalable at any size
+- 干净的无衬线或粗体几何字体
+- 强可读性，一致的笔画粗细
+- 在任何尺寸下都易于缩放

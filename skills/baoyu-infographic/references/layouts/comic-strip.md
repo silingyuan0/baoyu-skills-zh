@@ -1,41 +1,41 @@
 # comic-strip
 
-Sequential narrative panels telling a story or explaining a concept.
+通过连续叙事面板讲述故事或解释概念。
 
-## Structure
+## 结构
 
-- Multiple panels in sequence
-- Left-to-right, top-to-bottom reading
-- Characters or subjects in scenes
-- Speech/thought bubbles
-- Panel borders clearly defined
+- 多个面板序列
+- 从左到右、从上到下阅读
+- 场景中的角色或主体
+- 对话/思考气泡
+- 清晰定义的面板边框
 
-## Best For
+## 适用场景
 
-- Storytelling explanations
-- User journey narratives
-- Scenario illustrations
-- Step sequences with context
-- Before/during/after stories
+- 故事化讲解
+- 用户旅程叙事
+- 场景插图
+- 带上下文的步骤序列
+- 之前/期间/之后的故事
 
-## Visual Elements
+## 视觉元素
 
-- Panel frames
-- Speech and thought bubbles
-- Sound effects (optional)
-- Characters with expressions
-- Scene backgrounds
+- 面板框架
+- 对话和思考气泡
+- 音效（可选）
+- 有表情的角色
+- 场景背景
 
-## Text Placement
+## 文字布局
 
-- Title at top
-- Dialogue in speech bubbles
-- Narration in caption boxes
-- Sound effects integrated
-- Panel numbers if needed
+- 标题置于顶部
+- 对话气泡中的对话
+- 说明文字框中的叙述
+- 整合的音效
+- 需要时的面板编号
 
-## Recommended Pairings
+## 推荐风格搭配
 
-- `graphic-novel`: Dramatic narratives
-- `kawaii`: Cute character stories
-- `cartoon-hand-drawn`: Friendly explanations
+- `graphic-novel`：戏剧性叙事
+- `kawaii`：可爱角色故事
+- `cartoon-hand-drawn`：亲切的解释说明

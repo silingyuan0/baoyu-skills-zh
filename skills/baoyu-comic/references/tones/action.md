@@ -1,110 +1,110 @@
 # action
 
-动作基调 - Speed, impact, power
+动作基调 - 速度、冲击、力量
 
-## Overview
+## 概述
 
-High-impact action atmosphere with dynamic movement, combat effects, and powerful visual energy. Creates visceral, exciting sequences.
+高冲击力的动作氛围，具有动态运动、战斗效果和强大的视觉能量。营造震撼人心的激烈战斗画面。
 
-## Mood Characteristics
+## 情感特征
 
-- Speed and motion
-- Power and impact
-- Combat intensity
-- Physical energy
-- Visceral excitement
+- 速度与运动
+- 力量与冲击
+- 战斗强度
+- 身体能量
+- 肾上腺素飙升的刺激感
 
-## Color Modifiers
+## 颜色修正
 
-When applied to any art style:
+应用于任何画风时：
 
-| Adjustment | Direction |
-|------------|-----------|
-| Saturation | High contrast |
-| Contrast | Maximum |
-| Temperature | Variable per effect |
-| Brightness | Dynamic range |
+| 调整项 | 方向 |
+|--------|------|
+| 饱和度 | 高对比 |
+| 对比度 | 最大 |
+| 色温 | 根据效果变化 |
+| 亮度 | 动态范围 |
 
-## Action Effects
+## 动作效果
 
-**Combat/motion effects** (apply liberally):
+**战斗/运动效果**（大量运用）：
 
-| Effect | Usage |
-|--------|-------|
-| Speed lines | Motion, velocity |
-| Impact bursts | Hits, collisions |
-| Shockwaves | Powerful impacts |
-| Flying debris | Environmental destruction |
-| Dust clouds | Ground impacts |
-| Motion blur | Fast movement |
-| Afterimages | Super speed |
+| 效果 | 用途 |
+|------|------|
+| 速度线 | 运动、速度 |
+| 冲击爆发 | 打击、碰撞 |
+| 冲击波 | 强力冲击 |
+| 飞散碎片 | 环境破坏 |
+| 尘云 | 地面冲击 |
+| 运动模糊 | 快速移动 |
+| 残影 | 超高速 |
 
-## Special Effects
+## 特殊效果
 
-| Effect Type | Visual Approach |
-|------------|-----------------|
-| Energy attacks | Glowing, radiating |
-| Physical impacts | Radiating lines, debris |
-| Movement | Speed lines, blur |
-| Atmosphere | Flying particles, wind |
+| 效果类型 | 视觉表现 |
+|----------|----------|
+| 能量攻击 | 发光、辐射 |
+| 物理冲击 | 放射线、碎片 |
+| 运动 | 速度线、模糊 |
+| 氛围 | 飞舞的粒子、风 |
 
-## Effect Colors
+## 效果颜色
 
-| Effect | Color | Hex |
-|--------|-------|-----|
-| Energy glow | Blue | #4299E1 |
-| Fire/power | Gold | #FFD700 |
-| Impact | White burst | #FFFFFF |
-| Blood/intensity | Deep red | #8B0000 |
+| 效果 | 颜色 | 色值 |
+|------|------|------|
+| 能量光芒 | 蓝色 | #4299E1 |
+| 火焰/力量 | 金色 | #FFD700 |
+| 冲击 | 白色爆发 | #FFFFFF |
+| 血色/激烈 | 深红 | #8B0000 |
 
-## Lighting
+## 光照
 
-- Dynamic, shifting
-- Impact flashes
-- Energy glow sources
-- Rim lighting on figures
-- Dramatic contrast
+- 动态、变幻
+- 冲击闪光
+- 能量光源
+- 人物边缘光
+- 戏剧性对比
 
-## Emotional Range
+## 情感范围
 
-| Emotion | Expression |
-|---------|-----------|
-| Determination | Fierce focus |
-| Rage | Intense, powerful |
-| Triumph | Victorious pose |
-| Struggle | Strained effort |
+| 情感 | 表达方式 |
+|------|----------|
+| 决心 | 凶狠的专注 |
+| 愤怒 | 强烈、有力 |
+| 胜利 | 胜利者的姿态 |
+| 挣扎 | 用力的努力 |
 
-## Composition
+## 构图
 
-- Dynamic angles
-- Extreme perspectives
-- Panel-breaking layouts
-- Asymmetric designs
-- Impact-focused framing
+- 动态角度
+- 极端透视
+- 突破分格的布局
+- 不对称设计
+- 以冲击力为核心的取景
 
-## Pose Guidelines
+## 姿势指导
 
-- Dynamic warrior poses
-- Weight and momentum visible
-- Muscle tension shown
-- Flow of movement captured
-- Impact points emphasized
+- 动态的战士姿势
+- 可见的重量和动量
+- 肌肉紧绷的展示
+- 捕捉运动的流动感
+- 强调冲击点
 
-## Best For
+## 适合场景
 
-- Martial arts combat
-- Action sequences
-- Sports moments
-- Physical challenges
-- Battle scenes
-- Climactic confrontations
+- 武打格斗
+- 动作场景
+- 体育时刻
+- 身体挑战
+- 战斗场面
+- 高潮对决
 
-## Combination Notes
+## 搭配建议
 
-Works especially well with:
-- ink-brush: wuxia combat
-- manga: shonen battles
+特别适合与以下画风搭配：
+- ink-brush：武侠格斗
+- manga：少年战斗
 
-Avoid with:
-- chalk: style mismatch
-- ligne-claire: style mismatch (too static)
+避免搭配：
+- chalk：风格不匹配
+- ligne-claire：风格不匹配（过于静态）

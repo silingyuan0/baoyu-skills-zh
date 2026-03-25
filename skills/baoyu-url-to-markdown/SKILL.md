@@ -1,6 +1,6 @@
 ---
 name: baoyu-url-to-markdown
-description: Fetch any URL and convert to markdown using Chrome CDP. Saves the rendered HTML snapshot alongside the markdown, uses an upgraded Defuddle pipeline with better web-component handling and YouTube transcript extraction, and automatically falls back to the pre-Defuddle HTML-to-Markdown pipeline when needed. If local browser capture fails entirely, it can fall back to the hosted defuddle.md API. Supports two modes - auto-capture on page load, or wait for user signal (for pages requiring login). Use when user wants to save a webpage as markdown.
+description: 通过 Chrome CDP 获取任意 URL 并转换为 Markdown。保存渲染后的 HTML 快照，使用升级版 Defuddle 管道（改进的 Web Component 处理和 YouTube 字幕提取），需要时自动回退到预 Defuddle 的 HTML 转 Markdown 管道。如果本地浏览器捕获完全失败，可回退到托管的 defuddle.md API。支持两种模式 - 页面加载后自动捕获，或等待用户信号（适用于需要登录的页面）。当用户要求将网页保存为 Markdown 时使用。
 version: 1.58.1
 metadata:
   openclaw:
@@ -11,32 +11,32 @@ metadata:
         - npx
 ---
 
-# URL to Markdown
+# URL 转 Markdown
 
-Fetches any URL via Chrome CDP, saves the rendered HTML snapshot, and converts it to clean markdown.
+通过 Chrome CDP 获取任意 URL，保存渲染后的 HTML 快照，并转换为干净的 Markdown。
 
-## Script Directory
+## 脚本目录
 
-**Important**: All scripts are located in the `scripts/` subdirectory of this skill.
+**重要**：所有脚本位于本技能的 `scripts/` 子目录中。
 
-**Agent Execution Instructions**:
-1. Determine this SKILL.md file's directory path as `{baseDir}`
-2. Script path = `{baseDir}/scripts/<script-name>.ts`
-3. Resolve `${BUN_X}` runtime: if `bun` installed → `bun`; if `npx` available → `npx -y bun`; else suggest installing bun
-4. Replace all `{baseDir}` and `${BUN_X}` in this document with actual values
+**代理执行说明**：
+1. 将本 SKILL.md 文件的目录路径确定为 `{baseDir}`
+2. 脚本路径 = `{baseDir}/scripts/<script-name>.ts`
+3. 解析 `${BUN_X}` 运行时：如果已安装 `bun` 则使用 `bun`；如果可用 `npx` 则使用 `npx -y bun`；否则提示安装 bun
+4. 将本文档中所有 `{baseDir}` 和 `${BUN_X}` 替换为实际值
 
-**Script Reference**:
-| Script | Purpose |
+**脚本参考**：
+| 脚本 | 用途 |
 |--------|---------|
-| `scripts/main.ts` | CLI entry point for URL fetching |
-| `scripts/html-to-markdown.ts` | Markdown conversion entry point and converter selection |
-| `scripts/defuddle-converter.ts` | Defuddle-based conversion |
-| `scripts/legacy-converter.ts` | Pre-Defuddle legacy extraction and markdown conversion |
-| `scripts/markdown-conversion-shared.ts` | Shared metadata parsing and markdown document helpers |
+| `scripts/main.ts` | URL 获取命令行入口 |
+| `scripts/html-to-markdown.ts` | Markdown 转换入口和转换器选择 |
+| `scripts/defuddle-converter.ts` | 基于 Defuddle 的转换 |
+| `scripts/legacy-converter.ts` | 预 Defuddle 的旧版提取和 Markdown 转换 |
+| `scripts/markdown-conversion-shared.ts` | 共享的元数据解析和 Markdown 文档辅助工具 |
 
-## Preferences (EXTEND.md)
+## 偏好设置（EXTEND.md）
 
-Check EXTEND.md existence (priority order):
+检查 EXTEND.md 是否存在（按以下优先级顺序）：
 
 ```bash
 # macOS, Linux, WSL, Git Bash
@@ -66,196 +66,196 @@ if (Test-Path "$HOME/.baoyu-skills/baoyu-url-to-markdown/EXTEND.md") { "user" }
 ├───────────┼───────────────────────────────────────────────────────────────────────────┤
 │ Found     │ Read, parse, apply settings                                               │
 ├───────────┼───────────────────────────────────────────────────────────────────────────┤
-│ Not found │ **MUST** run first-time setup (see below) — do NOT silently create defaults │
+│ Not found │ **必须**运行首次设置（见下文） — 不要静默创建默认值 │
 └───────────┴───────────────────────────────────────────────────────────────────────────┘
 
-**EXTEND.md Supports**: Download media by default | Default output directory | Default capture mode | Timeout settings
+**EXTEND.md 支持**：默认下载媒体 | 默认输出目录 | 默认捕获模式 | 超时设置
 
-### First-Time Setup (BLOCKING)
+### 首次设置（阻塞）
 
-**CRITICAL**: When EXTEND.md is not found, you **MUST use `AskUserQuestion`** to ask the user for their preferences before creating EXTEND.md. **NEVER** create EXTEND.md with defaults without asking. This is a **BLOCKING** operation — do NOT proceed with any conversion until setup is complete.
+**关键**：当未找到 EXTEND.md 时，**必须使用 `AskUserQuestion`** 在创建 EXTEND.md 前询问用户的偏好。**绝不**在未询问的情况下以默认值创建 EXTEND.md。这是一个**阻塞**操作 — 在设置完成之前不要进行任何转换。
 
-Use `AskUserQuestion` with ALL questions in ONE call:
+使用 `AskUserQuestion` 将所有问题在一次调用中提出：
 
-**Question 1** — header: "Media", question: "How to handle images and videos in pages?"
-- "Ask each time (Recommended)" — After saving markdown, ask whether to download media
-- "Always download" — Always download media to local imgs/ and videos/ directories
-- "Never download" — Keep original remote URLs in markdown
+**问题 1** — 标题："Media"，问题："如何处理页面中的图片和视频？"
+- "每次询问（推荐）" — 保存 Markdown 后，询问是否下载媒体
+- "始终下载" — 始终将媒体下载到本地 imgs/ 和 videos/ 目录
+- "从不下载" — 在 Markdown 中保留原始远程 URL
 
-**Question 2** — header: "Output", question: "Default output directory?"
-- "url-to-markdown (Recommended)" — Save to ./url-to-markdown/{domain}/{slug}.md
-- (User may choose "Other" to type a custom path)
+**问题 2** — 标题："Output"，问题："默认输出目录？"
+- "url-to-markdown（推荐）" — 保存到 ./url-to-markdown/{domain}/{slug}.md
+- （用户可选择"其他"输入自定义路径）
 
-**Question 3** — header: "Save", question: "Where to save preferences?"
-- "User (Recommended)" — ~/.baoyu-skills/ (all projects)
-- "Project" — .baoyu-skills/ (this project only)
+**问题 3** — 标题："Save"，问题："偏好设置保存位置？"
+- "User（推荐）" — ~/.baoyu-skills/（所有项目）
+- "Project" — .baoyu-skills/（仅当前项目）
 
-After user answers, create EXTEND.md at the chosen location, confirm "Preferences saved to [path]", then continue.
+用户回答后，在所选位置创建 EXTEND.md，确认"偏好设置已保存到 [路径]"，然后继续。
 
-Full reference: [references/config/first-time-setup.md](references/config/first-time-setup.md)
+完整参考：[references/config/first-time-setup.md](references/config/first-time-setup.md)
 
-### Supported Keys
+### 支持的键
 
-| Key | Default | Values | Description |
+| 键 | 默认值 | 值 | 说明 |
 |-----|---------|--------|-------------|
-| `download_media` | `ask` | `ask` / `1` / `0` | `ask` = prompt each time, `1` = always download, `0` = never |
-| `default_output_dir` | empty | path or empty | Default output directory (empty = `./url-to-markdown/`) |
+| `download_media` | `ask` | `ask` / `1` / `0` | `ask` = 每次询问，`1` = 始终下载，`0` = 从不 |
+| `default_output_dir` | 空 | 路径或空 | 默认输出目录（空 = `./url-to-markdown/`） |
 
-**EXTEND.md → CLI mapping**:
-| EXTEND.md key | CLI argument | Notes |
+**EXTEND.md → CLI 映射**：
+| EXTEND.md 键 | CLI 参数 | 备注 |
 |---------------|-------------|-------|
 | `download_media: 1` | `--download-media` | |
-| `default_output_dir: ./posts/` | `--output-dir ./posts/` | Directory path. Do NOT pass to `-o` (which expects a file path) |
+| `default_output_dir: ./posts/` | `--output-dir ./posts/` | 目录路径。不要传给 `-o`（`-o` 期望文件路径） |
 
-**Value priority**:
-1. CLI arguments (`--download-media`, `-o`, `--output-dir`)
+**值优先级**：
+1. CLI 参数（`--download-media`、`-o`、`--output-dir`）
 2. EXTEND.md
-3. Skill defaults
+3. 技能默认值
 
-## Features
+## 功能特性
 
-- Chrome CDP for full JavaScript rendering
-- Two capture modes: auto or wait-for-user
-- Save rendered HTML as a sibling `-captured.html` file
-- Clean markdown output with metadata
-- Upgraded Defuddle-first markdown conversion with automatic fallback to the pre-Defuddle extractor from git history
-- Materializes shadow DOM content before conversion so web-component pages survive serialization better
-- YouTube pages can include transcript/caption text in the markdown when YouTube exposes a caption track
-- If local browser capture fails completely, can fall back to `defuddle.md/<url>` and still save markdown
-- Handles login-required pages via wait mode
-- Download images and videos to local directories
+- 通过 Chrome CDP 实现完整 JavaScript 渲染
+- 两种捕获模式：自动或等待用户
+- 将渲染后的 HTML 保存为同目录下的 `-captured.html` 文件
+- 带元数据的干净 Markdown 输出
+- 升级版 Defuddle 优先的 Markdown 转换，自动回退到从 git 历史恢复的预 Defuddle 提取器
+- 在转换前将影子 DOM 内容实例化，使 Web Component 页面能更好地序列化
+- YouTube 页面可在 YouTube 提供字幕轨道时将字幕文本包含在 Markdown 中
+- 如果本地浏览器捕获完全失败，可回退到 `defuddle.md/<url>` 仍能保存 Markdown
+- 通过等待模式处理需要登录的页面
+- 下载图片和视频到本地目录
 
-## Usage
+## 用法
 
 ```bash
-# Auto mode (default) - capture when page loads
+# 自动模式（默认）- 页面加载后捕获
 ${BUN_X} {baseDir}/scripts/main.ts <url>
 
-# Wait mode - wait for user signal before capture
+# 等待模式 - 等待用户信号后再捕获
 ${BUN_X} {baseDir}/scripts/main.ts <url> --wait
 
-# Save to specific file
+# 保存到指定文件
 ${BUN_X} {baseDir}/scripts/main.ts <url> -o output.md
 
-# Save to a custom output directory (auto-generates filename)
+# 保存到自定义输出目录（自动生成文件名）
 ${BUN_X} {baseDir}/scripts/main.ts <url> --output-dir ./posts/
 
-# Download images and videos to local directories
+# 下载图片和视频到本地目录
 ${BUN_X} {baseDir}/scripts/main.ts <url> --download-media
 ```
 
-## Options
+## 选项
 
-| Option | Description |
+| 选项 | 说明 |
 |--------|-------------|
-| `<url>` | URL to fetch |
-| `-o <path>` | Output file path — must be a **file** path, not directory (default: auto-generated) |
-| `--output-dir <dir>` | Base output directory — auto-generates `{dir}/{domain}/{slug}.md` (default: `./url-to-markdown/`) |
-| `--wait` | Wait for user signal before capturing |
-| `--timeout <ms>` | Page load timeout (default: 30000) |
-| `--download-media` | Download image/video assets to local `imgs/` and `videos/`, and rewrite markdown links to local relative paths |
+| `<url>` | 要获取的 URL |
+| `-o <path>` | 输出文件路径 — 必须是**文件**路径，不是目录（默认：自动生成） |
+| `--output-dir <dir>` | 基础输出目录 — 自动生成 `{dir}/{domain}/{slug}.md`（默认：`./url-to-markdown/`） |
+| `--wait` | 等待用户信号后再捕获 |
+| `--timeout <ms>` | 页面加载超时时间（默认：30000） |
+| `--download-media` | 将图片/视频资源下载到本地 `imgs/` 和 `videos/`，并将 Markdown 链接重写为本地相对路径 |
 
-## Capture Modes
+## 捕获模式
 
-| Mode | Behavior | Use When |
+| 模式 | 行为 | 适用场景 |
 |------|----------|----------|
-| Auto (default) | Capture on network idle | Public pages, static content |
-| Wait (`--wait`) | User signals when ready | Login-required, lazy loading, paywalls |
+| 自动（默认） | 网络空闲时捕获 | 公开页面、静态内容 |
+| 等待（`--wait`） | 用户发出就绪信号后捕获 | 需要登录、懒加载、付费墙 |
 
-**Wait mode workflow**:
-1. Run with `--wait` → script outputs "Press Enter when ready"
-2. Ask user to confirm page is ready
-3. Send newline to stdin to trigger capture
+**等待模式工作流**：
+1. 使用 `--wait` 运行 → 脚本输出"Press Enter when ready"
+2. 要求用户确认页面已就绪
+3. 向 stdin 发送换行符以触发捕获
 
-## Output Format
+## 输出格式
 
-Each run saves two files side by side:
+每次运行保存两个文件：
 
-- Markdown: YAML front matter with `url`, `title`, `description`, `author`, `published`, optional `coverImage`, and `captured_at`, followed by converted markdown content
-- HTML snapshot: `*-captured.html`, containing the rendered page HTML captured from Chrome
+- Markdown：YAML 前置元数据包含 `url`、`title`、`description`、`author`、`published`、可选 `coverImage` 和 `captured_at`，后跟转换后的 Markdown 内容
+- HTML 快照：`*-captured.html`，包含从 Chrome 捕获的渲染页面 HTML
 
-When Defuddle or page metadata provides a language hint, the markdown front matter also includes `language`.
+当 Defuddle 或页面元数据提供语言提示时，Markdown 前置元数据也会包含 `language`。
 
-The HTML snapshot is saved before any markdown media localization, so it stays a faithful capture of the page DOM used for conversion.
-If the hosted `defuddle.md` API fallback is used, markdown is still saved, but there is no local `-captured.html` snapshot for that run.
+HTML 快照在任何 Markdown 媒体本地化之前保存，因此它保持为用于转换的页面 DOM 的忠实快照。
+如果使用了托管的 `defuddle.md` API 回退，Markdown 仍会保存，但该次运行不会有本地 `-captured.html` 快照。
 
-## Output Directory
+## 输出目录
 
-Default: `url-to-markdown/<domain>/<slug>.md`
-With `--output-dir ./posts/`: `./posts/<domain>/<slug>.md`
+默认：`url-to-markdown/<domain>/<slug>.md`
+使用 `--output-dir ./posts/` 时：`./posts/<domain>/<slug>.md`
 
-HTML snapshot path uses the same basename:
+HTML 快照路径使用相同的基本名：
 
 - `url-to-markdown/<domain>/<slug>-captured.html`
 - `./posts/<domain>/<slug>-captured.html`
 
-- `<slug>`: From page title or URL path (kebab-case, 2-6 words)
-- Conflict resolution: Append timestamp `<slug>-YYYYMMDD-HHMMSS.md`
+- `<slug>`：来自页面标题或 URL 路径（kebab-case，2-6 个单词）
+- 冲突解决：追加时间戳 `<slug>-YYYYMMDD-HHMMSS.md`
 
-When `--download-media` is enabled:
-- Images are saved to `imgs/` next to the markdown file
-- Videos are saved to `videos/` next to the markdown file
-- Markdown media links are rewritten to local relative paths
+启用 `--download-media` 时：
+- 图片保存到 Markdown 文件旁的 `imgs/` 目录
+- 视频保存到 Markdown 文件旁的 `videos/` 目录
+- Markdown 媒体链接重写为本地相对路径
 
-## Conversion Fallback
+## 转换回退
 
-Conversion order:
+转换顺序：
 
-1. Try Defuddle first
-2. For rich pages such as YouTube, prefer Defuddle's extractor-specific output (including transcripts when available) instead of replacing it with the legacy pipeline
-3. If Defuddle throws, cannot load, returns obviously incomplete markdown, or captures lower-quality content than the legacy pipeline, automatically fall back to the pre-Defuddle extractor
-4. If the entire local browser capture flow fails before markdown can be produced, try the hosted `https://defuddle.md/<url>` API and save its markdown output directly
-5. The legacy fallback path uses the older Readability/selector/Next.js-data based HTML-to-Markdown implementation recovered from git history
+1. 首先尝试 Defuddle
+2. 对于 YouTube 等富内容页面，优先使用 Defuddle 的特定提取器输出（包括可用的字幕），而不是用旧版管道替换
+3. 如果 Defuddle 抛出异常、无法加载、返回明显不完整的 Markdown，或捕获的内容质量低于旧版管道，自动回退到预 Defuddle 提取器
+4. 如果整个本地浏览器捕获流程在生成 Markdown 之前失败，尝试托管的 `https://defuddle.md/<url>` API 并直接保存其 Markdown 输出
+5. 旧版回退路径使用从 git 历史恢复的基于 Readability/selector/Next.js-data 的 HTML 转 Markdown 实现
 
-CLI output will show:
+CLI 输出将显示：
 
-- `Converter: defuddle` when Defuddle succeeds
-- `Converter: legacy:...` plus `Fallback used: ...` when fallback was needed
-- `Converter: defuddle-api` when local browser capture failed and the hosted API was used instead
+- Defuddle 成功时显示 `Converter: defuddle`
+- 需要回退时显示 `Converter: legacy:...` 加 `Fallback used: ...`
+- 本地浏览器捕获失败并使用托管 API 时显示 `Converter: defuddle-api`
 
-## Media Download Workflow
+## 媒体下载工作流
 
-Based on `download_media` setting in EXTEND.md:
+基于 EXTEND.md 中的 `download_media` 设置：
 
-| Setting | Behavior |
+| 设置 | 行为 |
 |---------|----------|
-| `1` (always) | Run script with `--download-media` flag |
-| `0` (never) | Run script without `--download-media` flag |
-| `ask` (default) | Follow the ask-each-time flow below |
+| `1`（始终） | 使用 `--download-media` 参数运行脚本 |
+| `0`（从不） | 不使用 `--download-media` 参数运行脚本 |
+| `ask`（默认） | 按照以下每次询问流程执行 |
 
-### Ask-Each-Time Flow
+### 每次询问流程
 
-1. Run script **without** `--download-media` → markdown saved
-2. Check saved markdown for remote media URLs (`https://` in image/video links)
-3. **If no remote media found** → done, no prompt needed
-4. **If remote media found** → use `AskUserQuestion`:
-   - header: "Media", question: "Download N images/videos to local files?"
-   - "Yes" — Download to local directories
-   - "No" — Keep remote URLs
-5. If user confirms → run script **again** with `--download-media` (overwrites markdown with localized links)
+1. **不使用** `--download-media` 运行脚本 → Markdown 已保存
+2. 检查已保存的 Markdown 中是否有远程媒体 URL（图片/视频链接中的 `https://`）
+3. **如果未找到远程媒体** → 完成，无需提示
+4. **如果发现远程媒体** → 使用 `AskUserQuestion`：
+   - 标题："Media"，问题："下载 N 个图片/视频到本地文件？"
+   - "是" — 下载到本地目录
+   - "否" — 保留远程 URL
+5. 如果用户确认 → **再次**使用 `--download-media` 运行脚本（以本地化链接覆盖 Markdown）
 
-## Environment Variables
+## 环境变量
 
-| Variable | Description |
+| 变量 | 说明 |
 |----------|-------------|
-| `URL_CHROME_PATH` | Custom Chrome executable path |
-| `URL_DATA_DIR` | Custom data directory |
-| `URL_CHROME_PROFILE_DIR` | Custom Chrome profile directory |
+| `URL_CHROME_PATH` | 自定义 Chrome 可执行文件路径 |
+| `URL_DATA_DIR` | 自定义数据目录 |
+| `URL_CHROME_PROFILE_DIR` | 自定义 Chrome 配置文件目录 |
 
-**Troubleshooting**: Chrome not found → set `URL_CHROME_PATH`. Timeout → increase `--timeout`. Complex pages → try `--wait` mode. If markdown quality is poor, inspect the saved `-captured.html` and check whether the run logged a legacy fallback.
+**故障排除**：Chrome 未找到 → 设置 `URL_CHROME_PATH`。超时 → 增加 `--timeout`。复杂页面 → 尝试 `--wait` 模式。如果 Markdown 质量不佳，检查已保存的 `-captured.html` 并查看运行日志是否记录了旧版回退。
 
-### YouTube Notes
+### YouTube 说明
 
-- The upgraded Defuddle path uses async extractors, so YouTube pages can include transcript text directly in the markdown body.
-- Transcript availability depends on YouTube exposing a caption track. Videos with captions disabled, restricted playback, or blocked regional access may still produce description-only output.
-- If the page needs time to finish loading descriptions, chapters, or player metadata, prefer `--wait` and capture after the watch page is fully hydrated.
+- 升级版 Defuddle 路径使用异步提取器，因此 YouTube 页面可直接在 Markdown 正文中包含字幕文本。
+- 字幕可用性取决于 YouTube 提供字幕轨道。字幕已禁用、播放受限或区域访问被阻止的视频可能仍仅生成描述内容。
+- 如果页面需要时间完成加载描述、章节或播放器元数据，建议使用 `--wait` 并在观看页面完全加载后捕获。
 
-### Hosted API Fallback
+### 托管 API 回退
 
-- The hosted fallback endpoint is `https://defuddle.md/<url>`. In shell form: `curl https://defuddle.md/stephango.com`
-- Use it only when the local Chrome/CDP capture path fails outright. The local path still has higher fidelity because it can save the captured HTML and handle authenticated pages.
-- The hosted API already returns Markdown with YAML frontmatter, so save that response as-is and then apply the normal media-localization step if requested.
+- 托管回退端点为 `https://defuddle.md/<url>`。Shell 形式：`curl https://defuddle.md/stephango.com`
+- 仅在本地 Chrome/CDP 捕获路径完全失败时使用。本地路径保真度更高，因为它可以保存捕获的 HTML 并处理已认证的页面。
+- 托管 API 已返回带 YAML 前置元数据的 Markdown，因此直接保存该响应，如果要求则在之后执行正常的媒体本地化步骤。
 
-## Extension Support
+## 扩展支持
 
-Custom configurations via EXTEND.md. See **Preferences** section for paths and supported options.
+通过 EXTEND.md 自定义配置。路径和支持的选项参见**偏好设置**部分。

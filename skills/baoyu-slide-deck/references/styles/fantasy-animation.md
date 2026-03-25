@@ -1,69 +1,69 @@
 # fantasy-animation
 
-Whimsical hand-drawn animation style inspired by classic fantasy illustration
+充满奇思妙想的手绘动画风格，灵感源自经典奇幻插画
 
-## Design Aesthetic
+## 设计美学
 
-Charming hand-drawn animation aesthetic reminiscent of classic Disney, Studio Ghibli, or European storybook illustration. Soft, painterly textures with warm, inviting colors. Friendly characters, magical elements, and storybook layouts. Enchanting, nostalgic, and emotionally engaging.
+令人着迷的手绘动画美学，让人联想到经典迪士尼、吉卜力工作室或欧洲故事书插画。柔和的绘画质感，温暖的邀请色调。友好的角色、魔法元素和故事书布局。迷人、怀旧且情感丰富。
 
-## Background
+## 背景
 
-- Color: Soft Sky Blue (#E8F4FC) or Warm Cream (#FFF8E7)
-- Texture: Subtle watercolor wash, soft brush strokes, gentle paper texture
+- 颜色：柔和天蓝（#E8F4FC）或暖奶油色（#FFF8E7）
+- 纹理：细微水彩晕染，柔和笔触，轻盈的纸张质感
 
-## Typography
+## 排版
 
-### Primary Font (Headlines)
+### 主字体（标题）
 
-Whimsical serif or decorative hand-lettered style. Slight curvature and organic feel. Warm, friendly character. Think fairy tale book titles.
+奇趣衬线体或装饰性手写体。略带弧度和有机感。温暖、友好的气质。类似童话书标题的风格。
 
-### Secondary Font (Body)
+### 辅助字体（正文）
 
-Rounded sans-serif or casual handwritten style. Friendly and readable. Maintains storybook aesthetic while staying legible.
+圆角无衬线体或随性手写体。友好且易读。保持故事书美学同时确保可读性。
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
-|------|-------|-----|-------|
-| Background | Soft Sky Blue | #E8F4FC | Primary background |
-| Alt Background | Warm Cream | #FFF8E7 | Secondary areas |
-| Primary Text | Deep Forest | #2D5A3D | Headlines |
-| Body Text | Warm Brown | #5D4E37 | Body content |
-| Accent 1 | Golden Yellow | #F4D03F | Magic, highlights |
-| Accent 2 | Rose Pink | #E8A0BF | Warmth, charm |
-| Accent 3 | Sage Green | #87A96B | Nature elements |
-| Accent 4 | Sky Blue | #7EC8E3 | Air, water, dreams |
-| Accent 5 | Coral | #F08080 | Emphasis, life |
+| 角色 | 颜色 | 色值 | 用途 |
+|------|------|------|------|
+| 背景 | Soft Sky Blue | #E8F4FC | 主要背景 |
+| 辅助背景 | Warm Cream | #FFF8E7 | 辅助区域 |
+| 主文本 | Deep Forest | #2D5A3D | 标题 |
+| 正文 | Warm Brown | #5D4E37 | 正文内容 |
+| 强调色 1 | Golden Yellow | #F4D03F | 魔法、高亮 |
+| 强调色 2 | Rose Pink | #E8A0BF | 温暖、魅力 |
+| 强调色 3 | Sage Green | #87A96B | 自然元素 |
+| 强调色 4 | Sky Blue | #7EC8E3 | 空气、水、梦境 |
+| 强调色 5 | Coral | #F08080 | 强调、生命力 |
 
-## Visual Elements
+## 视觉元素
 
-- Central illustrated character (friendly, expressive)
-- Small companion creatures (animals, magical beings)
-- Storybook-style environment backgrounds
-- Magical floating objects (books, bags, boxes, orbs)
-- Decorative elements: stars, sparkles, flowers, leaves
-- Soft shadows and gentle highlights
-- Layered depth with foreground/background elements
-- Themed content containers (trunks, satchels, scroll boxes)
+- 居中插画角色（友好、富有表情）
+- 小型陪伴生物（动物、魔法精灵）
+- 故事书风格的环境背景
+- 魔法漂浮物（书籍、提包、盒子、宝珠）
+- 装饰元素：星星、闪光、花朵、树叶
+- 柔和阴影和轻盈高光
+- 前景/背景元素的分层景深
+- 主题内容容器（箱子、挎包、卷轴盒）
 
-## Style Rules
+## 风格规则
 
-### Do
+### 推荐做法
 
-- Create warm, inviting compositions
-- Use soft edges and painterly textures
-- Include charming character illustrations
-- Add magical decorative touches
-- Maintain storybook narrative feel
+- 创建温暖、邀请式的构图
+- 使用柔和边缘和绘画质感
+- 包含迷人的角色插画
+- 添加魔法装饰点缀
+- 保持故事书叙事感
 
-### Don't
+### 避免事项
 
-- Use harsh geometric shapes
-- Create dark or intimidating imagery
-- Add photorealistic elements
-- Use cold color palettes
-- Add slide numbers, footers, or logos
+- 使用生硬的几何形状
+- 创建黑暗或令人生畏的图像
+- 添加照片写实元素
+- 使用冷色调调色板
+- 添加幻灯片编号、页脚或标志
 
-## Best For
+## 适用场景
 
-Educational content, children's presentations, storytelling, creative workshops, book presentations, fantasy/gaming content, inspirational talks, family-friendly events
+教育内容、儿童演示、故事讲述、创意工作坊、书籍发布、奇幻/游戏内容、励志演讲、家庭友好活动

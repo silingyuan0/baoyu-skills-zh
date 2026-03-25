@@ -1,47 +1,47 @@
 # retro-pop-grid
 
-1970s retro pop art with strict Swiss international grid, thick black outlines, and flat color blocks.
+1970 年代复古波普艺术，辅以严格的瑞士国际主义网格、粗黑轮廓线和平面色块。
 
-## Color Palette
+## 配色方案
 
-- Background: Warm vintage cream/beige (#F5F0E6)
-- Flat accents: Salmon pink, sky blue, mustard yellow, mint green—all muted retro tones
-- Contrast blocks: Solid pure black (#000000) and solid pure white (#FFFFFF) used strategically for extreme contrast
-- Line art and outlines: Solid thick black
+- 背景：温暖复古米白/米色（#F5F0E6）
+- 平面点缀：鲑鱼粉、天蓝、芥末黄、薄荷绿——均为柔和复古色调
+- 对比色块：纯黑（#000000）和纯白（#FFFFFF）战略性用于极强对比
+- 线条艺术和轮廓：实心粗黑线
 
-## Visual Elements
+## 视觉元素
 
-- Uniform thick black outlines on all illustrations, text boxes, and grid dividers
-- Pure 2D flat vector aesthetic with subtle screen print texture
-- Strict Swiss international grid: poster divided into square and rectangular cells by thick black lines
-- Black-background cells with white text for warnings or key categories (inverted contrast)
-- Geometric fill patterns in empty cells: checkerboards, diagonal lines, dots
-- Flat abstract symbols, warning signs, keyholes, stars, arrows
-- Vintage comic-style smiley/frowny faces for quality indicators
-- Colored cells used for breathing room—some with minimal/no content
+- 所有插图、文字框和网格分隔线上的统一粗黑轮廓
+- 纯 2D 平面矢量美学，带微妙的丝网印刷纹理
+- 严格的瑞士国际主义网格：海报被粗黑线分割为方形和矩形单元格
+- 黑底单元格配白字，用于警告或关键分类（反色对比）
+- 空格中的几何填充图案：棋盘格、对角线、圆点
+- 平面抽象符号、警告标志、锁眼、星星、箭头
+- 复古漫画风格的笑脸/哭脸用于质量指示
+- 彩色单元格用作留白——有些内容极少或无内容
 
-## Typography
+## 字体与排版
 
-- Headers: Bold brutalist or retro thick display fonts, high legibility
-- Body: Clean sans-serif, structured typographic alignment
-- Decorative English text acceptable for stylistic labels ("WARNING", "INFO", "BEST")
-- All content text in specified language
+- 标题：粗犷主义粗体或复古粗体展示字体，高可读性
+- 正文：简洁无衬线字体，结构化字体排版对齐
+- 装饰性英文文本可用于风格标签（"WARNING"、"INFO"、"BEST"）
+- 所有内容文本使用指定语言
 
-## Style Enforcement
+## 风格规范
 
-- Absolutely no gradients, shading, drop shadows, or 3D effects
-- Everything anchored in grid cells—no floating or unorganized elements
-- Maintain 1970s retro pop art and underground comic illustration feel
-- Visual density balanced with rhythmic grid—some cells intentionally sparse for contrast
+- 绝对禁止渐变、阴影、投影或 3D 效果
+- 一切元素锚定在网格单元格中——无漂浮或无序元素
+- 保持 1970 年代复古波普艺术和地下漫画插图风格
+- 视觉密度与有节奏的网格相平衡——部分单元格刻意留空以形成对比
 
-## Avoid
+## 避免
 
-- 3D rendering, realistic details, gradients, soft shadows
-- Soft, thin, or sketch-like pencil lines
-- Free-flowing, unorganized, or floating layouts (everything must be grid-anchored)
-- Pure white background canvas
-- Organic or hand-drawn imperfections
+- 3D 渲染、逼真细节、渐变、柔和阴影
+- 柔和、纤细或素描般的铅笔线条
+- 自由流动、无序或漂浮的布局（一切必须锚定在网格中）
+- 纯白背景画布
+- 有机或手绘的不完美感
 
-## Best For
+## 最佳应用场景
 
-Trendy product guides, design-conscious content, visually striking comparisons, content targeting design-savvy audiences, bold social media posts
+潮流产品指南、设计导向内容、视觉冲击力强的对比、面向设计敏锐受众的内容、大胆的社交媒体帖子

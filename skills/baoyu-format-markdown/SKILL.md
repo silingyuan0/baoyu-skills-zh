@@ -1,6 +1,6 @@
 ---
 name: baoyu-format-markdown
-description: Formats plain text or markdown files with frontmatter, titles, summaries, headings, bold, lists, and code blocks. Use when user asks to "format markdown", "beautify article", "add formatting", or improve article layout. Outputs to {filename}-formatted.md.
+description: 格式化纯文本或 Markdown 文件，添加前置元数据、标题、摘要、标题层级、粗体、列表和代码块。当用户要求"格式化 markdown"、"美化文章"、"添加格式"或改善文章排版时使用。输出至 {filename}-formatted.md。
 version: 1.56.1
 metadata:
   openclaw:
@@ -11,25 +11,25 @@ metadata:
         - npx
 ---
 
-# Markdown Formatter
+# Markdown 格式化工具
 
-Transforms plain text or markdown into well-structured, reader-friendly markdown. The goal is to help readers quickly grasp key points, highlights, and structure — without changing any original content.
+将纯文本或 Markdown 转换为结构良好、易于阅读的 Markdown。目标是帮助读者快速把握要点、亮点和结构 —— 不改变任何原始内容。
 
-**Core principle**: Only adjust formatting and fix obvious typos. Never add, delete, or rewrite content.
+**核心原则**：只调整格式并修复明显错别字。绝不添加、删除或改写内容。
 
-## Script Directory
+## 脚本目录
 
-Scripts in `scripts/` subdirectory. `{baseDir}` = this SKILL.md's directory path. Resolve `${BUN_X}` runtime: if `bun` installed → `bun`; if `npx` available → `npx -y bun`; else suggest installing bun. Replace `{baseDir}` and `${BUN_X}` with actual values.
+脚本位于 `scripts/` 子目录。`{baseDir}` = 本 SKILL.md 所在目录路径。解析 `${BUN_X}` 运行时：如果已安装 `bun` 则使用 `bun`；如果可用 `npx` 则使用 `npx -y bun`；否则提示安装 bun。将 `{baseDir}` 和 `${BUN_X}` 替换为实际值。
 
-| Script | Purpose |
+| 脚本 | 用途 |
 |--------|---------|
-| `scripts/main.ts` | Main entry point with CLI options (uses remark-cjk-friendly for CJK emphasis) |
-| `scripts/quotes.ts` | Replace ASCII quotes with fullwidth quotes |
-| `scripts/autocorrect.ts` | Add CJK/English spacing via autocorrect |
+| `scripts/main.ts` | 主入口，提供命令行选项（使用 remark-cjk-friendly 处理中日韩文字强调） |
+| `scripts/quotes.ts` | 将 ASCII 引号替换为全角引号 |
+| `scripts/autocorrect.ts` | 通过 autocorrect 添加中日韩/英文间距 |
 
-## Preferences (EXTEND.md)
+## 偏好设置（EXTEND.md）
 
-Check EXTEND.md existence (priority order):
+检查 EXTEND.md 是否存在（按以下优先级顺序）：
 
 ```bash
 # macOS, Linux, WSL, Git Bash
@@ -62,239 +62,239 @@ if (Test-Path "$HOME/.baoyu-skills/baoyu-format-markdown/EXTEND.md") { "user" }
 │ Not found │ Use defaults                                                              │
 └───────────┴───────────────────────────────────────────────────────────────────────────┘
 
-**EXTEND.md Supports**:
+**EXTEND.md 支持**：
 
-| Setting | Values | Default | Description |
+| 设置 | 值 | 默认值 | 说明 |
 |---------|--------|---------|-------------|
-| `auto_select` | `true`/`false` | `false` | Skip both title and summary selection, auto-pick best |
-| `auto_select_title` | `true`/`false` | `false` | Skip title selection only |
-| `auto_select_summary` | `true`/`false` | `false` | Skip summary selection only |
-| Other | — | — | Default formatting options, typography preferences |
+| `auto_select` | `true`/`false` | `false` | 跳过标题和摘要选择，自动选择最佳 |
+| `auto_select_title` | `true`/`false` | `false` | 仅跳过标题选择 |
+| `auto_select_summary` | `true`/`false` | `false` | 仅跳过摘要选择 |
+| 其他 | — | — | 默认格式化选项、排版偏好 |
 
-## Usage
+## 用法
 
-The workflow has two phases: **Analyze** (understand the content) then **Format** (apply formatting). Claude performs content analysis and formatting (Steps 1-5), then runs the script for typography fixes (Step 6).
+工作流分为两个阶段：**分析**（理解内容）然后**格式化**（应用格式）。Claude 执行内容分析和格式化（步骤 1-5），然后运行排版脚本（步骤 6）。
 
-## Workflow
+## 工作流
 
-### Step 1: Read & Detect Content Type
+### 步骤 1：读取并检测内容类型
 
-Read the user-specified file, then detect content type:
+读取用户指定的文件，然后检测内容类型：
 
-| Indicator | Classification |
+| 指标 | 分类 |
 |-----------|----------------|
-| Has `---` YAML frontmatter | Markdown |
-| Has `#`, `##`, `###` headings | Markdown |
-| Has `**bold**`, `*italic*`, lists, code blocks, blockquotes | Markdown |
-| None of above | Plain text |
+| 含有 `---` YAML 前置元数据 | Markdown |
+| 含有 `#`、`##`、`###` 标题 | Markdown |
+| 含有 `**粗体**`、`*斜体*`、列表、代码块、引用 | Markdown |
+| 以上都不满足 | 纯文本 |
 
-**If Markdown detected, ask user:**
+**如果检测到 Markdown，询问用户：**
 
 ```
-Detected existing markdown formatting. What would you like to do?
+检测到已有 Markdown 格式。您希望如何处理？
 
-1. Optimize formatting (Recommended)
-   - Analyze content, improve headings, bold, lists for readability
-   - Run typography script (spacing, emphasis fixes)
-   - Output: {filename}-formatted.md
+1. 优化格式（推荐）
+   - 分析内容，改善标题、粗体、列表的可读性
+   - 运行排版脚本（间距、强调修复）
+   - 输出：{filename}-formatted.md
 
-2. Keep original formatting
-   - Preserve existing markdown structure
-   - Run typography script only
-   - Output: {filename}-formatted.md
+2. 保持原有格式
+   - 保留现有 Markdown 结构
+   - 仅运行排版脚本
+   - 输出：{filename}-formatted.md
 
-3. Typography fixes only
-   - Run typography script on original file in-place
-   - No copy created, modifies original file directly
+3. 仅排版修复
+   - 对原始文件就地运行排版脚本
+   - 不创建副本，直接修改原始文件
 ```
 
-**Based on user choice:**
-- **Optimize**: Continue to Step 2 (full workflow)
-- **Keep original**: Skip to Step 5, copy file then run Step 6
-- **Typography only**: Skip to Step 6, run on original file directly
+**根据用户选择：**
+- **优化**：继续步骤 2（完整工作流）
+- **保持原有**：跳至步骤 5，复制文件后运行步骤 6
+- **仅排版**：跳至步骤 6，直接在原始文件上运行
 
-### Step 2: Analyze Content (Reader's Perspective)
+### 步骤 2：分析内容（读者视角）
 
-Read the entire content carefully. Think from a reader's perspective: what would help them quickly understand and remember the key information?
+仔细阅读全部内容。从读者角度思考：什么能帮助他们快速理解和记住关键信息？
 
-Produce an analysis covering these dimensions:
+生成涵盖以下维度的分析：
 
-**2.1 Highlights & Key Insights**
-- Core arguments or conclusions the author makes
-- Surprising facts, data points, or counterintuitive claims
-- Memorable quotes or well-phrased sentences (golden quotes)
+**2.1 亮点与关键洞见**
+- 作者提出的核心论点或结论
+- 令人意外的事实、数据点或反直觉的观点
+- 值得记住的引言或精彩表述（金句）
 
-**2.2 Structure Assessment**
-- Does the content have a clear logical flow? What is it?
-- Are there natural section boundaries that lack headings?
-- Are there long walls of text that could benefit from visual breaks?
+**2.2 结构评估**
+- 内容是否有清晰的逻辑流程？是什么？
+- 是否有缺少标题的自然分节边界？
+- 是否有大段文字可以从视觉分隔中受益？
 
-**2.3 Reader-Important Information**
-- Actionable advice or takeaways
-- Definitions, explanations of key concepts
-- Lists or enumerations buried in prose
-- Comparisons or contrasts that would be clearer as tables
+**2.3 对读者重要的信息**
+- 可操作的建议或要点
+- 关键概念的定义和解释
+- 隐藏在散文中的列表或枚举
+- 用表格表达会更清晰的对比
 
-**2.4 Formatting Issues**
-- Missing or inconsistent heading hierarchy
-- Paragraphs that mix multiple topics
-- Parallel items written as prose instead of lists
-- Code, commands, or technical terms not marked as code
-- Obvious typos or formatting errors
+**2.4 格式问题**
+- 缺失或不一致的标题层级
+- 混合多个主题的段落
+- 写成散文而非列表的并列项
+- 未标记为代码的代码、命令或技术术语
+- 明显的错别字或格式错误
 
-**Save analysis to file**: `{original-filename}-analysis.md`
+**将分析保存到文件**：`{original-filename}-analysis.md`
 
-The analysis file serves as the blueprint for Step 3. Use this format:
+分析文件是步骤 3 的蓝图。使用以下格式：
 
 ```markdown
-# Content Analysis: {filename}
+# 内容分析：{filename}
 
-## Highlights & Key Insights
-- [list findings]
+## 亮点与关键洞见
+- [列出发现]
 
-## Structure Assessment
-- Current flow: [describe]
-- Suggested sections: [list heading candidates with brief rationale]
+## 结构评估
+- 当前流程：[描述]
+- 建议分节：[列出标题候选及简要理由]
 
-## Reader-Important Information
-- [list actionable items, key concepts, buried lists, potential tables]
+## 对读者重要的信息
+- [列出可操作项、关键概念、隐藏列表、潜在表格]
 
-## Formatting Issues
-- [list specific issues with location references]
+## 格式问题
+- [列出具体问题及位置引用]
 
-## Typos Found
-- [list any obvious typos with corrections, or "None found"]
+## 发现的错别字
+- [列出明显错别字及更正，或"未发现"]
 ```
 
-### Step 3: Check/Create Frontmatter, Title & Summary
+### 步骤 3：检查/创建前置元数据、标题和摘要
 
-Check for YAML frontmatter (`---` block). Create if missing.
+检查 YAML 前置元数据（`---` 块）。如果缺失则创建。
 
-| Field | Processing |
+| 字段 | 处理方式 |
 |-------|------------|
-| `title` | See **Title Generation** below |
-| `slug` | Infer from file path or generate from title |
-| `summary` | See **Summary Generation** below |
-| `coverImage` | Check if `imgs/cover.png` exists in same directory; if so, use relative path |
+| `title` | 见下方**标题生成** |
+| `slug` | 从文件路径推断或从标题生成 |
+| `summary` | 见下方**摘要生成** |
+| `coverImage` | 检查同目录下是否存在 `imgs/cover.png`；如果存在则使用相对路径 |
 
-**Title Generation:**
+**标题生成：**
 
-Whether or not a title already exists, always run the title optimization flow (unless `auto_select_title` is set).
+无论标题是否已存在，始终运行标题优化流程（除非设置了 `auto_select_title`）。
 
-**Preparation** — read the full text and extract:
-- Core argument (one sentence: "what is this article about?")
-- Most impactful opinion or conclusion
-- Reader pain point or curiosity trigger
-- Most memorable metaphor or golden quote
+**准备工作** — 阅读全文并提取：
+- 核心论点（一句话："这篇文章讲什么？"）
+- 最有冲击力的观点或结论
+- 读者痛点或好奇心触发点
+- 最令人印象深刻的比喻或金句
 
-**Generate 3-4 style-differentiated candidates:**
+**生成 3-4 个风格不同的候选：**
 
-| Style | Characteristics | Example |
+| 风格 | 特点 | 示例 |
 |-------|----------------|---------|
-| Subversive | Deny common practice, create conflict | "All de-AI-flavor prompts are wrong" |
-| Solution | Give the answer directly, promise value | "One recipe to make AI write in your voice" |
-| Suspense | Reveal half, spark curiosity | "It took me six months to find how to remove AI flavor" |
-| Concrete number | Use numbers for credibility | "150 lines of docs taught AI my writing style" |
+| 反常识 | 否定常见做法，制造冲突 | "所有去 AI 味的提示词都错了" |
+| 方案型 | 直接给出答案，承诺价值 | "一个配方让 AI 写出你的风格" |
+| 悬念型 | 揭示一半，引发好奇 | "我花了六个月才找到去除 AI 味的方法" |
+| 数字型 | 用数字增强可信度 | "150 行文档教会 AI 我的写作风格" |
 
-Present to user:
+呈现给用户：
 
 ```
-Pick a title:
+请选择标题：
 
-1. [Title A] — (recommended)
-2. [Title B] — [style note]
-3. [Title C] — [style note]
+1. [标题 A] — （推荐）
+2. [标题 B] — [风格说明]
+3. [标题 C] — [风格说明]
 
-Enter number, or type a custom title:
+输入编号，或输入自定义标题：
 ```
 
-Put the strongest hook first and mark it (recommended).
+将最强的钩子放在首位并标记为（推荐）。
 
-**Title principles:**
-- **Hook in first 5 chars**: create information gap or cognitive conflict
-- **Specific > abstract**: "150 lines" beats "a document"
-- **Negation > affirmation**: "you're doing it wrong" beats "the right way"
-- **Conversational**: like chatting with a friend, not a paper title
-- **Max ~25 chars**: longer titles get truncated in feeds
-- **Accurate, not clickbait**: the article must deliver what the title promises
+**标题原则：**
+- **前 5 个字要有钩子**：制造信息差或认知冲突
+- **具体 > 抽象**："150 行"比"一个文档"更好
+- **否定 > 肯定**："你做错了"比"正确做法"更好
+- **口语化**：像和朋友聊天，不像论文标题
+- **最多约 25 字**：过长的标题在信息流中会被截断
+- **准确，非标题党**：文章必须兑现标题的承诺
 
-**Prohibited patterns:**
+**禁止模式：**
 - "浅谈 XX"、"关于 XX 的思考"、"XX 的探索与实践"
 - "震惊！"、"万字长文"、"建议收藏"
-- Pure questions without direction: "AI 写作的未来在哪里？"
+- 没有方向性的纯提问："AI 写作的未来在哪里？"
 
-If first line is H1, extract to frontmatter and remove from body. If frontmatter already has `title`, include it as context but still generate fresh candidates.
+如果第一行是 H1，提取到前置元数据并从正文中移除。如果前置元数据已有 `title`，将其作为上下文但仍生成新候选。
 
-**Summary Generation:**
+**摘要生成：**
 
-Generate 3 candidate summaries with different angles. Present to user:
+生成 3 个不同角度的候选摘要。呈现给用户：
 
 ```
-Pick a summary:
+请选择摘要：
 
-1. [Summary A] — [focus note]
-2. [Summary B] — [focus note]
-3. [Summary C] — [focus note]
+1. [摘要 A] — [侧重说明]
+2. [摘要 B] — [侧重说明]
+3. [摘要 C] — [侧重说明]
 
-Enter number, or type a custom summary:
+输入编号，或输入自定义摘要：
 ```
 
-**Summary principles:**
-- 80-150 characters, precise and information-rich
-- Convey **core value** to the reader, not just the topic
-- Vary angles: problem-driven, result-driven, insight-driven
-- **Hook the reader**: make them want to read the full article
-- Use concrete details (numbers, outcomes, specific methods) over vague descriptions
+**摘要原则：**
+- 80-150 字，精准且信息丰富
+- 传达对读者的**核心价值**，而非仅仅是主题
+- 变换角度：问题驱动、结果驱动、洞见驱动
+- **钩住读者**：让他们想阅读全文
+- 使用具体细节（数字、结果、具体方法）而非模糊描述
 
-**Prohibited patterns:**
+**禁止模式：**
 - "本文介绍了..."、"本文探讨了..."
-- Pure topic description without value proposition
-- Repeating the title in different words
+- 纯主题描述，没有价值主张
+- 用不同措辞重复标题
 
-If frontmatter already has `summary`, skip selection and use it.
+如果前置元数据已有 `summary`，跳过选择直接使用。
 
-**EXTEND.md skip behavior:** If `auto_select: true` is set in EXTEND.md, skip title and summary selection — generate the best candidate directly without asking. User can also set `auto_select_title: true` or `auto_select_summary: true` independently.
+**EXTEND.md 跳过行为**：如果 EXTEND.md 中设置了 `auto_select: true`，跳过标题和摘要选择 —— 直接生成最佳候选，不询问用户。用户也可以独立设置 `auto_select_title: true` 或 `auto_select_summary: true`。
 
-Once title is in frontmatter, body should NOT have H1 (avoid duplication).
+标题进入前置元数据后，正文不应再有 H1（避免重复）。
 
-### Step 4: Format Content
+### 步骤 4：格式化内容
 
-Apply formatting guided by the Step 2 analysis. The goal is making the content scannable and the key points impossible to miss.
+按照步骤 2 的分析指导应用格式。目标是让内容一目了然，关键要点不可遗漏。
 
-**Formatting toolkit:**
+**格式化工具箱：**
 
-| Element | When to use | Format |
+| 元素 | 使用时机 | 格式 |
 |---------|-------------|--------|
-| Headings | Natural topic boundaries, section breaks | `##`, `###` hierarchy |
-| Bold | Key conclusions, important terms, core takeaways | `**bold**` |
-| Unordered lists | Parallel items, feature lists, examples | `- item` |
-| Ordered lists | Sequential steps, ranked items, procedures | `1. item` |
-| Tables | Comparisons, structured data, option matrices | Markdown table |
-| Code | Commands, file paths, technical terms, variable names | `` `inline` `` or fenced blocks |
-| Blockquotes | Notable quotes, important warnings, cited text | `> quote` |
-| Separators | Major topic transitions | `---` |
+| 标题 | 自然主题边界、分节 | `##`、`###` 层级 |
+| 粗体 | 关键结论、重要术语、核心要点 | `**粗体**` |
+| 无序列表 | 并列项、特性列表、示例 | `- 项目` |
+| 有序列表 | 顺序步骤、排名项、流程 | `1. 项目` |
+| 表格 | 对比、结构化数据、选项矩阵 | Markdown 表格 |
+| 代码 | 命令、文件路径、技术术语、变量名 | `` `行内代码` `` 或围栏块 |
+| 引用 | 值得注意的引言、重要警告、引用文本 | `> 引用` |
+| 分隔线 | 主题重大转换 | `---` |
 
-**Formatting principles — what NOT to do:**
-- Do NOT add sentences, explanations, or commentary
-- Do NOT delete or shorten any content
-- Do NOT rephrase or rewrite the author's words
-- Do NOT add headings that editorialize (e.g., "Amazing Discovery" — use neutral descriptive headings)
-- Do NOT over-format: not every sentence needs bold, not every paragraph needs a heading
+**格式化原则 — 不要做的事：**
+- 不要添加句子、解释或评论
+- 不要删除或缩短任何内容
+- 不要改写或重述作者的措辞
+- 不要添加带有编辑色彩的标题（例如"惊人的发现" — 使用中性描述性标题）
+- 不要过度格式化：并非每句话都需要粗体，并非每个段落都需要标题
 
-**Formatting principles — what TO do:**
-- Preserve the author's voice, tone, and every word
-- **Bold key conclusions and core takeaways** — the sentences a reader would highlight
-- Extract parallel items from prose into lists only when the structure is clearly there
-- Add headings where the topic genuinely shifts — prefer vivid, specific headings over generic ones (e.g., "3 天搞定 vs 传统方案" over "方案对比")
-- Use tables for comparisons or structured data buried in prose
-- Use blockquotes for golden quotes, memorable statements, or important warnings
-- Fix obvious typos (based on Step 2 findings)
+**格式化原则 — 要做的事：**
+- 保留作者的声音、语气和每一个字
+- **加粗关键结论和核心要点** — 读者会高亮的那些句子
+- 仅当结构明确存在时，才从散文中提取并列项为列表
+- 在主题确实转换时添加标题 — 倾向于使用生动、具体的标题而非泛泛的标题（例如"3 天搞定 vs 传统方案"优于"方案对比"）
+- 使用表格表达散文中隐藏的对比或结构化数据
+- 使用引用标注金句、令人难忘的表述或重要警告
+- 修复明显错别字（基于步骤 2 的发现）
 
-### Step 5: Save Formatted File
+### 步骤 5：保存格式化文件
 
-Save as `{original-filename}-formatted.md`
+保存为 `{original-filename}-formatted.md`
 
-**Backup existing file:**
+**备份已有文件：**
 
 ```bash
 if [ -f "{filename}-formatted.md" ]; then
@@ -302,85 +302,85 @@ if [ -f "{filename}-formatted.md" ]; then
 fi
 ```
 
-### Step 6: Execute Typography Script
+### 步骤 6：执行排版脚本
 
-Run the formatting script on the output file:
+对输出文件运行格式化脚本：
 
 ```bash
 ${BUN_X} {baseDir}/scripts/main.ts {output-file-path} [options]
 ```
 
-**Script Options:**
+**脚本选项：**
 
-| Option | Short | Description | Default |
+| 选项 | 短选项 | 说明 | 默认值 |
 |--------|-------|-------------|---------|
-| `--quotes` | `-q` | Replace ASCII quotes with fullwidth quotes `"..."` | false |
-| `--no-quotes` | | Do not replace quotes | |
-| `--spacing` | `-s` | Add CJK/English spacing via autocorrect | true |
-| `--no-spacing` | | Do not add CJK/English spacing | |
-| `--emphasis` | `-e` | Fix CJK emphasis punctuation issues | true |
-| `--no-emphasis` | | Do not fix CJK emphasis issues | |
+| `--quotes` | `-q` | 将 ASCII 引号替换为全角引号 `"..."` | false |
+| `--no-quotes` | | 不替换引号 | |
+| `--spacing` | `-s` | 通过 autocorrect 添加中日韩/英文间距 | true |
+| `--no-spacing` | | 不添加中日韩/英文间距 | |
+| `--emphasis` | `-e` | 修复中日韩文字强调符号问题 | true |
+| `--no-emphasis` | | 不修复中日韩文字强调问题 | |
 
-**Examples:**
+**示例：**
 
 ```bash
-# Default: spacing + emphasis enabled, quotes disabled
+# 默认：启用间距和强调，禁用引号替换
 ${BUN_X} {baseDir}/scripts/main.ts article.md
 
-# Enable all features including quote replacement
+# 启用所有功能包括引号替换
 ${BUN_X} {baseDir}/scripts/main.ts article.md --quotes
 
-# Only fix emphasis issues, skip spacing
+# 仅修复强调问题，跳过间距
 ${BUN_X} {baseDir}/scripts/main.ts article.md --no-spacing
 ```
 
-**Script performs (based on options):**
-1. Fix CJK emphasis/bold punctuation issues (default: enabled)
-2. Add CJK/English mixed text spacing via autocorrect (default: enabled)
-3. Replace ASCII quotes with fullwidth quotes (default: disabled)
-4. Format frontmatter YAML (always enabled)
+**脚本执行的功能**（根据选项）：
+1. 修复中日韩文字强调/粗体标点问题（默认：启用）
+2. 通过 autocorrect 添加中日韩/英文混排间距（默认：启用）
+3. 将 ASCII 引号替换为全角引号（默认：禁用）
+4. 格式化前置元数据 YAML（始终启用）
 
-### Step 7: Completion Report
+### 步骤 7：完成报告
 
-Display a report summarizing all changes made:
+显示一份总结所有变更的报告：
 
 ```
-**Formatting Complete**
+**格式化完成**
 
-**Files:**
-- Analysis: {filename}-analysis.md
-- Formatted: {filename}-formatted.md
+**文件：**
+- 分析：{filename}-analysis.md
+- 格式化：{filename}-formatted.md
 
-**Content Analysis Summary:**
-- Highlights found: X key insights
-- Golden quotes: X memorable sentences
-- Formatting issues fixed: X items
+**内容分析摘要：**
+- 发现亮点：X 个关键洞见
+- 金句：X 个令人难忘的表述
+- 修复格式问题：X 项
 
-**Changes Applied:**
-- Frontmatter: [added/updated] (title, slug, summary)
-- Headings added: X (##: N, ###: N)
-- Bold markers added: X
-- Lists created: X (from prose → list conversion)
-- Tables created: X
-- Code markers added: X
-- Blockquotes added: X
-- Typos fixed: X [list each: "original" → "corrected"]
+**应用的变更：**
+- 前置元数据：[已添加/已更新]（标题、slug、摘要）
+- 添加标题：X 个（##: N, ###: N）
+- 添加粗体标记：X 个
+- 创建列表：X 个（从散文 → 列表转换）
+- 创建表格：X 个
+- 添加代码标记：X 个
+- 添加引用：X 个
+- 修复错别字：X 个 [逐项列出："原文" → "更正"]
 
-**Typography Script:**
-- CJK spacing: [applied/skipped]
-- Emphasis fixes: [applied/skipped]
-- Quote replacement: [applied/skipped]
+**排版脚本：**
+- 中日韩间距：[已应用/已跳过]
+- 强调修复：[已应用/已跳过]
+- 引号替换：[已应用/已跳过]
 ```
 
-Adjust the report to reflect actual changes — omit categories where no changes were made.
+根据实际变更调整报告 — 省略未发生变更的类别。
 
-## Notes
+## 备注
 
-- Preserve original writing style and tone
-- Specify correct language for code blocks (e.g., `python`, `javascript`)
-- Maintain CJK/English spacing standards
-- The analysis file is a working document — it helps maintain consistency between what was identified and what was formatted
+- 保留原始写作风格和语气
+- 为代码块指定正确的语言（例如 `python`、`javascript`）
+- 保持中日韩/英文间距标准
+- 分析文件是工作文档 — 它有助于保持发现的问题与格式化操作之间的一致性
 
-## Extension Support
+## 扩展支持
 
-Custom configurations via EXTEND.md. See **Preferences** section for paths and supported options.
+通过 EXTEND.md 自定义配置。路径和支持的选项参见**偏好设置**部分。

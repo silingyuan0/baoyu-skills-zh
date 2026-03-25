@@ -1,6 +1,6 @@
 ---
 name: baoyu-danger-x-to-markdown
-description: Converts X (Twitter) tweets and articles to markdown with YAML front matter. Uses reverse-engineered API requiring user consent. Use when user mentions "X to markdown", "tweet to markdown", "save tweet", or provides x.com/twitter.com URLs for conversion.
+description: 将 X (Twitter) 的推文和文章转换为带 YAML 前置元数据的 Markdown。使用需要用户授权的逆向工程 API。当用户提到"X to markdown"、"tweet to markdown"、"save tweet"，或提供 x.com/twitter.com URL 要求转换时使用。
 version: 1.56.1
 metadata:
   openclaw:
@@ -11,28 +11,28 @@ metadata:
         - npx
 ---
 
-# X to Markdown
+# X 转 Markdown
 
-Converts X content to markdown:
-- Tweets/threads → Markdown with YAML front matter
-- X Articles → Full content extraction
+将 X 内容转换为 Markdown：
+- 推文/推文串 → 带 YAML 前置元数据的 Markdown
+- X Articles → 完整内容提取
 
-## Script Directory
+## 脚本目录
 
-Scripts located in `scripts/` subdirectory.
+脚本位于 `scripts/` 子目录。
 
-**Path Resolution**:
-1. `{baseDir}` = this SKILL.md's directory
-2. Script path = `{baseDir}/scripts/main.ts`
-3. Resolve `${BUN_X}` runtime: if `bun` installed → `bun`; if `npx` available → `npx -y bun`; else suggest installing bun
+**路径解析**：
+1. `{baseDir}` = 本 SKILL.md 所在目录
+2. 脚本路径 = `{baseDir}/scripts/main.ts`
+3. 解析 `${BUN_X}` 运行时：如果已安装 `bun` 则使用 `bun`；如果可用 `npx` 则使用 `npx -y bun`；否则提示安装 bun
 
-## Consent Requirement
+## 授权要求
 
-**Before any conversion**, check and obtain consent.
+**在任何转换之前**，检查并获取用户授权。
 
-### Consent Flow
+### 授权流程
 
-**Step 1**: Check consent file
+**步骤 1**：检查授权文件
 
 ```bash
 # macOS
@@ -42,12 +42,12 @@ cat ~/Library/Application\ Support/baoyu-skills/x-to-markdown/consent.json
 cat ~/.local/share/baoyu-skills/x-to-markdown/consent.json
 ```
 
-**Step 2**: If `accepted: true` and `disclaimerVersion: "1.0"` → print warning and proceed:
+**步骤 2**：如果 `accepted: true` 且 `disclaimerVersion: "1.0"` → 打印警告并继续：
 ```
 Warning: Using reverse-engineered X API. Accepted on: <acceptedAt>
 ```
 
-**Step 3**: If missing or version mismatch → display disclaimer:
+**步骤 3**：如果缺失或版本不匹配 → 显示免责声明：
 ```
 DISCLAIMER
 
@@ -62,9 +62,9 @@ Risks:
 Accept terms and continue?
 ```
 
-Use `AskUserQuestion` with options: "Yes, I accept" | "No, I decline"
+使用 `AskUserQuestion`，选项："是的，我接受" | "不，我拒绝"
 
-**Step 4**: On accept → create consent file:
+**步骤 4**：接受后 → 创建授权文件：
 ```json
 {
   "version": 1,
@@ -74,11 +74,11 @@ Use `AskUserQuestion` with options: "Yes, I accept" | "No, I decline"
 }
 ```
 
-**Step 5**: On decline → output "User declined. Exiting." and stop.
+**步骤 5**：拒绝后 → 输出"用户已拒绝。退出。"并停止。
 
-## Preferences (EXTEND.md)
+## 偏好设置（EXTEND.md）
 
-Check EXTEND.md existence (priority order):
+检查 EXTEND.md 是否存在（按以下优先级顺序）：
 
 ```bash
 # macOS, Linux, WSL, Git Bash
@@ -108,47 +108,47 @@ if (Test-Path "$HOME/.baoyu-skills/baoyu-danger-x-to-markdown/EXTEND.md") { "use
 ├───────────┼───────────────────────────────────────────────────────────────────────────┤
 │ Found     │ Read, parse, apply settings                                               │
 ├───────────┼───────────────────────────────────────────────────────────────────────────┤
-│ Not found │ **MUST** run first-time setup (see below) — do NOT silently create defaults │
+│ Not found │ **必须**运行首次设置（见下文） — 不要静默创建默认值 │
 └───────────┴───────────────────────────────────────────────────────────────────────────┘
 
-**EXTEND.md Supports**: Download media by default | Default output directory
+**EXTEND.md 支持**：默认下载媒体 | 默认输出目录
 
-### First-Time Setup (BLOCKING)
+### 首次设置（阻塞）
 
-**CRITICAL**: When EXTEND.md is not found, you **MUST use `AskUserQuestion`** to ask the user for their preferences before creating EXTEND.md. **NEVER** create EXTEND.md with defaults without asking. This is a **BLOCKING** operation — do NOT proceed with any conversion until setup is complete.
+**关键**：当未找到 EXTEND.md 时，**必须使用 `AskUserQuestion`** 在创建 EXTEND.md 前询问用户的偏好。**绝不**在未询问的情况下以默认值创建 EXTEND.md。这是一个**阻塞**操作 — 在设置完成之前不要进行任何转换。
 
-Use `AskUserQuestion` with ALL questions in ONE call:
+使用 `AskUserQuestion` 将所有问题在一次调用中提出：
 
-**Question 1** — header: "Media", question: "How to handle images and videos in tweets?"
-- "Ask each time (Recommended)" — After saving markdown, ask whether to download media
-- "Always download" — Always download media to local imgs/ and videos/ directories
-- "Never download" — Keep original remote URLs in markdown
+**问题 1** — 标题："Media"，问题："如何处理推文中的图片和视频？"
+- "每次询问（推荐）" — 保存 Markdown 后，询问是否下载媒体
+- "始终下载" — 始终将媒体下载到本地 imgs/ 和 videos/ 目录
+- "从不下载" — 在 Markdown 中保留原始远程 URL
 
-**Question 2** — header: "Output", question: "Default output directory?"
-- "x-to-markdown (Recommended)" — Save to ./x-to-markdown/{username}/{tweet-id}.md
-- (User may choose "Other" to type a custom path)
+**问题 2** — 标题："Output"，问题："默认输出目录？"
+- "x-to-markdown（推荐）" — 保存到 ./x-to-markdown/{username}/{tweet-id}.md
+- （用户可选择"其他"输入自定义路径）
 
-**Question 3** — header: "Save", question: "Where to save preferences?"
-- "User (Recommended)" — ~/.baoyu-skills/ (all projects)
-- "Project" — .baoyu-skills/ (this project only)
+**问题 3** — 标题："Save"，问题："偏好设置保存位置？"
+- "User（推荐）" — ~/.baoyu-skills/（所有项目）
+- "Project" — .baoyu-skills/（仅当前项目）
 
-After user answers, create EXTEND.md at the chosen location, confirm "Preferences saved to [path]", then continue.
+用户回答后，在所选位置创建 EXTEND.md，确认"偏好设置已保存到 [路径]"，然后继续。
 
-Full reference: [references/config/first-time-setup.md](references/config/first-time-setup.md)
+完整参考：[references/config/first-time-setup.md](references/config/first-time-setup.md)
 
-### Supported Keys
+### 支持的键
 
-| Key | Default | Values | Description |
+| 键 | 默认值 | 值 | 说明 |
 |-----|---------|--------|-------------|
-| `download_media` | `ask` | `ask` / `1` / `0` | `ask` = prompt each time, `1` = always download, `0` = never |
-| `default_output_dir` | empty | path or empty | Default output directory (empty = `./x-to-markdown/`) |
+| `download_media` | `ask` | `ask` / `1` / `0` | `ask` = 每次询问，`1` = 始终下载，`0` = 从不 |
+| `default_output_dir` | 空 | 路径或空 | 默认输出目录（空 = `./x-to-markdown/`） |
 
-**Value priority**:
-1. CLI arguments (`--download-media`, `-o`)
+**值优先级**：
+1. CLI 参数（`--download-media`、`-o`）
 2. EXTEND.md
-3. Skill defaults
+3. 技能默认值
 
-## Usage
+## 用法
 
 ```bash
 ${BUN_X} {baseDir}/scripts/main.ts <url>
@@ -157,23 +157,23 @@ ${BUN_X} {baseDir}/scripts/main.ts <url> --download-media
 ${BUN_X} {baseDir}/scripts/main.ts <url> --json
 ```
 
-## Options
+## 选项
 
-| Option | Description |
+| 选项 | 说明 |
 |--------|-------------|
-| `<url>` | Tweet or article URL |
-| `-o <path>` | Output path |
-| `--json` | JSON output |
-| `--download-media` | Download image/video assets to local `imgs/` and `videos/`, and rewrite markdown links to local relative paths |
-| `--login` | Refresh cookies only |
+| `<url>` | 推文或文章 URL |
+| `-o <path>` | 输出路径 |
+| `--json` | JSON 输出 |
+| `--download-media` | 将图片/视频资源下载到本地 `imgs/` 和 `videos/`，并将 Markdown 链接重写为本地相对路径 |
+| `--login` | 仅刷新 Cookie |
 
-## Supported URLs
+## 支持的 URL
 
 - `https://x.com/<user>/status/<id>`
 - `https://twitter.com/<user>/status/<id>`
 - `https://x.com/i/article/<id>`
 
-## Output
+## 输出
 
 ```markdown
 ---
@@ -186,39 +186,39 @@ coverImage: "https://pbs.twimg.com/media/example.jpg"
 Content...
 ```
 
-**File structure**: `x-to-markdown/{username}/{tweet-id}/{content-slug}.md`
+**文件结构**：`x-to-markdown/{username}/{tweet-id}/{content-slug}.md`
 
-When `--download-media` is enabled:
-- Images are saved to `imgs/` next to the markdown file
-- Videos are saved to `videos/` next to the markdown file
-- Markdown media links are rewritten to local relative paths
+启用 `--download-media` 时：
+- 图片保存到 Markdown 文件旁的 `imgs/` 目录
+- 视频保存到 Markdown 文件旁的 `videos/` 目录
+- Markdown 媒体链接重写为本地相对路径
 
-## Media Download Workflow
+## 媒体下载工作流
 
-Based on `download_media` setting in EXTEND.md:
+基于 EXTEND.md 中的 `download_media` 设置：
 
-| Setting | Behavior |
+| 设置 | 行为 |
 |---------|----------|
-| `1` (always) | Run script with `--download-media` flag |
-| `0` (never) | Run script without `--download-media` flag |
-| `ask` (default) | Follow the ask-each-time flow below |
+| `1`（始终） | 使用 `--download-media` 参数运行脚本 |
+| `0`（从不） | 不使用 `--download-media` 参数运行脚本 |
+| `ask`（默认） | 按照以下每次询问流程执行 |
 
-### Ask-Each-Time Flow
+### 每次询问流程
 
-1. Run script **without** `--download-media` → markdown saved
-2. Check saved markdown for remote media URLs (`https://` in image/video links)
-3. **If no remote media found** → done, no prompt needed
-4. **If remote media found** → use `AskUserQuestion`:
-   - header: "Media", question: "Download N images/videos to local files?"
-   - "Yes" — Download to local directories
-   - "No" — Keep remote URLs
-5. If user confirms → run script **again** with `--download-media` (overwrites markdown with localized links)
+1. **不使用** `--download-media` 运行脚本 → Markdown 已保存
+2. 检查已保存的 Markdown 中是否有远程媒体 URL（图片/视频链接中的 `https://`）
+3. **如果未找到远程媒体** → 完成，无需提示
+4. **如果发现远程媒体** → 使用 `AskUserQuestion`：
+   - 标题："Media"，问题："下载 N 个图片/视频到本地文件？"
+   - "是" — 下载到本地目录
+   - "否" — 保留远程 URL
+5. 如果用户确认 → **再次**使用 `--download-media` 运行脚本（以本地化链接覆盖 Markdown）
 
-## Authentication
+## 身份验证
 
-1. **Environment variables** (preferred): `X_AUTH_TOKEN`, `X_CT0`
-2. **Chrome login** (fallback): Auto-opens Chrome, caches cookies locally
+1. **环境变量**（推荐）：`X_AUTH_TOKEN`、`X_CT0`
+2. **Chrome 登录**（回退）：自动打开 Chrome，将 Cookie 缓存到本地
 
-## Extension Support
+## 扩展支持
 
-Custom configurations via EXTEND.md. See **Preferences** section for paths and supported options.
+通过 EXTEND.md 自定义配置。路径和支持的选项参见**偏好设置**部分。

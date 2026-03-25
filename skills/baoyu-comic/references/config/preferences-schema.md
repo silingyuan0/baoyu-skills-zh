@@ -1,11 +1,11 @@
 ---
 name: preferences-schema
-description: EXTEND.md YAML schema for baoyu-comic user preferences
+description: baoyu-comic 用户首选项的 EXTEND.md YAML 架构
 ---
 
-# Preferences Schema
+# 首选项架构
 
-## Full Schema
+## 完整架构
 
 ```yaml
 ---
@@ -33,63 +33,63 @@ character_presets:
 ---
 ```
 
-## Field Reference
+## 字段参考
 
-| Field | Type | Default | Description |
+| 字段 | 类型 | 默认值 | 描述 |
 |-------|------|---------|-------------|
-| `version` | int | 2 | Schema version |
-| `watermark.enabled` | bool | false | Enable watermark |
-| `watermark.content` | string | "" | Watermark text (@username or custom) |
-| `watermark.position` | enum | bottom-right | Position on image |
-| `preferred_art` | string | null | Art style (ligne-claire, manga, realistic, ink-brush, chalk) |
-| `preferred_tone` | string | null | Tone (neutral, warm, dramatic, romantic, energetic, vintage, action) |
-| `preferred_layout` | string | null | Layout preference or null |
-| `preferred_aspect` | string | null | Aspect ratio (3:4, 4:3, 16:9) |
-| `language` | string | null | Output language (null = auto-detect) |
-| `character_presets` | array | [] | Preset character roles for styles like ohmsha |
+| `version` | int | 2 | 架构版本 |
+| `watermark.enabled` | bool | false | 启用水印 |
+| `watermark.content` | string | "" | 水印文本（@username 或自定义）|
+| `watermark.position` | enum | bottom-right | 图片上的位置 |
+| `preferred_art` | string | null | 艺术风格（ligne-claire, manga, realistic, ink-brush, chalk）|
+| `preferred_tone` | string | null | 基调（neutral, warm, dramatic, romantic, energetic, vintage, action）|
+| `preferred_layout` | string | null | 布局偏好或 null |
+| `preferred_aspect` | string | null | 纵横比（3:4, 4:3, 16:9）|
+| `language` | string | null | 输出语言（null = 自动检测）|
+| `character_presets` | array | [] | 角色预设（如 ohmsha 风格）|
 
-## Art Style Options
+## 艺术风格选项
 
-| Value | 中文 | Description |
+| 值 | 中文 | 描述 |
 |-------|------|-------------|
-| `ligne-claire` | 清线 | Uniform lines, flat colors, European comic tradition |
-| `manga` | 日漫 | Large eyes, manga conventions, expressive emotions |
-| `realistic` | 写实 | Digital painting, realistic proportions |
-| `ink-brush` | 水墨 | Chinese brush strokes, ink wash effects |
-| `chalk` | 粉笔 | Chalkboard aesthetic, hand-drawn warmth |
+| `ligne-claire` | 清线 | 均匀线条，平坦色彩，欧洲漫画传统 |
+| `manga` | 日漫 | 大眼睛，漫画 conventions，表情丰富 |
+| `realistic` | 写实 | 数字绘画，写实比例 |
+| `ink-brush` | 水墨 | 中国画笔触，水墨效果 |
+| `chalk` | 粉笔 | 黑板美学，手绘温暖感 |
 
-## Tone Options
+## 基调选项
 
-| Value | 中文 | Description |
+| 值 | 中文 | 描述 |
 |-------|------|-------------|
-| `neutral` | 中性 | Balanced, rational, educational |
-| `warm` | 温馨 | Nostalgic, personal, comforting |
-| `dramatic` | 戏剧 | High contrast, intense, powerful |
-| `romantic` | 浪漫 | Soft, beautiful, decorative elements |
-| `energetic` | 活力 | Bright, dynamic, exciting |
-| `vintage` | 复古 | Historical, aged, period authenticity |
-| `action` | 动作 | Speed lines, impact effects, combat |
+| `neutral` | 中性 | 平衡、理性、教育 |
+| `warm` | 温馨 | 怀旧、个人、舒适 |
+| `dramatic` | 戏剧 | 高对比、强烈、有力 |
+| `romantic` | 浪漫 | 柔和、美丽、装饰元素 |
+| `energetic` | 活力 | 明亮、动态、兴奋 |
+| `vintage` | 复古 | 历史、年龄、时代真实性 |
+| `action` | 动作 | 速度线、冲击效果、战斗 |
 
-## Position Options
+## 位置选项
 
-| Value | Description |
+| 值 | 描述 |
 |-------|-------------|
-| `bottom-right` | Lower right corner (default, works with most panel layouts) |
-| `bottom-left` | Lower left corner |
-| `bottom-center` | Bottom center (good for webtoon vertical scroll) |
-| `top-right` | Upper right corner (avoid - conflicts with page numbers) |
+| `bottom-right` | 右下角（默认，适合大多数面板布局）|
+| `bottom-left` | 左下角 |
+| `bottom-center` | 底部居中（适合网页漫画垂直滚动）|
+| `top-right` | 右上角（避免 - 与页码冲突）|
 
-## Character Preset Fields
+## 角色预设字段
 
-| Field | Required | Description |
+| 字段 | 必填 | 描述 |
 |-------|----------|-------------|
-| `name` | Yes | Unique preset identifier |
-| `roles.learner` | No | Character representing the learner/protagonist |
-| `roles.mentor` | No | Character representing the teacher/guide |
-| `roles.challenge` | No | Character representing obstacles/antagonist |
-| `roles.support` | No | Character providing support/comic relief |
+| `name` | 是 | 唯一预设标识符 |
+| `roles.learner` | 否 | 代表学习者/主角的角色 |
+| `roles.mentor` | 否 | 代表老师/向导的角色 |
+| `roles.challenge` | 否 | 代表障碍/反派的角色 |
+| `roles.support` | 否 | 提供支持/喜剧调节的角色 |
 
-## Example: Minimal Preferences
+## 示例：最小首选项
 
 ```yaml
 ---
@@ -102,7 +102,7 @@ preferred_tone: neutral
 ---
 ```
 
-## Example: Full Preferences
+## 示例：完整首选项
 
 ```yaml
 ---
@@ -137,11 +137,11 @@ character_presets:
 ---
 ```
 
-## Migration from v1
+## 从 v1 迁移
 
-If you have a v1 preferences file with `preferred_style`, migrate as follows:
+如果您有 v1 首选项文件与 `preferred_style`，请按如下迁移：
 
-| Old `preferred_style.name` | New `preferred_art` | New `preferred_tone` |
+| 旧 `preferred_style.name` | 新 `preferred_art` | 新 `preferred_tone` |
 |---------------------------|---------------------|---------------------|
 | classic | ligne-claire | neutral |
 | dramatic | ligne-claire | dramatic |

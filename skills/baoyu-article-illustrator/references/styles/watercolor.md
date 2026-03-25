@@ -1,58 +1,58 @@
 # watercolor
 
-Soft, artistic watercolor illustration style with natural warmth
+带有自然温暖感的柔和艺术水彩插图风格
 
-## Design Aesthetic
+## 设计美学
 
-Gentle watercolor aesthetic with visible brush strokes and natural color bleeding. Hand-painted feel with soft edges and organic shapes. Warm, approachable, and artistically refined. Combines artistic expression with clear visual communication.
+柔和的水彩美学，带有可见笔触和自然色彩晕染。手绘质感配合柔和边缘和有机形状。温暖、平易近人、艺术精致。结合艺术表达与清晰视觉传达。
 
-## Background
+## 背景
 
-- Color: Warm Off-White (#FAF8F0) or Soft Cream (#FFF9E6)
-- Texture: Subtle watercolor paper texture with visible grain
+- 颜色：暖米白（#FAF8F0）或柔和奶油色（#FFF9E6）
+- 纹理：细微水彩纸纹理，可见颗粒感
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
+| 角色 | 颜色 | Hex | 用途 |
 |------|-------|-----|-------|
-| Background | Warm Off-White | #FAF8F0 | Primary background |
-| Primary | Soft Coral | #F4A261 | Primary warmth |
-| Secondary | Dusty Rose | #E8A0A0 | Secondary warmth |
-| Tertiary | Sage Green | #87A96B | Nature, growth |
-| Accent 1 | Sky Blue | #7EC8E3 | Water, calm |
-| Accent 2 | Soft Lavender | #C5B4E3 | Accent, creativity |
-| Wash | Pale Yellow | #FFF3C4 | Background washes |
-| Text | Warm Charcoal | #3D3D3D | Text elements |
+| 背景 | 暖米白 | #FAF8F0 | 主背景 |
+| 主色 | 柔和珊瑚色 | #F4A261 | 主温暖 |
+| 次要色 | 灰玫瑰色 | #E8A0A0 | 次要温暖 |
+| 第三色 | 鼠尾草绿 | #87A96B | 自然、成长 |
+| 强调色 1 | 天蓝色 | #7EC8E3 | 水、平静 |
+| 强调色 2 | 柔和薰衣草色 | #C5B4E3 | 强调、创意 |
+| 晕染 | 淡黄色 | #FFF3C4 | 背景晕染 |
+| 文本 | 暖炭灰色 | #3D3D3D | 文本元素 |
 
-## Visual Elements
+## 视觉元素
 
-- Watercolor washes as backgrounds
-- Illustrated elements with visible brush strokes
-- Natural elements: leaves, flowers, bubbles
-- Color bleeds and soft edges
-- Hand-drawn arrows and lines
-- Layered wash effects
-- Soft gradients through water
-- Expressive character illustrations
+- 作为背景的水彩晕染
+- 带可见笔触的插图元素
+- 自然元素：叶子、花朵、气泡
+- 色彩晕染和柔和边缘
+- 手绘箭头和线条
+- 分层晕染效果
+- 通过水实现的柔和渐变
+- 表达性角色插图
 
-## Style Rules
+## 风格规则
 
-### Do
+### 宜
 
-- Allow color to bleed beyond edges
-- Use visible brush stroke textures
-- Create soft, organic shapes
-- Include hand-drawn quality
-- Maintain warm color palette
+- 允许色彩超出边缘晕染
+- 使用可见笔触纹理
+- 创建柔和、有机的形状
+- 包含手绘质感
+- 保持温暖色调
 
-### Don't
+### 忌
 
-- Use sharp geometric shapes
-- Create hard digital edges
-- Use cold or stark colors
-- Add photographic elements
-- Create overly precise illustrations
+- 使用尖锐几何形状
+- 创建硬朗数字边缘
+- 使用冷色或苍白颜色
+- 添加摄影元素
+- 创建过于精确的插图
 
-## Best For
+## 适用于
 
-Lifestyle articles, wellness content, travel pieces, food and cooking, personal stories, creative topics, artistic portfolios, warm educational content
+生活方式文章、健康内容、旅行文章、美食烹饪、个人故事、创意话题、艺术作品集、温暖教育内容

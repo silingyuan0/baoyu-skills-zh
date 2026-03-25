@@ -1,180 +1,180 @@
-# Character Definition Template
+# 角色定义模板
 
-## Character Document Format
+## 角色文档格式
 
-Create `characters/characters.md` with the following structure:
+创建具有以下结构的 `characters/characters.md`：
 
 ```markdown
-# Character Definitions - [Comic Title]
+# 角色定义 - [漫画标题]
 
-**Style**: [selected style]
-**Art Direction**: [Ligne Claire / Manga / etc.]
-
----
-
-## Character 1: [Name]
-
-**Role**: [Protagonist / Mentor / Antagonist / Narrator]
-**Age**: [approximate age or age range in story]
-
-**Appearance**:
-- Face shape: [oval/square/round]
-- Hair: [color, style, length]
-- Eyes: [color, shape, distinctive features]
-- Build: [height, body type]
-- Distinguishing features: [glasses, beard, scar, etc.]
-
-**Costume**:
-- Default outfit: [detailed description]
-- Color palette: [primary colors for this character]
-- Accessories: [hat, bag, tools, etc.]
-
-**Expression Range**:
-- Neutral: [description]
-- Happy/Excited: [description]
-- Thinking/Confused: [description]
-- Determined: [description]
-
-**Visual Reference Notes**:
-[Any specific artistic direction]
+**风格**：[所选风格]
+**艺术指导**：[Ligne Claire / Manga / 等]
 
 ---
 
-## Character 2: [Name]
+## 角色 1：[名称]
+
+**角色**：主角 / 导师 / 反派 / 叙述者
+**年龄**：故事中的近似年龄或年龄范围
+
+**外貌**：
+- 脸型：[椭圆/方/圆]
+- 头发：[颜色、风格、长度]
+- 眼睛：[颜色、形状、显著特征]
+- 体型：[身高、体型]
+- 显著特征：[眼镜、胡须、疤痕等]
+
+**服装**：
+- 默认服装：[详细描述]
+- 调色板：[这个角色的主要颜色]
+- 配饰：[帽子、包、工具等]
+
+**表情范围**：
+- 中性：[描述]
+- 开心/兴奋：[描述]
+- 思考/困惑：[描述]
+- 坚定：[描述]
+
+**视觉参考笔记**：
+[任何特定艺术指导]
+
+---
+
+## 角色 2：[名称]
 ...
 ```
 
-## Reference Sheet Image Prompt
+## 参考表图像提示词
 
-After character definitions, include a prompt for generating the reference sheet:
+在角色定义之后，包含用于生成分镜表的提示词：
 
 ```markdown
-## Reference Sheet Prompt
+## 参考表提示词
 
-Character reference sheet in [style] style, clean lines, flat colors:
+[风格] 风格的角色参考表，清晰的线条，平涂色彩：
 
-[ROW 1 - Character Name]:
-- Front view: [detailed description]
-- 3/4 view: [description]
-- Expression sheet: Neutral | Happy | Focused | Worried
+[第 1 行 - 角色名称]：
+- 正面视图：[详细描述]
+- 3/4 视图：[描述]
+- 表情表：中性 | 开心 | 专注 | 担忧
 
-[ROW 2 - Character Name]:
+[第 2 行 - 角色名称]：
 ...
 
-COLOR PALETTE:
-- [Character 1]: [colors]
-- [Character 2]: [colors]
+调色板：
+- [角色 1]：[颜色]
+- [角色 2]：[颜色]
 
-White background, clear labels under each character.
+白色背景，每个角色下方有清晰的标签。
 ```
 
-## Example: Turing Biography
+## 示例：图灵传记
 
 ```markdown
-# Character Definitions - The Imitation Game
+# 角色定义 - 模仿游戏
 
-**Style**: classic (Ligne Claire)
-**Art Direction**: Clean lines, muted colors, period-accurate details
-
----
-
-## Character 1: Alan Turing
-
-**Role**: Protagonist
-**Age**: 25-40 (varies across story)
-
-**Appearance**:
-- Face shape: Oval, slightly angular
-- Hair: Dark brown, wavy, slightly disheveled
-- Eyes: Deep-set, intense gaze
-- Build: Tall, lean, slightly awkward posture
-- Distinguishing features: Prominent brow, thoughtful expression
-
-**Costume**:
-- Default outfit: Tweed jacket with elbow patches, white shirt, no tie
-- Color palette: Muted browns, navy blue, cream
-- Accessories: Occasionally a pipe, papers/notebooks
-
-**Expression Range**:
-- Neutral: Thoughtful, slightly distant
-- Happy/Excited: Eureka moment, eyes bright, subtle smile
-- Thinking/Confused: Furrowed brow, looking at abstract space
-- Determined: Jaw set, focused eyes
+**风格**：经典（Ligne Claire）
+**艺术指导**：清晰的线条、柔和的颜色、准确的时期细节
 
 ---
 
-## Character 2: The Bombe Machine
+## 角色 1：艾伦·图灵
 
-**Role**: Supporting (anthropomorphized)
-**Appearance**:
-- Large brass and wood cabinet
-- Dial "eyes" that can express states
-- Paper tape "mouth"
-- Indicator lights for emotions
+**角色**：主角
+**年龄**：25-40（故事中有所不同）
 
-**Expression Range**:
-- Processing: Spinning dials, humming
-- Success: Lights up warmly
-- Stuck: Smoke wisps, stuttering
+**外貌**：
+- 脸型：椭圆，略呈棱角
+- 头发：深棕色、波浪形、略显凌乱
+- 眼睛：深陷、目光强烈
+- 体型：高、瘦、姿势略显笨拙
+- 显著特征：突出的眉毛、沉思的表情
+
+**服装**：
+- 默认服装：带肘部补丁的花呢外套、白色衬衫、不系领带
+- 调色板：柔和的棕色、藏青色、奶油色
+- 配饰：偶尔抽烟斗、纸张/笔记本
+
+**表情范围**：
+- 中性：沉思、略显疏离
+- 开心/兴奋：灵光一现的时刻、眼睛明亮、微微微笑
+- 思考/困惑：眉头紧锁、凝视抽象空间
+- 坚定：下颌紧绑、专注的眼神
 
 ---
 
-## Reference Sheet Prompt
+## 角色 2：炸弹机
 
-Character reference sheet in Ligne Claire style, clean lines, flat colors:
+**角色**：配角（拟人化）
+**外貌**：
+- 大型黄铜和木头柜子
+- 可表达状态的表盘"眼睛"
+- 纸带"嘴"
+- 用于情感的指示灯
 
-TOP ROW - Alan Turing:
-- Front view: Young man, 30s, short dark wavy hair, thoughtful expression, wearing tweed jacket with elbow patches, white shirt
-- 3/4 view: Same character, slight smile, showing profile of nose
-- Expression sheet: Neutral | Excited (eureka moment) | Focused (working) | Worried
+**表情范围**：
+- 处理中：旋转表盘、嗡嗡作响
+- 成功：温暖地亮起
+- 卡住：烟雾、结巴
 
-BOTTOM ROW - The Bombe Machine (anthropomorphized):
-- Bombe machine as character: Large, brass and wood, dial "eyes", paper tape "mouth"
-- Expressions: Processing (spinning dials) | Success (lights up) | Stuck (smoke wisps)
+---
 
-COLOR PALETTE:
-- Turing: Muted browns (#8B7355), navy blue (#2C3E50), cream (#F5F5DC)
-- Machine: Brass (#B5A642), mahogany (#4E2728), emerald indicators (#2ECC71)
+## 参考表提示词
 
-White background, clear labels under each character.
+Ligne Claire 风格的角色参考表，清晰的线条，平涂色彩：
+
+第一行 - 艾伦·图灵：
+- 正面视图：30多岁的年轻男子，短深色波浪头发，沉思的表情，穿着带肘部补丁的花呢外套、白色衬衫
+- 3/4 视图：同一角色，微笑略，展示鼻子轮廓
+- 表情表：中性 | 兴奋（灵光一现） | 专注（工作） | 担忧
+
+第二行 - 炸弹机（拟人化）：
+- 角色形式的炸弹机：大型、黄铜和木头、表盘"眼睛"、纸带"嘴"
+- 表情：处理中（旋转表盘） | 成功（亮起） | 卡住（烟雾）
+
+调色板：
+- 图灵：柔和棕色 (#8B7355)、藏青色 (#2C3E50)、奶油色 (#F5F5DC)
+- 机器：黄铜 (#B5A642)、红木 (#4E2728)、翡翠指示 (#2ECC71)
+
+白色背景，每个角色下方有清晰的标签。
 ```
 
-## Handling Age Variants
+## 处理年龄变体
 
-For biographies spanning many years, define age variants:
+对于跨越多年的传记，定义年龄变体：
 
 ```markdown
-## Alan Turing - Age Variants
+## 艾伦·图灵 - 年龄变体
 
-### Young (1920s, age 10-18)
-- Boyish features, round face
-- School uniform (Sherborne)
-- Curious, eager expression
+### 年轻（1920年代，10-18岁）
+- 孩子气的特征、圆脸
+- 学校制服（舍伯恩）
+- 好奇、热切的表情
 
-### Adult (1930s-40s, age 25-35)
-- Angular face, defined jaw
-- Tweed jacket, rumpled appearance
-- Intense, focused expression
+### 成年（1930-40年代，25-35岁）
+- 棱角分明的脸、清晰的下颌
+- 花呢外套、凌乱的外表
+- 强烈、专注的表情
 
-### Later (1950s, age 40+)
-- Slightly weathered
-- More casual dress
-- Thoughtful, sometimes melancholic
+### 后期（1950年代，40岁以上）
+- 略显沧桑
+- 更休闲的着装
+- 沉思、有时忧郁
 ```
 
-## Best Practices
+## 最佳实践
 
-| Practice | Description |
+| 实践 | 描述 |
 |----------|-------------|
-| Be specific | "Short dark wavy hair, parted left" not just "dark hair" |
-| Use distinguishing features | Glasses, scars, accessories that identify character |
-| Define color codes | Use specific color names or hex codes |
-| Include age markers | Wrinkles, posture, clothing style matching era |
-| Reference real people | For historical figures, note "based on 1940s photographs" |
+| 具体化 | "左偏分的短深色波浪头发"而不是"深色头发" |
+| 使用显著特征 | 眼镜、疤痕、使角色可识别的配饰 |
+| 定义颜色代码 | 使用特定颜色名称或十六进制代码 |
+| 包含年龄标记 | 皱纹、姿势、符合时代的服装风格 |
+| 参考真实人物 | 对于历史人物，注明"基于1940年代照片" |
 
-## Why Character Reference Matters
+## 为什么角色参考很重要
 
-Without unified character definition, AI generates inconsistent appearances. The reference sheet provides:
-1. Visual anchors for consistent features
-2. Color palettes for consistent coloring
-3. Expression documentation for emotional portrayals
+没有统一的角色定义，AI 会生成不一致的外观。参考表提供：
+1. 一致特征的视觉锚点
+2. 一致着色的调色板
+3. 情感表现文档

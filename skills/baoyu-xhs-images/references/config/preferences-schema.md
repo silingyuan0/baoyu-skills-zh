@@ -1,11 +1,6 @@
----
-name: preferences-schema
-description: EXTEND.md YAML schema for baoyu-xhs-images user preferences
----
+# 偏好设置 Schema
 
-# Preferences Schema
-
-## Full Schema
+## 完整 Schema
 
 ```yaml
 ---
@@ -17,8 +12,8 @@ watermark:
   position: bottom-right  # bottom-right|bottom-left|bottom-center|top-right
 
 preferred_style:
-  name: null              # Built-in or custom style name
-  description: ""         # Override/notes
+  name: null              # 内置或自定义风格名称
+  description: ""         # 覆盖/备注
 
 preferred_layout: null    # sparse|balanced|dense|list|comparison|flow
 
@@ -37,43 +32,43 @@ custom_styles:
 ---
 ```
 
-## Field Reference
+## 字段参考
 
-| Field | Type | Default | Description |
+| 字段 | 类型 | 默认值 | 描述 |
 |-------|------|---------|-------------|
-| `version` | int | 1 | Schema version |
-| `watermark.enabled` | bool | false | Enable watermark |
-| `watermark.content` | string | "" | Watermark text (@username or custom) |
-| `watermark.position` | enum | bottom-right | Position on image |
-| `preferred_style.name` | string | null | Style name or null |
-| `preferred_style.description` | string | "" | Custom notes/override |
-| `preferred_layout` | string | null | Layout preference or null |
-| `language` | string | null | Output language (null = auto-detect) |
-| `custom_styles` | array | [] | User-defined styles |
+| `version` | int | 1 | Schema 版本 |
+| `watermark.enabled` | bool | false | 启用水印 |
+| `watermark.content` | string | "" | 水印文字（@username 或自定义） |
+| `watermark.position` | enum | bottom-right | 图像上的位置 |
+| `preferred_style.name` | string | null | 风格名称或 null |
+| `preferred_style.description` | string | "" | 自定义备注/覆盖 |
+| `preferred_layout` | string | null | 布局偏好或 null |
+| `language` | string | null | 输出语言（null = 自动检测） |
+| `custom_styles` | array | [] | 用户定义的风格 |
 
-## Position Options
+## 位置选项
 
-| Value | Description |
+| 值 | 描述 |
 |-------|-------------|
-| `bottom-right` | Lower right corner (default, most common) |
-| `bottom-left` | Lower left corner |
-| `bottom-center` | Bottom center |
-| `top-right` | Upper right corner |
+| `bottom-right` | 右下角（默认，最常用） |
+| `bottom-left` | 左下角 |
+| `bottom-center` | 底部居中 |
+| `top-right` | 右上角 |
 
-## Custom Style Fields
+## 自定义样式字段
 
-| Field | Required | Description |
+| 字段 | 必填 | 描述 |
 |-------|----------|-------------|
-| `name` | Yes | Unique style identifier (kebab-case) |
-| `description` | Yes | What the style conveys |
-| `color_palette.primary` | No | Main colors (array) |
-| `color_palette.background` | No | Background color |
-| `color_palette.accents` | No | Accent colors (array) |
-| `visual_elements` | No | Decorative elements |
-| `typography` | No | Font/lettering style |
-| `best_for` | No | Recommended content types |
+| `name` | 是 | 唯一风格标识符（kebab-case） |
+| `description` | 是 | 风格的描述 |
+| `color_palette.primary` | 否 | 主色（数组） |
+| `color_palette.background` | 否 | 背景色 |
+| `color_palette.accents` | 否 | 强调色（数组） |
+| `visual_elements` | 否 | 装饰元素 |
+| `typography` | 否 | 字体/文字风格 |
+| `best_for` | 否 | 建议的内容类型 |
 
-## Example: Minimal Preferences
+## 示例：最小化偏好
 
 ```yaml
 ---
@@ -86,7 +81,7 @@ preferred_style:
 ---
 ```
 
-## Example: Full Preferences
+## 示例：完整偏好
 
 ```yaml
 ---

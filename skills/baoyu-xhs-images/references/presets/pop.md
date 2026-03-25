@@ -3,11 +3,11 @@ name: pop
 category: energetic
 ---
 
-# Pop Style
+# 活力风格
 
-Vibrant, energetic, eye-catching aesthetic.
+鲜艳、活力、吸睛美学。
 
-## Element Combination
+## 元素组合
 
 ```yaml
 canvas:
@@ -31,42 +31,42 @@ decorations:
   frames: none
 ```
 
-## Color Palette
+## 调色板
 
-| Role | Colors | Hex |
+| 角色 | 颜色 | Hex |
 |------|--------|-----|
-| Primary | Bright red, yellow, blue, green | #F56565, #ECC94B, #4299E1, #48BB78 |
-| Background | White, light gray | #FFFFFF, #F7FAFC |
-| Accents | Neon pink, electric purple | #FF69B4, #9F7AEA |
+| 主色 | 亮红、黄、蓝、绿 | #F56565, #ECC94B, #4299E1, #48BB78 |
+| 背景 | 白色、浅灰 | #FFFFFF, #F7FAFC |
+| 点缀色 | 霓虹粉、电光紫 | #FF69B4, #9F7AEA |
 
-## Visual Elements
+## 视觉元素
 
-- Bold shapes, speech bubbles
-- Comic-style effects, starburst
-- Dynamic, energetic compositions
-- High-energy decorations
+- 大胆形状、对话气泡
+- 漫画风效果、星爆
+- 动感活力的构图
+- 高能量装饰
 
-## Typography
+## 排版
 
-- Dynamic, energetic hand lettering with outlines
-- Bold color combinations
-- Playful, expressive forms
+- 动感活力的手写体，带描边
+- 大胆色彩组合
+- 俏皮有表现力的字形
 
-## Best Layout Pairings
+## 最佳布局搭配
 
-| Layout | Compatibility | Use Case |
+| 布局 | 兼容性 | 适用场景 |
 |--------|---------------|----------|
-| sparse | ✓✓ | Exciting announcements |
-| balanced | ✓✓ | Fun tutorials |
-| dense | ✓ | Packed information |
-| list | ✓✓ | Fun facts lists |
-| comparison | ✓✓ | Dynamic comparisons |
-| flow | ✓ | Energetic processes |
+| sparse | ✓✓ | 精彩公告 |
+| balanced | ✓✓ | 趣味教程 |
+| dense | ✓ | 信息密集内容 |
+| list | ✓✓ | 趣味冷知识列表 |
+| comparison | ✓✓ | 动感对比 |
+| flow | ✓ | 充满活力的流程 |
 
-## Best For
+## 最适合
 
-- Exciting announcements
-- Fun facts
-- Engaging tutorials
-- Entertainment content
-- Youth-oriented content
+- 精彩公告
+- 趣味冷知识
+- 引人入胜的教程
+- 娱乐内容
+- 年轻向内容

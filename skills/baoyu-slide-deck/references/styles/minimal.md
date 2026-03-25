@@ -1,64 +1,64 @@
 # minimal
 
-Ultra-clean keynote style with maximum whitespace and zen-like simplicity
+极致简洁的主题演讲风格，最大化留白，禅意简洁
 
-## Design Aesthetic
+## 设计美学
 
-Maximum whitespace with minimal elements. Zen-like simplicity where every element earns its place. Premium, refined aesthetic suitable for executive audiences. Less is more - remove until nothing more can be taken away.
+最大化留白，元素极少。禅意简洁——每一元素都应证明其存在的价值。精致、考究的美学，适合高管受众。少即是多——持续精简直到无法再移除。
 
-## Background
+## 背景
 
-- Color: Pure White (#FFFFFF)
-- Texture: None - absolute clean, no grain or patterns
+- 颜色：纯白（#FFFFFF）
+- 纹理：无——绝对干净，无颗粒或图案
 
-## Typography
+## 排版
 
-### Primary Font (Headlines)
+### 主字体（标题）
 
-Clean geometric sans-serif like SF Pro Display, Inter, or Helvetica Neue. Light to medium weight for elegant restraint. Generous letter-spacing. Large scale for impact without boldness.
+简洁的几何无衬线字体，如 SF Pro Display、Inter 或 Helvetica Neue。细到中等字重，体现克制的优雅。宽松的字间距。大字号带来视觉冲击力，无需粗体。
 
-### Secondary Font (Body)
+### 辅助字体（正文）
 
-Same family as headlines in lighter weight. Minimal size contrast. Clean, airy feeling throughout.
+与标题同族但更细的字重。最小化的字号对比。整体保持干净通透的观感。
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
-|------|-------|-----|-------|
-| Background | Pure White | #FFFFFF | Primary background |
-| Primary Text | Near Black | #1A1A1A | Headlines, body |
-| Secondary Text | Medium Gray | #6B7280 | Captions, metadata |
-| Accent | Single Brand Color | #2563EB | One accent only, sparingly |
-| Dividers | Light Gray | #E5E7EB | Subtle separators |
+| 角色 | 颜色 | 色值 | 用途 |
+|------|------|------|------|
+| 背景 | Pure White | #FFFFFF | 主要背景 |
+| 主文本 | Near Black | #1A1A1A | 标题、正文 |
+| 辅助文本 | Medium Gray | #6B7280 | 说明文字、元数据 |
+| 强调色 | Single Brand Color | #2563EB | 仅使用一种强调色，克制使用 |
+| 分割线 | Light Gray | #E5E7EB | 轻柔的分隔符 |
 
-## Visual Elements
+## 视觉元素
 
-- Single accent color used sparingly
-- Thin hairline rules for separation
-- Generous margins (minimum 15% on all sides)
-- Center or left-aligned layouts
-- Simple geometric shapes only when necessary
-- No decorative elements
-- Data visualizations in single color or grayscale
+- 仅使用一种强调色，克制运用
+- 极细分割线用于分隔
+- 宽裕的边距（四周至少 15%）
+- 居中或左对齐布局
+- 仅在必要时使用简单几何形状
+- 无装饰性元素
+- 数据可视化使用单色或灰度
 
-## Style Rules
+## 风格规则
 
-### Do
+### 推荐做法
 
-- Embrace empty space as a design element
-- Use single accent color only
-- Keep text minimal (10 words or less per slide)
-- Create breathing room between elements
-- Use scale to create hierarchy
+- 将留白作为设计元素
+- 仅使用一种强调色
+- 文字极简（每张幻灯片不超过 10 个词）
+- 为元素间留出呼吸空间
+- 通过尺寸比例创建层次
 
-### Don't
+### 避免事项
 
-- Fill empty space with decoration
-- Use multiple accent colors
-- Add icons or illustrations unless essential
-- Create dense information layouts
-- Add slide numbers, footers, or logos
+- 用装饰填充空白区域
+- 使用多种强调色
+- 添加图标或插图（非必要时）
+- 创建信息密集的布局
+- 添加幻灯片编号、页脚或标志
 
-## Best For
+## 适用场景
 
-Executive briefings, keynote presentations, premium brand communications, minimalist products, investor meetings, high-level strategy
+高管简报、主题演讲、高端品牌传播、极简产品发布、投资者会议、高层战略汇报

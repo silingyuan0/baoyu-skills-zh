@@ -1,43 +1,43 @@
-# chalk
+# 粉笔
 
-Educational, authentic, classroom
+教育性、真实、教室风
 
-## Core Characteristics
+## 核心特征
 
-Chalk on blackboard aesthetic with imperfect strokes, dust effects, and authentic classroom feel. Nostalgic educational warmth.
+黑板上的粉笔美学，包含不完美的笔触、灰尘效果和真实的教室氛围。带有怀旧的教育温度。
 
-## Lines
+## 线条
 
-- Imperfect chalk strokes with variable pressure
-- Visible chalk texture and grain
-- Slightly wobbly, hand-drawn quality
-- Thick strokes for emphasis, thin for details
+- 压力不均匀的粉笔笔触
+- 可见的粉笔纹理和颗粒感
+- 略微摇晃的手绘质感
+- 粗笔触用于强调，细笔触用于细节
 
-## Texture
+## 纹理
 
-- Chalk dust effects around text and elements
-- Board surface (dark, slightly worn)
-- Eraser smudges and residue
-- Grainy chalk quality on all elements
+- 文字和元素周围的粉笔灰尘效果
+- 黑板表面（深色，略有磨损）
+- 擦除痕迹和残留
+- 所有元素上的颗粒粉笔质感
 
-## Depth
+## 深度
 
-- None: flat chalk drawings on board surface
-- Layering through erasure and redrawing
-- No shadows or perspective
+- 无深度：仅黑板表面上的平面粉笔画
+- 通过擦除和重新绘制实现层次叠加
+- 无阴影或透视
 
-## Element Vocabulary
+## 元素词汇
 
-- Chalk doodles: stars, arrows, underlines
-- Mathematical formulas and diagrams
-- Stick figures and simple icons
-- Connection lines with chalk feel
-- Checkmarks, circles, boxes for lists
-- Wooden frame border optional
+- 粉笔涂鸦：星星、箭头、下划线
+- 数学公式和示意图
+- 火柴人和简单图标
+- 带有粉笔质感的连接线
+- 列表用的勾选标记、圆圈、方框
+- 可选木质边框
 
-## Typography Approach
+## 排版方式
 
-- Hand-drawn chalk lettering
-- Imperfect baseline, authentic classroom feel
-- White or bright colored chalk for emphasis
-- Variable sizing for hierarchy
+- 手绘粉笔字体
+- 不完美的基线，真实的教室感
+- 白色或明亮彩色粉笔用于强调
+- 可变大小用于层级区分

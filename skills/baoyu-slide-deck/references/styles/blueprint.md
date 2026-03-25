@@ -1,67 +1,67 @@
 # blueprint
 
-Precise technical blueprint style with professional analytical visual presentation
+精密技术蓝图风格，专业分析性视觉呈现
 
-## Design Aesthetic
+## 设计美学
 
-Clean, structured visual metaphors using blueprints, diagrams, and schematics. Precise, analytical and aesthetically refined. Information presented in triptych or grid-based layouts with engineering precision.
+使用蓝图、示意图（schematics）和结构化图表构建清晰、精确的视觉隐喻。精确、分析性强且视觉精致。信息以三栏或网格布局呈现，体现工程制图级别的精度。
 
-## Background
+## 背景
 
-- Color: Blueprint Off-White (#FAF8F5)
-- Texture: Subtle grid overlay, light engineering paper feel
+- 颜色：蓝图灰白（#FAF8F5）
+- 纹理：细微网格叠加层，轻微工程纸质感
 
-## Typography
+## 排版
 
-### Primary Font (Headlines)
+### 主字体（标题）
 
-Neue Haas Grotesk Display Pro or similar clean sans-serif. Bold weight for titles. Precise letterforms with consistent spacing. Technical, authoritative presence.
+Neue Haas Grotesk Display Pro 或类似的无衬线字体。标题使用粗体。精确的字母形态，间距一致。技术感、权威感强。
 
-### Secondary Font (Body)
+### 辅助字体（正文）
 
-Tiempos Text or similar elegant serif for body explanations. Clean, readable at smaller sizes. Professional editorial quality.
+Tiempos Text 或类似的优雅衬线字体，用于正文说明。简洁，小字号下清晰可读。专业编辑品质。
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
-|------|-------|-----|-------|
-| Background | Blueprint Paper | #FAF8F5 | Primary background |
-| Grid | Light Gray | #E5E5E5 | Background grid lines |
-| Primary Text | Deep Slate | #334155 | Headlines, body text |
-| Primary Accent | Engineering Blue | #2563EB | Key elements, highlights |
-| Secondary Accent | Navy Blue | #1E3A5F | Supporting elements |
-| Tertiary | Light Blue | #BFDBFE | Backgrounds, fills |
-| Warning | Amber | #F59E0B | Warnings, emphasis points |
+| 角色 | 颜色 | 色值 | 用途 |
+|------|------|------|------|
+| 背景 | Blueprint Paper | #FAF8F5 | 主要背景 |
+| 网格 | Light Gray | #E5E5E5 | 背景网格线 |
+| 主文本 | Deep Slate | #334155 | 标题、正文 |
+| 主强调色 | Engineering Blue | #2563EB | 关键元素、高亮 |
+| 辅助强调色 | Navy Blue | #1E3A5F | 辅助元素 |
+| 第三色 | Light Blue | #BFDBFE | 背景、填充 |
+| 警告色 | Amber | #F59E0B | 警告、强调点 |
 
-## Visual Elements
+## 视觉元素
 
-- Precise lines with consistent stroke weights
-- Technical schematics and clean vector graphics
-- Thin line work in technical drawing style
-- Connection lines use straight lines or 90-degree angles only
-- Data visualization with clean, minimal charts
-- Dimension lines and measurement indicators
-- Cross-section style diagrams
-- Isometric or orthographic projections
+- 一致的线宽，精确线条
+- 技术示意图和简洁矢量图形
+- 技术制图风格的细线条
+- 连接线仅使用直线或 90 度角
+- 简洁、极简的数据可视化图表
+- 尺寸线和测量指示器
+- 截面图（cross-section）风格的图表
+- 等距或正交投影（orthographic projections）
 
-## Style Rules
+## 风格规则
 
-### Do
+### 推荐做法
 
-- Maintain consistent line weights throughout
-- Use grid alignment for all elements
-- Keep color palette restrained and unified
-- Create clear visual hierarchy through scale
-- Use geometric precision for all shapes
+- 全文保持一致的线宽
+- 所有元素使用网格对齐
+- 保持调色板克制统一
+- 通过尺寸比例创建清晰的视觉层次
+- 所有形状保持几何精度
 
-### Don't
+### 避免事项
 
-- Use hand-drawn or organic shapes
-- Add decorative flourishes
-- Use curved connection lines
-- Include photographic elements
-- Add slide numbers, footers, or logos
+- 使用手绘或有机形状
+- 添加装饰性花纹
+- 使用曲线连接线
+- 包含摄影元素
+- 添加幻灯片编号、页脚或标志
 
-## Best For
+## 适用场景
 
-Technical architecture, system design, data analysis, professional business presentations, engineering documentation, process flows
+技术架构、系统设计、数据分析、专业商务演示、工程文档、流程图

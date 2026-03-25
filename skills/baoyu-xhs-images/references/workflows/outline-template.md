@@ -1,30 +1,30 @@
-# Xiaohongshu Outline Template
+# 小红书大纲模板
 
-Template for generating infographic series outlines with layout specifications.
+用于生成带有布局规范的信息图系列大纲的模板。
 
-## File Naming
+## 文件命名
 
-Outline files use strategy identifier in the name:
-- `outline-strategy-a.md` - Story-driven variant
-- `outline-strategy-b.md` - Information-dense variant
-- `outline-strategy-c.md` - Visual-first variant
-- `outline.md` - Final selected (copied from chosen variant)
+大纲文件在名称中使用策略标识符：
+- `outline-strategy-a.md` - 故事驱动变体
+- `outline-strategy-b.md` - 信息密集变体
+- `outline-strategy-c.md` - 视觉优先变体
+- `outline.md` - 最终选定（从选定变体复制）
 
-## Image File Naming
+## 图像文件命名
 
-Images use meaningful slugs for readability:
+图像使用有意义的 slug 以提高可读性：
 ```
 NN-{type}-[slug].png
-NN-{type}-[slug].md (in prompts/)
+NN-{type}-[slug].md（在 prompts/ 中）
 ```
 
-| Type | Usage |
+| 类型 | 用途 |
 |------|-------|
-| `cover` | First image (cover) |
-| `content` | Middle content images |
-| `ending` | Last image |
+| `cover` | 首图（封面） |
+| `content` | 中间内容图像 |
+| `ending` | 末图 |
 
-**Examples**:
+**示例**：
 - `01-cover-ai-tools.png`
 - `02-content-why-ai.png`
 - `03-content-chatgpt.png`
@@ -32,43 +32,43 @@ NN-{type}-[slug].md (in prompts/)
 - `05-content-notion-ai.png`
 - `06-ending-summary.png`
 
-**Slug rules**:
-- Derived from image content (kebab-case)
-- Must be unique within the series
-- Keep short but descriptive (2-4 words)
+**Slug 规则**：
+- 源自图像内容（kebab-case）
+- 在系列内必须唯一
+- 保持简短但有描述性（2-4 个词）
 
-## Layout Selection Guide
+## 布局选择指南
 
-### Density-Based Layouts
+### 基于密度的布局
 
-| Layout | When to Use | Info Points | Whitespace |
+| 布局 | 何时使用 | 信息点数 | 留白 |
 |--------|-------------|-------------|------------|
-| sparse | Covers, quotes, impact statements | 1-2 | 60-70% |
-| balanced | Standard content, tutorials | 3-4 | 40-50% |
-| dense | Knowledge cards, cheat sheets | 5-8 | 20-30% |
+| sparse | 封面、引言、有影响力陈述 | 1-2 | 60-70% |
+| balanced | 标准内容、教程 | 3-4 | 40-50% |
+| dense | 知识卡片、速查表 | 5-8 | 20-30% |
 
-### Structure-Based Layouts
+### 基于结构的布局
 
-| Layout | When to Use | Structure |
+| 布局 | 何时使用 | 结构 |
 |--------|-------------|-----------|
-| list | Rankings, checklists, steps | Numbered/bulleted vertical |
-| comparison | Before/after, pros/cons | Left vs right split |
-| flow | Processes, timelines | Connected nodes with arrows |
+| list | 排名、清单、步骤 | 编号/项目符号垂直 |
+| comparison | 前后、优缺点 | 左右分割 |
+| flow | 流程、时间线 | 带箭头的连接节点 |
 
-### Position-Based Recommendations
+### 基于位置的推荐
 
-| Position | Recommended | Reasoning |
+| 位置 | 推荐 | 原因 |
 |----------|-------------|-----------|
-| Cover | sparse | Maximum impact, clear title |
-| Setup | balanced | Context without overwhelming |
-| Core | balanced/dense/list | Match content density |
-| Payoff | balanced/list | Clear takeaways |
-| Ending | sparse | Clean CTA, memorable |
+| 封面 | sparse | 最大冲击、清晰标题 |
+| 铺垫 | balanced | 建立语境但不造成负担 |
+| 核心 | balanced/dense/list | 匹配内容密度 |
+| 收获 | balanced/list | 清晰要点 |
+| 结尾 | sparse | 清晰 CTA、令人印象深刻 |
 
-## Outline Format
+## 大纲格式
 
 ```markdown
-# Xiaohongshu Infographic Series Outline
+# 小红书信息图系列大纲
 
 ---
 strategy: a  # a, b, or c
@@ -218,30 +218,30 @@ Notion界面风格，简洁黑白配色
 ---
 ```
 
-## Swipe Hook Strategies
+## 滑动钩子策略
 
-Each image should end with a hook for the next:
+每张图应以下一个的钩子结束：
 
-| Strategy | Example |
+| 策略 | 示例 |
 |----------|---------|
-| Teaser | "第一个就很强大👇" |
-| Numbering | "接下来是第2个👇" |
-| Superlative | "下一个更厉害👇" |
-| Question | "猜猜下一个是什么？👇" |
-| Promise | "最后一个最实用👇" |
-| Urgency | "最重要的来了👇" |
+| 悬念 | "第一个就很强大👇" |
+| 编号 | "接下来是第2个👇" |
+| 最高级 | "下一个更厉害👇" |
+| 提问 | "猜猜下一个是什么？👇" |
+| 承诺 | "最后一个最实用👇" |
+| 紧迫 | "最重要的来了👇" |
 
-## Strategy Differentiation
+## 策略差异化
 
-Three strategies should differ meaningfully:
+三种策略应有实质性差异：
 
-| Strategy | Focus | Structure | Page Count |
+| 策略 | 重点 | 结构 | 页数 |
 |----------|-------|-----------|------------|
-| A: Story-Driven | Emotional, personal | Hook→Problem→Discovery→Experience→Conclusion | 4-6 |
-| B: Information-Dense | Factual, structured | Core→Info Cards→Comparison→Recommendation | 3-5 |
-| C: Visual-First | Atmospheric, minimal text | Hero→Details→Lifestyle→CTA | 3-4 |
+| A: 故事驱动 | 情感、个人 | 钩子→问题→发现→体验→结论 | 4-6 |
+| B: 信息密集 | 事实、结构 | 核心→信息卡片→对比→推荐 | 3-5 |
+| C: 视觉优先 | 氛围、最少文字 | 英雄→细节→生活方式→CTA | 3-4 |
 
-**Example for "AI工具推荐"**:
-- `outline-strategy-a.md`: Warm + Balanced - Personal journey with AI
-- `outline-strategy-b.md`: Notion + Dense - Knowledge card style
-- `outline-strategy-c.md`: Minimal + Sparse - Sleek tech aesthetic
+**"AI工具推荐"示例**：
+- `outline-strategy-a.md`：温暖 + Balanced - AI的个人旅程
+- `outline-strategy-b.md`：Notion + Dense - 知识卡片风格
+- `outline-strategy-c.md`：Minimal + Sparse - 时尚科技美学

@@ -1,26 +1,26 @@
-# mono
+# 单色
 
-Clean, focused, essential
+简洁、专注、极致
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex |
-|------|-------|-----|
-| Primary 1 | Pure Black | #000000 |
-| Primary 2 | Near Black | #1F1F1F |
-| Primary 3 | Dark Gray | #374151 |
-| Background | White | #FFFFFF |
-| Background Alt | Off-White | #FAFAFA |
-| Accent 1 | Content-derived single color | - |
-| Accent 2 | Medium Gray | #9CA3AF |
+| 角色 | 颜色 | 十六进制 |
+|------|------|----------|
+| 主色 1 | Pure Black（纯黑） | #000000 |
+| 主色 2 | Near Black（近黑） | #1F1F1F |
+| 主色 3 | Dark Gray（深灰） | #374151 |
+| 背景 | White（白色） | #FFFFFF |
+| 备选背景 | Off-White（米白） | #FAFAFA |
+| 强调色 1 | Content-derived single color（内容衍生的单一颜色） | - |
+| 强调色 2 | Medium Gray（中灰） | #9CA3AF |
 
-## Decorative Hints
+## 装饰提示
 
-- Maximum negative space
-- Thin lines and minimal strokes
-- Single focal point emphasis
-- Stark contrast between elements
+- 最大留白
+- 纤细线条和极简笔触
+- 单一焦点强调
+- 元素间鲜明的对比
 
-## Best For
+## 适用场景
 
-Zen, focus, essential concepts, pure, simple, minimalist philosophy, clean design
+禅意、专注、本质概念、纯粹、极简设计

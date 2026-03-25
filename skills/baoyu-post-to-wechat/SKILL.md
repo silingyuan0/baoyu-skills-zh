@@ -1,6 +1,6 @@
 ---
 name: baoyu-post-to-wechat
-description: Posts content to WeChat Official Account (微信公众号) via API or Chrome CDP. Supports article posting (文章) with HTML, markdown, or plain text input, and image-text posting (贴图, formerly 图文) with multiple images. Markdown article workflows default to converting ordinary external links into bottom citations for WeChat-friendly output. Use when user mentions "发布公众号", "post to wechat", "微信公众号", or "贴图/图文/文章".
+description: 通过 API 或 Chrome CDP 向微信公众号发布内容。支持文章发表（文章）使用 HTML、markdown 或纯文本输入，以及贴图发表（贴图，原图文）多图发布。Markdown 文章工作流默认将普通外部链接转换为底部引用以适配微信输出。当用户提及"发布公众号"、"post to wechat"、"微信公众号"或"贴图/图文/文章"时使用。
 version: 1.56.1
 metadata:
   openclaw:
@@ -11,27 +11,27 @@ metadata:
         - npx
 ---
 
-# Post to WeChat Official Account
+# 发布到微信公众号
 
-## Language
+## 语言
 
-**Match user's language**: Respond in the same language the user uses. If user writes in Chinese, respond in Chinese. If user writes in English, respond in English.
+**匹配用户语言**：使用与用户相同的语言回复。如果用户用中文写作，用中文回复。如果用户用英文写作，用英文回复。
 
-## Script Directory
+## 脚本目录
 
-**Agent Execution**: Determine this SKILL.md directory as `{baseDir}`, then use `{baseDir}/scripts/<name>.ts`. Resolve `${BUN_X}` runtime: if `bun` installed → `bun`; if `npx` available → `npx -y bun`; else suggest installing bun.
+**智能体执行**：将此 SKILL.md 目录确定为 `{baseDir}`，然后使用 `{baseDir}/scripts/<name>.ts`。解析 `${BUN_X}` 运行时：如果已安装 `bun` → `bun`；如果 `npx` 可用 → `npx -y bun`；否则建议安装 bun。
 
-| Script | Purpose |
+| 脚本 | 用途 |
 |--------|---------|
-| `scripts/wechat-browser.ts` | Image-text posts (图文) |
-| `scripts/wechat-article.ts` | Article posting via browser (文章) |
-| `scripts/wechat-api.ts` | Article posting via API (文章) |
-| `scripts/md-to-wechat.ts` | Markdown → WeChat-ready HTML with image placeholders |
-| `scripts/check-permissions.ts` | Verify environment & permissions |
+| `scripts/wechat-browser.ts` | 贴图发布（图文） |
+| `scripts/wechat-article.ts` | 通过浏览器发布文章（文章） |
+| `scripts/wechat-api.ts` | 通过 API 发布文章（文章） |
+| `scripts/md-to-wechat.ts` | Markdown → 微信适配 HTML（带图片占位符） |
+| `scripts/check-permissions.ts` | 验证环境与权限 |
 
-## Preferences (EXTEND.md)
+## 偏好设置（EXTEND.md）
 
-Check EXTEND.md existence (priority order):
+检查 EXTEND.md 是否存在（优先级顺序）：
 
 ```bash
 # macOS, Linux, WSL, Git Bash
@@ -49,34 +49,34 @@ if (Test-Path "$HOME/.baoyu-skills/baoyu-post-to-wechat/EXTEND.md") { "user" }
 ```
 
 ┌────────────────────────────────────────────────────────┬───────────────────┐
-│                          Path                          │     Location      │
+│                          路径                            │       位置        │
 ├────────────────────────────────────────────────────────┼───────────────────┤
-│ .baoyu-skills/baoyu-post-to-wechat/EXTEND.md           │ Project directory │
+│ .baoyu-skills/baoyu-post-to-wechat/EXTEND.md           │ 项目目录         │
 ├────────────────────────────────────────────────────────┼───────────────────┤
-│ $HOME/.baoyu-skills/baoyu-post-to-wechat/EXTEND.md     │ User home         │
+│ $HOME/.baoyu-skills/baoyu-post-to-wechat/EXTEND.md     │ 用户主目录        │
 └────────────────────────────────────────────────────────┴───────────────────┘
 
 ┌───────────┬───────────────────────────────────────────────────────────────────────────┐
-│  Result   │                                  Action                                   │
+│   结果    │                                  操作                                    │
 ├───────────┼───────────────────────────────────────────────────────────────────────────┤
-│ Found     │ Read, parse, apply settings                                               │
+│ 找到     │ 读取、解析、应用设置                                                       │
 ├───────────┼───────────────────────────────────────────────────────────────────────────┤
-│ Not found │ Run first-time setup ([references/config/first-time-setup.md](references/config/first-time-setup.md)) → Save → Continue │
+│ 未找到   │ 运行首次设置（[references/config/first-time-setup.md](references/config/first-time-setup.md)）→ 保存 → 继续 │
 └───────────┴───────────────────────────────────────────────────────────────────────────┘
 
-**EXTEND.md Supports**: Default theme | Default color | Default publishing method (api/browser) | Default author | Default open-comment switch | Default fans-only-comment switch | Chrome profile path
+**EXTEND.md 支持**：默认主题 | 默认颜色 | 默认发布方式（api/browser）| 默认作者 | 默认开启评论开关 | 默认粉丝评论开关 | Chrome 配置文件路径
 
-First-time setup: [references/config/first-time-setup.md](references/config/first-time-setup.md)
+首次设置：[references/config/first-time-setup.md](references/config/first-time-setup.md)
 
-**Minimum supported keys** (case-insensitive, accept `1/0` or `true/false`):
+**最低支持键名**（不区分大小写，接受 `1/0` 或 `true/false`）：
 
-| Key | Default | Mapping |
+| 键名 | 默认值 | 映射 |
 |-----|---------|---------|
-| `default_author` | empty | Fallback for `author` when CLI/frontmatter not provided |
-| `need_open_comment` | `1` | `articles[].need_open_comment` in `draft/add` request |
-| `only_fans_can_comment` | `0` | `articles[].only_fans_can_comment` in `draft/add` request |
+| `default_author` | 空 | 当 CLI/前置元数据未提供时作为 `author` 的备选 |
+| `need_open_comment` | `1` | `draft/add` 请求中 `articles[].need_open_comment` |
+| `only_fans_can_comment` | `0` | `draft/add` 请求中 `articles[].only_fans_can_comment` |
 
-**Recommended EXTEND.md example**:
+**推荐的 EXTEND.md 示例**：
 
 ```md
 default_theme: default
@@ -88,30 +88,30 @@ only_fans_can_comment: 0
 chrome_profile_path: /path/to/chrome/profile
 ```
 
-**Theme options**: default, grace, simple, modern
+**主题选项**：default、grace、simple、modern
 
-**Color presets**: blue, green, vermilion, yellow, purple, sky, rose, olive, black, gray, pink, red, orange (or hex value)
+**颜色预设**：blue、green、vermilion、yellow、purple、sky、rose、olive、black、gray、pink、red、orange（或十六进制值）
 
-**Value priority**:
-1. CLI arguments
-2. Frontmatter
-3. EXTEND.md (account-level → global-level)
-4. Skill defaults
+**值优先级**：
+1. CLI 参数
+2. 前置元数据
+3. EXTEND.md（账号级 → 全局级）
+4. 技能默认值
 
-## Multi-Account Support
+## 多账号支持
 
-EXTEND.md supports managing multiple WeChat Official Accounts. When `accounts:` block is present, each account can have its own credentials, Chrome profile, and default settings.
+EXTEND.md 支持管理多个微信公众号。当存在 `accounts:` 块时，每个账号可拥有自己的凭据、Chrome 配置文件和默认设置。
 
-**Compatibility rules**:
+**兼容性规则**：
 
-| Condition | Mode | Behavior |
+| 条件 | 模式 | 行为 |
 |-----------|------|----------|
-| No `accounts` block | Single-account | Current behavior, unchanged |
-| `accounts` with 1 entry | Single-account | Auto-select, no prompt |
-| `accounts` with 2+ entries | Multi-account | Prompt to select before publishing |
-| `accounts` with `default: true` | Multi-account | Pre-select default, user can switch |
+| 无 `accounts` 块 | 单账号 | 当前行为，不变 |
+| `accounts` 有 1 条目 | 单账号 | 自动选择，不提示 |
+| `accounts` 有 2+ 条目 | 多账号 | 发布前提示选择 |
+| `accounts` 有 `default: true` | 多账号 | 预选择，可切换 |
 
-**Multi-account EXTEND.md example**:
+**多账号 EXTEND.md 示例**：
 
 ```md
 default_theme: default
@@ -135,15 +135,15 @@ accounts:
     only_fans_can_comment: 0
 ```
 
-**Per-account keys** (can be set per-account or globally as fallback):
-`default_publish_method`, `default_author`, `need_open_comment`, `only_fans_can_comment`, `app_id`, `app_secret`, `chrome_profile_path`
+**每账号键名**（可每账号设置或作为全局备选）：
+`default_publish_method`、`default_author`、`need_open_comment`、`only_fans_can_comment`、`app_id`、`app_secret`、`chrome_profile_path`
 
-**Global-only keys** (always shared across accounts):
-`default_theme`, `default_color`
+**仅全局键名**（始终跨账号共享）：
+`default_theme`、`default_color`
 
-### Account Selection (Step 0.5)
+### 账号选择（Step 0.5）
 
-Insert between Step 0 and Step 1 in the Article Posting Workflow:
+在文章发表工作流的 Step 0 和 Step 1 之间插入：
 
 ```
 if no accounts block:
@@ -162,17 +162,17 @@ else:
        Select account [1-N]:"
 ```
 
-### Credential Resolution (API Method)
+### 凭据解析（API 方式）
 
-For a selected account with alias `{alias}`:
+对于别名 `{alias}` 的选中账号：
 
-1. `app_id` / `app_secret` inline in EXTEND.md account block
-2. Env var `WECHAT_{ALIAS}_APP_ID` / `WECHAT_{ALIAS}_APP_SECRET` (alias uppercased, hyphens → underscores)
-3. `.baoyu-skills/.env` with prefixed key `WECHAT_{ALIAS}_APP_ID`
-4. `~/.baoyu-skills/.env` with prefixed key
-5. Fallback to unprefixed `WECHAT_APP_ID` / `WECHAT_APP_SECRET`
+1. EXTEND.md 账号块内联 `app_id` / `app_secret`
+2. 环境变量 `WECHAT_{ALIAS}_APP_ID` / `WECHAT_{ALIAS}_APP_SECRET`（别名大写，连字符 → 下划线）
+3. `.baoyu-skills/.env` 带前缀键 `WECHAT_{ALIAS}_APP_ID`
+4. `~/.baoyu-skills/.env` 带前缀键
+5. 备选无前缀 `WECHAT_APP_ID` / `WECHAT_APP_SECRET`
 
-**.env multi-account example**:
+**.env 多账号示例**：
 
 ```bash
 # Account: baoyu
@@ -184,19 +184,19 @@ WECHAT_AI_TOOLS_APP_ID=your_ai_tools_wechat_app_id
 WECHAT_AI_TOOLS_APP_SECRET=your_ai_tools_wechat_app_secret
 ```
 
-### Chrome Profile (Browser Method)
+### Chrome 配置文件（浏览器方式）
 
-Each account uses an isolated Chrome profile for independent login sessions:
+每个账号使用独立 Chrome 配置文件以保持独立登录会话：
 
-| Source | Path |
+| 来源 | 路径 |
 |--------|------|
-| Account `chrome_profile_path` in EXTEND.md | Use as-is |
-| Auto-generated from alias | `{shared_profile_parent}/wechat-{alias}/` |
-| Single-account fallback | Shared default profile (current behavior) |
+| EXTEND.md 中账号 `chrome_profile_path` | 原样使用 |
+| 从别名自动生成 | `{shared_profile_parent}/wechat-{alias}/` |
+| 单账号备选 | 共享默认配置文件（当前行为） |
 
-### CLI `--account` Argument
+### CLI `--account` 参数
 
-All publishing scripts accept `--account <alias>`:
+所有发布脚本接受 `--account <alias>`：
 
 ```bash
 ${BUN_X} {baseDir}/scripts/wechat-api.ts <file> --theme default --account ai-tools
@@ -204,43 +204,43 @@ ${BUN_X} {baseDir}/scripts/wechat-article.ts --markdown <file> --theme default -
 ${BUN_X} {baseDir}/scripts/wechat-browser.ts --markdown <file> --images ./photos/ --account baoyu
 ```
 
-## Pre-flight Check (Optional)
+## 飞行前检查（可选）
 
-Before first use, suggest running the environment check. User can skip if they prefer.
+首次使用前，建议运行环境检查。如用户偏好，可跳过。
 
 ```bash
 ${BUN_X} {baseDir}/scripts/check-permissions.ts
 ```
 
-Checks: Chrome, profile isolation, Bun, Accessibility, clipboard, paste keystroke, API credentials, Chrome conflicts.
+检查项：Chrome、配置文件隔离、Bun、辅助功能、剪贴板、粘贴按键、API 凭据、Chrome 冲突。
 
-**If any check fails**, provide fix guidance per item:
+**如有任何检查失败**，按项目提供修复指导：
 
-| Check | Fix |
+| 检查项 | 修复 |
 |-------|-----|
-| Chrome | Install Chrome or set `WECHAT_BROWSER_CHROME_PATH` env var |
-| Profile dir | Shared profile at `baoyu-skills/chrome-profile` (see CLAUDE.md Chrome Profile section) |
-| Bun runtime | `brew install oven-sh/bun/bun` (macOS) or `npm install -g bun` |
-| Accessibility (macOS) | System Settings → Privacy & Security → Accessibility → enable terminal app |
-| Clipboard copy | Ensure Swift/AppKit available (macOS Xcode CLI tools: `xcode-select --install`) |
-| Paste keystroke (macOS) | Same as Accessibility fix above |
-| Paste keystroke (Linux) | Install `xdotool` (X11) or `ydotool` (Wayland) |
-| API credentials | Follow guided setup in Step 2, or manually set in `.baoyu-skills/.env` |
+| Chrome | 安装 Chrome 或设置 `WECHAT_BROWSER_CHROME_PATH` 环境变量 |
+| 配置文件目录 | 共享配置文件位于 `baoyu-skills/chrome-profile`（参见 CLAUDE.md Chrome 配置文件章节）|
+| Bun 运行时 | `brew install oven-sh/bun/bun`（macOS）或 `npm install -g bun` |
+| 辅助功能（macOS）| 系统设置 → 隐私与安全 → 辅助功能 → 启用终端应用 |
+| 剪贴板复制 | 确保 Swift/AppKit 可用（macOS Xcode CLI 工具：`xcode-select --install`）|
+| 粘贴按键（macOS）| 同辅助功能修复 |
+| 粘贴按键（Linux）| 安装 `xdotool`（X11）或 `ydotool`（Wayland）|
+| API 凭据 | 在 Step 2 跟随引导设置，或手动设置到 `.baoyu-skills/.env` |
 
-## Image-Text Posting (图文)
+## 贴图发表（图文）
 
-For short posts with multiple images (up to 9):
+适用于带多图（最多 9 张）的短帖子：
 
 ```bash
 ${BUN_X} {baseDir}/scripts/wechat-browser.ts --markdown article.md --images ./images/
 ${BUN_X} {baseDir}/scripts/wechat-browser.ts --title "标题" --content "内容" --image img.png --submit
 ```
 
-See [references/image-text-posting.md](references/image-text-posting.md) for details.
+详见 [references/image-text-posting.md](references/image-text-posting.md)。
 
-## Article Posting Workflow (文章)
+## 文章发表工作流（文章）
 
-Copy this checklist and check off items as you complete them:
+复制此清单并在完成时勾选：
 
 ```
 Publishing Progress:
@@ -253,53 +253,53 @@ Publishing Progress:
 - [ ] Step 5: Report completion
 ```
 
-### Step 0: Load Preferences
+### Step 0: 加载偏好设置
 
-Check and load EXTEND.md settings (see Preferences section above).
+检查并加载 EXTEND.md 设置（见上文偏好设置）。
 
-**CRITICAL**: If not found, complete first-time setup BEFORE any other steps or questions.
+**关键**：如未找到，在任何其他步骤或问题之前完成首次设置。
 
-Resolve and store these defaults for later steps:
-- `default_theme` (default `default`)
-- `default_color` (omit if not set — theme default applies)
+解析并存储以下默认值供后续步骤使用：
+- `default_theme`（默认 `default`）
+- `default_color`（如未设置则省略——应用主题默认）
 - `default_author`
-- `need_open_comment` (default `1`)
-- `only_fans_can_comment` (default `0`)
+- `need_open_comment`（默认 `1`）
+- `only_fans_can_comment`（默认 `0`）
 
-### Step 1: Determine Input Type
+### Step 1: 确定输入类型
 
-| Input Type | Detection | Action |
+| 输入类型 | 检测 | 操作 |
 |------------|-----------|--------|
-| HTML file | Path ends with `.html`, file exists | Skip to Step 3 |
-| Markdown file | Path ends with `.md`, file exists | Continue to Step 2 |
-| Plain text | Not a file path, or file doesn't exist | Save to markdown, continue to Step 2 |
+| HTML 文件 | 路径以 `.html` 结尾，文件存在 | 跳到 Step 3 |
+| Markdown 文件 | 路径以 `.md` 结尾，文件存在 | 继续到 Step 2 |
+| 纯文本 | 非文件路径，或文件不存在 | 保存为 markdown，继续到 Step 2 |
 
-**Plain Text Handling**:
+**纯文本处理**：
 
-1. Generate slug from content (first 2-4 meaningful words, kebab-case)
-2. Create directory and save file:
+1. 从内容生成 slug（前 2-4 个有意义的词，kebab-case）
+2. 创建目录并保存文件：
 
 ```bash
 mkdir -p "$(pwd)/post-to-wechat/$(date +%Y-%m-%d)"
-# Save content to: post-to-wechat/yyyy-MM-dd/[slug].md
+# 保存到: post-to-wechat/yyyy-MM-dd/[slug].md
 ```
 
-3. Continue processing as markdown file
+3. 继续作为 markdown 文件处理
 
-**Slug Examples**:
+**Slug 示例**：
 - "Understanding AI Models" → `understanding-ai-models`
-- "人工智能的未来" → `ai-future` (translate to English for slug)
+- "人工智能的未来" → `ai-future`（翻译为英文用于 slug）
 
-### Step 2: Select Publishing Method and Configure
+### Step 2: 选择发布方式并配置
 
-**Ask publishing method** (unless specified in EXTEND.md or CLI):
+**询问发布方式**（除非在 EXTEND.md 或 CLI 中指定）：
 
-| Method | Speed | Requirements |
+| 方式 | 速度 | 要求 |
 |--------|-------|--------------|
-| `api` (Recommended) | Fast | API credentials |
-| `browser` | Slow | Chrome, login session |
+| `api`（推荐） | 快 | API 凭据 |
+| `browser` | 慢 | Chrome、登录会话 |
 
-**If API Selected - Check Credentials**:
+**如选择 API — 检查凭据**：
 
 ```bash
 # macOS, Linux, WSL, Git Bash
@@ -313,7 +313,7 @@ if ((Test-Path .baoyu-skills/.env) -and (Select-String -Quiet -Pattern "WECHAT_A
 if ((Test-Path "$HOME/.baoyu-skills/.env") -and (Select-String -Quiet -Pattern "WECHAT_APP_ID" "$HOME/.baoyu-skills/.env")) { "user" }
 ```
 
-**If Credentials Missing - Guide Setup**:
+**如凭据缺失 — 引导设置**：
 
 ```
 WeChat API credentials not found.
@@ -328,82 +328,82 @@ A) Project-level: .baoyu-skills/.env (this project only)
 B) User-level: ~/.baoyu-skills/.env (all projects)
 ```
 
-After location choice, prompt for values and write to `.env`:
+选择位置后，提示输入值并写入 `.env`：
 
 ```
 WECHAT_APP_ID=<user_input>
 WECHAT_APP_SECRET=<user_input>
 ```
 
-### Step 3: Resolve Theme/Color and Validate Metadata
+### Step 3: 解析主题/颜色并验证元数据
 
-1. **Resolve theme** (first match wins, do NOT ask user if resolved):
-   - CLI `--theme` argument
-   - EXTEND.md `default_theme` (loaded in Step 0)
-   - Fallback: `default`
+1. **解析主题**（首个匹配，不resolved 时不询问用户）：
+   - CLI `--theme` 参数
+   - EXTEND.md `default_theme`（Step 0 中加载）
+   - 备选：`default`
 
-2. **Resolve color** (first match wins):
-   - CLI `--color` argument
-   - EXTEND.md `default_color` (loaded in Step 0)
-   - Omit if not set (theme default applies)
+2. **解析颜色**（首个匹配）：
+   - CLI `--color` 参数
+   - EXTEND.md `default_color`（Step 0 中加载）
+   - 如未设置则省略（应用主题默认）
 
-3. **Validate metadata** from frontmatter (markdown) or HTML meta tags (HTML input):
+3. **从前置元数据（markdown）或 HTML meta 标签（HTML 输入）验证元数据**：
 
-| Field | If Missing |
+| 字段 | 如缺失 |
 |-------|------------|
-| Title | Prompt: "Enter title, or press Enter to auto-generate from content" |
-| Summary | Prompt: "Enter summary, or press Enter to auto-generate (recommended for SEO)" |
-| Author | Use fallback chain: CLI `--author` → frontmatter `author` → EXTEND.md `default_author` |
+| 标题 | 提示："Enter title, or press Enter to auto-generate from content" |
+| 摘要 | 提示："Enter summary, or press Enter to auto-generate (recommended for SEO)" |
+| 作者 | 使用备选链：CLI `--author` → 前置元数据 `author` → EXTEND.md `default_author` |
 
-**Auto-Generation Logic**:
-- **Title**: First H1/H2 heading, or first sentence
-- **Summary**: First paragraph, truncated to 120 characters
+**自动生成逻辑**：
+- **标题**：首个 H1/H2 标题，或首个句子
+- **摘要**：首个段落，截断至 120 字符
 
-4. **Cover Image Check** (required for API `article_type=news`):
-   1. Use CLI `--cover` if provided.
-   2. Else use frontmatter (`coverImage`, `featureImage`, `cover`, `image`).
-   3. Else check article directory default path: `imgs/cover.png`.
-   4. Else fallback to first inline content image.
-   5. If still missing, stop and request a cover image before publishing.
+4. **封面图片检查**（API `article_type=news` 必需）：
+   1. 使用 CLI `--cover`（如提供）
+   2. 否则使用前置元数据（`coverImage`、`featureImage`、`cover`、`image`）
+   3. 否则检查文章目录默认路径：`imgs/cover.png`
+   4. 否则回退到首个内联内容图片
+   5. 如仍缺失，停止并请求封面图片再发布
 
-### Step 4: Publish to WeChat
+### Step 4: 发布到微信
 
-**CRITICAL**: Publishing scripts handle markdown conversion internally. Do NOT pre-convert markdown to HTML — pass the original markdown file directly. This ensures the API method renders images as `<img>` tags (for API upload) while the browser method uses placeholders (for paste-and-replace workflow).
+**关键**：发布脚本内部处理 markdown 转换。不要预转换 markdown 为 HTML——直接传递原始 markdown 文件。这确保 API 方式将图片渲染为 `<img>` 标签（用于 API 上传）而浏览器方式使用占位符（用于粘贴替换工作流）。
 
-**Markdown citation default**:
-- For markdown input, ordinary external links are converted to bottom citations by default.
-- Use `--no-cite` only if the user explicitly wants to keep ordinary external links inline.
-- Existing HTML input is left as-is; no extra citation conversion is applied.
+**Markdown 引用默认**：
+- 对于 markdown 输入，普通外部链接默认转换为底部引用
+- 仅在用户明确希望保留普通外部链接内联时使用 `--no-cite`
+- 现有 HTML 输入保持原样；不应用额外引用转换
 
-**API method** (accepts `.md` or `.html`):
+**API 方式**（接受 `.md` 或 `.html`）：
 
 ```bash
 ${BUN_X} {baseDir}/scripts/wechat-api.ts <file> --theme <theme> [--color <color>] [--title <title>] [--summary <summary>] [--author <author>] [--cover <cover_path>] [--no-cite]
 ```
 
-**CRITICAL**: Always include `--theme` parameter. Never omit it, even if using `default`. Only include `--color` if explicitly set by user or EXTEND.md.
+**关键**：始终包含 `--theme` 参数。即使使用 `default` 也不要省略。仅在用户或 EXTEND.md 明确设置时包含 `--color`。
 
-**`draft/add` payload rules**:
-- Use endpoint: `POST https://api.weixin.qq.com/cgi-bin/draft/add?access_token=ACCESS_TOKEN`
-- `article_type`: `news` (default) or `newspic`
-- For `news`, include `thumb_media_id` (cover is required)
-- Always resolve and send:
-  - `need_open_comment` (default `1`)
-  - `only_fans_can_comment` (default `0`)
-- `author` resolution: CLI `--author` → frontmatter `author` → EXTEND.md `default_author`
+**`draft/add` payload 规则**：
+- 使用端点：`POST https://api.weixin.qq.com/cgi-bin/draft/add?access_token=ACCESS_TOKEN`
+- `article_type`：`news`（默认）或 `newspic`
+- 对于 `news`，包含 `thumb_media_id`（封面必需）
+- 始终解析并发送：
+  - `need_open_comment`（默认 `1`）
+  - `only_fans_can_comment`（默认 `0`）
+- `author` 解析：CLI `--author` → 前置元数据 `author` → EXTEND.md `default_author`
 
-If script parameters do not expose the two comment fields, still ensure final API request body includes resolved values.
+如脚本参数未暴露两个评论字段，仍需确保最终 API 请求体包含解析后的值。
 
-**Browser method** (accepts `--markdown` or `--html`):
+**浏览器方式**（接受 `--markdown` 或 `--html`）：
 
 ```bash
 ${BUN_X} {baseDir}/scripts/wechat-article.ts --markdown <markdown_file> --theme <theme> [--color <color>] [--no-cite]
 ${BUN_X} {baseDir}/scripts/wechat-article.ts --html <html_file>
 ```
 
-### Step 5: Completion Report
+### Step 5: 完成报告
 
-**For API method**, include draft management link:
+**对于 API 方式**，包含草稿管理链接：
 
 ```
 WeChat Publishing Complete!
@@ -430,7 +430,7 @@ Files created:
 [• slug.html (converted)]
 ```
 
-**For Browser method**:
+**对于浏览器方式**：
 
 ```
 WeChat Publishing Complete!
@@ -452,57 +452,57 @@ Files created:
 [• slug.html (converted)]
 ```
 
-## Detailed References
+## 详细参考
 
-| Topic | Reference |
-|-------|-----------|
-| Image-text parameters, auto-compression | [references/image-text-posting.md](references/image-text-posting.md) |
-| Article themes, image handling | [references/article-posting.md](references/article-posting.md) |
+| 主题 | 参考 |
+|-------|---------|
+| 贴图参数、自动压缩 | [references/image-text-posting.md](references/image-text-posting.md) |
+| 文章主题、图片处理 | [references/article-posting.md](references/article-posting.md) |
 
-## Feature Comparison
+## 功能对比
 
-| Feature | Image-Text | Article (API) | Article (Browser) |
+| 功能 | 贴图 | 文章（API） | 文章（浏览器） |
 |---------|------------|---------------|-------------------|
-| Plain text input | ✗ | ✓ | ✓ |
-| HTML input | ✗ | ✓ | ✓ |
-| Markdown input | Title/content | ✓ | ✓ |
-| Multiple images | ✓ (up to 9) | ✓ (inline) | ✓ (inline) |
-| Themes | ✗ | ✓ | ✓ |
-| Auto-generate metadata | ✗ | ✓ | ✓ |
-| Default cover fallback (`imgs/cover.png`) | ✗ | ✓ | ✗ |
-| Comment control (`need_open_comment`, `only_fans_can_comment`) | ✗ | ✓ | ✗ |
-| Requires Chrome | ✓ | ✗ | ✓ |
-| Requires API credentials | ✗ | ✓ | ✗ |
-| Speed | Medium | Fast | Slow |
+| 纯文本输入 | ✗ | ✓ | ✓ |
+| HTML 输入 | ✗ | ✓ | ✓ |
+| Markdown 输入 | 标题/内容 | ✓ | ✓ |
+| 多图 | ✓（最多 9 张） | ✓（内联） | ✓（内联） |
+| 主题 | ✗ | ✓ | ✓ |
+| 自动生成元数据 | ✗ | ✓ | ✓ |
+| 默认封面备选（`imgs/cover.png`）| ✗ | ✓ | ✗ |
+| 评论控制（`need_open_comment`、`only_fans_can_comment`）| ✗ | ✓ | ✗ |
+| 需要 Chrome | ✓ | ✗ | ✓ |
+| 需要 API 凭据 | ✗ | ✓ | ✗ |
+| 速度 | 中等 | 快 | 慢 |
 
-## Prerequisites
+## 前置要求
 
-**For API method**:
-- WeChat Official Account API credentials
-- Guided setup in Step 2, or manually set in `.baoyu-skills/.env`
+**对于 API 方式**：
+- 微信公众号 API 凭据
+- 在 Step 2 跟随引导设置，或手动设置到 `.baoyu-skills/.env`
 
-**For Browser method**:
+**对于浏览器方式**：
 - Google Chrome
-- First run: log in to WeChat Official Account (session preserved)
+- 首次运行：登录微信公众号（会话保存）
 
-**Config File Locations** (priority order):
-1. Environment variables
+**配置文件位置**（优先级顺序）：
+1. 环境变量
 2. `<cwd>/.baoyu-skills/.env`
 3. `~/.baoyu-skills/.env`
 
-## Troubleshooting
+## 故障排除
 
-| Issue | Solution |
-|-------|----------|
-| Missing API credentials | Follow guided setup in Step 2 |
-| Access token error | Check if API credentials are valid and not expired |
-| Not logged in (browser) | First run opens browser - scan QR to log in |
-| Chrome not found | Set `WECHAT_BROWSER_CHROME_PATH` env var |
-| Title/summary missing | Use auto-generation or provide manually |
-| No cover image | Add frontmatter cover or place `imgs/cover.png` in article directory |
-| Wrong comment defaults | Check `EXTEND.md` keys `need_open_comment` and `only_fans_can_comment` |
-| Paste fails | Check system clipboard permissions |
+| 问题 | 解决方案 |
+|-------|---------|
+| 缺少 API 凭据 | 在 Step 2 跟随引导设置 |
+| Access token 错误 | 检查 API 凭据是否有效且未过期 |
+| 未登录（浏览器）| 首次运行打开浏览器 — 扫描二维码登录 |
+| Chrome 未找到 | 设置 `WECHAT_BROWSER_CHROME_PATH` 环境变量 |
+| 标题/摘要缺失 | 使用自动生成或手动提供 |
+| 无封面图片 | 添加前置元数据封面或在文章目录放置 `imgs/cover.png` |
+| 错误的评论默认值 | 检查 `EXTEND.md` 键 `need_open_comment` 和 `only_fans_can_comment` |
+| 粘贴失败 | 检查系统剪贴板权限 |
 
-## Extension Support
+## 扩展支持
 
-Custom configurations via EXTEND.md. See **Preferences** section for paths and supported options.
+通过 EXTEND.md 自定义配置。见**偏好设置**章节了解路径和支持的选项。

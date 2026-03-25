@@ -11,5 +11,13 @@
   },
   "devDependencies": {
     "tsx": "^4.20.5"
+  },
+  "dependencies": {
+    "@mozilla/readability": "^0.6.0",
+    "defuddle": "^0.14.0",
+    "jsdom": "^29.0.1",
+    "linkedom": "^0.18.12",
+    "pdf-lib": "^1.17.1",
+    "turndown-plugin-gfm": "^1.0.2"
   }
 }

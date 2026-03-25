@@ -86,16 +86,36 @@ export async function postToX(options: XBrowserOptions): Promise<void> {
 
     if (text) {
       console.log('[x-browser] Typing text...');
+      // Focus editor via Runtime.evaluate first
       await cdp.send('Runtime.evaluate', {
-        expression: `
+        expression: `document.querySelector('[data-testid="tweetTextarea_0"]')?.focus()`,
+      }, { sessionId });
+      await sleep(200);
+      // Use simulated paste event to handle emojis and long text
+      const pasteResult = await cdp.send<{ result: { value: boolean } }>('Runtime.evaluate', {
+        expression: `(() => {
           const editor = document.querySelector('[data-testid="tweetTextarea_0"]');
-          if (editor) {
-            editor.focus();
-            document.execCommand('insertText', false, ${JSON.stringify(text)});
-          }
-        `,
+          if (!editor) return false;
+          const dt = new DataTransfer();
+          dt.setData('text/plain', ${JSON.stringify(text)});
+          const evt = new ClipboardEvent('paste', {
+            bubbles: true,
+            cancelable: true,
+            clipboardData: dt
+          });
+          editor.dispatchEvent(evt);
+          return true;
+        })()`,
+        returnByValue: true,
       }, { sessionId });
       await sleep(500);
+
+      // Verify content was inserted
+      const textLen = await cdp.send<{ result: { value: number } }>('Runtime.evaluate', {
+        expression: `document.querySelector('[data-testid="tweetTextarea_0"]')?.innerText?.length || 0`,
+        returnByValue: true,
+      }, { sessionId });
+      console.log(`[x-browser] Text inserted (${textLen.result.value} chars)`);
     }
 
     for (const imagePath of images) {

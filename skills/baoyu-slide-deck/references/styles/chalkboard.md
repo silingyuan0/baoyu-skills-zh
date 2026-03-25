@@ -1,68 +1,68 @@
 # chalkboard
 
-Black chalkboard background with colorful chalk drawing style
+黑色黑板背景，配以彩色粉笔绘画风格
 
-## Design Aesthetic
+## 设计美学
 
-Classic classroom chalkboard aesthetic with hand-drawn chalk illustrations. Nostalgic educational feel with imperfect, sketchy lines that capture the warmth of traditional teaching. Colorful chalk creates visual hierarchy while maintaining the authentic chalkboard experience.
+经典教室黑板美学，配以手绘粉笔插图。怀旧教育感，不完美的素描风线条捕捉传统教学的温暖。彩色粉笔创建视觉层次，同时保持真实的黑板体验。
 
-## Background
+## 背景
 
-- Color: Chalkboard Black (#1A1A1A) or Dark Green-Black (#1C2B1C)
-- Texture: Realistic chalkboard texture with subtle scratches, dust particles, and faint eraser marks
+- 颜色：黑板黑（#1A1A1A）或墨绿黑（#1C2B1C）
+- 纹理：逼真的黑板纹理，带细微划痕、粉尘颗粒和淡淡的擦除痕迹
 
-## Typography
+## 排版
 
-### Primary Font (Headlines)
+### 主字体（标题）
 
-Hand-drawn chalk lettering style. Bold, slightly uneven strokes with visible chalk texture. Imperfect baseline adds authenticity. White or bright colored chalk for emphasis.
+手绘粉笔字体风格。粗体、略不均匀的笔触，可见的粉笔质感。不完美的基线增添真实感。白色或亮色粉笔用于强调。
 
-### Secondary Font (Body)
+### 辅助字体（正文）
 
-Neater chalk handwriting for readability. Consistent sizing with natural variation. Light chalk texture, thinner strokes than headlines.
+更工整的粉笔手写体以提高可读性。字号一致但带有自然变化。轻微粉笔质感，笔触比标题细。
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
-|------|-------|-----|-------|
-| Background | Chalkboard Black | #1A1A1A | Primary background |
-| Alt Background | Green-Black | #1C2B1C | Traditional green board |
-| Primary Text | Chalk White | #F5F5F5 | Main text, outlines |
-| Accent 1 | Chalk Yellow | #FFE566 | Highlights, emphasis |
-| Accent 2 | Chalk Pink | #FF9999 | Secondary highlights |
-| Accent 3 | Chalk Blue | #66B3FF | Diagrams, links |
-| Accent 4 | Chalk Green | #90EE90 | Success, nature |
-| Accent 5 | Chalk Orange | #FFB366 | Warnings, energy |
+| 角色 | 颜色 | 色值 | 用途 |
+|------|------|------|------|
+| 背景 | Chalkboard Black | #1A1A1A | 主要背景 |
+| 辅助背景 | Green-Black | #1C2B1C | 传统绿板 |
+| 主文本 | Chalk White | #F5F5F5 | 主要文本、轮廓 |
+| 强调色 1 | Chalk Yellow | #FFE566 | 高亮、强调 |
+| 强调色 2 | Chalk Pink | #FF9999 | 辅助高亮 |
+| 强调色 3 | Chalk Blue | #66B3FF | 图表、链接 |
+| 强调色 4 | Chalk Green | #90EE90 | 成功、自然 |
+| 强调色 5 | Chalk Orange | #FFB366 | 警告、能量 |
 
-## Visual Elements
+## 视觉元素
 
-- Hand-drawn chalk illustrations with sketchy, imperfect lines
-- Chalk dust effects around text and key elements
-- Doodles: stars, arrows, underlines, circles, checkmarks
-- Mathematical formulas and simple diagrams
-- Eraser smudges and chalk residue textures
-- Wooden frame border optional
-- Stick figures and simple icons
-- Connection lines with hand-drawn feel
+- 手绘粉笔插图，素描风不完美线条
+- 文本和关键元素周围的粉笔灰效果
+- 涂鸦：星星、箭头、下划线、圆圈、勾号
+- 数学公式和简单图表
+- 橡皮擦擦痕和粉笔残留纹理
+- 可选木框边框
+- 火柴人和简单图标
+- 带手绘感的连接线
 
-## Style Rules
+## 风格规则
 
-### Do
+### 推荐做法
 
-- Maintain authentic chalk texture on all elements
-- Use imperfect, hand-drawn quality throughout
-- Add subtle chalk dust and smudge effects
-- Create visual hierarchy with color variety
-- Include playful doodles and annotations
+- 所有元素保持真实粉笔质感
+- 全文使用不完美的手绘品质
+- 添加轻微的粉笔灰和擦痕效果
+- 用颜色变化创建视觉层次
+- 包含趣味涂鸦和注释
 
-### Don't
+### 避免事项
 
-- Use perfect geometric shapes
-- Create clean digital-looking lines
-- Add photorealistic elements
-- Use gradients or glossy effects
-- Add slide numbers, footers, or logos
+- 使用完美的几何形状
+- 创建干净的数字化线条
+- 添加照片写实元素
+- 使用渐变或光泽效果
+- 添加幻灯片编号、页脚或标志
 
-## Best For
+## 适用场景
 
-Educational presentations, classroom content, tutorials, teaching materials, back-to-school themes, workshop presentations, informal learning sessions, knowledge sharing
+教育演示、课堂内容、教程、教学材料、开学主题、工作坊演示、非正式学习交流、知识分享

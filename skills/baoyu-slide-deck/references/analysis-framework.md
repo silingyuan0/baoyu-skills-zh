@@ -1,161 +1,161 @@
-# Presentation Analysis Framework
+# 演示文稿分析框架
 
-Deep content analysis for effective slide deck creation.
+用于有效创建幻灯片的内容深度分析。
 
-## 1. Message Hierarchy
+## 1. 信息层次结构
 
-Identify the core message structure before designing slides.
+在设计幻灯片之前，先识别核心信息结构。
 
-### Core Message (One Sentence)
-- What is the single most important takeaway?
-- If the audience remembers only one thing, what should it be?
-- Can you state it in ≤15 words?
+### 核心信息（一句话）
+- 最重要的收获是什么？
+- 如果观众只记住一件事，应该是什么？
+- 能在15个字以内表达吗？
 
-### Supporting Points (3-5 Maximum)
-- What evidence supports the core message?
-- What sub-topics must be covered?
-- Prioritize by audience relevance, not source order
+### 支持要点（最多3-5个）
+- 什么证据支持核心信息？
+- 必须涵盖哪些子主题？
+- 按受众相关性排序，而非来源顺序
 
-### Call-to-Action
-- What should the audience DO after viewing?
-- Is it clear, specific, and achievable?
-- Where does it appear (slide position)?
+### 行动号召
+- 观众观看后应该做什么？
+- 清晰、具体、可实现吗？
+- 出现在哪里（幻灯片位置）？
 
-## 2. Audience Decision Matrix
+## 2. 受众决策矩阵
 
-| Question | Analysis |
+| 问题 | 分析 |
 |----------|----------|
-| Who is the primary audience? | [Role, expertise level, relationship to topic] |
-| What do they currently believe? | [Existing knowledge, assumptions, biases] |
-| What decision do we want them to make? | [Specific action or conclusion] |
-| What barriers exist? | [Objections, concerns, missing information] |
-| What evidence will convince them? | [Data types, credibility sources, emotional hooks] |
+| 主要受众是谁？ | [角色、专业水平、与主题的关系] |
+| 他们目前相信什么？ | [现有知识、假设、偏见] |
+| 我们希望他们做什么决定？ | [具体行动或结论] |
+| 存在什么障碍？ | [异议、顾虑、缺失信息] |
+| 什么证据能说服他们？ | [数据类型、可信来源、情感钩子] |
 
-### Audience Adaptation
+### 受众适应
 
-| Audience Type | Content Focus | Visual Treatment |
-|---------------|---------------|------------------|
-| Executives | Outcomes, ROI, strategic impact | High-level, clean, data highlights |
-| Technical | Architecture, implementation, specs | Detailed diagrams, code, schematics |
-| General | Benefits, stories, relatability | Visual metaphors, simple charts |
-| Investors | Market size, traction, team | Growth charts, milestones, comparisons |
-| Learners | Step-by-step, examples, practice | Progressive reveals, exercises |
+| 受众类型 | 内容重点 | 视觉处理 |
+|---------------|------------------|
+| 高管 | 成果、ROI、战略影响 | 高层次、简洁、数据亮点 |
+| 技术 | 架构、实施、规格 | 详细图表、代码、原理图 |
+| 大众 | 收益、故事、相关性 | 视觉隐喻、简单图表 |
+| 投资者 | 市场规模、 traction、团队 | 增长图表、里程碑、比较 |
+| 学习者 | 循序渐进、示例、实践 | 渐进式揭示、练习 |
 
-## 3. Visual Opportunity Map
+## 3. 视觉机会图
 
-Identify which content benefits from visualization.
+识别哪些内容适合可视化。
 
-### Content-to-Visual Mapping
+### 内容到视觉的映射
 
-| Content Type | Visual Treatment | Example |
+| 内容类型 | 视觉处理 | 示例 |
 |--------------|------------------|---------|
-| Comparisons | Side-by-side, before/after | Feature comparison table |
-| Processes | Flow diagrams, numbered steps | Workflow illustration |
-| Hierarchies | Org charts, pyramids, trees | Organizational structure |
-| Timelines | Horizontal/vertical timelines | Project milestones |
-| Statistics | Charts, highlighted numbers | Key metrics with context |
-| Concepts | Icons, metaphors, illustrations | Abstract idea visualization |
-| Relationships | Venn diagrams, networks | Ecosystem or dependencies |
-| Lists | Structured grids, icon rows | Feature bullets with icons |
+| 比较 | 并排、之前/之后 | 功能对比表 |
+| 流程 | 流程图、编号步骤 | 工作流程图 |
+| 层次结构 | 组织图、金字塔、树状图 | 组织结构 |
+| 时间线 | 水平/垂直时间线 | 项目里程碑 |
+| 统计数据 | 图表、高亮数字 | 带上下文的关键指标 |
+| 概念 | 图标、隐喻、插图 | 抽象概念可视化 |
+| 关系 | 维恩图、网络图 | 生态系统或依赖关系 |
+| 列表 | 结构化网格、图标行 | 带图标的功能列表 |
 
-### Visual Priority
+### 视觉优先级
 
-Rate each piece of content:
-- **Must Visualize**: Complex data, key differentiators, memorable moments
-- **Should Visualize**: Supporting evidence, secondary points
-- **Text Only**: Simple statements, transitions, minor details
+对每条内容进行评级：
+- **必须可视化**：复杂数据、关键差异化因素、难忘时刻
+- **应该可视化**：支持证据、次要点
+- **仅文本**：简单陈述、过渡、次要细节
 
-## 4. Presentation Flow
+## 4. 演示文稿流程
 
-Structure for impact and retention.
+为影响力和留存率而设计。
 
-### Opening (First 2-3 Slides)
+### 开场（前三张幻灯片）
 
-| Element | Purpose |
+| 元素 | 目的 |
 |---------|---------|
-| Hook | Capture attention (surprising stat, question, story) |
-| Context | Why this matters now |
-| Preview | What audience will learn/gain |
+| 钩子 | 吸引注意力（惊人数据、问题、故事） |
+| 背景 | 为什么现在重要 |
+| 预览 | 观众将学到/获得什么 |
 
-### Middle (Content Slides)
+### 中间（内容幻灯片）
 
-| Pattern | When to Use |
+| 模式 | 何时使用 |
 |---------|-------------|
-| Problem → Solution | Introducing new products/ideas |
-| Situation → Complication → Resolution | Complex business cases |
-| What → Why → How | Educational content |
-| Past → Present → Future | Transformation stories |
-| Claim → Evidence → Implication | Data-driven arguments |
+| 问题 → 解决方案 | 介绍新产品/想法 |
+| 情况 → 复杂情况 → 解决方案 | 复杂的商业案例 |
+| 什么 → 为什么 → 怎么做 | 教育内容 |
+| 过去 → 现在 → 未来 | 转型故事 |
+| 主张 → 证据 → 含义 | 数据驱动论证 |
 
-### Closing (Final 2-3 Slides)
+### 结尾（最后两三张幻灯片）
 
-| Element | Purpose |
+| 元素 | 目的 |
 |---------|---------|
-| Synthesis | Tie back to core message |
-| Call-to-Action | Clear next steps |
-| Memorable Close | Resonant quote, image, or statement |
+| 综合 | 回归核心信息 |
+| 行动号召 | 明确的下一步 |
+| 难忘结尾 | 共鸣的引用、图片或陈述 |
 
-### Transitions
+### 过渡
 
-- Each slide should answer: "What comes next?"
-- Use narrative connectors between sections
-- Build logical progression, not topic jumps
+- 每张幻灯片应该回答："接下来是什么？"
+- 在各部分之间使用叙事连接词
+- 建立逻辑进展，而非主题跳跃
 
-## 5. Content Adaptation
+## 5. 内容适应
 
-Decide what to keep, transform, or omit.
+决定保留、转换或省略什么。
 
-### Keep (High Value)
-- Core arguments and evidence
-- Unique insights or data
-- Audience-relevant examples
-- Memorable quotes or statistics
+### 保留（高价值）
+- 核心论点和证据
+- 独特见解或数据
+- 受众相关的示例
+- 难忘的引用或统计数据
 
-### Simplify (Medium Value)
-- Technical details → Visual summaries
-- Long explanations → Bullet hierarchies
-- Multiple examples → Best 1-2 examples
-- Background context → Brief framing
+### 简化（中价值）
+- 技术细节 → 视觉摘要
+- 长篇解释 → 子弹层次
+- 多个示例 → 最好的1-2个示例
+- 背景上下文 → 简短框架
 
-### Visualize (Transform)
-- Data tables → Charts or highlighted numbers
-- Process descriptions → Flow diagrams
-- Comparisons in text → Side-by-side visuals
-- Abstract concepts → Concrete metaphors
+### 可视化（转换）
+- 数据表 → 图表或高亮数字
+- 流程描述 → 流程图
+- 文本中的比较 → 并排视觉
+- 抽象概念 → 具体隐喻
 
-### Omit (Low Value)
-- Tangential information
-- Redundant examples
-- Excessive caveats
-- Background the audience already knows
+### 省略（低价值）
+- 无关信息
+- 冗余示例
+- 过多例外说明
+- 受众已知的背景
 
-## 6. Analysis Checklist
+## 6. 分析清单
 
-Before outline creation, confirm:
+在大纲创建之前，确认：
 
-### Message Clarity
-- [ ] Core message stated in one sentence
-- [ ] 3-5 supporting points identified
-- [ ] Call-to-action defined
+### 信息清晰度
+- [ ] 核心信息用一句话表达
+- [ ] 识别了3-5个支持要点
+- [ ] 定义了行动号召
 
-### Audience Fit
-- [ ] Primary audience identified
-- [ ] Existing beliefs mapped
-- [ ] Desired decision clear
-- [ ] Evidence matches audience needs
+### 受众契合度
+- [ ] 确定了主要受众
+- [ ] 映射了现有信念
+- [ ] 明确了期望的决定
+- [ ] 证据与受众需求匹配
 
-### Visual Planning
-- [ ] Key visualizations identified
-- [ ] Chart/diagram types selected
-- [ ] Visual priority assigned
+### 视觉规划
+- [ ] 确定了关键可视化
+- [ ] 选择了图表/图表类型
+- [ ] 分配了视觉优先级
 
-### Flow Design
-- [ ] Opening hook defined
-- [ ] Middle pattern selected
-- [ ] Closing approach planned
-- [ ] Transitions considered
+### 流程设计
+- [ ] 定义了开场钩子
+- [ ] 选择了中间模式
+- [ ] 计划了结尾方式
+- [ ] 考虑了过渡
 
-### Content Decisions
-- [ ] Keep/simplify/visualize/omit applied
-- [ ] Source material fully processed
-- [ ] No important content overlooked
+### 内容决策
+- [ ] 应用了保留/简化/可视化/省略
+- [ ] 源材料已完全处理
+- [ ] 没有遗漏重要内容

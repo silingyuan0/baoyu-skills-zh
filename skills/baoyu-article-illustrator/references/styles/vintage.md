@@ -1,59 +1,59 @@
 # vintage
 
-Nostalgic aged-paper aesthetic for historical and heritage content
+历史和遗产内容的怀旧旧纸质感美学
 
-## Design Aesthetic
+## 设计美学
 
-Nostalgic vintage aesthetic with aged paper textures and historical document styling. Explorer's journal and antique map quality. Rich warm tones with weathered textures. Evokes discovery, heritage, and timeless knowledge.
+带有旧纸纹理和历史文档风格的怀旧复古美学。探险家日志和古地图品质。丰富暖色调配合做旧纹理。唤起发现、遗产和永恒知识的感觉。
 
-## Background
+## 背景
 
-- Color: Aged Parchment (#F5E6D3) or Sepia Cream (#FFF8DC)
-- Texture: Heavy aged paper texture with subtle stains and worn edges
+- 颜色：陈旧羊皮纸色（#F5E6D3）或棕褐色奶油色（#FFF8DC）
+- 纹理：厚旧纸纹理，带细微污渍和磨损边缘
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
+| 角色 | 颜色 | Hex | 用途 |
 |------|-------|-----|-------|
-| Background | Aged Parchment | #F5E6D3 | Primary background |
-| Alt Background | Sepia Cream | #FFF8DC | Secondary areas |
-| Primary Text | Dark Brown | #3D2914 | Main elements |
-| Secondary | Medium Brown | #6B4423 | Supporting details |
-| Accent 1 | Forest Green | #2D5A3D | Nature, maps |
-| Accent 2 | Navy Blue | #1E3A5F | Ocean, lines |
-| Accent 3 | Burgundy | #722F37 | Emphasis |
-| Accent 4 | Gold | #C9A227 | Highlights |
-| Ink | Sepia Black | #3D3D3D | Fine details |
+| 背景 | 陈旧羊皮纸色 | #F5E6D3 | 主背景 |
+| 替代背景 | 棕褐色奶油色 | #FFF8DC | 次要区域 |
+| 主文本 | 深棕色 | #3D2914 | 主要元素 |
+| 次要色 | 中棕色 | #6B4423 | 辅助细节 |
+| 强调色 1 | 森林绿 | #2D5A3D | 自然、地图 |
+| 强调色 2 | 海军蓝 | #1E3A5F | 海洋、线条 |
+| 强调色 3 | 酒红色 | #722F37 | 强调 |
+| 强调色 4 | 金色 | #C9A227 | 高光 |
+| 墨水 | 棕褐黑 | #3D3D3D | 细节 |
 
-## Visual Elements
+## 视觉元素
 
-- Antique map styling with route lines
-- Compass roses and navigation elements
-- Specimen-style drawings
-- Handwritten annotations
-- Rope, leather, brass decorative motifs
-- Vintage photograph frames
-- Aged paper edge effects
-- Historical document styling
+- 带路线线条的古地图样式
+- 罗盘玫瑰和导航元素
+- 标本风格绘图
+- 手写注释
+- 绳索、皮革、黄铜装饰图案
+- 复古照片框架
+- 旧纸边缘效果
+- 历史文档样式
 
-## Style Rules
+## 风格规则
 
-### Do
+### 宜
 
-- Apply consistent aged texture
-- Use period-appropriate styling
-- Include map and journey elements
-- Create layered compositions
-- Maintain warm sepia tones
+- 应用一致的旧质感
+- 使用符合时期的样式
+- 包含地图和旅程元素
+- 创建分层构图
+- 保持温暖棕褐色调
 
-### Don't
+### 忌
 
-- Use modern digital styling
-- Create crisp clean edges
-- Use cold or bright colors
-- Add contemporary elements
-- Make it look new or fresh
+- 使用现代数字样式
+- 创建清晰干净边缘
+- 使用冷色或亮色
+- 添加当代元素
+- 使其看起来新颖或新鲜
 
-## Best For
+## 适用于
 
-Historical articles, travel and exploration, biography pieces, heritage stories, scientific discovery narratives, museum-style content, classic literature references
+历史文章、旅行和探索、传记文章、遗产故事、科学发现叙事、博物馆风格内容、经典文学参考

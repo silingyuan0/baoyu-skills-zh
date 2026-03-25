@@ -3,11 +3,11 @@ name: minimal
 category: elegant
 ---
 
-# Minimal Style
+# 极简风格
 
-Ultra-clean, sophisticated aesthetic.
+极致简洁、精致高级美学。
 
-## Element Combination
+## 元素组合
 
 ```yaml
 canvas:
@@ -31,42 +31,42 @@ decorations:
   frames: none | rounded-rect
 ```
 
-## Color Palette
+## 调色板
 
-| Role | Colors | Hex |
+| 角色 | 颜色 | Hex |
 |------|--------|-----|
-| Primary | Black, white | #000000, #FFFFFF |
-| Background | Off-white, pure white | #FAFAFA, #FFFFFF |
-| Accents | Single color (content-derived) | Blue, green, or coral |
+| 主色 | 黑色、白色 | #000000, #FFFFFF |
+| 背景 | 米白色、纯白色 | #FAFAFA, #FFFFFF |
+| 点缀色 | 单色（从内容提取） | 蓝色、绿色或珊瑚色 |
 
-## Visual Elements
+## 视觉元素
 
-- Single focal point, thin lines
-- Maximum whitespace
-- Simple, clean decorations
-- Restrained visual elements
+- 单一焦点、细线条
+- 最大留白
+- 简洁干净的装饰
+- 克制的视觉元素
 
-## Typography
+## 排版
 
-- Clean, simple hand lettering
-- Minimal weight variations
-- Elegant spacing
+- 干净简洁的手写体
+- 最少的字重变化
+- 优雅间距
 
-## Best Layout Pairings
+## 最佳布局搭配
 
-| Layout | Compatibility | Use Case |
+| 布局 | 兼容性 | 适用场景 |
 |--------|---------------|----------|
-| sparse | ✓✓ | Elegant statements |
-| balanced | ✓✓ | Professional content |
-| dense | ✓✓ | Clean knowledge cards |
-| list | ✓ | Simple lists |
-| comparison | ✓ | Clean comparisons |
-| flow | ✓ | Elegant processes |
+| sparse | ✓✓ | 优雅金句 |
+| balanced | ✓✓ | 专业内容 |
+| dense | ✓✓ | 干净知识卡 |
+| list | ✓ | 简洁列表 |
+| comparison | ✓ | 干净对比 |
+| flow | ✓ | 优雅流程 |
 
-## Best For
+## 最适合
 
-- Professional content
-- Serious topics
-- Elegant presentations
-- High-end products
-- Business content
+- 专业内容
+- 严肃话题
+- 优雅展示
+- 高端产品
+- 商务内容

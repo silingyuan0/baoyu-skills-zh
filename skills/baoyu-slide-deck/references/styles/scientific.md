@@ -1,73 +1,73 @@
 # scientific
 
-Educational scientific illustration style for pathways, processes, and technical diagrams
+教育性科学插图风格，用于通路、过程和技术图表
 
-## Design Aesthetic
+## 设计美学
 
-Academic scientific illustration aesthetic for biological pathways, chemical processes, and technical systems. Clean, precise diagrams with proper labeling and clear visual flow. Educational clarity with professional polish. Think textbook quality illustrations and academic journal figures.
+学术科学插图美学，适用于生物通路、化学过程和技术系统。干净精确的图表，配有正确的标注和清晰的视觉流程。兼具教育清晰度与专业精致感。类似教科书品质的插图和学术期刊图表。
 
-## Background
+## 背景
 
-- Color: Off-White (#FAFAFA) or Light Blue-Gray (#F0F4F8)
-- Texture: None or very subtle paper grain for print feel
+- 颜色：灰白（#FAFAFA）或浅蓝灰（#F0F4F8）
+- 纹理：无，或极细微的纸张颗粒以模拟印刷质感
 
-## Typography
+## 排版
 
-### Primary Font (Headlines)
+### 主字体（标题）
 
-Clean serif font (Times New Roman style) for formal academic feel. Bold weight for main titles. Professional, authoritative presence.
+简洁的衬线字体（Times New Roman 风格）营造正式的学术感。标题使用粗体。专业、权威的存在感。
 
-### Secondary Font (Labels)
+### 辅助字体（标签）
 
-Sans-serif for diagram labels and annotations. Clear, readable at small sizes. Consistent sizing for hierarchy.
+无衬线体用于图表标签和注释。小字号下清晰可读。一致的字号层次。
 
-### Body Font
+### 正文字体
 
-Serif for body paragraphs, sans-serif for bullet points and lists. Academic publication styling.
+正文段落使用衬线体，项目符号和列表使用无衬线体。学术出版物风格。
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
-|------|-------|-----|-------|
-| Background | Off-White | #FAFAFA | Primary background |
-| Primary Text | Dark Slate | #1E293B | Headlines, body |
-| Label Text | Medium Gray | #475569 | Annotations |
-| Pathway 1 | Teal | #0D9488 | Primary pathway |
-| Pathway 2 | Blue | #3B82F6 | Secondary pathway |
-| Pathway 3 | Purple | #8B5CF6 | Tertiary pathway |
-| Membrane | Amber | #F59E0B | Biological membranes |
-| Alert | Red | #EF4444 | Key molecules, emphasis |
-| Positive | Green | #22C55E | Products, outputs |
+| 角色 | 颜色 | 色值 | 用途 |
+|------|------|------|------|
+| 背景 | Off-White | #FAFAFA | 主要背景 |
+| 主文本 | Dark Slate | #1E293B | 标题、正文 |
+| 标签文本 | Medium Gray | #475569 | 注释 |
+| 通路 1 | Teal | #0D9488 | 主要通路 |
+| 通路 2 | Blue | #3B82F6 | 辅助通路 |
+| 通路 3 | Purple | #8B5CF6 | 第三通路 |
+| 生物膜 | Amber | #F59E0B | 生物膜 |
+| 警告色 | Red | #EF4444 | 关键分子、强调 |
+| 正面色 | Green | #22C55E | 产物、输出 |
 
-## Visual Elements
+## 视觉元素
 
-- Horizontal membrane or structure bases
-- Labeled modular components with distinct colors
-- Flow arrows (electron, proton, molecule movement)
-- Chemical formulas and molecular notation
-- Cross-section and pathway diagrams
-- Numbered step sequences
-- Key molecule callouts
-- Process summary boxes
+- 水平方向的生物膜或结构底座
+- 带有不同颜色的标注模块化组件
+- 流向箭头（电子、质子、分子运动方向）
+- 化学式和分子记号
+- 截面图和通路图表
+- 编号的步骤序列
+- 关键分子的引述标注
+- 过程摘要框
 
-## Style Rules
+## 风格规则
 
-### Do
+### 推荐做法
 
-- Use precise, consistent line weights
-- Label all components clearly
-- Show directional flow with arrows
-- Include chemical/molecular notation where relevant
-- Create clear numbered sequences
+- 使用精确、一致的线宽
+- 清晰标注所有组件
+- 用箭头显示方向性流向
+- 在相关处包含化学/分子记号
+- 创建清晰的编号序列
 
-### Don't
+### 避免事项
 
-- Use decorative illustrations
-- Create imprecise or artistic diagrams
-- Omit important labels
-- Use inconsistent visual language
-- Add slide numbers, footers, or logos
+- 使用装饰性插图
+- 创建不精确或艺术化的图表
+- 遗漏重要标注
+- 使用不一致的视觉语言
+- 添加幻灯片编号、页脚或标志
 
-## Best For
+## 适用场景
 
-Biology lectures, chemistry presentations, medical education, research presentations, academic papers, scientific conferences, textbook illustrations, process documentation
+生物学讲座、化学演示、医学教育、研究报告、学术论文、科学会议、教科书插图、过程文档

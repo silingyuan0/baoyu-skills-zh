@@ -1,72 +1,72 @@
-# Style Presets
+# 风格预设
 
-`--preset X` expands to a type + style combination. Users can override either dimension.
+`--preset X` 展开为一个类型 + 风格组合。用户可以覆盖任一维度。
 
-## By Category
+## 按类别
 
-### Technical & Engineering
+### 技术与工程
 
-| --preset | Type | Style | Best For |
-|----------|------|-------|----------|
-| `tech-explainer` | `infographic` | `blueprint` | API docs, system metrics, technical deep-dives |
-| `system-design` | `framework` | `blueprint` | Architecture diagrams, system design |
-| `architecture` | `framework` | `vector-illustration` | Component relationships, module structure |
-| `science-paper` | `infographic` | `scientific` | Research findings, lab results, academic |
+| --preset | 类型 | 风格 | 最适用于 |
+|----------|------|------|---------|
+| `tech-explainer` | `infographic` | `blueprint` | API 文档、系统指标、技术深度分析 |
+| `system-design` | `framework` | `blueprint` | 架构图、系统设计 |
+| `architecture` | `framework` | `vector-illustration` | 组件关系、模块结构 |
+| `science-paper` | `infographic` | `scientific` | 研究发现、实验结果、学术论文 |
 
-### Knowledge & Education
+### 知识与教育
 
-| --preset | Type | Style | Best For |
-|----------|------|-------|----------|
-| `knowledge-base` | `infographic` | `vector-illustration` | Concept explainers, tutorials, how-to |
-| `saas-guide` | `infographic` | `notion` | Product guides, SaaS docs, tool walkthroughs |
-| `tutorial` | `flowchart` | `vector-illustration` | Step-by-step tutorials, setup guides |
-| `process-flow` | `flowchart` | `notion` | Workflow documentation, onboarding flows |
+| --preset | 类型 | 风格 | 最适用于 |
+|----------|------|------|---------|
+| `knowledge-base` | `infographic` | `vector-illustration` | 概念解说、教程、操作指南 |
+| `saas-guide` | `infographic` | `notion` | 产品指南、SaaS 文档、工具使用说明 |
+| `tutorial` | `flowchart` | `vector-illustration` | 分步教程、安装指南 |
+| `process-flow` | `flowchart` | `notion` | 工作流文档、入门流程 |
 
-### Data & Analysis
+### 数据与分析
 
-| --preset | Type | Style | Best For |
-|----------|------|-------|----------|
-| `data-report` | `infographic` | `editorial` | Data journalism, metrics reports, dashboards |
-| `versus` | `comparison` | `vector-illustration` | Tech comparisons, framework shootouts |
-| `business-compare` | `comparison` | `elegant` | Product evaluations, strategy options |
+| --preset | 类型 | 风格 | 最适用于 |
+|----------|------|------|---------|
+| `data-report` | `infographic` | `editorial` | 数据新闻、指标报告、仪表盘 |
+| `versus` | `comparison` | `vector-illustration` | 技术对比、框架横评 |
+| `business-compare` | `comparison` | `elegant` | 产品评估、策略选项 |
 
-### Narrative & Creative
+### 叙事与创意
 
-| --preset | Type | Style | Best For |
-|----------|------|-------|----------|
-| `storytelling` | `scene` | `warm` | Personal essays, reflections, growth stories |
-| `lifestyle` | `scene` | `watercolor` | Travel, wellness, lifestyle, creative |
-| `history` | `timeline` | `elegant` | Historical overviews, milestones |
-| `evolution` | `timeline` | `warm` | Progress narratives, growth journeys |
+| --preset | 类型 | 风格 | 最适用于 |
+|----------|------|------|---------|
+| `storytelling` | `scene` | `warm` | 个人随笔、感悟、成长故事 |
+| `lifestyle` | `scene` | `watercolor` | 旅行、健康、生活方式、创意内容 |
+| `history` | `timeline` | `elegant` | 历史概述、里程碑 |
+| `evolution` | `timeline` | `warm` | 进展叙事、成长历程 |
 
-### Editorial & Opinion
+### 社论与评论
 
-| --preset | Type | Style | Best For |
-|----------|------|-------|----------|
-| `opinion-piece` | `scene` | `screen-print` | Op-eds, commentary, critical essays |
-| `editorial-poster` | `comparison` | `screen-print` | Debate, contrasting viewpoints |
-| `cinematic` | `scene` | `screen-print` | Dramatic narratives, cultural essays |
+| --preset | 类型 | 风格 | 最适用于 |
+|----------|------|------|---------|
+| `opinion-piece` | `scene` | `screen-print` | 社论、评论、批判性文章 |
+| `editorial-poster` | `comparison` | `screen-print` | 辩论、对立观点 |
+| `cinematic` | `scene` | `screen-print` | 戏剧性叙事、文化评论 |
 
-## Content Type → Preset Recommendations
+## 内容类型 → 预设推荐
 
-Use this table during Step 3 to recommend presets based on Step 2 content analysis:
+在步骤 3 中使用此表，根据步骤 2 的内容分析推荐预设：
 
-| Content Type (Step 2) | Primary Preset | Alternatives |
-|------------------------|----------------|--------------|
-| Technical | `tech-explainer` | `system-design`, `architecture` |
-| Tutorial | `tutorial` | `process-flow`, `knowledge-base` |
-| Methodology / Framework | `system-design` | `architecture`, `process-flow` |
-| Data / Metrics | `data-report` | `versus`, `tech-explainer` |
-| Comparison / Review | `versus` | `business-compare`, `editorial-poster` |
-| Narrative / Personal | `storytelling` | `lifestyle`, `evolution` |
-| Opinion / Editorial | `opinion-piece` | `cinematic`, `editorial-poster` |
-| Historical / Timeline | `history` | `evolution` |
-| Academic / Research | `science-paper` | `tech-explainer`, `data-report` |
-| SaaS / Product | `saas-guide` | `knowledge-base`, `process-flow` |
+| 内容类型（步骤 2） | 主推荐预设 | 备选预设 |
+|-------------------|-----------|---------|
+| 技术类 | `tech-explainer` | `system-design`、`architecture` |
+| 教程类 | `tutorial` | `process-flow`、`knowledge-base` |
+| 方法论 / 框架 | `system-design` | `architecture`、`process-flow` |
+| 数据 / 指标 | `data-report` | `versus`、`tech-explainer` |
+| 对比 / 评测 | `versus` | `business-compare`、`editorial-poster` |
+| 叙事 / 个人 | `storytelling` | `lifestyle`、`evolution` |
+| 评论 / 社论 | `opinion-piece` | `cinematic`、`editorial-poster` |
+| 历史 / 时间线 | `history` | `evolution` |
+| 学术 / 研究 | `science-paper` | `tech-explainer`、`data-report` |
+| SaaS / 产品 | `saas-guide` | `knowledge-base`、`process-flow` |
 
-## Override Examples
+## 覆盖示例
 
-- `--preset tech-explainer --style notion` = infographic type with notion style
-- `--preset storytelling --type timeline` = timeline type with warm style
+- `--preset tech-explainer --style notion` = 信息图类型 + notion 风格
+- `--preset storytelling --type timeline` = 时间线类型 + 暖色调风格
 
-Explicit `--type`/`--style` flags always override preset values.
+显式 `--type`/`--style` 标志始终覆盖预设值。

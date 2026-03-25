@@ -2,109 +2,109 @@
 
 武侠预设 - Hong Kong martial arts comic style
 
-## Base Configuration
+## 基础配置
 
-| Dimension | Value |
+| 维度 | 值 |
 |-----------|-------|
-| Art Style | ink-brush |
-| Tone | action |
-| Layout | splash (default) |
+| 艺术风格 | ink-brush |
+| 基调 | action |
+| 布局 | splash（默认）|
 
-Equivalent to: `--art ink-brush --tone action`
+等同于：`--art ink-brush --tone action`
 
-## Unique Rules
+## 独特规则
 
-This preset includes special rules beyond the art+tone combination. When `--style wuxia` is used, ALL rules below must be applied.
+此预设包含超出 art+tone 组合的特殊规则。使用 `--style wuxia` 时，必须应用以下所有规则。
 
-### Qi/Energy Effects (Required)
+### 气/内力效果（必需）
 
-Martial arts power must be visible through qi effects:
+武术力量必须通过气效果可见：
 
-| Effect Type | Visual Treatment |
+| 效果类型 | 视觉处理 |
 |-------------|-----------------|
-| Internal qi | Glowing aura around character |
-| External qi | Visible energy projection |
-| Qi clash | Radiating impact waves |
-| Qi absorption | Flowing particles toward character |
-| Hidden power | Subtle glow in eyes/fists |
+| 内力 | 角色周围发光光环 |
+| 外放气 | 可见能量投射 |
+| 气之碰撞 | 辐射冲击波 |
+| 吸气 | 流向角色的流动粒子 |
+| 隐藏力量 | 眼睛/拳头中的微妙光芒 |
 
-### Energy Colors
+### 能量颜色
 
-| Qi Type | Color |
+| 气类型 | 颜色 |
 |---------|-------|
-| Righteous | Blue (#4299E1), Gold (#FFD700) |
-| Fierce | Red (#DC2626), Orange (#EA580C) |
-| Evil | Purple (#7C3AED), Green (#16A34A) |
-| Pure | White, Silver |
-| Ancient | Gold with particles |
+| 正义 | 蓝色（#4299E1）、金色（#FFD700）|
+| 猛烈 | 红色（#DC2626）、橙色（#EA580C）|
+| 邪恶 | 紫色（#7C3AED）、绿色（#16A34A）|
+| 纯净 | 白色、银色 |
+| 远古 | 带粒子的金色 |
 
-### Combat Visual Language
+### 战斗视觉语言
 
-**Impact moments** must include:
+**冲击时刻**必须包括：
 
-1. Speed lines radiating from impact point
-2. Flying debris (stone, wood, cloth)
-3. Shockwave rings
-4. Dust/energy clouds
-5. Hair and clothing blown back
+1. 从冲击点辐射的速度线
+2. 飞散的碎片（石头、木头、布料）
+3. 冲击波环
+4. 灰尘/能量云
+5. 被吹回头发和衣服
 
-### Movement Depiction
+### 移动描绘
 
-| Speed Level | Visual Treatment |
+| 速度级别 | 视觉处理 |
 |-------------|-----------------|
-| Normal | Standard pose |
-| Fast | Motion blur, speed lines |
-| Lightning | Afterimages, multiple positions |
-| Teleport | Fade effect, particle trail |
+| 正常 | 标准姿势 |
+| 快速 | 动态模糊、速度线 |
+| 闪电 | 残像、多个位置 |
+| 瞬间移动 | 淡出效果、粒子轨迹 |
 
-### Environmental Integration
+### 环境整合
 
-Backgrounds must support action:
+背景必须支持动作：
 
-| Environment | Combat Enhancement |
+| 环境 | 战斗增强 |
 |-------------|-------------------|
-| Mountains | Crumbling peaks from impacts |
-| Forest | Exploding trees, flying leaves |
-| Water | Dramatic splashes, walking on water |
-| Temple | Breaking pillars, flying tiles |
-| Cliff | Dramatic falls, wind effects |
+| 山脉 | 因冲击而崩塌的山峰 |
+| 森林 | 爆炸的树木、飞散的树叶 |
+| 水面 | 戏剧性的水花、在水面行走 |
+| 寺庙 | 断裂的柱子、飞瓦 |
+| 悬崖 | 戏剧性坠落、风效 |
 
-### Character Pose Guidelines
+### 角色姿势指南
 
-- Dynamic warrior stances with weight distribution
-- Flowing robes and hair showing movement
-- Muscle tension visible in action
-- Feet planted or in dynamic motion
-- Traditional martial arts postures
+- 带有重量分配的动态战士姿势
+- 显示动作的飘动袍子和头发
+- 动作中可见的肌肉张力
+- 双脚着地或动态运动
+- 传统武术姿势
 
-### Weapon Effects
+### 武器效果
 
-| Weapon | Visual Treatment |
+| 武器 | 视觉处理 |
 |--------|-----------------|
-| Sword | Trailing light arc, blade glow |
-| Palm | Qi projection, wind effect |
-| Staff | Spinning blur, impact ripples |
-| Whip | Flowing energy trail |
+| 剑 | 拖曳光弧、剑刃发光 |
+| 掌 | 气投射、风效 |
+| 杖 | 旋转模糊、冲击波纹 |
+| 鞭 | 流动的能量轨迹 |
 
-### Atmospheric Elements
+### 氛围元素
 
-Always include:
-- Floating particles (leaves, petals, dust)
-- Ink wash mist for depth
-- Wind direction indicators
-- Dramatic sky/weather when appropriate
+始终包括：
+- 漂浮粒子（叶子、花瓣、灰尘）
+- 用于深度的墨水冲洗雾气
+- 风向指示器
+- 适当时有戏剧性天空/天气
 
-## Quality Markers
+## 质量标记
 
-- ✓ Dynamic action poses with sense of motion
-- ✓ Ink brush aesthetic in line work
-- ✓ Visible qi/energy effects
-- ✓ High contrast dramatic lighting
-- ✓ Atmospheric backgrounds with Chinese elements
-- ✓ Flowing fabric and hair movement
-- ✓ Impactful combat moments
-- ✓ Speed lines and impact effects
+- ✓ 带运动感的动态动作姿势
+- ✓ 线条工作中的墨刷美学
+- ✓ 可见的气/能量效果
+- ✓ 高对比度戏剧性光照
+- ✓ 带中国元素的氛围背景
+- ✓ 飘动的布料和头发运动
+- ✓ 有冲击力的战斗时刻
+- ✓ 速度线和冲击效果
 
-## Best For
+## 适用于
 
-Martial arts stories, Chinese historical fiction, wuxia/xianxia adaptations, action-heavy narratives
+武侠故事、中国历史小说、武侠/仙侠改编、动作密集叙事

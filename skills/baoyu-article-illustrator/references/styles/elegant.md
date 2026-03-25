@@ -1,56 +1,56 @@
 # elegant
 
-Refined, sophisticated illustration style for professional content
+精致考究的专业内容插图风格
 
-## Design Aesthetic
+## 设计美学
 
-Elegant and refined visual approach with sophisticated color palette. Professional polish with subtle artistic touches. Emphasizes clarity and thoughtful composition. Conveys authority and trustworthiness without being cold or clinical.
+优雅精致的视觉方法，配有考究的配色方案。专业质感与微妙艺术触感并重。强调清晰度和深思熟虑的构图。传达权威和信任感，而非冷漠或刻板。
 
-## Background
+## 背景
 
-- Color: Warm Cream (#F5F0E6) or Soft Beige (#FAF6F0)
-- Texture: Subtle paper texture, very light grain
+- 颜色：暖奶油色（#F5F0E6）或柔和米色（#FAF6F0）
+- 纹理：细微纸张纹理，非常浅的颗粒感
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
+| 角色 | 颜色 | Hex | 用途 |
 |------|-------|-----|-------|
-| Background | Warm Cream | #F5F0E6 | Primary background |
-| Primary | Soft Coral | #E8A598 | Main accent color |
-| Secondary | Muted Teal | #5B8A8A | Supporting elements |
-| Tertiary | Dusty Rose | #D4A5A5 | Subtle highlights |
-| Accent | Gold | #C9A962 | Premium touches |
-| Alt Accent | Copper | #B87333 | Warm metallic notes |
-| Text | Charcoal | #3D3D3D | Text and outlines |
+| 背景 | 暖奶油色 | #F5F0E6 | 主背景 |
+| 主色 | 柔和珊瑚色 | #E8A598 | 主强调色 |
+| 次要色 | 柔和青绿色 | #5B8A8A | 辅助元素 |
+| 第三色 | 灰粉色 | #D4A5A5 | 微妙高光 |
+| 强调色 | 金色 | #C9A962 | 高端触感 |
+| 替代强调色 | 铜色 | #B87333 | 温暖金属感 |
+| 文本 | 炭灰色 | #3D3D3D | 文本和轮廓线 |
 
-## Visual Elements
+## 视觉元素
 
-- Delicate line work with refined strokes
-- Subtle icons with balanced weight
-- Graceful curves and flowing compositions
-- Soft gradients with smooth transitions
-- Balanced whitespace and breathing room
-- Thin borders and elegant dividers
-- Subtle drop shadows for depth
+- 精致线条与细腻笔触
+- 平衡感强的微妙图标
+- 优雅曲线与流畅构图
+- 平滑过渡的柔和渐变
+- 留白空间
+- 细边框和精致分隔线
+- 微妙投影营造层次
 
-## Style Rules
+## 风格规则
 
-### Do
+### 宜
 
-- Use refined color combinations
-- Create balanced, harmonious compositions
-- Keep elements light and airy
-- Use subtle gradients sparingly
-- Maintain generous margins
+- 使用精致的色彩搭配
+- 创建平衡和谐的构图
+- 保持元素轻盈通风
+- 谨慎使用微妙渐变
+- 保持宽边距
 
-### Don't
+### 忌
 
-- Use harsh contrasts
-- Overcrowd the composition
-- Add playful or casual elements
-- Use neon or overly bright colors
-- Create busy or cluttered layouts
+- 使用强烈对比
+- 使构图过于拥挤
+- 添加活泼或随意元素
+- 使用霓虹或过亮颜色
+- 创建繁忙或杂乱布局
 
-## Best For
+## 适用于
 
-Professional articles, thought leadership pieces, business topics, executive communications, corporate blogs, strategy discussions, industry analysis
+专业文章、思想领袖文章、商业话题、高管沟通、企业博客、战略讨论、行业分析

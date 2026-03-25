@@ -1,56 +1,56 @@
 # sketch-notes
 
-Soft hand-drawn illustration style with warm, educational feel
+柔和的手绘插图风格，温暖且具教育感
 
-## Design Aesthetic
+## 设计美学
 
-Hand-drawn feel with soft, relaxed brush strokes. Fresh, refined style with minimalist editorial approach. Emphasis on precision, clarity and intelligent elegance while prioritizing warmth, approachability and friendliness.
+手绘质感，笔触柔和放松。清新、精致的极简编辑风格。在强调精确、清晰与智慧优雅的同时，注重温暖、亲切和友好感。
 
-## Background
+## 背景
 
-- Color: Warm Off-White (#FAF8F0)
-- Texture: Subtle paper grain, warm tone
+- 颜色：暖米白（#FAF8F0）
+- 纹理：细微纸张纹理，暖色调
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
-|------|-------|-----|-------|
-| Background | Warm Off-White | #FAF8F0 | Primary background |
-| Primary Text | Deep Charcoal | #2C3E50 | Main elements |
-| Alt Text | Deep Brown | #4A4A4A | Secondary elements |
-| Accent 1 | Soft Orange | #F4A261 | Highlights, emphasis |
-| Accent 2 | Mustard Yellow | #E9C46A | Secondary highlights |
-| Accent 3 | Sage Green | #87A96B | Nature, growth concepts |
-| Accent 4 | Light Blue | #7EC8E3 | Tech, digital elements |
-| Accent 5 | Red Brown | #A0522D | Earthy elements |
+| 角色 | 颜色 | 色值 | 用途 |
+|------|------|------|------|
+| 背景 | 暖米白 | #FAF8F0 | 主背景 |
+| 主文本 | 深炭色 | #2C3E50 | 主要元素 |
+| 辅助文本 | 深棕 | #4A4A4A | 次要元素 |
+| 强调色 1 | 柔和橙 | #F4A261 | 高亮、强调 |
+| 强调色 2 | 芥末黄 | #E9C46A | 辅助高亮 |
+| 强调色 3 | 鼠尾草绿 | #87A96B | 自然、成长概念 |
+| 强调色 4 | 浅蓝 | #7EC8E3 | 科技、数字元素 |
+| 强调色 5 | 红棕 | #A0522D | 大地色元素 |
 
-## Visual Elements
+## 视觉元素
 
-- Connection lines with hand-drawn wavy feel
-- Conceptual abstract icons illustrating ideas
-- Color fills don't completely fill outlines (hand-painted feel)
-- Simple geometric shapes with rounded corners
-- Arrows and pointers with sketchy style
-- Doodle decorations: stars, spirals, underlines
+- 带手绘波浪感的连接线
+- 概念性抽象图标阐释想法
+- 色彩填充不完全覆盖轮廓线（手绘感）
+- 圆角的简洁几何形状
+- 带涂鸦风格的箭头和指示器
+- 涂鸦装饰：星星、螺旋、下划线
 
-## Style Rules
+## 风格规则
 
-### Do
+### 推荐做法
 
-- Keep layouts open and well-structured
-- Emphasize information hierarchy
-- Use hand-drawn quality for all elements
-- Allow imperfection (slight wobbles add character)
-- Layer elements with subtle overlaps
+- 保持布局开放且结构清晰
+- 强调信息层次
+- 所有元素使用手绘质感
+- 允许不完美（轻微晃动增添个性）
+- 元素间微妙叠加
 
-### Don't
+### 避免做法
 
-- Use perfect geometric shapes
-- Create photorealistic elements
-- Overcrowd with too many elements
-- Use pure white backgrounds
-- Make it look computer-generated
+- 使用完美几何形状
+- 创建写实元素
+- 堆砌过多元素
+- 使用纯白背景
+- 使其看起来像计算机生成
 
-## Best For
+## 适用场景
 
-Educational content, knowledge sharing, technical explanations, tutorials, onboarding materials, friendly articles
+教育内容、知识分享、技术解释、教程、入门引导材料、友好型文章

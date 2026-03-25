@@ -1,69 +1,69 @@
 # notion
 
-SaaS dashboard aesthetic with clean data focus and productivity tool styling
+SaaS 仪表盘美学，清晰的数据导向，生产力工具风格
 
-## Design Aesthetic
+## 设计美学
 
-Clean, functional SaaS interface aesthetic. Dashboard-inspired layouts with clear data hierarchy. Notion, Linear, and modern productivity tool styling. Information-dense but organized. Professional and trustworthy.
+简洁、功能性的 SaaS 界面美学。受仪表盘启发的布局，具有清晰的数据层次。Notion、Linear 和现代生产力工具的风格。信息密集但井然有序。专业且值得信赖。
 
-## Background
+## 背景
 
-- Color: Light Gray (#F7F7F5) or Pure White (#FFFFFF)
-- Texture: None - clean solid backgrounds
+- 颜色：浅灰（#F7F7F5）或纯白（#FFFFFF）
+- 纹理：无——干净的纯色背景
 
-## Typography
+## 排版
 
-### Primary Font (Headlines)
+### 主字体（标题）
 
-System UI stack or Inter. Semi-bold weight for emphasis. Clean, functional letterforms. Slightly tighter letter-spacing.
+系统 UI 字体栈或 Inter。半粗字重用于强调。简洁、功能性的字母形态。略紧的字间距。
 
-### Secondary Font (Body)
+### 辅助字体（正文）
 
-Same family in regular weight. Optimized for screen reading. Comfortable line height (1.5-1.6).
+同族字体常规字重。优化屏幕阅读体验。舒适的行高（1.5-1.6）。
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
-|------|-------|-----|-------|
-| Background | Light Gray | #F7F7F5 | Primary background |
-| Card Background | Pure White | #FFFFFF | Content cards |
-| Primary Text | Near Black | #1F1F1F | Headlines, body |
-| Secondary Text | Gray | #6B6B6B | Metadata, labels |
-| Border | Light Border | #E5E5E5 | Card borders, dividers |
-| Accent Blue | Notion Blue | #2383E2 | Links, primary actions |
-| Accent Green | Success | #0F7B6C | Positive metrics |
-| Accent Red | Alert | #E03E3E | Negative metrics |
-| Accent Yellow | Warning | #DFAB01 | Cautions |
+| 角色 | 颜色 | 色值 | 用途 |
+|------|------|------|------|
+| 背景 | Light Gray | #F7F7F5 | 主要背景 |
+| 卡片背景 | Pure White | #FFFFFF | 内容卡片 |
+| 主文本 | Near Black | #1F1F1F | 标题、正文 |
+| 辅助文本 | Gray | #6B6B6B | 元数据、标签 |
+| 边框 | Light Border | #E5E5E5 | 卡片边框、分隔线 |
+| 蓝色强调 | Notion Blue | #2383E2 | 链接、主要操作 |
+| 绿色强调 | Success | #0F7B6C | 正面指标 |
+| 红色强调 | Alert | #E03E3E | 负面指标 |
+| 黄色强调 | Warning | #DFAB01 | 注意事项 |
 
-## Visual Elements
+## 视觉元素
 
-- Card-based layouts with subtle borders or shadows
-- Clean data tables and charts
-- Progress bars and metric displays
-- Icon-based navigation hints
-- Checkbox and toggle styling
-- Tag and label chips
-- Subtle hover state styling
-- Breadcrumb and hierarchy indicators
+- 带微妙边框或阴影的卡片式布局
+- 简洁的数据表格和图表
+- 进度条和指标展示
+- 基于图标的导航提示
+- 复选框和开关样式
+- 标签芯片
+- 微妙的悬停状态样式
+- 面包屑导航和层次指示器
 
-## Style Rules
+## 风格规则
 
-### Do
+### 推荐做法
 
-- Use card-based content organization
-- Create clear data hierarchy
-- Use subtle shadows and borders
-- Keep layouts grid-aligned
-- Present metrics prominently
+- 使用卡片式内容组织
+- 创建清晰的数据层次
+- 使用微妙的阴影和边框
+- 保持布局网格对齐
+- 突出展示指标数据
 
-### Don't
+### 避免事项
 
-- Use decorative illustrations
-- Add gradients or complex backgrounds
-- Create artistic layouts
-- Use rounded blob shapes
-- Add slide numbers, footers, or logos
+- 使用装饰性插图
+- 添加渐变或复杂背景
+- 创建艺术化布局
+- 使用圆角不规则形状
+- 添加幻灯片编号、页脚或标志
 
-## Best For
+## 适用场景
 
-Product demos, SaaS presentations, productivity tool pitches, metrics dashboards, feature walkthroughs, B2B presentations, technical product marketing
+产品演示、SaaS 演示、生产力工具提案、指标仪表盘、功能导览、B2B 演示、技术产品营销

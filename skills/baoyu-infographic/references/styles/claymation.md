@@ -1,29 +1,29 @@
-# claymation
+# claymation（黏土动画）
 
-3D clay figure aesthetic with stop-motion charm
+3D 黏土造型美学，定格动画的魅力
 
-## Color Palette
+## 调色板
 
-- Primary: Saturated clay colors - bright but slightly muted
-- Background: Neutral studio backdrop, soft gradients
-- Accents: Complementary clay colors, shiny highlights
+- 主色：饱和黏土色 — 明亮但略带柔化
+- 背景：中性工作室背景布，柔和渐变
+- 强调色：互补黏土色，闪亮高光
 
-## Visual Elements
+## 视觉元素
 
-- Clay/plasticine texture on all objects
-- Fingerprint marks and imperfections
-- Rounded, sculpted forms
-- Soft shadows
-- Stop-motion staging
-- Miniature set aesthetic
+- 所有物体呈现黏土/橡皮泥质感
+- 指纹痕迹与不完美细节
+- 圆润的雕塑造型
+- 柔和阴影
+- 定格动画布景
+- 微缩场景美学
 
-## Typography
+## 排版
 
-- Extruded clay letters
-- Dimensional, rounded text
-- Playful and chunky
-- Embedded in clay scenes
+- 立体黏土文字
+- 有质感的圆润文字
+- 趣味且饱满
+- 嵌入黏土场景中
 
-## Best For
+## 适用场景
 
-Playful explanations, children's content, stop-motion narratives, friendly processes
+趣味讲解、儿童内容、定格动画叙事、友好的流程展示

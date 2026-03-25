@@ -1,23 +1,23 @@
 # standard
 
-Classic comic grid, versatile
+经典漫画网格，通用布局
 
-## Panel Structure
+## 分格结构
 
-- **Panels per page**: 4-6
-- **Structure**: Regular grid with occasional variation
-- **Gutters**: Consistent white space (8-10px)
+- **每页分格数**：4-6
+- **结构**：常规网格，偶尔变化
+- **分格间距**：一致的留白（8-10px）
 
-## Grid Configuration
+## 网格配置
 
-- 2-3 columns × 2-3 rows
-- Panel sizes: Mostly equal, occasional variation
-- Reading flow: Left→right, top→bottom (Z-pattern)
+- 2-3 列 x 2-3 行
+- 分格尺寸：基本均匀，偶尔变化
+- 阅读流：从左到右，从上到下（Z 字形）
 
-## Best For
+## 适合场景
 
-Narrative flow, dialogue scenes
+叙事流程、对话场景
 
-## Best Style Pairings
+## 最佳风格搭配
 
-classic, warm, sepia
+classic、warm、sepia

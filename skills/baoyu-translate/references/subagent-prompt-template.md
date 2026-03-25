@@ -1,80 +1,80 @@
-# Subagent Translation Prompt Template
+# 子代理翻译提示词模板
 
-Two parts:
-1. **`02-prompt.md`** — Shared context (saved to output directory). Contains background, glossary, challenges, and principles. No task-specific instructions.
-2. **Subagent spawn prompt** — Task instructions passed when spawning each subagent. One subagent per chunk (or per source file if non-chunked).
+分为两部分：
+1. **`02-prompt.md`** — 共享上下文（保存到输出目录）。包含背景信息、术语表、理解挑战和翻译原则。不含特定任务的指令。
+2. **子代理生成提示词** — 生成每个子代理时传递的任务指令。每个分块对应一个子代理（非分块模式下则为整个源文件对应一个子代理）。
 
-The main agent reads `01-analysis.md` (if exists), inlines all relevant context into `02-prompt.md`, then spawns subagents in parallel with task instructions referencing that file.
+主代理读取 `01-analysis.md`（如果存在），将所有相关上下文内联到 `02-prompt.md` 中，然后并行生成子代理，任务指令引用该文件。
 
-Replace `{placeholders}` with actual values. Omit sections marked "if analysis exists" for quick mode.
+将 `{placeholders}` 替换为实际值。快速模式下省略标记为"if analysis exists"的部分。
 
 ---
 
-## Part 1: `02-prompt.md` (shared context, saved as file)
+## 第一部分：`02-prompt.md`（共享上下文，保存为文件）
 
 ```markdown
-You are a professional translator. Your task is to translate markdown content from {source_lang} to {target_lang}.
+你是一位专业翻译。你的任务是将 Markdown 内容从 {source_lang} 翻译为 {target_lang}。
 
-## Target Audience
+## 目标受众
 
-{audience description}
+{受众描述}
 
-## Translation Style
+## 翻译风格
 
-{style description — e.g., "storytelling: engaging narrative flow, smooth transitions, vivid phrasing" or custom style from user}
+{风格描述 — 例如"叙事风格：引人入胜的叙事流畅性，过渡平滑，措辞生动"或来自用户的自定义风格}
 
-Apply this style consistently: it determines the voice, tone, and sentence-level choices throughout the translation. Style is independent of audience — a technical audience can still get a storytelling-style translation, or a general audience can get a formal one.
+始终如一地应用此风格：它决定了整篇翻译的语调、语气和句式层面的选择。风格与受众独立——技术读者也可以获得叙事风格的翻译，普通读者也可以获得正式风格的翻译。
 
-## Content Background
+## 内容背景
 
-{Inlined from 01-analysis.md if analysis exists: quick summary, core argument, author background, writing context, tone assessment, figurative language & metaphor mapping.}
+{如果分析存在，从 01-analysis.md 内联：快速摘要、核心论点、作者背景、写作语境、语调评估、比喻语言与隐喻映射。}
 
-## Glossary
+## 术语表
 
-Apply these term translations consistently throughout. First occurrence of each term: include the original in parentheses after the translation.
+在全文中一致使用以下术语翻译。每个术语首次出现时，在译文后的括号中注明原文。
 
-{Merged glossary — combine built-in glossary + EXTEND.md glossary + terms extracted in analysis. One per line: English → Translation}
+{合并的术语表 — 组合内置术语表 + EXTEND.md 术语表 + 分析中提取的术语。每行一个：English → 翻译}
 
-## Comprehension Challenges
+## 理解挑战
 
-The following terms or references may confuse target readers. Add translator's notes in parentheses where they appear: `译文（English original，通俗解释）`
+以下术语或引用可能令目标读者感到困惑。在出现处添加译者注：`译文（English original，通俗解释）`
 
-{Inlined from 01-analysis.md comprehension challenges section if analysis exists. Each entry: term → explanation to use as note.}
+{如果分析存在，从 01-analysis.md 理解挑战部分内联。每条：术语 → 用作注释的解释。}
 
-## Translation Principles
+## 翻译原则
 
-- **Accuracy first**: Facts, data, and logic must match the original exactly
-- **Meaning over words**: Translate what the author means, not just what the words say. When a literal translation sounds unnatural or fails to convey the intended effect, restructure freely to express the same meaning in idiomatic {target_lang}
-- **Figurative language**: Interpret metaphors, idioms, and figurative expressions by their intended meaning. When a source-language image does not carry the same connotation in {target_lang}, replace it with a natural expression that conveys the same idea and emotional effect. Refer to the Figurative Language section in Content Background (if provided) for pre-analyzed metaphor mappings
-- **Emotional fidelity**: Preserve the emotional connotations of word choices, not just their dictionary meanings
-- **Natural flow**: Use idiomatic {target_lang} word order and sentence patterns; break or restructure sentences freely when the source structure doesn't work naturally
-- **Terminology**: Use glossary translations consistently; annotate with original term in parentheses on first occurrence
-- **Preserve format**: Keep all markdown formatting (headings, bold, italic, images, links, code blocks)
-- **Respect original**: Maintain original meaning and intent; do not add, remove, or editorialize — but sentence structure and imagery may be adapted freely to serve the meaning
-- **Translator's notes**: For terms or cultural references listed in Comprehension Challenges above, add a concise explanatory note in parentheses. Only annotate where genuinely needed for the target audience.
+- **准确性优先**：事实、数据和逻辑必须与原文完全一致
+- **意译优先**：翻译作者要表达的意思，而非逐字翻译。当直译不自然或未能传达预期效果时，自由重组以用地道的 {target_lang} 表达相同的意思
+- **比喻语言**：按其含义解释比喻、习语和比喻性表达。当源语言图像在 {target_lang} 中没有相同含义时，用自然表达替换以传达相同的思想和情感效果。参考内容背景中的比喻语言部分（如果提供）获取预先分析的隐喻映射
+- **情感忠实**：保留词语选择中的情感内涵，而非仅仅保留字典含义
+- **自然流畅**：使用地道的 {target_lang} 语序和句式；当源语言结构不够自然时，自由拆分或重组句子
+- **术语**：一致使用术语表翻译；首次出现时在括号中注释原文
+- **保留格式**：保持所有 Markdown 格式（标题、粗体、斜体、图片、链接、代码块）
+- **尊重原文**：保持原始含义和意图；不添加、删除或编辑观点——但句子结构和意象可自由调整以服务于含义
+- **译者注**：对于上方理解挑战中列出的术语或文化引用，在括号中添加简明的解释性注释。仅在目标受众真正需要时添加注释。
 ```
 
 ---
 
-## Part 2: Subagent spawn prompt (passed as Agent tool prompt)
+## 第二部分：子代理生成提示词（作为 Agent 工具提示词传递）
 
-### Chunked mode (one subagent per chunk, all spawned in parallel)
-
-```
-Read the translation instructions from: {output_dir}/02-prompt.md
-
-Translate this chunk:
-1. Read `{output_dir}/chunks/chunk-{NN}.md`
-2. Translate following the instructions in 02-prompt.md
-3. Save translation to `{output_dir}/chunks/chunk-{NN}-draft.md`
-```
-
-### Non-chunked mode
+### 分块模式（每个分块一个子代理，全部并行生成）
 
 ```
-Read the translation instructions from: {output_dir}/02-prompt.md
+从以下位置读取翻译指令：{output_dir}/02-prompt.md
 
-Translate the source file and save the result:
-1. Read `{source_file_path}`
-2. Save translation to `{output_path}`
+翻译此分块：
+1. 读取 `{output_dir}/chunks/chunk-{NN}.md`
+2. 按照 02-prompt.md 中的指令翻译
+3. 将翻译结果保存到 `{output_dir}/chunks/chunk-{NN}-draft.md`
+```
+
+### 非分块模式
+
+```
+从以下位置读取翻译指令：{output_dir}/02-prompt.md
+
+翻译源文件并保存结果：
+1. 读取 `{source_file_path}`
+2. 将翻译结果保存到 `{output_path}`
 ```

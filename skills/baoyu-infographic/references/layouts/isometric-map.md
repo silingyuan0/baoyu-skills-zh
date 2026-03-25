@@ -1,41 +1,41 @@
 # isometric-map
 
-3D-style spatial layout showing locations, relationships, or journey through space.
+3D风格的空间布局，展示位置、关系或空间中的旅程。
 
-## Structure
+## 结构
 
-- Isometric 3D perspective
-- Locations as buildings/landmarks
-- Paths connecting locations
-- Spatial relationships visible
-- Bird's eye view angle
+- 等距投影3D视角
+- 位置以建筑/地标呈现
+- 连接各位置的路径
+- 清晰展示空间关系
+- 鸟瞰角度
 
-## Best For
+## 最佳适用
 
-- Office/campus layouts
-- City/ecosystem maps
-- User journey maps
-- System architecture
-- Process landscapes
+- 办公室/校园布局
+- 城市/生态系统地图
+- 用户旅程地图
+- 系统架构
+- 流程概览
 
-## Visual Elements
+## 视觉元素
 
-- Consistent isometric angle (30°)
-- 3D buildings or objects
-- Pathways and roads
-- Labels floating above
-- Mini scenes at locations
+- 统一的等距角度（30度）
+- 3D建筑或物体
+- 道路和路径
+- 位于物体上方的标签
+- 各位置的迷你场景
 
-## Text Placement
+## 文本布局
 
-- Title at top corner
-- Location labels above objects
-- Path labels along routes
-- Legend for symbols
-- Scale indicator if relevant
+- 标题置于顶部角落
+- 位置标签位于物体上方
+- 路径标签沿路线标注
+- 符号图例
+- 相关时显示比例尺
 
-## Recommended Pairings
+## 推荐搭配
 
-- `isometric-3d`: Clean technical maps
-- `pixel-art`: Retro game-style maps
-- `lego-brick`: Playful location maps
+- `isometric-3d`：简洁的技术地图
+- `pixel-art`：复古游戏风格地图
+- `lego-brick`：趣味地点地图

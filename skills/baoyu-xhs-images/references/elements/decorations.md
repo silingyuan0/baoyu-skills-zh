@@ -1,152 +1,150 @@
-# Decorative Assets
+# 装饰素材
 
-Visual embellishments and decorative elements for Xiaohongshu infographics.
+## 强调标记
 
-## Emphasis Marks (强调标记)
+用于吸引注意力的元素。
 
-Elements to draw attention to specific content.
-
-| Name | Description | Use Case |
+| 名称 | 描述 | 适用于 |
 |------|-------------|----------|
-| red-arrow | Red arrow pointing to target | Product features, key points |
-| circle-mark | Circle highlight annotation | Highlighting details |
-| underline | Straight or wavy underline | Text emphasis |
-| star-burst | Starburst explosion effect | Special offers, wow factor |
-| checkmark | Checkmark/tick symbol | Completed items, pros |
-| cross-mark | X mark symbol | Cons, things to avoid |
-| exclamation | Exclamation point decoration | Important warnings |
-| question | Question mark decoration | FAQ, curiosity |
-| numbering | Circled numbers | Steps, rankings |
-| bracket | Bracket highlighting | Grouping, emphasis |
+| red-arrow | 指向目标的红箭头 | 产品特点、关键点 |
+| circle-mark | 圆形高亮标注 | 高亮细节 |
+| underline | 直或波浪下划线 | 文字强调 |
+| star-burst | 星爆效果 | 特别优惠、吸睛效果 |
+| checkmark | 勾选符号 | 已完成项目、优点 |
+| cross-mark | X 符号 | 缺点、需要避免 |
+| exclamation | 感叹号装饰 | 重要警告 |
+| question | 问号装饰 | FAQ、好奇心 |
+| numbering | 带圆圈的数字 | 步骤、排名 |
+| bracket | 括号高亮 | 分组、强调 |
 
-## Backgrounds (背景)
+## 背景
 
-Base layer treatments.
+基础层处理。
 
-| Name | Description | Use Case |
+| 名称 | 描述 | 适用于 |
 |------|-------------|----------|
-| solid-saturated | High-saturation solid color | Bold, energetic |
-| solid-pastel | Soft pastel solid color | Cute, gentle |
-| gradient-linear | Linear color gradient | Modern, dynamic |
-| gradient-radial | Radial color gradient | Spotlight effect |
-| frosted-glass | Frosted glass blur effect | Layered compositions |
-| paper-texture | Paper or craft texture | Handmade aesthetic |
-| fabric-texture | Fabric/cloth texture | Cozy, tactile |
-| chalkboard | Blackboard texture | Educational content |
-| grid | Subtle grid pattern | Structured, organized |
-| dots | Polka dot pattern | Playful, retro |
+| solid-saturated | 高饱和纯色 | 大胆、有活力 |
+| solid-pastel | 柔和粉彩纯色 | 可爱、温柔 |
+| gradient-linear | 线性颜色渐变 | 现代、动态 |
+| gradient-radial | 径向颜色渐变 | 聚光灯效果 |
+| frosted-glass | 毛玻璃模糊效果 | 分层组合 |
+| paper-texture | 纸张或工艺纹理 | 手工美学 |
+| fabric-texture | 织物/布料纹理 | 舒适、触感 |
+| chalkboard | 黑板纹理 | 教育内容 |
+| grid | 细微网格图案 | 结构化、有组织 |
+| dots | 波点图案 | 俏皮、复古 |
 
-## Doodles & Emoji (涂鸦)
+## 涂鸦与表情包
 
-Hand-drawn decorative elements.
+手绘装饰元素。
 
-| Name | Description | Use Case |
+| 名称 | 描述 | 适用于 |
 |------|-------------|----------|
-| hand-drawn-lines | Sketchy hand-drawn lines | Connections, borders |
-| stars-sparkles | Stars and sparkle effects | Magic, excellence |
-| flowers | Floral decorations | Beauty, feminine |
-| hearts | Heart symbols | Love, favorites |
-| clouds | Cloud shapes | Dreamy, thoughts |
-| arrows-curvy | Curved directional arrows | Flow, direction |
-| squiggles | Wavy squiggle lines | Energy, movement |
-| confetti | Scattered confetti | Celebration |
-| leaves | Leaf decorations | Nature, fresh |
-| bubbles | Circular bubble shapes | Playful, light |
+| hand-drawn-lines | 素描手绘线条 | 连接、边框 |
+| stars-sparkles | 星星和闪光效果 | 神奇、出色 |
+| flowers | 花卉装饰 | 美感、女性 |
+| hearts | 心形符号 | 爱、收藏 |
+| clouds | 云朵形状 | 梦幻、思绪 |
+| arrows-curvy | 弯曲方向箭头 | 流动、方向 |
+| squiggles | 波浪曲线 | 活力、运动 |
+| confetti | 散落彩屑 | 庆祝 |
+| leaves | 叶子装饰 | 自然、新鲜 |
+| bubbles | 圆形气泡形状 | 俏皮、轻盈 |
 
-## Emoji Integration
+## 表情包集成
 
-| Category | Examples | Use Case |
+| 类别 | 示例 | 适用于 |
 |----------|----------|----------|
-| Reactions | 🥹 😍 🤯 | Emotional emphasis |
-| Objects | ✨ 💡 🎯 | Visual markers |
-| Actions | 👇 👆 ➡️ | Directional cues |
-| Nature | 🌸 🌿 ☀️ | Thematic decoration |
+| 反应 | 🥹 😍 🤯 | 情感强调 |
+| 物体 | ✨ 💡 🎯 | 视觉标记 |
+| 动作 | 👇 👆 ➡️ | 方向提示 |
+| 自然 | 🌸 🌿 ☀️ | 主题装饰 |
 
-## Frames (边框)
+## 边框
 
-Container and border treatments.
+容器和边框处理。
 
-| Name | Description | Use Case |
+| 名称 | 描述 | 适用于 |
 |------|-------------|----------|
-| polaroid | Instant photo frame | Photo showcase |
-| film-strip | Film negative border | Cinematic, retro |
-| phone-screenshot | Mobile device mockup | App/screen content |
-| torn-paper | Torn paper edge effect | Scrapbook aesthetic |
-| rounded-rect | Rounded rectangle border | Clean containers |
-| decorative | Ornate decorative border | Premium, elegant |
-| tape-corners | Washi tape corners | Crafty, casual |
-| stamp-border | Stamp perforated edge | Vintage, postal |
+| polaroid | 拍立得照片边框 | 照片展示 |
+| film-strip | 胶片负片边框 | 电影感、复古 |
+| phone-screenshot | 移动设备模型 | 应用/屏幕内容 |
+| torn-paper | 撕纸边缘效果 | 剪贴簿美学 |
+| rounded-rect | 圆角矩形边框 | 干净容器 |
+| decorative | 装饰性边框 | 高级、优雅 |
+| tape-corners | 和纸胶带边角 | 工艺感、休闲 |
+| stamp-border | 邮票穿孔边缘 | 复古、邮政 |
 
-## Dividers (分隔线)
+## 分隔线
 
-Section separators.
+区域分隔符。
 
-| Name | Description | Use Case |
+| 名称 | 描述 | 适用于 |
 |------|-------------|----------|
-| line-simple | Simple horizontal line | Clean separation |
-| line-dashed | Dashed line | Subtle division |
-| line-wavy | Wavy line | Playful separation |
-| dots-row | Row of dots | Decorative division |
-| ornamental | Decorative flourish | Elegant separation |
+| line-simple | 简单水平线 | 简洁分隔 |
+| line-dashed | 虚线 | 微细分隔 |
+| line-wavy | 波浪线 | 俏皮分隔 |
+| dots-row | 一排点 | 装饰分隔 |
+| ornamental | 装饰性花纹 | 优雅分隔 |
 
-## Stickers (贴纸)
+## 贴纸
 
-Pre-composed decorative elements.
+预制装饰元素。
 
-| Name | Description | Use Case |
+| 名称 | 描述 | 适用于 |
 |------|-------------|----------|
-| badge-new | "NEW" badge | New products |
-| badge-hot | "HOT" badge | Trending items |
-| badge-sale | Sale/discount badge | Promotions |
-| seal-quality | Quality seal | Recommendations |
-| ribbon-award | Award ribbon | Best picks |
-| tag-price | Price tag shape | Pricing info |
+| badge-new | "NEW" 徽章 | 新产品 |
+| badge-hot | "HOT" 徽章 | 热门商品 |
+| badge-sale | 销售/折扣徽章 | 促销 |
+| seal-quality | 质量印章 | 推荐 |
+| ribbon-award | 获奖丝带 | 最佳选择 |
+| tag-price | 价格标签形状 | 价格信息 |
 
-## Style-Specific Decorations
+## 风格特定装饰
 
-### Cute Style
-- Hearts, stars, sparkles
-- Ribbon decorations, sticker-style
-- Cute character elements
+### 可爱风格
+- 心形、星星、闪光
+- 丝带装饰、贴纸风格
+- 可爱人物元素
 
-### Notion Style
-- Simple line doodles
-- Geometric shapes, stick figures
-- Maximum whitespace, minimal decoration
+### Notion 风格
+- 简单线条涂鸦
+- 几何形状、火柴人
+- 最大化留白、最少装饰
 
-### Warm Style
-- Sun rays, coffee cups, cozy items
-- Warm lighting effects
-- Friendly, inviting decorations
+### 温暖风格
+- 阳光、咖啡杯、舒适物品
+- 温暖光线效果
+- 友好、亲切的装饰
 
-### Fresh Style
-- Plant leaves, clouds, water drops
-- Simple geometric shapes
-- Open, breathing composition
+### 清新风格
+- 植物叶子、云朵、水滴
+- 简单几何形状
+- 开放、呼吸感的构图
 
-### Bold Style
-- Exclamation marks, arrows
-- Warning icons, strong shapes
-- High contrast elements
+### Bold 风格
+- 感叹号、箭头
+- 警告图标、强烈形状
+- 高对比度元素
 
-### Pop Style
-- Bold shapes, speech bubbles
-- Comic-style effects, starburst
-- Dynamic, energetic decorations
+### Pop 风格
+- 大胆形状、对话气泡
+- 漫画风格效果、星爆
+- 动态、有活力的装饰
 
-### Retro Style
-- Halftone dots, vintage badges
-- Classic icons, tape effects
-- Aged texture overlays
+### 复古风格
+- 半色调点、复古徽章
+- 经典图标、胶带效果
+- 做旧纹理叠加
 
-### Chalkboard Style
-- Chalk dust effects
-- Hand-drawn doodles
-- Mathematical formulas, simple icons
+### 粉笔风格
+- 粉笔灰尘效果
+- 手绘涂鸦
+- 数学公式、简单图标
 
-### Screen-Print Style
-- Bold silhouettes, geometric shapes
-- Halftone dot patterns, print grain
-- No doodles — negative space does the work
-- Stencil-cut edges, color block boundaries
-- Vintage poster border treatments
+### 丝网印刷风格
+- 大胆轮廓、几何形状
+- 半色调点阵、印刷颗粒
+- 无涂鸦 — 负空间发挥作用
+- 模板切割边缘、纯色块边界
+- 复古海报边框处理

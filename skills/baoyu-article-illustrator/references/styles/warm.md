@@ -1,58 +1,58 @@
 # warm
 
-Friendly, approachable illustration style for human-centered content
+以人为中心内容的友好平易近人插图风格
 
-## Design Aesthetic
+## 设计美学
 
-Warm and inviting visual approach that feels personal and approachable. Soft, friendly colors that evoke comfort and connection. Emphasizes human elements and emotional resonance. Creates an atmosphere of trust and openness.
+温暖平易近人的视觉方法，让人感到个人化和可接近。柔和友好的颜色唤起舒适和联系感。强调人的元素和情感共鸣。营造信任和开放的氛围。
 
-## Background
+## 背景
 
-- Color: Cream (#FFFAF0) or Soft Peach (#FED7AA)
-- Texture: Soft paper texture with warm undertones
+- 颜色：奶油色（#FFFAF0）或柔和桃色（#FED7AA）
+- 纹理：带温暖底色的柔和纸张纹理
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
+| 角色 | 颜色 | Hex | 用途 |
 |------|-------|-----|-------|
-| Background | Cream | #FFFAF0 | Primary background |
-| Alt Background | Soft Peach | #FED7AA | Accent sections |
-| Primary | Warm Orange | #ED8936 | Main accent color |
-| Secondary | Golden Yellow | #F6AD55 | Supporting warmth |
-| Tertiary | Terracotta | #C05621 | Earthy depth |
-| Accent | Deep Brown | #744210 | Grounding elements |
-| Alt Accent | Soft Red | #E53E3E | Emotional touches |
-| Text | Warm Charcoal | #4A4A4A | Text elements |
+| 背景 | 奶油色 | #FFFAF0 | 主背景 |
+| 替代背景 | 柔和桃色 | #FED7AA | 强调区域 |
+| 主色 | 暖橙色 | #ED8936 | 主强调色 |
+| 次要色 | 金黄色 | #F6AD55 | 辅助温暖 |
+| 第三色 | 赤陶色 | #C05621 | 大地深度 |
+| 强调色 | 深棕色 | #744210 | 沉稳元素 |
+| 替代强调色 | 柔和红色 | #E53E3E | 情感触感 |
+| 文本 | 暖炭灰色 | #4A4A4A | 文本元素 |
 
-## Visual Elements
+## 视觉元素
 
-- Rounded shapes and soft corners
-- Friendly character illustrations
-- Sun rays and warm light motifs
-- Heart symbols and care icons
-- Cozy lighting effects
-- Gentle gradients with warmth
-- Soft shadows without harsh edges
-- Hand-drawn quality touches
+- 圆润形状和柔和边角
+- 友好角色插图
+- 阳光射线和温暖光线图案
+- 心形符号和关怀图标
+- 温馨灯光效果
+- 带温暖的柔和渐变
+- 无硬边缘的柔和阴影
+- 手绘质感触感
 
-## Style Rules
+## 风格规则
 
-### Do
+### 宜
 
-- Use warm, inviting colors
-- Create rounded, friendly shapes
-- Include human-centered elements
-- Evoke feelings of comfort
-- Maintain soft, gentle contrasts
+- 使用温暖平易近人的颜色
+- 创建圆润友好的形状
+- 包含以人为中心的元素
+- 唤起舒适感
+- 保持柔和温和的对比
 
-### Don't
+### 忌
 
-- Use cold or stark colors
-- Create sharp, aggressive shapes
-- Add technical or clinical elements
-- Use dark, moody backgrounds
-- Create sterile compositions
+- 使用冷色或苍白颜色
+- 创建尖锐有攻击性的形状
+- 添加技术或刻板元素
+- 使用深色沉闷背景
+- 创建冷清构图
 
-## Best For
+## 适用于
 
-Personal growth articles, lifestyle content, education, human interest stories, wellness topics, relationship advice, self-help content, community building
+个人成长文章、生活方式内容、教育、人物故事、健康话题、关系建议、自助内容、社区建设

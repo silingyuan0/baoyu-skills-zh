@@ -1,23 +1,23 @@
 # cinematic
 
-Wide panels, filmic feel
+宽幅分格，电影感
 
-## Panel Structure
+## 分格结构
 
-- **Panels per page**: 2-4
-- **Structure**: Horizontal emphasis, wide aspect panels
-- **Gutters**: Generous spacing (12-15px)
+- **每页分格数**：2-4
+- **结构**：横向强调，宽幅比例分格
+- **分格间距**：宽松间距（12-15px）
 
-## Grid Configuration
+## 网格配置
 
-- 1-2 columns, horizontal emphasis
-- Panel sizes: Wide aspect ratios (3:1, 4:1)
-- Reading flow: Horizontal sweep, filmic rhythm
+- 1-2 列，横向强调
+- 分格尺寸：宽幅比例（3:1、4:1）
+- 阅读流：横向扫描，电影节奏
 
-## Best For
+## 适合场景
 
-Establishing shots, dramatic moments, landscapes
+建立镜头、戏剧性时刻、风景场景
 
-## Best Style Pairings
+## 最佳风格搭配
 
-dramatic, classic, sepia
+dramatic、classic、sepia

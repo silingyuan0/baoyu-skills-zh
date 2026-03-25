@@ -1,26 +1,26 @@
-# dark
+# 暗色
 
-Cinematic, premium, atmospheric
+电影感、高端、氛围感
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex |
-|------|-------|-----|
-| Primary 1 | Electric Purple | #8B5CF6 |
-| Primary 2 | Cyan Blue | #06B6D4 |
-| Primary 3 | Magenta Pink | #EC4899 |
-| Background | Deep Purple-Black | #0A0A0A |
-| Background Alt | Rich Navy | #1A1A2E |
-| Accent 1 | Amber | #F59E0B |
-| Accent 2 | Pure White | #FFFFFF |
+| 角色 | 颜色 | 十六进制 |
+|------|------|----------|
+| 主色 1 | Electric Purple（电光紫） | #8B5CF6 |
+| 主色 2 | Cyan Blue（青蓝） | #06B6D4 |
+| 主色 3 | Magenta Pink（品红粉） | #EC4899 |
+| 背景 | Deep Purple-Black（深紫黑） | #0A0A0A |
+| 备选背景 | Rich Navy（深海军蓝） | #1A1A2E |
+| 强调色 1 | Amber（琥珀色） | #F59E0B |
+| 强调色 2 | Pure White（纯白） | #FFFFFF |
 
-## Decorative Hints
+## 装饰提示
 
-- Glowing accent elements and neon highlights
-- Atmospheric fog or particle effects
-- Silhouettes with backlit edges
-- Subtle gradient backgrounds
+- 发光点缀元素和霓虹高光
+- 氛围雾气或粒子效果
+- 逆光剪影
+- 微妙的渐变背景
 
-## Best For
+## 适用场景
 
-Entertainment, premium brands, cinematic storytelling, dark mode, gaming, night themes
+娱乐、高端品牌、电影叙事、暗色模式、游戏、夜间主题

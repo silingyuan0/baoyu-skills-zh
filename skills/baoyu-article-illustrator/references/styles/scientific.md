@@ -1,59 +1,59 @@
 # scientific
 
-Academic scientific illustration style for technical diagrams and processes
+面向技术图表和流程的学术科学插图风格
 
-## Design Aesthetic
+## 设计美学
 
-Academic scientific illustration aesthetic for biological, chemical, and technical diagrams. Clean, precise diagrams with proper labeling and clear visual flow. Educational clarity with professional polish. Textbook quality illustrations.
+面向生物、化学和技术图表的学术科学插图美学。精确、清晰的示意图，配有规范的标注和流畅的视觉引导。兼具教育清晰性与专业打磨效果。教科书级别的插图品质。
 
-## Background
+## 背景
 
-- Color: Off-White (#FAFAFA) or Light Blue-Gray (#F0F4F8)
-- Texture: None or subtle paper grain
+- 颜色：米白（#FAFAFA）或浅蓝灰（#F0F4F8）
+- 纹理：无或细微纸张纹理
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
-|------|-------|-----|-------|
-| Background | Off-White | #FAFAFA | Primary background |
-| Primary Text | Dark Slate | #1E293B | Labels, headers |
-| Label Text | Medium Gray | #475569 | Annotations |
-| Pathway 1 | Teal | #0D9488 | Primary pathway |
-| Pathway 2 | Blue | #3B82F6 | Secondary pathway |
-| Pathway 3 | Purple | #8B5CF6 | Tertiary pathway |
-| Structure | Amber | #F59E0B | Membranes, structures |
-| Alert | Red | #EF4444 | Key elements |
-| Positive | Green | #22C55E | Products, outputs |
+| 角色 | 颜色 | 色值 | 用途 |
+|------|------|------|------|
+| 背景 | 米白 | #FAFAFA | 主背景 |
+| 主文本 | 深岩色 | #1E293B | 标签、标题 |
+| 标注文本 | 中灰 | #475569 | 批注 |
+| 通路 1 | 青色 | #0D9488 | 主要通路 |
+| 通路 2 | 蓝色 | #3B82F6 | 次要通路 |
+| 通路 3 | 紫色 | #8B5CF6 | 第三通路 |
+| 结构 | 琥珀色 | #F59E0B | 细胞膜、结构 |
+| 警示 | 红色 | #EF4444 | 关键元素 |
+| 正向 | 绿色 | #22C55E | 产物、输出 |
 
-## Visual Elements
+## 视觉元素
 
-- Precise labeled diagrams
-- Flow arrows showing direction
-- Modular components with colors
-- Chemical formulas and notation
-- Cross-section views
-- Numbered step sequences
-- Molecule and cell representations
-- Process summary boxes
+- 精确标注的示意图
+- 显示方向的流程箭头
+- 带色彩的模块化组件
+- 化学式和标记
+- 剖面图
+- 编号步骤序列
+- 分子和细胞表示
+- 流程总结框
 
-## Style Rules
+## 风格规则
 
-### Do
+### 推荐做法
 
-- Use precise consistent lines
-- Label all components clearly
-- Show directional flow
-- Include technical notation
-- Create clear numbered sequences
+- 使用精确一致的线条
+- 清晰标注所有组件
+- 显示方向性流动
+- 包含技术标记
+- 创建清晰的编号序列
 
-### Don't
+### 避免做法
 
-- Use decorative elements
-- Create imprecise diagrams
-- Omit important labels
-- Use inconsistent styling
-- Add artistic flourishes
+- 使用装饰性元素
+- 创建不精确的图表
+- 遗漏重要标签
+- 使用不一致的风格
+- 添加艺术性花饰
 
-## Best For
+## 适用场景
 
-Biology articles, chemistry explanations, medical content, research summaries, academic writing, technical documentation, process explanations
+生物学文章、化学解释、医学内容、研究综述、学术写作、技术文档、流程解释

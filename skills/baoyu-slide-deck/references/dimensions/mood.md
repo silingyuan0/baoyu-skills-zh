@@ -1,135 +1,135 @@
-# Mood Dimension
+# 氛围维度
 
-Color temperature and palette style.
+色彩温度和调色板风格。
 
-## Options
+## 选项
 
-| Option | Color Temperature | Palette Style | Best For |
+| 选项 | 色彩温度 | 调色板风格 | 适用于 |
 |--------|-------------------|---------------|----------|
-| `professional` | Cool-neutral | Navy, gold, structured grays | Business, investor, corporate |
-| `warm` | Warm | Earth tones, oranges, natural colors | Education, friendly, approachable |
-| `cool` | Cool | Blues, grays, cyan, teal | Technical, data, analytical |
-| `vibrant` | Varied | High saturation, bold colors | Marketing, creative, attention-grabbing |
-| `dark` | Dark | Deep backgrounds with bright accents | Entertainment, gaming, atmospheric |
-| `neutral` | Neutral | Minimal color, grayscale focus | Executive, minimal, sophisticated |
+| `professional` | 冷-中性 | 海军蓝、金色、结构化灰色 | 商业、投资者、企业 |
+| `warm` | 暖色 | 大地色、橙色、自然色 | 教育、友好、平易近人 |
+| `cool` | 冷色 | 蓝色、灰色、青色、蓝绿色 | 技术、数据、分析 |
+| `vibrant` | 多样 | 高饱和度、醒目色彩 | 营销、创意、吸引注意力 |
+| `dark` | 深色 | 深色背景配明亮强调色 | 娱乐、游戏、大气 |
+| `neutral` | 中性 | 最少颜色、灰度焦点 | 高管、极简、精致 |
 
-## Palette Specifications
+## 调色板规格
 
 ### professional
 
 ```
-Background: #FFFFFF (Pure White)
-Primary Text: #1E3A5F (Navy)
-Secondary Text: #4A5568 (Dark Gray)
-Accent 1: #C9A227 (Gold)
-Accent 2: #3D5A80 (Light Navy)
+背景：#FFFFFF（纯白）
+主文字：#1E3A5F（海军蓝）
+次要文字：#4A5568（深灰）
+强调1：#C9A227（金色）
+强调2：#3D5A80（浅海军蓝）
 ```
 
 ### warm
 
 ```
-Background: #FAF8F0 (Warm Off-White)
-Primary Text: #2C3E50 (Deep Charcoal)
-Secondary Text: #4A4A4A (Deep Brown)
-Accent 1: #F4A261 (Soft Orange)
-Accent 2: #E9C46A (Mustard Yellow)
-Accent 3: #87A96B (Sage Green)
+背景：#FAF8F0（暖米白）
+主文字：#2C3E50（深炭色）
+次要文字：#4A4A4A（深棕）
+强调1：#F4A261（柔橙）
+强调2：#E9C46A（芥末黄）
+强调3：#87A96B（鼠尾草绿）
 ```
 
 ### cool
 
 ```
-Background: #FAF8F5 (Blueprint Off-White)
-Primary Text: #334155 (Deep Slate)
-Secondary Text: #64748B (Slate Gray)
-Accent 1: #2563EB (Engineering Blue)
-Accent 2: #1E3A5F (Navy Blue)
-Accent 3: #BFDBFE (Light Blue)
+背景：#FAF8F5（蓝图米白）
+主文字：#334155（深板岩色）
+次要文字：#64748B（板岩灰）
+强调1：#2563EB（工程蓝）
+强调2：#1E3A5F（海军蓝）
+强调3：#BFDBFE（浅蓝）
 ```
 
 ### vibrant
 
 ```
-Background: #FFFFFF or #1A1A2E (Light or Dark)
-Primary Text: #1A1A2E or #FFFFFF
-Accent 1: #E94560 (Coral Red)
-Accent 2: #0F3460 (Deep Blue)
-Accent 3: #16C79A (Teal Green)
-Accent 4: #F9B208 (Golden Yellow)
+背景：#FFFFFF 或 #1A1A2E（浅色或深色）
+主文字：#1A1A2E 或 #FFFFFF
+强调1：#E94560（珊瑚红）
+强调2：#0F3460（深蓝）
+强调3：#16C79A（青绿）
+强调4：#F9B208（金黄）
 ```
 
 ### dark
 
 ```
-Background: #0D1117 (Deep Black)
-Primary Text: #E6EDF3 (Soft White)
-Secondary Text: #8B949E (Muted Gray)
-Accent 1: #58A6FF (Bright Blue)
-Accent 2: #7EE787 (Bright Green)
-Accent 3: #FF7B72 (Coral)
+背景：#0D1117（深黑）
+主文字：#E6EDF3（柔白）
+次要文字：#8B949E（柔和灰）
+强调1：#58A6FF（亮蓝）
+强调2：#7EE787（亮绿）
+强调3：#FF7B72（珊瑚）
 ```
 
 ### neutral
 
 ```
-Background: #FFFFFF (Pure White)
-Primary Text: #18181B (Near Black)
-Secondary Text: #71717A (Medium Gray)
-Accent 1: #18181B (Black)
-Accent 2: #A1A1AA (Light Gray)
+背景：#FFFFFF（纯白）
+主文字：#18181B（近黑）
+次要文字：#71717A（中灰）
+强调1：#18181B（黑）
+强调2：#A1A1AA（浅灰）
 ```
 
-## Rendering Guidelines
+## 渲染指南
 
 ### professional
 
-- Restrained use of accent colors
-- Gold for emphasis only
-- Clean, institutional feel
-- Balanced contrast
+- 克制地使用强调色
+- 金色仅用于强调
+- 干净、机构的观感
+- 平衡的对比度
 
 ### warm
 
-- Generous use of warm tones
-- Natural, approachable colors
-- Soft transitions between colors
-- Welcoming atmosphere
+- 慷慨使用暖色调
+- 自然、平易近人的色彩
+- 颜色之间柔和过渡
+- 温馨的氛围
 
 ### cool
 
-- Blue-dominant palette
-- Technical precision in color use
-- High contrast for clarity
-- Analytical, trustworthy feel
+- 蓝色为主的调色板
+- 色彩使用的技术精确性
+- 高对比度以提高清晰度
+- 分析性、可信赖的观感
 
 ### vibrant
 
-- Bold color combinations
-- High saturation throughout
-- Dynamic color contrasts
-- Energetic visual presence
+- 大胆的色彩组合
+- 整个高饱和度
+- 动态色彩对比
+- 充满活力的视觉存在
 
 ### dark
 
-- Deep backgrounds dominate
-- Accent colors pop against dark
-- Glowing/luminous effects
-- Cinematic atmosphere
+- 深色背景主导
+- 强调色在深色上弹出
+- 发光/发光效果
+- 电影般的大气
 
 ### neutral
 
-- Minimal color usage
-- Typography carries weight
-- Grayscale hierarchy
-- Maximum sophistication
+- 最少颜色使用
+- 排版承载重量
+- 灰度层次
+- 最大精致感
 
-## Combination Notes
+## 组合说明
 
-| Mood | Works Best With | Avoid With |
+| 氛围 | 最适合与 | 避免与 |
 |------|-----------------|------------|
-| professional | clean texture, geometric typography | organic texture, handwritten |
-| warm | organic texture, humanist typography | pixel texture, minimal density |
-| cool | grid texture, technical typography | paper texture, handwritten |
-| vibrant | pixel/organic texture, editorial typography | neutral mood overlaps |
-| dark | clean/pixel texture, technical typography | paper texture |
-| neutral | clean texture, geometric typography | organic texture, vibrant elements |
+| professional | clean 纹理、geometric 排版 | organic 纹理、handwritten |
+| warm | organic 纹理、humanist 排版 | pixel 纹理、minimal 密度 |
+| cool | grid 纹理、technical 排版 | paper 纹理、handwritten |
+| vibrant | pixel/organic 纹理、editorial 排版 | neutral 氛围重叠 |
+| dark | clean/pixel 纹理、technical 排版 | paper 纹理 |
+| neutral | clean 纹理、geometric 排版 | organic 纹理、vibrant 元素 |

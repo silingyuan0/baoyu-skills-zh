@@ -1,58 +1,58 @@
 # notion
 
-Minimalist hand-drawn line art style for knowledge content (Default)
+知识内容的极简手绘线条艺术风格（默认）
 
-## Design Aesthetic
+## 设计美学
 
-Clean, minimalist hand-drawn line art with intellectual feel. Simple doodle-style illustrations with intentional wobble. Maximum whitespace with single concept focus. Notion-like aesthetic that feels thoughtful and organized.
+简洁、极简的手绘线条艺术，带有知性感觉。简单的涂鸦风格插图，带有刻意的手绘抖动效果。最大程度留白，单一概念聚焦。类似 Notion 的美学风格，让人感觉深思熟虑且井井有条。
 
-## Background
+## 背景
 
-- Color: Pure White (#FFFFFF) or Off-White (#FAFAFA)
-- Texture: None - clean solid backgrounds
+- 颜色：纯白（#FFFFFF）或米白（#FAFAFA）
+- 纹理：无 - 干净的纯色背景
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
+| 角色 | 颜色 | Hex | 用途 |
 |------|-------|-----|-------|
-| Background | White | #FFFFFF | Primary background |
-| Alt Background | Off-White | #FAFAFA | Subtle variation |
-| Primary | Black | #1A1A1A | Main outlines |
-| Secondary | Dark Gray | #4A4A4A | Supporting lines |
-| Accent 1 | Pastel Blue | #A8D4F0 | Soft highlight |
-| Accent 2 | Pastel Yellow | #F9E79F | Warm highlight |
-| Accent 3 | Pastel Pink | #FADBD8 | Gentle accent |
-| Text | Near Black | #1A1A1A | Text elements |
+| 背景 | 白色 | #FFFFFF | 主背景 |
+| 替代背景 | 米白 | #FAFAFA | 微妙变化 |
+| 主色 | 黑色 | #1A1A1A | 主轮廓线 |
+| 次要色 | 深灰色 | #4A4A4A | 辅助线条 |
+| 强调色 1 | 粉蓝色 | #A8D4F0 | 柔和高光 |
+| 强调色 2 | 粉黄色 | #F9E79F | 温暖高光 |
+| 强调色 3 | 粉红色 | #FADBD8 | 柔和强调 |
+| 文本 | 近黑色 | #1A1A1A | 文本元素 |
 
-## Visual Elements
+## 视觉元素
 
-- Simple line doodles
-- Hand-drawn wobble effect
-- Basic geometric shapes
-- Stick figures for people
-- Conceptual icons
-- Clean hand-drawn lettering
-- Minimal decorative elements
-- Single-weight line work
+- 简单的线条涂鸦
+- 手绘抖动效果
+- 基础几何形状
+- 火柴人
+- 概念图标
+- 简洁的手绘文字
+- 极少装饰元素
+- 统一线条粗细
 
-## Style Rules
+## 风格规则
 
-### Do
+### 宜
 
-- Use maximum whitespace
-- Keep illustrations simple
-- Add slight hand-drawn wobble
-- Focus on single concepts
-- Use pastel accents sparingly
+- 使用最大程度留白
+- 保持插图简洁
+- 添加轻微手绘抖动
+- 聚焦单一概念
+- 谨慎使用粉彩强调色
 
-### Don't
+### 忌
 
-- Create complex illustrations
-- Use many colors at once
-- Add detailed textures
-- Make precise geometric shapes
-- Overcrowd the composition
+- 创建复杂插图
+- 同时使用多种颜色
+- 添加详细纹理
+- 制作精确几何形状
+- 使构图过于拥挤
 
-## Best For
+## 适用于
 
-Knowledge sharing, concept explanations, SaaS content, productivity articles, educational posts, how-to guides, professional blogs
+知识分享、概念解释、SaaS 内容、产品力文章、教育帖子、教程指南、专业博客

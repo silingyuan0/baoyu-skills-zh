@@ -1,60 +1,60 @@
-# morandi-journal
+# morandi-journal（莫兰迪手账）
 
-Hand-drawn doodle illustration with warm Morandi color tones and cozy bullet journal aesthetic.
+温暖莫兰迪色调的手绘涂鸦插画，温馨的子弹笔记（bullet journal，一种手账记录方法）美学。
 
-## Color Palette
+## 调色板
 
-- Background: Warm cream/beige with subtle paper texture (#F5F0E6)
-- Primary: Muted teal/sage green (#7BA3A8) for headers and frames
-- Secondary: Warm terracotta/orange (#D4956A) for highlights and numbers
-- Line art: Dark charcoal brown (#4A4540)
-- Soft highlights: Pale yellow (#F5E6C8)
+- 背景：温暖奶油色/米色，带有微妙的纸张纹理（#F5F0E6）
+- 主色：柔和青色/灰绿色（#7BA3A8）用于标题和框架
+- 辅助色：温暖赤陶色/橙色（#D4956A）用于高亮和数字
+- 线条画：深炭棕色（#4A4540）
+- 柔和高光：淡黄色（#F5E6C8）
 
-## Visual Elements
+## 视觉元素
 
-- Hand-drawn doodle illustrations with organic, slightly imperfect ink lines
-- Washi tape strip decorations (diagonal stripes pattern, beige and brown)
-- Rounded card containers for brand/option items
-- Hand-drawn rulers, scales, and progress bars with emoji quality indicators
-- Smiley/frowny faces as quality markers (😊✓ 😐 ☹️✗)
-- Dotted line frames around sections
-- Connecting arrows and dotted lines between modules
-- Corner decorations: tiny houses, stars, sparkles, clouds
-- Wavy line dividers between sections
-- Callout bubbles for tips
-- Magnifying glass icons for identification tips
-- Thumbs up/down icons (hand-drawn style)
+- 手绘涂鸦插画，线条有机且略带不完美
+- 和纸胶带（washi tape，日本装饰用纸胶带）条带装饰（斜条纹图案，米色和棕色）
+- 圆角卡片容器用于品牌/选项项目
+- 手绘标尺、量表和进度条，配以表情符号质量指示器
+- 笑脸/哭脸作为质量标记（😊✓ 😐 ☹️✗）
+- 段落周围虚线边框
+- 模块之间的连接箭头和虚线
+- 角落装饰：小房子、星星、闪光、云朵
+- 段落之间的波浪线分隔符
+- 提示气泡用于小贴士
+- 放大镜图标用于鉴别提示
+- 竖起大拇指/朝下大拇指图标（手绘风格）
 
-## Variants
+## 变体
 
-| Variant | Focus | Visual Emphasis |
-|---------|-------|-----------------|
-| **Cozy journal** | Maximum warmth | More washi tape, stickers, decorative doodles |
-| **Clean sketch** | Readability | Cleaner lines, less decoration, more structured |
+| 变体 | 重点 | 视觉特征 |
+|------|------|----------|
+| **温馨手账** | 最大温暖感 | 更多的和纸胶带、贴纸、装饰涂鸦 |
+| **清爽素描** | 可读性 | 更清爽的线条，更少装饰，更有条理 |
 
-## Typography
+## 排版
 
-- Main title: Bold hand-lettered calligraphy style with decorative flourishes
-- Module headers: Clean handwritten text in white on dark teal rounded badge (#6B9080)
-- Body text: Neat handwritten print style, easy to read
-- Numbers: Highlighted in terracotta (#D4956A), slightly larger than body
+- 主标题：粗体手写书法风格，配有装饰性花饰
+- 模块标题：简洁手写文字，白字配深青色圆角徽章（#6B9080）
+- 正文：整洁的手写印刷体，易于阅读
+- 数字：赤陶色（#D4956A）高亮，略大于正文
 
-## Style Enforcement
+## 风格约束
 
-- All imagery must maintain hand-drawn/doodle aesthetic—no digital precision
-- Organic, slightly imperfect shapes throughout
-- Sketch-like quality with visible line weight variations
-- Warm and cozy journal feel, not clinical or corporate
+- 所有图像必须保持手绘/涂鸦美学 — 不得使用数字精度
+- 全面使用有机、略带不完美的形状
+- 素描般的质感，可见线条粗细变化
+- 温馨的手账氛围，而非冷峻或商务化
 
-## Avoid
+## 避免事项
 
-- Flat vector icons or emoji
-- Clean geometric shapes
-- Stock illustration style
-- Strict grid layout
-- Pure white background
-- Digital/corporate look
+- 扁平矢量图标或 emoji
+- 干净的几何形状
+- 图库插画风格
+- 严格的网格布局
+- 纯白背景
+- 数字化/商务化外观
 
-## Best For
+## 适用场景
 
-Product selection guides, lifestyle content, educational overviews, consumer-facing comparison content, Xiaohongshu-style posts
+产品选购指南、生活方式内容、教育概览、面向消费者的对比内容、小红书风格笔记

@@ -1,26 +1,26 @@
-# cool
+# 冷色
 
-Technical, professional, precise
+技术化、专业、精确
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex |
-|------|-------|-----|
-| Primary 1 | Engineering Blue | #2563EB |
-| Primary 2 | Navy Blue | #1E3A5F |
-| Primary 3 | Cyan | #06B6D4 |
-| Background | Light Gray | #F8F9FA |
-| Background Alt | Blueprint Off-White | #FAF8F5 |
-| Accent 1 | Amber | #F59E0B |
-| Accent 2 | Light Blue | #BFDBFE |
+| 角色 | 颜色 | 十六进制 |
+|------|------|----------|
+| 主色 1 | Engineering Blue（工程蓝） | #2563EB |
+| 主色 2 | Navy Blue（海军蓝） | #1E3A5F |
+| 主色 3 | Cyan（青色） | #06B6D4 |
+| 背景 | Light Gray（浅灰） | #F8F9FA |
+| 备选背景 | Blueprint Off-White（蓝图米白） | #FAF8F5 |
+| 强调色 1 | Amber（琥珀色） | #F59E0B |
+| 强调色 2 | Light Blue（浅蓝） | #BFDBFE |
 
-## Decorative Hints
+## 装饰提示
 
-- Grid lines and alignment guides
-- Dimension indicators and measurements
-- Technical schematics and diagrams
-- Geometric precision elements
+- 网格线和对齐参考线
+- 尺寸标注和测量标记
+- 技术图纸和示意图
+- 几何精度元素
 
-## Best For
+## 适用场景
 
-Architecture, system design, API, technical documentation, engineering, data analysis
+建筑、系统设计、API、技术文档、工程、数据分析

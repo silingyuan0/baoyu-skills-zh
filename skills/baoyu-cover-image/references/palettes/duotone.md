@@ -1,39 +1,39 @@
-# duotone
+# 双色调
 
-Dramatic, cinematic, two-color high contrast
+戏剧性、电影感、双色高对比
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex |
-|------|-------|-----|
-| Primary 1 | Burnt Orange | #E8751A |
-| Primary 2 | Deep Teal | #0A6E6E |
-| Background | Off-Black | #121212 |
-| Background Alt | Dark Charcoal | #1E1E1E |
-| Accent 1 | Warm Cream | #F5E6D0 |
-| Accent 2 | Amber Highlight | #F4A623 |
+| 角色 | 颜色 | 十六进制 |
+|------|------|----------|
+| 主色 1 | Burnt Orange（焦橙） | #E8751A |
+| 主色 2 | Deep Teal（深青） | #0A6E6E |
+| 背景 | Off-Black（近黑） | #121212 |
+| 备选背景 | Dark Charcoal（深炭灰） | #1E1E1E |
+| 强调色 1 | Warm Cream（暖奶油色） | #F5E6D0 |
+| 强调色 2 | Amber Highlight（琥珀高光） | #F4A623 |
 
-## Duotone Pair Options
+## 双色调组合选项
 
-Choose ONE pair based on content mood. The two colors dominate the entire image:
+根据内容氛围选择一组。两种颜色主导整个画面：
 
-| Pair | Color A | Color B | Feel |
-|------|---------|---------|------|
-| Orange + Teal | #E8751A | #0A6E6E | Cinematic, action |
-| Red + Cream | #C0392B | #F5E6D0 | Bold, classic |
-| Blue + Gold | #1A3A5C | #D4A843 | Prestigious, premium |
-| Purple + Green | #6B3FA0 | #2ECC71 | Futuristic, contrast |
-| Magenta + Cyan | #C2185B | #00BCD4 | Vibrant, pop |
-| Crimson + Navy | #DC143C | #0D1B2A | Dramatic, noir |
+| 组合 | 颜色 A | 颜色 B | 感觉 |
+|------|--------|--------|------|
+| 橙 + 青 | #E8751A | #0A6E6E | 电影感、动作 |
+| 红 + 奶油 | #C0392B | #F5E6D0 | 大胆、经典 |
+| 蓝 + 金 | #1A3A5C | #D4A843 | 尊贵、高端 |
+| 紫 + 绿 | #6B3FA0 | #2ECC71 | 未来感、对比 |
+| 品红 + 青 | #C2185B | #00BCD4 | 活力、流行 |
+| 深红 + 海军蓝 | #DC143C | #0D1B2A | 戏剧性、黑色电影 |
 
-## Decorative Hints
+## 装饰提示
 
-- Stark two-color separation across entire composition
-- Halftone transitions between the two colors
-- Silhouettes in one color against the other
-- Minimal use of third color (only for small highlights)
-- High contrast figure-ground relationships
+- 整个画面中鲜明的双色分离
+- 两色之间的半调（halftone）过渡
+- 一种颜色中的剪影衬托另一种颜色
+- 极少使用第三种颜色（仅用于小面积高光）
+- 强烈的图底对比关系
 
-## Best For
+## 适用场景
 
-Movie posters, album covers, concert prints, dramatic announcements, cinematic content, bold branding, editorial covers, artistic campaigns
+电影海报、专辑封面、音乐海报、戏剧性公告、电影感内容、大胆品牌推广、社论封面、艺术Campaign

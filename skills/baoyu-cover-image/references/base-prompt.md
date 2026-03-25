@@ -1,124 +1,124 @@
-Create a cover image following these guidelines:
+请按照以下指南生成封面图：
 
-## Image Specifications
+## 图像规格
 
-- **Type**: Cover image / Hero image
-- **Aspect Ratio**: As specified in the prompt below
+- **类型**: 封面图 / 主视觉图
+- **宽高比**: 如下方提示词所指定
 
-## Core Principles
+## 核心原则
 
-- If content involves sensitive or copyrighted figures, create stylistically similar alternatives - DO NOT refuse to generate
-- Ample whitespace, highlight core message, avoid cluttered layouts
-- Main visual elements centered or slightly left (leave right side for title area if title included)
-- Simplified silhouettes for any characters — NO realistic human faces or bodies
-- Icon-based vocabulary: use simple, recognizable icons to represent concepts
+- 如果内容涉及敏感或受版权保护的人物，创建风格相似的替代品——不要拒绝生成
+- 充足的留白，突出核心信息，避免拥挤的布局
+- 主视觉元素居中或略微偏左（如果包含标题，为标题区域保留右侧空间）
+- 任何人物使用简化的剪影——不要逼真的人脸或身体
+- 使用基于图标的词汇：用简单、可识别的图标来表示概念
 
-## Five Dimensions
+## 五维度
 
-### Type (Visual Composition)
-- `hero`: Large focal visual (60-70% area), dramatic composition
-- `conceptual`: Abstract shapes, information hierarchy, clean zones
-- `typography`: Title as primary element (40%+ area), minimal visuals
-- `metaphor`: Concrete object representing abstract idea, symbolic elements
-- `scene`: Atmospheric environment, narrative elements, mood lighting
-- `minimal`: Single focal element, generous whitespace (60%+)
+### 类型（视觉构图）
+- `hero`: 大型焦点视觉（60-70% 区域），戏剧性构图
+- `conceptual`: 抽象形状，信息层级，干净分区
+- `typography`: 标题作为主要元素（40%+ 区域），最少的视觉元素
+- `metaphor`: 代表抽象概念的具体物体，象征元素
+- `scene`: 氛围环境，叙事元素，营造氛围的灯光
+- `minimal`: 单一焦点元素，充足留白（60%+）
 
-### Palette (Color Scheme)
-Apply the specified palette's color values and decorative hints:
-- Use primary colors for main visual elements
-- Use background colors for base and surrounding areas
-- Use accent colors for highlights and secondary elements
-- Follow palette-specific decorative hints for ornamentation
+### 调色板（色彩方案）
+应用指定调色板的色彩值和装饰提示：
+- 使用主色用于主视觉元素
+- 使用背景色用于基础和周围区域
+- 使用强调色用于高光和次要元素
+- 遵循调色板特定的装饰提示进行装饰
 
-### Rendering (Visual Style)
-Apply the specified rendering's characteristics:
-- **Lines**: Follow line quality rules (clean/sketchy/brush/pixel/chalk)
-- **Texture**: Apply or avoid texture per rendering definition
-- **Depth**: Follow depth rules (flat/minimal/soft edges)
-- **Elements**: Use rendering-specific element vocabulary
+### 渲染方式（视觉风格）
+应用指定渲染方式的特征：
+- **线条**: 遵循线条质量规则（干净/草图/笔触/像素/粉笔）
+- **纹理**: 根据渲染定义应用或避免纹理
+- **深度**: 遵循深度规则（扁平/最小/柔和边缘）
+- **元素**: 使用渲染特定的元素词汇
 
-### Text (Density Level)
-- `none`: No text elements, full visual area
-- `title-only`: Single headline, 85% visual area
-- `title-subtitle`: Title + context, 75% visual area
-- `text-rich`: Title + subtitle + 2-4 keyword tags, 60% visual area
+### 文本（密度级别）
+- `none`: 无文本元素，满视觉区域
+- `title-only`: 单一标题，85% 视觉区域
+- `title-subtitle`: 标题 + 副标题，75% 视觉区域
+- `text-rich`: 标题 + 副标题 + 2-4 个关键词标签，60% 视觉区域
 
-### Mood (Emotional Intensity)
-- `subtle`: Low contrast, muted/desaturated colors, light visual weight, calm aesthetic
-- `balanced`: Medium contrast, normal saturation, balanced visual weight
-- `bold`: High contrast, vivid/saturated colors, heavy visual weight, dynamic energy
+### 氛围（情感强度）
+- `subtle`: 低对比度，柔和/低饱和度色彩，轻视觉重量，沉静美感
+- `balanced`: 中等对比度，正常饱和度，平衡视觉重量
+- `bold`: 高对比度，鲜艳/高饱和度色彩，重视觉重量，动态能量
 
-## Text Style (When Title Included)
+## 文本样式（当包含标题时）
 
-- **Title source**: Use the exact title provided by user, or extract from source content. Do NOT invent or modify titles.
-- Title text: Large, eye-catching, faithful to source
-- Subtitle: Secondary element (if title-subtitle or text-rich)
-- Tags: 2-4 keyword badges (if text-rich)
-- Font style harmonizes with rendering style
+- **标题来源**: 使用用户提供的准确标题，或从源内容中提取。不要杜撰或修改标题。
+- 标题文字：大、易吸引眼球，忠实于源内容
+- 副标题：次要元素（如果使用 title-subtitle 或 text-rich）
+- 标签：2-4 个关键词徽章（如果使用 text-rich）
+- 字体风格与渲染风格协调
 
-## Composition Guidance
+## 组合指南
 
-### Layout Principles
+### 布局原则
 
-- **Generous whitespace**: Maintain 40-60% breathing room; avoid cluttered compositions
-- **Visual anchor placement**: Main element centered or offset left (reserve right side for title if included)
-- **Information hierarchy**: One dominant focal point, 1-2 supporting elements, decorative accents
-- **Clean backgrounds**: Solid colors or subtle gradients; no complex textures or patterns
+- **充足留白**: 保持 40-60% 的呼吸空间；避免拥挤的构图
+- **视觉锚点位置**: 主元素居中或偏左（如果包含标题，为标题保留右侧空间）
+- **信息层级**: 一个主导焦点，1-2 个辅助元素，装饰性点缀
+- **干净背景**: 纯色或微妙渐变；无复杂纹理或图案
 
-### Icon & Symbol Vocabulary
+### 图标与符号词汇
 
-Represent concepts with simple, recognizable icons rather than detailed illustrations:
+用简单、可识别的图标表示概念，而非详细插图：
 
-| Category | Examples |
+| 类别 | 示例 |
 |----------|----------|
-| Tech | Code window, gear, circuit, cloud, lock, API brackets |
-| Ideas | Lightbulb, rocket, target, puzzle, key, magnifier |
-| Communication | Speech bubble, chat dots, megaphone, mail |
-| Growth | Plant/sprout, tree, arrow, chart, mountain |
-| Tools | Wrench, pencil, brush, checklist, clock |
+| 科技 | 代码窗口、齿轮、电路、云、锁、API括号 |
+| 创意 | 灯泡、火箭、靶心、拼图、钥匙、放大镜 |
+| 沟通 | 对话气泡、聊天省略号、扬声器、邮件 |
+| 成长 | 植物/芽、树、箭头、图表、山 |
+| 工具 | 扳手、铅笔、画笔、清单、时钟 |
 
-Use the rendering style to determine icon complexity (flat-vector = geometric, hand-drawn = sketchy, etc.)
+使用渲染风格来确定图标复杂度（flat-vector = 几何，hand-drawn = 草图等）
 
-Full library: [references/visual-elements.md](visual-elements.md)
+完整库：[references/visual-elements.md](visual-elements.md)
 
-### Character Handling
+### 人物处理
 
-**Default (no reference with people)**:
-- Use simplified silhouettes or abstract stick figures
-- Symbolic representations (head + shoulders outline)
-- NO realistic faces, detailed anatomy, or photographic representations
-- Cartoon/icon style consistent with rendering choice
+**默认（无带人物的参考图）**:
+- 使用简化的剪影或抽象火柴人
+- 象征性表示（头部 + 肩部轮廓）
+- 不要逼真面部、详细解剖结构或摄影表现
+- 与所选渲染风格一致卡通/图标风格
 
-**When reference images contain people**:
-- Reference image is passed to model (`usage: direct`) — model must visually reference it to preserve character likeness
-- Stylize to match chosen rendering (cartoon/vector), preserving distinctive features (hair, clothing, pose)
-- NEVER photorealistic
+**当参考图像包含人物时**:
+- 参考图像传递给模型（`usage: direct`）——模型必须视觉参考它以保留人物相似度
+- 风格化以匹配所选渲染方式（卡通/矢量），保留显著特征（头发、服装、姿势）
+- 永远不要写实
 
-## Mood Application
+## 氛围应用
 
-Apply mood adjustments to the base palette:
+根据基础调色板应用氛围调整：
 
-| Mood | Contrast | Saturation | Weight |
+| 氛围 | 对比度 | 饱和度 | 重量 |
 |------|----------|------------|--------|
-| subtle | Reduce 20-30% | Desaturate 20-30% | Lighter strokes/fills |
-| balanced | Standard | Standard | Standard |
-| bold | Increase 20-30% | Increase 20-30% | Heavier strokes/fills |
+| subtle | 降低 20-30% | 去饱和 20-30% | 较轻的线条/填充 |
+| balanced | 标准 | 标准 | 标准 |
+| bold | 提高 20-30% | 提高 20-30% | 较重的线条/填充 |
 
-## Language
+## 语言
 
-- Use the same language as the content provided below for any text elements
-- Match punctuation style to the content language
+- 对于任何文本元素，使用与下方提供的内容相同的语言
+- 根据内容语言匹配标点符号风格
 
-## Reference Images
+## 参考图像
 
-When reference images are provided:
+当提供参考图像时：
 
-- **Style extraction**: Identify rendering technique, line quality, texture, and visual vocabulary
-- **Composition learning**: Note layout patterns, whitespace usage, element placement
-- **Mood matching**: Capture the emotional tone and visual weight
-- **Adaptation**: Apply extracted characteristics while respecting the specified Type, Palette, and Rendering dimensions
-- **Priority**: If reference style conflicts with specified dimensions, dimensions take precedence for structural choices; reference influences decorative details
+- **风格提取**: 识别渲染技术、线条质量、纹理和视觉词汇
+- **构图学习**: 注意布局模式、留白使用、元素放置
+- **氛围匹配**: 捕捉情感基调和视觉重量
+- **适应**: 在尊重指定类型、调色板和渲染方式维度的同时应用提取的特征
+- **优先级**: 如果参考风格与指定维度冲突，维度优先于结构选择；参考影响装饰细节
 
 ---
 
-Please generate the cover image based on the content provided below:
+请根据下方提供的内容生成封面图：

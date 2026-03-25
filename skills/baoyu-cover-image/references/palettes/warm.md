@@ -1,26 +1,26 @@
-# warm
+# 暖色
 
-Friendly, approachable, human-centered
+友好、亲切、人文关怀
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex |
-|------|-------|-----|
-| Primary 1 | Warm Orange | #ED8936 |
-| Primary 2 | Golden Yellow | #F6AD55 |
-| Primary 3 | Terracotta | #C05621 |
-| Background | Cream | #FFFAF0 |
-| Background Alt | Soft Peach | #FED7AA |
-| Accent 1 | Deep Brown | #744210 |
-| Accent 2 | Soft Red | #E53E3E |
+| 角色 | 颜色 | 十六进制 |
+|------|------|----------|
+| 主色 1 | Warm Orange（暖橙） | #ED8936 |
+| 主色 2 | Golden Yellow（金黄） | #F6AD55 |
+| 主色 3 | Terracotta（赤陶色） | #C05621 |
+| 背景 | Cream（奶油色） | #FFFAF0 |
+| 备选背景 | Soft Peach（柔和桃色） | #FED7AA |
+| 强调色 1 | Deep Brown（深棕） | #744210 |
+| 强调色 2 | Soft Red（柔和红） | #E53E3E |
 
-## Decorative Hints
+## 装饰提示
 
-- Sun rays, warm lighting effects
-- Rounded shapes, organic curves
-- Hearts, smiling faces, friendly icons
-- Warm gradient overlays
+- 阳光光线、暖光效果
+- 圆润形状、有机曲线
+- 爱心、笑脸、友好图标
+- 暖色渐变叠加
 
-## Best For
+## 适用场景
 
-Personal growth, lifestyle, education, human stories, emotion, community
+个人成长、生活方式、教育、人文故事、情感、社区

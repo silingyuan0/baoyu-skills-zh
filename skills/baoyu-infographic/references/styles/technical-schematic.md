@@ -1,36 +1,36 @@
 # technical-schematic
 
-Technical diagrams with engineering precision and clean geometry.
+具有工程精度和简洁几何的技术图表。
 
-## Color Palette
+## 配色方案
 
-- Primary: Blues (#2563EB), teals, grays, white lines
-- Background: Deep blue (#1E3A5F), white, or light gray with grid
-- Accents: Amber highlights (#F59E0B), cyan callouts
+- 主色：蓝色系（#2563EB）、青灰色、灰色、白色线条
+- 背景：深蓝（#1E3A5F）、白色或浅灰带网格
+- 点缀：琥珀高亮（#F59E0B）、青色标注
 
-## Variants
+## 变体
 
-| Variant | Focus | Visual Emphasis |
+| 变体 | 焦点 | 视觉重点 |
 |---------|-------|-----------------|
-| **Blueprint** | Engineering schematics | White on blue, measurements, grid |
-| **Isometric** | 3D spatial representation | 30° angle blocks, clean fills |
+| **蓝图** | 工程原理图 | 白字蓝底、尺寸、网格 |
+| **等轴测** | 3D 空间表现 | 30° 角块、简洁填充 |
 
-## Visual Elements
+## 视觉元素
 
-- Geometric precision throughout
-- Grid pattern or isometric angle
-- Dimension lines and measurements
-- Technical symbols and annotations
-- Clean vector shapes
-- Consistent stroke weights
+- 全程几何精度
+- 网格图案或等轴测角度
+- 尺寸线和测量值
+- 技术符号和标注
+- 简洁向量形状
+- 一致的线宽
 
-## Typography
+## 字体与排版
 
-- Technical stencil or clean sans-serif
-- All-caps labels
-- Measurement annotations
-- Floating labels for isometric
+- 技术镂空模板或简洁无衬线
+- 全大写标签
+- 测量注释
+- 等轴测视图的浮动标签
 
-## Best For
+## 最佳应用场景
 
-Technical architecture, system diagrams, engineering specs, product breakdowns, data visualization
+技术架构、系统图表、工程规格、产品分解、数据可视化

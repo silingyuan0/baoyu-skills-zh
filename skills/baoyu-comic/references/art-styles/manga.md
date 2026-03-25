@@ -2,92 +2,92 @@
 
 日漫画风 - Anime/manga aesthetics with expressive characters
 
-## Overview
+## 概述
 
-Japanese manga art style characterized by large expressive eyes, dynamic poses, and visual emotion indicators. Versatile style that works across genres from educational to romantic to action.
+日本漫画艺术风格，以表情丰富的大眼睛、动态姿势和视觉情感指示器为特征。多功能风格，适用于从教育到浪漫到动作的各种类型。
 
-## Line Work
+## 线条工作
 
-- Clean, smooth lines (1.5-2px)
-- Expressive weight variation for emphasis
-- Smooth curves, dynamic strokes
-- Speed lines and motion effects available
-- Screen tone effects for atmosphere
+- 干净、流畅的线条（1.5-2px）
+- 强调时的线条粗细变化
+- 流畅曲线、动态笔触
+- 可用的速度线和运动效果
+- 氛围网纸效果
 
-## Character Design
+## 人物设计
 
-- Anime/manga proportions: larger eyes, expressive faces
-- 5-7 head height proportions (varies by sub-style)
-- Clear emotional indicators (！, ？, sweat drops, sparkles)
-- Dynamic poses and gestures
-- Detailed hair with individual strands
-- Fashionable clothing with natural folds
+- 动漫/漫画比例：大眼睛、表情丰富的脸
+- 5-7 头身比例（因亚风格而异）
+- 清晰的情感指示器（！, ？, 汗珠, 闪光）
+- 动态姿势和手势
+- 头发丝丝分明
+- 时尚服装，衣纹自然
 
-## Eye Styles
+## 眼睛样式
 
-| Type | Description |
+| 类型 | 描述 |
 |------|-------------|
-| Standard | Medium-large, 2-3 highlights |
-| Educational | Friendly, approachable eyes |
-| Dramatic | Intense, detailed irises |
-| Cute | Very large, sparkly eyes |
+| 标准 | 中大，2-3 个高光 |
+| 教育 | 友好、平易近人的眼睛 |
+| 戏剧 | 强烈、详细的虹膜 |
+| 可爱 | 非常大、闪闪发光的眼睛 |
 
-## Background Treatment
+## 背景处理
 
-- Simplified during dialogue/explanation
-- Detailed for establishing shots
-- Screen tone gradients for mood
-- Abstract backgrounds for emotional moments
-- Technical diagrams styled as displays
+- 对话/解释时简化
+- 建立-shot 时详细
+- 氛围网纸渐变
+- 情感时刻的抽象背景
+- 作为显示器风格的技术图表
 
-## Color Approach
+## 色彩方法
 
-- Clean, bright anime colors
-- Soft gradients on skin
-- Vibrant palette options
-- Light and shadow with soft transitions
-- Color coding for character identification
+- 干净、明亮的动漫色彩
+- 皮肤柔和渐变
+- 充满活力的调色板选项
+- 柔和过渡的光影
+- 角色识别的颜色编码
 
-## Default Color Palette
+## 默认调色板
 
-| Role | Color | Hex |
+| 角色 | 颜色 | Hex |
 |------|-------|-----|
-| Primary Blue | Bright blue | #4299E1 |
-| Primary Orange | Warm orange | #ED8936 |
-| Primary Green | Soft green | #68D391 |
-| Skin | Anime warm | #FEEBC8 |
-| Background | Clean white | #FFFFFF |
-| Highlight | Golden | #FFD700 |
+| 主蓝色 | 明亮蓝 | #4299E1 |
+| 主橙色 | 暖橙 | #ED8936 |
+| 主绿色 | 柔和绿 | #68D391 |
+| 肤色 | 动漫暖色 | #FEEBC8 |
+| 背景 | 干净白 | #FFFFFF |
+| 高光 | 金色 | #FFD700 |
 
-## Visual Elements
+## 视觉元素
 
-- Speech bubbles: rounded (normal), spiky (excitement)
-- Sound effects integrated visually
-- Emotion symbols (sweat drops, anger marks, hearts)
-- Speed lines and motion blur
-- Sparkle and glow effects
+- 对话气泡：圆润（正常）、尖刺（兴奋）
+- 视觉整合的音效
+- 情感符号（汗珠、怒气标记、心形）
+- 速度线和动态模糊
+- 闪光和发光效果
 
-## Quality Markers
+## 质量标记
 
-- ✓ Expressive character faces
-- ✓ Clean, consistent line work
-- ✓ Dynamic poses and compositions
-- ✓ Appropriate use of manga conventions
-- ✓ Readable panel flow
-- ✓ Consistent character designs
+- ✓ 表情丰富的人物面部
+- ✓ 干净、一致的线条工作
+- ✓ 动态姿势和构图
+- ✓ 适当地使用漫画 conventions
+- ✓ 可阅读的面板流程
+- ✓ 一致的人物设计
 
-## Compatibility
+## 兼容性
 
-| Tone | Fit | Notes |
+| 基调 | 适合度 | 备注 |
 |------|-----|-------|
-| neutral | ✓✓ | Educational manga |
-| warm | ✓ | Slice of life |
-| dramatic | ✓ | Intense moments |
-| romantic | ✓✓ | Shoujo style |
-| energetic | ✓✓ | Shonen style |
-| vintage | ✗ | Style mismatch |
-| action | ✓✓ | Battle manga |
+| neutral | ✓✓ | 教育漫画 |
+| warm | ✓ | 生活片段 |
+| dramatic | ✓ | 紧张时刻 |
+| romantic | ✓✓ | 少女风格 |
+| energetic | ✓✓ | 少年风格 |
+| vintage | ✗ | 风格不匹配 |
+| action | ✓✓ | 战斗漫画 |
 
-## Best For
+## 适用于
 
-Educational tutorials, romance, action, coming-of-age, technical explanations, youth-oriented content
+教育教程、浪漫、动作、成长故事、技术解释、青年导向内容

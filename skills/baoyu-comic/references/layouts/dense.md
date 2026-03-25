@@ -1,23 +1,23 @@
 # dense
 
-Information-rich, educational focus
+信息密集，教育导向
 
-## Panel Structure
+## 分格结构
 
-- **Panels per page**: 6-9
-- **Structure**: Compact grid, smaller panels
-- **Gutters**: Tight spacing (4-6px)
+- **每页分格数**：6-9
+- **结构**：紧凑网格，较小分格
+- **分格间距**：紧密间距（4-6px）
 
-## Grid Configuration
+## 网格配置
 
-- 3 columns × 3 rows
-- Panel sizes: Compact, uniform
-- Reading flow: Rapid progression, information-rich
+- 3 列 x 3 行
+- 分格尺寸：紧凑，均匀
+- 阅读流：快速推进，信息密集
 
-## Best For
+## 适合场景
 
-Technical explanations, complex narratives, timelines
+技术说明、复杂叙事、时间线
 
-## Best Style Pairings
+## 最佳风格搭配
 
-ohmsha, vibrant
+ohmsha、vibrant

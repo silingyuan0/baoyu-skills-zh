@@ -1,29 +1,29 @@
-# ikea-manual
+# ikea-manual（宜家说明书）
 
-Minimal line art assembly instruction style
+极简线条图装配说明风格
 
-## Color Palette
+## 调色板
 
-- Primary: Black lines, minimal fills
-- Background: White or cream paper
-- Accents: Red for warnings, blue for highlights
+- 主色：黑色线条，极简填充
+- 背景：白色或奶油色纸张
+- 强调色：红色表示警告，蓝色表示高亮
 
-## Visual Elements
+## 视觉元素
 
-- Simple line drawings
-- Numbered step sequences
-- Arrow indicators
-- Exploded assembly views
-- Wordless communication
-- Stick figures for scale
+- 简约线条图
+- 编号步骤序列
+- 箭头指示符
+- 爆炸装配视图
+- 无文字传达
+- 火柴人作为比例参照
 
-## Typography
+## 排版
 
-- Minimal text
-- Step numbers prominent
-- Universal symbols
-- Simple sans-serif when needed
+- 极少文字
+- 步骤编号醒目
+- 通用符号
+- 必要时使用简洁无衬线体
 
-## Best For
+## 适用场景
 
-Step-by-step instructions, assembly guides, how-to content, universal communication
+分步说明、装配指南、操作教程、通用传达

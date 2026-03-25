@@ -1,44 +1,44 @@
-# screen-print
+# 丝网印刷
 
-Bold, limited-color poster art with print texture
+大胆、限色的印刷质感海报艺术
 
-## Core Characteristics
+## 核心特征
 
-Screen print / silkscreen aesthetic with flat color blocks, halftone textures, and deliberate print imperfections. Think Mondo limited-edition posters, vintage concert prints, and alternative movie poster art.
+丝网印刷（screen print / silkscreen）美学，以平面色块、半调纹理和刻意的印刷瑕疵为特征。类似于 Mondo 限量版海报、复古音乐海报和另类电影海报艺术。
 
-## Lines
+## 线条
 
-- Clean, sharp edges between color blocks
-- No outlines — shapes defined by color boundaries
-- Stencil-cut quality, bold silhouettes
-- Geometric shapes with precise registration
+- 色块间干净锐利的边缘
+- 无轮廓线——形状由颜色边界定义
+- 模板切割质感，大胆的剪影
+- 带有精确套准的几何形状
 
-## Texture
+## 纹理
 
-- Halftone dot patterns within color fills
-- Slight color layer misregistration (offset between print layers)
-- Paper grain texture beneath colors
-- Risograph / screen print imperfections (ink spread, dot gain)
+- 颜色填充内的半调网点图案
+- 颜色层间轻微的偏移（misregistration，即印刷层之间的错位）
+- 颜色下方的纸张纹理
+- Risograph / 丝网印刷瑕疵（墨迹扩散、网点增大）
 
-## Depth
+## 深度
 
-- Flat color planes layered front to back
-- Depth through silhouette overlap and color layering
-- No gradients — tonal variation via halftone density
-- Negative space as active compositional element
+- 平面色块从前到后分层
+- 通过剪影重叠和颜色分层创造深度
+- 无渐变——通过半调密度实现色调变化
+- 留白作为积极的构图元素
 
-## Element Vocabulary
+## 元素词汇
 
-- Bold silhouettes and symbolic shapes
-- Geometric framing (circles, arches, triangles)
-- Figure-ground inversion (negative space forms secondary image)
-- Limited icon vocabulary: key props, symbolic objects
-- Typography integrated as design element, not overlay
-- Vintage poster border treatments
+- 大胆的剪影和象征性形状
+- 几何边框（圆形、拱形、三角形）
+- 图底反转（留白形成次要图像）
+- 有限的图标词汇：关键道具、象征性物品
+- 排版作为设计元素融入，而非叠加层
+- 复古海报边框处理
 
-## Typography Approach
+## 排版方式
 
-- Bold condensed sans-serif or hand-drawn lettering
-- Art Deco influences, vintage poster typography
-- Typography as integral part of composition (not separate layer)
-- Strong readability through high contrast with background
+- 粗体压缩无衬线或手绘字体
+- 装饰艺术（Art Deco）风格影响，复古海报排版
+- 排版作为构图的组成部分（而非独立图层）
+- 通过与背景的高对比度确保强可读性

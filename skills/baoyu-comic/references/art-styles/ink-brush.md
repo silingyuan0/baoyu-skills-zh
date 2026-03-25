@@ -1,97 +1,97 @@
 # ink-brush
 
-水墨画风 - Chinese ink brush aesthetics with dynamic strokes
+水墨画风 - 动态笔触的中国水墨美学
 
-## Overview
+## 概述
 
-Traditional Chinese ink brush painting style adapted for comics. Combines calligraphic brush strokes with ink wash effects. Creates atmospheric, artistic visuals rooted in East Asian aesthetics.
+中国传统水墨画风格适配漫画。将书法笔触与墨晕效果相结合，创造植根于东亚美学的意境深远、艺术感强的视觉画面。
 
-## Line Work
+## 线条处理
 
-- 2-3px dynamic brush strokes with varying weight
-- Ink wash effects, traditional Chinese brush feel
-- Bold, confident strokes with sharp edges
-- Flowing lines for fabric and hair
-- Pressure-sensitive stroke variation
+- 2-3px 动态笔触，粗细变化丰富
+- 墨晕效果，传统中国毛笔质感
+- 大胆自信的笔触，边缘锐利
+- 流畅的线条表现衣纹和发丝
+- 压感笔触变化
 
-## Character Design
+## 角色设计
 
-- Realistic human proportions (7.5-8 head heights)
-- Defined features with ink brush definition
-- Dynamic poses capturing movement
-- Flowing hair and clothing in motion
-- Traditional attire options (robes, hanfu)
-- Intense, expressive faces
+- 写实人体比例（7.5-8 头身）
+- 以水墨笔法塑造清晰的面部轮廓
+- 捕捉运动感的动态姿势
+- 飘逸的头发和衣袂表现动态
+- 传统服饰选项（长袍、汉服）
+- 强烈而富有表现力的面部
 
-## Brush Techniques
+## 毛笔技法
 
-| Technique | Usage |
-|-----------|-------|
-| Bold strokes | Character outlines |
-| Fine lines | Details, hair |
-| Ink wash | Atmosphere, shadows |
-| Dry brush | Texture, aging |
-| Splatter | Impact, drama |
+| 技法 | 用途 |
+|------|------|
+| 粗笔 | 角色轮廓 |
+| 细线 | 细节、发丝 |
+| 墨晕 | 氛围、阴影 |
+| 干笔 | 质感、做旧 |
+| 泼墨 | 冲击、戏剧效果 |
 
-## Background Treatment
+## 背景处理
 
-- Dramatic landscapes: mountains, waterfalls, temples
-- Ink wash atmospheric effects
-- Misty, layered depth
-- Traditional architecture elements
-- High contrast silhouettes
-- Negative space as design element
+- 戏剧性山水：山峦、瀑布、寺庙
+- 墨晕营造氛围效果
+- 迷蒙的层次纵深
+- 传统建筑元素
+- 高对比剪影
+- 留白作为设计元素
 
-## Color Approach
+## 色彩处理
 
-- Ink gradients as primary
-- Limited accent colors
-- Traditional Chinese palette
-- Atmospheric color washes
-- High contrast compositions
+- 以墨色渐变为主
+- 有限的点缀色彩
+- 中国传统配色
+- 意境化的色彩渲染
+- 高对比构图
 
-## Default Color Palette
+## 默认调色板
 
-| Role | Color | Hex |
-|------|-------|-----|
-| Primary | Deep black ink | #1A1A1A |
-| Accent | Crimson red | #8B0000 |
-| Accent | Imperial gold | #D4AF37 |
-| Skin | Natural tan | #D4A574 |
-| Background | Misty gray | #9CA3AF |
-| Background | Earth tone | #8B7355 |
-| Wash | Ink gradient | #2D3748 |
+| 角色 | 颜色 | 色值 |
+|------|------|------|
+| 主色 | 浓墨黑 | #1A1A1A |
+| 点缀 | 朱红 | #8B0000 |
+| 点缀 | 帝王金 | #D4AF37 |
+| 肤色 | 自然棕 | #D4A574 |
+| 背景 | 烟灰色 | #9CA3AF |
+| 背景 | 大地色 | #8B7355 |
+| 渲染 | 墨色渐变 | #2D3748 |
 
-## Visual Elements
+## 视觉元素
 
-- Calligraphic text integration
-- Seal stamps (optional)
-- Ink splatter effects
-- Flowing fabric trails
-- Atmospheric mist
-- Mountain silhouettes
+- 书法文字融合
+- 印章（可选）
+- 泼墨效果
+- 飘逸的衣袂轨迹
+- 意境化的烟雾
+- 山峦剪影
 
-## Quality Markers
+## 质量标准
 
-- ✓ Dynamic brush stroke quality
-- ✓ Authentic ink wash atmosphere
-- ✓ High contrast compositions
-- ✓ Flowing movement in fabric/hair
-- ✓ Traditional aesthetic elements
-- ✓ Atmospheric depth
+- 动态的毛笔笔触质量
+- 真实的墨晕氛围
+- 高对比构图
+- 衣纹和发丝的飘逸动感
+- 传统美学元素
+- 意境化的层次纵深
 
-## Compatibility
+## 兼容性
 
-| Tone | Fit | Notes |
-|------|-----|-------|
-| neutral | ✓ | Contemplative stories |
-| warm | ✓ | Nostalgic, gentle |
-| dramatic | ✓✓ | High contrast |
-| vintage | ✓✓ | Historical pieces |
-| romantic | ✗ | Style mismatch |
-| energetic | ✗ | Too refined |
-| action | ✓✓ | Martial arts |
+| 基调 | 适配度 | 备注 |
+|------|--------|------|
+| neutral | 良好 | 沉思叙事 |
+| warm | 良好 | 怀旧、温和 |
+| dramatic | 极佳 | 高对比 |
+| vintage | 极佳 | 历史题材 |
+| romantic | 不适配 | 风格不匹配 |
+| energetic | 不适配 | 过于精致 |
+| action | 极佳 | 武术格斗 |
 
-## Best For
+## 适合场景
 
-Chinese historical stories, martial arts, traditional tales, contemplative narratives, artistic adaptations
+中国历史故事、武术、传统传说、沉思叙事、艺术改编

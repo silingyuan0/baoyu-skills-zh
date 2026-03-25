@@ -1,41 +1,41 @@
 # story-mountain
 
-Plot structure visualization showing rising action, climax, and resolution.
+展示上升动作、高潮和结局的情节结构可视化。
 
-## Structure
+## 结构
 
-- Mountain/arc shape
-- Rising slope (build-up)
-- Peak (climax)
-- Falling slope (resolution)
-- Start and end at base level
+- 山形/弧形
+- 上升斜坡（积累阶段）
+- 峰值（高潮）
+- 下降斜坡（结局）
+- 起点和终点位于基线
 
-## Best For
+## 最佳适用
 
-- Narrative structures
-- Project lifecycles
-- Tension/release patterns
-- Emotional journeys
-- Campaign arcs
+- 叙事结构
+- 项目生命周期
+- 张力/释放模式
+- 情感旅程
+- 活动周期
 
-## Visual Elements
+## 视觉元素
 
-- Mountain or arc curve
-- Points along the path
-- Climax visually emphasized
-- Slope steepness meaningful
-- Base camps or milestones
+- 山形或弧形曲线
+- 路径上的各阶段标记点
+- 高潮部分视觉上突出强调
+- 斜坡陡度具有象征意义
+- 营地或里程碑标记
 
-## Text Placement
+## 文本布局
 
-- Title at top
-- Stage labels along path
-- Climax prominently labeled
-- Brief descriptions at points
-- Start/end clearly marked
+- 标题置于顶部
+- 沿路径标注各阶段标签
+- 高潮部分突出标注
+- 各点添加简要描述
+- 起点/终点清晰标记
 
-## Recommended Pairings
+## 推荐搭配
 
-- `storybook-watercolor`: Narrative journeys
-- `cartoon-hand-drawn`: Educational plot diagrams
-- `graphic-novel`: Dramatic story arcs
+- `storybook-watercolor`：叙事旅程风格
+- `cartoon-hand-drawn`：教育情节图风格
+- `graphic-novel`：戏剧性故事弧线

@@ -1,100 +1,100 @@
 # romantic
 
-浪漫基调 - Soft, beautiful, emotionally delicate
+浪漫基调 - 柔美、美丽、情感细腻
 
-## Overview
+## 概述
 
-Soft, dreamy atmosphere for romantic and emotionally delicate content. Features decorative elements, sparkles, and beautiful compositions that emphasize feeling and beauty.
+柔和、梦幻的氛围，适用于浪漫和情感细腻的内容。以装饰元素、星光和美丽的构图强调情感与美感。
 
-## Mood Characteristics
+## 情感特征
 
-- Romance and love
-- Beauty and elegance
-- Emotional delicacy
-- Dreams and hopes
-- Youth and idealism
+- 浪漫与爱
+- 美丽与优雅
+- 情感的细腻
+- 梦想与希望
+- 青春与理想
 
-## Color Modifiers
+## 颜色修正
 
-When applied to any art style:
+应用于任何画风时：
 
-| Adjustment | Direction |
-|------------|-----------|
-| Saturation | Soft pastels |
-| Contrast | Low, gentle |
-| Temperature | Slightly warm pink |
-| Brightness | Soft, glowing |
+| 调整项 | 方向 |
+|--------|------|
+| 饱和度 | 柔和粉彩 |
+| 对比度 | 低、温和 |
+| 色温 | 略微偏暖粉色 |
+| 亮度 | 柔和、发光 |
 
-## Color Palette
+## 调色板
 
-Shift toward romantic tones:
+偏移为浪漫色调：
 
-| Role | Color | Hex |
-|------|-------|-----|
-| Primary | Soft pink | #FFB6C1 |
-| Secondary | Lavender | #E6E6FA |
-| Accent | Rose | #FF69B4 |
-| Highlight | Pearl white | #FFFAF0 |
-| Gold | Gold sparkle | #FFD700 |
-| Skin | Porcelain | #FFF5EE |
-| Blush | Soft blush | #FFE4E1 |
-| Background | Soft cream | #FFF8DC |
+| 角色 | 颜色 | 色值 |
+|------|------|------|
+| 主色 | 柔和粉 | #FFB6C1 |
+| 副色 | 薰衣草紫 | #E6E6FA |
+| 强调色 | 玫瑰粉 | #FF69B4 |
+| 高光色 | 珍珠白 | #FFFAF0 |
+| 金色 | 金色星光 | #FFD700 |
+| 肤色 | 瓷白 | #FFF5EE |
+| 腮红 | 柔和腮红 | #FFE4E1 |
+| 背景 | 柔和奶油色 | #FFF8DC |
 
-## Lighting
+## 光照
 
-- Soft, diffused light
-- Glowing effects
-- Backlighting halos
-- Sparkle highlights
-- Dreamy atmospheres
+- 柔和、漫射光
+- 发光效果
+- 背光光晕
+- 星光高光
+- 梦幻氛围
 
-## Decorative Elements
+## 装饰元素
 
-**Essential decorations** (add to compositions):
+**必备装饰**（添加到构图中）：
 
-| Element | Usage |
-|---------|-------|
-| Flower petals | Floating, framing |
-| Sparkles | Emotional highlights |
-| Bubbles | Dreamy moments |
-| Feathers | Gentle floating |
-| Stars | Night scenes, wonder |
-| Hearts | Love emphasis |
-| Light halos | Character highlights |
+| 元素 | 用途 |
+|------|------|
+| 花瓣 | 飘浮、点缀 |
+| 星光 | 情感高光 |
+| 气泡 | 梦幻时刻 |
+| 羽毛 | 轻柔飘浮 |
+| 星星 | 夜景、惊奇 |
+| 爱心 | 爱意强调 |
+| 光晕 | 角色高光 |
 
-## Emotional Range
+## 情感范围
 
-| Emotion | Expression |
-|---------|-----------|
-| Love | Soft gaze, blush |
-| Longing | Distant, beautiful sadness |
-| Joy | Radiant smile, sparkles |
-| Shyness | Downcast eyes, blush |
+| 情感 | 表达方式 |
+|------|----------|
+| 爱 | 柔和的注视、脸红 |
+| 渴望 | 悠远、美丽的忧伤 |
+| 喜悦 | 灿烂的笑容、星光 |
+| 害羞 | 低垂的眼眸、脸红 |
 
-## Composition
+## 构图
 
-- Elegant, flowing layouts
-- Soft focus backgrounds
-- Characters framed by decorations
-- Beautiful angles (3/4 profiles)
-- Screen tone gradients
+- 优雅、流畅的布局
+- 柔焦背景
+- 角色被装饰元素围绕
+- 美丽的角度（四分之三侧面）
+- 网点渐变
 
-## Best For
+## 适合场景
 
-- Romance stories
-- Coming-of-age
-- Friendship narratives
-- Emotional drama
-- School life
-- Beautiful moments
+- 浪漫故事
+- 成长故事
+- 友情叙事
+- 情感剧
+- 校园生活
+- 美好时刻
 
-## Combination Notes
+## 搭配建议
 
-Works especially well with:
-- manga: classic shoujo style
+特别适合与以下画风搭配：
+- manga：经典少女漫画风格
 
-Avoid with:
-- realistic: style mismatch
-- ink-brush: style mismatch
-- ligne-claire: style mismatch
-- chalk: style mismatch
+避免搭配：
+- realistic：风格不匹配
+- ink-brush：风格不匹配
+- ligne-claire：风格不匹配
+- chalk：风格不匹配

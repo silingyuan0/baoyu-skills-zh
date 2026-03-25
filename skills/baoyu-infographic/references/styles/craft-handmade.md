@@ -1,44 +1,44 @@
-# craft-handmade (DEFAULT)
+# craft-handmade（手工艺）（默认）
 
-Hand-drawn and paper craft aesthetic with warm, organic feel.
+手绘与纸艺美学，营造温暖、有机的视觉感受。
 
-## Color Palette
+## 调色板
 
-- Primary: Warm pastels, soft saturated colors, craft paper tones
-- Background: Light cream (#FFF8F0), textured paper (#F5F0E6)
-- Accents: Bold highlights, construction paper colors
+- 主色：温暖柔色、柔和饱和色、手工纸色调
+- 背景：浅奶油色（#FFF8F0）、纹理纸色（#F5F0E6）
+- 强调色：醒目的高亮色、手工纸色
 
-## Variants
+## 变体
 
-| Variant | Focus | Visual Emphasis |
-|---------|-------|-----------------|
-| **Hand-drawn** | Cartoon illustration | Simple icons, slightly imperfect lines |
-| **Paper-cutout** | Layered paper craft | Drop shadows, torn edges, texture |
+| 变体 | 重点 | 视觉特征 |
+|------|------|----------|
+| **手绘** | 卡通插画 | 简约图标、略带不完美的线条 |
+| **剪纸** | 分层纸艺 | 投影、撕裂边缘、纹理质感 |
 
-## Visual Elements
+## 视觉元素
 
-- Hand-drawn or cut-paper quality
-- Organic, slightly imperfect shapes
-- Layered depth with shadows (paper variant)
-- Simple cartoon elements and icons
-- Character illustrations (people, personalities in cartoon form)
-- Ample whitespace, clean composition
-- Keywords and core concepts highlighted
-- **Strictly hand-drawn—no realistic or photographic elements**
+- 手绘或剪纸质感
+- 有机、略带不完美的形状
+- 通过阴影营造分层深度（剪纸变体）
+- 简约卡通元素和图标
+- 人物插画（以卡通形式表现人物与个性）
+- 充足的留白，整洁构图
+- 关键词和核心概念高亮显示
+- **严格手绘风格 — 不得使用写实或照片级元素**
 
-## Style Enforcement
+## 风格约束
 
-- All imagery must maintain cartoon/illustrated aesthetic
-- Replace real photos or realistic figures with hand-drawn equivalents
-- Maintain consistent line weight and illustration style throughout
+- 所有图像必须保持卡通/插画美学
+- 用手绘风格替代真实照片或写实人物
+- 全文保持一致的线条粗细和插画风格
 
-## Typography
+## 排版
 
-- Hand-drawn or casual font style
-- Clear, readable labels
-- Keywords emphasized with larger/bolder text
-- Cut-out letter style for paper variant
+- 手写体或休闲字体风格
+- 清晰可读的标签
+- 关键词使用更大更粗的文字强调
+- 剪纸变体使用剪贴字母风格
 
-## Best For
+## 适用场景
 
-Educational content, general explanations, friendly infographics, children's content, playful hierarchies
+教育内容、通用讲解、友好风信息图、儿童内容、趣味性层次展示

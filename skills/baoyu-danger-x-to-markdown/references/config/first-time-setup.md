@@ -1,106 +1,106 @@
 ---
 name: first-time-setup
-description: First-time setup flow for baoyu-danger-x-to-markdown preferences
+description: baoyu-danger-x-to-markdown 偏好设置的首次设置流程
 ---
 
-# First-Time Setup
+# 首次设置
 
-## Overview
+## 概述
 
-When no EXTEND.md is found, guide user through preference setup.
+当未找到 EXTEND.md 时，引导用户完成偏好设置。
 
-**BLOCKING OPERATION**: This setup MUST complete before ANY other workflow steps. Do NOT:
-- Start converting tweets or articles
-- Ask about URLs or output paths
-- Proceed to any conversion
+**阻塞操作**：此设置必须在任何其他工作流步骤之前完成。不要：
+- 开始转换推文或文章
+- 询问 URL 或输出路径
+- 进行任何转换
 
-ONLY ask the questions in this setup flow, save EXTEND.md, then continue.
+只询问此设置流程中的问题，保存 EXTEND.md，然后继续。
 
-## Setup Flow
+## 设置流程
 
 ```
-No EXTEND.md found
+未找到 EXTEND.md
         |
         v
 +---------------------+
 | AskUserQuestion     |
-| (all questions)     |
+| (所有问题)          |
 +---------------------+
         |
         v
 +---------------------+
-| Create EXTEND.md    |
+| 创建 EXTEND.md      |
 +---------------------+
         |
         v
-    Continue conversion
+    继续转换
 ```
 
-## Questions
+## 问题
 
-**Language**: Use user's input language or saved language preference.
+**语言**：使用用户的输入语言或已保存的语言偏好。
 
-Use AskUserQuestion with ALL questions in ONE call:
+使用 `AskUserQuestion` 将所有问题在一次调用中提出：
 
-### Question 1: Download Media
+### 问题 1：下载媒体
 
 ```yaml
 header: "Media"
-question: "How to handle images and videos in tweets?"
+question: "如何处理推文中的图片和视频？"
 options:
-  - label: "Ask each time (Recommended)"
-    description: "After saving markdown, ask whether to download media"
-  - label: "Always download"
-    description: "Always download media to local imgs/ and videos/ directories"
-  - label: "Never download"
-    description: "Keep original remote URLs in markdown"
+  - label: "每次询问（推荐）"
+    description: "保存 Markdown 后，询问是否下载媒体"
+  - label: "始终下载"
+    description: "始终将媒体下载到本地 imgs/ 和 videos/ 目录"
+  - label: "从不下载"
+    description: "在 Markdown 中保留原始远程 URL"
 ```
 
-### Question 2: Default Output Directory
+### 问题 2：默认输出目录
 
 ```yaml
 header: "Output"
-question: "Default output directory?"
+question: "默认输出目录？"
 options:
-  - label: "x-to-markdown (Recommended)"
-    description: "Save to ./x-to-markdown/{username}/{tweet-id}.md"
+  - label: "x-to-markdown（推荐）"
+    description: "保存到 ./x-to-markdown/{username}/{tweet-id}.md"
 ```
 
-Note: User will likely choose "Other" to type a custom path.
+注意：用户很可能会选择"其他"来输入自定义路径。
 
-### Question 3: Save Location
+### 问题 3：保存位置
 
 ```yaml
 header: "Save"
-question: "Where to save preferences?"
+question: "偏好设置保存位置？"
 options:
-  - label: "User (Recommended)"
-    description: "~/.baoyu-skills/ (all projects)"
+  - label: "User（推荐）"
+    description: "~/.baoyu-skills/（所有项目）"
   - label: "Project"
-    description: ".baoyu-skills/ (this project only)"
+    description: ".baoyu-skills/（仅当前项目）"
 ```
 
-## Save Locations
+## 保存位置
 
-| Choice | Path | Scope |
+| 选择 | 路径 | 作用范围 |
 |--------|------|-------|
-| User | `~/.baoyu-skills/baoyu-danger-x-to-markdown/EXTEND.md` | All projects |
-| Project | `.baoyu-skills/baoyu-danger-x-to-markdown/EXTEND.md` | Current project |
+| User | `~/.baoyu-skills/baoyu-danger-x-to-markdown/EXTEND.md` | 所有项目 |
+| Project | `.baoyu-skills/baoyu-danger-x-to-markdown/EXTEND.md` | 当前项目 |
 
-## After Setup
+## 设置完成后
 
-1. Create directory if needed
-2. Write EXTEND.md
-3. Confirm: "Preferences saved to [path]"
-4. Continue with conversion using saved preferences
+1. 如需则创建目录
+2. 写入 EXTEND.md
+3. 确认："偏好设置已保存到 [路径]"
+4. 使用已保存的偏好设置继续转换
 
-## EXTEND.md Template
+## EXTEND.md 模板
 
 ```md
 download_media: [ask/1/0]
 default_output_dir: [path or empty]
 ```
 
-## Modifying Preferences Later
+## 后续修改偏好设置
 
-Users can edit EXTEND.md directly or delete it to trigger setup again.
+用户可以直接编辑 EXTEND.md，或删除它以重新触发设置流程。

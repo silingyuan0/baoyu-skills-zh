@@ -1,104 +1,104 @@
 # vintage
 
-复古基调 - Historical, aged, period authenticity
+复古基调 - 历史、做旧、时代真实感
 
-## Overview
+## 概述
 
-Historical atmosphere with aged paper effects and period-appropriate aesthetics. Creates sense of time, authenticity, and historical distance.
+历史氛围，配合做旧纸张效果和时代感美学。营造时间感、真实性和历史距离感。
 
-## Mood Characteristics
+## 情感特征
 
-- Historical authenticity
-- Period distance
-- Archival quality
-- Time and memory
-- Classical elegance
+- 历史真实感
+- 时代距离感
+- 档案质感
+- 时间与记忆
+- 古典优雅
 
-## Color Modifiers
+## 颜色修正
 
-When applied to any art style:
+应用于任何画风时：
 
-| Adjustment | Direction |
-|------------|-----------|
-| Saturation | Reduced, muted |
-| Contrast | Medium, aged |
-| Temperature | Sepia shift |
-| Brightness | Slightly faded |
+| 调整项 | 方向 |
+|--------|------|
+| 饱和度 | 降低、柔和 |
+| 对比度 | 中等、做旧 |
+| 色温 | 泛褐色调偏移 |
+| 亮度 | 略微褪色 |
 
-## Color Palette
+## 调色板
 
-Shift toward aged tones:
+偏移为做旧色调：
 
-| Role | Color | Hex |
-|------|-------|-----|
-| Primary | Sepia brown | #8B7355 |
-| Background | Aged paper | #F5E6D3 |
-| Accent 1 | Faded teal | #6B8E8E |
-| Accent 2 | Muted burgundy | #7B3F3F |
-| Ink | Aged black | #3D3D3D |
-| Yellowed | Paper yellow | #F5DEB3 |
+| 角色 | 颜色 | 色值 |
+|------|------|------|
+| 主色 | 泛褐棕色 | #8B7355 |
+| 背景 | 做旧纸张 | #F5E6D3 |
+| 强调色 1 | 褪色青色 | #6B8E8E |
+| 强调色 2 | 柔和酒红 | #7B3F3F |
+| 墨色 | 做旧黑 | #3D3D3D |
+| 泛黄 | 纸张黄 | #F5DEB3 |
 
-## Visual Effects
+## 视觉效果
 
-**Aging effects** (apply subtly):
+**做旧效果**（微妙应用）：
 
-| Effect | Application |
-|--------|-------------|
-| Paper aging | Background texture |
-| Faded edges | Vignette effect |
-| Dust specks | Subtle overlay |
-| Yellowing | Color shift |
-| Wear marks | Corner/edge details |
+| 效果 | 应用方式 |
+|------|----------|
+| 纸张老化 | 背景纹理 |
+| 褪色边缘 | 暗角效果 |
+| 尘埃斑点 | 微妙叠加 |
+| 泛黄 | 色彩偏移 |
+| 磨损痕迹 | 角落/边缘细节 |
 
-## Period Elements
+## 时代元素
 
-- Historical typography
-- Period-accurate details
-- Archival presentation
-- Classical compositions
-- Formal framing
+- 历史字体排版
+- 时代准确的细节
+- 档案式呈现
+- 古典构图
+- 正式取景
 
-## Lighting
+## 光照
 
-- Natural, period-appropriate
-- Oil lamp/candle warmth
-- Soft, diffused light
-- Indoor historical lighting
-- Photographic quality
+- 自然的、时代恰当的光源
+- 油灯/烛光的温暖
+- 柔和、漫射光
+- 室内历史照明
+- 摄影质感
 
-## Emotional Range
+## 情感范围
 
-| Emotion | Expression |
-|---------|-----------|
-| Dignity | Formal, composed |
-| Sorrow | Restrained, elegant |
-| Pride | Classical posture |
-| Wisdom | Aged grace |
+| 情感 | 表达方式 |
+|------|----------|
+| 庄严 | 正式、沉稳 |
+| 哀伤 | 克制、优雅 |
+| 自豪 | 古典仪态 |
+| 智慧 | 岁月的优雅 |
 
-## Composition
+## 构图
 
-- Classical framing
-- Formal compositions
-- Period-appropriate staging
-- Documentary style
-- Historical accuracy priority
+- 古典取景
+- 正式构图
+- 时代恰当的舞台布置
+- 纪录片风格
+- 历史准确性优先
 
-## Best For
+## 适合场景
 
-- Pre-1950s stories
-- Classical science history
-- Historical biographies
-- Period pieces
-- Documentary comics
-- Archival narratives
+- 1950 年代以前的故事
+- 古典科学史
+- 历史传记
+- 时代剧
+- 纪录片漫画
+- 档案叙事
 
-## Combination Notes
+## 搭配建议
 
-Works especially well with:
-- realistic: period drama
-- ligne-claire: historical adventure
-- ink-brush: classical Asian stories
+特别适合与以下画风搭配：
+- realistic：时代剧
+- ligne-claire：历史冒险
+- ink-brush：古典亚洲故事
 
-Avoid with:
-- manga: style mismatch (too modern)
-- chalk: style mismatch (modern educational)
+避免搭配：
+- manga：风格不匹配（过于现代）
+- chalk：风格不匹配（现代教育风）

@@ -1,22 +1,22 @@
 ---
 name: first-time-setup
-description: First-time setup flow for baoyu-post-to-wechat preferences
+description: baoyu-post-to-wechat 偏好设置的首次设置流程
 ---
 
-# First-Time Setup
+# 首次设置
 
-## Overview
+## 概述
 
-When no EXTEND.md is found, guide user through preference setup.
+当未找到 EXTEND.md 时，引导用户完成偏好设置。
 
-**BLOCKING OPERATION**: This setup MUST complete before ANY other workflow steps. Do NOT:
-- Ask about content or files to publish
-- Ask about themes or publishing methods
-- Proceed to content conversion or publishing
+**阻塞操作**：此设置必须在任何其他工作流步骤之前完成。禁止：
+- 询问要发布的内容或文件
+- 询问主题或发布方式
+- 继续内容转换或发布
 
-ONLY ask the questions in this setup flow, save EXTEND.md, then continue.
+仅询问此设置流程中的问题，保存 EXTEND.md，然后继续。
 
-## Setup Flow
+## 设置流程
 
 ```
 No EXTEND.md found
@@ -36,13 +36,13 @@ No EXTEND.md found
     Continue to Step 1
 ```
 
-## Questions
+## 问题
 
-**Language**: Use user's input language or saved language preference.
+**语言**：使用用户的输入语言或已保存的语言偏好。
 
-Use AskUserQuestion with ALL questions in ONE call:
+使用 AskUserQuestion 在一次调用中提出所有问题：
 
-### Question 1: Default Theme
+### 问题 1：默认主题
 
 ```yaml
 header: "Theme"
@@ -58,7 +58,7 @@ options:
     description: "Large rounded corners, pill headings, spacious (default: orange)"
 ```
 
-### Question 2: Default Color
+### 问题 2：默认颜色
 
 ```yaml
 header: "Color"
@@ -74,9 +74,9 @@ options:
     description: "#009874 翡翠绿"
 ```
 
-Note: User can choose "Other" to type any preset name (vermilion, yellow, purple, sky, rose, olive, black, gray, pink, orange) or hex value.
+注：用户可选择"Other"输入任何预设名称（vermilion、yellow、purple、sky、rose、olive、black、gray、pink、orange）或十六进制值。
 
-### Question 3: Default Publishing Method
+### 问题 3：默认发布方式
 
 ```yaml
 header: "Method"
@@ -88,7 +88,7 @@ options:
     description: "Slow, requires Chrome and login session"
 ```
 
-### Question 4: Default Author
+### 问题 4：默认作者
 
 ```yaml
 header: "Author"
@@ -98,9 +98,9 @@ options:
     description: "Leave empty, specify per article"
 ```
 
-Note: User will likely choose "Other" to type their author name.
+注：用户可能会选择"Other"输入作者名。
 
-### Question 5: Open Comments
+### 问题 5：开启评论
 
 ```yaml
 header: "Comments"
@@ -112,7 +112,7 @@ options:
     description: "Disable comments by default"
 ```
 
-### Question 6: Fans-Only Comments
+### 问题 6：粉丝专评
 
 ```yaml
 header: "Fans only"
@@ -124,7 +124,7 @@ options:
     description: "Only followers can comment"
 ```
 
-### Question 7: Save Location
+### 问题 7：保存位置
 
 ```yaml
 header: "Save"
@@ -136,23 +136,23 @@ options:
     description: "~/.baoyu-skills/ (all projects)"
 ```
 
-## Save Locations
+## 保存位置
 
-| Choice | Path | Scope |
+| 选择 | 路径 | 范围 |
 |--------|------|-------|
-| Project | `.baoyu-skills/baoyu-post-to-wechat/EXTEND.md` | Current project |
-| User | `~/.baoyu-skills/baoyu-post-to-wechat/EXTEND.md` | All projects |
+| Project | `.baoyu-skills/baoyu-post-to-wechat/EXTEND.md` | 当前项目 |
+| User | `~/.baoyu-skills/baoyu-post-to-wechat/EXTEND.md` | 所有项目 |
 
-## After Setup
+## 设置后
 
-1. Create directory if needed
-2. Write EXTEND.md
-3. Confirm: "Preferences saved to [path]"
-4. Continue to Step 0 (load the saved preferences)
+1. 如需要则创建目录
+2. 写入 EXTEND.md
+3. 确认："Preferences saved to [path]"
+4. 继续到 Step 0（加载保存的偏好设置）
 
-## EXTEND.md Template
+## EXTEND.md 模板
 
-### Single Account (Default)
+### 单账号（默认）
 
 ```md
 default_theme: [default/grace/simple/modern]
@@ -164,7 +164,7 @@ only_fans_can_comment: [1/0]
 chrome_profile_path:
 ```
 
-### Multi-Account
+### 多账号
 
 ```md
 default_theme: [default/grace/simple/modern]
@@ -188,16 +188,16 @@ accounts:
     only_fans_can_comment: [1/0]
 ```
 
-## Adding More Accounts Later
+## 稍后添加更多账号
 
-After initial setup, users can add accounts by editing EXTEND.md:
+初始设置后，用户可通过编辑 EXTEND.md 添加账号：
 
-1. Add an `accounts:` block with list items
-2. Move per-account settings (author, publish method, comments) into each account entry
-3. Keep global settings (theme, color) at the top level
-4. Each account needs a unique `alias` (used for CLI `--account` arg and Chrome profile naming)
-5. Set `default: true` on the primary account
+1. 添加包含列表项的 `accounts:` 块
+2. 将每账号设置（author、publish method、comments）移入每个账号条目
+3. 将全局设置（theme、color）保留在顶层
+4. 每个账号需要一个唯一 `alias`（用于 CLI `--account` 参数和 Chrome 配置文件命名）
+5. 在主账号上设置 `default: true`
 
-## Modifying Preferences Later
+## 稍后修改偏好设置
 
-Users can edit EXTEND.md directly or delete it to trigger setup again.
+用户可直接编辑 EXTEND.md 或删除它以重新触发设置。

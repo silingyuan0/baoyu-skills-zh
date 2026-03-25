@@ -1,57 +1,57 @@
 # vector-illustration
 
-Flat vector illustration style with clear black outlines and retro soft colors
+清晰黑色轮廓线和复古柔和色调的扁平矢量插图风格
 
-## Design Aesthetic
+## 设计美学
 
-Flat vector illustration with no gradients or 3D effects. Clear, uniform-thickness black outlines on all elements. Geometric simplification reducing complex objects to basic shapes. Toy model aesthetic that's cute, playful, and approachable. Coloring book style with closed outlines.
+无渐变或 3D 效果的扁平矢量插图。所有元素具有清晰、均匀粗细的黑色轮廓线。将复杂物体几何化概括为基本形状。玩具模型美学，可爱、活泼、平易近人。填色书风格，带闭合轮廓线。
 
-## Background
+## 背景
 
-- Color: Cream Off-White (#F5F0E6)
-- Texture: Subtle paper texture, warm nostalgic feel
+- 颜色：奶油米白（#F5F0E6）
+- 纹理：细微纸张纹理，温暖怀旧感
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
+| 角色 | 颜色 | Hex | 用途 |
 |------|-------|-----|-------|
-| Background | Cream Off-White | #F5F0E6 | Primary background |
-| Outlines | Deep Charcoal | #2D2D2D | All element outlines |
-| Primary | Coral Red | #E07A5F | Primary accent, warmth |
-| Secondary | Mint Green | #81B29A | Nature, growth |
-| Tertiary | Mustard Yellow | #F2CC8F | Highlights, energy |
-| Accent 1 | Burnt Orange | #D4764A | Warm accents |
-| Accent 2 | Rock Blue | #577590 | Cool balance |
-| Text | Black | #1A1A1A | Text elements |
+| 背景 | 奶油米白 | #F5F0E6 | 主背景 |
+| 轮廓线 | 深炭色 | #2D2D2D | 所有元素轮廓线 |
+| 主色 | 珊瑚红 | #E07A5F | 主强调、温暖 |
+| 次要色 | 薄荷绿 | #81B29A | 自然、成长 |
+| 第三色 | 芥末黄 | #F2CC8F | 高光、能量 |
+| 强调色 1 | 焦橙 | #D4764A | 温暖强调 |
+| 强调色 2 | 岩蓝 | #577590 | 冷色平衡 |
+| 文本 | 黑色 | #1A1A1A | 文本元素 |
 
-## Visual Elements
+## 视觉元素
 
-- All objects have closed black outlines (coloring book style)
-- Rounded line endings, avoid sharp corners
-- Trees simplified to lollipop or triangle shapes
-- Buildings as rectangular blocks with grid windows
-- Depth through layering and overlap
-- Decorative elements: sunbursts, pill-shaped clouds, dots, stars
-- People as simple geometric figures
+- 所有物体都有闭合黑色轮廓线（填色书风格）
+- 圆润线条末端，避免尖角
+- 树木简化为棒棒糖或三角形形状
+- 建筑为带网格窗户的矩形块
+- 通过层次和叠加创造深度
+- 装饰元素：放射状光芒、药丸形云、圆点、星星
+- 人物为简单几何图形
 
-## Style Rules
+## 风格规则
 
-### Do
+### 宜
 
-- Maintain consistent outline thickness
-- Use soft, vintage color palette
-- Simplify objects to basic geometric shapes
-- Create depth through layering
-- Add playful decorative elements
+- 保持一致的轮廓线粗细
+- 使用柔和复古色调
+- 将物体简化为基本几何形状
+- 通过层次创造深度
+- 添加活泼装饰元素
 
-### Don't
+### 忌
 
-- Use gradients or realistic shading
-- Create photorealistic elements
-- Use thin or varying line weights
-- Include complex detailed illustrations
-- Add textures inside shapes
+- 使用渐变或写实阴影
+- 创建写实元素
+- 使用细线或变化线粗细
+- 包含复杂详细插图
+- 在形状内部添加纹理
 
-## Best For
+## 适用于
 
-Educational content, creative articles, children's content, brand showcases, explainer pieces, warm approachable topics
+教育内容、创意文章、儿童内容、品牌展示、解释性内容、温暖平易近人的话题

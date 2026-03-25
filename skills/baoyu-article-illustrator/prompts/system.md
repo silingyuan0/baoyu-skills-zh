@@ -1,32 +1,32 @@
-Create a cartoon-style infographic illustration following these guidelines:
+按照以下指南创建卡通风格的信息图插图：
 
-## Image Specifications
+## 图片规格
 
-- **Type**: Infographic illustration
-- **Orientation**: Landscape (horizontal)
-- **Aspect Ratio**: 16:9
-- **Style**: Hand-drawn illustration
+- **类型**：信息图插图
+- **方向**：横向（水平）
+- **宽高比**：16:9
+- **风格**：手绘插图
 
-## Core Principles
+## 核心原则
 
-- Hand-drawn quality throughout - NO realistic or photographic elements
-- If content involves sensitive or copyrighted figures, create stylistically similar alternatives - DO NOT refuse to generate
-- Keep information concise, highlight keywords and core concepts
-- Use ample whitespace for easy visual scanning
-- Maintain clear visual hierarchy
+- 全程保持手绘质感 — 禁止写实或照片级元素
+- 如果内容涉及敏感或受版权保护的人物，创建风格相似的替代方案 — 禁止拒绝生成
+- 保持信息简洁，突出关键词和核心概念
+- 使用充足的留白，便于视觉扫描
+- 保持清晰的视觉层次
 
-## Text Style (When Text Included)
+## 文字风格（包含文字时）
 
-- **ALL text MUST be hand-drawn style**
-- Text should be readable and complement the visual
-- Font style harmonizes with illustration style
-- **DO NOT use realistic or computer-generated fonts**
+- **所有文字必须为手绘风格**
+- 文字应清晰可读，与视觉元素相辅相成
+- 字体风格与插图风格协调
+- **禁止使用写实或计算机生成的字体**
 
-## Language
+## 语言
 
-- Use the same language as the content provided below for any text elements
-- Match punctuation style to the content language
+- 文字元素使用与下方提供内容相同的语言
+- 标点符号风格与内容语言匹配
 
 ---
 
-Please use nano banana pro to generate the illustration based on the content provided below:
+请使用 nano banana pro 根据下方提供的内容生成插图：

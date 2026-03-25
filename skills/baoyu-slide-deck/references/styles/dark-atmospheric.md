@@ -1,69 +1,69 @@
 # dark-atmospheric
 
-Dark moody aesthetic with deep colors and glowing accent elements
+暗色氛围美学，深色背景配以发光强调元素
 
-## Design Aesthetic
+## 设计美学
 
-Cinematic dark mode aesthetic with atmospheric depth. Deep purples, blacks, and rich shadows with glowing accents creating dramatic visual contrast. Mysterious, sophisticated, and visually striking. Perfect for evening events, creative industries, and premium brand presentations.
+电影感暗色模式美学，具有大气纵深感。深紫、黑色和浓郁阴影与发光强调色形成戏剧性的视觉对比。神秘、精致且视觉冲击力强。适合晚间活动、创意行业和高端品牌演示。
 
-## Background
+## 背景
 
-- Color: Deep Purple-Black (#0D0D1A) or Rich Navy (#1A1A2E)
-- Texture: Subtle gradient from darker edges to slightly lighter center, atmospheric fog effect
+- 颜色：深紫黑（#0D0D1A）或深海军蓝（#1A1A2E）
+- 纹理：从更暗的边缘到稍亮的中心微妙渐变，大气雾化效果
 
-## Typography
+## 排版
 
-### Primary Font (Headlines)
+### 主字体（标题）
 
-Elegant serif or refined sans-serif in light/white. High contrast against dark background. Medium to bold weight. Letterforms may have subtle glow effect.
+优雅的衬线体或精致的无衬线体，浅色/白色。与深色背景形成高对比。中等到粗体字重。字母形态可有微妙的发光效果。
 
-### Secondary Font (Body)
+### 辅助字体（正文）
 
-Clean sans-serif in light gray or muted white. Readable against dark backgrounds. Regular weight with generous line height.
+简洁的无衬线体，浅灰或柔和白色。在深色背景下清晰可读。常规字重，宽松行高。
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
-|------|-------|-----|-------|
-| Background | Deep Purple-Black | #0D0D1A | Primary background |
-| Alt Background | Rich Navy | #1A1A2E | Secondary areas |
-| Primary Text | Pure White | #FFFFFF | Headlines |
-| Secondary Text | Light Gray | #A0AEC0 | Body text |
-| Glow Accent 1 | Electric Purple | #8B5CF6 | Primary glow |
-| Glow Accent 2 | Cyan Blue | #06B6D4 | Secondary glow |
-| Glow Accent 3 | Magenta Pink | #EC4899 | Tertiary accent |
-| Glow Accent 4 | Amber | #F59E0B | Warm highlights |
-| Subtle | Dark Gray | #2D3748 | Dividers, borders |
+| 角色 | 颜色 | 色值 | 用途 |
+|------|------|------|------|
+| 背景 | Deep Purple-Black | #0D0D1A | 主要背景 |
+| 辅助背景 | Rich Navy | #1A1A2E | 辅助区域 |
+| 主文本 | Pure White | #FFFFFF | 标题 |
+| 辅助文本 | Light Gray | #A0AEC0 | 正文 |
+| 发光色 1 | Electric Purple | #8B5CF6 | 主要发光 |
+| 发光色 2 | Cyan Blue | #06B6D4 | 辅助发光 |
+| 发光色 3 | Magenta Pink | #EC4899 | 第三强调色 |
+| 发光色 4 | Amber | #F59E0B | 暖色高光 |
+| 柔和色 | Dark Gray | #2D3748 | 分割线、边框 |
 
-## Visual Elements
+## 视觉元素
 
-- Glowing accent elements and borders
-- Subtle gradient backgrounds
-- Atmospheric fog or particle effects
-- Neon-style highlights on key elements
-- Silhouettes with backlit edges
-- Audio waveforms or sound visualizations
-- Radiating light circles and orbs
-- Cinematic letterboxing optional
+- 发光强调元素和边框
+- 微妙的渐变背景
+- 大气雾化或粒子效果
+- 关键元素上的霓虹风格高光
+- 带背光边缘的剪影
+- 音频波形或声音可视化
+- 放射状光环和光球
+- 可选电影感宽银幕黑边
 
-## Style Rules
+## 风格规则
 
-### Do
+### 推荐做法
 
-- Maintain high contrast for readability
-- Use glowing effects sparingly for emphasis
-- Create atmospheric depth with gradients
-- Design dramatic visual focal points
-- Keep text crisp against dark backgrounds
+- 保持高对比度以确保可读性
+- 克制使用发光效果以强调重点
+- 通过渐变创建大气纵深感
+- 设计戏剧性的视觉焦点
+- 确保文字在深色背景下清晰锐利
 
-### Don't
+### 避免事项
 
-- Overuse neon effects (less is more)
-- Create low-contrast text combinations
-- Use bright backgrounds
-- Add cluttered busy elements
-- Add slide numbers, footers, or logos
+- 过度使用霓虹效果（少即是多）
+- 创建低对比度的文本组合
+- 使用明亮的背景
+- 添加杂乱繁忙的元素
+- 添加幻灯片编号、页脚或标志
 
-## Best For
+## 适用场景
 
-Entertainment presentations, music and audio content, creative agency pitches, evening events, premium brand reveals, gaming content, cinematic storytelling, tech product launches
+娱乐演示、音乐和音频内容、创意机构提案、晚间活动、高端品牌发布、游戏内容、电影感叙事、科技产品发布

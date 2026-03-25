@@ -1,26 +1,26 @@
-# pastel
+# 柔和色
 
-Gentle, whimsical, soft
+温柔、梦幻、柔和
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex |
-|------|-------|-----|
-| Primary 1 | Soft Pink | #FFB6C1 |
-| Primary 2 | Mint | #98D8C8 |
-| Primary 3 | Lavender | #C8A2C8 |
-| Background | White | #FFFFFF |
-| Background Alt | Light Cream | #FFF8E7 |
-| Accent 1 | Butter Yellow | #FFFACD |
-| Accent 2 | Sky Blue | #BEE3F8 |
+| 角色 | 颜色 | 十六进制 |
+|------|------|----------|
+| 主色 1 | Soft Pink（柔和粉） | #FFB6C1 |
+| 主色 2 | Mint（薄荷） | #98D8C8 |
+| 主色 3 | Lavender（薰衣草紫） | #C8A2C8 |
+| 背景 | White（白色） | #FFFFFF |
+| 备选背景 | Light Cream（浅奶油色） | #FFF8E7 |
+| 强调色 1 | Butter Yellow（奶油黄） | #FFFACD |
+| 强调色 2 | Sky Blue（天空蓝） | #BEE3F8 |
 
-## Decorative Hints
+## 装饰提示
 
-- Cute rounded proportions
-- Stars, sparkles, flowers, decorative flourishes
-- Soft shadows and gentle highlights
-- Storybook-style elements
+- 可爱圆润的比例
+- 星星、闪光、花朵和装饰花纹
+- 柔和阴影和轻柔高光
+- 故事书风格元素
 
-## Best For
+## 适用场景
 
-Fantasy, children, gentle content, creative, whimsical, casual, beginner guides
+奇幻、儿童、温和内容、创意、梦幻、休闲、入门指南

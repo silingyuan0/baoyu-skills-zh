@@ -1,48 +1,48 @@
 # hierarchical-layers
 
-Nested layers showing levels of importance, influence, or proximity.
+展示重要性、影响力或亲近度层级的嵌套层级。
 
-## Structure
+## 结构
 
-- Multiple layers from core to periphery
-- Core/top: most important/central
-- Outer/bottom: decreasing importance
-- 3-7 levels typically
-- Clear boundaries between levels
+- 从核心到外围的多层结构
+- 核心/顶部：最重要/中心
+- 外部/底部：递减的重要性
+- 通常 3-7 个层级
+- 层级之间边界清晰
 
-## Variants
+## 变体
 
-| Variant | Shape | Visual Emphasis |
+| 变体 | 形状 | 视觉强调 |
 |---------|-------|-----------------|
-| **Pyramid** | Triangle, vertical | Top-down hierarchy, quantity |
-| **Concentric** | Rings, radial | Center-out influence, proximity |
+| **金字塔** | 三角形、垂直 | 自上而下的层级、数量 |
+| **同心环** | 环形、放射状 | 由中心向外的影响力、亲近度 |
 
-## Best For
+## 适用场景
 
-- Maslow's hierarchy style concepts
-- Priority and importance levels
-- Spheres of influence
-- Organizational structures
-- Stakeholder analysis
+- 马斯洛层级的概念
+- 优先级和重要程度
+- 影响力范围
+- 组织结构
+- 利益相关者分析
 
-## Visual Elements
+## 视觉元素
 
-- Distinct color per level
-- Icons or illustrations per tier
-- Size indicates importance/quantity
-- Labels inside or beside layers
-- Decorative apex/center element
+- 每个层级不同的颜色
+- 每个层级配有图标或插图
+- 尺寸表示重要性/数量
+- 标签位于层级内部或旁边
+- 装饰性的顶部/中心元素
 
-## Text Placement
+## 文字布局
 
-- Title at top or side
-- Level names inside each tier
-- Brief descriptions outside
-- Quantities or percentages if relevant
-- Legend for color meanings
+- 标题置于顶部或侧面
+- 每个层级的名称在内部
+- 简短描述在外部
+- 适当时提供数量或百分比
+- 颜色含义的图例
 
-## Recommended Pairings
+## 推荐风格搭配
 
-- `craft-handmade`: Playful layered concepts
-- `corporate-memphis`: Business hierarchies
-- `technical-schematic`: Technical 3D pyramids
+- `craft-handmade`：趣味性的层级概念
+- `corporate-memphis`：商务层级
+- `technical-schematic`：技术性3D金字塔

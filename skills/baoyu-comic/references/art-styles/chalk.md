@@ -1,101 +1,101 @@
 # chalk
 
-粉笔画风 - Chalkboard aesthetic with hand-drawn warmth
+粉笔画风 - 黑板美学与手绘温度
 
-## Overview
+## 概述
 
-Classic classroom chalkboard aesthetic with hand-drawn chalk illustrations. Nostalgic educational feel with imperfect, sketchy lines that capture the warmth of traditional teaching.
+经典教室黑板美学，配合手绘粉笔插图。不完美的、速写风格的线条捕捉传统教学的温暖，带来怀旧的教育感。
 
-## Line Work
+## 线条处理
 
-- Sketchy, imperfect hand-drawn lines
-- Chalk texture on all strokes
-- Varying line weight from chalk pressure
-- Soft edges, no sharp digital lines
-- Visible chalk dust effects
+- 速写风格的、不完美的手绘线条
+- 所有笔触带有粉笔纹理
+- 粉笔压力造成的粗细变化
+- 柔和边缘，无锐利数字线条
+- 可见的粉笔灰效果
 
-## Character Design
+## 角色设计
 
-- Simplified, friendly character designs
-- Stick figures to semi-detailed range
-- Expressive through simple gestures
-- Approachable, non-intimidating
-- Educational presenter style
+- 简化、亲切的角色设计
+- 从火柴人到半精细的范围
+- 通过简单手势表达情感
+- 平易近人、不具压迫感
+- 教育演示者风格
 
-## Background
+## 背景
 
-- Chalkboard Black (#1A1A1A) or Dark Green-Black (#1C2B1C)
-- Realistic chalkboard texture
-- Subtle scratches and dust particles
-- Faint eraser marks for authenticity
-- Wooden frame border optional
+- 黑板黑（#1A1A1A）或暗绿黑（#1C2B1C）
+- 逼真的黑板纹理
+- 细微的划痕和粉尘颗粒
+- 淡淡的橡皮擦痕迹增添真实感
+- 可选木质边框
 
-## Typography
+## 字体排版
 
-- Hand-drawn chalk lettering style
-- Visible chalk texture on text
-- Imperfect baseline adds authenticity
-- White or bright colored chalk for emphasis
+- 手绘粉笔字体风格
+- 文字带有可见的粉笔纹理
+- 不完美的基线增添真实感
+- 白色或亮色粉笔用于强调
 
-## Visual Elements
+## 视觉元素
 
-- Hand-drawn chalk illustrations
-- Chalk dust effects around elements
-- Doodles: stars, arrows, underlines, circles
-- Mathematical formulas and diagrams
-- Eraser smudges and chalk residue
-- Stick figures and simple icons
-- Connection lines with hand-drawn feel
+- 手绘粉笔插图
+- 元素周围的粉笔灰效果
+- 涂鸦：星星、箭头、下划线、圆圈
+- 数学公式和图表
+- 橡皮擦涂抹和粉笔残迹
+- 火柴人和简单图标
+- 带有手绘感的连接线
 
-## Default Color Palette
+## 默认调色板
 
-| Role | Color | Hex |
-|------|-------|-----|
-| Background | Chalkboard Black | #1A1A1A |
-| Alt Background | Green-Black | #1C2B1C |
-| Primary Text | Chalk White | #F5F5F5 |
-| Accent 1 | Chalk Yellow | #FFE566 |
-| Accent 2 | Chalk Pink | #FF9999 |
-| Accent 3 | Chalk Blue | #66B3FF |
-| Accent 4 | Chalk Green | #90EE90 |
-| Accent 5 | Chalk Orange | #FFB366 |
+| 角色 | 颜色 | 色值 |
+|------|------|------|
+| 背景 | 黑板黑 | #1A1A1A |
+| 备选背景 | 绿黑色 | #1C2B1C |
+| 主文字 | 粉笔白 | #F5F5F5 |
+| 强调色 1 | 粉笔黄 | #FFE566 |
+| 强调色 2 | 粉笔粉 | #FF9999 |
+| 强调色 3 | 粉笔蓝 | #66B3FF |
+| 强调色 4 | 粉笔绿 | #90EE90 |
+| 强调色 5 | 粉笔橙 | #FFB366 |
 
-## Style Rules
+## 风格规则
 
-### Do
-- Maintain authentic chalk texture on all elements
-- Use imperfect, hand-drawn quality throughout
-- Add subtle chalk dust and smudge effects
-- Create visual hierarchy with color variety
-- Include playful doodles and annotations
+### 应该
+- 在所有元素上保持真实的粉笔纹理
+- 始终使用不完美的手绘质感
+- 添加细微的粉笔灰和涂抹效果
+- 通过色彩变化创建视觉层次
+- 包含有趣的涂鸦和注释
 
-### Don't
-- Use perfect geometric shapes
-- Create clean digital-looking lines
-- Add photorealistic elements
-- Use gradients or glossy effects
+### 不应
+- 使用完美的几何形状
+- 创建干净的数字风格线条
+- 添加照片写实元素
+- 使用渐变或光泽效果
 
-## Quality Markers
+## 质量标准
 
-- ✓ Authentic chalk texture throughout
-- ✓ Imperfect, hand-drawn quality
-- ✓ Readable despite sketchy style
-- ✓ Nostalgic classroom feel
-- ✓ Effective color hierarchy
-- ✓ Playful educational aesthetic
+- 全程保持真实的粉笔纹理
+- 不完美的手绘质感
+- 速写风格但不失可读性
+- 怀旧的教室氛围
+- 有效的色彩层次
+- 有趣的教育美学
 
-## Compatibility
+## 兼容性
 
-| Tone | Fit | Notes |
-|------|-----|-------|
-| neutral | ✓✓ | Classic educational |
-| warm | ✓✓ | Nostalgic feel |
-| dramatic | ✗ | Style mismatch |
-| vintage | ✓ | Old school feel |
-| romantic | ✗ | Style mismatch |
-| energetic | ✓✓ | Fun learning |
-| action | ✗ | Style mismatch |
+| 基调 | 适配度 | 备注 |
+|------|--------|------|
+| neutral | 极佳 | 经典教育风 |
+| warm | 极佳 | 怀旧感 |
+| dramatic | 不适配 | 风格不匹配 |
+| vintage | 良好 | 老派感觉 |
+| romantic | 不适配 | 风格不匹配 |
+| energetic | 极佳 | 趣味学习 |
+| action | 不适配 | 风格不匹配 |
 
-## Best For
+## 适合场景
 
-Educational content, tutorials, classroom themes, teaching materials, workshops, informal learning, knowledge sharing
+教育类内容、教程、教室主题、教学材料、工作坊、非正式学习、知识分享

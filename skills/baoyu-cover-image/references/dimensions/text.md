@@ -1,111 +1,106 @@
----
-name: text-dimension
-description: Text density dimension for cover images
----
+# 文本维度
 
-# Text Dimension
+控制封面图片的文本密度和信息层级。
 
-Controls text density and information hierarchy on cover images.
+## 值
 
-## Values
-
-| Value | Title | Subtitle | Tags | Visual Area |
+| 值 | 标题 | 副标题 | 标签 | 视觉区域 |
 |-------|:-----:|:--------:|:----:|:-----------:|
 | `none` | - | - | - | 100% |
 | `title-only` | ✓ | - | - | 85% |
 | `title-subtitle` | ✓ | ✓ | - | 75% |
 | `text-rich` | ✓ | ✓ | ✓ (2-4) | 60% |
 
-## Detail
+## 详细说明
 
 ### none
 
-Pure visual cover with no text elements.
+纯视觉封面，无文字元素。
 
-**Use Cases**:
-- Photography-focused covers
-- Abstract art pieces
-- Visual-only social sharing
-- When title added externally
+**使用场景**：
+- 摄影为主封面
+- 抽象艺术作品
+- 纯视觉社交分享
+- 外部添加标题
 
-**Composition**:
-- Full visual area available
-- No reserved text zones
-- Emphasis on visual metaphor
+**构图**：
+- 可用完整视觉区域
+- 无预留文字区域
+- 强调视觉隐喻
 
 ### title-only
 
-Single headline, maximum impact.
+单一标题，最大冲击力。
 
-**Use Cases**:
-- Most article covers (default)
-- Clear single message
-- Strong brand recognition
+**使用场景**：
+- 大多数文章封面（默认）
+- 清晰的单一信息
+- 强烈的品牌识别
 
-**Composition**:
-- Title: prominent placement
-- Reserved zone: top or bottom 15%
-- Visual supports title message
+**构图**：
+- 标题：突出位置
+- 预留区域：顶部或底部 15%
+- 视觉支持标题信息
 
-**Title Guidelines**:
-- Use exact title from source content or user-provided title
-- Do NOT invent or modify titles
-- Match content language
+**标题指南**：
+- 使用来源内容的准确标题或用户提供的标题
+- 不得杜撰或修改标题
+- 匹配内容语言
 
 ### title-subtitle
 
-Title with supporting context.
+带辅助说明的标题。
 
-**Use Cases**:
-- Technical articles needing clarification
-- Series with episode/part info
-- Content with dual messages
+**使用场景**：
+- 需要解释的技术文章
+- 带集数/期数信息的系列内容
+- 双重信息内容
 
-**Composition**:
-- Title: primary element
-- Subtitle: secondary element
-- Reserved zone: 25%
-- Clear hierarchy between title/subtitle
+**构图**：
+- 标题：主要元素
+- 副标题：次要元素
+- 预留区域：25%
+- 标题/副标题层级分明
 
-**Title Guidelines**:
-- Use exact title from source content or user-provided title
-- Do NOT invent or modify titles
+**标题指南**：
+- 使用来源内容的准确标题或用户提供的标题
+- 不得杜撰或修改标题
 
-**Subtitle Guidelines**:
-- Clarify or contextualize title
-- Can include series name, author, date
-- Smaller, less prominent than title
+**副标题指南**：
+- 解释或说明标题
+- 可包含系列名称、作者、日期
+- 比标题小、醒目度低
 
 ### text-rich
 
-Information-dense cover with multiple text elements.
+多文字元素的信息密集型封面。
 
-**Use Cases**:
-- Infographic-style covers
-- Event announcements with details
-- Promotional material with features
-- Content with multiple key points
+**使用场景**：
+- 信息图风格封面
+- 带详情的事件公告
+- 带功能卖点的促销材料
+- 多个要点的内容
 
-**Composition**:
-- Title: primary focus
-- Subtitle: supporting info
-- Tags: 2-4 keyword labels
-- Reserved zone: 40%
-- Clear visual hierarchy
+**构图**：
+- 标题：主要焦点
+- 副标题：辅助信息
+- 标签：2-4 个关键词标签
+- 预留区域：40%
+- 清晰的视觉层级
 
-**Title Guidelines**:
-- Use exact title from source content or user-provided title
-- Do NOT invent or modify titles
+**标题指南**：
+- 使用来源内容的准确标题或用户提供的标题
+- 不得杜撰或修改标题
 
-**Tag Guidelines**:
-- 2-4 tags maximum
-- Short keywords (1-2 words each)
-- Positioned as badges/labels
-- Can highlight: category, date, author, key features
+**标签指南**：
+- 最多 2-4 个标签
+- 短关键词（每个 1-2 个词）
+- 作为徽章/标签定位
+- 可突出显示：分类、日期、作者、关键功能
 
-## Type Compatibility
+## 类型兼容性
 
-| Type | none | title-only | title-subtitle | text-rich |
+| 类型 | none | title-only | title-subtitle | text-rich |
 |------|:----:|:----------:|:--------------:|:---------:|
 | hero | ✓ | ✓✓ | ✓✓ | ✓ |
 | conceptual | ✓✓ | ✓✓ | ✓ | ✓ |
@@ -114,17 +109,17 @@ Information-dense cover with multiple text elements.
 | scene | ✓✓ | ✓ | ✓ | ✗ |
 | minimal | ✓✓ | ✓✓ | ✓ | ✗ |
 
-✓✓ = highly recommended | ✓ = compatible | ✗ = not recommended
+✓✓ = 强烈推荐 | ✓ = 兼容 | ✗ = 不推荐
 
-## Auto Selection
+## 自动选择
 
-When `--text` is omitted, select based on signals:
+当 `--text` 省略时，根据信号选择：
 
-| Signals | Text Level |
+| 信号 | 文本级别 |
 |---------|------------|
-| Visual-only, photography, abstract, art | `none` |
-| Article, blog, standard cover | `title-only` |
-| Series, tutorial, technical with context | `title-subtitle` |
-| Announcement, features, multiple points, infographic | `text-rich` |
+| 纯视觉、摄影、抽象、艺术 | `none` |
+| 文章、博客、标准封面 | `title-only` |
+| 系列、教程、带说明的技术内容 | `title-subtitle` |
+| 公告、功能、多个要点、信息图 | `text-rich` |
 
-Default: `title-only`
+默认：`title-only`

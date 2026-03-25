@@ -1,48 +1,48 @@
 # binary-comparison
 
-Side-by-side comparison of two items, states, or concepts.
+对两个项目、状态或概念进行并列对比。
 
-## Structure
+## 结构
 
-- Vertical divider splitting image in half
-- Left side: Item A / Before / Pro
-- Right side: Item B / After / Con
-- Mirrored layout for easy comparison
-- Clear visual distinction between sides
+- 垂直分割线将图像平分
+- 左侧：项目 A / 之前 / 优点
+- 右侧：项目 B / 之后 / 缺点
+- 镜像布局便于对比
+- 两侧之间有清晰的视觉区分
 
-## Variants
+## 变体
 
-| Variant | Focus | Visual Emphasis |
+| 变体 | 重点 | 视觉强调 |
 |---------|-------|-----------------|
-| **Before-After** | Transformation over time | Temporal change, improvement |
-| **A vs B** | Feature comparison | Direct contrast, differences |
-| **Pro-Con** | Advantages/disadvantages | Balanced evaluation |
+| **前后对比** | 随时间的变化 | 时间变化、改进 |
+| **A 对 B** | 功能对比 | 直接对比、差异 |
+| **优缺点** | 优势/劣势 | 平衡评估 |
 
-## Best For
+## 适用场景
 
-- Before/after transformations
-- Product or option comparisons
-- Pros and cons analysis
-- Old vs new comparisons
-- Two perspectives on a topic
+- 前后对比
+- 产品或选项对比
+- 优缺点分析
+- 新旧对比
+- 话题的两种视角
 
-## Visual Elements
+## 视觉元素
 
-- Strong vertical dividing line or gradient
-- Contrasting colors per side
-- Matching element positions for comparison
-- VS symbol or divider decoration
-- Transformation arrow for before-after
+- 强烈的垂直分割线或渐变
+- 每侧使用对比色
+- 对比元素位置相匹配
+- VS 符号或分割线装饰
+- 前后对比的转变箭头
 
-## Text Placement
+## 文字布局
 
-- Main title centered at top
-- Side labels (A/B, Before/After)
-- Corresponding points aligned horizontally
-- Summary at bottom if needed
+- 主标题居中置于顶部
+- 侧面标签（A/B、之前/之后）
+- 对应点水平对齐
+- 需要时在底部添加摘要
 
-## Recommended Pairings
+## 推荐风格搭配
 
-- `corporate-memphis`: Business comparisons
-- `bold-graphic`: High-contrast dramatic comparisons
-- `craft-handmade`: Friendly explainers
+- `corporate-memphis`：商务对比
+- `bold-graphic`：高对比度的戏剧性对比
+- `craft-handmade`：亲切的解释说明

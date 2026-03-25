@@ -1,59 +1,59 @@
 # playful
 
-Fun, creative illustration style for casual and educational content
+休闲和教育内容的趣味创意插图风格
 
-## Design Aesthetic
+## 设计美学
 
-Whimsical and entertaining visual approach that sparks joy. Pastel colors with bright pops of energy. Doodle-like quality that feels approachable and fun. Creates a sense of play and discovery. Encourages engagement through visual delight.
+俏皮有趣的视觉方法，激发欢乐。粉彩基调配合明亮的活力点缀。涂鸦般的气质，平易近人且有趣。营造玩耍和发现的感觉。通过视觉愉悦鼓励参与。
 
-## Background
+## 背景
 
-- Color: Light Cream (#FFFBEB) or Soft White (#FFF)
-- Texture: Subtle, playful pattern or clean
+- 颜色：浅奶油色（#FFFBEB）或柔和白色（#FFF）
+- 纹理：细微、活泼图案或干净
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
+| 角色 | 颜色 | Hex | 用途 |
 |------|-------|-----|-------|
-| Background | Light Cream | #FFFBEB | Primary background |
-| Primary | Pastel Pink | #FED7E2 | Soft warmth |
-| Secondary | Mint | #C6F6D5 | Fresh energy |
-| Tertiary | Lavender | #E9D8FD | Dreamy touch |
-| Accent 1 | Sky Blue | #BEE3F8 | Calm brightness |
-| Accent 2 | Bright Yellow | #FBBF24 | Energy pop |
-| Accent 3 | Coral | #F6AD55 | Warm pop |
-| Accent 4 | Turquoise | #38B2AC | Cool pop |
-| Text | Soft Charcoal | #4A4A4A | Text elements |
+| 背景 | 浅奶油色 | #FFFBEB | 主背景 |
+| 主色 | 粉红色 | #FED7E2 | 柔和温暖 |
+| 次要色 | 薄荷绿 | #C6F6D5 | 新鲜能量 |
+| 第三色 | 薰衣草色 | #E9D8FD | 梦幻触感 |
+| 强调色 1 | 天蓝色 | #BEE3F8 | 平静明亮 |
+| 强调色 2 | 亮黄色 | #FBBF24 | 活力点缀 |
+| 强调色 3 | 珊瑚色 | #F6AD55 | 温暖点缀 |
+| 强调色 4 | 青绿色 | #38B2AC | 冷色点缀 |
+| 文本 | 柔和炭灰色 | #4A4A4A | 文本元素 |
 
-## Visual Elements
+## 视觉元素
 
-- Doodles and sketchy lines
-- Star and sparkle decorations
-- Swirls and curvy elements
-- Cute character illustrations
-- Speech bubbles and callouts
-- Emoji-style icons
-- Confetti and celebration marks
-- Playful hand-lettering
+- 涂鸦和草图线条
+- 星星和闪光装饰
+- 漩涡和弯曲元素
+- 可爱角色插图
+- 对话气泡和标注
+- 表情符号风格图标
+- 彩屑和庆祝标记
+- 活泼手写文字
 
-## Style Rules
+## 风格规则
 
-### Do
+### 宜
 
-- Use varied pastel palette
-- Add whimsical decorations
-- Create friendly characters
-- Include playful details
-- Keep energy high and positive
+- 使用多样化粉彩调色板
+- 添加俏皮装饰
+- 创建友好角色
+- 包含活泼细节
+- 保持高能量和正面
 
-### Don't
+### 忌
 
-- Use dark or moody colors
-- Create serious compositions
-- Add corporate elements
-- Use rigid geometric shapes
-- Make it feel professional
+- 使用深色或沉闷颜色
+- 创建严肃构图
+- 添加企业元素
+- 使用僵硬几何形状
+- 使其显得专业
 
-## Best For
+## 适用于
 
-Tutorials and guides, beginner-friendly content, casual articles, fun topics, children's content, hobby-related posts, entertaining explanations
+教程和指南、入门友好内容、休闲文章、有趣话题、儿童内容、爱好相关帖子、娱乐性解释

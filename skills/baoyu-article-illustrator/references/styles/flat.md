@@ -1,59 +1,59 @@
 # flat
 
-Modern flat vector illustration style for contemporary content
+现代扁平矢量插图风格，适合当代内容
 
-## Design Aesthetic
+## 设计美学
 
-Contemporary flat design aesthetic with bold shapes and limited depth. Clean geometric forms with no gradients or shadows. Modern, accessible, and highly readable. Optimized for digital consumption with scalable vector quality.
+当代扁平设计美学，大胆形状和有限深度。干净的几何形态，无渐变或阴影。现代、易读性高。针对数字消费优化，具备可缩放矢量质量。
 
-## Background
+## 背景
 
-- Color: White (#FFFFFF) or Soft Gray (#F5F5F5)
-- Texture: None - clean solid backgrounds
+- 颜色：白色（#FFFFFF）或柔灰（#F5F5F5）
+- 纹理：无——纯净实色背景
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
-|------|-------|-----|-------|
-| Background | White | #FFFFFF | Primary background |
-| Alt Background | Soft Gray | #F5F5F5 | Accent areas |
-| Primary | Vibrant Blue | #3B82F6 | Main elements |
-| Secondary | Coral | #F97316 | Supporting elements |
-| Tertiary | Emerald | #10B981 | Accent elements |
-| Accent 1 | Purple | #8B5CF6 | Additional accent |
-| Accent 2 | Amber | #F59E0B | Highlight |
-| Text | Dark Slate | #1E293B | Text elements |
-| Light | Light Gray | #E5E7EB | Subtle elements |
+| 角色 | 颜色 | 色值 | 用途 |
+|------|------|------|------|
+| 背景 | 白色 | #FFFFFF | 主背景 |
+| 备选背景 | 柔灰 | #F5F5F5 | 强调区域 |
+| 主色 | 鲜蓝 | #3B82F6 | 主要元素 |
+| 次色 | 珊瑚色 | #F97316 | 辅助元素 |
+| 第三色 | 翡翠绿 | #10B981 | 强调元素 |
+| 强调色 1 | 紫色 | #8B5CF6 | 附加强调 |
+| 强调色 2 | 琥珀色 | #F59E0B | 高亮 |
+| 文字 | 深岩色 | #1E293B | 文字元素 |
+| 浅色 | 浅灰 | #E5E7EB | 微妙元素 |
 
-## Visual Elements
+## 视觉元素
 
-- Bold geometric shapes
-- Flat color fills with no gradients
-- Simple character illustrations
-- Clean icon designs
-- Minimal line work
-- Overlapping shape compositions
-- Abstract concept visualizations
-- Consistent stroke weights
+- 大胆的几何形状
+- 无渐变的平涂色填充
+- 简约角色插图
+- 干净的图标设计
+- 极简线条
+- 形状叠加构图
+- 抽象概念可视化
+- 一致的线宽
 
-## Style Rules
+## 风格规则
 
-### Do
+### 推荐做法
 
-- Use flat solid colors
-- Create clean geometric shapes
-- Keep elements simple
-- Maintain consistent styling
-- Use bold color combinations
+- 使用扁平实色
+- 创建干净的几何形状
+- 保持元素简洁
+- 维持一致的风格
+- 使用大胆的色彩组合
 
-### Don't
+### 避免做法
 
-- Add shadows or depth
-- Use gradients or textures
-- Create realistic illustrations
-- Add unnecessary details
-- Use photographic elements
+- 添加阴影或深度
+- 使用渐变或纹理
+- 创建写实插图
+- 添加不必要的细节
+- 使用摄影元素
 
-## Best For
+## 适用场景
 
-Modern articles, app and product content, startup stories, digital topics, contemporary business, tech company blogs, social media content
+现代文章、应用与产品内容、创业故事、数字主题、当代商务、科技公司博客、社交媒体内容

@@ -146,7 +146,7 @@ async function waitForUserSignal(): Promise<void> {
   });
 }
 
-async function captureUrl(args: Args): Promise<ConversionResult> {
+async function captureUrl(args: Args): Promise<{ result: ConversionResult; videoUrls: string[] }> {
   const existingPort = await findExistingChromePort();
   const reusing = existingPort !== null;
   const port = existingPort ?? await getFreePort();
@@ -179,6 +179,21 @@ async function captureUrl(args: Args): Promise<ConversionResult> {
       await cdp.send("Page.enable", {}, { sessionId });
     }
 
+    // Collect video URLs from network requests (e.g. video.twimg.com blob replacements)
+    // Only keep master .m3u8 playlists — one per video ID
+    const videoUrls: string[] = [];
+    const seenVideoIds = new Set<string>();
+    const onNetworkRequest = (params: { request?: { url?: string } }) => {
+      const url = params.request?.url ?? '';
+      // Match master playlist: /amplify_video/{id}/pl/{name}.m3u8 (no extra path segments)
+      const match = url.match(/video\.twimg\.com\/amplify_video\/(\d+)\/pl\/([^/]+\.m3u8)/);
+      if (match && !seenVideoIds.has(match[1])) {
+        seenVideoIds.add(match[1]);
+        videoUrls.push(url);
+      }
+    };
+    cdp.on("Network.requestWillBeSent", onNetworkRequest);
+
     if (args.wait) {
       await waitForUserSignal();
     } else {
@@ -194,12 +209,15 @@ async function captureUrl(args: Args): Promise<ConversionResult> {
       await sleep(POST_LOAD_DELAY_MS);
     }
 
+    cdp.off("Network.requestWillBeSent", onNetworkRequest);
+    if (videoUrls.length > 0) console.log(`Captured ${videoUrls.length} video URL(s) from network`);
+
     console.log("Capturing page content...");
     const { html } = await evaluateScript<{ html: string }>(
       cdp, sessionId, absolutizeUrlsScript, args.timeout
     );
 
-    return await extractContent(html, args.url);
+    return { result: await extractContent(html, args.url), videoUrls };
   } finally {
     if (reusing) {
       if (cdp && targetId) {
@@ -248,7 +266,7 @@ async function main(): Promise<void> {
   let fallbackReason: string | undefined;
 
   try {
-    const result = await captureUrl(args);
+    const { result, videoUrls } = await captureUrl(args);
     outputPath = args.output || await generateOutputPath(args.url, result.metadata.title, args.outputDir);
     const outputDir = path.dirname(outputPath);
     htmlSnapshotPath = deriveHtmlSnapshotPath(outputPath);
@@ -256,6 +274,10 @@ async function main(): Promise<void> {
     await writeFile(htmlSnapshotPath, result.rawHtml, "utf-8");
 
     document = createMarkdownDocument(result);
+    // Inject captured video URLs as video links so media-localizer can download them
+    if (videoUrls.length > 0) {
+      document += "\n\n<!-- videos -->\n" + videoUrls.map((url, i) => `![video-${i + 1}](${url})`).join("\n") + "\n";
+    }
     conversionMethod = result.conversionMethod;
     fallbackReason = result.fallbackReason;
   } catch (error) {

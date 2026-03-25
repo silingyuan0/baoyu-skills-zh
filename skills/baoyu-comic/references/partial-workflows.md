@@ -1,123 +1,123 @@
-# Partial Workflows
+# 部分工作流
 
-Options to run specific parts of the workflow.
+运行工作流特定部分的选项。
 
-## Options Summary
+## 选项概览
 
-| Option | Steps Executed | Output |
+| 选项 | 执行的步骤 | 输出 |
 |--------|----------------|--------|
 | `--storyboard-only` | 1-3 | `storyboard.md` + `characters/` |
 | `--prompts-only` | 1-5 | + `prompts/*.md` |
-| `--images-only` | 7-9 | + images + PDF |
-| `--regenerate N` | 7 (partial) | Specific page(s) + PDF |
+| `--images-only` | 7-9 | + 图像 + PDF |
+| `--regenerate N` | 7（部分） | 指定页面 + PDF |
 
 ---
 
-## Using `--storyboard-only`
+## 使用 `--storyboard-only`
 
-Generate storyboard and characters without prompts or images:
+生成分镜故事板和角色，不包含提示词或图像：
 
 ```bash
 /baoyu-comic content.md --storyboard-only
 ```
 
-**Workflow**: Steps 1-3 only (stop after storyboard + characters)
+**工作流**：仅步骤 1-3（分镜故事板 + 角色后停止）
 
-**Output**:
+**输出**：
 - `analysis.md`
 - `storyboard.md`
 - `characters/characters.md`
 
-**Use case**: Review and edit the storyboard before generating images. Useful for:
-- Getting feedback on the narrative structure
-- Making manual adjustments to panel layouts
-- Defining custom characters
+**使用场景**：在生成图像之前审核和编辑分镜故事板。适用于：
+- 获取有关叙事结构的反馈
+- 手动调整面板布局
+- 定义自定义角色
 
 ---
 
-## Using `--prompts-only`
+## 使用 `--prompts-only`
 
-Generate storyboard, characters, and prompts without images:
+生成分镜故事板、角色和提示词，不包含图像：
 
 ```bash
 /baoyu-comic content.md --prompts-only
 ```
 
-**Workflow**: Steps 1-5 (generate prompts, skip images)
+**工作流**：步骤 1-5（生成提示词，跳过图像）
 
-**Output**:
+**输出**：
 - `analysis.md`
 - `storyboard.md`
 - `characters/characters.md`
 - `prompts/*.md`
 
-**Use case**: Review and edit prompts before image generation. Useful for:
-- Fine-tuning image generation prompts
-- Ensuring visual consistency before committing to generation
-- Making style adjustments at the prompt level
+**使用场景**：在图像生成之前审核和编辑提示词。适用于：
+- 微调图像生成提示词
+- 在提交生成之前确保视觉一致性
+- 在提示词级别进行风格调整
 
 ---
 
-## Using `--images-only`
+## 使用 `--images-only`
 
-Generate images from existing prompts (starts at Step 7):
+从现有提示词生成图像（从步骤 7 开始）：
 
 ```bash
 /baoyu-comic comic/topic-slug/ --images-only
 ```
 
-**Workflow**: Skip to Step 7, then 8-9
+**工作流**：跳至步骤 7，然后 8-9
 
-**Prerequisites** (must exist in directory):
-- `prompts/` directory with page prompt files
-- `storyboard.md` with style information
-- `characters/characters.md` with character definitions
+**前置条件**（必须存在）：
+- 包含页面提示词文件的 `prompts/` 目录
+- 包含样式信息的 `storyboard.md`
+- 包含角色定义的 `characters/characters.md`
 
-**Output**:
-- `characters/characters.png` (if not exists)
-- `NN-{cover|page}-[slug].png` images
+**输出**：
+- `characters/characters.png`（如果不存在）
+- `NN-{cover|page}-[slug].png` 图像
 - `{topic-slug}.pdf`
 
-**Use case**: Re-generate images after editing prompts. Useful for:
-- Recovering from failed image generation
-- Trying different image generation settings
-- Regenerating after manual prompt edits
+**使用场景**：编辑提示词后重新生成图像。适用于：
+- 从失败的图像生成中恢复
+- 尝试不同的图像生成设置
+- 手动编辑提示词后重新生成
 
 ---
 
-## Using `--regenerate`
+## 使用 `--regenerate`
 
-Regenerate specific pages only:
+仅重新生成特定页面：
 
 ```bash
-# Single page
+# 单页
 /baoyu-comic comic/topic-slug/ --regenerate 3
 
-# Multiple pages
+# 多页
 /baoyu-comic comic/topic-slug/ --regenerate 2,5,8
 
-# Cover page
+# 封面
 /baoyu-comic comic/topic-slug/ --regenerate 0
 ```
 
-**Workflow**:
-1. Read existing prompts for specified pages
-2. Regenerate images only for those pages
-3. Regenerate PDF
+**工作流**：
+1. 读取指定页面的现有提示词
+2. 仅重新生成那些页面的图像
+3. 重新生成 PDF
 
-**Prerequisites** (must exist):
-- `prompts/NN-{cover|page}-[slug].md` for specified pages
-- `characters/characters.png` (for reference)
+**前置条件**（必须存在）：
+- 指定页面的 `prompts/NN-{cover|page}-[slug].md`
+- `characters/characters.png`（作为参考）
 
-**Output**:
-- Regenerated `NN-{cover|page}-[slug].png` for specified pages
-- Updated `{topic-slug}.pdf`
+**输出**：
+- 重新生成指定页面的 `NN-{cover|page}-[slug].png`
+- 更新的 `{topic-slug}.pdf`
 
-**Use case**: Fix specific pages without regenerating entire comic. Useful for:
-- Fixing a single problematic page
-- Iterating on specific visuals
-- Regenerating pages after prompt edits
+**使用场景**：重新生成部分页面而非整个漫画。适用于：
+- 修复单个有问题的页面
+- 迭代特定视觉效果
+- 编辑提示词后重新生成页面
 
-**Page numbering**:
-- `0` = Cover page
-- `1-N` = Content pages
+**页码编号**：
+- `0` = 封面
+- `1-N` = 内容页

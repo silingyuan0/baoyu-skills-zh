@@ -1,269 +1,269 @@
-# Outline Template
+# 大纲模板
 
-Standard structure for slide deck outlines with style instructions.
+带样式说明的幻灯片大纲标准结构。
 
-## Outline Format
+## 大纲格式
 
 ```markdown
-# Slide Deck Outline
+# 幻灯片大纲
 
-**Topic**: [topic description]
-**Style**: [preset name OR "custom"]
-**Dimensions**: [texture] + [mood] + [typography] + [density]
-**Audience**: [target audience]
-**Language**: [output language]
-**Slide Count**: N slides
-**Generated**: YYYY-MM-DD HH:mm
+**主题**：[topic description]
+**样式**：[preset name OR "custom"]
+**维度**：[texture] + [mood] + [typography] + [density]
+**受众**：[target audience]
+**语言**：[output language]
+**幻灯片数量**：N slides
+**生成时间**：YYYY-MM-DD HH:mm
 
 ---
 
 <STYLE_INSTRUCTIONS>
-Design Aesthetic: [2-3 sentence description combining dimension characteristics]
+设计美学：[结合维度特征的2-3句描述]
 
-Background:
-  Texture: [from texture dimension]
-  Base Color: [from mood dimension palette]
+背景：
+  纹理：[from texture dimension]
+  基色：[from mood dimension palette]
 
-Typography:
-  Headlines: [from typography dimension - describe visual appearance]
-  Body: [from typography dimension - describe visual appearance]
+排版：
+  标题：[from typography dimension - 描述视觉外观]
+  正文：[from typography dimension - 描述视觉外观]
 
-Color Palette:
-  Primary Text: [Name] ([Hex]) - [usage]
-  Background: [Name] ([Hex]) - [usage]
-  Accent 1: [Name] ([Hex]) - [usage]
-  Accent 2: [Name] ([Hex]) - [usage]
+色彩调色板：
+  主文字：[Name] ([Hex]) - [usage]
+  背景：[Name] ([Hex]) - [usage]
+  强调1：[Name] ([Hex]) - [usage]
+  强调2：[Name] ([Hex]) - [usage]
 
-Visual Elements:
-  - [element 1 from texture + mood combination]
-  - [element 2 with rendering guidance]
+视觉元素：
+  - [来自纹理 + 氛围组合的元素1]
+  - [带渲染指导的元素2]
   - ...
 
-Density Guidelines:
-  - Content per slide: [from density dimension]
-  - Whitespace: [from density dimension]
+密度指南：
+  - 每张幻灯片内容：[from density dimension]
+  - 留白：[from density dimension]
 
-Style Rules:
-  Do: [guidelines from dimension combinations]
-  Don't: [anti-patterns from dimension combinations]
+样式规则：
+  做：[来自维度组合的指南]
+  不做：[来自维度组合的反模式]
 </STYLE_INSTRUCTIONS>
 
 ---
 
-[Slide entries follow...]
+[幻灯片条目 follow...]
 ```
 
-## Building STYLE_INSTRUCTIONS from Dimensions
+## 从维度构建 STYLE_INSTRUCTIONS
 
-When using custom dimensions or presets, build STYLE_INSTRUCTIONS by combining:
+使用自定义维度或预设时，通过组合以下内容构建 STYLE_INSTRUCTIONS：
 
-### 1. Design Aesthetic
+### 1. 设计美学
 
-Combine characteristics from all four dimensions into 2-3 sentences:
+将所有四个维度的特征组合成2-3句话：
 
-| Texture | Contribution |
+| 纹理 | 贡献 |
 |---------|--------------|
-| clean | "Clean, digital precision with crisp edges" |
-| grid | "Technical grid overlay with engineering precision" |
-| organic | "Hand-drawn feel with soft textures" |
-| pixel | "Chunky pixel aesthetic with 8-bit charm" |
-| paper | "Aged paper texture with vintage character" |
+| clean | "干净、数字精度、锐利边缘" |
+| grid | "技术网格叠加，工程精度" |
+| organic | "手绘感、柔和纹理" |
+| pixel | "块状像素美学、8位魅力" |
+| paper | "年旧纸张纹理、复古特色" |
 
-| Mood | Contribution |
+| 氛围 | 贡献 |
 |------|--------------|
-| professional | "Professional navy and gold palette" |
-| warm | "Warm earth tones creating approachable atmosphere" |
-| cool | "Cool analytical blues and grays" |
-| vibrant | "Bold, high-saturation colors with energy" |
-| dark | "Deep cinematic backgrounds with glowing accents" |
-| neutral | "Minimal grayscale sophistication" |
+| professional | "专业海军蓝和金色调色板" |
+| warm | "温暖大地色调，创造平易近人氛围" |
+| cool | "冷调分析蓝和灰色" |
+| vibrant | "粗体、高饱和度色彩，充满能量" |
+| dark | "深色电影背景，带发光强调" |
+| neutral | "最小灰度精致感" |
 
-### 2. Background
+### 2. 背景
 
-From `references/dimensions/texture.md`:
-- Texture description
-- Base color from mood palette
+来自 `references/dimensions/texture.md`：
+- 纹理描述
+- 来自氛围调色板的基色
 
-### 3. Typography
+### 3. 排版
 
-From `references/dimensions/typography.md`:
-- Headline visual description (NOT font names)
-- Body text visual description (NOT font names)
+来自 `references/dimensions/typography.md`：
+- 标题视觉描述（不是字体名称）
+- 正文字视觉描述（不是字体名称）
 
-**Important**: Describe appearance for image generation: "bold geometric sans-serif with perfect circular O shapes" NOT "Inter font".
+**重要**：为图片生成描述外观："粗体几何无衬线，完美的圆形 O 形状"而不是"Inter 字体"。
 
-### 4. Color Palette
+### 4. 色彩调色板
 
-From `references/dimensions/mood.md`:
-- Copy the palette specifications for the selected mood
-- Include hex codes and usage notes
+来自 `references/dimensions/mood.md`：
+- 为所选氛围复制调色板规格
+- 包含十六进制代码和用法说明
 
-### 5. Visual Elements
+### 5. 视觉元素
 
-Combine texture and mood characteristics:
+组合纹理和氛围特征：
 
-| Combination | Visual Elements |
+| 组合 | 视觉元素 |
 |-------------|-----------------|
-| clean + professional | Clean charts, outlined icons, structured grids |
-| grid + cool | Technical schematics, dimension lines, blueprints |
-| organic + warm | Hand-drawn icons, brush strokes, doodles |
-| pixel + vibrant | Pixel art icons, retro game elements |
-| paper + warm | Vintage stamps, aged elements, sepia overlays |
+| clean + professional | 干净图表、带轮廓的图标、结构化网格 |
+| grid + cool | 技术原理图、尺寸线、蓝图 |
+| organic + warm | 手绘图标、brush 笔触、涂鸦 |
+| pixel + vibrant | 像素艺术图标、复古游戏元素 |
+| paper + warm | 复古印章、老化元素、棕褐色叠加 |
 
-### 6. Density Guidelines
+### 6. 密度指南
 
-From `references/dimensions/density.md`:
-- Content per slide limits
-- Whitespace requirements
-- Element count guidelines
+来自 `references/dimensions/density.md`：
+- 每张幻灯片内容限制
+- 留白要求
+- 元素数量指南
 
-### 7. Style Rules
+### 7. 样式规则
 
-Combine dimension-specific rules:
+组合维度特定规则：
 
-**Do rules by texture**:
-- clean: Maintain sharp edges, use grid alignment
-- grid: Show precise measurements, use technical diagrams
-- organic: Allow imperfection, layer with subtle overlaps
-- pixel: Keep aliased edges, use chunky elements
-- paper: Add subtle aging effects, use warm tones
+**按纹理的做规则**：
+- clean：保持锐利边缘，使用网格对齐
+- grid：显示精确测量，使用技术图表
+- organic：允许不完美，微妙叠加分层
+- pixel：保持锯齿状边缘，使用块状元素
+- paper：添加微妙老化效果，使用暖色调
 
-**Don't rules by texture**:
-- clean: Don't use hand-drawn elements
-- grid: Don't use organic curves
-- organic: Don't use perfect geometry
-- pixel: Don't smooth edges
-- paper: Don't use bright digital colors
+**按纹理的不做规则**：
+- clean：不要使用手绘元素
+- grid：不要使用有机曲线
+- organic：不要使用完美几何
+- pixel：不要平滑边缘
+- paper：不要使用明亮的数字颜色
 
-## Cover Slide Template
-
-```markdown
-## Slide 1 of N
-
-**Type**: Cover
-**Filename**: 01-slide-cover.png
-
-// NARRATIVE GOAL
-[What this slide achieves in the story arc]
-
-// KEY CONTENT
-Headline: [main title]
-Sub-headline: [supporting tagline]
-
-// VISUAL
-[Detailed visual description - specific elements, composition, mood]
-
-// LAYOUT
-Layout: [optional: layout name from gallery, e.g., title-hero]
-[Composition, hierarchy, spatial arrangement]
-```
-
-## Content Slide Template
+## 封面幻灯片模板
 
 ```markdown
-## Slide X of N
+## 幻灯片 1 of N
 
-**Type**: Content
-**Filename**: {NN}-slide-{slug}.png
+**类型**：封面
+**文件名**：01-slide-cover.png
 
-// NARRATIVE GOAL
-[What this slide achieves in the story arc]
+// 叙事目标
+[这个幻灯片在故事弧线中实现什么]
 
-// KEY CONTENT
-Headline: [main message - narrative, not label]
-Sub-headline: [supporting context]
-Body:
-- [point 1 with specific detail]
-- [point 2 with specific detail]
-- [point 3 with specific detail]
+// 关键内容
+标题：[main title]
+副标题：[supporting tagline]
 
-// VISUAL
-[Detailed visual description]
+// 视觉
+[详细视觉描述 - 特定元素、构图、氛围]
 
-// LAYOUT
-Layout: [optional: layout name from gallery]
-[Composition, hierarchy, spatial arrangement]
+// 布局
+布局：[optional: layout name from gallery, e.g., title-hero]
+[构图、层次、空间排列]
 ```
 
-## Back Cover Slide Template
+## 内容幻灯片模板
 
 ```markdown
-## Slide N of N
+## 幻灯片 X of N
 
-**Type**: Back Cover
-**Filename**: {NN}-slide-back-cover.png
+**类型**：内容
+**文件名**：{NN}-slide-{slug}.png
 
-// NARRATIVE GOAL
-[Meaningful closing - not just "thank you"]
+// 叙事目标
+[这个幻灯片在故事弧线中实现什么]
 
-// KEY CONTENT
-Headline: [memorable closing statement or call-to-action]
-Body: [optional summary points or next steps]
+// 关键内容
+标题：[main message - narrative, not label]
+副标题：[supporting context]
+正文：
+- [带具体细节的要点1]
+- [带具体细节的要点2]
+- [带具体细节的要点3]
 
-// VISUAL
-[Visual that reinforces the core message]
+// 视觉
+[详细视觉描述]
 
-// LAYOUT
-Layout: [optional: layout name from gallery]
-[Clean, impactful composition]
+// 布局
+布局：[optional: layout name from gallery]
+[构图、层次、空间排列]
 ```
 
-## STYLE_INSTRUCTIONS Block
+## 封底幻灯片模板
 
-The `<STYLE_INSTRUCTIONS>` block is the SINGLE SOURCE OF TRUTH for style information in this outline.
+```markdown
+## 幻灯片 N of N
 
-| Section | Content | Source |
+**类型**：封底
+**文件名**：{NN}-slide-back-cover.png
+
+// 叙事目标
+[有意义的结尾 - 不仅仅是"谢谢"]
+
+// 关键内容
+标题：[令人难忘的结尾声明或行动号召]
+正文：[可选的摘要要点或后续步骤]
+
+// 视觉
+[强化核心信息的视觉]
+
+// 布局
+布局：[optional: layout name from gallery]
+[干净、有影响力的构图]
+```
+
+## STYLE_INSTRUCTIONS 块
+
+`<STYLE_INSTRUCTIONS>` 块是本大纲中样式信息的**唯一真实来源**。
+
+| 部分 | 内容 | 来源 |
 |---------|---------|--------|
-| Design Aesthetic | Overall visual direction | Combined from all dimensions |
-| Background | Base color and texture details | texture + mood dimensions |
-| Typography | Font descriptions (visual, not names) | typography dimension |
-| Color Palette | Named colors with hex codes and usage | mood dimension |
-| Visual Elements | Graphic elements with rendering instructions | texture + mood dimensions |
-| Density Guidelines | Content limits and whitespace | density dimension |
-| Style Rules | Do/Don't guidelines | Combined from dimensions |
+| 设计美学 | 整体视觉方向 | 从所有维度组合 |
+| 背景 | 基色和纹理细节 | 纹理 + 氛围维度 |
+| 排版 | 字体描述（视觉，而非名称）| 排版维度 |
+| 色彩调色板 | 带十六进制代码和用法的命名颜色 | 氛围维度 |
+| 视觉元素 | 带渲染指导的图形元素 | 纹理 + 氛围维度 |
+| 密度指南 | 内容限制和留白 | 密度维度 |
+| 样式规则 | 做/不做指南 | 从维度组合 |
 
-**Important**:
-- Typography descriptions must describe visual appearance (e.g., "rounded sans-serif", "bold geometric") since image generators cannot use font names
-- Prompts should extract STYLE_INSTRUCTIONS from this outline, NOT re-read style files
+**重要**：
+- 排版描述必须描述视觉外观（例如"圆润无衬线"、"粗体几何"），因为图片生成器无法使用字体名称
+- 提示词应从本大纲提取 STYLE_INSTRUCTIONS，**不要**重新读取样式文件
 
-## Preset → Dimensions Reference
+## 预设 → 维度参考
 
-When using a preset, look up dimensions in `references/dimensions/presets.md`:
+使用预设时，在 `references/dimensions/presets.md` 中查找维度：
 
-| Preset | Dimensions |
+| 预设 | 维度 |
 |--------|------------|
 | blueprint | grid + cool + technical + balanced |
 | sketch-notes | organic + warm + handwritten + balanced |
 | corporate | clean + professional + geometric + balanced |
 | minimal | clean + neutral + geometric + minimal |
-| ... | See presets.md for full mapping |
+| ... | 参见 presets.md 完整映射 |
 
-## Section Dividers
+## 章节分隔符
 
-Use `---` (horizontal rule) between:
-- Header metadata and STYLE_INSTRUCTIONS
-- STYLE_INSTRUCTIONS and first slide
-- Each slide entry
+在以下内容之间使用 `---`（水平线）：
+- 标题元数据和 STYLE_INSTRUCTIONS
+- STYLE_INSTRUCTIONS 和第一张幻灯片
+- 每个幻灯片条目
 
-## Slide Numbering
+## 幻灯片编号
 
-- Cover is always Slide 1
-- Content slides use sequential numbers
-- Back Cover is always final slide (N)
-- Filename prefix matches slide position: `01-`, `02-`, etc.
+- 封面始终是幻灯片1
+- 内容幻灯片使用顺序编号
+- 封底始终是最后一张幻灯片（N）
+- 文件名前缀匹配幻灯片位置：`01-`、`02-` 等
 
-## Filename Slugs
+## 文件名 Slug
 
-Generate meaningful slugs from slide content:
+从幻灯片内容生成有意义的 slug：
 
-| Slide Type | Slug Pattern | Example |
+| 幻灯片类型 | Slug 模式 | 示例 |
 |------------|--------------|---------|
-| Cover | `cover` | `01-slide-cover.png` |
-| Content | `{topic-slug}` | `02-slide-problem-statement.png` |
-| Back Cover | `back-cover` | `10-slide-back-cover.png` |
+| 封面 | `cover` | `01-slide-cover.png` |
+| 内容 | `{topic-slug}` | `02-slide-problem-statement.png` |
+| 封底 | `back-cover` | `10-slide-back-cover.png` |
 
-Slug rules:
-- Kebab-case (lowercase, hyphens)
-- Derived from headline or main topic
-- Maximum 30 characters
-- Unique within deck
+Slug 规则：
+- Kebab-case（小写、连字符）
+- 来自标题或主要主题
+- 最多30个字符
+- 在幻灯片中唯一

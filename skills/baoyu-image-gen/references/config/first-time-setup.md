@@ -1,17 +1,12 @@
----
-name: first-time-setup
-description: First-time setup and default model selection flow for baoyu-image-gen
----
+# 首次设置
 
-# First-Time Setup
+## 概述
 
-## Overview
+触发条件：
+1. 未找到 EXTEND.md → 完整设置（提供商 + 模型 + 偏好设置）
+2. 找到 EXTEND.md 但 `default_model.[provider]` 为 null → 仅选择模型
 
-Triggered when:
-1. No EXTEND.md found → full setup (provider + model + preferences)
-2. EXTEND.md found but `default_model.[provider]` is null → model selection only
-
-## Setup Flow
+## 设置流程
 
 ```
 No EXTEND.md found          EXTEND.md found, model null
@@ -31,13 +26,13 @@ No EXTEND.md found          EXTEND.md found, model null
     Continue                     Continue
 ```
 
-## Flow 1: No EXTEND.md (Full Setup)
+## 流程 1：无 EXTEND.md（完整设置）
 
-**Language**: Use user's input language or saved language preference.
+**语言**：使用用户的输入语言或保存的语言偏好。
 
-Use AskUserQuestion with ALL questions in ONE call:
+使用 AskUserQuestion 在一次调用中提出所有问题：
 
-### Question 1: Default Provider
+### 问题 1：默认提供商
 
 ```yaml
 header: "Provider"
@@ -55,9 +50,9 @@ options:
     description: "Community models - nano-banana-pro, flexible model selection"
 ```
 
-### Question 2: Default Google Model
+### 问题 2：默认 Google 模型
 
-Only show if user selected Google or auto-detect (no explicit provider).
+仅在用户选择 Google 或自动检测（无显式提供商）时显示。
 
 ```yaml
 header: "Google Model"
@@ -71,9 +66,9 @@ options:
     description: "Fast generation, balanced quality and speed"
 ```
 
-### Question 2b: Default OpenRouter Model
+### 问题 2b：默认 OpenRouter 模型
 
-Only show if user selected OpenRouter.
+仅在用户选择 OpenRouter 时显示。
 
 ```yaml
 header: "OpenRouter Model"
@@ -87,7 +82,7 @@ options:
     description: "Strong text-to-image quality through OpenRouter"
 ```
 
-### Question 3: Default Quality
+### 问题 3：默认质量
 
 ```yaml
 header: "Quality"
@@ -99,7 +94,7 @@ options:
     description: "1024px - quick previews, drafts"
 ```
 
-### Question 4: Save Location
+### 问题 4：保存位置
 
 ```yaml
 header: "Save"
@@ -111,14 +106,14 @@ options:
     description: "~/.baoyu-skills/ (all projects)"
 ```
 
-### Save Locations
+### 保存位置
 
-| Choice | Path | Scope |
+| 选择 | 路径 | 范围 |
 |--------|------|-------|
-| Project | `.baoyu-skills/baoyu-image-gen/EXTEND.md` | Current project |
-| User | `$HOME/.baoyu-skills/baoyu-image-gen/EXTEND.md` | All projects |
+| 项目 | `.baoyu-skills/baoyu-image-gen/EXTEND.md` | 当前项目 |
+| 用户 | `$HOME/.baoyu-skills/baoyu-image-gen/EXTEND.md` | 所有项目 |
 
-### EXTEND.md Template
+### EXTEND.md 模板
 
 ```yaml
 ---
@@ -136,11 +131,11 @@ default_model:
 ---
 ```
 
-## Flow 2: EXTEND.md Exists, Model Null
+## 流程 2：EXTEND.md 存在，模型为 null
 
-When EXTEND.md exists but `default_model.[current_provider]` is null, ask ONLY the model question for the current provider.
+当 EXTEND.md 存在但 `default_model.[current_provider]` 为 null 时，仅询问当前提供商的模型问题。
 
-### Google Model Selection
+### Google 模型选择
 
 ```yaml
 header: "Google Model"
@@ -154,7 +149,7 @@ options:
     description: "Fast generation, balanced quality and speed"
 ```
 
-### OpenAI Model Selection
+### OpenAI 模型选择
 
 ```yaml
 header: "OpenAI Model"
@@ -166,7 +161,7 @@ options:
     description: "Previous generation GPT Image model"
 ```
 
-### OpenRouter Model Selection
+### OpenRouter 模型选择
 
 ```yaml
 header: "OpenRouter Model"
@@ -180,7 +175,7 @@ options:
     description: "High-quality text-to-image through OpenRouter"
 ```
 
-### DashScope Model Selection
+### DashScope 模型选择
 
 ```yaml
 header: "DashScope Model"
@@ -200,13 +195,13 @@ options:
     description: "Legacy DashScope model, higher quality but slower"
 ```
 
-Notes for DashScope setup:
+DashScope 设置注意事项：
 
-- Prefer `qwen-image-2.0-pro` when the user needs custom `--size`, uncommon ratios like `21:9`, or strong Chinese/English text rendering.
-- `qwen-image-max` / `qwen-image-plus` / `qwen-image` only support five fixed sizes: `1664*928`, `1472*1104`, `1328*1328`, `1104*1472`, `928*1664`.
-- In `baoyu-image-gen`, `quality` is a compatibility preset. It is not a native DashScope parameter.
+- 当用户需要自定义 `--size`、不常见比例如 `21:9` 或强大的中英文文字渲染时，优先使用 `qwen-image-2.0-pro`。
+- `qwen-image-max` / `qwen-image-plus` / `qwen-image` 仅支持五种固定尺寸：`1664*928`、`1472*1104`、`1328*1328`、`1104*1472`、`928*1664`。
+- 在 `baoyu-image-gen` 中，`quality` 是一个兼容性预设。它不是原生 DashScope 参数。
 
-### Replicate Model Selection
+### Replicate 模型选择
 
 ```yaml
 header: "Replicate Model"
@@ -218,13 +213,13 @@ options:
     description: "Google's base image model on Replicate"
 ```
 
-### Update EXTEND.md
+### 更新 EXTEND.md
 
-After user selects a model:
+用户选择模型后：
 
-1. Read existing EXTEND.md
-2. If `default_model:` section exists → update the provider-specific key
-3. If `default_model:` section missing → add the full section:
+1. 读取现有 EXTEND.md
+2. 如果 `default_model:` 部分存在 → 更新提供商特定键
+3. 如果 `default_model:` 部分缺失 → 添加完整部分：
 
 ```yaml
 default_model:
@@ -235,11 +230,11 @@ default_model:
   replicate: [value or null]
 ```
 
-Only set the selected provider's model; leave others as their current value or null.
+仅设置所选提供商的模型；将其他保留为其当前值或 null。
 
-## After Setup
+## 设置后
 
-1. Create directory if needed
-2. Write/update EXTEND.md with frontmatter
-3. Confirm: "Preferences saved to [path]"
-4. Continue with image generation
+1. 如需要则创建目录
+2. 使用前置元数据写入/更新 EXTEND.md
+3. 确认："偏好设置已保存到 [path]"
+4. 继续图像生成

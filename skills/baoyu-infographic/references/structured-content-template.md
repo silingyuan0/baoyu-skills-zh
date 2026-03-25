@@ -1,244 +1,244 @@
-# Structured Content Template
+# 结构化内容模板
 
-Template for generating structured infographic content that informs the visual designer.
+用于生成结构化信息图内容的模板，为视觉设计师提供信息。
 
-## Purpose
+## 目的
 
-This document bridges content analysis and visual design:
-- Transforms source material into designer-ready format
-- Organizes learning objectives into visual sections
-- Preserves all source data verbatim
-- Separates content from design instructions
+本文档桥接内容分析和视觉设计：
+- 将源材料转换为设计师可用的格式
+- 将学习目标组织成视觉部分
+- 保留所有源数据的原始内容
+- 将内容与设计说明分离
 
-## Instructional Design Process
+## 教学设计流程
 
-### Phase 1: High-Level Outline
+### 阶段1：高层大纲
 
-1. **Title**: Capture the essence in a compelling headline
-2. **Overview**: Brief description (1-2 sentences)
-3. **Learning Objectives**: List what the viewer will understand
+1. **标题**: 用引人注目的标题捕捉精髓
+2. **概述**: 简要描述（1-2句话）
+3. **学习目标**: 列出观众将理解的内容
 
-### Phase 2: Section Development
+### 阶段2：部分开发
 
-For each learning objective:
+对于每个学习目标：
 
-1. **Key Concept**: One-sentence summary of the section
-2. **Content**: Points extracted verbatim from source
-3. **Visual Element**: What should be shown visually
-4. **Text Labels**: Exact text for headlines, subheads, labels
+1. **关键概念**: 部分的单句总结
+2. **内容**: 从源内容中逐字提取的要点
+3. **视觉元素**: 应该直观显示的内容
+4. **文本标签**: 标题、副标题、标签的确切文本
 
-### Phase 3: Data Integrity Check
+### 阶段3：数据完整性检查
 
-Verify all source data is:
-- Copied exactly (no paraphrasing)
-- Attributed correctly (for quotes)
-- Formatted consistently
+验证所有源数据：
+- 完全复制（不改写）
+- 正确归属（对于引用）
+- 格式一致
 
-## Critical Rules
+## 关键规则
 
-| Rule | Requirement | Example |
+| 规则 | 要求 | 示例 |
 |------|-------------|---------|
-| **Output format** | Markdown only | Use proper headers, lists, code blocks |
-| **Tone** | Expert trainer | Knowledgeable, clear, encouraging |
-| **No new information** | Only source content | Don't add examples not in source |
-| **Verbatim data** | Exact copies | "73% increase" not "significant increase" |
+| **输出格式** | 仅 Markdown | 使用正确的标题、列表、代码块 |
+| **语气** | 专家培训师 | 知识渊博、清晰、鼓励 |
+| **不添加新信息** | 仅源内容 | 不添加源中未有的示例 |
+| **逐字数据** | 准确副本 | "73% increase" 不是 "significant increase" |
 
-## Structured Content Format
+## 结构化内容格式
 
 ```markdown
-# [Infographic Title]
+# [信息图标题]
 
-## Overview
-[Brief description of what this infographic conveys - 1-2 sentences]
+## 概述
+[简要描述此信息图传达的内容 - 1-2句话]
 
-## Learning Objectives
-The viewer will understand:
-1. [Primary objective]
-2. [Secondary objective]
-3. [Tertiary objective if applicable]
-
----
-
-## Section 1: [Section Title]
-
-**Key Concept**: [One-sentence summary of this section]
-
-**Content**:
-- [Point 1 - verbatim from source]
-- [Point 2 - verbatim from source]
-- [Point 3 - verbatim from source]
-
-**Visual Element**: [Description of what to show visually]
-- Type: [icon/chart/illustration/diagram/photo]
-- Subject: [what it depicts]
-- Treatment: [how it should be presented]
-
-**Text Labels**:
-- Headline: "[Exact text for headline]"
-- Subhead: "[Exact text for subhead]"
-- Labels: "[Label 1]", "[Label 2]", "[Label 3]"
+## 学习目标
+观众将理解：
+1. [主要目标]
+2. [次要目标]
+3. [如有第三目标]
 
 ---
 
-## Section 2: [Section Title]
+## 部分1: [部分标题]
 
-**Key Concept**: [One-sentence summary]
+**关键概念**: [此部分的单句总结]
 
-**Content**:
-- [Point 1]
-- [Point 2]
+**内容**:
+- [要点1 - 逐字来自源]
+- [要点2 - 逐字来自源]
+- [要点3 - 逐字来自源]
 
-**Visual Element**: [Description]
+**视觉元素**: [直观显示内容的描述]
+- 类型: [图标/图表/插图/图表/照片]
+- 主题: [它描绘的内容]
+- 处理: [应如何呈现]
 
-**Text Labels**:
-- Headline: "[text]"
-- Labels: "[Label 1]", "[Label 2]"
-
----
-
-[Continue for each section...]
-
----
-
-## Data Points (Verbatim)
-
-All statistics, numbers, and quotes exactly as they appear in source:
-
-### Statistics
-- "[Exact statistic 1]"
-- "[Exact statistic 2]"
-- "[Exact statistic 3]"
-
-### Quotes
-- "[Exact quote]" — [Attribution]
-
-### Key Terms
-- **[Term 1]**: [Definition from source]
-- **[Term 2]**: [Definition from source]
+**文本标签**:
+- 标题: "[标题的确切文本]"
+- 副标题: "[副标题的确切文本]"
+- 标签: "[标签1]", "[标签2]", "[标签3]"
 
 ---
 
-## Design Instructions
+## 部分2: [部分标题]
 
-Extracted from user's steering prompt:
+**关键概念**: [单句总结]
 
-### Style Preferences
-- [Any color preferences]
-- [Any mood/aesthetic preferences]
-- [Any artistic style preferences]
+**内容**:
+- [要点1]
+- [要点2]
 
-### Layout Preferences
-- [Any structure preferences]
-- [Any organization preferences]
+**视觉元素**: [描述]
 
-### Other Requirements
-- [Any other visual requirements from user]
-- [Target platform if specified]
-- [Brand guidelines if any]
+**文本标签**:
+- 标题: "[文本]"
+- 标签: "[标签1]", "[标签2]"
+
+---
+
+[继续每个部分...]
+
+---
+
+## 数据点（逐字）
+
+所有统计、数字和引用完全按照源中的形式：
+
+### 统计
+- "[确切统计1]"
+- "[确切统计2]"
+- "[确切统计3]"
+
+### 引用
+- "[确切引用]" — [归属]
+
+### 关键术语
+- **[术语1]**: [来自源的定义]
+- **[术语2]**: [来自源的定义]
+
+---
+
+## 设计说明
+
+从用户的指导提示词中提取：
+
+### 风格偏好
+- [任何颜色偏好]
+- [任何氛围/美学偏好]
+- [任何艺术风格偏好]
+
+### 布局偏好
+- [任何结构偏好]
+- [任何组织偏好]
+
+### 其他要求
+- [用户的任何其他视觉要求]
+- [如有指定的目标平台]
+- [如有品牌指南]
 ```
 
-## Section Types by Content
+## 按内容类型的部分类型
 
-### For Process/Steps
+### 用于流程/步骤
 
 ```markdown
-## Section N: Step N - [Step Title]
+## 部分N: 步骤N - [步骤标题]
 
-**Key Concept**: [What this step accomplishes]
+**关键概念**: [此步骤完成什么]
 
-**Content**:
-- Action: [What to do]
-- Details: [How to do it]
-- Note: [Important consideration]
+**内容**:
+- 动作: [要做什么]
+- 详情: [如何做]
+- 注意: [重要考虑]
 
-**Visual Element**:
-- Type: numbered step icon
-- Subject: [visual representing the action]
-- Arrow: leads to next step
+**视觉元素**:
+- 类型: 编号步骤图标
+- 主题: [代表动作的视觉]
+- 箭头: 导向下一步
 
-**Text Labels**:
-- Headline: "Step N: [Title]"
-- Action: "[Imperative verb + object]"
+**文本标签**:
+- 标题: "步骤N: [标题]"
+- 动作: "[动词+宾语]"
 ```
 
-### For Comparison
+### 用于比较
 
 ```markdown
-## Section N: [Item A] vs [Item B]
+## 部分N: [项目A] vs [项目B]
 
-**Key Concept**: [What distinguishes them]
+**关键概念**: [它们之间的区别]
 
-**Content**:
-| Aspect | [Item A] | [Item B] |
+**内容**:
+| 方面 | [项目A] | [项目B] |
 |--------|----------|----------|
-| [Factor 1] | [Value] | [Value] |
-| [Factor 2] | [Value] | [Value] |
+| [因素1] | [值] | [值] |
+| [因素2] | [值] | [值] |
 
-**Visual Element**:
-- Type: split comparison
-- Left: [Item A representation]
-- Right: [Item B representation]
+**视觉元素**:
+- 类型: 分屏比较
+- 左侧: [项目A表示]
+- 右侧: [项目B表示]
 
-**Text Labels**:
-- Headline: "[Item A] vs [Item B]"
-- Left label: "[Item A name]"
-- Right label: "[Item B name]"
+**文本标签**:
+- 标题: "[项目A] vs [项目B]"
+- 左侧标签: "[项目A名称]"
+- 右侧标签: "[项目B名称]"
 ```
 
-### For Hierarchy
+### 用于层级
 
 ```markdown
-## Section N: [Level Name]
+## 部分N: [层级名称]
 
-**Key Concept**: [What this level represents]
+**关键概念**: [此层级代表什么]
 
-**Content**:
-- Position: [Top/Middle/Bottom]
-- Priority: [Importance level]
-- Contains: [Elements at this level]
+**内容**:
+- 位置: [顶部/中间/底部]
+- 优先级: [重要程度]
+- 包含: [此层级的元素]
 
-**Visual Element**:
-- Type: layer/tier
-- Size: [relative to other levels]
-- Position: [where in hierarchy]
+**视觉元素**:
+- 类型: 层/层
+- 大小: [相对于其他层级]
+- 位置: [在层级中的位置]
 
-**Text Labels**:
-- Level title: "[Name]"
-- Description: "[Brief description]"
+**文本标签**:
+- 层级标题: "[名称]"
+- 描述: "[简要描述]"
 ```
 
-### For Data/Statistics
+### 用于数据/统计
 
 ```markdown
-## Section N: [Metric Name]
+## 部分N: [指标名称]
 
-**Key Concept**: [What this data shows]
+**关键概念**: [此数据显示什么]
 
-**Content**:
-- Value: [Exact number/percentage]
-- Context: [What it means]
-- Comparison: [Benchmark if any]
+**内容**:
+- 值: [确切数字/百分比]
+- 上下文: [它的含义]
+- 比较: [如有基准]
 
-**Visual Element**:
-- Type: [chart/number highlight/gauge]
-- Emphasis: [how to draw attention]
+**视觉元素**:
+- 类型: [图表/数字高亮/仪表]
+- 强调: [如何吸引注意]
 
-**Text Labels**:
-- Main number: "[Exact value]"
-- Label: "[Metric name]"
-- Context: "[Brief context]"
+**文本标签**:
+- 主要数字: "[确切值]"
+- 标签: "[指标名称]"
+- 上下文: "[简要上下文]"
 ```
 
-## Quality Checklist
+## 质量检查清单
 
-Before finalizing structured content:
+在完成结构化内容之前：
 
-- [ ] Title captures the main message
-- [ ] Learning objectives are clear and measurable
-- [ ] Each section maps to an objective
-- [ ] All content is verbatim from source
-- [ ] Visual elements are clearly described
-- [ ] Text labels are specified exactly
-- [ ] Data points are collected and verified
-- [ ] Design instructions are separated
-- [ ] No new information has been added
+- [ ] 标题捕捉了主要信息
+- [ ] 学习目标清晰且可衡量
+- [ ] 每个部分都映射到一个目标
+- [ ] 所有内容均逐字来自源
+- [ ] 视觉元素描述清晰
+- [ ] 文本标签确切指定
+- [ ] 数据点已收集并验证
+- [ ] 设计说明已分离
+- [ ] 未添加新信息

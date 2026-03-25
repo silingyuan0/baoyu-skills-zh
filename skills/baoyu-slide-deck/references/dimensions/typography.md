@@ -1,97 +1,97 @@
-# Typography Dimension
+# 排版维度
 
-Headline and body text styling.
+标题和正文字体样式。
 
-## Options
+## 选项
 
-| Option | Headline Style | Body Style | Best For |
+| 选项 | 标题风格 | 正文风格 | 适用于 |
 |--------|----------------|------------|----------|
-| `geometric` | Modern sans-serif, clean angles | Clean sans-serif | Corporate, tech, modern |
-| `humanist` | Friendly sans-serif, warm curves | Readable sans-serif | Education, general audiences |
-| `handwritten` | Marker/brush, organic feel | Casual script or print | Creative, sketch, friendly |
-| `editorial` | Bold serif/sans mix, magazine style | Classic serif | Keynote, magazine, premium |
-| `technical` | Monospace accents, precise | Clean sans-serif | Developer, data, engineering |
+| `geometric` | 现代无衬线、干净角度 | 干净无衬线 | 企业、科技、现代 |
+| `humanist` | 友好无衬线、温暖曲线 | 可读无衬线 | 教育、一般受众 |
+| `handwritten` |  marker/brush、有机感 | 休闲 script 或 print | 创意、 sketch 、友好 |
+| `editorial` | 粗体衬线/无衬线混合、杂志风格 | 经典衬线 | 主题演讲、杂志 premium |
+| `technical` | 等宽 accent、精确 | 干净无衬线 | 开发者、数据、工程 |
 
-## Rendering Guidelines
+## 渲染指南
 
 ### geometric
 
-**Headlines**: Modern geometric sans-serif with clean angles and consistent stroke width. Think Futura, Avenir, or Proxima Nova. Bold to semi-bold weight. Perfect circles in O, G characters.
+**标题**：现代几何无衬线，干净角度和一致的笔画宽度。想想 Futura、Avenir 或 Proxima Nova。粗体到半粗体字重。完美的圆形 O、G 字符。
 
-**Body**: Clean sans-serif optimized for readability. Regular weight. Consistent x-height. Sufficient letter spacing.
+**正文**：为可读性优化的干净无衬线。常规字重。一致的 x-height。充足的字间距。
 
-**Characteristics**:
-- Mathematical precision in letterforms
-- Consistent stroke widths
-- Perfect geometry in curves
-- Modern, authoritative presence
+**特征**：
+- 字母形态的数学精度
+- 一致的笔画宽度
+- 曲线的完美几何
+- 现代、权威的存在
 
 ### humanist
 
-**Headlines**: Friendly sans-serif with subtle stroke variations. Think Frutiger, Open Sans, or Myriad. Medium to semi-bold weight. Warm, approachable letterforms.
+**标题**：友好无衬线，微妙的笔画变化。想想 Frutiger、Open Sans 或 Myriad。中等到半粗体字重。温暖、平易近人的字母形态。
 
-**Body**: Readable humanist sans-serif. Comfortable line height. Slight calligraphic influence.
+**正文**：可读的人文无衬线。舒适的行高。微妙的书法影响。
 
-**Characteristics**:
-- Warm, approachable feel
-- Subtle stroke contrast
-- Open counters for readability
-- Natural, human touch
+**特征**：
+- 温暖、平易近人的感觉
+- 微妙的笔画对比
+- 开放的字谷以提高可读性
+- 自然、人文触感
 
 ### handwritten
 
-**Headlines**: Bold hand-written marker or brush lettering. Thick strokes with organic edges. Slightly uneven baseline. Render as actual hand-drawn letters.
+**标题**：粗体手写 marker 或 brush  lettering。厚笔画与有机边缘。略有不平的基线。渲染为实际手绘字母。
 
-**Body**: Clear handwritten style mimicking notes. Casual but legible. Natural variation in letter forms.
+**正文**：模仿笔记的清晰手写风格。休闲但可读。字母形态的自然变化。
 
-**Characteristics**:
-- Organic, imperfect letterforms
-- Visible brush/pen character
-- Casual, personal feel
-- NOT computer fonts - actual drawn letters
+**特征**：
+- 有机、不完美的字母形态
+- 可见的 brush/pen 特征
+- 休闲、个人的感觉
+- 不是计算机字体——是实际绘制的字母
 
 ### editorial
 
-**Headlines**: Bold serif or high-contrast sans-serif. Magazine cover style. Dramatic scale contrast. Think Playfair Display, Didot, or bold condensed sans.
+**标题**：粗体衬线或高对比度无衬线。杂志封面风格。戏剧性的比例对比。想想 Playfair Display、Didot 或粗体压缩无衬线。
 
-**Body**: Classic serif for extended reading. Elegant, refined letterforms. Traditional publishing quality.
+**正文**：用于扩展阅读的经典衬线。优雅、精致的字母形态。传统出版质量。
 
-**Characteristics**:
-- High contrast (thick/thin strokes)
-- Dramatic headlines
-- Sophisticated presence
-- Premium, publication quality
+**特征**：
+- 高对比度（粗/细笔画）
+- 戏剧性标题
+- 精致的存在
+- premium、出版质量
 
 ### technical
 
-**Headlines**: Clean sans-serif with monospace accents for data/code. Precise, engineered appearance. Think SF Mono for code, Inter for headers.
+**标题**：带等宽 accent 的干净无衬线，用于数据/code。精确的工程外观。想想 SF Mono 用于代码，Inter 用于标题。
 
-**Body**: Clean sans-serif optimized for technical content. Fixed-width for numbers and code.
+**正文**：为技术内容优化的干净无衬线。数字和代码的固定宽度。
 
-**Characteristics**:
-- Monospace for data elements
-- Precise alignment
-- Clear number distinction (0 vs O, 1 vs l)
-- Engineering precision
+**特征**：
+- 数据元素的等宽字体
+- 精确对齐
+- 清晰的数字区分（0 vs O, 1 vs l）
+- 工程精度
 
-## Font Rendering Instructions
+## 字体渲染说明
 
-Since image generators cannot use font names, describe visual characteristics:
+由于图片生成器无法使用字体名称，请描述视觉特征：
 
-| Option | Headline Description | Body Description |
+| 选项 | 标题描述 | 正文描述 |
 |--------|---------------------|------------------|
-| geometric | "bold geometric sans-serif with perfect circular O shapes" | "clean modern sans-serif" |
-| humanist | "friendly rounded sans-serif with warm letterforms" | "readable humanist sans-serif" |
-| handwritten | "bold hand-drawn marker lettering with organic strokes" | "casual handwritten notes style" |
-| editorial | "dramatic high-contrast serif with thick-thin stroke variation" | "elegant classic serif" |
-| technical | "precise sans-serif with monospace numbers" | "technical sans-serif, fixed-width for code" |
+| geometric | "粗体几何无衬线，完美的圆形 O 形状" | "干净现代无衬线" |
+| humanist | "友好圆润无衬线，温暖的字母形态" | "可读的人文无衬线" |
+| handwritten | "粗体手绘 marker lettering，有机笔画" | "休闲手写笔记风格" |
+| editorial | "戏剧性高对比度衬线，粗细笔画变化" | "优雅经典衬线" |
+| technical | "精确无衬线，带等宽数字" | "技术无衬线，代码固定宽度" |
 
-## Combination Notes
+## 组合说明
 
-| Typography | Works Best With | Avoid With |
+| 排版 | 最适合与 | 避免与 |
 |------------|-----------------|------------|
-| geometric | clean texture, professional/neutral mood | organic texture |
-| humanist | organic/clean texture, warm mood | pixel texture |
-| handwritten | organic/paper texture, warm/vibrant mood | grid texture, professional mood |
-| editorial | clean texture, vibrant/professional mood | pixel texture |
-| technical | grid/clean texture, cool/dark mood | paper texture, warm mood |
+| geometric | clean 纹理、professional/neutral 氛围 | organic 纹理 |
+| humanist | organic/clean 纹理、warm 氛围 | pixel 纹理 |
+| handwritten | organic/paper 纹理、warm/vibrant 氛围 | grid 纹理、professional 氛围 |
+| editorial | clean 纹理、vibrant/professional 氛围 | pixel 纹理 |
+| technical | grid/clean 纹理、cool/dark 氛围 | paper 纹理、warm 氛围 |

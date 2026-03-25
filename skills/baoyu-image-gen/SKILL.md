@@ -1,35 +1,22 @@
----
-name: baoyu-image-gen
-description: AI image generation with OpenAI, Google, OpenRouter, DashScope, Jimeng, Seedream and Replicate APIs. Supports text-to-image, reference images, aspect ratios, and batch generation from saved prompt files. Sequential by default; use batch parallel generation when the user already has multiple prompts or wants stable multi-image throughput. Use when user asks to generate, create, or draw images.
-version: 1.56.2
-metadata:
-  openclaw:
-    homepage: https://github.com/JimLiu/baoyu-skills#baoyu-image-gen
-    requires:
-      anyBins:
-        - bun
-        - npx
----
+# 图像生成（AI SDK）
 
-# Image Generation (AI SDK)
+官方 API 图像生成。支持 OpenAI、Google、OpenRouter、DashScope（阿里通义万象）、Jimeng（即梦）、Seedream（豆包）和 Replicate 提供商。
 
-Official API-based image generation. Supports OpenAI, Google, OpenRouter, DashScope (阿里通义万象), Jimeng (即梦), Seedream (豆包) and Replicate providers.
+## 脚本目录
 
-## Script Directory
+**智能体执行**：
+1. `{baseDir}` = 此 SKILL.md 文件所在目录
+2. 脚本路径 = `{baseDir}/scripts/main.ts`
+3. 解析 `${BUN_X}` 运行时：如果安装了 `bun` → `bun`；如果 `npx` 可用 → `npx -y bun`；否则建议安装 bun
 
-**Agent Execution**:
-1. `{baseDir}` = this SKILL.md file's directory
-2. Script path = `{baseDir}/scripts/main.ts`
-3. Resolve `${BUN_X}` runtime: if `bun` installed → `bun`; if `npx` available → `npx -y bun`; else suggest installing bun
+## 步骤 0：加载偏好设置 ⛔ 阻塞
 
-## Step 0: Load Preferences ⛔ BLOCKING
+**重要**：此步骤必须在任何图像生成之前完成。不得跳过或延迟。
 
-**CRITICAL**: This step MUST complete BEFORE any image generation. Do NOT skip or defer.
-
-Check EXTEND.md existence (priority: project → user):
+检查 EXTEND.md 是否存在（优先级：项目 → 用户）：
 
 ```bash
-# macOS, Linux, WSL, Git Bash
+# macOS、Linux、WSL、Git Bash
 test -f .baoyu-skills/baoyu-image-gen/EXTEND.md && echo "project"
 test -f "${XDG_CONFIG_HOME:-$HOME/.config}/baoyu-skills/baoyu-image-gen/EXTEND.md" && echo "xdg"
 test -f "$HOME/.baoyu-skills/baoyu-image-gen/EXTEND.md" && echo "user"
@@ -43,75 +30,75 @@ if (Test-Path "$xdg/baoyu-skills/baoyu-image-gen/EXTEND.md") { "xdg" }
 if (Test-Path "$HOME/.baoyu-skills/baoyu-image-gen/EXTEND.md") { "user" }
 ```
 
-| Result | Action |
+| 结果 | 操作 |
 |--------|--------|
-| Found | Load, parse, apply settings. If `default_model.[provider]` is null → ask model only (Flow 2) |
-| Not found | ⛔ Run first-time setup ([references/config/first-time-setup.md](references/config/first-time-setup.md)) → Save EXTEND.md → Then continue |
+| 找到 | 加载、解析、应用设置。如果 `default_model.[provider]` 为 null → 仅询问模型（流程 2） |
+| 未找到 | ⛔ 运行首次设置（[references/config/first-time-setup.md](references/config/first-time-setup.md)）→ 保存 EXTEND.md → 然后继续 |
 
-**CRITICAL**: If not found, complete the full setup (provider + model + quality + save location) using AskUserQuestion BEFORE generating any images. Generation is BLOCKED until EXTEND.md is created.
+**重要**：如果未找到，完成完整设置（提供商 + 模型 + 质量 + 保存位置）使用 AskUserQuestion在任何图像生成之前。生成被阻塞直到 EXTEND.md 被创建。
 
-| Path | Location |
+| 路径 | 位置 |
 |------|----------|
-| `.baoyu-skills/baoyu-image-gen/EXTEND.md` | Project directory |
-| `$HOME/.baoyu-skills/baoyu-image-gen/EXTEND.md` | User home |
+| `.baoyu-skills/baoyu-image-gen/EXTEND.md` | 项目目录 |
+| `$HOME/.baoyu-skills/baoyu-image-gen/EXTEND.md` | 用户主目录 |
 
-**EXTEND.md Supports**: Default provider | Default quality | Default aspect ratio | Default image size | Default models | Batch worker cap | Provider-specific batch limits
+**EXTEND.md 支持**：默认提供商 | 默认质量 | 默认宽高比 | 默认图像尺寸 | 默认模型 | 批处理工作器上限 | 提供商特定批处理限制
 
-Schema: `references/config/preferences-schema.md`
+架构：`references/config/preferences-schema.md`
 
-## Usage
+## 使用方法
 
 ```bash
-# Basic
+# 基本用法
 ${BUN_X} {baseDir}/scripts/main.ts --prompt "A cat" --image cat.png
 
-# With aspect ratio
+# 带宽高比
 ${BUN_X} {baseDir}/scripts/main.ts --prompt "A landscape" --image out.png --ar 16:9
 
-# High quality
+# 高质量
 ${BUN_X} {baseDir}/scripts/main.ts --prompt "A cat" --image out.png --quality 2k
 
-# From prompt files
+# 从提示词文件
 ${BUN_X} {baseDir}/scripts/main.ts --promptfiles system.md content.md --image out.png
 
-# With reference images (Google, OpenAI, OpenRouter, or Replicate)
+# 带参考图（Google、OpenAI、OpenRouter 或 Replicate）
 ${BUN_X} {baseDir}/scripts/main.ts --prompt "Make blue" --image out.png --ref source.png
 
-# With reference images (explicit provider/model)
+# 带参考图（显式提供商/模型）
 ${BUN_X} {baseDir}/scripts/main.ts --prompt "Make blue" --image out.png --provider google --model gemini-3-pro-image-preview --ref source.png
 
-# OpenRouter (recommended default model)
+# OpenRouter（推荐的默认模型）
 ${BUN_X} {baseDir}/scripts/main.ts --prompt "A cat" --image out.png --provider openrouter
 
-# OpenRouter with reference images
+# OpenRouter 带参考图
 ${BUN_X} {baseDir}/scripts/main.ts --prompt "Make blue" --image out.png --provider openrouter --model google/gemini-3.1-flash-image-preview --ref source.png
 
-# Specific provider
+# 指定提供商
 ${BUN_X} {baseDir}/scripts/main.ts --prompt "A cat" --image out.png --provider openai
 
-# DashScope (阿里通义万象)
+# DashScope（阿里通义万象）
 ${BUN_X} {baseDir}/scripts/main.ts --prompt "一只可爱的猫" --image out.png --provider dashscope
 
-# DashScope Qwen-Image 2.0 Pro (recommended for custom sizes and text rendering)
+# DashScope Qwen-Image 2.0 Pro（推荐用于自定义尺寸和文字渲染）
 ${BUN_X} {baseDir}/scripts/main.ts --prompt "为咖啡品牌设计一张 21:9 横幅海报，包含清晰中文标题" --image out.png --provider dashscope --model qwen-image-2.0-pro --size 2048x872
 
-# DashScope legacy Qwen fixed-size model
+# DashScope legacy Qwen 固定尺寸模型
 ${BUN_X} {baseDir}/scripts/main.ts --prompt "一张电影感海报" --image out.png --provider dashscope --model qwen-image-max --size 1664x928
 
 # Replicate (google/nano-banana-pro)
 ${BUN_X} {baseDir}/scripts/main.ts --prompt "A cat" --image out.png --provider replicate
 
-# Replicate with specific model
+# Replicate 带特定模型
 ${BUN_X} {baseDir}/scripts/main.ts --prompt "A cat" --image out.png --provider replicate --model google/nano-banana
 
-# Batch mode with saved prompt files
+# 批处理模式（使用保存的提示词文件）
 ${BUN_X} {baseDir}/scripts/main.ts --batchfile batch.json
 
-# Batch mode with explicit worker count
+# 批处理模式（带显式工作器数量）
 ${BUN_X} {baseDir}/scripts/main.ts --batchfile batch.json --jobs 4 --json
 ```
 
-### Batch File Format
+### 批处理文件格式
 
 ```json
 {
@@ -136,105 +123,105 @@ ${BUN_X} {baseDir}/scripts/main.ts --batchfile batch.json --jobs 4 --json
 }
 ```
 
-Paths in `promptFiles`, `image`, and `ref` are resolved relative to the batch file's directory. `jobs` is optional (overridden by CLI `--jobs`). Top-level array format (without `jobs` wrapper) is also accepted.
+`promptFiles`、`image` 和 `ref` 中的路径相对于批处理文件的目录。`jobs` 是可选的（被 CLI `--jobs` 覆盖）。也接受顶级数组格式（不带 `jobs` 包装器）。
 
-## Options
+## 选项
 
-| Option | Description |
+| 选项 | 描述 |
 |--------|-------------|
-| `--prompt <text>`, `-p` | Prompt text |
-| `--promptfiles <files...>` | Read prompt from files (concatenated) |
-| `--image <path>` | Output image path (required in single-image mode) |
-| `--batchfile <path>` | JSON batch file for multi-image generation |
-| `--jobs <count>` | Worker count for batch mode (default: auto, max from config, built-in default 10) |
-| `--provider google\|openai\|openrouter\|dashscope\|jimeng\|seedream\|replicate` | Force provider (default: auto-detect) |
-| `--model <id>`, `-m` | Model ID (Google: `gemini-3-pro-image-preview`; OpenAI: `gpt-image-1.5`; OpenRouter: `google/gemini-3.1-flash-image-preview`; DashScope: `qwen-image-2.0-pro`) |
-| `--ar <ratio>` | Aspect ratio (e.g., `16:9`, `1:1`, `4:3`) |
-| `--size <WxH>` | Size (e.g., `1024x1024`) |
-| `--quality normal\|2k` | Quality preset (default: `2k`) |
-| `--imageSize 1K\|2K\|4K` | Image size for Google/OpenRouter (default: from quality) |
-| `--ref <files...>` | Reference images. Supported by Google multimodal, OpenAI GPT Image edits, OpenRouter multimodal models, and Replicate. Not supported by Jimeng or Seedream |
-| `--n <count>` | Number of images |
-| `--json` | JSON output |
+| `--prompt <text>`、`-p` | 提示词文本 |
+| `--promptfiles <files...>` | 从文件读取提示词（连接） |
+| `--image <path>` | 输出图像路径（单图模式必需） |
+| `--batchfile <path>` | 多图生成的 JSON 批处理文件 |
+| `--jobs <count>` | 批处理模式工作器数量（默认：自动，来自配置，最大 10） |
+| `--provider google\|openai\|openrouter\|dashscope\|jimeng\|seedream\|replicate` | 强制指定提供商（默认：自动检测） |
+| `--model <id>`、`-m` | 模型 ID（Google：`gemini-3-pro-image-preview`；OpenAI：`gpt-image-1.5`；OpenRouter：`google/gemini-3.1-flash-image-preview`；DashScope：`qwen-image-2.0-pro`） |
+| `--ar <ratio>` | 宽高比（例如 `16:9`、`1:1`、`4:3`） |
+| `--size <WxH>` | 尺寸（例如 `1024x1024`） |
+| `--quality normal\|2k` | 质量预设（默认：`2k`） |
+| `--imageSize 1K\|2K\|4K` | Google/OpenRouter 的图像尺寸（默认：来自质量） |
+| `--ref <files...>` | 参考图。由 Google 多模态、OpenAI GPT Image 编辑、OpenRouter 多模态模型和 Replicate 支持。不支持 Jimeng 或 Seedream |
+| `--n <count>` | 图像数量 |
+| `--json` | JSON 输出 |
 
-## Environment Variables
+## 环境变量
 
-| Variable | Description |
+| 变量 | 描述 |
 |----------|-------------|
-| `OPENAI_API_KEY` | OpenAI API key |
-| `OPENROUTER_API_KEY` | OpenRouter API key |
-| `GOOGLE_API_KEY` | Google API key |
-| `DASHSCOPE_API_KEY` | DashScope API key (阿里云) |
+| `OPENAI_API_KEY` | OpenAI API 密钥 |
+| `OPENROUTER_API_KEY` | OpenRouter API 密钥 |
+| `GOOGLE_API_KEY` | Google API 密钥 |
+| `DASHSCOPE_API_KEY` | DashScope API 密钥（阿里云） |
 | `REPLICATE_API_TOKEN` | Replicate API token |
-| `JIMENG_ACCESS_KEY_ID` | Jimeng (即梦) Volcengine access key |
-| `JIMENG_SECRET_ACCESS_KEY` | Jimeng (即梦) Volcengine secret key |
-| `ARK_API_KEY` | Seedream (豆包) Volcengine ARK API key |
-| `OPENAI_IMAGE_MODEL` | OpenAI model override |
-| `OPENROUTER_IMAGE_MODEL` | OpenRouter model override (default: `google/gemini-3.1-flash-image-preview`) |
-| `GOOGLE_IMAGE_MODEL` | Google model override |
-| `DASHSCOPE_IMAGE_MODEL` | DashScope model override (default: `qwen-image-2.0-pro`) |
-| `REPLICATE_IMAGE_MODEL` | Replicate model override (default: google/nano-banana-pro) |
-| `JIMENG_IMAGE_MODEL` | Jimeng model override (default: jimeng_t2i_v40) |
-| `SEEDREAM_IMAGE_MODEL` | Seedream model override (default: doubao-seedream-5-0-260128) |
-| `OPENAI_BASE_URL` | Custom OpenAI endpoint |
-| `OPENROUTER_BASE_URL` | Custom OpenRouter endpoint (default: `https://openrouter.ai/api/v1`) |
-| `OPENROUTER_HTTP_REFERER` | Optional app/site URL for OpenRouter attribution |
-| `OPENROUTER_TITLE` | Optional app name for OpenRouter attribution |
-| `GOOGLE_BASE_URL` | Custom Google endpoint |
-| `DASHSCOPE_BASE_URL` | Custom DashScope endpoint |
-| `REPLICATE_BASE_URL` | Custom Replicate endpoint |
-| `JIMENG_BASE_URL` | Custom Jimeng endpoint (default: `https://visual.volcengineapi.com`) |
-| `JIMENG_REGION` | Jimeng region (default: `cn-north-1`) |
-| `SEEDREAM_BASE_URL` | Custom Seedream endpoint (default: `https://ark.cn-beijing.volces.com/api/v3`) |
-| `BAOYU_IMAGE_GEN_MAX_WORKERS` | Override batch worker cap |
-| `BAOYU_IMAGE_GEN_<PROVIDER>_CONCURRENCY` | Override provider concurrency, e.g. `BAOYU_IMAGE_GEN_REPLICATE_CONCURRENCY` |
-| `BAOYU_IMAGE_GEN_<PROVIDER>_START_INTERVAL_MS` | Override provider start gap, e.g. `BAOYU_IMAGE_GEN_REPLICATE_START_INTERVAL_MS` |
+| `JIMENG_ACCESS_KEY_ID` | Jimeng（即梦）火山引擎 access key |
+| `JIMENG_SECRET_ACCESS_KEY` | Jimeng（即梦）火山引擎 secret key |
+| `ARK_API_KEY` | Seedream（豆包）火山引擎 ARK API 密钥 |
+| `OPENAI_IMAGE_MODEL` | OpenAI 模型覆盖 |
+| `OPENROUTER_IMAGE_MODEL` | OpenRouter 模型覆盖（默认：`google/gemini-3.1-flash-image-preview`） |
+| `GOOGLE_IMAGE_MODEL` | Google 模型覆盖 |
+| `DASHSCOPE_IMAGE_MODEL` | DashScope 模型覆盖（默认：`qwen-image-2.0-pro`） |
+| `REPLICATE_IMAGE_MODEL` | Replicate 模型覆盖（默认：google/nano-banana-pro） |
+| `JIMENG_IMAGE_MODEL` | Jimeng 模型覆盖（默认：jimeng_t2i_v40） |
+| `SEEDREAM_IMAGE_MODEL` | Seedream 模型覆盖（默认：doubao-seedream-5-0-260128） |
+| `OPENAI_BASE_URL` | 自定义 OpenAI 端点 |
+| `OPENROUTER_BASE_URL` | 自定义 OpenRouter 端点（默认：`https://openrouter.ai/api/v1`） |
+| `OPENROUTER_HTTP_REFERER` | 可选的 app/site URL 用于 OpenRouter 属性 |
+| `OPENROUTER_TITLE` | 可选的 app 名称用于 OpenRouter 属性 |
+| `GOOGLE_BASE_URL` | 自定义 Google 端点 |
+| `DASHSCOPE_BASE_URL` | 自定义 DashScope 端点 |
+| `REPLICATE_BASE_URL` | 自定义 Replicate 端点 |
+| `JIMENG_BASE_URL` | 自定义 Jimeng 端点（默认：`https://visual.volcengineapi.com`） |
+| `JIMENG_REGION` | Jimeng 区域（默认：`cn-north-1`） |
+| `SEEDREAM_BASE_URL` | 自定义 Seedream 端点（默认：`https://ark.cn-beijing.volces.com/api/v3`） |
+| `BAOYU_IMAGE_GEN_MAX_WORKERS` | 覆盖批处理工作器上限 |
+| `BAOYU_IMAGE_GEN_<PROVIDER>_CONCURRENCY` | 覆盖提供商并发数，例如 `BAOYU_IMAGE_GEN_REPLICATE_CONCURRENCY` |
+| `BAOYU_IMAGE_GEN_<PROVIDER>_START_INTERVAL_MS` | 覆盖提供商启动间隔，例如 `BAOYU_IMAGE_GEN_REPLICATE_START_INTERVAL_MS` |
 
-**Load Priority**: CLI args > EXTEND.md > env vars > `<cwd>/.baoyu-skills/.env` > `~/.baoyu-skills/.env`
+**加载优先级**：CLI 参数 > EXTEND.md > 环境变量 > `<cwd>/.baoyu-skills/.env` > `~/.baoyu-skills/.env`
 
-## Model Resolution
+## 模型解析
 
-Model priority (highest → lowest), applies to all providers:
+模型优先级（高 → 低），适用于所有提供商：
 
-1. CLI flag: `--model <id>`
-2. EXTEND.md: `default_model.[provider]`
-3. Env var: `<PROVIDER>_IMAGE_MODEL` (e.g., `GOOGLE_IMAGE_MODEL`)
-4. Built-in default
+1. CLI 标志：`--model <id>`
+2. EXTEND.md：`default_model.[provider]`
+3. 环境变量：`<PROVIDER>_IMAGE_MODEL`（例如 `GOOGLE_IMAGE_MODEL`）
+4. 内置默认值
 
-**EXTEND.md overrides env vars**. If both EXTEND.md `default_model.google: "gemini-3-pro-image-preview"` and env var `GOOGLE_IMAGE_MODEL=gemini-3.1-flash-image-preview` exist, EXTEND.md wins.
+**EXTEND.md 覆盖环境变量**。如果同时存在 EXTEND.md `default_model.google: "gemini-3-pro-image-preview"` 和环境变量 `GOOGLE_IMAGE_MODEL=gemini-3.1-flash-image-preview`，EXTEND.md 优先。
 
-**Agent MUST display model info** before each generation:
-- Show: `Using [provider] / [model]`
-- Show switch hint: `Switch model: --model <id> | EXTEND.md default_model.[provider] | env <PROVIDER>_IMAGE_MODEL`
+**智能体必须在每次生成前显示模型信息**：
+- 显示：`Using [provider] / [model]`
+- 显示切换提示：`Switch model: --model <id> | EXTEND.md default_model.[provider] | env <PROVIDER>_IMAGE_MODEL`
 
-### DashScope Models
+### DashScope 模型
 
-Use `--model qwen-image-2.0-pro` or set `default_model.dashscope` / `DASHSCOPE_IMAGE_MODEL` when the user wants official Qwen-Image behavior.
+当用户需要官方 Qwen-Image 行为时，使用 `--model qwen-image-2.0-pro` 或设置 `default_model.dashscope` / `DASHSCOPE_IMAGE_MODEL`。
 
-Official DashScope model families:
+官方 DashScope 模型系列：
 
-- `qwen-image-2.0-pro`, `qwen-image-2.0-pro-2026-03-03`, `qwen-image-2.0`, `qwen-image-2.0-2026-03-03`
-  - Free-form `size` in `宽*高` format
-  - Total pixels must stay between `512*512` and `2048*2048`
-  - Default size is approximately `1024*1024`
-  - Best choice for custom ratios such as `21:9` and text-heavy Chinese/English layouts
-- `qwen-image-max`, `qwen-image-max-2025-12-30`, `qwen-image-plus`, `qwen-image-plus-2026-01-09`, `qwen-image`
-  - Fixed sizes only: `1664*928`, `1472*1104`, `1328*1328`, `1104*1472`, `928*1664`
-  - Default size is `1664*928`
-  - `qwen-image` currently has the same capability as `qwen-image-plus`
-- Legacy DashScope models such as `z-image-turbo`, `z-image-ultra`, `wanx-v1`
-  - Keep using them only when the user explicitly asks for legacy behavior or compatibility
+- `qwen-image-2.0-pro`、`qwen-image-2.0-pro-2026-03-03`、`qwen-image-2.0`、`qwen-image-2.0-2026-03-03`
+  - 自由格式 `size` 为 `宽*高` 格式
+  - 总像素必须保持在 `512*512` 和 `2048*2048` 之间
+  - 默认尺寸约为 `1024*1024`
+  - 自定义比例（如 `21:9`）和中英文文字渲染的最佳选择
+- `qwen-image-max`、`qwen-image-max-2025-12-30`、`qwen-image-plus`、`qwen-image-plus-2026-01-09`、`qwen-image`
+  - 仅固定尺寸：`1664*928`、`1472*1104`、`1328*1328`、`1104*1472`、`928*1664`
+  - 默认尺寸为 `1664*928`
+  - `qwen-image` 目前与 `qwen-image-plus` 能力相同
+- 遗留 DashScope 模型如 `z-image-turbo`、`z-image-ultra`、`wanx-v1`
+  - 仅当用户明确要求遗留行为或兼容性时继续使用
 
-When translating CLI args into DashScope behavior:
+将 CLI 参数转换为 DashScope 行为时：
 
-- `--size` wins over `--ar`
-- For `qwen-image-2.0*`, prefer explicit `--size`; otherwise infer from `--ar` and use the official recommended resolutions below
-- For `qwen-image-max/plus/image`, only use the five official fixed sizes; if the requested ratio is not covered, switch to `qwen-image-2.0-pro`
-- `--quality` is a baoyu-image-gen compatibility preset, not a native DashScope API field. Mapping `normal` / `2k` onto the `qwen-image-2.0*` table below is an implementation inference, not an official API guarantee
+- `--size` 优先于 `--ar`
+- 对于 `qwen-image-2.0*`，优先使用显式 `--size`；否则从 `--ar` 推断并使用以下官方推荐尺寸
+- 对于 `qwen-image-max/plus/image`，仅使用五种官方固定尺寸；如果请求的比例不支持，切换到 `qwen-image-2.0-pro`
+- `--quality` 是 baoyu-image-gen 兼容性预设，不是原生 DashScope API 字段。将 `normal` / `2k` 映射到下表 `qwen-image-2.0*` 是实现推断，不是官方 API 保证
 
-Recommended `qwen-image-2.0*` sizes for common aspect ratios:
+常见宽高比的推荐 `qwen-image-2.0*` 尺寸：
 
-| Ratio | `normal` | `2k` |
+| 比例 | `normal` | `2k` |
 |-------|----------|------|
 | `1:1` | `1024*1024` | `1536*1536` |
 | `2:3` | `768*1152` | `1024*1536` |
@@ -245,111 +232,111 @@ Recommended `qwen-image-2.0*` sizes for common aspect ratios:
 | `16:9` | `1280*720` | `1920*1080` |
 | `21:9` | `1344*576` | `2048*872` |
 
-DashScope official APIs also expose `negative_prompt`, `prompt_extend`, and `watermark`, but `baoyu-image-gen` does not expose them as dedicated CLI flags today.
+DashScope 官方 API 还暴露 `negative_prompt`、`prompt_extend` 和 `watermark`，但 `baoyu-image-gen` 目前不将它们作为专用 CLI 标志暴露。
 
-Official references:
+官方参考：
 
 - [Qwen-Image API](https://help.aliyun.com/zh/model-studio/qwen-image-api)
 - [Text-to-image guide](https://help.aliyun.com/zh/model-studio/text-to-image)
 - [Qwen-Image Edit API](https://help.aliyun.com/zh/model-studio/qwen-image-edit-api)
 
-### OpenRouter Models
+### OpenRouter 模型
 
-Use full OpenRouter model IDs, e.g.:
+使用完整的 OpenRouter 模型 ID，例如：
 
-- `google/gemini-3.1-flash-image-preview` (recommended, supports image output and reference-image workflows)
+- `google/gemini-3.1-flash-image-preview`（推荐，支持图像输出和参考图工作流）
 - `google/gemini-2.5-flash-image-preview`
 - `black-forest-labs/flux.2-pro`
-- Other OpenRouter image-capable model IDs
+- 其他支持图像的 OpenRouter 模型 ID
 
-Notes:
+注意：
 
-- OpenRouter image generation uses `/chat/completions`, not the OpenAI `/images` endpoints
-- If `--ref` is used, choose a multimodal model that supports image input and image output
-- `--imageSize` maps to OpenRouter `imageGenerationOptions.size`; `--size <WxH>` is converted to the nearest OpenRouter size and inferred aspect ratio when possible
+- OpenRouter 图像生成使用 `/chat/completions`，不是 OpenAI `/images` 端点
+- 如果使用 `--ref`，选择支持图像输入和图像输出的多模态模型
+- `--imageSize` 映射到 OpenRouter `imageGenerationOptions.size`；当仅给出 `--size <WxH>` 时，会转换为最近的 OpenRouter 尺寸并在可能时推断宽高比
 
-### Replicate Models
+### Replicate 模型
 
-Supported model formats:
+支持的模型格式：
 
-- `owner/name` (recommended for official models), e.g. `google/nano-banana-pro`
-- `owner/name:version` (community models by version), e.g. `stability-ai/sdxl:<version>`
+- `owner/name`（推荐用于官方模型），例如 `google/nano-banana-pro`
+- `owner/name:version`（社区模型按版本），例如 `stability-ai/sdxl:<version>`
 
-Examples:
+示例：
 
 ```bash
-# Use Replicate default model
+# 使用 Replicate 默认模型
 ${BUN_X} {baseDir}/scripts/main.ts --prompt "A cat" --image out.png --provider replicate
 
-# Override model explicitly
+# 显式覆盖模型
 ${BUN_X} {baseDir}/scripts/main.ts --prompt "A cat" --image out.png --provider replicate --model google/nano-banana
 ```
 
-## Provider Selection
+## 提供商选择
 
-1. `--ref` provided + no `--provider` → auto-select Google first, then OpenAI, then OpenRouter, then Replicate (Jimeng and Seedream do not support reference images)
-2. `--provider` specified → use it (if `--ref`, must be `google`, `openai`, `openrouter`, or `replicate`)
-3. Only one API key available → use that provider
-4. Multiple available → default to Google
+1. 提供了 `--ref` 且无 `--provider` → 自动选择 Google，然后 OpenAI，然后 OpenRouter，然后 Replicate（Jimeng 和 Seedream 不支持参考图）
+2. 指定了 `--provider` → 使用它（如果使用 `--ref`，必须是 `google`、`openai`、`openrouter` 或 `replicate`）
+3. 只有一个 API 密钥可用 → 使用该提供商
+4. 多个可用 → 默认为 Google
 
-## Quality Presets
+## 质量预设
 
-| Preset | Google imageSize | OpenAI Size | OpenRouter size | Replicate resolution | Use Case |
+| 预设 | Google imageSize | OpenAI Size | OpenRouter size | Replicate resolution | 使用场景 |
 |--------|------------------|-------------|-----------------|----------------------|----------|
-| `normal` | 1K | 1024px | 1K | 1K | Quick previews |
-| `2k` (default) | 2K | 2048px | 2K | 2K | Covers, illustrations, infographics |
+| `normal` | 1K | 1024px | 1K | 1K | 快速预览 |
+| `2k`（默认） | 2K | 2048px | 2K | 2K | 封面、插图、信息图 |
 
-**Google/OpenRouter imageSize**: Can be overridden with `--imageSize 1K|2K|4K`
+**Google/OpenRouter imageSize**：可用 `--imageSize 1K|2K|4K` 覆盖
 
-## Aspect Ratios
+## 宽高比
 
-Supported: `1:1`, `16:9`, `9:16`, `4:3`, `3:4`, `2.35:1`
+支持：`1:1`、`16:9`、`9:16`、`4:3`、`3:4`、`2.35:1`
 
-- Google multimodal: uses `imageConfig.aspectRatio`
-- OpenAI: maps to closest supported size
-- OpenRouter: sends `imageGenerationOptions.aspect_ratio`; if only `--size <WxH>` is given, aspect ratio is inferred automatically
-- Replicate: passes `aspect_ratio` to model; when `--ref` is provided without `--ar`, defaults to `match_input_image`
+- Google 多模态：使用 `imageConfig.aspectRatio`
+- OpenAI：映射到最接近支持的尺寸
+- OpenRouter：发送 `imageGenerationOptions.aspect_ratio`；如果仅给出 `--size <WxH>`，宽高比自动推断
+- Replicate：传递 `aspect_ratio` 到模型；当提供 `--ref` 但没有 `--ar` 时，默认为 `match_input_image`
 
-## Generation Mode
+## 生成模式
 
-**Default**: Sequential generation.
+**默认**：顺序生成。
 
-**Batch Parallel Generation**: When `--batchfile` contains 2 or more pending tasks, the script automatically enables parallel generation.
+**批处理并行生成**：当 `--batchfile` 包含 2 个或更多待处理任务时，脚本自动启用并行生成。
 
-| Mode | When to Use |
+| 模式 | 使用时机 |
 |------|-------------|
-| Sequential (default) | Normal usage, single images, small batches |
-| Parallel batch | Batch mode with 2+ tasks |
+| 顺序（默认） | 正常使用、单图、小批量 |
+| 并行批处理 | 2 个或更多任务的批处理模式 |
 
-Execution choice:
+执行选择：
 
-| Situation | Preferred approach | Why |
+| 情况 | 首选方法 | 原因 |
 |-----------|--------------------|-----|
-| One image, or 1-2 simple images | Sequential | Lower coordination overhead and easier debugging |
-| Multiple images already have saved prompt files | Batch (`--batchfile`) | Reuses finalized prompts, applies shared throttling/retries, and gives predictable throughput |
-| Each image still needs separate reasoning, prompt writing, or style exploration | Subagents | The work is still exploratory, so each image may need independent analysis before generation |
-| Output comes from `baoyu-article-illustrator` with `outline.md` + `prompts/` | Batch (`build-batch.ts` -> `--batchfile`) | That workflow already produces prompt files, so direct batch execution is the intended path |
+| 一张图像，或 1-2 张简单图像 | 顺序 | 更低的协调开销和更容易调试 |
+| 多个图像已有保存的提示词文件 | 批处理（`--batchfile`） | 重用最终确定的提示词，应用共享节流/重试，并提供可预测的吞吐量 |
+| 每个图像仍需要单独推理、提示词编写或风格探索 | 子智能体 | 工作仍是探索性的，因此每张图像在生成前可能需要独立分析 |
+| 输出来自 `baoyu-article-illustrator`，带有 `outline.md` + `prompts/` | 批处理（`build-batch.ts` -> `--batchfile`） | 该工作流已经产生提示词文件，因此直接批处理执行是预期路径 |
 
-Rule of thumb:
+经验法则：
 
-- Prefer batch over subagents once prompt files are already saved and the task is "generate all of these"
-- Use subagents only when generation is coupled with per-image thinking, rewriting, or divergent creative exploration
+- 一旦提示词文件已保存且任务是"生成所有这些"，优先使用批处理而非子智能体
+- 仅当生成与每图像思考、重写或发散创意探索相耦合时才使用子智能体
 
-Parallel behavior:
+并行行为：
 
-- Default worker count is automatic, capped by config, built-in default 10
-- Provider-specific throttling is applied only in batch mode, and the built-in defaults are tuned for faster throughput while still avoiding obvious RPM bursts
-- You can override worker count with `--jobs <count>`
-- Each image retries automatically up to 3 attempts
-- Final output includes success count, failure count, and per-image failure reasons
+- 默认工作器数量是自动的，由配置限制，内置默认 10
+- 提供商特定节流仅在批处理模式下应用，内置默认调优为更快吞吐量同时避免明显的 RPM 突发
+- 可以用 `--jobs <count>` 覆盖工作器数量
+- 每个图像自动重试最多 3 次
+- 最终输出包括成功计数、失败计数和每图像失败原因
 
-## Error Handling
+## 错误处理
 
-- Missing API key → error with setup instructions
-- Generation failure → auto-retry up to 3 attempts per image
-- Invalid aspect ratio → warning, proceed with default
-- Reference images with unsupported provider/model → error with fix hint
+- 缺少 API 密钥 → 带设置说明的错误
+- 生成失败 → 每张图像自动重试最多 3 次
+- 无效宽高比 → 警告，使用默认值继续
+- 参考图与不支持的提供商/模型 → 带修复提示的错误
 
-## Extension Support
+## 扩展支持
 
-Custom configurations via EXTEND.md. See **Preferences** section for paths and supported options.
+通过 EXTEND.md 自定义配置。参见**偏好设置**部分了解路径和支持的选项。

@@ -1,70 +1,70 @@
 # screen-print
 
-Bold poster art with limited colors, halftone textures, and symbolic storytelling
+大胆的海报艺术，限定色彩、半调纹理与象征性叙事
 
-## Design Aesthetic
+## 设计美学
 
-Screen print / silkscreen aesthetic inspired by Mondo limited-edition posters and vintage concert prints. Flat color blocks, halftone dot patterns, bold silhouettes, and deliberate print imperfections. Conceptual and symbolic rather than literal — one iconic image tells the whole story. Perfect for opinion pieces, cultural commentary, and editorial content.
+丝网印刷美学，灵感来自 Mondo 限量海报和复古演唱会印刷品。平涂色块、半调网点图案、粗犷剪影和刻意的印刷瑕疵感。概念化、象征性而非写实——一个标志性图像即可讲述完整故事。适合观点文章、文化评论和社论内容。
 
-## Background
+## 背景
 
-- Color: Off-Black (#121212) or Warm Cream (#F5E6D0)
-- Texture: Paper grain with subtle halftone dot overlay
+- 颜色：近黑色（#121212）或暖奶油色（#F5E6D0）
+- 纹理：纸张纹理配合细微半调网点叠加
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
-|------|-------|-----|-------|
-| Background | Off-Black | #121212 | Dark compositions |
-| Background Alt | Warm Cream | #F5E6D0 | Light compositions |
-| Primary | Burnt Orange | #E8751A | Main accent |
-| Secondary | Deep Teal | #0A6E6E | Contrast accent |
-| Tertiary | Crimson | #C0392B | Bold emphasis |
-| Highlight | Amber | #F4A623 | Small accents |
-| Text | Cream White | #FAF3E0 | On dark backgrounds |
+| 角色 | 颜色 | 色值 | 用途 |
+|------|------|------|------|
+| 背景 | 近黑色 | #121212 | 暗色构图 |
+| 备选背景 | 暖奶油色 | #F5E6D0 | 亮色构图 |
+| 主色 | 焦橙色 | #E8751A | 主要强调 |
+| 次色 | 深青色 | #0A6E6E | 对比强调 |
+| 第三色 | 绯红色 | #C0392B | 大胆强调 |
+| 高亮 | 琥珀色 | #F4A623 | 小面积点缀 |
+| 文字 | 奶油白 | #FAF3E0 | 深色背景上的文字 |
 
-**Duotone Pairs** (choose ONE pair for high-impact compositions):
+**双色调配对**（选择一组用于高冲击力构图）：
 
-| Pair | Color A | Color B | Feel |
-|------|---------|---------|------|
-| Orange + Teal | #E8751A | #0A6E6E | Cinematic, action |
-| Red + Cream | #C0392B | #F5E6D0 | Bold, classic |
-| Blue + Gold | #1A3A5C | #D4A843 | Prestigious, premium |
-| Crimson + Navy | #DC143C | #0D1B2A | Dramatic, noir |
+| 配对 | 颜色 A | 颜色 B | 感觉 |
+|------|--------|--------|------|
+| 橙 + 青 | #E8751A | #0A6E6E | 电影感、动感 |
+| 红 + 奶油 | #C0392B | #F5E6D0 | 大胆、经典 |
+| 蓝 + 金 | #1A3A5C | #D4A843 | 高端、尊贵 |
+| 绯红 + 海军蓝 | #DC143C | #0D1B2A | 戏剧性、黑色电影 |
 
-**Rule**: Use 2-5 colors maximum. Fewer colors = stronger impact.
+**规则**：最多使用 2-5 种颜色。颜色越少，冲击力越强。
 
-## Visual Elements
+## 视觉元素
 
-- Bold silhouettes and symbolic shapes
-- Halftone dot patterns within color fills
-- Slight color layer misregistration (print offset effect)
-- Geometric framing (circles, arches, triangles)
-- Figure-ground inversion (negative space forms secondary image)
-- Stencil-cut edges, no outlines — shapes defined by color boundaries
-- Typography integrated as design element, not overlay
-- Vintage poster border treatments
+- 粗犷剪影和象征性形状
+- 色块填充内的半调网点图案
+- 轻微的色层套印偏移（印刷错位效果）
+- 几何框架（圆形、拱形、三角形）
+- 图底反转（负空间形成次要图像）
+- 模板切割边缘，无描边——形状由颜色边界界定
+- 排版作为设计元素融入，而非叠加
+- 复古海报边框处理
 
-## Style Rules
+## 风格规则
 
-### Do
+### 推荐做法
 
-- Limit to 2-5 flat colors
-- Use bold silhouettes over detailed rendering
-- Let negative space tell part of the story
-- Add halftone texture for authenticity
-- Use geometric composition (centered, symmetrical)
-- Reference vintage decades (60s/70s/80s) for era feel
+- 限制在 2-5 种平涂色彩
+- 使用粗犷剪影而非细节渲染
+- 让负空间参与叙事
+- 添加半调纹理以增强真实感
+- 使用几何构图（居中、对称）
+- 参考复古年代（60/70/80 年代）以营造时代感
 
-### Don't
+### 避免做法
 
-- Use photorealistic rendering or gradients
-- Add complex facial details (silhouettes preferred)
-- Mix too many visual elements (one focal point)
-- Use modern digital aesthetic
-- Create busy or cluttered compositions
-- Use more than 5 colors
+- 使用写实渲染或渐变
+- 添加复杂的面部细节（首选剪影）
+- 混合过多视觉元素（单一焦点）
+- 使用现代数字美学
+- 创建杂乱拥挤的构图
+- 使用超过 5 种颜色
 
-## Best For
+## 适用场景
 
-Opinion/editorial articles, cultural commentary, philosophy and strategy, dramatic narratives, cinematic storytelling, music and entertainment, event announcements, bold branding content
+观点/社论文章、文化评论、哲学与战略、戏剧性叙事、电影感叙事、音乐与娱乐、活动公告、大胆的品牌内容

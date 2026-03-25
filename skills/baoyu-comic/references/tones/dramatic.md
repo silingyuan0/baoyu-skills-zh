@@ -1,95 +1,95 @@
 # dramatic
 
-戏剧基调 - High contrast, intense, powerful moments
+戏剧基调 - 高对比、强烈、震撼时刻
 
-## Overview
+## 概述
 
-High-impact dramatic tone for pivotal moments, conflicts, and breakthroughs. Uses strong contrast and intense compositions to create emotional power.
+高冲击力的戏剧性色调，用于关键时刻、冲突和突破。使用强烈的对比和紧张的构图创造情感力量。
 
-## Mood Characteristics
+## 情感特征
 
-- Tension and intensity
-- Pivotal moments
-- Conflict and resolution
-- Breakthrough discoveries
-- Emotional climaxes
+- 张力与强烈感
+- 关键时刻
+- 冲突与化解
+- 突破性发现
+- 情感高潮
 
-## Color Modifiers
+## 颜色修正
 
-When applied to any art style:
+应用于任何画风时：
 
-| Adjustment | Direction |
-|------------|-----------|
-| Saturation | High (vibrant or deep) |
-| Contrast | Maximum |
-| Temperature | Varies for effect |
-| Brightness | Strong highlights, deep shadows |
+| 调整项 | 方向 |
+|--------|------|
+| 饱和度 | 高（鲜艳或深沉） |
+| 对比度 | 最大 |
+| 色温 | 根据效果变化 |
+| 亮度 | 强高光、深阴影 |
 
-## Contrast Approach
+## 对比度处理
 
-- Sharp light/dark divisions
-- Minimal mid-tones
-- Stark compositions
-- Silhouette potential
-- Rim lighting effects
+- 明暗分界清晰锐利
+- 极少中间色调
+- 强烈的构图
+- 剪影效果
+- 边缘光效果
 
-## Accent Colors
+## 强调色
 
-- Deep navy (#1A365D)
-- Crimson (#9B2C2C)
-- Stark white
-- Heavy blacks
-- Limited palette per scene
+- 深海军蓝（#1A365D）
+- 深红（#9B2C2C）
+- 纯白
+- 浓重黑色
+- 每场景限制调色板
 
-## Lighting
+## 光照
 
-- Dramatic single-source
-- High contrast shadows
-- Rim lighting on characters
-- Spotlight effects
-- Chiaroscuro influence
+- 戏剧性单光源
+- 高对比度阴影
+- 人物边缘光
+- 聚光灯效果
+- 明暗对照法（Chiaroscuro）风格
 
-## Emotional Range
+## 情感范围
 
-| Emotion | Expression |
-|---------|-----------|
-| Anger | Intense, defined features |
-| Determination | Strong, focused gaze |
-| Shock | Wide eyes, stark lighting |
-| Triumph | Powerful, elevated pose |
+| 情感 | 表达方式 |
+|------|----------|
+| 愤怒 | 强烈、棱角分明的特征 |
+| 决心 | 坚定、专注的目光 |
+| 震惊 | 睁大眼睛、锐利光线 |
+| 胜利 | 强有力的、高昂的姿态 |
 
-## Composition
+## 构图
 
-- Angular, dynamic layouts
-- Dramatic camera angles
-- Low/high viewpoints
-- Diagonal compositions
-- Negative space for impact
+- 棱角分明的动态布局
+- 戏剧性的摄影角度
+- 仰视/俯视视角
+- 对角线构图
+- 负空间增强冲击力
 
-## Visual Elements
+## 视觉元素
 
-- Speed lines for tension
-- Impact effects
-- Dramatic backgrounds (storms, fire)
-- Silhouettes
-- Light burst effects
-- Environmental drama
+- 速度线营造张力
+- 冲击效果
+- 戏剧性背景（暴风雨、火焰）
+- 剪影
+- 光芒爆发效果
+- 环境戏剧效果
 
-## Best For
+## 适合场景
 
-- Pivotal discoveries
-- Conflict scenes
-- Climactic moments
-- Breakthrough realizations
-- Emotional confrontations
-- Historical turning points
+- 关键性发现
+- 冲突场景
+- 高潮时刻
+- 突破性领悟
+- 情感对峙
+- 历史转折点
 
-## Combination Notes
+## 搭配建议
 
-Works especially well with:
-- realistic: powerful drama
-- ink-brush: martial arts climax
-- ligne-claire: historical pivots
-- manga: shonen battles
+特别适合与以下画风搭配：
+- realistic：强烈的戏剧效果
+- ink-brush：武侠高潮
+- ligne-claire：历史转折
+- manga：少年战斗
 
-Avoid with: chalk (style mismatch)
+避免搭配：chalk（风格不匹配）

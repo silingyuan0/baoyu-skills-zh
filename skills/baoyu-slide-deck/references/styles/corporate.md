@@ -1,69 +1,69 @@
 # corporate
 
-Professional business style with navy/gold palette and structured layouts
+专业商务风格，海军蓝/金色调色板，结构化布局
 
-## Design Aesthetic
+## 设计美学
 
-Clean lines, structured layouts, and business-appropriate sophistication. Projects competence, reliability, and institutional credibility. Balances professionalism with approachability through careful use of whitespace and refined color choices.
+简洁线条、结构化布局和适合商务场景的精致感。传达专业能力、可靠性和机构信誉。通过巧妙运用留白和考究的配色，在专业性与亲和力之间取得平衡。
 
-## Background
+## 背景
 
-- Color: Pure White (#FFFFFF) with navy structural elements
-- Texture: None - crisp digital clarity for maximum professionalism
+- 颜色：纯白（#FFFFFF）配海军蓝结构元素
+- 纹理：无——干净清晰的数字化质感，实现最大专业性
 
-## Typography
+## 排版
 
-### Primary Font (Headlines)
+### 主字体（标题）
 
-Modern geometric sans-serif (Inter, SF Pro, or similar). Clean, professional, and highly legible. Conveys competence and contemporary business sensibility. Medium to semi-bold weight.
+现代几何无衬线体（Inter、SF Pro 或类似）。简洁、专业且高度易读。传达专业能力和现代商务审美。中等到半粗字重。
 
-### Secondary Font (Body)
+### 辅助字体（正文）
 
-Humanist sans-serif (Source Sans Pro style) for body text. Friendly yet professional, optimized for reading comprehension. Regular weight with comfortable line height.
+人文无衬线体（Source Sans Pro 风格）用于正文。友好而专业，优化阅读理解。常规字重，舒适的行高。
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
-|------|-------|-----|-------|
-| Background | Pure White | #FFFFFF | Main slide background |
-| Primary Text | Navy | #1E3A5F | Headlines, key text |
-| Secondary Text | Dark Gray | #4A5568 | Body text |
-| Primary Accent | Gold | #C9A227 | Premium highlights, emphasis |
-| Secondary Accent | Light Navy | #3D5A80 | Secondary elements |
-| Success | Corporate Green | #059669 | Positive metrics |
-| Alert | Corporate Red | #DC2626 | Attention items |
-| Neutral | Light Gray | #F3F4F6 | Background sections |
+| 角色 | 颜色 | 色值 | 用途 |
+|------|------|------|------|
+| 背景 | Pure White | #FFFFFF | 主要幻灯片背景 |
+| 主文本 | Navy | #1E3A5F | 标题、关键文本 |
+| 辅助文本 | Dark Gray | #4A5568 | 正文 |
+| 主强调色 | Gold | #C9A227 | 高端高亮、强调 |
+| 辅助强调色 | Light Navy | #3D5A80 | 辅助元素 |
+| 成功色 | Corporate Green | #059669 | 正面指标 |
+| 警告色 | Corporate Red | #DC2626 | 注意事项 |
+| 中性色 | Light Gray | #F3F4F6 | 背景区块 |
 
-## Visual Elements
+## 视觉元素
 
-- Clean charts and data visualizations
-- Professional iconography (outlined style)
-- Structured grid layouts
-- Subtle shadows for depth (minimal)
-- Progress bars and metrics displays
-- Organizational charts
-- Timeline graphics
-- Comparison tables
+- 简洁的图表和数据可视化
+- 专业图标（描边风格）
+- 结构化网格布局
+- 微妙阴影增加层次（极少使用）
+- 进度条和指标展示
+- 组织架构图
+- 时间线图形
+- 对比表格
 
-## Style Rules
+## 风格规则
 
-### Do
+### 推荐做法
 
-- Maintain clear visual hierarchy
-- Use consistent grid alignment
-- Apply accent colors strategically (gold for emphasis)
-- Keep data visualizations clean and readable
-- Use professional outlined iconography
+- 保持清晰的视觉层次
+- 使用一致的网格对齐
+- 有策略地应用强调色（金色用于强调）
+- 保持数据可视化简洁可读
+- 使用专业的描边风格图标
 
-### Don't
+### 避免事项
 
-- Use playful or casual elements
-- Apply heavy decorative effects
-- Mix too many accent colors
-- Crowd slides with information
-- Use informal illustration styles
-- Add slide numbers, footers, or logos
+- 使用俏皮或随意的元素
+- 应用厚重的装饰效果
+- 混合过多强调色
+- 信息过载
+- 使用非正式的插图风格
+- 添加幻灯片编号、页脚或标志
 
-## Best For
+## 适用场景
 
-Business presentations, investor decks, quarterly reports, executive summaries, client proposals, corporate communications, board meetings
+商务演示、投资者幻灯片、季度报告、高管摘要、客户提案、企业传播、董事会会议

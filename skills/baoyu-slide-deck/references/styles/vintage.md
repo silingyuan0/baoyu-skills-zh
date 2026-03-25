@@ -1,73 +1,73 @@
 # vintage
 
-Vintage aged-paper aesthetic for historical and expedition-style presentations
+复古陈旧纸张美学，适合历史和探索风格演示
 
-## Design Aesthetic
+## 设计美学
 
-Nostalgic vintage aesthetic with aged paper textures and historical document styling. Think explorer's journals, antique maps, and museum exhibits. Rich warm tones with weathered textures. Evokes discovery, heritage, and timeless knowledge.
+怀旧复古美学，以陈旧纸张纹理和历史文档风格为特点。令人联想到探险家日记、古董地图和博物馆展品。丰富的暖色调搭配风化纹理。唤起发现感、传承感和永恒的智慧。
 
-## Background
+## 背景
 
-- Color: Aged Parchment (#F5E6D3) or Sepia Cream (#FFF8DC)
-- Texture: Heavy aged paper texture with subtle creases, coffee stains, and worn edges
+- 颜色：陈旧羊皮纸色（#F5E6D3）或棕褐奶油色（#FFF8DC）
+- 纹理：浓厚的旧纸纹理，带细微折痕、咖啡渍和磨损边缘
 
-## Typography
+## 排版
 
-### Primary Font (Headlines)
+### 主字体（标题）
 
-Classic serif with historical character (Garamond, Baskerville, or similar). Elegant, authoritative, timeless. May include decorative flourishes.
+具有历史特征的经典衬线体（Garamond、Baskerville 或类似）。优雅、权威、永恒。可包含装饰性花饰。
 
-### Secondary Font (Labels)
+### 辅助字体（标签）
 
-Condensed serif or clean sans-serif for map labels and annotations. Period-appropriate styling. Consistent with vintage aesthetic.
+紧缩衬线体或简洁无衬线体，用于地图标签和注释。符合时代风格。与复古美学保持一致。
 
-### Body Font
+### 正文字体
 
-Readable serif for longer text. Traditional book typography. Comfortable reading experience.
+适合较长文本的可读衬线体。传统书籍排版。舒适的阅读体验。
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
-|------|-------|-----|-------|
-| Background | Aged Parchment | #F5E6D3 | Primary background |
-| Alt Background | Sepia Cream | #FFF8DC | Secondary areas |
-| Primary Text | Dark Brown | #3D2914 | Headlines, body |
-| Secondary Text | Medium Brown | #6B4423 | Annotations |
-| Accent 1 | Forest Green | #2D5A3D | Maps, nature |
-| Accent 2 | Navy Blue | #1E3A5F | Ocean, lines |
-| Accent 3 | Burgundy | #722F37 | Emphasis, borders |
-| Accent 4 | Gold | #C9A227 | Highlights, compass |
-| Ink | Sepia Black | #3D3D3D | Fine details |
+| 角色 | 颜色 | 色值 | 用途 |
+|------|------|------|------|
+| 背景 | Aged Parchment | #F5E6D3 | 主要背景 |
+| 辅助背景 | Sepia Cream | #FFF8DC | 辅助区域 |
+| 主文本 | Dark Brown | #3D2914 | 标题、正文 |
+| 辅助文本 | Medium Brown | #6B4423 | 注释 |
+| 强调色 1 | Forest Green | #2D5A3D | 地图、自然 |
+| 强调色 2 | Navy Blue | #1E3A5F | 海洋、线条 |
+| 强调色 3 | Burgundy | #722F37 | 强调、边框 |
+| 强调色 4 | Gold | #C9A227 | 高亮、罗盘 |
+| 墨色 | Sepia Black | #3D3D3D | 精细细节 |
 
-## Visual Elements
+## 视觉元素
 
-- Antique maps with route lines and landmarks
-- Compass roses and nautical elements
-- Expedition ship or vehicle illustrations
-- Specimen drawings (flora, fauna, fossils)
-- Handwritten-style annotations
-- Rope, leather, and brass decorative motifs
-- Wave and terrain texture patterns
-- Vintage photograph-style image frames
+- 带路线和地标标注的古董地图
+- 罗盘花和航海元素
+- 探险船只或车辆插图
+- 标本画（植物、动物、化石）
+- 手写风格注释
+- 绳索、皮革和黄铜装饰图案
+- 波浪和地形纹理图案
+- 复古照片风格图像边框
 
-## Style Rules
+## 风格规则
 
-### Do
+### 推荐做法
 
-- Apply consistent aged texture throughout
-- Use period-appropriate visual language
-- Include map and journey elements where relevant
-- Create layered collage compositions
-- Maintain warm sepia-toned palette
+- 全文保持一致的旧纸纹理
+- 使用符合时代风格的视觉语言
+- 在相关处包含地图和旅程元素
+- 创建分层拼贴构图
+- 保持温暖的棕褐色调
 
-### Don't
+### 避免事项
 
-- Use modern digital styling
-- Create crisp clean edges
-- Use cold or bright colors
-- Add contemporary elements
-- Add slide numbers, footers, or logos
+- 使用现代数字风格
+- 创建锐利干净的边缘
+- 使用冷色或明亮的颜色
+- 添加当代元素
+- 添加幻灯片编号、页脚或标志
 
-## Best For
+## 适用场景
 
-Historical presentations, travel and exploration content, museum exhibits, heritage brand storytelling, biography presentations, scientific discovery narratives, educational history content
+历史演示、旅行与探索内容、博物馆展品、传承品牌故事、人物传记演示、科学发现叙事、历史教育内容

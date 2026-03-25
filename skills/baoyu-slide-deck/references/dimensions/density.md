@@ -1,118 +1,118 @@
-# Density Dimension
+# 密度维度
 
-Information density per slide.
+每张幻灯片的信息密度。
 
-## Options
+## 选项
 
-| Option | Content/Slide | Whitespace | Best For |
+| 选项 | 内容/幻灯片 | 留白 | 适用于 |
 |--------|---------------|------------|----------|
-| `minimal` | One focus point | Maximum | Executive briefings, keynotes, emotional impact |
-| `balanced` | 2-3 key points | Standard | General presentations, mixed audiences |
-| `dense` | Multiple data points | Compact | Data-heavy, technical reviews, detailed analysis |
+| `minimal` | 一个焦点 | 最大 | 高管简报、主题演讲、情感影响 |
+| `balanced` | 2-3个关键点 | 标准 | 一般演示、混合受众 |
+| `dense` | 多个数据点 | 紧凑 | 数据密集型、技术评审、详细分析 |
 
-## Rendering Guidelines
+## 渲染指南
 
 ### minimal
 
-- ONE main idea per slide
-- Large visuals dominate
-- Minimal text (headline + 1-2 lines max)
-- Generous margins (15%+ from edges)
-- Maximum breathing room between elements
-- Let single element carry full weight
+- 每张幻灯片一个主要观点
+- 大视觉主导
+- 最少文本（标题 + 最多1-2行）
+- 充足边距（边缘15%+）
+- 元素之间最大呼吸空间
+- 让单个元素承载全部重量
 
-**Principles**:
-- "One slide, one message"
-- Visual > text
-- Empty space is intentional
-- Every element must earn its space
+**原则**：
+- "一张幻灯片，一个信息"
+- 视觉 > 文本
+- 空白是刻意的
+- 每个元素都必须占用空间
 
 ### balanced
 
-- 2-3 key points per slide
-- Standard margins (10% from edges)
-- Balanced text/visual ratio
-- Clear hierarchy with supporting details
-- Comfortable reading experience
+- 每张幻灯片2-3个关键点
+- 标准边距（边缘10%）
+- 平衡的文本/视觉比例
+- 清晰的层次结构和支持细节
+- 舒适的阅读体验
 
-**Principles**:
-- Primary point + supporting context
-- Visuals complement text
-- Structured but not crowded
-- Good for diverse audiences
+**原则**：
+- 主要观点 + 支持上下文
+- 视觉补充文本
+- 结构化但不拥挤
+- 适合不同受众
 
 ### dense
 
-- Multiple data points acceptable
-- Compact margins (5-8% from edges)
-- Information-rich layouts
-- Charts, tables, detailed annotations
-- Assume engaged, attentive audience
+- 可接受多个数据点
+- 紧凑边距（边缘5-8%）
+- 信息丰富的布局
+- 图表、表格、详细注释
+- 假设投入、专注的受众
 
-**Principles**:
-- Data speaks louder than decoration
-- Annotations explain insights
-- White space is strategic
-- Every pixel serves a purpose
+**原则**：
+- 数据比装饰更有说服力
+- 注释解释洞察
+- 空白是战略性的
+- 每个像素都有目的
 
-## Audience → Density Mapping
+## 受众 → 密度映射
 
-| Audience | Recommended Density |
+| 受众 | 推荐密度 |
 |----------|-------------------|
-| Executives | minimal |
-| Beginners | minimal to balanced |
-| General | balanced |
-| Intermediate | balanced |
-| Experts | balanced to dense |
+| 高管 | minimal |
+| 初学者 | minimal 到 balanced |
+| 大众 | balanced |
+| 中级 | balanced |
+| 专家 | balanced 到 dense |
 
-## Slide Type → Density Guidelines
+## 幻灯片类型 → 密度指南
 
-| Slide Type | Recommended Density |
+| 幻灯片类型 | 推荐密度 |
 |------------|-------------------|
-| Cover/Title | minimal |
-| Section break | minimal |
-| Quote/Impact | minimal |
-| Agenda/Overview | balanced |
-| Content/Analysis | balanced or dense |
-| Summary/Takeaway | balanced |
-| Data/Metrics | dense |
+| 封面/标题 | minimal |
+| 章节分隔 | minimal |
+| 引用/影响 | minimal |
+| 议程/概述 | balanced |
+| 内容/分析 | balanced 或 dense |
+| 摘要/收获 | balanced |
+| 数据/指标 | dense |
 
-## Content Guidelines Per Density
+## 按密度的内容指南
 
 ### minimal
 
-| Element | Guideline |
+| 元素 | 指南 |
 |---------|-----------|
-| Headlines | Large (40-60pt equivalent) |
-| Body text | Minimal or none |
-| Bullet points | 0-2 max |
-| Visual elements | 1 dominant element |
-| Charts/Data | 1 key stat only |
+| 标题 | 大号（40-60pt等效） |
+| 正文字 | 最少或无 |
+| 子弹点 | 最多0-2个 |
+| 视觉元素 | 1个主导元素 |
+| 图表/数据 | 仅1个关键数据 |
 
 ### balanced
 
-| Element | Guideline |
+| 元素 | 指南 |
 |---------|-----------|
-| Headlines | Medium-large (32-48pt equivalent) |
-| Body text | 2-4 lines |
-| Bullet points | 2-4 |
-| Visual elements | 1-2 elements |
-| Charts/Data | Simple charts OK |
+| 标题 | 中大号（32-48pt等效） |
+| 正文字 | 2-4行 |
+| 子弹点 | 2-4个 |
+| 视觉元素 | 1-2个元素 |
+| 图表/数据 | 简单图表可以 |
 
 ### dense
 
-| Element | Guideline |
+| 元素 | 指南 |
 |---------|-----------|
-| Headlines | Medium (24-36pt equivalent) |
-| Body text | Multiple paragraphs OK |
-| Bullet points | 4-6+ |
-| Visual elements | Multiple allowed |
-| Charts/Data | Complex charts, tables OK |
+| 标题 | 中号（24-36pt等效） |
+| 正文字 | 可接受多个段落 |
+| 子弹点 | 4-6+个 |
+| 视觉元素 | 允许多个 |
+| 图表/数据 | 复杂图表、表格可以 |
 
-## Combination Notes
+## 组合说明
 
-| Density | Works Best With | Avoid With |
+| 密度 | 最适合 | 避免与 |
 |---------|-----------------|------------|
-| minimal | neutral mood, geometric typography | dense data content |
-| balanced | any mood/typography | extremes (too sparse or too packed) |
-| dense | cool mood, technical typography | handwritten typography, organic texture |
+| minimal | neutral 氛围、geometric 排版 | 密集数据内容 |
+| balanced | 任意氛围/排版 | 极端（太稀疏或太拥挤）|
+| dense | cool 氛围、technical 排版 | handwritten 排版、organic 纹理 |

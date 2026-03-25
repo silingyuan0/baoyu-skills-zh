@@ -1,68 +1,68 @@
 # watercolor
 
-Soft watercolor illustration style with hand-painted textures and natural warmth
+柔和的水彩插图风格，手绘质感与自然温暖
 
-## Design Aesthetic
+## 设计美学
 
-Gentle watercolor aesthetic with visible brush strokes and natural color bleeding. Hand-painted feel with soft edges and organic shapes. Warm, approachable, and artistically refined. Combines artistic expression with clear information delivery.
+温柔的水彩美学，可见的笔触和自然的色彩渗透。手绘质感，柔和的边缘和有机的形状。温暖、亲切且富有艺术感。将艺术表达与清晰的信息传达相结合。
 
-## Background
+## 背景
 
-- Color: Warm Off-White (#FAF8F0) or Soft Cream (#FFF9E6)
-- Texture: Subtle watercolor paper texture with visible grain
+- 颜色：暖白色（#FAF8F0）或柔奶油色（#FFF9E6）
+- 纹理：细微水彩纸纹理，可见的纸纹颗粒
 
-## Typography
+## 排版
 
-### Primary Font (Headlines)
+### 主字体（标题）
 
-Elegant handwritten or brush script for titles. Organic letterforms with natural variation. Warm, personal feeling. May appear as actual hand-painted lettering.
+优雅的手写体或手写书法体用于标题。有机的字母形态，自然变化。温暖、个人的感觉。可能呈现为实际的手绘字母。
 
-### Secondary Font (Body)
+### 辅助字体（正文）
 
-Clean rounded sans-serif or casual handwriting style. Readable at smaller sizes. Maintains artistic cohesion while staying functional.
+简洁的圆角无衬线体或随性手写体。小字号下清晰可读。保持艺术统一性的同时确保功能性。
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
-|------|-------|-----|-------|
-| Background | Warm Off-White | #FAF8F0 | Primary background |
-| Primary Text | Warm Charcoal | #3D3D3D | Headlines, body |
-| Accent 1 | Soft Coral | #F4A261 | Primary warmth |
-| Accent 2 | Dusty Rose | #E8A0A0 | Secondary warmth |
-| Accent 3 | Sage Green | #87A96B | Nature, growth |
-| Accent 4 | Sky Blue | #7EC8E3 | Water, calm |
-| Accent 5 | Soft Lavender | #C5B4E3 | Accent, creativity |
-| Wash | Pale Yellow | #FFF3C4 | Background washes |
+| 角色 | 颜色 | 色值 | 用途 |
+|------|------|------|------|
+| 背景 | Warm Off-White | #FAF8F0 | 主要背景 |
+| 主文本 | Warm Charcoal | #3D3D3D | 标题、正文 |
+| 强调色 1 | Soft Coral | #F4A261 | 主要暖色 |
+| 强调色 2 | Dusty Rose | #E8A0A0 | 辅助暖色 |
+| 强调色 3 | Sage Green | #87A96B | 自然、成长 |
+| 强调色 4 | Sky Blue | #7EC8E3 | 水、平静 |
+| 强调色 5 | Soft Lavender | #C5B4E3 | 点缀、创意 |
+| 晕染 | Pale Yellow | #FFF3C4 | 背景晕染 |
 
-## Visual Elements
+## 视觉元素
 
-- Watercolor washes as section backgrounds
-- Illustrated icons with visible brush strokes
-- Natural elements: leaves, bubbles, flowers
-- Color bleeds and soft edges on all elements
-- Hand-drawn arrows and connection lines
-- Labeled diagrams with watercolor fills
-- Small expressive character illustrations
-- Decorative nature accents scattered thoughtfully
+- 水彩晕染作为区块背景
+- 带有可见笔触的插画图标
+- 自然元素：树叶、气泡、花朵
+- 所有元素带有色彩渗透和柔和边缘
+- 手绘箭头和连接线
+- 带水彩填充的标注图表
+- 小型富有表情的角色插画
+- 装饰性自然元素点缀，精心散布
 
-## Style Rules
+## 风格规则
 
-### Do
+### 推荐做法
 
-- Allow color to bleed beyond sharp edges
-- Use visible brush stroke textures
-- Create soft, organic shapes
-- Include hand-drawn quality in all elements
-- Maintain warm, inviting color palette
+- 允许颜色渗透超出锐利边缘
+- 使用可见的笔触纹理
+- 创建柔和、有机的形状
+- 所有元素包含手绘质感
+- 保持温暖、邀请式的调色板
 
-### Don't
+### 避免事项
 
-- Use sharp geometric shapes
-- Create hard edges or digital precision
-- Use cold or stark colors
-- Add photographic elements
-- Add slide numbers, footers, or logos
+- 使用锐利的几何形状
+- 创建硬边或数字化精确效果
+- 使用冷色或强烈的颜色
+- 添加摄影元素
+- 添加幻灯片编号、页脚或标志
 
-## Best For
+## 适用场景
 
-Lifestyle content, wellness presentations, travel guides, food and cooking content, personal stories, creative workshops, artistic portfolios, warm educational content
+生活方式内容、健康演示、旅行指南、美食烹饪内容、个人故事、创意工作坊、艺术作品集、温暖的教育内容

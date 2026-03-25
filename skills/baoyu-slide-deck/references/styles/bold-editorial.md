@@ -1,70 +1,69 @@
 # bold-editorial
 
-High-impact magazine editorial style with bold visual expression
+高冲击力的杂志编辑风格，大胆的视觉表达
 
-## Design Aesthetic
+## 设计美学
 
-Strong visual impact at magazine cover level. Bold typography and dramatic contrast. Full-bleed imagery and large color blocks create commanding presence. Every slide feels like a premium publication cover.
+杂志封面级别的大胆视觉冲击力。粗体排版和戏剧性对比。全出血图像和大色块创造权威存在感。每张幻灯片都像 premium 出版物封面。
 
-## Background
+## 背景
 
-- Color: Deep Black (#0A0A0A) primary, or Deep Blue (#0F172A) alternative
-- Texture: None - clean solid backgrounds, or pure white with bold color blocks
+- 颜色：深黑 (#0A0A0A) 主色，或深蓝 (#0F172A) 替代
+- 纹理：无——干净纯色背景，或带大胆色块的纯白
 
-## Typography
+## 排版
 
-### Primary Font (Headlines)
+### 主字体（标题）
 
-Bold condensed typeface like Impact, Oswald Bold, or Bebas Neue. Oversized headlines that dominate the slide. All-caps for maximum impact. Tight letter-spacing.
+粗体压缩字体，如 Impact、Oswald Bold 或 Bebas Neue。主导幻灯片的超大标题。全大写以获得最大冲击力。紧凑的字间距。
 
-### Secondary Font (Body)
+### 辅助字体（正文）
 
-Clean sans-serif such as Inter, SF Pro, or Helvetica Neue. Medium weight for body text. High contrast against background.
+干净的 sans-serif，如 Inter、SF Pro 或 Helvetica Neue。正文的中等字重。与背景的高对比度。
 
-## Color Palette
+## 色彩调色板
 
-| Role | Color | Hex | Usage |
+| 角色 | 颜色 | 十六进制 | 用途 |
 |------|-------|-----|-------|
-| Background Dark | Deep Black | #0A0A0A | Primary dark background |
-| Background Alt | Deep Blue | #0F172A | Alternative dark background |
-| Background Light | Pure White | #FFFFFF | Light mode background |
-| Primary Text | Pure White | #FFFFFF | Text on dark backgrounds |
-| Alt Text | Pure Black | #000000 | Text on light backgrounds |
-| Accent 1 | Electric Blue | #3B82F6 | Primary highlights |
-| Accent 2 | Bright Orange | #FB923C | Energy, urgency |
-| Accent 3 | Magenta | #EC4899 | Creative, bold accents |
-| Accent 4 | Neon Green | #22C55E | Success, growth |
-| Accent 5 | Violet | #8B5CF6 | Innovation, premium |
+| 深色背景 | 深黑 | #0A0A0A | 主深色背景 |
+| 替代背景 | 深蓝 | #0F172A | 替代深色背景 |
+| 浅色背景 | 纯白 | #FFFFFF | 浅色模式背景 |
+| 主文字 | 纯白 | #FFFFFF | 深色背景上的文字 |
+| 替代文字 | 纯黑 | #000000 | 浅色背景上的文字 |
+| 强调1 | 电光蓝 | #3B82F6 | 主高亮 |
+| 强调2 | 亮橙 | #FB923C | 能量、紧迫 |
+| 强调3 | 洋红 | #EC4899 | 创意、大胆强调 |
+| 强调4 | 霓虹绿 | #22C55E | 成功、增长 |
+| 强调5 | 紫罗兰 | #8B5CF6 | 创新、premium |
 
-## Visual Elements
+## 视觉元素
 
-- Strong typography as visual element itself
-- Geometric shapes and bold color blocks
-- Full-bleed images or solid color backgrounds
-- High contrast gradients (subtle, not garish)
-- Minimal decoration - let content speak
-- Dynamic diagonal lines and angles
-- Dramatic lighting effects on text
+- 粗体排版本身就是视觉元素
+- 几何形状和大色块
+- 全出血图像或纯色背景
+- 高对比度渐变（微妙，而非刺眼）
+- 最小装饰——让内容说话
+- 动态对角线和角度
+- 文字上的戏剧性照明效果
 
-## Style Rules
+## 样式规则
 
-### Do
+### 做
 
-- Use extreme scale contrast (huge headlines, small body)
-- Create bold color block compositions
-- Let negative space create tension
-- Use full-bleed backgrounds
-- Make every slide feel like a magazine cover
+- 使用极端比例对比（巨大标题、小正文）
+- 创建大胆的色块构图
+- 让负空间创造张力
+- 使用全出血背景
+- 让每张幻灯片都像杂志封面
 
-### Don't
+### 不做
 
-- Use soft or muted colors
-- Add unnecessary decorative elements
-- Create busy, cluttered layouts
-- Use thin or delicate typography
-- Add slide numbers, footers, or logos
+- 使用柔和或暗淡的颜色
+- 添加不必要的装饰元素
+- 创建繁忙、杂乱的布局
+- 使用细或精致的排版
+- 添加幻灯片编号、页脚或徽标
 
-## Best For
+## 最佳适用场景
 
-Product launches, marketing presentations, keynote speeches, brand showcases, investor pitches, high-stakes presentations
-
+产品发布、营销演示、主题演讲、品牌展示、投资推介、高风险演示

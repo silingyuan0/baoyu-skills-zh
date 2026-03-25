@@ -1,10 +1,10 @@
-# Auto-Selection Rules
+# 自动选择规则
 
-When a dimension is omitted, select based on content signals.
+当某个维度被省略时，根据内容信号进行选择。
 
-## Auto Type Selection
+## 自动类型选择
 
-| Signals | Type |
+| 信号 | 类型 |
 |---------|------|
 | Product, launch, announcement, release, reveal | `hero` |
 | Architecture, framework, system, API, technical, model | `conceptual` |
@@ -13,9 +13,9 @@ When a dimension is omitted, select based on content signals.
 | Story, journey, travel, lifestyle, experience, narrative | `scene` |
 | Zen, focus, essential, core, simple, pure | `minimal` |
 
-## Auto Palette Selection
+## 自动调色板选择
 
-| Signals | Palette |
+| 信号 | 调色板 |
 |---------|---------|
 | Personal story, emotion, lifestyle, human | `warm` |
 | Business, professional, thought leadership, luxury | `elegant` |
@@ -28,9 +28,9 @@ When a dimension is omitted, select based on content signals.
 | History, vintage, retro, classic, exploration | `retro` |
 | Movie poster, album cover, concert, cinematic, dramatic, two-color | `duotone` |
 
-## Auto Rendering Selection
+## 自动渲染方式选择
 
-| Signals | Rendering |
+| 信号 | 渲染方式 |
 |---------|-----------|
 | Clean, modern, tech, WeChat, icon-based, infographic | `flat-vector` |
 | Sketch, note, personal, casual, doodle, warm | `hand-drawn` |
@@ -40,34 +40,34 @@ When a dimension is omitted, select based on content signals.
 | Education, tutorial, classroom, teaching | `chalk` |
 | Poster, movie, album, concert, silhouette, mondo, limited-edition | `screen-print` |
 
-## Auto Text Selection
+## 自动文本选择
 
-| Signals | Text Level |
+| 信号 | 文本级别 |
 |---------|------------|
 | Visual-only, photography, abstract, art | `none` |
 | Article, blog, standard cover | `title-only` |
 | Series, tutorial, technical with context | `title-subtitle` |
 | Announcement, features, multiple points, infographic | `text-rich` |
 
-Default: `title-only`
+默认值: `title-only`
 
-## Auto Mood Selection
+## 自动氛围选择
 
-| Signals | Mood Level |
+| 信号 | 氛围级别 |
 |---------|------------|
 | Professional, corporate, thought leadership, academic, luxury | `subtle` |
 | General, educational, standard, blog, documentation | `balanced` |
 | Launch, announcement, promotion, event, gaming, entertainment | `bold` |
 
-Default: `balanced`
+默认值: `balanced`
 
-## Auto Font Selection
+## 自动字体选择
 
-| Signals | Font |
+| 信号 | 字体 |
 |---------|------|
 | Personal, lifestyle, human, warm, friendly, story | `handwritten` |
 | Technical, professional, clean, modern, minimal, data | `clean` |
 | Editorial, academic, luxury, classic, literary | `serif` |
 | Announcement, entertainment, promotion, bold, event, gaming | `display` |
 
-Default: `clean`
+默认值: `clean`

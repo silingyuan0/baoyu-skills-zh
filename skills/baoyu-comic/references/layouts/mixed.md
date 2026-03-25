@@ -1,23 +1,23 @@
 # mixed
 
-Dynamic, varied rhythm
+动态变化，多变节奏
 
-## Panel Structure
+## 分格结构
 
-- **Panels per page**: 3-7 (varies)
-- **Structure**: Intentionally varied for pacing
-- **Gutters**: Dynamic spacing
+- **每页分格数**：3-7（不定）
+- **结构**：有意变化以控制节奏
+- **分格间距**：动态间距
 
-## Grid Configuration
+## 网格配置
 
-- Intentionally irregular
-- Panel sizes: Varied for pacing and emphasis
-- Reading flow: Guides eye through varied rhythm
+- 有意不规则
+- 分格尺寸：为节奏和强调而变化
+- 阅读流：引导视线通过多变的节奏
 
-## Best For
+## 适合场景
 
-Action sequences, emotional arcs, complex stories
+动作场景、情感弧线、复杂叙事
 
-## Best Style Pairings
+## 最佳风格搭配
 
-dramatic, vibrant, ohmsha
+dramatic、vibrant、ohmsha

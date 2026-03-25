@@ -1,97 +1,92 @@
----
-name: mood-dimension
-description: Emotional intensity dimension for cover images
----
+# 氛围维度
 
-# Mood Dimension
+控制封面图片的情感强度和视觉重量感。
 
-Controls emotional intensity and visual weight of cover images.
+## 值
 
-## Values
-
-| Value | Contrast | Saturation | Weight | Energy |
+| 值 | 对比度 | 饱和度 | 重量 | 能量 |
 |-------|:--------:|:----------:|:------:|:------:|
-| `subtle` | Low | Muted | Light | Calm |
-| `balanced` | Medium | Normal | Medium | Moderate |
-| `bold` | High | Vivid | Heavy | Dynamic |
+| `subtle` | 低 | 柔和 | 轻盈 | 平静 |
+| `balanced` | 中等 | 正常 | 中等 | 适中 |
+| `bold` | 高 | 鲜艳 | 厚重 | 动感 |
 
-## Detail
+## 详细说明
 
 ### subtle
 
-Calm, understated visual presence.
+沉稳、克制的视觉呈现。
 
-**Characteristics**:
-- Low contrast between elements
-- Muted, desaturated colors
-- Light visual weight
-- Gentle, refined aesthetic
-- Soft edges and transitions
+**特点**：
+- 元素间对比度低
+- 柔和、灰化的颜色
+- 轻盈的视觉重量感
+- 温和、精致的美学
+- 柔和的边缘和过渡
 
-**Use Cases**:
-- Thought leadership content
-- Professional/corporate communications
-- Meditation, wellness topics
-- Academic or scholarly articles
-- Luxury brand aesthetics
+**使用场景**：
+- 思想领导力内容
+- 专业/企业沟通
+- 冥想、健康话题
+- 学术或 scholarly 文章
+- 奢侈品牌美学
 
-**Color Guidance**:
-- Pastels, earth tones, neutrals
-- Low saturation (30-50%)
-- Soft gradients
-- Minimal color variety (2-3 colors)
+**色彩指南**：
+- 粉彩、大地色、中性色
+- 低饱和度（30-50%）
+- 柔和渐变
+- 少量颜色变化（2-3 种）
 
 ### balanced
 
-Versatile, harmonious visual presence.
+通用、和谐的视觉呈现。
 
-**Characteristics**:
-- Medium contrast
-- Natural saturation levels
-- Balanced visual weight
-- Clear but not aggressive
-- Standard aesthetic approach
+**特点**：
+- 中等对比度
+- 自然饱和度
+- 均衡的视觉重量感
+- 清晰但不激进
+- 标准美学手法
 
-**Use Cases**:
-- General articles (default)
-- Most blog content
-- Educational material
-- Product documentation
-- News and updates
+**使用场景**：
+- 通用文章（默认）
+- 大多数博客内容
+- 教育材料
+- 产品文档
+- 新闻和更新
 
-**Color Guidance**:
-- Standard saturation (50-70%)
-- Complementary color schemes
-- Clear foreground/background separation
-- Moderate color variety (3-4 colors)
+**色彩指南**：
+- 标准饱和度（50-70%）
+- 互补配色方案
+- 清晰的前景/背景分离
+- 中等颜色变化（3-4 种）
 
 ### bold
 
-Dynamic, high-impact visual presence.
+动感、高冲击力的视觉呈现。
 
-**Characteristics**:
-- High contrast between elements
-- Vivid, saturated colors
-- Heavy visual weight
-- Energetic, attention-grabbing
-- Sharp edges and strong shapes
+**特点**：
+- 元素间高对比度
+- 鲜艳、饱和的颜色
+- 厚重的视觉重量感
+- 有活力、抓人眼球
+- 锐利的边缘和强烈的形状
 
-**Use Cases**:
-- Product launches
-- Promotional announcements
-- Event marketing
-- Call-to-action content
-- Entertainment/gaming topics
+**使用场景**：
+- 产品发布
+- 促销公告
+- 活动营销
+- 行动号召内容
+- 娱乐/游戏话题
 
-**Color Guidance**:
-- High saturation (70-100%)
-- Vibrant, primary colors
-- Strong contrast ratios
-- Dynamic color combinations (4+ colors)
+**色彩指南**：
+- 高饱和度（70-100%）
+- 鲜艳的原色
+- 强对比度
+- 动感的颜色组合（4+ 种）
 
-## Type Compatibility
+## 类型兼容性
 
-| Type | subtle | balanced | bold |
+| 类型 | subtle | balanced | bold |
 |------|:------:|:--------:|:----:|
 | hero | ✓ | ✓✓ | ✓✓ |
 | conceptual | ✓✓ | ✓✓ | ✓ |
@@ -100,42 +95,42 @@ Dynamic, high-impact visual presence.
 | scene | ✓✓ | ✓✓ | ✓ |
 | minimal | ✓✓ | ✓✓ | ✗ |
 
-✓✓ = highly recommended | ✓ = compatible | ✗ = not recommended
+✓✓ = 强烈推荐 | ✓ = 兼容 | ✗ = 不推荐
 
-## Palette Interaction
+## 配色方案互动
 
-Mood modifies the base palette characteristics:
+氛围修改基础配色方案特征：
 
-| Palette Category | subtle | balanced | bold |
+| 配色类别 | subtle | balanced | bold |
 |------------------|--------|----------|------|
-| Warm palettes (warm, earth, pastel) | More whitespace, softer tones | Standard colors | Deeper, richer warm tones |
-| Cool palettes (cool, mono, elegant) | Lighter lines, muted colors | Standard colors | Stronger contrast, sharper definition |
-| Dark palettes (dark, vivid) | Reduced contrast, softer glow | Standard colors | Maximum impact, vivid saturation |
-| Vintage palettes (retro) | More faded, sepia-heavy | Standard colors | Bolder retro contrasts |
-| Duotone palettes (duotone) | Softer contrast between pair | Standard two-color split | Maximum contrast, stark separation |
+| 暖色系（warm, earth, pastel） | 更多留白、更柔和的色调 | 标准颜色 | 更深、更丰富的暖色调 |
+| 冷色系（cool, mono, elegant） | 更浅的线条、更柔和的颜色 | 标准颜色 | 更强的对比度、更清晰的定义 |
+| 深色系（dark, vivid） | 降低对比度、更柔和的光晕 | 标准颜色 | 最大冲击力、鲜艳的饱和度 |
+| 复古色系（retro） | 更褪色、更重的褐色 | 标准颜色 | 更强的复古对比 |
+| 双色调系（duotone） | 对色对之间更柔和的对比 | 标准双色分割 | 最大对比度、明显的分离 |
 
-## Rendering Interaction
+## 渲染方式互动
 
-Mood adjusts rendering characteristics:
+氛围调整渲染方式特征：
 
-| Rendering | subtle | balanced | bold |
+| 渲染方式 | subtle | balanced | bold |
 |-----------|--------|----------|------|
-| flat-vector | Thinner strokes, lighter fills | Standard weight | Thicker strokes, stronger fills |
-| hand-drawn | Lighter pencil pressure, more space | Standard strokes | Heavier marker strokes, denser elements |
-| painterly | Diluted washes, more white | Standard brush | Thicker paint, saturated strokes |
-| digital | Reduced shadows, lower contrast | Standard rendering | Stronger shadows, sharper edges |
-| pixel | Fewer colors, simpler shapes | Standard palette | More colors, denser pixel detail |
-| chalk | Lighter chalk, more board showing | Standard chalk | Heavy chalk, vivid colors, dense marks |
-| screen-print | Fewer colors (2), lighter halftone | Standard 3-4 colors, medium halftone | More colors (4-5), dense halftone, stronger misregistration |
+| flat-vector | 更细的描边、更浅的填充 | 标准粗细 | 更粗的描边、更强的填充 |
+| hand-drawn | 更轻的铅笔压力、更多空间 | 标准描边 | 更重的马克笔描边、更密集的元素 |
+| painterly | 稀释的 wash、更多白色 | 标准笔触 | 更厚的颜料、更饱和的笔触 |
+| digital | 减少阴影、更低对比度 | 标准渲染 | 更强的阴影、更锐利的边缘 |
+| pixel | 更少的颜色、更简单的形状 | 标准调色板 | 更多的颜色、更密集的像素细节 |
+| chalk | 更浅的粉笔、更多黑板露出 | 标准粉笔 | 重粉笔、鲜艳的颜色、更密集的痕迹 |
+| screen-print | 更少的颜色（2）、更浅的半调 | 标准 3-4 色、中等半调 | 更多的颜色（4-5）、密集半调、更强的错位 |
 
-## Auto Selection
+## 自动选择
 
-When `--mood` is omitted, select based on signals:
+当 `--mood` 省略时，根据信号选择：
 
-| Signals | Mood Level |
+| 信号 | 氛围级别 |
 |---------|------------|
-| Professional, corporate, thought leadership, academic, luxury | `subtle` |
-| General, educational, standard, blog, documentation | `balanced` |
-| Launch, announcement, promotion, event, gaming, entertainment | `bold` |
+| 专业、企业、思想领导力、学术、奢侈 | `subtle` |
+| 通用、教育、标准、博客、文档 | `balanced` |
+| 发布、公告、促销、活动、游戏、娱乐 | `bold` |
 
-Default: `balanced`
+默认：`balanced`

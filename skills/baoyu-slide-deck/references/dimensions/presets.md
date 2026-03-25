@@ -1,10 +1,10 @@
-# Preset → Dimension Mapping
+# 预设 → 维度映射
 
-Maps 16 preset styles to their dimension combinations.
+将16个预设样式映射到其维度组合。
 
-## Mapping Table
+## 映射表
 
-| Preset | Texture | Mood | Typography | Density |
+| 预设 | 纹理 | 氛围 | 排版 | 密度 |
 |--------|---------|------|------------|---------|
 | blueprint | grid | cool | technical | balanced |
 | chalkboard | organic | warm | handwritten | balanced |
@@ -23,104 +23,104 @@ Maps 16 preset styles to their dimension combinations.
 | vector-illustration | clean | vibrant | humanist | balanced |
 | vintage | paper | warm | editorial | balanced |
 
-## Preset Details
+## 预设详情
 
 ### blueprint
-- **Dimensions**: grid + cool + technical + balanced
-- **Feel**: Engineering precision, analytical clarity
-- **Auto-select**: architecture, system, data, analysis, technical
+- **维度**：grid + cool + technical + balanced
+- **感觉**：工程精度、分析清晰
+- **自动选择**：architecture, system, data, analysis, technical
 
 ### chalkboard
-- **Dimensions**: organic + warm + handwritten + balanced
-- **Feel**: Classroom warmth, educational
-- **Auto-select**: classroom, teaching, school, chalkboard
+- **维度**：organic + warm + handwritten + balanced
+- **感觉**：课堂温暖、教育性
+- **自动选择**：classroom, teaching, school, chalkboard
 
 ### corporate
-- **Dimensions**: clean + professional + geometric + balanced
-- **Feel**: Business credibility, institutional trust
-- **Auto-select**: investor, quarterly, business, corporate
+- **维度**：clean + professional + geometric + balanced
+- **感觉**：商业信誉、机构信任
+- **自动选择**：investor, quarterly, business, corporate
 
 ### minimal
-- **Dimensions**: clean + neutral + geometric + minimal
-- **Feel**: Maximum sophistication, executive focus
-- **Auto-select**: executive, minimal, clean, simple
+- **维度**：clean + neutral + geometric + minimal
+- **感觉**：最大精致感、高管专注
+- **自动选择**：executive, minimal, clean, simple
 
 ### sketch-notes
-- **Dimensions**: organic + warm + handwritten + balanced
-- **Feel**: Friendly learning, approachable education
-- **Auto-select**: tutorial, learn, education, guide, beginner
+- **维度**：organic + warm + handwritten + balanced
+- **感觉**：友好学习、平易近人的教育
+- **自动选择**：tutorial, learn, education, guide, beginner
 
 ### watercolor
-- **Dimensions**: organic + warm + humanist + minimal
-- **Feel**: Artistic, natural, lifestyle
-- **Auto-select**: lifestyle, wellness, travel, artistic
+- **维度**：organic + warm + humanist + minimal
+- **感觉**：艺术、自然、生活方式
+- **自动选择**：lifestyle, wellness, travel, artistic
 
 ### dark-atmospheric
-- **Dimensions**: clean + dark + editorial + balanced
-- **Feel**: Cinematic, entertainment
-- **Auto-select**: entertainment, music, gaming, atmospheric
+- **维度**：clean + dark + editorial + balanced
+- **感觉**：电影感、娱乐
+- **自动选择**：entertainment, music, gaming, atmospheric
 
 ### notion
-- **Dimensions**: clean + neutral + geometric + dense
-- **Feel**: SaaS professional, data-forward
-- **Auto-select**: saas, product, dashboard, metrics
+- **维度**：clean + neutral + geometric + dense
+- **感觉**：SaaS专业、数据导向
+- **自动选择**：saas, product, dashboard, metrics
 
 ### bold-editorial
-- **Dimensions**: clean + vibrant + editorial + balanced
-- **Feel**: Magazine impact, keynote drama
-- **Auto-select**: launch, marketing, keynote, magazine
+- **维度**：clean + vibrant + editorial + balanced
+- **感觉**：杂志冲击、主题演讲戏剧性
+- **自动选择**：launch, marketing, keynote, magazine
 
 ### editorial-infographic
-- **Dimensions**: clean + cool + editorial + dense
-- **Feel**: Publication quality, informative
-- **Auto-select**: explainer, journalism, science communication
+- **维度**：clean + cool + editorial + dense
+- **感觉**：出版物质量、信息丰富
+- **自动选择**：explainer, journalism, science communication
 
 ### fantasy-animation
-- **Dimensions**: organic + vibrant + handwritten + minimal
-- **Feel**: Magical, storytelling
-- **Auto-select**: story, fantasy, animation, magical
+- **维度**：organic + vibrant + handwritten + minimal
+- **感觉**：神奇、故事讲述
+- **自动选择**：story, fantasy, animation, magical
 
 ### intuition-machine
-- **Dimensions**: clean + cool + technical + dense
-- **Feel**: Technical briefing, bilingual documentation
-- **Auto-select**: briefing, academic, research, bilingual
+- **维度**：clean + cool + technical + dense
+- **感觉**：技术简报、双语文档
+- **自动选择**：briefing, academic, research, bilingual
 
 ### pixel-art
-- **Dimensions**: pixel + vibrant + technical + balanced
-- **Feel**: Retro gaming, developer culture
-- **Auto-select**: gaming, retro, pixel, developer
+- **维度**：pixel + vibrant + technical + balanced
+- **感觉**：复古游戏、开发者文化
+- **自动选择**：gaming, retro, pixel, developer
 
 ### scientific
-- **Dimensions**: clean + cool + technical + dense
-- **Feel**: Academic precision, research quality
-- **Auto-select**: biology, chemistry, medical, scientific
+- **维度**：clean + cool + technical + dense
+- **感觉**：学术精度、研究质量
+- **自动选择**：biology, chemistry, medical, scientific
 
 ### vector-illustration
-- **Dimensions**: clean + vibrant + humanist + balanced
-- **Feel**: Flat design, friendly creative
-- **Auto-select**: creative, children, kids, cute
+- **维度**：clean + vibrant + humanist + balanced
+- **感觉**：扁平设计、友好创意
+- **自动选择**：creative, children, kids, cute
 
 ### vintage
-- **Dimensions**: paper + warm + editorial + balanced
-- **Feel**: Historical, heritage storytelling
-- **Auto-select**: history, heritage, vintage, expedition
+- **维度**：paper + warm + editorial + balanced
+- **感觉**：历史、遗产故事讲述
+- **自动选择**：history, heritage, vintage, expedition
 
-## Building Custom Combinations
+## 构建自定义组合
 
-When user selects "Custom dimensions", combine any:
+当用户选择"自定义维度"时，组合任意：
 
-- **Texture** (5): clean, grid, organic, pixel, paper
-- **Mood** (6): professional, warm, cool, vibrant, dark, neutral
-- **Typography** (5): geometric, humanist, handwritten, editorial, technical
-- **Density** (3): minimal, balanced, dense
+- **纹理**（5）：clean, grid, organic, pixel, paper
+- **氛围**（6）：professional, warm, cool, vibrant, dark, neutral
+- **排版**（5）：geometric, humanist, handwritten, editorial, technical
+- **密度**（3）：minimal, balanced, dense
 
-Total possible combinations: 5 × 6 × 5 × 3 = **450 unique styles**
+可能的组合总数：5 × 6 × 5 × 3 = **450种独特样式**
 
-## Recommended Combinations (Beyond Presets)
+## 推荐组合（预设之外）
 
-| Custom Name | Texture | Mood | Typography | Density | Use Case |
+| 自定义名称 | 纹理 | 氛围 | 排版 | 密度 | 使用场景 |
 |-------------|---------|------|------------|---------|----------|
-| tech-minimal | clean | neutral | technical | minimal | Developer keynotes |
-| warm-editorial | paper | warm | editorial | balanced | Heritage brands |
-| dark-technical | grid | dark | technical | dense | Security, DevOps |
-| playful-clean | clean | vibrant | humanist | balanced | Startups, apps |
+| tech-minimal | clean | neutral | technical | minimal | 开发者主题演讲 |
+| warm-editorial | paper | warm | editorial | balanced |  heritage 品牌 |
+| dark-technical | grid | dark | technical | dense | 安全、DevOps |
+| playful-clean | clean | vibrant | humanist | balanced | 初创公司、应用 |

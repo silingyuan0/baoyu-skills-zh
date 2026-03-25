@@ -1,59 +1,59 @@
 # editorial
 
-Magazine-style editorial infographic for professional content
+杂志风格的专业内容编辑信息图
 
-## Design Aesthetic
+## 设计美学
 
-High-quality magazine explainer aesthetic. Clear visual storytelling with structured layouts and professional typography. Think Wired, The Verge, or quality science publications. Complex information made digestible.
+高品质杂志解释图风格。清晰的视觉叙事与结构化布局及专业排版。类似 Wired、The Verge（知名科技媒体）或优质科学出版物。将复杂信息变得易于理解。
 
-## Background
+## 背景
 
-- Color: Pure White (#FFFFFF) or Light Gray (#F8F9FA)
-- Texture: None or subtle paper grain
+- 颜色：纯白（#FFFFFF）或浅灰（#F8F9FA）
+- 纹理：无或细微纸张纹理
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
+| 角色 | 颜色 | Hex | 用途 |
 |------|-------|-----|-------|
-| Background | Pure White | #FFFFFF | Primary background |
-| Alt Background | Light Gray | #F8F9FA | Section backgrounds |
-| Primary Text | Near Black | #1A1A1A | Headlines, body |
-| Secondary Text | Dark Gray | #4A5568 | Captions |
-| Accent 1 | Editorial Blue | #2563EB | Primary accent |
-| Accent 2 | Coral | #F97316 | Secondary accent |
-| Accent 3 | Emerald | #10B981 | Positive elements |
-| Accent 4 | Amber | #F59E0B | Attention points |
-| Dividers | Medium Gray | #D1D5DB | Section dividers |
+| 背景 | 纯白 | #FFFFFF | 主背景 |
+| 替代背景 | 浅灰 | #F8F9FA | 区域背景 |
+| 主文本 | 近黑 | #1A1A1A | 标题、正文 |
+| 次要文本 | 深灰 | #4A5568 | 图注 |
+| 强调色 1 | 编辑蓝 | #2563EB | 主强调 |
+| 强调色 2 | 珊瑚色 | #F97316 | 次强调 |
+| 强调色 3 | 翡翠绿 | #10B981 | 正面元素 |
+| 强调色 4 | 琥珀色 | #F59E0B | 关注点 |
+| 分隔线 | 中灰 | #D1D5DB | 区域分隔 |
 
-## Visual Elements
+## 视觉元素
 
-- Clean flat illustrations
-- Structured multi-section layouts
-- Callout boxes for insights
-- Icon-based visualizations
-- Visual metaphors for concepts
-- Flow diagrams with hierarchy
-- Pull quotes and highlights
-- Clear section dividers
+- 简洁扁平插图
+- 结构化多区域布局
+- 洞察力标注框
+- 基于图标的可视化
+- 概念视觉隐喻
+- 层次流程图
+- 引用高亮和重点
+- 清晰的区域分隔
 
-## Style Rules
+## 风格规则
 
-### Do
+### 宜
 
-- Create clear narrative flow
-- Use structured layouts
-- Include callout boxes
-- Design visual metaphors
-- Maintain magazine polish
+- 创建清晰的叙事流程
+- 使用结构化布局
+- 包含标注框
+- 设计视觉隐喻
+- 保持杂志级精致
 
-### Don't
+### 忌
 
-- Use photographic imagery
-- Create cluttered layouts
-- Mix too many styles
-- Add purposeless decoration
-- Compromise clarity for style
+- 使用摄影图像
+- 创建杂乱布局
+- 混合过多风格
+- 添加无目的装饰
+- 为风格牺牲清晰度
 
-## Best For
+## 适用于
 
-Technology explainers, science communication, research articles, policy analysis, investigative pieces, thought leadership, long-form journalism
+技术解读、科学传播、研究论文、政策分析、调查报道、思想领袖文章、长篇新闻

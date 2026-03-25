@@ -1,10 +1,10 @@
-# Prompt Assembly Guide
+# 提示词组装指南
 
-Guide for assembling image generation prompts from elements, presets, and outline content.
+从元素、预设和大纲内容组装图像生成提示词的指南。
 
-## Base Prompt Structure
+## 基础提示词结构
 
-Every XHS infographic prompt follows this structure:
+每个小红书信息图提示词遵循此结构：
 
 ```
 Create a Xiaohongshu (Little Red Book) style infographic following these guidelines:
@@ -58,9 +58,9 @@ Create a Xiaohongshu (Little Red Book) style infographic following these guideli
 Please use nano banana pro to generate the infographic based on the specifications above.
 ```
 
-## Style Section Assembly
+## 风格节组装
 
-Load from `presets/{style}.md` and extract key elements:
+从 `presets/{style}.md` 加载并提取关键元素：
 
 ```markdown
 ## Style: {style_name}
@@ -77,9 +77,9 @@ Load from `presets/{style}.md` and extract key elements:
 {typography_style}
 ```
 
-### Screen-Print Style Override
+### 丝网印刷风格覆盖
 
-When `style: screen-print`, replace the standard Core Principles and Text Style sections with:
+当 `style: screen-print` 时，用以下内容替换标准的核心原则和文本样式部分：
 
 ```
 ## Core Principles
@@ -112,9 +112,9 @@ When `style: screen-print`, replace the standard Core Principles and Text Style 
 - Paper grain texture beneath all colors
 ```
 
-## Layout Section Assembly
+## 布局节组装
 
-Load from `elements/canvas.md` and extract relevant layout:
+从 `elements/canvas.md` 加载并提取相关布局：
 
 ```markdown
 ## Layout: {layout_name}
@@ -129,9 +129,9 @@ Load from `elements/canvas.md` and extract relevant layout:
 {balance_description}
 ```
 
-## Content Section Assembly
+## 内容节组装
 
-From outline entry:
+从大纲条目：
 
 ```markdown
 ## Content
@@ -146,7 +146,7 @@ From outline entry:
 {visual_description}
 ```
 
-## Watermark Section (if enabled)
+## 水印节（如果启用）
 
 ```markdown
 ## Watermark
@@ -156,71 +156,71 @@ with approximately {opacity*100}% visibility. The watermark should
 be legible but not distracting from the main content.
 ```
 
-## Assembly Process
+## 组装流程
 
-### Step 0: Resolve Style Preset (if `--preset` used)
+### 步骤 0：解析风格预设（如果使用 `--preset`）
 
-If user specified `--preset`, resolve to style + layout from `references/style-presets.md`:
+如果用户指定了 `--preset`，从 `references/style-presets.md` 解析为风格 + 布局：
 
 ```python
 # e.g., --preset knowledge-card → style=notion, layout=dense
 style, layout = resolve_preset(preset_name)
 ```
 
-Explicit `--style`/`--layout` flags override preset values.
+显式的 `--style`/`--layout` 参数覆盖预设值。
 
-### Step 1: Load Style Definition
+### 步骤 1：加载风格定义
 
 ```python
 preset = load_preset(style_name)  # e.g., "notion"
 ```
 
-Extract:
-- Color palette
-- Visual elements
-- Typography style
-- Best practices (do/don't)
+提取：
+- 配色方案
+- 视觉元素
+- 字体风格
+- 最佳实践（做/不做）
 
-### Step 2: Load Layout
+### 步骤 2：加载布局
 
 ```python
 layout = get_layout_from_canvas(layout_name)  # e.g., "dense"
 ```
 
-Extract:
-- Information density guidelines
-- Whitespace percentage
-- Structure description
-- Visual balance rules
+提取：
+- 信息密度指南
+- 留白百分比
+- 结构描述
+- 视觉平衡规则
 
-### Step 3: Format Content
+### 步骤 3：格式化内容
 
-From outline entry, format:
-- Position context (Cover/Content/Ending)
-- Text content with hierarchy
-- Visual concept description
-- Swipe hook (for context, not in prompt)
+从大纲条目，格式化：
+- 位置上下文（封面/内容/结尾）
+- 带层级的文本内容
+- 视觉概念描述
+- 滑动钩子（用于上下文，不在提示词中）
 
-### Step 4: Add Watermark (if applicable)
+### 步骤 4：添加水印（如果适用）
 
-If preferences include watermark:
-- Add watermark section with content, position, opacity
+如果偏好包含水印：
+- 添加水印节，包含内容、位置、透明度
 
-### Step 5: Visual Consistency — Reference Image Chain
+### 步骤 5：视觉一致性 — 参考图链
 
-When generating multiple images in a series:
+当生成系列中的多张图像时：
 
-1. **Image 1 (cover)**: Generate without `--ref` — this establishes the visual anchor
-2. **Images 2+**: Always pass image 1 as `--ref` to the installed image generation skill.
-   Read that skill's `SKILL.md` and use its documented interface rather than calling its scripts directly.
-   For each later image, use the assembled prompt file as input, set the output image path, keep aspect ratio `3:4`, use quality `2k`, and pass image 1 as the reference.
-   This ensures the AI maintains the same character design, illustration style, and color rendering across the series.
+1. **图 1（封面）**：不使用 `--ref` 生成 — 这建立视觉锚点
+2. **图 2+**：始终将图 1 作为 `--ref` 传递给已安装的图像生成技能。
+   阅读该技能的 `SKILL.md` 并使用其记录的接口，而非直接调用其脚本。
+   对于每张后续图，使用组装的提示词文件作为输入，设置输出图像路径，保持宽高比 `3:4`，使用质量 `2k`，并传递图 1 作为参考。
+   这确保 AI 在整个系列中保持相同的角色设计、插画风格和色彩渲染。
 
-### Step 6: Combine
+### 步骤 6：组合
 
-Assemble all sections into final prompt following base structure.
+按照基础结构组合所有节，形成最终提示词。
 
-## Example: Assembled Prompt
+## 示例：组装的提示词
 
 ```markdown
 Create a Xiaohongshu (Little Red Book) style infographic following these guidelines:
@@ -323,13 +323,13 @@ be legible but not distracting from the main content.
 Please use nano banana pro to generate the infographic based on the specifications above.
 ```
 
-## Prompt Checklist
+## 提示词检查清单
 
-Before generating, verify:
+生成前验证：
 
-- [ ] Style section loaded from correct preset
-- [ ] Layout section matches outline specification
-- [ ] Content accurately reflects outline entry
-- [ ] Language matches source content
-- [ ] Watermark included (if enabled in preferences)
-- [ ] No conflicting instructions
+- [ ] 风格节从正确的预设加载
+- [ ] 布局节与大纲规格匹配
+- [ ] 内容准确反映大纲条目
+- [ ] 语言与源内容匹配
+- [ ] 水印已包含（如果在偏好中启用）
+- [ ] 无冲突指令

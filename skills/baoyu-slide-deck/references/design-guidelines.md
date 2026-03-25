@@ -1,208 +1,208 @@
-# Design Guidelines
+# 设计指南
 
-Detailed design principles for slide decks.
+幻灯片的详细设计原则。
 
-## Audience Guidelines
+## 受众指南
 
-Design decisions adapt to target audience. Use `--audience` to set.
+设计决策适应目标受众。使用 `--audience` 设置。
 
-| Audience | Content Density | Visual Style | Terminology | Slides |
+| 受众 | 内容密度 | 视觉样式 | 术语 | 幻灯片 |
 |----------|-----------------|--------------|-------------|--------|
-| `beginners` | Low | Friendly, illustrative | Plain language | 8-15 |
-| `intermediate` | Medium | Balanced, structured | Some jargon OK | 10-20 |
-| `experts` | High | Data-rich, precise | Technical terms | 12-25 |
-| `executives` | Low-Medium | Clean, impactful | Business language | 8-12 |
-| `general` | Medium | Accessible, engaging | Minimal jargon | 10-18 |
+| `beginners` | 低 | 友好、图解 | 通俗语言 | 8-15 |
+| `intermediate` | 中 | 平衡、结构化 | 一些术语可以 | 10-20 |
+| `experts` | 高 | 数据丰富、精确 | 技术术语 | 12-25 |
+| `executives` | 低-中 | 简洁、有影响力 | 商业语言 | 8-12 |
+| `general` | 中 | 易懂、引人入胜 | 极少术语 | 10-18 |
 
-### Audience → Density Mapping
+### 受众 → 密度映射
 
-Recommended density dimension based on audience:
+根据受众推荐的密度维度：
 
-| Audience | Recommended Density | Rationale |
+| 受众 | 推荐密度 | 理由 |
 |----------|-------------------|-----------|
-| `executives` | minimal | One insight per slide, respect time |
-| `beginners` | minimal → balanced | Single concepts, build understanding |
-| `general` | balanced | Accessible but informative |
-| `intermediate` | balanced | Standard information density |
-| `experts` | balanced → dense | Can handle more data per slide |
+| `executives` | minimal | 每张幻灯片一个洞察，尊重时间 |
+| `beginners` | minimal → balanced | 单一概念，建立理解 |
+| `general` | balanced | 易懂但信息丰富 |
+| `intermediate` | balanced | 标准信息密度 |
+| `experts` | balanced → dense | 每张幻灯片可处理更多数据 |
 
-**Automatic Density Selection**:
-- If `--audience executives` → default to `minimal` density
-- If `--audience beginners` → default to `minimal` or `balanced`
-- If `--audience experts` → allow `dense` density
-- Otherwise → default to `balanced`
+**自动密度选择**：
+- 如果 `--audience executives` → 默认为 `minimal` 密度
+- 如果 `--audience beginners` → 默认为 `minimal` 或 `balanced`
+- 如果 `--audience experts` → 允许 `dense` 密度
+- 否则 → 默认为 `balanced`
 
-### Audience-Specific Principles
+### 受众特定原则
 
-**Beginners**:
-- One concept per slide
-- Visual metaphors over abstract diagrams
-- Step-by-step progression
-- Generous whitespace
+**初学者**：
+- 每张幻灯片一个概念
+- 视觉隐喻优于抽象图表
+- 循序渐进
+- 充足留白
 
-**Experts**:
-- Multiple data points per slide acceptable
-- Technical diagrams with precise labels
-- Assume domain knowledge
-- Dense but organized information
+**专家**：
+- 每张幻灯片可接受多个数据点
+- 带精确标签的技术图表
+- 假设领域知识
+- 密集但有组织的信息
 
-**Executives**:
-- Lead with insights, not data
-- "So what?" on every slide
-- Decision-enabling content
-- Bottom-line upfront (BLUF)
+**高管**：
+- 首先展示洞察，而非数据
+- 每张幻灯片都有"那又怎样？"
+- 决策导向内容
+- 底线优先（BLUF）
 
-## Visual Hierarchy Principles
+## 视觉层次原则
 
-| Principle | Description |
+| 原则 | 描述 |
 |-----------|-------------|
-| Focal Point | ONE dominant element per slide draws attention first |
-| Rule of Thirds | Position key elements at grid intersections |
-| Z-Pattern | Guide eye: top-left → top-right → bottom-left → bottom-right |
-| Size Contrast | Headlines 2-3x larger than body text |
-| Breathing Room | Minimum 10% margin from all edges |
+| 焦点 | 每张幻灯片一个主导元素首先吸引注意力 |
+| 三分法 | 将关键元素放在网格交点处 |
+| Z模式 | 引导视线：左上 → 右上 → 左下 → 右下 |
+| 尺寸对比 | 标题比正文字大2-3倍 |
+| 呼吸空间 | 所有边缘至少10%边距 |
 
-## Content Density
+## 内容密度
 
-See `references/dimensions/density.md` for full density dimension specs.
+参见 `references/dimensions/density.md` 了解完整密度维度规格。
 
-| Level | Description | Use When |
+| 级别 | 描述 | 适用场景 |
 |-------|-------------|----------|
-| High | Multiple data points, detailed charts, dense text | Expert audience, technical reviews |
-| Medium | Key points with supporting details | General business, mixed audiences |
-| Low | One main idea, large visuals, minimal text | Beginners, keynotes, emotional impact |
+| 高 | 多个数据点、详细图表、密集文本 | 专家受众、技术评审 |
+| 中 | 有关键点的支持细节 | 一般商业、混合受众 |
+| 低 | 一个主要观点、大视觉、最少文本 | 初学者、主题演讲、情感影响 |
 
-**High-Density Principles** (McKinsey-style):
-- Every element earns its space
-- Data speaks louder than decoration
-- Annotations explain insights, not describe data
-- White space is strategic, not filler
+**高密度原则**（麦肯锡风格）：
+- 每个元素都值得占用空间
+- 数据比装饰更有说服力
+- 注释解释洞察，而非描述数据
+- 空白是战略性的，而非填充物
 
-**Density by Slide Type**:
-| Slide Type | Recommended Density |
+**按幻灯片类型的密度**：
+| 幻灯片类型 | 推荐密度 |
 |------------|-------------------|
-| Cover/Title | minimal |
-| Agenda/Overview | balanced |
-| Content/Analysis | balanced or dense |
-| Data/Metrics | dense |
-| Quote/Impact | minimal |
-| Summary/Takeaway | balanced |
+| 封面/标题 | minimal |
+| 议程/概述 | balanced |
+| 内容/分析 | balanced 或 dense |
+| 数据/指标 | dense |
+| 引用/影响 | minimal |
+| 摘要/收获 | balanced |
 
-## Color Selection
+## 色彩选择
 
-See `references/dimensions/mood.md` for full mood dimension specs.
+参见 `references/dimensions/mood.md` 了解完整氛围维度规格。
 
-**Content-First Approach**:
-1. Analyze content topic, mood, and industry
-2. Consider target audience expectations
-3. Match palette to subject matter
-4. Ensure strong contrast for readability
+**内容优先方法**：
+1. 分析内容主题、氛围和行业
+2. 考虑目标受众期望
+3. 匹配调色板与主题
+4. 确保强对比度以提高可读性
 
-**Quick Palette Guide**:
-| Content Type | Recommended Mood |
+**快速调色板指南**：
+| 内容类型 | 推荐氛围 |
 |--------------|-----------------|
-| Technical/Architecture | cool |
-| Educational/Friendly | warm |
-| Corporate/Professional | professional |
-| Creative/Artistic | vibrant |
-| Scientific/Medical | cool or neutral |
-| Entertainment/Gaming | dark or vibrant |
+| 技术/架构 | cool |
+| 教育/友好 | warm |
+| 企业/专业 | professional |
+| 创意/艺术 | vibrant |
+| 科学/医学 | cool 或 neutral |
+| 娱乐/游戏 | dark 或 vibrant |
 
-## Typography Principles
+## 排版原则
 
-See `references/dimensions/typography.md` for full typography dimension specs.
+参见 `references/dimensions/typography.md` 了解完整排版维度规格。
 
-| Element | Treatment |
+| 元素 | 处理方式 |
 |---------|-----------|
-| Headlines | Bold, 2-3x body size, narrative style |
-| Body Text | Regular weight, readable size |
-| Captions | Smaller, lighter weight |
-| Data Labels | Monospace for technical content |
-| Emphasis | Use bold or color, not underlines |
+| 标题 | 粗体，正文的2-3倍大小，叙事风格 |
+| 正文字 | 常规字重，可读大小 |
+| 标题文字 | 较小，较轻字重 |
+| 数据标签 | 技术内容的等宽字体 |
+| 强调 | 使用粗体或颜色，而非下划线 |
 
-## Font Recommendations
+## 字体推荐
 
-**English Fonts**:
-| Font | Style | Best For |
+**英文字体**：
+| 字体 | 风格 | 适用于 |
 |------|-------|----------|
-| Liter | Sans-serif, geometric | Modern, clean, technical |
-| HedvigLettersSans | Sans-serif, distinctive | Brand-forward, creative |
-| Oranienbaum | High-contrast serif | Elegant, classical |
-| SortsMillGoudy | Classical serif | Traditional, readable |
-| Coda | Round sans-serif | Friendly, approachable |
+| Liter | 无衬线，几何 | 现代、干净、技术 |
+| HedvigLettersSans | 无衬线，独特 | 品牌导向、创意 |
+| Oranienbaum | 高对比衬线体 | 优雅、古典 |
+| SortsMillGoudy | 古典衬线体 | 传统、可读 |
+| Coda | 圆润无衬线 | 友好、平易近人 |
 
-**Chinese Fonts**:
-| Font | Style | Best For |
+**中文字体**：
+| 字体 | 风格 | 适用于 |
 |------|-------|----------|
-| MiSans | Modern sans-serif | Clean, versatile, screen-optimized |
-| Noto Sans SC | Neutral sans-serif | Standard, multilingual |
-| siyuanSongti | Refined Song typeface | Elegant, editorial |
-| alimamashuheiti | Geometric sans-serif | Commercial, structured |
-| LXGW Bright | Song-Kai hybrid | Warm, readable |
+| MiSans | 现代无衬线 | 干净、多功能、屏幕优化 |
+| Noto Sans SC | 中性无衬线 | 标准、多语言 |
+| siyuanSongti | 精致宋体 | 优雅、编辑 |
+| alimamashuheiti | 几何无衬线 | 商业、结构化 |
+| LXGW Bright | 宋体-楷混合 | 温暖、可读 |
 
-**Multilingual Pairing**:
-| Use Case | English | Chinese |
+**多语言搭配**：
+| 使用场景 | 英文 | 中文 |
 |----------|---------|---------|
-| Technical | Liter | MiSans |
-| Editorial | Oranienbaum | siyuanSongti |
-| Friendly | Coda | LXGW Bright |
-| Corporate | HedvigLettersSans | alimamashuheiti |
+| 技术 | Liter | MiSans |
+| 编辑 | Oranienbaum | siyuanSongti |
+| 友好 | Coda | LXGW Bright |
+| 企业 | HedvigLettersSans | alimamashuheiti |
 
-## Visual Elements Reference
+## 视觉元素参考
 
-See `references/dimensions/texture.md` for full texture dimension specs.
+参见 `references/dimensions/texture.md` 了解完整纹理维度规格。
 
-### Background Treatments
+### 背景处理
 
-| Treatment | Description | Best For |
+| 处理方式 | 描述 | 适用于 |
 |-----------|-------------|----------|
-| Solid color | Single background color | Clean, minimal |
-| Split background | Two colors, diagonal or vertical | Contrast, sections |
-| Gradient | Subtle vertical or diagonal fade | Modern, dynamic |
-| Textured | Pattern or texture overlay | Character, style |
+| 纯色 | 单色背景 | 干净、简约 |
+| 分屏背景 | 两种颜色，对角或垂直 | 对比、分节 |
+| 渐变 | 微妙的垂直或对角褪色 | 现代、动态 |
+| 纹理 | 图案或纹理叠加 | 特色、风格 |
 
-### Typography Treatments
+### 排版处理
 
-| Treatment | Description | Best For |
+| 处理方式 | 描述 | 适用于 |
 |-----------|-------------|----------|
-| Size contrast | 3-4x difference headline vs body | Impact, hierarchy |
-| All-caps headers | Uppercase with letter spacing | Authority, structure |
-| Monospace data | Fixed-width for numbers/code | Technical, precision |
-| Hand-drawn | Organic, imperfect letterforms | Friendly, approachable |
+| 尺寸对比 | 标题与正文3-4倍差异 | 冲击、层次 |
+| 全大写标题 | 带字间距的大写 | 权威、结构 |
+| 等宽数据 | 数字/代码的固定宽度 | 技术、精确 |
+| 手绘 | 有机、不完美的字母形态 | 友好、平易近人 |
 
-### Geometric Accents
+### 几何装饰
 
-| Element | Description | Best For |
+| 元素 | 描述 | 适用于 |
 |---------|-------------|----------|
-| Diagonal dividers | Angled section separators | Energy, movement |
-| Corner brackets | L-shaped frames | Focus, framing |
-| Circles/hexagons | Shape frames for images | Modern, tech |
-| Underline accents | Thick lines under headers | Emphasis, hierarchy |
+| 对角分割线 | 有角度的分隔线 | 能量、运动 |
+| 角括号 | L形框架 | 聚焦、框架 |
+| 圆形/六边形 | 图像的形状框架 | 现代、科技 |
+| 下划线装饰 | 标题下的粗线 | 强调、层次 |
 
-## Consistency Requirements
+## 一致性要求
 
-| Element | Guideline |
+| 元素 | 指南 |
 |---------|-----------|
-| Spacing | Consistent margins and padding throughout |
-| Colors | Maximum 3-4 colors per slide, palette consistent across deck |
-| Typography | Same font families and sizes for same content types |
-| Visual Language | Repeat patterns, shapes, and treatments |
+| 间距 | 整个过程中边距和内边距一致 |
+| 颜色 | 每张幻灯片最多3-4种颜色，整个幻灯片系列颜色一致 |
+| 排版 | 相同内容类型使用相同的字体族和大小 |
+| 视觉语言 | 重复图案、形状和处理方式 |
 
-## Dimension Combination Guide
+## 维度组合指南
 
-When combining dimensions, consider compatibility:
+组合维度时，考虑兼容性：
 
-| Audience | Recommended Dimensions |
+| 受众 | 推荐维度 |
 |----------|----------------------|
-| Executives | clean + neutral + geometric + minimal |
-| Beginners | organic + warm + humanist + minimal |
-| General | any texture + any mood + humanist/geometric + balanced |
-| Experts | grid/clean + cool + technical + balanced/dense |
+| 高管 | clean + neutral + geometric + minimal |
+| 初学者 | organic + warm + humanist + minimal |
+| 大众 | 任意纹理 + 任意氛围 + humanist/geometric + balanced |
+| 专家 | grid/clean + cool + technical + balanced/dense |
 
-| Content Type | Recommended Dimensions |
+| 内容类型 | 推荐维度 |
 |--------------|----------------------|
-| Tutorial | organic + warm + handwritten + balanced |
-| Technical | grid + cool + technical + balanced |
-| Business | clean + professional + geometric + balanced |
-| Creative | organic + vibrant + humanist + balanced |
-| Data-heavy | clean + cool + technical + dense |
+| 教程 | organic + warm + handwritten + balanced |
+| 技术 | grid + cool + technical + balanced |
+| 商业 | clean + professional + geometric + balanced |
+| 创意 | organic + vibrant + humanist + balanced |
+| 数据密集 | clean + cool + technical + dense |

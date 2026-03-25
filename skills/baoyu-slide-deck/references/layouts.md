@@ -1,65 +1,65 @@
-# Layout Gallery
+# 布局图库
 
-Optional layout hints for individual slides. Specify in outline's `// LAYOUT` section.
+为单张幻灯片提供的可选布局提示。在大纲的 `// LAYOUT` 部分指定。
 
-## Slide-Specific Layouts
+## 幻灯片特定布局
 
-| Layout | Description | Best For |
+| 布局 | 描述 | 适用于 |
 |--------|-------------|----------|
-| `title-hero` | Large centered title + subtitle | Cover slides, section breaks |
-| `quote-callout` | Featured quote with attribution | Testimonials, key insights |
-| `key-stat` | Single large number as focal point | Impact statistics, metrics |
-| `split-screen` | Half image, half text | Feature highlights, comparisons |
-| `icon-grid` | Grid of icons with labels | Features, capabilities, benefits |
-| `two-columns` | Content in balanced columns | Paired information, dual points |
-| `three-columns` | Content in three columns | Triple comparisons, categories |
-| `image-caption` | Full-bleed image + text overlay | Visual storytelling, emotional |
-| `agenda` | Numbered list with highlights | Session overview, roadmap |
-| `bullet-list` | Structured bullet points | Simple content, lists |
+| `title-hero` | 大标题居中 + 副标题 | 封面幻灯片、章节分隔 |
+| `quote-callout` | 带归属的精选引用 | 推荐信、关键洞察 |
+| `key-stat` | 以大数字为焦点 | 影响统计数据、指标 |
+| `split-screen` | 半图半文 | 功能亮点、比较 |
+| `icon-grid` | 带标签的图标网格 | 功能、能力、收益 |
+| `two-columns` | 平衡栏中的内容 | 配对信息、双观点 |
+| `three-columns` | 三栏内容 | 三重比较、类别 |
+| `image-caption` | 全出血图像 + 文字叠加 | 视觉故事讲述、情感 |
+| `agenda` | 带高亮的编号列表 | 会议概述、路线图 |
+| `bullet-list` | 结构化子弹点 | 简单内容、列表 |
 
-## Infographic-Derived Layouts
+## 信息图衍生布局
 
-| Layout | Description | Best For |
+| 布局 | 描述 | 适用于 |
 |--------|-------------|----------|
-| `linear-progression` | Sequential flow left-to-right | Timelines, step-by-step |
-| `binary-comparison` | Side-by-side A vs B | Before/after, pros-cons |
-| `comparison-matrix` | Multi-factor grid | Feature comparisons |
-| `hierarchical-layers` | Pyramid or stacked levels | Priority, importance |
-| `hub-spoke` | Central node with radiating items | Concept maps, ecosystems |
-| `bento-grid` | Varied-size tiles | Overview, summary |
-| `funnel` | Narrowing stages | Conversion, filtering |
-| `dashboard` | Metrics with charts/numbers | KPIs, data display |
-| `venn-diagram` | Overlapping circles | Relationships, intersections |
-| `circular-flow` | Continuous cycle | Recurring processes |
-| `winding-roadmap` | Curved path with milestones | Journey, timeline |
-| `tree-branching` | Parent-child hierarchy | Org charts, taxonomies |
-| `iceberg` | Visible vs hidden layers | Surface vs depth |
-| `bridge` | Gap with connection | Problem-solution |
+| `linear-progression` | 从左到右的顺序流 | 时间线、循序渐进 |
+| `binary-comparison` | 并排 A vs B | 之前/之后、利弊 |
+| `comparison-matrix` | 多因素网格 | 功能比较 |
+| `hierarchical-layers` | 金字塔或堆叠层 | 优先级、重要性 |
+| `hub-spoke` | 带辐射项的中心节点 | 概念图、生态系统 |
+| `bento-grid` | 不同大小的瓦片 | 概述、摘要 |
+| `funnel` | 收窄阶段 | 转化、过滤 |
+| `dashboard` | 带图表/数字的指标 | KPI、数据展示 |
+| `venn-diagram` | 重叠圆圈 | 关系、交集 |
+| `circular-flow` | 连续循环 | 循环过程 |
+| `winding-roadmap` | 带里程碑的弯曲路径 | 旅程、时间线 |
+| `tree-branching` | 父子层次结构 | 组织图、分类法 |
+| `iceberg` | 可见与隐藏层 | 表面与深度 |
+| `bridge` | 带连接的间隙 | 问题-解决方案 |
 
-**Usage**: Add `Layout: <name>` in slide's `// LAYOUT` section.
+**用法**：在幻灯片的 `// LAYOUT` 部分添加 `Layout: <name>`。
 
-## Layout Selection Tips
+## 布局选择技巧
 
-**Match Layout to Content**:
-| Content Type | Recommended Layouts |
+**将布局与内容匹配**：
+| 内容类型 | 推荐布局 |
 |--------------|-------------------|
-| Single narrative | `bullet-list`, `image-caption` |
-| Two concepts | `split-screen`, `binary-comparison` |
-| Three items | `three-columns`, `icon-grid` |
-| Process/Steps | `linear-progression`, `winding-roadmap` |
-| Data/Metrics | `dashboard`, `key-stat` |
-| Relationships | `hub-spoke`, `venn-diagram` |
-| Hierarchy | `hierarchical-layers`, `tree-branching` |
+| 单个叙事 | `bullet-list`、`image-caption` |
+| 两个概念 | `split-screen`、`binary-comparison` |
+| 三个项目 | `three-columns`、`icon-grid` |
+| 流程/步骤 | `linear-progression`、`winding-roadmap` |
+| 数据/指标 | `dashboard`、`key-stat` |
+| 关系 | `hub-spoke`、`venn-diagram` |
+| 层次结构 | `hierarchical-layers`、`tree-branching` |
 
-**Layout Flow Patterns**:
-| Position | Recommended Layouts |
+**布局流模式**：
+| 位置 | 推荐布局 |
 |----------|-------------------|
-| Opening | `title-hero`, `agenda` |
-| Middle | Content-specific layouts |
-| Closing | `quote-callout`, `key-stat` |
+| 开场 | `title-hero`、`agenda` |
+| 中间 | 内容特定布局 |
+| 结尾 | `quote-callout`、`key-stat` |
 
-**Common Mistakes to Avoid**:
-- Using 3-column layout for 2 items (leaves columns empty)
-- Stacking charts/tables below text (use side-by-side instead)
-- Image layouts without actual images
-- Quote layouts for emphasis (use only for real quotes with attribution)
+**要避免的常见错误**：
+- 对2个项目使用3栏布局（留下空列）
+- 在文本下方堆叠图表/表格（改用并排）
+- 没有实际图片的图片布局
+- 用于强调的引用布局（仅用于带归属的真实引用）

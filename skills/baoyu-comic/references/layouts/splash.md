@@ -1,23 +1,23 @@
 # splash
 
-Impact-focused, key moments
+冲击力聚焦，关键时刻
 
-## Panel Structure
+## 分格结构
 
-- **Panels per page**: 1-2 large + 2-3 small
-- **Structure**: Dominant splash with supporting panels
-- **Gutters**: Varied for emphasis
+- **每页分格数**：1-2 个大分格 + 2-3 个小分格
+- **结构**：主导大分格配合辅助分格
+- **分格间距**：为强调而变化
 
-## Grid Configuration
+## 网格配置
 
-- 1 dominant panel + 2-3 supporting
-- Panel sizes: 50-70% splash, remainder small
-- Reading flow: Splash dominates, supporting panels accent
+- 1 个主导分格 + 2-3 个辅助分格
+- 分格尺寸：全幅大分格占 50-70%，其余为小分格
+- 阅读流：全幅大分格主导，辅助分格点缀
 
-## Best For
+## 适合场景
 
-Revelations, breakthroughs, chapter openings
+揭示时刻、突破性发现、章节开篇
 
-## Best Style Pairings
+## 最佳风格搭配
 
-dramatic, classic, vibrant
+dramatic、classic、vibrant

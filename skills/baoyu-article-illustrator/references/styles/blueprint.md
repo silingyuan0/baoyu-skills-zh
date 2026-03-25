@@ -1,57 +1,57 @@
 # blueprint
 
-Precise technical blueprint style with engineering precision
+以工程精度呈现的精确技术蓝图风格
 
-## Design Aesthetic
+## 设计美学
 
-Clean, structured visual metaphors using blueprints, diagrams, and schematics. Precise, analytical and aesthetically refined. Information presented in grid-based layouts with engineering precision. Technical drawing quality with professional polish.
+使用蓝图、示意图和工程制图构建清晰、结构化的视觉隐喻。精确、理性且精致。信息以网格化布局呈现，体现工程级精度。专业技术制图品质，兼具专业打磨效果。
 
-## Background
+## 背景
 
-- Color: Blueprint Off-White (#FAF8F5)
-- Texture: Subtle grid overlay, engineering paper feel
+- 颜色：蓝图米白（#FAF8F5）
+- 纹理：细微网格叠加，工程图纸质感
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
-|------|-------|-----|-------|
-| Background | Blueprint Paper | #FAF8F5 | Primary background |
-| Grid | Light Gray | #E5E5E5 | Background grid lines |
-| Primary Text | Deep Slate | #334155 | Headlines, body |
-| Primary Accent | Engineering Blue | #2563EB | Key elements |
-| Secondary Accent | Navy Blue | #1E3A5F | Supporting elements |
-| Tertiary | Light Blue | #BFDBFE | Fills, backgrounds |
-| Warning | Amber | #F59E0B | Warnings, emphasis |
+| 角色 | 颜色 | 色值 | 用途 |
+|------|------|------|------|
+| 背景 | 蓝图纸张 | #FAF8F5 | 主背景 |
+| 网格 | 浅灰 | #E5E5E5 | 背景网格线 |
+| 主文本 | 深岩色 | #334155 | 标题、正文 |
+| 主强调色 | 工程蓝 | #2563EB | 关键元素 |
+| 次强调色 | 海军蓝 | #1E3A5F | 辅助元素 |
+| 第三色 | 浅蓝 | #BFDBFE | 填充、背景 |
+| 警示色 | 琥珀色 | #F59E0B | 警告、强调 |
 
-## Visual Elements
+## 视觉元素
 
-- Precise lines with consistent stroke weights
-- Technical schematics and clean vector graphics
-- Thin line work in technical drawing style
-- Connection lines: straight or 90-degree angles only
-- Data visualization with minimal charts
-- Dimension lines and measurement indicators
-- Cross-section style diagrams
-- Isometric or orthographic projections
+- 保持一致线宽的精确线条
+- 技术示意图和清晰的矢量图形
+- 技术制图风格的细线条
+- 连接线：仅限直线或 90 度角
+- 极简数据图表
+- 尺寸标注线和测量指示器
+- 剖面图风格的示意图
+- 等轴测或正交投影
 
-## Style Rules
+## 风格规则
 
-### Do
+### 推荐做法
 
-- Maintain consistent line weights
-- Use grid alignment for all elements
-- Keep color palette restrained
-- Create clear visual hierarchy through scale
-- Use geometric precision for all shapes
+- 保持一致的线宽
+- 所有元素使用网格对齐
+- 克制使用调色板
+- 通过比例创建清晰的视觉层次
+- 所有形状保持几何精度
 
-### Don't
+### 避免做法
 
-- Use hand-drawn or organic shapes
-- Add decorative flourishes
-- Use curved connection lines
-- Include photographic elements
-- Add unnecessary embellishments
+- 使用手绘或不规则形状
+- 添加装饰性花饰
+- 使用曲线连接线
+- 包含摄影元素
+- 添加不必要的装饰
 
-## Best For
+## 适用场景
 
-Technical architecture, system design, data analysis, engineering documentation, process flows, infrastructure articles
+技术架构、系统设计、数据分析、工程文档、流程图、基础设施类文章

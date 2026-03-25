@@ -3,11 +3,11 @@ name: chalkboard
 category: educational
 ---
 
-# Chalkboard Style
+# 黑板风格
 
-Black chalkboard background with colorful chalk drawing aesthetic.
+黑色黑板背景，配彩色粉笔绘画美学。
 
-## Element Combination
+## 元素组合
 
 ```yaml
 canvas:
@@ -31,67 +31,67 @@ decorations:
   frames: none
 ```
 
-## Color Palette
+## 调色板
 
-| Role | Colors | Hex |
+| 角色 | 颜色 | Hex |
 |------|--------|-----|
-| Background | Chalkboard black, green-black | #1A1A1A, #1C2B1C |
-| Primary Text | Chalk white | #F5F5F5 |
-| Accent 1 | Chalk yellow | #FFE566 |
-| Accent 2 | Chalk pink | #FF9999 |
-| Accent 3 | Chalk blue | #66B3FF |
-| Accent 4 | Chalk green | #90EE90 |
-| Accent 5 | Chalk orange | #FFB366 |
+| 背景 | 黑板黑、绿黑 | #1A1A1A, #1C2B1C |
+| 主文字 | 粉笔白 | #F5F5F5 |
+| 点缀色 1 | 粉笔黄 | #FFE566 |
+| 点缀色 2 | 粉笔粉 | #FF9999 |
+| 点缀色 3 | 粉笔蓝 | #66B3FF |
+| 点缀色 4 | 粉笔绿 | #90EE90 |
+| 点缀色 5 | 粉笔橙 | #FFB366 |
 
-## Visual Elements
+## 视觉元素
 
-- Hand-drawn chalk illustrations with sketchy, imperfect lines
-- Chalk dust effects around text and key elements
-- Doodles: stars, arrows, underlines, circles, checkmarks
-- Mathematical formulas and simple diagrams
-- Eraser smudges and chalk residue textures
-- Stick figures and simple icons
-- Connection lines with hand-drawn feel
+- 手绘粉笔插画，线条粗糙不完美
+- 文字和关键元素周围的粉笔灰效果
+- 涂鸦：星星、箭头、下划线、圆圈、勾号
+- 数学公式和简单图表
+- 橡皮擦痕迹和粉笔残渣纹理
+- 火柴人和简单图标
+- 手绘风格的连接线
 
-## Typography
+## 排版
 
-- Hand-drawn chalk lettering style
-- Visible chalk texture on all text
-- Imperfect baseline adds authenticity
-- White or bright colored chalk for emphasis
+- 手绘粉笔字体风格
+- 所有文字带有粉笔纹理
+- 不完美的基线增加真实感
+- 白色或亮色粉笔用于强调
 
-## Style Rules
+## 风格规则
 
-### Do
-- Maintain authentic chalk texture on all elements
-- Use imperfect, hand-drawn quality throughout
-- Add subtle chalk dust and smudge effects
-- Create visual hierarchy with color variety
-- Include playful doodles and annotations
+### 推荐
+- 所有元素保持真实的粉笔纹理
+- 全程使用不完美的手绘质感
+- 添加细微的粉笔灰和擦痕效果
+- 通过色彩变化创造视觉层次
+- 加入俏皮的涂鸦和批注
 
-### Don't
-- Use perfect geometric shapes
-- Create clean digital-looking lines
-- Add photorealistic elements
-- Use gradients or glossy effects
+### 避免
+- 使用完美的几何形状
+- 创建干净数字感的线条
+- 添加照片级真实元素
+- 使用渐变或光泽效果
 
-## Best Layout Pairings
+## 最佳布局搭配
 
-| Layout | Compatibility | Use Case |
+| 布局 | 兼容性 | 适用场景 |
 |--------|---------------|----------|
-| sparse | ✓✓ | Educational covers |
-| balanced | ✓✓ | Standard lessons |
-| dense | ✓✓ | Detailed tutorials |
-| list | ✓✓ | Learning checklists |
-| comparison | ✓ | Concept comparisons |
-| flow | ✓✓ | Process explanations |
+| sparse | ✓✓ | 教育类封面 |
+| balanced | ✓✓ | 标准课堂 |
+| dense | ✓✓ | 详细教程 |
+| list | ✓✓ | 学习清单 |
+| comparison | ✓ | 概念对比 |
+| flow | ✓✓ | 流程讲解 |
 
-## Best For
+## 最适合
 
-- Educational content
-- Tutorials and how-to's
-- Classroom themes
-- Teaching materials
-- Workshops
-- Informal learning sessions
-- Knowledge sharing
+- 教育内容
+- 教程和操作指南
+- 课堂主题
+- 教学材料
+- 工作坊
+- 非正式学习分享
+- 知识分享

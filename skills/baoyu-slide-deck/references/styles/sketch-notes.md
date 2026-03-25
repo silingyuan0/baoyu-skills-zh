@@ -1,66 +1,66 @@
 # sketch-notes
 
-Soft hand-drawn illustration style with fresh, refined minimalist editorial aesthetic
+柔和的手绘插图风格，清新、精致的极简编辑美学
 
-## Design Aesthetic
+## 设计美学
 
-Illustration or hand-drawn feel with soft, relaxed brush strokes. Fresh, refined overall style with minimalist editorial approach. Emphasis on precision, clarity and intelligent elegance while prioritizing warmth, approachability and friendliness.
+插图或手绘质感，以柔和、轻松的笔触呈现。整体风格清新精致，采用极简编辑方法。强调精确性、清晰度和智慧优雅，同时优先考虑温暖、亲和力和友好感。
 
-## Background
+## 背景
 
-- Color: Warm Off-White (#FAF8F0)
-- Texture: Subtle paper grain, slightly warm tone to avoid clinical feel
+- 颜色：暖白色（#FAF8F0）
+- 纹理：细微纸张颗粒，略带暖色调以避免冷峻感
 
-## Typography
+## 排版
 
-### Primary Font (Headlines)
+### 主字体（标题）
 
-Bold hand-written marker font or cartoon poster font. Slightly uneven baseline for organic feel. Thick strokes with soft edges. Render as hand-drawn letters, not typed text.
+粗体手写马克笔字体或卡通海报字体。略微不齐的基线增添自然感。粗笔触，柔和边缘。呈现为手绘字母，而非打字文本。
 
-### Secondary Font (Body)
+### 辅助字体（正文）
 
-Clear handwritten round or hard-pen style mimicking everyday notes. Consistent sizing with slight natural variation. Render as casual handwriting, legible but not mechanical.
+清晰的手写圆体或硬笔风格，模拟日常笔记。字号一致但带有自然变化。呈现为随性笔迹，清晰可辨但不机械。
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
-|------|-------|-----|-------|
-| Background | Warm Off-White | #FAF8F0 | Primary background |
-| Primary Text | Deep Charcoal | #2C3E50 | Headlines, body text |
-| Alt Text | Deep Brown | #4A4A4A | Secondary text elements |
-| Accent 1 | Soft Orange | #F4A261 | Highlights, emphasis |
-| Accent 2 | Mustard Yellow | #E9C46A | Secondary highlights |
-| Accent 3 | Sage Green | #87A96B | Nature, growth concepts |
-| Accent 4 | Light Blue | #7EC8E3 | Tech, AI elements |
-| Accent 5 | Red Brown | #A0522D | Land, infrastructure |
+| 角色 | 颜色 | 色值 | 用途 |
+|------|------|------|------|
+| 背景 | Warm Off-White | #FAF8F0 | 主要背景 |
+| 主文本 | Deep Charcoal | #2C3E50 | 标题、正文 |
+| 辅助文本 | Deep Brown | #4A4A4A | 辅助文本元素 |
+| 强调色 1 | Soft Orange | #F4A261 | 高亮、强调 |
+| 强调色 2 | Mustard Yellow | #E9C46A | 辅助高亮 |
+| 强调色 3 | Sage Green | #87A96B | 自然、成长概念 |
+| 强调色 4 | Light Blue | #7EC8E3 | 科技、AI 元素 |
+| 强调色 5 | Red Brown | #A0522D | 土地、基础设施 |
 
-## Visual Elements
+## 视觉元素
 
-- Connection lines with hand-drawn wavy feel, not perfectly straight
-- Conceptual abstract icons illustrating ideas rather than literal scenes
-- Color fills don't need to completely fill outlines - preserve hand-painted casual feel
-- Simple geometric shapes with rounded corners
-- Arrows and pointers with sketchy, informal style
-- Doodle-style decorative elements: stars, spirals, underlines
+- 手绘波浪形连接线，非完美直线
+- 概念性抽象图标，阐释观点而非描绘场景
+- 填色不必完全覆盖轮廓线——保持手绘随性感
+- 圆角的简单几何形状
+- 素描风格的箭头和指针
+- 涂鸦风装饰元素：星星、螺旋、下划线
 
-## Style Rules
+## 风格规则
 
-### Do
+### 推荐做法
 
-- Keep layouts open and well-structured
-- Emphasize information hierarchy and readability
-- Use hand-drawn quality for all elements
-- Allow imperfection - slight wobbles add character
-- Layer elements with subtle overlaps
+- 保持布局开阔、结构清晰
+- 强调信息层次和可读性
+- 所有元素使用手绘质感
+- 允许不完美——轻微的抖动增添个性
+- 元素间有微妙的叠层
 
-### Don't
+### 避免事项
 
-- Use perfect geometric shapes
-- Create photorealistic elements
-- Overcrowd with too many elements
-- Use pure white backgrounds
-- Add slide numbers, footers, or logos
+- 使用完美的几何形状
+- 创建照片写实元素
+- 元素过多造成拥挤
+- 使用纯白背景
+- 添加幻灯片编号、页脚或标志
 
-## Best For
+## 适用场景
 
-Educational content, knowledge sharing, technical explanations, friendly presentations, tutorials, onboarding materials
+教育内容、知识分享、技术讲解、友好型演示、教程、入职培训材料

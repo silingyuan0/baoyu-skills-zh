@@ -1,26 +1,26 @@
-# earth
+# 大地色
 
-Natural, organic, grounded
+自然、有机、踏实
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex |
-|------|-------|-----|
-| Primary 1 | Forest Green | #276749 |
-| Primary 2 | Sage | #9AE6B4 |
-| Primary 3 | Earth Brown | #744210 |
-| Background | Sand Beige | #F5E6D3 |
-| Background Alt | Sky Blue | #E0F2FE |
-| Accent 1 | Sunset Orange | #ED8936 |
-| Accent 2 | Water Blue | #63B3ED |
+| 角色 | 颜色 | 十六进制 |
+|------|------|----------|
+| 主色 1 | Forest Green（森林绿） | #276749 |
+| 主色 2 | Sage（鼠尾草绿） | #9AE6B4 |
+| 主色 3 | Earth Brown（土棕色） | #744210 |
+| 背景 | Sand Beige（沙米色） | #F5E6D3 |
+| 备选背景 | Sky Blue（天空蓝） | #E0F2FE |
+| 强调色 1 | Sunset Orange（日落橙） | #ED8936 |
+| 强调色 2 | Water Blue（水蓝） | #63B3ED |
 
-## Decorative Hints
+## 装饰提示
 
-- Leaves, trees, mountains, natural forms
-- Sun, clouds, organic flowing lines
-- Botanical illustrations
-- Earthy textures and natural patterns
+- 树叶、树木、山脉等自然形态
+- 太阳、云朵、有机流线
+- 植物插图
+- 泥土质感纹理和自然图案
 
-## Best For
+## 适用场景
 
-Nature, wellness, eco, organic, travel, sustainability, outdoor topics, slow living
+自然、健康、环保、有机、旅行、可持续性、户外话题、慢生活

@@ -1,122 +1,120 @@
-# Canvas & Layout
+# 画布与布局
 
-Core canvas specifications and layout grids for Xiaohongshu infographics.
+## 宽高比
 
-## Aspect Ratios
-
-| Name | Ratio | Pixels | Note |
+| 名称 | 比例 | 像素 | 说明 |
 |------|-------|--------|------|
-| portrait-3-4 | 3:4 | 1242×1660 | Highest traffic on XHS (recommended) |
-| square | 1:1 | 1242×1242 | Second recommended |
-| portrait-2-3 | 2:3 | 1242×1863 | Taller format |
+| portrait-3-4 | 3:4 | 1242×1660 | 小红书最高流量（推荐） |
+| square | 1:1 | 1242×1242 | 第二推荐 |
+| portrait-2-3 | 2:3 | 1242×1863 | 更高格式 |
 
-**Default**: portrait-3-4 for maximum engagement.
+**默认**：3:4 宽高比以获得最大参与度。
 
-## Safe Zones
+## 安全区域
 
-Avoid placing critical content in these areas:
+避免在这些区域放置关键内容：
 
-| Zone | Position | Reason |
+| 区域 | 位置 | 原因 |
 |------|----------|--------|
-| bottom-overlay | Bottom 10% | Title bar overlay on mobile |
-| top-right | Top-right corner | Like/share button overlay |
-| bottom-right | Bottom-right corner | Watermark position |
+| bottom-overlay | 底部 10% | 移动端标题栏叠加 |
+| top-right | 右上角 | 点赞/分享按钮叠加 |
+| bottom-right | 右下角 | 水印位置 |
 
 ```
 ┌─────────────────────────────┐
-│                 [like/share]│  ← top-right: avoid
+│                 [点赞/分享]  │  ← top-right：避免
 │                             │
 │                             │
-│      ✓ SAFE CONTENT AREA    │
+│      ✓ 安全内容区域           │
 │                             │
 │                             │
-│  [title bar overlay area]   │  ← bottom 10%: avoid key info
+│  [标题栏叠加区域]             │  ← 底部 10%：避免关键信息
 └─────────────────────────────┘
 ```
 
-## Grid Layouts
+## 网格布局
 
-### Density-Based Layouts
+### 基于密度的布局
 
-| Layout | Info Density | Whitespace | Points/Image | Best For |
+| 布局 | 信息密度 | 留白 | 每图要点 | 适用于 |
 |--------|--------------|------------|--------------|----------|
-| sparse | Low | 60-70% | 1-2 | Covers, quotes, impactful statements |
-| balanced | Medium | 40-50% | 3-4 | Standard content, tutorials |
-| dense | High | 20-30% | 5-8 | Knowledge cards, cheat sheets |
+| sparse | 低 | 60-70% | 1-2 | 封面、引言、有影响力的陈述 |
+| balanced | 中 | 40-50% | 3-4 | 标准内容、教程 |
+| dense | 高 | 20-30% | 5-8 | 知识卡片、速查表 |
 
-### Structure-Based Layouts
+### 基于结构的布局
 
-| Layout | Structure | Items | Best For |
+| 布局 | 结构 | 项目数 | 适用于 |
 |--------|-----------|-------|----------|
-| list | Vertical enumeration | 4-7 | Rankings, checklists, step guides |
-| comparison | Left vs Right | 2 sections | Before/after, pros/cons |
-| flow | Connected nodes | 3-6 steps | Processes, timelines, workflows |
-| mindmap | Center radial | 4-8 branches | Concept maps, brainstorming, topic overview |
-| quadrant | 4-section grid | 4 sections | SWOT analysis, priority matrix, classification |
+| list | 垂直枚举 | 4-7 | 排名、清单、步骤指南 |
+| comparison | 左右对比 | 2 部分 | 前后对比、优缺点 |
+| flow | 连接的节点 | 3-6 步 | 流程、时间线、工作流 |
+| mindmap | 中心辐射 | 4-8 分支 | 概念图、头脑风暴、主题概览 |
+| quadrant | 四区域网格 | 4 部分 | SWOT 分析、优先级矩阵、分类 |
 
-## Layout by Position
+## 按位置推荐的布局
 
-| Position | Recommended Layout | Why |
+| 位置 | 推荐布局 | 原因 |
 |----------|-------------------|-----|
-| Cover | sparse | Maximum visual impact, clear title |
-| Setup | balanced | Context without overwhelming |
-| Core | balanced/dense/list | Based on content density |
-| Payoff | balanced/list | Clear takeaways |
-| Ending | sparse | Clean CTA, memorable close |
+| 封面 | sparse | 最大视觉冲击、清晰的标题 |
+| 铺垫 | balanced | 建立语境但不造成负担 |
+| 核心 | balanced/dense/list | 基于内容密度 |
+| 收获 | balanced/list | 清晰的要点 |
+| 结尾 | sparse | 清晰的行动号召、令人印象深刻 |
 
-## Grid Cells
+## 网格单元
 
-For multi-element compositions:
+对于多元素组合：
 
-| Name | Cells | Use Case |
+| 名称 | 单元数 | 适用于 |
 |------|-------|----------|
-| single | 1 | Hero image, maximum impact |
-| dual | 2 | Before/after, comparison |
-| triptych | 3 | Steps, process flow |
-| quad | 4 | Product showcase |
-| six-grid | 6 | Checklist, collection |
-| nine-grid | 9 | Multi-image gallery |
+| single | 1 | 英雄图像、最大冲击 |
+| dual | 2 | 前后对比、比较 |
+| triptych | 3 | 步骤、流程 |
+| quad | 4 | 产品展示 |
+| six-grid | 6 | 清单、集合 |
+| nine-grid | 9 | 多图像画廊 |
 
-## Visual Balance
+## 视觉平衡
 
-### Sparse Layout
-- Single focal point centered
-- Breathing room on all sides
-- Symmetrical composition
+### 稀疏布局
+- 单一焦点居中
+- 四周留有留白
+- 对称构图
 
-### Balanced Layout
-- Top-weighted title
-- Evenly distributed content below
-- Clear visual hierarchy
+### 均衡布局
+- 顶部加权标题
+- 内容均匀分布
+- 清晰的视觉层级
 
-### Dense Layout
-- Organized grid structure
-- Clear section boundaries
-- Compact but readable spacing
+### 密集布局
+- 有组织的网格结构
+- 清晰的区域边界
+- 紧凑但可读的间距
 
-### List Layout
-- Left-aligned items
-- Clear number/bullet hierarchy
-- Consistent item format
+### 列表布局
+- 左对齐项目
+- 清晰的编号/项目符号层级
+- 一致的项目格式
 
-### Comparison Layout
-- Symmetrical left/right
-- Clear visual contrast
-- Divider between sections
+### 对比布局
+- 左右对称
+- 清晰的视觉对比
+- 区域间的分隔线
 
-### Flow Layout
-- Directional flow (top→bottom or left→right)
-- Connected nodes with arrows
-- Clear progression indicators
+### 流程布局
+- 方向性流动（从上到下或从左到右）
+- 带箭头的连接节点
+- 清晰的进度指示
 
-### Mindmap Layout
-- Central topic node
-- Radial branches outward
-- Hierarchical sub-branches
-- Organic curved connections
+### 思维导图布局
+- 中心主题节点
+- 向外辐射的分支
+- 分层的子分支
+- 有机的曲线连接
 
-### Quadrant Layout
-- 4-section grid (2×2)
-- Clear axis labels
-- Each quadrant with distinct content
-- Optional circular variant for cycles
+### 四象限布局
+- 4 区域网格（2×2）
+- 清晰的轴标签
+- 每个象限有不同内容
+- 可选的循环变体

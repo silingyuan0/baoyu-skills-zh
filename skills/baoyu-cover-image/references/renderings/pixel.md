@@ -1,42 +1,42 @@
-# pixel
+# 像素
 
-Retro 8-bit, nostalgic, chunky
+复古 8-bit、怀旧、像素风
 
-## Core Characteristics
+## 核心特征
 
-Pixel art aesthetic with visible pixel grid, limited color palette, and nostalgic gaming feel. Emulates classic 8-bit and 16-bit era graphics.
+像素艺术（pixel art）美学，以可见的像素网格、有限调色板和怀旧的游戏感觉为特征。模拟经典 8-bit 和 16-bit 时代的图形。
 
-## Lines
+## 线条
 
-- Pixel grid alignment, no anti-aliasing
-- Staircase edges on diagonals
-- Single-pixel or double-pixel outlines
-- Blocky, angular forms
+- 像素网格对齐，无抗锯齿
+- 对角线上的阶梯状边缘
+- 单像素或双像素轮廓线
+- 方块化、棱角分明的形状
 
-## Texture
+## 纹理
 
-- Dithering patterns for gradients
-- No smooth transitions
-- Cross-hatching with pixel precision
-- Limited 16-32 color palette per scene
+- 抖动（dithering）图案用于渐变
+- 无平滑过渡
+- 像素精度的交叉排线
+- 每场景限制 16-32 色调色板
 
-## Depth
+## 深度
 
-- None: flat pixel planes only
-- Parallax layering (foreground/background)
-- No perspective or 3D effects
+- 无深度：仅平面像素层
+- 视差（parallax）分层（前景/背景）
+- 无透视或 3D 效果
 
-## Element Vocabulary
+## 元素词汇
 
-- 8-bit sprites and chunky shapes
-- Simple iconography: stars, hearts, arrows
-- Text bubbles with pixel borders
-- Progress bars with chunky segments
-- Retro gaming UI elements
+- 8-bit 精灵（sprites）和像素化形状
+- 简单图标：星星、爱心、箭头
+- 带有像素边框的文字气泡
+- 由粗像素段组成的进度条
+- 复古游戏 UI 元素
 
-## Typography Approach
+## 排版方式
 
-- Pixelated bitmap font style
-- Chunky blocky letterforms
-- Fixed-width or monospace feel
-- All-caps for headers
+- 像素化位图（bitmap）字体风格
+- 粗犷的像素化字母形态
+- 等宽或固定宽度感
+- 标题使用全大写

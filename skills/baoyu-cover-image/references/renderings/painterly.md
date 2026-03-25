@@ -1,40 +1,40 @@
-# painterly
+# 绘画风
 
-Soft, artistic, expressive
+柔和、艺术、表现力强
 
-## Core Characteristics
+## 核心特征
 
-Watercolor or paint-style illustration with visible brush strokes, color bleeds, and artistic texture. Feels like a hand-painted art piece.
+水彩或绘画风格插图，以可见的笔触、颜料晕染和艺术纹理为特征。类似于手工绘制的艺术品。
 
-## Lines
+## 线条
 
-- Soft brush strokes with variable opacity
-- No hard outlines; edges defined by color transitions
-- Organic flowing strokes with natural blending
+- 柔和的笔触，透明度可变
+- 无硬轮廓线；边缘由颜色过渡定义
+- 有机流动的笔触，自然混合
 
-## Texture
+## 纹理
 
-- Visible paint or watercolor wash textures
-- Color bleeds and wet-on-wet effects
-- Paper texture showing through transparent areas
-- Brush stroke patterns visible
+- 可见的水彩或颜料洗涤纹理
+- 颜料晕染和湿画法（wet-on-wet）效果
+- 透明区域透出的纸张纹理
+- 可见的笔触图案
 
-## Depth
+## 深度
 
-- Soft edges with natural color blending
-- Atmospheric depth through color fading
-- Layered washes creating depth illusion
+- 柔和边缘，自然颜色混合
+- 通过颜色渐淡实现大气深度感
+- 多层洗涤创造深度错觉
 
-## Element Vocabulary
+## 元素词汇
 
-- Watercolor washes as backgrounds
-- Natural elements: leaves, flowers, organic forms
-- Soft gradients and color transitions
-- Splatter and drip effects as accents
-- Botanical and environmental motifs
+- 水彩洗涤作为背景
+- 自然元素：树叶、花朵、有机形态
+- 柔和渐变和颜色过渡
+- 泼溅和滴落效果作为点缀
+- 植物和环境主题
 
-## Typography Approach
+## 排版方式
 
-- Elegant brush script or handwritten style
-- Organic letterforms with brush texture
-- Integrated with paint environment
+- 优雅的书法体（brush script）或手写风格
+- 带有笔触质感的有机字母形态
+- 与绘画环境融为一体

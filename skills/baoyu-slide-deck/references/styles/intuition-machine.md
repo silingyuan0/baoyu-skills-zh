@@ -1,72 +1,72 @@
 # intuition-machine
 
-Technical briefing infographic style with aged paper texture and bilingual explanatory text boxes
+技术简报信息图风格，带年旧纸张纹理和双语解释性文本框
 
-## Design Aesthetic
+## 设计美学
 
-Academic/technical briefing presentation style, NOT artistic 3D renders. Clean 2D or isometric technical illustrations with multiple explanatory text boxes containing article content. Split layouts with visuals on left/center and text on right/bottom. Information-dense but organized with clear visual hierarchy. Vintage blueprint aesthetic with modern clarity.
+学术/技术简报演示风格，非艺术3D渲染。带有多个解释性文本框的干净2D或等轴测技术插图，包含文章内容。左右/中视觉与右侧/底部文字的分屏布局。信息密集但有组织，清晰的视觉层次。复古蓝图美学与现代清晰度结合。
 
-## Background
+## 背景
 
-- Color: Aged Cream (#F5F0E6)
-- Texture: Subtle paper texture with light creases, warm nostalgic feel reminiscent of vintage technical prints
+- 颜色：年旧奶油色 (#F5F0E6)
+- 纹理：微妙的纸张纹理与轻微折痕，温暖怀旧感，让人想起复古技术印刷
 
-## Typography
+## 排版
 
-### Primary Font (Headlines)
+### 主字体（标题）
 
-Bold display font in dark maroon, ALL CAPS in brackets for main titles. English subtitle below in smaller size. Technical, authoritative presence with vintage character.
+深栗色的粗体展示字体，主标题为全大写并带括号。英文副标题在较小尺寸下方。技术性、权威性存在，带复古特色。
 
-### Secondary Font (Labels)
+### 辅助字体（标签）
 
-Clean sans-serif for bilingual callout labels. Format: "ENGLISH TERM 中文翻译". High contrast against background.
+干净的 sans-serif，用于双语标注标签。格式："ENGLISH TERM 中文翻译"。与背景的高对比度。
 
-### Body Font
+### 正文字体
 
-Clean geometric sans-serif for text box content. Readable at smaller sizes. Consistent weight throughout.
+文本框内容的干净几何 sans-serif。在较小尺寸下可读。整个过程一致的字重。
 
-## Color Palette
+## 色彩调色板
 
-| Role | Color | Hex | Usage |
+| 角色 | 颜色 | 十六进制 | 用途 |
 |------|-------|-----|-------|
-| Background | Aged Cream | #F5F0E6 | Primary background |
-| Paper Texture | Warm White | #F5F0E1 | Blueprint paper effect |
-| Primary Text | Dark Maroon | #5D3A3A | Headlines, titles |
-| Body Text | Near Black | #1A1A1A | Text box content |
-| Accent 1 | Teal | #2F7373 | Primary illustrations |
-| Accent 2 | Warm Brown | #8B7355 | Secondary elements |
-| Accent 3 | Maroon | #722F37 | Titles, emphasis |
-| Outline | Deep Charcoal | #2D2D2D | Element outlines |
+| 背景 | 年旧奶油色 | #F5F0E6 | 主背景 |
+| 纸张纹理 | 暖白 | #F5F0E1 | 蓝图纸张效果 |
+| 主文字 | 深栗色 | #5D3A3A | 标题 |
+| 正文文字 | 近黑 | #1A1A1A | 文本框内容 |
+| 强调1 | 青色 | #2F7373 | 主插图 |
+| 强调2 | 暖棕色 | #8B7355 | 次要元素 |
+| 强调3 | 栗色 | #722F37 | 标题、强调 |
+| 轮廓 | 深炭色 | #2D2D2D | 元素轮廓 |
 
-## Visual Elements
+## 视觉元素
 
-- Isometric 3D technical illustrations OR flat 2D diagrams (choose based on concept)
-- 3-5 explanatory text boxes per slide with labeled content
-- Bilingual callout labels pointing to key parts
-- Faded thematic background patterns (circuits, gears, flowcharts related to topic)
-- Clean black outlines on all elements
-- Split or triptych layouts
-- "KEY QUOTE:" box at bottom with core insight
-- No title blocks, stamps, or watermarks in corners
+- 等轴测3D技术插图或平面2D图表（根据概念选择）
+- 每张幻灯片3-5个带标签内容的解释性文本框
+- 指向关键部分的双语标注标签
+- 褪色的主题背景图案（与主题相关的电路、齿轮、流程图）
+- 所有元素上的干净黑色轮廓
+- 分屏或三联画布局
+- 底部带核心洞察的"KEY QUOTE:"框
+- 角落无标题块、印章或水印
 
-## Style Rules
+## 样式规则
 
-### Do
+### 做
 
-- Include 3-5 text boxes with substantive content from source material
-- Use bilingual labels (English + Chinese) for key elements
-- Add faded thematic background patterns related to the topic
-- Maintain aged paper texture throughout
-- Create clear visual hierarchy with split layouts
+- 包含3-5个带源材料实质内容的文本框
+- 为关键元素使用双语标签（英文 + 中文）
+- 添加与主题相关的褪色主题背景图案
+- 始终保持年旧纸张纹理
+- 用分屏布局创建清晰的视觉层次
 
-### Don't
+### 不做
 
-- Create photorealistic renders or artistic 3D scenes
-- Leave slides without explanatory text content
-- Add title blocks or stamps in corners
-- Use gradients or glossy effects
-- Add slide numbers, footers, or logos
+- 创建逼真渲染或艺术3D场景
+- 让幻灯片没有解释性文本内容
+- 在角落添加标题块或印章
+- 使用渐变或光泽效果
+- 添加幻灯片编号、页脚或徽标
 
-## Best For
+## 最佳适用场景
 
-Technical explanations, concept breakdowns, academic presentations, knowledge documentation, research summaries, educational content with depth, bilingual audiences
+技术解释、概念分解、学术演示、知识文档、研究摘要、深度教育内容、双语受众

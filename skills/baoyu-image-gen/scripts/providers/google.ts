@@ -60,6 +60,7 @@ function toModelPath(model: string): string {
 
 function getHttpProxy(): string | null {
   return (
+    process.env.GEMINI_PROXY ||
     process.env.https_proxy ||
     process.env.HTTPS_PROXY ||
     process.env.http_proxy ||

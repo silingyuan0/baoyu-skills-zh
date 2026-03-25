@@ -3,11 +3,11 @@ name: bold
 category: impact
 ---
 
-# Bold Style
+# 醒目风格
 
-High impact, attention-grabbing aesthetic.
+高冲击力、引人注目美学。
 
-## Element Combination
+## 元素组合
 
 ```yaml
 canvas:
@@ -31,42 +31,42 @@ decorations:
   frames: none
 ```
 
-## Color Palette
+## 调色板
 
-| Role | Colors | Hex |
+| 角色 | 颜色 | Hex |
 |------|--------|-----|
-| Primary | Vibrant red, orange, yellow | #E53E3E, #DD6B20, #F6E05E |
-| Background | Deep black, dark charcoal | #000000, #1A1A1A |
-| Accents | White, neon yellow | #FFFFFF, #F7FF00 |
+| 主色 | 鲜艳红、橙、黄 | #E53E3E, #DD6B20, #F6E05E |
+| 背景 | 深黑、暗灰 | #000000, #1A1A1A |
+| 点缀色 | 白色、霓虹黄 | #FFFFFF, #F7FF00 |
 
-## Visual Elements
+## 视觉元素
 
-- Exclamation marks, arrows, warning icons
-- Strong shapes, high contrast elements
-- Dramatic compositions
-- Bold geometric forms
+- 感叹号、箭头、警告图标
+- 强烈形状、高对比度元素
+- 戏剧化构图
+- 粗犷几何形态
 
-## Typography
+## 排版
 
-- Bold, impactful hand lettering with shadows
-- High contrast text treatments
-- Large, commanding headlines
+- 粗犷有力的手写体，带阴影效果
+- 高对比度文字处理
+- 大号醒目标题
 
-## Best Layout Pairings
+## 最佳布局搭配
 
-| Layout | Compatibility | Use Case |
+| 布局 | 兼容性 | 适用场景 |
 |--------|---------------|----------|
-| sparse | ✓✓ | Impactful statements |
-| balanced | ✓ | Warning content |
-| dense | ✓ | Critical information cards |
-| list | ✓✓ | Must-know lists, rankings |
-| comparison | ✓✓ | Dramatic contrasts |
-| flow | ✓ | Critical process steps |
+| sparse | ✓✓ | 冲击力金句 |
+| balanced | ✓ | 警示内容 |
+| dense | ✓ | 关键信息卡 |
+| list | ✓✓ | 必知清单、排行 |
+| comparison | ✓✓ | 强烈对比 |
+| flow | ✓ | 关键流程步骤 |
 
-## Best For
+## 最适合
 
-- Important tips and warnings
-- Must-know content
-- Critical announcements
-- Rankings and comparisons
-- Attention-grabbing hooks
+- 重要提示和警告
+- 必知内容
+- 重要公告
+- 排行和对比
+- 引人注目的开头

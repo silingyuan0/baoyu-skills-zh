@@ -1,63 +1,63 @@
 # neutral
 
-中性基调 - Balanced, rational, educational
+中性基调 - 平衡、理性、教育导向
 
-## Overview
+## 概述
 
-Default balanced tone suitable for educational and informative content. Neither overly emotional nor cold - creates accessible, professional atmosphere.
+默认的平衡色调，适用于教育类和信息性内容。不过分情感化也不过于冷淡 — 创建专业且平易近人的氛围。
 
-## Mood Characteristics
+## 情感特征
 
-- Balanced emotional register
-- Clear, rational presentation
-- Educational focus
-- Professional but approachable
-- Objective storytelling
+- 平衡的情感表达
+- 清晰、理性的呈现方式
+- 教育导向
+- 专业但平易近人
+- 客观的叙事方式
 
-## Color Modifiers
+## 颜色修正
 
-When applied to any art style:
+应用于任何画风时：
 
-| Adjustment | Direction |
-|------------|-----------|
-| Saturation | Standard (no shift) |
-| Contrast | Balanced |
-| Temperature | Neutral |
-| Brightness | Slightly bright |
+| 调整项 | 方向 |
+|--------|------|
+| 饱和度 | 标准（无偏移） |
+| 对比度 | 平衡 |
+| 色温 | 中性 |
+| 亮度 | 略微偏亮 |
 
-## Lighting
+## 光照
 
-- Even, clear lighting
-- Minimal dramatic shadows
-- Consistent across panels
-- Natural light sources
-- No extreme contrast
+- 均匀、清晰的照明
+- 极少戏剧性阴影
+- 各分格之间保持一致
+- 自然光源
+- 无极端对比
 
-## Emotional Range
+## 情感范围
 
-| Emotion | Expression Level |
-|---------|-----------------|
-| Joy | Moderate smile |
-| Concern | Thoughtful expression |
-| Surprise | Mild widening of eyes |
-| Frustration | Slight frown |
+| 情感 | 表达程度 |
+|------|----------|
+| 喜悦 | 适度微笑 |
+| 担忧 | 沉思的表情 |
+| 惊讶 | 轻微睁大眼睛 |
+| 沮丧 | 微微皱眉 |
 
-## Composition
+## 构图
 
-- Balanced panel layouts
-- Clear focal points
-- Readable hierarchies
-- Standard framing
-- Functional compositions
+- 平衡的分格布局
+- 清晰的视觉焦点
+- 可读的层次结构
+- 标准取景
+- 功能性构图
 
-## Best For
+## 适合场景
 
-- Educational content
-- Technical tutorials
-- Informative biographies
-- Documentary style
-- Professional topics
+- 教育类内容
+- 技术教程
+- 信息性传记
+- 纪录片风格
+- 专业题材
 
-## Usage Notes
+## 使用说明
 
-Neutral is the default tone. Combine with any art style for baseline professional output. Most versatile tone option.
+中性是默认色调。可与任何画风搭配，作为基础专业输出。最通用的色调选项。

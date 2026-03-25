@@ -1,58 +1,58 @@
 # minimal
 
-Ultra-clean, zen-like illustration style for focused content
+极致简约、禅意般的插图风格，适合专注型内容
 
-## Design Aesthetic
+## 设计美学
 
-Maximum simplicity with purposeful restraint. Every element serves a function. Zen-like calm and focus through extensive negative space. Single focal point approach that guides attention naturally. Quiet elegance through reduction.
+以有目的的克制实现极致简约。每个元素都有明确功能。通过大量负空间营造禅意般的平静与专注。单一焦点引导注意力自然流动。通过减法实现安静的优雅。
 
-## Background
+## 背景
 
-- Color: Pure White (#FFFFFF) or Off-White (#FAFAFA)
-- Texture: None - clean solid backgrounds
+- 颜色：纯白（#FFFFFF）或米白（#FAFAFA）
+- 纹理：无——纯净实色背景
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
-|------|-------|-----|-------|
-| Background | White | #FFFFFF | Primary background |
-| Alt Background | Off-White | #FAFAFA | Subtle variation |
-| Primary | Pure Black | #000000 | Main elements |
-| Accent | Content-Derived | varies | Single accent color |
-| Text | Black | #000000 | Text elements |
-| Alt Text | Medium Gray | #6B6B6B | Secondary text |
+| 角色 | 颜色 | 色值 | 用途 |
+|------|------|------|------|
+| 背景 | 白色 | #FFFFFF | 主背景 |
+| 备选背景 | 米白 | #FAFAFA | 微妙变化 |
+| 主色 | 纯黑 | #000000 | 主要元素 |
+| 强调色 | 从内容衍生 | 不定 | 单一强调色 |
+| 文字 | 黑色 | #000000 | 文字元素 |
+| 辅助文字 | 中灰 | #6B6B6B | 次要文字 |
 
-Note: Accent color is derived from content context. Use sparingly.
+注：强调色从内容上下文衍生。克制使用。
 
-## Visual Elements
+## 视觉元素
 
-- Single focal element per illustration
-- Maximum negative space
-- Thin, precise lines
-- Simple geometric forms
-- Subtle shadows if any
-- Typography as primary element
-- Strategic use of single accent
-- Clean, uncluttered compositions
+- 每幅插图仅一个焦点元素
+- 最大化的负空间
+- 细致精确的线条
+- 简洁的几何形态
+- 若有阴影，须极微妙
+- 以排版为主要元素
+- 策略性使用单一强调色
+- 干净、不杂乱的构图
 
-## Style Rules
+## 风格规则
 
-### Do
+### 推荐做法
 
-- Embrace empty space
-- Use single focal points
-- Keep lines thin and precise
-- Let content breathe
-- Question every element
+- 拥抱留白
+- 使用单一焦点
+- 保持线条纤细精确
+- 让内容呼吸
+- 审视每一个元素的必要性
 
-### Don't
+### 避免做法
 
-- Add decorative elements
-- Use multiple accent colors
-- Fill available space
-- Add textures or patterns
-- Create visual complexity
+- 添加装饰性元素
+- 使用多种强调色
+- 填满可用空间
+- 添加纹理或图案
+- 创建视觉复杂性
 
-## Best For
+## 适用场景
 
-Philosophy articles, minimalism content, focused explanations, meditation and mindfulness, essential concepts, clarity-focused writing
+哲学文章、极简主义内容、专注型解释、冥想与正念、核心理念、追求清晰表达的写作

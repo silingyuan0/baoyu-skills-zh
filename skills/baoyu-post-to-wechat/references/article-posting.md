@@ -1,37 +1,37 @@
-# Article Posting (文章发表)
+# 文章发表
 
-Post markdown articles to WeChat Official Account with full formatting support.
+发布 markdown 文章到微信公众号，支持完整格式。
 
-## Usage
+## 使用方法
 
 ```bash
-# Post markdown article
+# 发布 markdown 文章
 ${BUN_X} ./scripts/wechat-article.ts --markdown article.md
 
-# With theme
+# 带主题
 ${BUN_X} ./scripts/wechat-article.ts --markdown article.md --theme grace
 
-# Disable bottom citations for ordinary external links
+# 禁用普通外部链接的底部引用
 ${BUN_X} ./scripts/wechat-article.ts --markdown article.md --no-cite
 
-# With explicit options
+# 带明确选项
 ${BUN_X} ./scripts/wechat-article.ts --markdown article.md --author "作者名" --summary "摘要"
 ```
 
-## Parameters
+## 参数
 
-| Parameter | Description |
+| 参数 | 描述 |
 |-----------|-------------|
-| `--markdown <path>` | Markdown file to convert and post |
-| `--theme <name>` | Theme: default, grace, simple, modern |
-| `--no-cite` | Keep ordinary external links inline instead of converting them to bottom citations |
-| `--title <text>` | Override title (auto-extracted from markdown) |
-| `--author <name>` | Author name |
-| `--summary <text>` | Article summary |
-| `--html <path>` | Pre-rendered HTML file (alternative to markdown) |
-| `--profile <dir>` | Chrome profile directory |
+| `--markdown <path>` | 要转换和发布的 Markdown 文件 |
+| `--theme <name>` | 主题：default、grace、simple、modern |
+| `--no-cite` | 将普通外部链接保留内联而非转换为底部引用 |
+| `--title <text>` | 覆盖标题（从 markdown 自动提取）|
+| `--author <name>` | 作者名 |
+| `--summary <text>` | 文章摘要 |
+| `--html <path>` | 预渲染 HTML 文件（markdown 的替代方案）|
+| `--profile <dir>` | Chrome 配置文件目录 |
 
-## Markdown Format
+## Markdown 格式
 
 ```markdown
 ---
@@ -55,28 +55,28 @@ Regular paragraph with **bold** and *italic*.
 [Link text](https://example.com)
 ```
 
-Markdown mode converts ordinary external links into bottom citations by default for WeChat-friendly output. Use `--no-cite` to disable that behavior.
+Markdown 模式默认将普通外部链接转换为底部引用以适配微信输出。使用 `--no-cite` 禁用该行为。
 
-## Image Handling
+## 图片处理
 
-1. **Parse**: Images in markdown are replaced with `WECHATIMGPH_N`
-2. **Render**: HTML is generated with placeholders in text
-3. **Paste**: HTML content is pasted into WeChat editor
-4. **Replace**: For each placeholder:
-   - Find and select the placeholder text
-   - Scroll into view
-   - Press Backspace to delete the placeholder
-   - Paste the image from clipboard
+1. **解析**：markdown 中的图片替换为 `WECHATIMGPH_N`
+2. **渲染**：生成带占位符的 HTML
+3. **粘贴**：将 HTML 内容粘贴到微信编辑器
+4. **替换**：对于每个占位符：
+   - 找到并选中占位符文本
+   - 滚动到视图
+   - 按 Backspace 删除占位符
+   - 从剪贴板粘贴图片
 
-## Scripts
+## 脚本
 
-| Script | Purpose |
+| 脚本 | 用途 |
 |--------|---------|
-| `wechat-article.ts` | Main article publishing script |
-| `md-to-wechat.ts` | Markdown to HTML with placeholders |
-| `md/render.ts` | Markdown rendering with themes |
+| `wechat-article.ts` | 文章发布主脚本 |
+| `md-to-wechat.ts` | 带占位符的 Markdown 到 HTML 转换 |
+| `md/render.ts` | 带主题的 Markdown 渲染 |
 
-## Example Session
+## 示例会话
 
 ```
 User: /post-to-wechat --markdown ./article.md

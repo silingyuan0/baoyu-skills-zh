@@ -1,53 +1,53 @@
 ---
 name: watermark-guide
-description: Watermark configuration guide for baoyu-comic
+description: baoyu-comic 水印配置指南
 ---
 
-# Watermark Guide
+# 水印指南
 
-## Position Diagram
+## 位置图
 
 ```
 ┌─────────────────────────────┐
-│                  [top-right]│ ← Avoid (conflicts with page numbers)
+│                  [top-right]│ ← 避免（与页码冲突）
 │                             │
 │                             │
-│       COMIC PAGE CONTENT    │
+│       漫画页面内容            │
 │                             │
 │                             │
 │[bottom-left][bottom-center][bottom-right]│
 └─────────────────────────────┘
 ```
 
-## Position Recommendations
+## 位置推荐
 
-| Position | Best For | Avoid When |
+| 位置 | 适用于 | 避免情况 |
 |----------|----------|------------|
-| `bottom-right` | Default choice, works with most panel layouts | Key panel in bottom-right |
-| `bottom-left` | Right-heavy layouts | Key panel in bottom-left |
-| `bottom-center` | Webtoon vertical scroll, centered designs | Text-heavy bottom area |
-| `top-right` | **Not recommended for comics** | Always - conflicts with page numbers |
+| `bottom-right` | 默认选择，适合大多数面板布局 | 右下角有关键面板 |
+| `bottom-left` | 右重布局 | 左下角有关键面板 |
+| `bottom-center` | 网页漫画垂直滚动，居中设计 | 底部区域文字密集 |
+| `top-right` | **漫画不推荐** | 始终 - 与页码冲突 |
 
-## Content Format
+## 内容格式
 
-| Format | Example | Style |
+| 格式 | 示例 | 风格 |
 |--------|---------|-------|
-| Handle | `@username` | Social media style |
-| Text | `Studio Name` | Professional branding |
-| Chinese | `漫画工作室` | Chinese market |
-| Initials | `ABC` | Minimal, clean |
+| 账号 | `@username` | 社交媒体风格 |
+| 文字 | `Studio Name` | 专业品牌 |
+| 中文 | `漫画工作室` | 中国市场 |
+| 首字母 | `ABC` | 简约干净 |
 
-## Best Practices for Comics
+## 漫画最佳实践
 
-1. **Panel-aware placement**: Avoid placing over speech bubbles or key action
-2. **Consistency**: Use same watermark across all pages in comic
-3. **Size**: Keep subtle - should not distract from storytelling
-4. **Style matching**: Watermark style should complement comic's visual style
-5. **Webtoon special**: Use `bottom-center` for vertical scroll format
+1. **面板感知放置**：避免放置在对话气泡或关键动作上
+2. **一致性**：漫画所有页面使用相同水印
+3. **大小**：保持微妙 - 不应分散故事叙述
+4. **风格匹配**：水印风格应补充漫画的视觉风格
+5. **网页漫画特殊**：垂直滚动格式使用 `bottom-center`
 
-## Prompt Integration
+## 提示词整合
 
-When watermark is enabled, add to image generation prompt:
+当启用水印时，添加到图像生成提示词：
 
 ```
 Include a subtle watermark "[content]" positioned at [position].
@@ -55,12 +55,12 @@ The watermark should be legible but not distracting from the comic panels
 and storytelling. Ensure watermark does not overlap speech bubbles or key action.
 ```
 
-## Common Issues
+## 常见问题
 
-| Issue | Solution |
+| 问题 | 解决方案 |
 |-------|----------|
-| Watermark invisible on dark panels | Adjust contrast or add subtle outline |
-| Watermark overlaps speech bubble | Change position or lower on page |
-| Watermark inconsistent across pages | Use session ID for consistency |
-| Watermark too prominent | Change position or reduce size |
-| Conflicts with page number | Never use top-right position |
+| 水印在深色面板上不可见 | 调整对比度或添加微妙轮廓 |
+| 水印与对话气泡重叠 | 更改位置或降低页面位置 |
+| 页面间水印不一致 | 使用会话 ID 确保一致性 |
+| 水印过于突出 | 更改位置或减小大小 |
+| 与页码冲突 | 从不使用 top-right 位置 |

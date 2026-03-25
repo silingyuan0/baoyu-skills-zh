@@ -1,30 +1,30 @@
 # webtoon
 
-Vertical scrolling comic (竖版条漫)
+竖版条漫
 
-## Panel Structure
+## 分格结构
 
-- **Panels per page**: 3-5 vertically stacked
-- **Structure**: Single column, vertical flow optimized for scrolling
-- **Gutters**: Generous vertical spacing (20-40px), panels often bleed horizontally
+- **每页分格数**：3-5 个垂直堆叠
+- **结构**：单列，垂直流向，优化滚动阅读
+- **分格间距**：宽松的垂直间距（20-40px），面板常横向出血
 
-## Grid Configuration
+## 网格配置
 
-- Single column, vertical stack
-- Panel sizes: Full width, variable height (1:1 to 1:2 aspect)
-- Reading flow: Top→bottom continuous scroll
+- 单列，垂直堆叠
+- 分格尺寸：全宽，可变高度（1:1 至 1:2 比例）
+- 阅读流：从上到下连续滚动
 
-## Special Features
+## 特色功能
 
-- Panels can extend beyond frame for dramatic effect
-- Generous whitespace between beats
-- Character close-ups alternate with wide explanation panels
-- "Float" effect - elements can exist between panels
+- 面板可延伸到边框之外以增强戏剧效果
+- 节拍之间留有充足空间
+- 角色特写与宽幅说明分格交替出现
+- "浮动"效果 — 元素可存在于分格之间
 
-## Best For
+## 适合场景
 
-Ohmsha-style tutorials, mobile reading, step-by-step guides
+Ohmsha 风格教程、移动端阅读、分步指南
 
-## Best Style Pairings
+## 最佳风格搭配
 
-ohmsha, vibrant
+ohmsha、vibrant

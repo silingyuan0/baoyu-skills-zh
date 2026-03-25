@@ -1,13 +1,8 @@
----
-name: screen-print
-category: poster
----
+# 丝网印刷风格
 
-# Screen-Print Style
+大胆的海报艺术，带有半色调纹理、有限颜色和符号化叙事。
 
-Bold poster art with halftone textures, limited colors, and symbolic storytelling.
-
-## Element Combination
+## 元素组合
 
 ```yaml
 canvas:
@@ -31,62 +26,62 @@ decorations:
   frames: none
 ```
 
-## Color Palette
+## 配色方案
 
-| Role | Colors | Hex |
+| 作用 | 颜色 | Hex |
 |------|--------|-----|
-| Primary | Burnt Orange, Deep Teal | #E8751A, #0A6E6E |
-| Background | Off-Black, Warm Cream | #121212, #F5E6D0 |
-| Accents | Crimson, Amber | #C0392B, #F4A623 |
+| 主色 | 焦橙、深青 | #E8751A, #0A6E6E |
+| 背景 | 浅黑、暖米色 | #121212, #F5E6D0 |
+| 强调 | 绯红、琥珀 | #C0392B, #F4A623 |
 
-**Duotone Pairs** (choose ONE based on content mood):
+**双色调配对**（根据内容氛围选择一种）：
 
-| Pair | Color A | Color B | Feel |
+| 配对 | 颜色 A | 颜色 B | 感觉 |
 |------|---------|---------|------|
-| Orange + Teal | #E8751A | #0A6E6E | Cinematic, action |
-| Red + Cream | #C0392B | #F5E6D0 | Bold, classic |
-| Blue + Gold | #1A3A5C | #D4A843 | Premium, prestigious |
-| Crimson + Navy | #DC143C | #0D1B2A | Dramatic, noir |
-| Magenta + Cyan | #C2185B | #00BCD4 | Vibrant, pop |
+| 橙 + 青 | #E8751A | #0A6E6E | 电影感、动作 |
+| 红 + 米色 | #C0392B | #F5E6D0 | 大胆、经典 |
+| 蓝 + 金 | #1A3A5C | #D4A843 | 高级、庄重 |
+| 绯红 + 藏青 | #DC143C | #0D1B2A | 戏剧性、黑色电影 |
+| 品红 + 青 | #C2185B | #00BCD4 | 鲜艳、流行 |
 
-**Rule**: Use 2-5 colors maximum. Fewer colors = stronger impact.
+**规则**：最多使用 2-5 种颜色。颜色越少 = 冲击力越强。
 
-## Visual Elements
+## 视觉元素
 
-- Bold silhouettes and symbolic shapes
-- Halftone dot patterns within color fills
-- Slight color layer misregistration (print offset effect)
-- Geometric framing (circles, arches, triangles)
-- Figure-ground inversion (negative space tells secondary story)
-- Stencil-cut edges, no outlines — shapes defined by color boundaries
-- Typography integrated as design element, not overlay
-- Vintage poster border treatments
+- 大胆的轮廓剪影和符号化形状
+- 颜色填充内的半色调点阵
+- 轻微的颜色层错位（印刷偏移效果）
+- 几何框架（圆形、拱形、三角形）
+- 图像背景反转（负空间讲述次要故事）
+- 模板切割边缘，无轮廓 — 颜色边界定义形状
+- 字体作为设计元素集成，而非叠加
+- 复古海报边框处理
 
-## Typography
+## 字体
 
-- Bold condensed sans-serif or hand-drawn lettering
-- Art Deco influences, vintage poster typography
-- Typography as integral part of composition (not separate layer)
-- High contrast with background for readability
+- 粗体压缩无衬线或手绘字体
+- Art Deco 影响、复古海报字体
+- 字体作为构图的组成部分（而非单独层）
+- 与背景高对比度以确保可读性
 
-## Best Layout Pairings
+## 最佳布局搭配
 
-| Layout | Compatibility | Use Case |
+| 布局 | 兼容性 | 适用于 |
 |--------|---------------|----------|
-| sparse | ✓✓ | Iconic poster covers, dramatic statements |
-| balanced | ✓✓ | Editorial compositions, opinion pieces |
-| dense | ✗ | Too much info clashes with minimal poster aesthetic |
-| list | ✓ | Bold rankings, top picks |
-| comparison | ✓✓ | Duotone split compositions, before/after |
-| flow | ✓ | Cinematic progression, timelines |
-| mindmap | ✗ | Too complex for geometric poster style |
-| quadrant | ✓✓ | Strong geometric division, classification |
+| sparse | 非常适合 | 标志性的海报封面、戏剧性陈述 |
+| balanced | 非常适合 | 编辑构图、观点文章 |
+| dense | 不适合 | 信息过多会与简约海报美学冲突 |
+| list | 适合 | 大胆排名、精选 |
+| comparison | 非常适合 | 双色调分割构图、前后对比 |
+| flow | 适合 | 电影化进程、时间线 |
+| mindmap | 不适合 | 对几何海报风格来说太复杂 |
+| quadrant | 非常适合 | 强烈的几何分割、分类 |
 
-## Best For
+## 适用于
 
-- Opinion pieces, cultural commentary
-- Movie/music/book recommendations
-- Dramatic announcements
-- Before/after transformations
-- Bold editorial content
-- Event promotions
+- 观点文章、文化评论
+- 电影/音乐/书籍推荐
+- 戏剧性公告
+- 前后转变
+- 大胆的编辑内容
+- 活动推广

@@ -1,56 +1,56 @@
 ---
 name: baoyu-article-illustrator
-description: Analyzes article structure, identifies positions requiring visual aids, generates illustrations with Type × Style two-dimension approach. Use when user asks to "illustrate article", "add images", "generate images for article", or "为文章配图".
+description: 分析文章结构，识别需要配图的位置，使用类型 x 风格二维方式生成插图。当用户要求"illustrate article"、"add images"、"generate images for article"或"为文章配图"时使用。
 version: 1.56.1
 metadata:
   openclaw:
     homepage: https://github.com/JimLiu/baoyu-skills#baoyu-article-illustrator
 ---
 
-# Article Illustrator
+# 文章插图生成器
 
-Analyze articles, identify illustration positions, generate images with Type × Style consistency.
+分析文章，识别插图位置，生成类型 x 风格一致的图片。
 
-## Two Dimensions
+## 双维度
 
-| Dimension | Controls | Examples |
-|-----------|----------|----------|
-| **Type** | Information structure | infographic, scene, flowchart, comparison, framework, timeline |
-| **Style** | Visual aesthetics | notion, warm, minimal, blueprint, watercolor, elegant |
+| 维度 | 控制内容 | 示例 |
+|------|---------|------|
+| **类型** | 信息结构 | 信息图、场景、流程图、对比、框架、时间线 |
+| **风格** | 视觉美学 | notion、暖色调、极简、蓝图、水彩、优雅 |
 
-Combine freely: `--type infographic --style blueprint`
+自由组合：`--type infographic --style blueprint`
 
-Or use presets: `--preset tech-explainer` → type + style in one flag. See [Style Presets](references/style-presets.md).
+或使用预设：`--preset tech-explainer` → 一个标志同时设置类型和风格。参见[风格预设](references/style-presets.md)。
 
-## Types
+## 类型
 
-| Type | Best For |
-|------|----------|
-| `infographic` | Data, metrics, technical |
-| `scene` | Narratives, emotional |
-| `flowchart` | Processes, workflows |
-| `comparison` | Side-by-side, options |
-| `framework` | Models, architecture |
-| `timeline` | History, evolution |
+| 类型 | 最适用于 |
+|------|---------|
+| `infographic` | 数据、指标、技术内容 |
+| `scene` | 叙事、情感表达 |
+| `flowchart` | 流程、工作流 |
+| `comparison` | 对比分析、选项比较 |
+| `framework` | 模型、架构 |
+| `timeline` | 历史、演进 |
 
-## Styles
+## 风格
 
-See [references/styles.md](references/styles.md) for Core Styles, full gallery, and Type × Style compatibility.
+参见 [references/styles.md](references/styles.md) 了解核心风格、完整风格库以及类型 x 风格兼容性矩阵。
 
-## Workflow
+## 工作流程
 
 ```
-- [ ] Step 1: Pre-check (EXTEND.md, references, config)
-- [ ] Step 2: Analyze content
-- [ ] Step 3: Confirm settings (AskUserQuestion)
-- [ ] Step 4: Generate outline
-- [ ] Step 5: Generate images
-- [ ] Step 6: Finalize
+- [ ] 步骤 1：预检（EXTEND.md、引用、配置）
+- [ ] 步骤 2：分析内容
+- [ ] 步骤 3：确认设置（AskUserQuestion）
+- [ ] 步骤 4：生成大纲
+- [ ] 步骤 5：生成图片
+- [ ] 步骤 6：完成
 ```
 
-### Step 1: Pre-check
+### 步骤 1：预检
 
-**1.5 Load Preferences (EXTEND.md) ⛔ BLOCKING**
+**1.5 加载偏好配置（EXTEND.md） ⛔ 阻塞**
 
 ```bash
 # macOS, Linux, WSL, Git Bash
@@ -60,80 +60,80 @@ test -f "$HOME/.baoyu-skills/baoyu-article-illustrator/EXTEND.md" && echo "user"
 ```
 
 ```powershell
-# PowerShell (Windows)
+# PowerShell（Windows）
 if (Test-Path .baoyu-skills/baoyu-article-illustrator/EXTEND.md) { "project" }
 $xdg = if ($env:XDG_CONFIG_HOME) { $env:XDG_CONFIG_HOME } else { "$HOME/.config" }
 if (Test-Path "$xdg/baoyu-skills/baoyu-article-illustrator/EXTEND.md") { "xdg" }
 if (Test-Path "$HOME/.baoyu-skills/baoyu-article-illustrator/EXTEND.md") { "user" }
 ```
 
-| Result | Action |
-|--------|--------|
-| Found | Read, parse, display summary |
-| Not found | ⛔ Run [first-time-setup](references/config/first-time-setup.md) |
+| 结果 | 操作 |
+|------|------|
+| 找到 | 读取、解析、显示摘要 |
+| 未找到 | ⛔ 执行[首次设置](references/config/first-time-setup.md) |
 
-Full procedures: [references/workflow.md](references/workflow.md#step-1-pre-check)
+完整流程：[references/workflow.md](references/workflow.md#step-1-pre-check)
 
-### Step 2: Analyze
+### 步骤 2：分析
 
-| Analysis | Output |
-|----------|--------|
-| Content type | Technical / Tutorial / Methodology / Narrative |
-| Purpose | information / visualization / imagination |
-| Core arguments | 2-5 main points |
-| Positions | Where illustrations add value |
+| 分析项 | 输出 |
+|--------|------|
+| 内容类型 | 技术 / 教程 / 方法论 / 叙事 |
+| 目的 | 信息传达 / 可视化 / 想象力 |
+| 核心论点 | 2-5 个主要观点 |
+| 位置 | 插图能增加价值的位置 |
 
-**CRITICAL**: Metaphors → visualize underlying concept, NOT literal image.
+**关键**：比喻 → 可视化底层概念，而非字面图像。
 
-Full procedures: [references/workflow.md](references/workflow.md#step-2-setup--analyze)
+完整流程：[references/workflow.md](references/workflow.md#step-2-setup--analyze)
 
-### Step 3: Confirm Settings ⚠️
+### 步骤 3：确认设置 ⚠️
 
-**ONE AskUserQuestion, max 4 Qs. Q1-Q2 REQUIRED. Q3 required unless preset chosen.**
+**一次 AskUserQuestion，最多 4 个问题。Q1-Q2 必选。选择预设时 Q3 可跳过。**
 
-| Q | Options |
-|---|---------|
-| **Q1: Preset or Type** | [Recommended preset], [alt preset], or manual: infographic, scene, flowchart, comparison, framework, timeline, mixed |
-| **Q2: Density** | minimal (1-2), balanced (3-5), per-section (Recommended), rich (6+) |
-| **Q3: Style** | [Recommended], minimal-flat, sci-fi, hand-drawn, editorial, scene, poster, Other — **skip if preset chosen** |
-| Q4: Language | When article language ≠ EXTEND.md setting |
+| 问题 | 选项 |
+|------|------|
+| **Q1：预设或类型** | [推荐预设]、[备选预设]，或手动选择：infographic、scene、flowchart、comparison、framework、timeline、mixed |
+| **Q2：密度** | minimal（1-2 张）、balanced（3-5 张）、per-section（推荐）、rich（6+ 张） |
+| **Q3：风格** | [推荐]、minimal-flat、sci-fi、hand-drawn、editorial、scene、poster、其他 — **选择预设时跳过** |
+| Q4：语言 | 当文章语言与 EXTEND.md 设置不同时 |
 
-Full procedures: [references/workflow.md](references/workflow.md#step-3-confirm-settings-)
+完整流程：[references/workflow.md](references/workflow.md#step-3-confirm-settings-)
 
-### Step 4: Generate Outline
+### 步骤 4：生成大纲
 
-Save `outline.md` with frontmatter (type, density, style, image_count) and entries:
+保存 `outline.md`，包含前置元数据（type、density、style、image_count）和条目：
 
 ```yaml
-## Illustration 1
-**Position**: [section/paragraph]
-**Purpose**: [why]
-**Visual Content**: [what]
-**Filename**: 01-infographic-concept-name.png
+## 插图 1
+**位置**：[章节/段落]
+**目的**：[为什么需要此图]
+**视觉内容**：[展示什么]
+**文件名**：01-infographic-concept-name.png
 ```
 
-Full template: [references/workflow.md](references/workflow.md#step-4-generate-outline)
+完整模板：[references/workflow.md](references/workflow.md#step-4-generate-outline)
 
-### Step 5: Generate Images
+### 步骤 5：生成图片
 
-⛔ **BLOCKING: Prompt files MUST be saved before ANY image generation.**
+⛔ **阻塞：提示词文件必须在任何图片生成之前保存。**
 
-**Execution strategy**: When multiple illustrations have saved prompt files and the task is now plain generation, prefer `baoyu-image-gen` batch mode (`build-batch.ts` → `--batchfile`) over spawning subagents. Use subagents only when each image still needs separate prompt iteration or creative exploration.
+**执行策略**：当多张插图已保存提示词文件且当前任务仅为生成时，优先使用 `baoyu-image-gen` 批量模式（`build-batch.ts` → `--batchfile`）而非派生子代理。仅当每张图片仍需独立的提示词迭代或创意探索时，才使用子代理。
 
-1. For each illustration, create a prompt file per [references/prompt-construction.md](references/prompt-construction.md)
-2. Save to `prompts/NN-{type}-{slug}.md` with YAML frontmatter
-3. Prompts **MUST** use type-specific templates with structured sections (ZONES / LABELS / COLORS / STYLE / ASPECT)
-4. LABELS **MUST** include article-specific data: actual numbers, terms, metrics, quotes
-5. **DO NOT** pass ad-hoc inline prompts to `--prompt` without saving prompt files first
-6. Select generation skill, process references (`direct`/`style`/`palette`)
-7. Apply watermark if EXTEND.md enabled
-8. Generate from saved prompt files; retry once on failure
+1. 为每张插图，按 [references/prompt-construction.md](references/prompt-construction.md) 创建提示词文件
+2. 保存为 `prompts/NN-{type}-{slug}.md`，含 YAML 前置元数据
+3. 提示词**必须**使用类型专用模板，包含结构化段落（ZONES / LABELS / COLORS / STYLE / ASPECT）
+4. LABELS **必须**包含文章具体数据：实际数字、术语、指标、引文
+5. **不要**在未保存提示词文件的情况下直接向 `--prompt` 传递临时内联提示词
+6. 选择生成技能，处理引用（`direct`/`style`/`palette`）
+7. 如 EXTEND.md 启用，添加水印
+8. 基于已保存的提示词文件生成图片；失败时重试一次
 
-Full procedures: [references/workflow.md](references/workflow.md#step-5-generate-images)
+完整流程：[references/workflow.md](references/workflow.md#step-5-generate-images)
 
-### Step 6: Finalize
+### 步骤 6：完成
 
-Insert `![description]({relative-path}/NN-{type}-{slug}.png)` after paragraphs. Path computed relative to article file based on output directory setting.
+在段落后插入 `![描述]({relative-path}/NN-{type}-{slug}.png)`。路径根据输出目录设置，基于文章文件计算相对路径。
 
 ```
 Article Illustration Complete!
@@ -141,18 +141,18 @@ Article: [path] | Type: [type] | Density: [level] | Style: [style]
 Images: X/N generated
 ```
 
-## Output Directory
+## 输出目录
 
-Output directory is determined by `default_output_dir` in EXTEND.md (set during first-time setup):
+输出目录由 EXTEND.md 中的 `default_output_dir` 决定（在首次设置时配置）：
 
-| `default_output_dir` | Output Path | Markdown Insert Path |
-|----------------------|-------------|----------------------|
-| `imgs-subdir` (default) | `{article-dir}/imgs/` | `imgs/NN-{type}-{slug}.png` |
+| `default_output_dir` | 输出路径 | Markdown 插入路径 |
+|----------------------|---------|-------------------|
+| `imgs-subdir`（默认） | `{article-dir}/imgs/` | `imgs/NN-{type}-{slug}.png` |
 | `same-dir` | `{article-dir}/` | `NN-{type}-{slug}.png` |
 | `illustrations-subdir` | `{article-dir}/illustrations/` | `illustrations/NN-{type}-{slug}.png` |
-| `independent` | `illustrations/{topic-slug}/` | `illustrations/{topic-slug}/NN-{type}-{slug}.png` (relative to cwd) |
+| `independent` | `illustrations/{topic-slug}/` | `illustrations/{topic-slug}/NN-{type}-{slug}.png`（相对于当前工作目录） |
 
-All auxiliary files (outline, prompts) are saved inside the output directory:
+所有辅助文件（大纲、提示词）保存在输出目录内：
 
 ```
 {output-dir}/
@@ -162,25 +162,25 @@ All auxiliary files (outline, prompts) are saved inside the output directory:
 └── NN-{type}-{slug}.png
 ```
 
-When input is **pasted content** (no file path), always uses `illustrations/{topic-slug}/` with `source-{slug}.{ext}` saved alongside.
+当输入为**粘贴内容**（无文件路径）时，始终使用 `illustrations/{topic-slug}/`，并在旁边保存 `source-{slug}.{ext}`。
 
-**Slug**: 2-4 words, kebab-case. **Conflict**: append `-YYYYMMDD-HHMMSS`.
+**短标识**：2-4 个单词，kebab-case 格式。**冲突处理**：追加 `-YYYYMMDD-HHMMSS`。
 
-## Modification
+## 修改
 
-| Action | Steps |
-|--------|-------|
-| Edit | Update prompt → Regenerate → Update reference |
-| Add | Position → Prompt → Generate → Update outline → Insert |
-| Delete | Delete files → Remove reference → Update outline |
+| 操作 | 步骤 |
+|------|------|
+| 编辑 | 更新提示词 → 重新生成 → 更新引用 |
+| 添加 | 确定位置 → 创建提示词 → 生成 → 更新大纲 → 插入 |
+| 删除 | 删除文件 → 移除引用 → 更新大纲 |
 
-## References
+## 参考资料
 
-| File | Content |
-|------|---------|
-| [references/workflow.md](references/workflow.md) | Detailed procedures |
-| [references/usage.md](references/usage.md) | Command syntax |
-| [references/styles.md](references/styles.md) | Style gallery |
-| [references/style-presets.md](references/style-presets.md) | Preset shortcuts (type + style) |
-| [references/prompt-construction.md](references/prompt-construction.md) | Prompt templates |
-| [references/config/first-time-setup.md](references/config/first-time-setup.md) | First-time setup |
+| 文件 | 内容 |
+|------|------|
+| [references/workflow.md](references/workflow.md) | 详细流程 |
+| [references/usage.md](references/usage.md) | 命令语法 |
+| [references/styles.md](references/styles.md) | 风格库 |
+| [references/style-presets.md](references/style-presets.md) | 预设快捷方式（类型 + 风格） |
+| [references/prompt-construction.md](references/prompt-construction.md) | 提示词模板 |
+| [references/config/first-time-setup.md](references/config/first-time-setup.md) | 首次设置 |

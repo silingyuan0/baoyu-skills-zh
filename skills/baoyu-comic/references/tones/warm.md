@@ -1,94 +1,94 @@
 # warm
 
-温馨基调 - Nostalgic, personal, comforting
+温馨基调 - 怀旧、私密、温暖治愈
 
-## Overview
+## 概述
 
-Warm, inviting atmosphere for personal stories and nostalgic content. Creates emotional connection through cozy aesthetics and comforting visuals.
+温暖而亲切的氛围，适用于个人故事和怀旧内容。通过舒适的视觉美学和治愈系的画面创造情感连接。
 
-## Mood Characteristics
+## 情感特征
 
-- Nostalgic feeling
-- Personal, intimate atmosphere
-- Comforting and healing
-- Memory and reflection
-- Gentle emotional warmth
+- 怀旧感
+- 私密、亲近的氛围
+- 温暖治愈
+- 回忆与反思
+- 柔和的情感温度
 
-## Color Modifiers
+## 颜色修正
 
-When applied to any art style:
+应用于任何画风时：
 
-| Adjustment | Direction |
-|------------|-----------|
-| Saturation | Slightly reduced |
-| Contrast | Softer |
-| Temperature | Warm shift (+15%) |
-| Brightness | Soft, golden |
+| 调整项 | 方向 |
+|--------|------|
+| 饱和度 | 略微降低 |
+| 对比度 | 柔化 |
+| 色温 | 暖色偏移（+15%） |
+| 亮度 | 柔和、金黄 |
 
-## Color Temperature
+## 色温
 
-Shift palette toward warm tones:
+将调色板偏移为暖色调：
 
-| Original | Warm Shift |
-|----------|-----------|
-| Cool blue | Soft teal |
-| Pure white | Cream |
-| Gray | Warm gray |
-| Black | Soft charcoal |
+| 原始色 | 暖色偏移 |
+|--------|----------|
+| 冷蓝 | 柔和青色 |
+| 纯白 | 奶油色 |
+| 灰色 | 暖灰色 |
+| 黑色 | 柔和炭黑 |
 
-## Accent Colors
+## 强调色
 
-- Golden yellow (#D69E2E)
-- Soft orange (#DD6B20)
-- Warm brown (#8B6F47)
-- Sunset tones
+- 金黄色（#D69E2E）
+- 柔和橙色（#DD6B20）
+- 暖棕色（#8B6F47）
+- 日落色调
 
-## Lighting
+## 光照
 
-- Golden hour lighting
-- Soft, diffused light
-- Warm indoor glow
-- Candle/lamp warmth
-- Gentle shadows
+- 黄金时刻光线
+- 柔和、漫射光
+- 温暖的室内灯光
+- 烛光/台灯的温暖
+- 柔和的阴影
 
-## Emotional Range
+## 情感范围
 
-| Emotion | Expression |
-|---------|-----------|
-| Joy | Genuine warm smile |
-| Sadness | Gentle melancholy |
-| Love | Soft, tender expressions |
-| Memory | Distant, reflective gaze |
+| 情感 | 表达方式 |
+|------|----------|
+| 喜悦 | 真诚温暖的微笑 |
+| 悲伤 | 柔和的忧伤 |
+| 爱 | 温柔、细腻的表情 |
+| 回忆 | 悠远、沉思的目光 |
 
-## Composition
+## 构图
 
-- Intimate framing
-- Cozy environments
-- Soft focus backgrounds
-- Welcoming spaces
-- Personal moments highlighted
+- 亲近的取景
+- 舒适的环境
+- 柔焦背景
+- 温馨的空间
+- 突出个人时刻
 
-## Visual Elements
+## 视觉元素
 
-- Warm light rays
-- Soft edges
-- Nostalgic props (old photos, keepsakes)
-- Comfort objects (blankets, tea cups)
-- Nature elements (autumn leaves, sunset)
+- 暖色光线
+- 柔和的边缘
+- 怀旧道具（旧照片、纪念品）
+- 治愈物件（毯子、茶杯）
+- 自然元素（秋叶、日落）
 
-## Best For
+## 适合场景
 
-- Personal stories
-- Childhood memories
-- Mentorship narratives
-- Family histories
-- Gentle biographies
-- Healing journeys
+- 个人故事
+- 童年回忆
+- 导师叙事
+- 家族历史
+- 温和的传记
+- 治愈之旅
 
-## Combination Notes
+## 搭配建议
 
-Works especially well with:
-- ligne-claire: nostalgic European comics
-- realistic: touching human stories
-- manga: slice-of-life warmth
-- chalk: nostalgic education
+特别适合与以下画风搭配：
+- ligne-claire：怀旧欧洲漫画
+- realistic：感人的人物故事
+- manga：日常生活的温暖
+- chalk：怀旧教育风格

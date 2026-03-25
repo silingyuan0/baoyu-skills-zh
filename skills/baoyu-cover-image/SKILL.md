@@ -1,136 +1,136 @@
 ---
 name: baoyu-cover-image
-description: Generates article cover images with 5 dimensions (type, palette, rendering, text, mood) combining 10 color palettes and 7 rendering styles. Supports cinematic (2.35:1), widescreen (16:9), and square (1:1) aspects. Use when user asks to "generate cover image", "create article cover", or "make cover".
+description: 生成具有5个维度（类型、调色板、渲染方式、文本、氛围）的文章封面图，融合10种色彩调色板和7种渲染风格。支持电影级（2.35:1）、宽屏（16:9）和方形（1:1）比例。当用户要求"生成封面图"、"创建文章封面"或"制作封面"时使用。
 version: 1.56.1
 metadata:
   openclaw:
     homepage: https://github.com/JimLiu/baoyu-skills#baoyu-cover-image
 ---
 
-# Cover Image Generator
+# 封面图生成器
 
-Generate elegant cover images for articles with 5-dimensional customization.
+生成具有5维度定制功能的优雅文章封面图。
 
-## Usage
+## 使用方法
 
 ```bash
-# Auto-select dimensions based on content
+# 根据内容自动选择尺寸
 /baoyu-cover-image path/to/article.md
 
-# Quick mode: skip confirmation
+# 快速模式：跳过确认
 /baoyu-cover-image article.md --quick
 
-# Specify dimensions
+# 指定尺寸
 /baoyu-cover-image article.md --type conceptual --palette warm --rendering flat-vector
 
-# Style presets (shorthand for palette + rendering)
+# 风格预设（调色板 + 渲染方式的简写）
 /baoyu-cover-image article.md --style blueprint
 
-# With reference images
+# 使用参考图像
 /baoyu-cover-image article.md --ref style-ref.png
 
-# Direct content input
+# 直接输入内容
 /baoyu-cover-image --palette mono --aspect 1:1 --quick
-[paste content]
+[粘贴内容]
 ```
 
-## Options
+## 选项
 
-| Option | Description |
+| 选项 | 描述 |
 |--------|-------------|
-| `--type <name>` | hero, conceptual, typography, metaphor, scene, minimal |
-| `--palette <name>` | warm, elegant, cool, dark, earth, vivid, pastel, mono, retro, duotone |
-| `--rendering <name>` | flat-vector, hand-drawn, painterly, digital, pixel, chalk, screen-print |
-| `--style <name>` | Preset shorthand (see [Style Presets](references/style-presets.md)) |
-| `--text <level>` | none, title-only, title-subtitle, text-rich |
-| `--mood <level>` | subtle, balanced, bold |
-| `--font <name>` | clean, handwritten, serif, display |
-| `--aspect <ratio>` | 16:9 (default), 2.35:1, 4:3, 3:2, 1:1, 3:4 |
-| `--lang <code>` | Title language (en, zh, ja, etc.) |
-| `--no-title` | Alias for `--text none` |
-| `--quick` | Skip confirmation, use auto-selection |
-| `--ref <files...>` | Reference images for style/composition guidance |
+| `--type <名称>` | hero, conceptual, typography, metaphor, scene, minimal |
+| `--palette <名称>` | warm, elegant, cool, dark, earth, vivid, pastel, mono, retro, duotone |
+| `--rendering <名称>` | flat-vector, hand-drawn, painterly, digital, pixel, chalk, screen-print |
+| `--style <名称>` | 预设简写（参见 [风格预设](references/style-presets.md)） |
+| `--text <级别>` | none, title-only, title-subtitle, text-rich |
+| `--mood <级别>` | subtle, balanced, bold |
+| `--font <名称>` | clean, handwritten, serif, display |
+| `--aspect <比例>` | 16:9（默认）, 2.35:1, 4:3, 3:2, 1:1, 3:4 |
+| `--lang <代码>` | 标题语言（en, zh, ja 等） |
+| `--no-title` | `--text none` 的别名 |
+| `--quick` | 跳过确认，使用自动选择 |
+| `--ref <文件...>` | 用于风格/构图指导的参考图像 |
 
-## Five Dimensions
+## 五维度
 
-| Dimension | Values | Default |
+| 维度 | 值 | 默认 |
 |-----------|--------|---------|
-| **Type** | hero, conceptual, typography, metaphor, scene, minimal | auto |
-| **Palette** | warm, elegant, cool, dark, earth, vivid, pastel, mono, retro, duotone | auto |
-| **Rendering** | flat-vector, hand-drawn, painterly, digital, pixel, chalk, screen-print | auto |
-| **Text** | none, title-only, title-subtitle, text-rich | title-only |
-| **Mood** | subtle, balanced, bold | balanced |
-| **Font** | clean, handwritten, serif, display | clean |
+| **类型** | hero, conceptual, typography, metaphor, scene, minimal | auto |
+| **调色板** | warm, elegant, cool, dark, earth, vivid, pastel, mono, retro, duotone | auto |
+| **渲染方式** | flat-vector, hand-drawn, painterly, digital, pixel, chalk, screen-print | auto |
+| **文本** | none, title-only, title-subtitle, text-rich | title-only |
+| **氛围** | subtle, balanced, bold | balanced |
+| **字体** | clean, handwritten, serif, display | clean |
 
-Auto-selection rules: [references/auto-selection.md](references/auto-selection.md)
+自动选择规则：[references/auto-selection.md](references/auto-selection.md)
 
-## Galleries
+## 画廊
 
-**Types**: hero, conceptual, typography, metaphor, scene, minimal
-→ Details: [references/types.md](references/types.md)
+**类型**: hero, conceptual, typography, metaphor, scene, minimal
+→ 详情：[references/types.md](references/types.md)
 
-**Palettes**: warm, elegant, cool, dark, earth, vivid, pastel, mono, retro, duotone
-→ Details: [references/palettes/](references/palettes/)
+**调色板**: warm, elegant, cool, dark, earth, vivid, pastel, mono, retro, duotone
+→ 详情：[references/palettes/](references/palettes/)
 
-**Renderings**: flat-vector, hand-drawn, painterly, digital, pixel, chalk, screen-print
-→ Details: [references/renderings/](references/renderings/)
+**渲染方式**: flat-vector, hand-drawn, painterly, digital, pixel, chalk, screen-print
+→ 详情：[references/renderings/](references/renderings/)
 
-**Text Levels**: none (pure visual) | title-only (default) | title-subtitle | text-rich (with tags)
-→ Details: [references/dimensions/text.md](references/dimensions/text.md)
+**文本级别**: none（纯视觉） | title-only（默认） | title-subtitle | text-rich（带标签）
+→ 详情：[references/dimensions/text.md](references/dimensions/text.md)
 
-**Mood Levels**: subtle (low contrast) | balanced (default) | bold (high contrast)
-→ Details: [references/dimensions/mood.md](references/dimensions/mood.md)
+**氛围级别**: subtle（低对比度） | balanced（默认） | bold（高对比度）
+→ 详情：[references/dimensions/mood.md](references/dimensions/mood.md)
 
-**Fonts**: clean (sans-serif) | handwritten | serif | display (bold decorative)
-→ Details: [references/dimensions/font.md](references/dimensions/font.md)
+**字体**: clean（无衬线） | handwritten | serif | display（粗体装饰）
+→ 详情：[references/dimensions/font.md](references/dimensions/font.md)
 
-## File Structure
+## 文件结构
 
-Output directory per `default_output_dir` preference:
+每个 `default_output_dir` 偏好的输出目录：
 - `same-dir`: `{article-dir}/`
 - `imgs-subdir`: `{article-dir}/imgs/`
-- `independent` (default): `cover-image/{topic-slug}/`
+- `independent`（默认）: `cover-image/{topic-slug}/`
 
 ```
 <output-dir>/
-├── source-{slug}.{ext}    # Source files
-├── refs/                  # Reference images (if provided)
+├── source-{slug}.{ext}    # 源文件
+├── refs/                  # 参考图像（如果提供）
 │   ├── ref-01-{slug}.{ext}
-│   └── ref-01-{slug}.md   # Description file
-├── prompts/cover.md       # Generation prompt
-└── cover.png              # Output image
+│   └── ref-01-{slug}.md   # 描述文件
+├── prompts/cover.md       # 生成提示词
+└── cover.png              # 输出图像
 ```
 
-**Slug**: 2-4 words, kebab-case. Conflict: append `-YYYYMMDD-HHMMSS`
+**Slug**: 2-4个单词，kebab-case。冲突时附加 `-YYYYMMDD-HHMMSS`
 
-## Workflow
+## 工作流程
 
-### Progress Checklist
-
-```
-Cover Image Progress:
-- [ ] Step 0: Check preferences (EXTEND.md) ⛔ BLOCKING
-- [ ] Step 1: Analyze content + save refs + determine output dir
-- [ ] Step 2: Confirm options (6 dimensions) ⚠️ unless --quick
-- [ ] Step 3: Create prompt
-- [ ] Step 4: Generate image
-- [ ] Step 5: Completion report
-```
-
-### Flow
+### 进度清单
 
 ```
-Input → [Step 0: Preferences] ─┬─ Found → Continue
-                               └─ Not found → First-Time Setup ⛔ BLOCKING → Save EXTEND.md → Continue
+封面图进度：
+- [ ] 步骤0：检查偏好设置（EXTEND.md）⛔ 阻塞
+- [ ] 步骤1：分析内容 + 保存参考 + 确定输出目录
+- [ ] 步骤2：确认选项（6个维度）⚠️ 除非 --quick
+- [ ] 步骤3：创建提示词
+- [ ] 步骤4：生成图像
+- [ ] 步骤5：完成报告
+```
+
+### 流程
+
+```
+输入 → [步骤0：偏好设置] ─┬─ 找到 → 继续
+                          └─ 未找到 → 首次设置 ⛔ 阻塞 → 保存 EXTEND.md → 继续
         ↓
-Analyze + Save Refs → [Output Dir] → [Confirm: 6 Dimensions] → Prompt → Generate → Complete
+分析 + 保存参考 → [输出目录] → [确认：6个维度] → 提示词 → 生成 → 完成
                                               ↓
-                                     (skip if --quick or all specified)
+                                     （如果 --quick 或全部指定则跳过）
 ```
 
-### Step 0: Load Preferences ⛔ BLOCKING
+### 步骤0：加载偏好设置 ⛔ 阻塞
 
-Check EXTEND.md existence (priority: project → user):
+检查 EXTEND.md 存在性（优先级：项目 → 用户）：
 ```bash
 # macOS, Linux, WSL, Git Bash
 test -f .baoyu-skills/baoyu-cover-image/EXTEND.md && echo "project"
@@ -146,103 +146,103 @@ if (Test-Path "$xdg/baoyu-skills/baoyu-cover-image/EXTEND.md") { "xdg" }
 if (Test-Path "$HOME/.baoyu-skills/baoyu-cover-image/EXTEND.md") { "user" }
 ```
 
-| Result | Action |
-|--------|--------|
-| Found | Load, display summary → Continue |
-| Not found | ⛔ Run first-time setup ([references/config/first-time-setup.md](references/config/first-time-setup.md)) → Save → Continue |
+| 结果 | 动作 |
+|--------|-------------|
+| 找到 | 加载，显示摘要 → 继续 |
+| 未找到 | ⛔ 运行首次设置（[references/config/first-time-setup.md](references/config/first-time-setup.md)）→ 保存 → 继续 |
 
-**CRITICAL**: If not found, complete setup BEFORE any other steps or questions.
+**关键**: 如果未找到，在任何其他步骤或问题之前完成设置。
 
-### Step 1: Analyze Content
+### 步骤1：分析内容
 
-1. **Save reference images** (if provided) → [references/workflow/reference-images.md](references/workflow/reference-images.md)
-2. **Save source content** (if pasted, save to `source.md`)
-3. **Analyze content**: topic, tone, keywords, visual metaphors
-4. **Deep analyze references** ⚠️: Extract specific, concrete elements (see reference-images.md)
-   - If references contain **people** → set `usage: direct` so model sees reference image, describe character features for stylized preservation (see reference-images.md § Character Analysis)
-5. **Detect language**: Compare source, user input, EXTEND.md preference
-6. **Determine output directory**: Per File Structure rules
+1. **保存参考图像**（如果提供）→ [references/workflow/reference-images.md](references/workflow/reference-images.md)
+2. **保存源内容**（如果粘贴，保存到 `source.md`）
+3. **分析内容**: 主题、语气、关键词、视觉隐喻
+4. **深度分析参考** ⚠️: 提取具体、具象的元素（参见 reference-images.md）
+   - 如果参考包含**人物** → 设置 `usage: direct` 以便模型查看参考图像，描述角色特征以进行风格化保留（参见 reference-images.md § 角色分析）
+5. **检测语言**: 比较源、用户输入、EXTEND.md 偏好
+6. **确定输出目录**: 按文件结构规则
 
-### Step 2: Confirm Options ⚠️
+### 步骤2：确认选项 ⚠️
 
-Full confirmation flow: [references/workflow/confirm-options.md](references/workflow/confirm-options.md)
+完整确认流程：[references/workflow/confirm-options.md](references/workflow/confirm-options.md)
 
-| Condition | Skipped | Still Asked |
+| 条件 | 跳过 | 仍需询问 |
 |-----------|---------|-------------|
-| `--quick` or `quick_mode: true` | 6 dimensions | Aspect ratio (unless `--aspect`) |
-| All 6 + `--aspect` specified | All | None |
+| `--quick` 或 `quick_mode: true` | 6个维度 | 宽高比（除非指定 `--aspect`） |
+| 指定了全部6个 + `--aspect` | 全部 | 无 |
 
-### Step 3: Create Prompt
+### 步骤3：创建提示词
 
-Save to `prompts/cover.md`. Template: [references/workflow/prompt-template.md](references/workflow/prompt-template.md)
+保存到 `prompts/cover.md`。模板：[references/workflow/prompt-template.md](references/workflow/prompt-template.md)
 
-**CRITICAL - References in Frontmatter**:
-- Files saved to `refs/` → Add to frontmatter `references` list
-- Style extracted verbally (no file) → Omit `references`, describe in body
-- Before writing → Verify: `test -f refs/ref-NN-{slug}.{ext}`
+**关键 - 前置元数据中的参考**:
+- 保存到 `refs/` 的文件 → 添加到前置元数据 `references` 列表
+- 口头提取的风格（无文件）→ 省略 `references`，在正文中描述
+- 写入前验证: `test -f refs/ref-NN-{slug}.{ext}`
 
-**Reference elements in body** MUST be detailed, prefixed with "MUST"/"REQUIRED", with integration approach.
+正文中的参考元素**必须**详细，带"MUST"/"REQUIRED"前缀，并说明整合方式。
 
-### Step 4: Generate Image
+### 步骤4：生成图像
 
-1. **Backup existing** `cover.png` if regenerating
-2. **Check image generation skills**; if multiple, ask preference
-3. **Process references** from prompt frontmatter:
-   - `direct` usage → pass via `--ref` (use ref-capable backend)
-   - `style`/`palette` → extract traits, append to prompt
-4. **Generate**: Call skill with prompt file, output path, aspect ratio
-5. On failure: auto-retry once
+1. **备份现有** `cover.png`（如果重新生成）
+2. **检查图像生成技能**；如果多个，询问偏好
+3. **处理提示词前置元数据中的参考**:
+   - `direct` 使用 → 通过 `--ref` 传递（使用支持 ref 的后端）
+   - `style`/`palette` → 提取特征，追加到提示词
+4. **生成**: 使用提示词文件、输出路径、宽高比调用技能
+5. 失败时：自动重试一次
 
-### Step 5: Completion Report
+### 步骤5：完成报告
 
 ```
-Cover Generated!
+封面已生成！
 
-Topic: [topic]
-Type: [type] | Palette: [palette] | Rendering: [rendering]
-Text: [text] | Mood: [mood] | Font: [font] | Aspect: [ratio]
-Title: [title or "visual only"]
-Language: [lang] | Watermark: [enabled/disabled]
-References: [N images or "extracted style" or "none"]
-Location: [directory path]
+主题: [主题]
+类型: [类型] | 调色板: [调色板] | 渲染方式: [渲染方式]
+文本: [文本] | 氛围: [氛围] | 字体: [字体] | 宽高比: [比例]
+标题: [标题或"仅视觉"]
+语言: [语言] | 水印: [启用/禁用]
+参考: [N张图像或"提取的风格"或"无"]
+位置: [目录路径]
 
-Files:
+文件:
 ✓ source-{slug}.{ext}
 ✓ prompts/cover.md
 ✓ cover.png
 ```
 
-## Image Modification
+## 图像修改
 
-| Action | Steps |
+| 动作 | 步骤 |
 |--------|-------|
-| **Regenerate** | Backup → Update prompt file FIRST → Regenerate |
-| **Change dimension** | Backup → Confirm new value → Update prompt → Regenerate |
+| **重新生成** | 备份 → 先更新提示词文件 → 重新生成 |
+| **更改维度** | 备份 → 确认新值 → 更新提示词 → 重新生成 |
 
-## Composition Principles
+## 组合原则
 
-- **Whitespace**: 40-60% breathing room
-- **Visual anchor**: Main element centered or offset left
-- **Characters**: Simplified silhouettes; NO realistic humans
-- **Title**: Use exact title from user/source; never invent
+- **留白**: 40-60% 的呼吸空间
+- **视觉锚点**: 主元素居中或偏左
+- **人物**: 简化的剪影；不要逼真的人物
+- **标题**: 使用用户/源提供的准确标题；绝不杜撰
 
-## Extension Support
+## 扩展支持
 
-Custom configurations via EXTEND.md. See **Step 0** for paths.
+通过 EXTEND.md 进行自定义配置。参见**步骤0**了解路径。
 
-Supports: Watermark | Preferred dimensions | Default aspect/output | Quick mode | Custom palettes | Language
+支持: 水印 | 首选尺寸 | 默认宽高比/输出 | 快速模式 | 自定义调色板 | 语言
 
-Schema: [references/config/preferences-schema.md](references/config/preferences-schema.md)
+模式：[references/config/preferences-schema.md](references/config/preferences-schema.md)
 
-## References
+## 参考资料
 
-**Dimensions**: [text.md](references/dimensions/text.md) | [mood.md](references/dimensions/mood.md) | [font.md](references/dimensions/font.md)
-**Palettes**: [references/palettes/](references/palettes/)
-**Renderings**: [references/renderings/](references/renderings/)
-**Types**: [references/types.md](references/types.md)
-**Auto-Selection**: [references/auto-selection.md](references/auto-selection.md)
-**Style Presets**: [references/style-presets.md](references/style-presets.md)
-**Compatibility**: [references/compatibility.md](references/compatibility.md)
-**Visual Elements**: [references/visual-elements.md](references/visual-elements.md)
-**Workflow**: [confirm-options.md](references/workflow/confirm-options.md) | [prompt-template.md](references/workflow/prompt-template.md) | [reference-images.md](references/workflow/reference-images.md)
-**Config**: [preferences-schema.md](references/config/preferences-schema.md) | [first-time-setup.md](references/config/first-time-setup.md) | [watermark-guide.md](references/config/watermark-guide.md)
+**维度**: [text.md](references/dimensions/text.md) | [mood.md](references/dimensions/mood.md) | [font.md](references/dimensions/font.md)
+**调色板**: [references/palettes/](references/palettes/)
+**渲染方式**: [references/renderings/](references/renderings/)
+**类型**: [references/types.md](references/types.md)
+**自动选择**: [references/auto-selection.md](references/auto-selection.md)
+**风格预设**: [references/style-presets.md](references/style-presets.md)
+**兼容性**: [references/compatibility.md](references/compatibility.md)
+**视觉元素**: [references/visual-elements.md](references/visual-elements.md)
+**工作流程**: [confirm-options.md](references/workflow/confirm-options.md) | [prompt-template.md](references/workflow/prompt-template.md) | [reference-images.md](references/workflow/reference-images.md)
+**配置**: [preferences-schema.md](references/config/preferences-schema.md) | [first-time-setup.md](references/config/first-time-setup.md) | [watermark-guide.md](references/config/watermark-guide.md)

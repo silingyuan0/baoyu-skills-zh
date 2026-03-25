@@ -1,73 +1,73 @@
 # editorial-infographic
 
-Modern magazine-style editorial infographic with clear visual storytelling
+现代杂志风格编辑式信息图，清晰的视觉叙事
 
-## Design Aesthetic
+## 设计美学
 
-High-quality magazine explainer aesthetic. Clear visual storytelling that transforms complex information into digestible narratives. Clean illustrations, structured layouts, and professional typography. Think Wired, The Verge, or high-end science publications.
+高品质杂志解说美学。清晰的视觉叙事将复杂信息转化为易于消化的叙事。简洁的插图、结构化的布局和专业的排版。类似 Wired、The Verge 或高端科学出版物的风格。
 
-## Background
+## 背景
 
-- Color: Pure White (#FFFFFF) or Light Gray (#F8F9FA)
-- Texture: None or subtle paper grain for print feel
+- 颜色：纯白（#FFFFFF）或浅灰（#F8F9FA）
+- 纹理：无，或细微纸张颗粒以模拟印刷质感
 
-## Typography
+## 排版
 
-### Primary Font (Headlines)
+### 主字体（标题）
 
-Bold display serif or modern sans-serif. Strong visual presence. Clean letterforms with editorial sophistication. Large scale for impact.
+粗体展示级衬线体或现代无衬线体。强烈的视觉存在感。简洁的字母形态，编辑级精致感。大字号带来冲击力。
 
-### Secondary Font (Subheads)
+### 辅助字体（副标题）
 
-Semi-bold sans-serif for section headers. Clear hierarchy distinction from body text. Consistent styling throughout.
+半粗无衬线体用于章节标题。与正文形成清晰的层次区分。全文风格一致。
 
-### Body Font
+### 正文字体
 
-Humanist sans-serif optimized for reading. Clean, professional, accessible. Comfortable line height (1.6).
+优化的无衬线体，适合阅读。简洁、专业、易读。舒适的行高（1.6）。
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
-|------|-------|-----|-------|
-| Background | Pure White | #FFFFFF | Primary background |
-| Alt Background | Light Gray | #F8F9FA | Section backgrounds |
-| Primary Text | Near Black | #1A1A1A | Headlines, body |
-| Secondary Text | Dark Gray | #4A5568 | Captions, metadata |
-| Accent 1 | Editorial Blue | #2563EB | Primary accent |
-| Accent 2 | Coral | #F97316 | Secondary accent |
-| Accent 3 | Emerald | #10B981 | Positive elements |
-| Accent 4 | Amber | #F59E0B | Warning, attention |
-| Dividers | Medium Gray | #D1D5DB | Section dividers |
+| 角色 | 颜色 | 色值 | 用途 |
+|------|------|------|------|
+| 背景 | Pure White | #FFFFFF | 主要背景 |
+| 辅助背景 | Light Gray | #F8F9FA | 区块背景 |
+| 主文本 | Near Black | #1A1A1A | 标题、正文 |
+| 辅助文本 | Dark Gray | #4A5568 | 说明文字、元数据 |
+| 强调色 1 | Editorial Blue | #2563EB | 主要强调 |
+| 强调色 2 | Coral | #F97316 | 辅助强调 |
+| 强调色 3 | Emerald | #10B981 | 正面元素 |
+| 强调色 4 | Amber | #F59E0B | 警告、注意力 |
+| 分割线 | Medium Gray | #D1D5DB | 区块分隔线 |
 
-## Visual Elements
+## 视觉元素
 
-- Clean flat illustrations (not photos)
-- Structured multi-section layouts
-- Callout boxes for key insights
-- Icon-based data visualization
-- Visual metaphors for abstract concepts
-- Flow diagrams with clear directional hierarchy
-- Pull quotes and highlight boxes
-- Section dividers and visual breaks
+- 简洁的扁平插图（非照片）
+- 结构化的多区块布局
+- 关键洞察的引述框
+- 基于图标的数据可视化
+- 抽象概念的视觉隐喻
+- 带有清晰方向层次的流程图
+- 引言和高亮框
+- 区块分隔线和视觉断点
 
-## Style Rules
+## 风格规则
 
-### Do
+### 推荐做法
 
-- Create clear visual narrative flow
-- Use structured multi-section layouts
-- Include callout boxes for key insights
-- Design visual metaphors for complex ideas
-- Maintain magazine-quality polish
+- 创建清晰的视觉叙事流程
+- 使用结构化的多区块布局
+- 为关键洞察添加引述框
+- 为复杂概念设计视觉隐喻
+- 保持杂志级品质的精致感
 
-### Don't
+### 避免事项
 
-- Use photographic imagery
-- Create cluttered dense layouts
-- Mix too many visual styles
-- Add decorative elements without purpose
-- Add slide numbers, footers, or logos
+- 使用摄影图像
+- 创建杂乱密集的布局
+- 混合过多视觉风格
+- 添加无目的的装饰元素
+- 添加幻灯片编号、页脚或标志
 
-## Best For
+## 适用场景
 
-Technology explainers, science communication, research summaries, policy briefings, investigative content, educational deep-dives, thought leadership pieces
+科技解说、科学传播、研究摘要、政策简报、调查类内容、深度教育内容、思想领导力内容

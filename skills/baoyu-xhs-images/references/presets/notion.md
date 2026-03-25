@@ -3,11 +3,11 @@ name: notion
 category: minimal
 ---
 
-# Notion Style
+# Notion 风格
 
-Minimalist hand-drawn line art, intellectual aesthetic.
+极简手绘线条风，知识感美学。
 
-## Element Combination
+## 元素组合
 
 ```yaml
 canvas:
@@ -31,43 +31,43 @@ decorations:
   frames: none | rounded-rect
 ```
 
-## Color Palette
+## 调色板
 
-| Role | Colors | Hex |
+| 角色 | 颜色 | Hex |
 |------|--------|-----|
-| Primary | Black, dark gray | #1A1A1A, #4A4A4A |
-| Background | Pure white, off-white | #FFFFFF, #FAFAFA |
-| Accents | Pastel blue, pastel yellow, pastel pink | #A8D4F0, #F9E79F, #FADBD8 |
+| 主色 | 黑色、深灰 | #1A1A1A, #4A4A4A |
+| 背景 | 纯白、米白 | #FFFFFF, #FAFAFA |
+| 点缀色 | 柔蓝、柔黄、柔粉 | #A8D4F0, #F9E79F, #FADBD8 |
 
-## Visual Elements
+## 视觉元素
 
-- Simple line doodles, hand-drawn wobble effect
-- Geometric shapes, stick figures
-- Maximum whitespace, single-weight ink lines
-- Clean, uncluttered compositions
+- 简单线条涂鸦、手绘抖动效果
+- 几何形状、火柴人
+- 最大留白、等粗墨线
+- 干净不杂乱的构图
 
-## Typography
+## 排版
 
-- Clean hand-drawn lettering
-- Simple sans-serif labels
-- Minimal decoration on text
+- 干净的手写体
+- 简单无衬线标签
+- 文字上最少装饰
 
-## Best Layout Pairings
+## 最佳布局搭配
 
-| Layout | Compatibility | Use Case |
+| 布局 | 兼容性 | 适用场景 |
 |--------|---------------|----------|
-| sparse | ✓✓ | Concept covers |
-| balanced | ✓✓ | Standard explanations |
-| dense | ✓✓ | Knowledge cards, cheat sheets |
-| list | ✓✓ | Productivity tips, tool lists |
-| comparison | ✓✓ | Data comparisons |
-| flow | ✓✓ | Process diagrams |
+| sparse | ✓✓ | 概念封面 |
+| balanced | ✓✓ | 标准讲解 |
+| dense | ✓✓ | 知识卡、速查表 |
+| list | ✓✓ | 效率技巧、工具列表 |
+| comparison | ✓✓ | 数据对比 |
+| flow | ✓✓ | 流程图 |
 
-## Best For
+## 最适合
 
-- Knowledge sharing
-- Concept explanations
-- SaaS content
-- Productivity tips
-- Tech tutorials
-- Professional content
+- 知识分享
+- 概念讲解
+- SaaS 内容
+- 效率技巧
+- 技术教程
+- 专业内容

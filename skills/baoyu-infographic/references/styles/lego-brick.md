@@ -1,29 +1,29 @@
-# lego-brick
+# lego-brick（乐高积木）
 
-Toy brick construction with playful aesthetic
+积木拼搭风格，充满趣味性的视觉美学
 
-## Color Palette
+## 调色板
 
-- Primary: Classic LEGO colors - red, blue, yellow, green, white
-- Background: Light gray baseplate or white
-- Accents: Bright primary pops, shiny studs
+- 主色：经典乐高色 — 红、蓝、黄、绿、白
+- 背景：浅灰色底板或白色
+- 强调色：明亮的原色点缀、闪亮的积木颗粒
 
-## Visual Elements
+## 视觉元素
 
-- Visible brick studs
-- Modular construction
-- Minifigure characters
-- Building instruction style
-- Stackable elements
-- Plastic sheen
+- 可见的积木颗粒
+- 模块化拼搭结构
+- 迷你人偶角色
+- 拼装说明书风格
+- 可堆叠元素
+- 塑料光泽质感
 
-## Typography
+## 排版
 
-- Blocky, bold fonts
-- LEGO instruction style
-- Step numbers
-- Playful appearance
+- 粗犷醒目的字体
+- 乐高说明书风格
+- 步骤编号
+- 趣味化外观
 
-## Best For
+## 适用场景
 
-Building concepts, modular systems, playful education, children's content
+建构概念、模块化系统、趣味教育、儿童内容

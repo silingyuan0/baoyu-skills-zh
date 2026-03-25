@@ -1,11 +1,6 @@
----
-name: preferences-schema
-description: EXTEND.md YAML schema for baoyu-image-gen user preferences
----
+# 偏好设置架构
 
-# Preferences Schema
-
-## Full Schema
+## 完整架构
 
 ```yaml
 ---
@@ -47,27 +42,27 @@ batch:
 ---
 ```
 
-## Field Reference
+## 字段参考
 
-| Field | Type | Default | Description |
+| 字段 | 类型 | 默认 | 描述 |
 |-------|------|---------|-------------|
-| `version` | int | 1 | Schema version |
-| `default_provider` | string\|null | null | Default provider (null = auto-detect) |
-| `default_quality` | string\|null | null | Default quality (null = 2k) |
-| `default_aspect_ratio` | string\|null | null | Default aspect ratio |
-| `default_image_size` | string\|null | null | Google/OpenRouter image size (overrides quality) |
-| `default_model.google` | string\|null | null | Google default model |
-| `default_model.openai` | string\|null | null | OpenAI default model |
-| `default_model.openrouter` | string\|null | null | OpenRouter default model |
-| `default_model.dashscope` | string\|null | null | DashScope default model |
-| `default_model.replicate` | string\|null | null | Replicate default model |
-| `batch.max_workers` | int\|null | 10 | Batch worker cap |
-| `batch.provider_limits.<provider>.concurrency` | int\|null | provider default | Max simultaneous requests per provider |
-| `batch.provider_limits.<provider>.start_interval_ms` | int\|null | provider default | Minimum gap between request starts per provider |
+| `version` | int | 1 | 架构版本 |
+| `default_provider` | string\|null | null | 默认提供商（null = 自动检测） |
+| `default_quality` | string\|null | null | 默认质量（null = 2k） |
+| `default_aspect_ratio` | string\|null | null | 默认宽高比 |
+| `default_image_size` | string\|null | null | Google/OpenRouter 图像尺寸（覆盖质量） |
+| `default_model.google` | string\|null | null | Google 默认模型 |
+| `default_model.openai` | string\|null | null | OpenAI 默认模型 |
+| `default_model.openrouter` | string\|null | null | OpenRouter 默认模型 |
+| `default_model.dashscope` | string\|null | null | DashScope 默认模型 |
+| `default_model.replicate` | string\|null | null | Replicate 默认模型 |
+| `batch.max_workers` | int\|null | 10 | 批处理工作器上限 |
+| `batch.provider_limits.<provider>.concurrency` | int\|null | provider default | 每个提供商最大并发请求数 |
+| `batch.provider_limits.<provider>.start_interval_ms` | int\|null | provider default | 每个提供商请求启动之间的最小间隔 |
 
-## Examples
+## 示例
 
-**Minimal**:
+**最小**：
 ```yaml
 ---
 version: 1
@@ -76,7 +71,7 @@ default_quality: 2k
 ---
 ```
 
-**Full**:
+**完整**：
 ```yaml
 ---
 version: 1

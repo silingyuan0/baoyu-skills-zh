@@ -1,58 +1,58 @@
 # fantasy-animation
 
-Whimsical hand-drawn animation style inspired by Ghibli/Disney
+灵感来自吉卜力/迪士尼的奇幻手绘动画风格
 
-## Design Aesthetic
+## 设计美学
 
-Charming hand-drawn animation aesthetic reminiscent of classic Disney, Studio Ghibli, or European storybook illustration. Soft, painterly textures with warm, inviting colors. Friendly characters, magical elements, and storybook feel. Enchanting, nostalgic, and emotionally engaging.
+令人着迷的手绘动画美学，让人联想到经典迪士尼、吉卜力工作室或欧洲童话书插图。柔和的绘画感纹理，温暖迷人的色彩。友好的角色、魔法元素和童话书般的叙事感。迷人、怀旧且情感丰富。
 
-## Background
+## 背景
 
-- Color: Soft Sky Blue (#E8F4FC) or Warm Cream (#FFF8E7)
-- Texture: Subtle watercolor wash, soft brush strokes
+- 颜色：柔天蓝（#E8F4FC）或暖奶油（#FFF8E7）
+- 纹理：微妙的水彩晕染，柔和笔触
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
-|------|-------|-----|-------|
-| Background | Soft Sky Blue | #E8F4FC | Primary background |
-| Alt Background | Warm Cream | #FFF8E7 | Secondary areas |
-| Primary Text | Deep Forest | #2D5A3D | Headlines |
-| Body Text | Warm Brown | #5D4E37 | Content |
-| Accent 1 | Golden Yellow | #F4D03F | Magic, highlights |
-| Accent 2 | Rose Pink | #E8A0BF | Warmth, charm |
-| Accent 3 | Sage Green | #87A96B | Nature elements |
-| Accent 4 | Sky Blue | #7EC8E3 | Air, water, dreams |
-| Accent 5 | Coral | #F08080 | Emphasis, life |
+| 角色 | 颜色 | 色值 | 用途 |
+|------|------|------|------|
+| 背景 | 柔天蓝 | #E8F4FC | 主背景 |
+| 备选背景 | 暖奶油 | #FFF8E7 | 次要区域 |
+| 主文本 | 深森林绿 | #2D5A3D | 标题 |
+| 正文 | 暖棕 | #5D4E37 | 正文内容 |
+| 强调色 1 | 金黄 | #F4D03F | 魔法、高亮 |
+| 强调色 2 | 玫瑰粉 | #E8A0BF | 温暖、魅力 |
+| 强调色 3 | 鼠尾草绿 | #87A96B | 自然元素 |
+| 强调色 4 | 天蓝 | #7EC8E3 | 空气、水、梦想 |
+| 强调色 5 | 珊瑚色 | #F08080 | 强调、生命力 |
 
-## Visual Elements
+## 视觉元素
 
-- Central illustrated character (friendly, expressive)
-- Small companion creatures (animals, magical beings)
-- Storybook-style environment backgrounds
-- Magical floating objects (books, orbs, sparkles)
-- Decorative elements: stars, flowers, leaves
-- Soft shadows and gentle highlights
-- Layered depth with foreground/background
+- 中央手绘角色（友好、富有表现力）
+- 小型伙伴生物（动物、魔法生物）
+- 童话书风格的环境背景
+- 魔法悬浮物体（书籍、宝珠、星光）
+- 装饰元素：星星、花朵、叶子
+- 柔和阴影和温和高光
+- 前景/背景的层次纵深感
 
-## Style Rules
+## 风格规则
 
-### Do
+### 推荐做法
 
-- Create warm, inviting compositions
-- Use soft edges and painterly textures
-- Include charming character illustrations
-- Add magical decorative touches
-- Maintain storybook narrative feel
+- 创建温暖、引人入胜的构图
+- 使用柔和边缘和绘画感纹理
+- 加入迷人的角色插图
+- 添加魔法装饰点缀
+- 保持童话书般的叙事感
 
-### Don't
+### 避免做法
 
-- Use harsh geometric shapes
-- Create dark or intimidating imagery
-- Add photorealistic elements
-- Use cold color palettes
-- Make it look digital/computerized
+- 使用刚硬的几何形状
+- 创建黑暗或令人畏惧的图像
+- 添加写实元素
+- 使用冷色调
+- 使其看起来数字化/计算机化
 
-## Best For
+## 适用场景
 
-Educational content, children's articles, storytelling, creative topics, fantasy/gaming, inspirational pieces, family-friendly content
+教育内容、儿童文章、叙事故事、创意主题、奇幻/游戏、励志文章、家庭友好内容

@@ -1,61 +1,61 @@
 # flat-doodle
 
-Cute flat doodle illustration style with bold outlines
+可爱扁平涂鸦插图风格，粗描边
 
-## Design Aesthetic
+## 设计美学
 
-Cheerful and approachable visual style combining flat design with doodle charm. Features bold black outlines around simple shapes. Bright pastel colors with no gradients or shading. Cute rounded proportions that feel friendly. Clean white backgrounds create focus and clarity.
+愉悦且亲切的视觉风格，融合扁平设计与涂鸦魅力。简单形状周围带有粗黑描边。明亮的粉彩色，无渐变或阴影。可爱的圆润比例，感觉友好。干净的白色背景营造聚焦与清晰感。
 
-## Background
+## 背景
 
-- Color: Clean White (#FFFFFF)
-- Texture: None - pure white isolated background
+- 颜色：纯白（#FFFFFF）
+- 纹理：无——纯白隔离背景
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
-|------|-------|-----|-------|
-| Background | White | #FFFFFF | Primary background |
-| Primary | Pastel Pink | #FFB6C1 | Main elements |
-| Secondary | Mint | #98D8C8 | Supporting elements |
-| Tertiary | Lavender | #C8A2C8 | Accent elements |
-| Accent 1 | Butter Yellow | #FFFACD | Highlight pop |
-| Accent 2 | Sky Blue | #87CEEB | Cool accent |
-| Accent 3 | Soft Coral | #F88379 | Warm accent |
-| Outline | Bold Black | #000000 | All outlines |
-| Text | Black | #1A1A1A | Text elements |
+| 角色 | 颜色 | 色值 | 用途 |
+|------|------|------|------|
+| 背景 | 白色 | #FFFFFF | 主背景 |
+| 主色 | 粉彩粉 | #FFB6C1 | 主要元素 |
+| 次色 | 薄荷绿 | #98D8C8 | 辅助元素 |
+| 第三色 | 薰衣草紫 | #C8A2C8 | 强调元素 |
+| 强调色 1 | 奶油黄 | #FFFACD | 突出点缀 |
+| 强调色 2 | 天蓝 | #87CEEB | 冷色点缀 |
+| 强调色 3 | 柔珊瑚 | #F88379 | 暖色点缀 |
+| 描边 | 粗黑 | #000000 | 所有描边 |
+| 文字 | 黑色 | #1A1A1A | 文字元素 |
 
-## Visual Elements
+## 视觉元素
 
-- Bold black outlines around all shapes
-- Simple flat color fills
-- Cute rounded proportions
-- Minimal geometric shapes
-- Productivity icons (laptops, calendars, checkmarks)
-- Isolated elements on white
-- No shading or gradients
-- Hand-drawn quality with clean edges
+- 所有形状周围的粗黑描边
+- 简单的平涂色填充
+- 可爱的圆润比例
+- 极简几何形状
+- 生产力图标（笔记本电脑、日历、勾选标记）
+- 白色背景上的独立元素
+- 无阴影或渐变
+- 带干净边缘的手绘质感
 
-## Style Rules
+## 风格规则
 
-### Do
+### 推荐做法
 
-- Use bold black outlines consistently
-- Keep shapes simple and rounded
-- Use bright pastel palette
-- Isolate elements on white background
-- Maintain cute proportions
-- Keep minimal shading
+- 统一使用粗黑描边
+- 保持形状简洁圆润
+- 使用明亮粉彩调色板
+- 元素独立放置于白色背景
+- 保持可爱比例
+- 阴影保持极简
 
-### Don't
+### 避免做法
 
-- Add shadows or depth effects
-- Use gradients or textures
-- Create complex detailed illustrations
-- Overlap too many elements
-- Use dark or moody backgrounds
-- Add realistic proportions
+- 添加阴影或深度效果
+- 使用渐变或纹理
+- 创建复杂精细插图
+- 过多元素重叠
+- 使用暗色或沉闷背景
+- 使用写实比例
 
-## Best For
+## 适用场景
 
-Productivity articles, SaaS and app content, workflow tutorials, beginner guides, casual business content, tool introductions, lifestyle productivity
+生产力文章、SaaS 和应用内容、工作流教程、入门指南、休闲商务内容、工具介绍、生活方式生产力

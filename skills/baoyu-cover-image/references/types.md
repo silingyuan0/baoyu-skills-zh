@@ -1,23 +1,23 @@
-# Type Composition Guidelines
+# 类型组合指南
 
-## Type Gallery
+## 类型画廊
 
-| Type | Description | Best For |
-|------|-------------|----------|
-| `hero` | Large visual impact, title overlay | Product launch, brand promotion, major announcements |
-| `conceptual` | Concept visualization, abstract core ideas | Technical articles, methodology, architecture design |
-| `typography` | Text-focused layout, prominent title | Opinion pieces, quotes, insights |
-| `metaphor` | Visual metaphor, concrete expressing abstract | Philosophy, growth, personal development |
-| `scene` | Atmospheric scene, narrative feel | Stories, travel, lifestyle |
-| `minimal` | Minimalist composition, generous whitespace | Zen, focus, core concepts |
+| 类型 | 描述 | 最佳适用场景 |
+|------|------|--------------|
+| `hero` | 大型视觉冲击，标题叠加 | 产品发布、品牌推广、重大公告 |
+| `conceptual` | 概念可视化，抽象核心思想 | 技术文章、方法论、架构设计 |
+| `typography` | 文本焦点布局，醒目标题 | 观点文章、引用、洞察 |
+| `metaphor` | 视觉隐喻，具体表达抽象 | 哲学、成长、个人发展 |
+| `scene` | 氛围场景，叙事感 | 故事、旅行、生活方式 |
+| `minimal` | 极简构图，充足留白 | 禅意、专注、核心概念 |
 
-## Type-Specific Composition
+## 类型特定组合
 
-| Type | Composition Guidelines |
-|------|------------------------|
-| `hero` | Large focal visual (60-70% area), title overlay on visual, dramatic composition |
-| `conceptual` | Abstract shapes representing core concepts, information hierarchy, clean zones |
-| `typography` | Title as primary element (40%+ area), minimal supporting visuals, strong hierarchy |
-| `metaphor` | Concrete object/scene representing abstract idea, symbolic elements, emotional resonance |
-| `scene` | Atmospheric environment, narrative elements, mood-setting lighting and colors |
-| `minimal` | Single focal element, generous whitespace (60%+), essential shapes only |
+| 类型 | 组合指南 |
+|------|----------|
+| `hero` | 大型焦点视觉（60-70% 区域），标题叠加于视觉上，戏剧性构图 |
+| `conceptual` | 代表核心概念的抽象形状，信息层级，干净分区 |
+| `typography` | 标题作为主要元素（40%+ 区域），最少的辅助视觉，强烈层级 |
+| `metaphor` | 代表抽象概念的具体物体/场景，象征元素，情感共鸣 |
+| `scene` | 氛围环境，叙事元素，营造氛围的灯光和色彩 |
+| `minimal` | 单一焦点元素，充足留白（60%+），仅必要的形状 |

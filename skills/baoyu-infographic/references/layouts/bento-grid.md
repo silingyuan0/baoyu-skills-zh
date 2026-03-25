@@ -1,41 +1,41 @@
 # bento-grid
 
-Modular grid layout with varied cell sizes, like a bento box.
+模块化网格布局，单元格尺寸各异，形似便当盒。
 
-## Structure
+## 结构
 
-- Grid of rectangular cells
-- Mixed cell sizes (1x1, 2x1, 1x2, 2x2)
-- No strict symmetry required
-- Hero cell for main point
-- Supporting cells around it
+- 矩形单元格组成的网格
+- 混合单元格尺寸（1x1、2x1、1x2、2x2）
+- 无需严格对称
+- 主单元格用于展示核心要点
+- 周围环绕辅助单元格
 
-## Best For
+## 适用场景
 
-- Multiple topic overview
-- Feature highlights
-- Dashboard summaries
-- Portfolio displays
-- Mixed content types
+- 多主题概览
+- 功能亮点
+- 数据看板摘要
+- 作品集展示
+- 混合内容类型
 
-## Visual Elements
+## 视觉元素
 
-- Clear cell boundaries
-- Varied cell backgrounds
-- Icons or illustrations per cell
-- Consistent padding/margins
-- Visual hierarchy through size
+- 清晰的单元格边界
+- 多样化的单元格背景
+- 每个单元格配有图标或插图
+- 一致的内边距/外边距
+- 通过尺寸差异体现视觉层次
 
-## Text Placement
+## 文字布局
 
-- Main title at top
-- Cell titles within each cell
-- Brief content per cell
-- Minimal text, maximum visual
-- CTA or summary in prominent cell
+- 主标题置于顶部
+- 单元格标题位于各自单元格内
+- 每个单元格配有简短内容
+- 文字尽量精简，突出视觉效果
+- 行动号召或摘要置于醒目单元格中
 
-## Recommended Pairings
+## 推荐风格搭配
 
-- `craft-handmade`: Friendly overviews (default)
-- `corporate-memphis`: Business summaries
-- `pixel-art`: Retro feature grids
+- `craft-handmade`：亲切的概览风格（默认）
+- `corporate-memphis`：商务摘要风格
+- `pixel-art`：复古像素风格的功能网格

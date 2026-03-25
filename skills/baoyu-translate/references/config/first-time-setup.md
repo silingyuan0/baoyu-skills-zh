@@ -1,153 +1,148 @@
----
-name: first-time-setup
-description: First-time setup flow for baoyu-translate preferences
----
+# 首次设置
 
-# First-Time Setup
+## 概述
 
-## Overview
+当未找到 EXTEND.md 时，引导用户完成偏好设置。
 
-When no EXTEND.md is found, guide user through preference setup.
+**阻塞操作**：此设置必须在任何翻译之前完成。禁止：
+- 开始翻译内容
+- 询问文件或输出路径
+- 进入任何工作流程步骤
 
-**BLOCKING OPERATION**: This setup MUST complete before ANY translation. Do NOT:
-- Start translating content
-- Ask about files or output paths
-- Proceed to any workflow steps
+仅提出此设置流程中的问题，保存 EXTEND.md，然后继续。
 
-ONLY ask the questions in this setup flow, save EXTEND.md, then continue.
-
-## Setup Flow
+## 设置流程
 
 ```
-No EXTEND.md found
-        |
-        v
+未找到 EXTEND.md
+        │
+        ▼
 +---------------------+
 | AskUserQuestion     |
-| (all questions)     |
+| （所有问题）         |
 +---------------------+
-        |
-        v
+        │
+        ▼
 +---------------------+
-| Create EXTEND.md    |
+| 创建 EXTEND.md       |
 +---------------------+
-        |
-        v
-    Continue translation
+        │
+        ▼
+    继续翻译
 ```
 
-## Questions
+## 问题
 
-**Language**: Use user's input language or saved language preference.
+**语言**：使用用户的输入语言或已保存的语言偏好。
 
-Use AskUserQuestion with ALL questions in ONE call:
+使用 AskUserQuestion 在一次调用中提出所有问题：
 
-### Question 1: Target Language
+### 问题 1：目标语言
 
 ```yaml
-header: "Target Language"
-question: "Default target language?"
+header: "目标语言"
+question: "默认目标语言是什么？"
 options:
-  - label: "简体中文 zh-CN (Recommended)"
-    description: "Translate to Simplified Chinese"
+  - label: "简体中文 zh-CN（推荐）"
+    description: "翻译为简体中文"
   - label: "繁體中文 zh-TW"
-    description: "Translate to Traditional Chinese"
+    description: "翻译为繁体中文"
   - label: "English en"
-    description: "Translate to English"
+    description: "翻译为英语"
   - label: "日本語 ja"
-    description: "Translate to Japanese"
+    description: "翻译为日语"
 ```
 
-Note: User may type a custom language code.
+注：用户可输入自定义语言代码。
 
-### Question 2: Translation Mode
+### 问题 2：翻译模式
 
 ```yaml
-header: "Mode"
-question: "Default translation mode?"
+header: "模式"
+question: "默认翻译模式是什么？"
 options:
-  - label: "Normal (Recommended)"
-    description: "Analyze content first, then translate"
-  - label: "Quick"
-    description: "Direct translation, no analysis"
-  - label: "Refined"
-    description: "Full workflow: analyze → translate → review → polish"
+  - label: "正常（推荐）"
+    description: "先分析内容，再翻译"
+  - label: "快速"
+    description: "直接翻译，无需分析"
+  - label: "精细"
+    description: "完整工作流：分析→翻译→审校→润色"
 ```
 
-### Question 3: Target Audience
+### 问题 3：目标受众
 
 ```yaml
-header: "Audience"
-question: "Default target audience?"
+header: "受众"
+question: "默认目标受众是什么？"
 options:
-  - label: "General readers (Recommended)"
-    description: "Plain language, more translator's notes for jargon"
-  - label: "Technical"
-    description: "Developers/engineers, less annotation on tech terms"
-  - label: "Academic"
-    description: "Formal register, precise terminology"
-  - label: "Business"
-    description: "Business-friendly tone, explain tech concepts"
+  - label: "普通读者（推荐）"
+    description: "通俗语言，更多术语译注"
+  - label: "技术人员"
+    description: "开发/工程师，减少技术术语注解"
+  - label: "学术人员"
+    description: "正式语域，精确术语"
+  - label: "商务人员"
+    description: "商务友好语气，解释技术概念"
 ```
 
-Note: User may type a custom audience description.
+注：用户可输入自定义受众描述。
 
-### Question 4: Translation Style
+### 问题 4：翻译风格
 
 ```yaml
-header: "Style"
-question: "Translation style?"
+header: "风格"
+question: "翻译风格是什么？"
 options:
-  - label: "Storytelling (Recommended)"
-    description: "Engaging narrative flow, smooth transitions"
-  - label: "Formal"
-    description: "Professional, structured, neutral tone"
-  - label: "Technical"
-    description: "Precise, documentation-style, concise"
-  - label: "Literal"
-    description: "Close to original structure"
-  - label: "Academic"
-    description: "Scholarly, rigorous, formal register"
-  - label: "Business"
-    description: "Concise, results-focused, action-oriented"
-  - label: "Humorous"
-    description: "Preserves humor, witty, playful"
-  - label: "Conversational"
-    description: "Casual, friendly, spoken-like"
-  - label: "Elegant"
-    description: "Literary, polished, aesthetically refined"
+  - label: "叙事风格（推荐）"
+    description: "引人入胜的叙事流程，流畅过渡"
+  - label: "正式"
+    description: "专业、结构化、中性语气"
+  - label: "技术"
+    description: "精确、文档风格、简洁"
+  - label: "直译"
+    description: "贴近原始结构"
+  - label: "学术"
+    description: "学术性、严谨、正式语域"
+  - label: "商务"
+    description: "简洁、结果导向、行动导向"
+  - label: "幽默"
+    description: "保留幽默、诙谐、活泼"
+  - label: "会话"
+    description: "休闲、友好、口语化"
+  - label: "优雅"
+    description: "文学感、精致、审美考究"
 ```
 
-Note: User may type a custom style description.
+注：用户可输入自定义风格描述。
 
-### Question 5: Save Location
+### 问题 5：保存位置
 
 ```yaml
-header: "Save"
-question: "Where to save preferences?"
+header: "保存"
+question: "偏好设置保存到哪里？"
 options:
-  - label: "User (Recommended)"
-    description: "$HOME/.baoyu-skills/ (all projects)"
-  - label: "Project"
-    description: ".baoyu-skills/ (this project only)"
+  - label: "用户（推荐）"
+    description: "$HOME/.baoyu-skills/（所有项目）"
+  - label: "项目"
+    description: ".baoyu-skills/（仅当前项目）"
 ```
 
-## Save Locations
+## 保存位置
 
-| Choice | Path | Scope |
+| 选择 | 路径 | 范围 |
 |--------|------|-------|
-| User | `$HOME/.baoyu-skills/baoyu-translate/EXTEND.md` | All projects |
-| Project | `.baoyu-skills/baoyu-translate/EXTEND.md` | Current project |
+| 用户 | `$HOME/.baoyu-skills/baoyu-translate/EXTEND.md` | 所有项目 |
+| 项目 | `.baoyu-skills/baoyu-translate/EXTEND.md` | 当前项目 |
 
-## After Setup
+## 设置后
 
-1. Create directory if needed
-2. Write EXTEND.md with selected values
-3. Confirm: "Preferences saved to [path]"
-4. Mention: "You can add custom glossary terms to EXTEND.md anytime. See the `glossary` section in the file for the format."
-5. Continue with translation using saved preferences
+1. 按需创建目录
+2. 使用所选值写入 EXTEND.md
+3. 确认："偏好设置已保存至 [路径]"
+4. 说明："您可随时向 EXTEND.md 添加自定义术语表。参见文件中的 `glossary` 部分了解格式。"
+5. 使用保存的偏好继续翻译
 
-## EXTEND.md Template
+## EXTEND.md 模板
 
 ```yaml
 target_language: [zh-CN/zh-TW/en/ja/...]
@@ -155,15 +150,15 @@ default_mode: [quick/normal/refined]
 audience: [general/technical/academic/business/custom]
 style: [storytelling/formal/technical/literal/academic/business/humorous/conversational/elegant]
 
-# Custom glossary (optional) — add your own term translations here
+# 自定义术语表（可选）— 在此添加您自己的术语翻译
 # glossary:
 #   - from: "Term"
 #     to: "翻译"
 #   - from: "Another Term"
 #     to: "另一个翻译"
-#     note: "Usage context"
+#     note: "使用语境"
 ```
 
-## Modifying Preferences Later
+## 后续修改偏好
 
-Users can edit EXTEND.md directly or delete it to trigger setup again.
+用户可直接编辑 EXTEND.md 或删除它以重新触发设置。

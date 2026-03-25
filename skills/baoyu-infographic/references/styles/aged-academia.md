@@ -1,36 +1,36 @@
-# aged-academia
+# aged-academia（学院风）
 
-Historical scientific illustration with aged paper aesthetic.
+历史科学插图风格，以做旧纸张为美学基调。
 
-## Color Palette
+## 调色板
 
-- Primary: Sepia brown (#704214), aged ink, muted earth tones
-- Background: Parchment (#F4E4BC), yellowed paper texture
-- Accents: Faded red annotations, iron gall ink spots
+- 主色：棕褐色（#704214）、做旧墨水色、柔和大地色调
+- 背景：羊皮纸色（#F4E4BC）、泛黄纸张质感
+- 强调色：褪色红色批注、铁胆墨水（iron gall ink，历史书写用墨水）斑点
 
-## Variants
+## 变体
 
-| Variant | Focus | Visual Emphasis |
-|---------|-------|-----------------|
-| **Notebook** | Personal sketches, inventions | Cursive notes, margin annotations |
-| **Specimen** | Scientific classification | Numbered diagrams, Latin labels |
+| 变体 | 重点 | 视觉特征 |
+|------|------|----------|
+| **笔记本** | 个人手绘草图、发明 | 草书笔记、页边批注 |
+| **标本** | 科学分类 | 编号图示、拉丁文标签 |
 
-## Visual Elements
+## 视觉元素
 
-- Aged paper texture overlay
-- Detailed cross-hatching and line work
-- Scientific illustration precision
-- Study notes and annotations
-- Specimen plate or sketch aesthetic
-- Numbered diagram elements
+- 做旧纸张纹理叠加
+- 精细的交叉排线与线条绘制
+- 科学插图精度
+- 学习笔记与批注
+- 标本版或手绘草图美学
+- 编号图示元素
 
-## Typography
+## 排版
 
-- Handwritten cursive or serif fonts
-- Scientific annotations
-- Small caps for labels
-- Italics for scientific names
+- 手写草书或衬线字体
+- 科学批注
+- 标签使用小型大写字母（small caps）
+- 科学名称使用斜体
 
-## Best For
+## 适用场景
 
-Scientific education, biology topics, historical explanations, inventions, nature documentation
+科学教育、生物学主题、历史讲解、发明创造、自然文献记录

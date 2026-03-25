@@ -1,26 +1,26 @@
-# elegant
+# 优雅色
 
-Sophisticated, refined, understated luxury
+精致、优雅、低调奢华
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex |
-|------|-------|-----|
-| Primary 1 | Soft Coral | #E8A598 |
-| Primary 2 | Muted Teal | #5B8A8A |
-| Primary 3 | Dusty Rose | #D4A5A5 |
-| Background | Warm Cream | #F5F0E6 |
-| Background Alt | Soft Beige | #F0EBE0 |
-| Accent 1 | Gold | #C9A962 |
-| Accent 2 | Copper | #B87333 |
+| 角色 | 颜色 | 十六进制 |
+|------|------|----------|
+| 主色 1 | Soft Coral（柔和珊瑚） | #E8A598 |
+| 主色 2 | Muted Teal（哑光青） | #5B8A8A |
+| 主色 3 | Dusty Rose（灰玫瑰） | #D4A5A5 |
+| 背景 | Warm Cream（暖奶油色） | #F5F0E6 |
+| 备选背景 | Soft Beige（柔和米色） | #F0EBE0 |
+| 强调色 1 | Gold（金色） | #C9A962 |
+| 强调色 2 | Copper（铜色） | #B87333 |
 
-## Decorative Hints
+## 装饰提示
 
-- Delicate ornamental details
-- Subtle gradients and soft transitions
-- Refined geometric patterns
-- Balanced, symmetrical compositions
+- 精致的装饰细节
+- 微妙的渐变和柔和过渡
+- 精致的几何图案
+- 平衡、对称的构图
 
-## Best For
+## 适用场景
 
-Business, professional, thought leadership, luxury, corporate communications
+商务、专业、思想领导力、奢华、企业传播

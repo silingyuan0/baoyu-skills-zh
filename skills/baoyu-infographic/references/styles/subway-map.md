@@ -1,29 +1,29 @@
-# subway-map
+# subway-map（地铁线路图）
 
-Transit diagram style with colored lines and stations
+以彩色线路和站点标记为特征的公共交通图示风格
 
-## Color Palette
+## 调色板
 
-- Primary: Transit line colors - red, blue, green, yellow, orange
-- Background: White or light gray
-- Accents: Station dots, interchange markers
+- 主色：线路颜色 — 红、蓝、绿、黄、橙
+- 背景：白色或浅灰
+- 强调色：站点圆点、换乘站标记
 
-## Visual Elements
+## 视觉元素
 
-- Colored route lines
-- 45° and 90° angles only
-- Station circle markers
-- Interchange symbols
-- Simplified geography
-- Line thickness hierarchy
+- 彩色线路
+- 仅使用 45 度和 90 度角度
+- 站点圆形标记
+- 换乘站符号
+- 简化的地理信息
+- 线路粗细层级
 
-## Typography
+## 排版
 
-- Clean sans-serif
-- Station name labels
-- Line number/name badges
-- Horizontal or angled text
+- 简洁无衬线体
+- 站名标签
+- 线路编号/名称徽章
+- 水平或倾斜文字
 
-## Best For
+## 适用场景
 
-Journey maps, process flows, network diagrams, route explanations
+旅程地图、流程图、网络拓扑图、路线讲解

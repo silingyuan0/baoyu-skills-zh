@@ -1,273 +1,273 @@
-# Translation Workflow Details
+# 翻译工作流详情
 
-This file provides detailed guidelines for each workflow step. Steps are shared across modes:
+本文档为每个工作流步骤提供详细指南。步骤在不同模式间共享：
 
-- **Quick**: Translate only (no steps from this file)
-- **Normal**: Step 1 (Analysis) → Translate
-- **Refined**: Step 1 (Analysis) → Step 2 (Draft) → Step 3 (Review) → Step 4 (Revision) → Step 5 (Polish)
-- **Normal → Upgrade**: After normal mode, user can continue with Step 3 → Step 4 → Step 5
+- **快速**：仅翻译（不使用本文档中的步骤）
+- **普通**：步骤 1（分析）→ 翻译
+- **精细**：步骤 1（分析）→ 步骤 2（初稿）→ 步骤 3（审校）→ 步骤 4（修订）→ 步骤 5（润色）
+- **普通 → 升级**：普通模式完成后，用户可继续执行步骤 3 → 步骤 4 → 步骤 5
 
-All intermediate results are saved as files in the output directory.
+所有中间结果保存为输出目录中的文件。
 
-## Step 1: Content Analysis
+## 步骤 1：内容分析
 
-Before translating, deeply analyze the source material. Save analysis to `01-analysis.md` in the output directory. Focus on dimensions that directly inform translation quality.
+翻译之前，深入分析源材料。将分析保存到输出目录中的 `01-analysis.md`。关注直接影响翻译质量的维度。
 
-### 1.1 Quick Summary
+### 1.1 快速摘要
 
-3-5 sentences capturing:
-- What is this content about?
-- What is the core argument?
-- What is the most valuable point?
+3-5 句话，涵盖：
+- 本文内容是什么？
+- 核心论点是什么？
+- 最有价值的观点是什么？
 
-### 1.2 Core Content
+### 1.2 核心内容
 
-- **Core argument**: One sentence summary
-- **Key concepts**: What key concepts does the author use? How are they defined?
-- **Structure**: How is the argument developed? How do sections connect?
-- **Evidence**: What specific examples, data, or authoritative citations are used?
+- **核心论点**：一句话摘要
+- **关键概念**：作者使用了哪些关键概念？它们是如何定义的？
+- **结构**：论点是如何展开的？各部分之间如何衔接？
+- **论据**：使用了哪些具体示例、数据或权威引用？
 
-### 1.3 Background Context
+### 1.3 背景语境
 
-- **Author**: Who is the author? What is their background and stance?
-- **Writing context**: What phenomenon, trend, or debate is this responding to?
-- **Purpose**: What problem is the author trying to solve? Who are they trying to influence?
-- **Implicit assumptions**: What unstated premises underlie the argument?
+- **作者**：作者是谁？其背景和立场是什么？
+- **写作语境**：本文回应了什么现象、趋势或争论？
+- **目的**：作者试图解决什么问题？试图影响谁？
+- **隐含假设**：哪些未明说的前提支撑着论点？
 
-### 1.4 Terminology Extraction
+### 1.4 术语提取
 
-- List all technical terms, proper nouns, brand names, acronyms
-- Cross-reference with loaded glossaries
-- For terms not in glossary, research standard translations
-- Record decisions in a working terminology table
+- 列出所有技术术语、专有名词，品牌名称、缩写
+- 与已加载的术语表交叉比对
+- 对于术语表中没有的术语，研究标准翻译
+- 将决策记录在工作术语表中
 
-### 1.5 Tone & Style
+### 1.5 语调与风格
 
-- Is the original formal or conversational?
-- Does it use humor, metaphor, or cultural references?
-- What register is appropriate for the translation given the target audience?
+- 原文是正式还是口语化？
+- 是否使用了幽默、比喻或文化引用？
+- 针对目标受众，什么语域是合适的？
 
-### 1.6 Reader Comprehension Challenges
+### 1.6 读者理解挑战
 
-Identify points where target readers may struggle, calibrated to the target audience:
+识别目标读者可能遇到困难的地方，根据目标受众进行校准：
 
-- **Domain jargon**: Technical terms that lack widely-known translations or are meaningless when translated literally
-- **Cultural references**: Idioms, historical events, pop culture, social norms specific to the source culture
-- **Implicit knowledge**: Background context the original author assumes but target readers may lack
-- **Wordplay & metaphors**: Figurative language that doesn't carry over across languages
-- **Named concepts**: Theories, effects, or phenomena with coined names (e.g., "comb-over effect", "Dunning-Kruger effect")
-- **Cognitive gaps**: Counterintuitive claims or expectations vs. reality that need framing for target readers
+- **领域术语**：缺乏广为人知的翻译或直译后无意义的术语
+- **文化引用**：特定于源文化的习语、历史事件、流行文化、社会规范
+- **隐性知识**：原文作者假定但目标读者可能缺乏的背景知识
+- **文字游戏与比喻**：无法跨语言传递的比喻性语言
+- **命名概念**：带有特有名称的理论、效应或现象（如 "comb-over effect"、"Dunning-Kruger effect"）
+- **认知差距**：反直觉的论断或预期与现实之间的差距，需要为目标读者进行框架调整
 
-For each identified challenge, note:
-1. The original term/passage
-2. Why it may confuse target readers
-3. A concise plain-language explanation to use as a translator's note
+对于每个识别出的挑战，记录：
+1. 原始术语/段落
+2. 为什么可能令目标读者困惑
+3. 用作译者注的简明通俗解释
 
-### 1.7 Figurative Language & Metaphor Mapping
+### 1.7 比喻语言与隐喻映射
 
-Identify all metaphors, similes, idioms, and figurative expressions in the source. For each:
+识别源文本中的所有比喻、明喻、习语和比喻性表达。对于每个：
 
-1. **Original expression**: The exact phrase
-2. **Intended meaning**: What the author is actually communicating (the idea behind the image)
-3. **Literal translation risk**: Would a word-for-word translation sound unnatural, lose the connotation, or confuse target readers?
-4. **Target-language approach**: One of:
-   - **Interpret**: Discard the source image entirely, express the intended meaning directly in natural target language
-   - **Substitute**: Replace with a target-language idiom or image that conveys the same idea and emotional effect
-   - **Retain**: Keep the original image if it works equally well in the target language
+1. **原始表达**：确切措辞
+2. **预期含义**：作者实际传达的意思（图像背后的思想）
+3. **直译风险**：逐字翻译是否会不自然、失去含义或令目标读者困惑？
+4. **目标语言处理方式**：以下之一：
+   - **意译**：完全抛弃源语言图像，用地道的目标语言直接表达预期含义
+   - **替换**：用传达相同思想和情感效果的目标语言习语或图像替换
+   - **保留**：如果原始图像在目标语言中同样有效则保留
 
-Also flag:
-- **Emotional connotations carried by word choice**: Words like "alarming" that convey subjective feeling, not just objective description — note the emotional effect to preserve
-- **Implied meanings**: Sentences where the surface meaning is simple but the implication is richer — note what the author really means so the translator can convey the full intent
+还需标记：
+- **词语选择所承载的情感内涵**：如 "alarming" 等传达主观感受而非客观描述的词语——标注需保留的情感效果
+- **隐含意义**：表面含义简单但言外之意更丰富的句子——标注作者的真正意思以便译者传达完整意图
 
-### 1.8 Structural & Creative Challenges
+### 1.8 结构与创意挑战
 
-- Complex sentence patterns (long subordinate clauses, nested modifiers, participial phrases) that need restructuring for natural target-language flow
-- Structural challenges (wordplay, ambiguity, puns that don't translate)
-- Content where the author's voice or humor requires creative adaptation
+- 需要重组以实现自然目标语言流畅性的复杂句式（长从句、嵌套修饰语、分词短语）
+- 结构性挑战（文字游戏、歧义、无法翻译的双关语）
+- 作者的声音或幽默感需要创意改编的内容
 
-**Save `01-analysis.md`** with:
+**保存 `01-analysis.md`**，包含：
 ```
-## Quick Summary
-[3-5 sentences]
+## 快速摘要
+[3-5 句话]
 
-## Core Content
-Core argument: [one sentence]
-Key concepts: [list]
-Structure: [outline]
+## 核心内容
+核心论点：[一句话]
+关键概念：[列表]
+结构：[大纲]
 
-## Background Context
-Author: [who, background, stance]
-Writing context: [what this responds to]
-Purpose: [goal and target audience]
-Implicit assumptions: [unstated premises]
+## 背景语境
+作者：[身份、背景、立场]
+写作语境：[本文回应的内容]
+目的：[目标和目标受众]
+隐含假设：[未明说的前提]
 
-## Terminology
-[term → translation, ...]
+## 术语
+[术语 → 翻译，...]
 
-## Tone & Style
-[assessment]
+## 语调与风格
+[评估]
 
-## Comprehension Challenges
-- [term/passage] → [why confusing] → [proposed note]
+## 理解挑战
+- [术语/段落] → [困惑原因] → [建议注释]
 - ...
 
-## Figurative Language & Metaphor Mapping
-- [original expression] → [intended meaning] → [approach: interpret/substitute/retain] → [suggested rendering]
+## 比喻语言与隐喻映射
+- [原始表达] → [预期含义] → [处理方式：意译/替换/保留] → [建议译法]
 - ...
 
-## Structural & Creative Challenges
-[sentence restructuring needs, wordplay, creative adaptation needs]
-```
-
-## Step 2: Assemble Translation Prompt
-
-Main agent reads `01-analysis.md` and assembles a complete translation prompt using [references/subagent-prompt-template.md](subagent-prompt-template.md). Inline the resolved style preset (from `--style` flag, EXTEND.md `style` setting, or default `storytelling`), content background, merged glossary, and comprehension challenges into the prompt. Save to `02-prompt.md`.
-
-This prompt is used by the subagent (chunked) or by the main agent itself (non-chunked).
-
-## Step 3: Initial Draft
-
-Save to `03-draft.md` in the output directory.
-
-For chunked content, the subagent produces this draft (merged from chunk translations). For non-chunked content, the main agent produces it directly.
-
-Translate the full content following `02-prompt.md`. Apply all **Translation principles** from SKILL.md Step 4, plus these step-specific guidelines:
-
-- Use the terminology decisions from Step 1 consistently
-- Match the identified tone and register
-- Follow the metaphor mapping from Step 1 for figurative language handling
-- Add translator's notes for comprehension challenges identified in Step 1
-
-## Step 4: Critical Review
-
-The main agent critically reviews the draft against the source. Save review findings to `04-critique.md`. This step produces **diagnosis only** — no rewriting yet.
-
-### 4.1 Accuracy & Completeness
-- Compare each paragraph against the original, sentence by sentence
-- Verify all facts, numbers, dates, and proper nouns
-- Flag any content accidentally added, removed, or altered
-- Check that technical terms match glossary consistently throughout
-- Verify no paragraphs or sections were skipped
-
-### 4.2 Europeanized Language Diagnosis (for CJK targets)
-- **Unnecessary connectives**: Overuse of 因此/然而/此外/另外 where context already implies the relationship
-- **Passive voice abuse**: Excessive 被/由/受到 where active voice is more natural
-- **Noun pile-up**: Long modifier chains that should be broken into shorter clauses
-- **Cleft sentences**: Unnatural "是...的" structures calqued from English "It is...that"
-- **Over-nominalization**: Abstract nouns where verbs or adjectives would be more natural (e.g., "进行了讨论" → "讨论了")
-- **Awkward pronouns**: Overuse of 他/她/它/我们/你 where they can be omitted
-
-### 4.3 Figurative Language & Emotional Fidelity
-- Cross-check against the metaphor mapping in `01-analysis.md`: were all flagged metaphors/idioms handled per the recommended approach (interpret/substitute/retain)?
-- Flag any metaphors or figurative expressions that were translated literally and sound unnatural or lose the intended meaning in the target language
-- Check emotional connotations: do words that carry subjective feelings in the source (e.g., "alarming", "haunting", "striking") evoke the same response in the translation, or were they flattened into neutral/objective descriptions?
-- Flag implied meanings that were lost: sentences where the author's deeper intent was not conveyed because the translator stayed too close to the surface meaning
-
-### 4.4 Strategy Execution
-- Were the translation strategies from `02-prompt.md` actually followed?
-- Did the translator apply the tone and register identified in analysis?
-- Were comprehension challenges from `01-analysis.md` addressed with appropriate notes?
-- Were glossary terms used consistently?
-
-### 4.5 Expression & Logic
-- Flag sentences that read like "translationese" — unnatural word order, calques, stiff phrasing
-- Check logical flow between sentences and paragraphs
-- Identify where sentence restructuring would improve readability
-- Note where the target language idiom was missed
-
-### 4.6 Translator's Notes Quality
-- Are notes accurate, concise, and genuinely helpful?
-- Identify missed comprehension challenges that need notes
-- Flag over-annotations on terms obvious to the target audience
-- Check that cultural references are explained where needed
-
-### 4.7 Cultural Adaptation
-- Do metaphors and idioms work in the target language?
-- Are any references potentially confusing or offensive in the target culture?
-- Could any passage be misinterpreted due to cultural context differences?
-
-**Save `04-critique.md`** with:
-```
-## Accuracy & Completeness
-- [issue]: [location] — [description]
-- ...
-
-## Europeanized Language Issues
-- [issue type]: [example from draft] → [suggested fix]
-- ...
-
-## Figurative Language & Emotional Fidelity
-- [literal metaphor]: [original] → [draft rendering] → [suggested interpretation]
-- [flattened emotion]: [original word/phrase] → [draft rendering] → [how to restore emotional effect]
-- ...
-
-## Strategy Execution
-- [strategy]: [followed/missed] — [details]
-- ...
-
-## Expression & Logic
-- [location]: [problem] → [suggestion]
-- ...
-
-## Translator's Notes
-- [add/remove/revise]: [term] — [reason]
-- ...
-
-## Cultural Adaptation
-- [issue]: [description] — [suggestion]
-- ...
-
-## Summary
-[Overall assessment: X critical issues, Y improvements, Z minor suggestions]
+## 结构与创意挑战
+[句式重组需求、文字游戏、创意改编需求]
 ```
 
-## Step 5: Revision
+## 步骤 2：组装翻译提示词
 
-Apply all findings from `04-critique.md` to produce a revised translation. Save to `05-revision.md`.
+主代理读取 `01-analysis.md`，使用 [references/subagent-prompt-template.md](subagent-prompt-template.md) 组装完整的翻译提示词。内联解析后的风格预设（来自 `--style` 标志、EXTEND.md 的 `style` 设置或默认的 `storytelling`）、内容背景、合并的术语表和理解挑战到提示词中。保存到 `02-prompt.md`。
 
-The revision reads `03-draft.md` (the original draft) and `04-critique.md` (the review findings), and may also refer back to the source text and `01-analysis.md`:
+此提示词由子代理（分块模式）或主代理自身（非分块模式）使用。
 
-- Fix all accuracy issues identified in the critique
-- Rewrite Europeanized expressions into natural target-language patterns
-- Re-interpret literally translated metaphors and figurative expressions per the metaphor mapping; replace with natural target-language renderings that convey the intended meaning and emotional effect
-- Restore flattened emotional connotations: ensure words carrying subjective feelings evoke the same response as the source
-- Apply missed translation strategies
-- Restructure stiff or awkward sentences for fluency
-- Add, remove, or revise translator's notes per critique recommendations
-- Improve transitions between paragraphs
-- Adapt cultural references as suggested
+## 步骤 3：初稿
 
-## Step 6: Polish
+保存到输出目录中的 `03-draft.md`。
 
-Save final version to `translation.md`.
+对于分块内容，子代理生成此初稿（由分块翻译合并而成）。对于非分块内容，主代理直接生成。
 
-Final pass on `05-revision.md` for publication quality:
+按照 `02-prompt.md` 翻译全部内容。应用 SKILL.md 步骤 4 中的所有**翻译原则**，以及以下步骤特定指南：
 
-- Read the entire translation as a standalone piece — does it flow as native content?
-- Smooth any remaining rough transitions between paragraphs
-- Ensure the narrative voice is consistent throughout
-- Apply the selected translation style consistently: storytelling should flow like a narrative, formal should maintain neutral professionalism, humorous should land jokes naturally in the target language, etc.
-- Final scan for surviving literal metaphors or flattened emotions: any figurative expression that still reads as "translated" rather than "written" should be recast into natural target-language expression
-- Final consistency check on terminology across the full text
-- Verify formatting is preserved correctly (headings, bold, links, code blocks)
-- Remove any remaining traces of translationese
+- 始终一致地使用步骤 1 的术语决策
+- 匹配识别出的语调和语域
+- 对比喻语言的处理遵循步骤 1 的隐喻映射
+- 为步骤 1 中识别的理解挑战添加译者注
 
-## Subagent Responsibility
+## 步骤 4：审校
 
-Each subagent (one per chunk) is responsible **only** for producing the initial draft of its chunk (Step 3). The main agent assembles the shared prompt (Step 2), spawns all subagents in parallel, then takes over for critical review (Step 4), revision (Step 5), and polish (Step 6). The main agent may delegate revision or polish to subagents at its own discretion.
+主代理对照源文本对初稿进行审校。将审校发现保存到 `04-critique.md`。此步骤仅产生**诊断**——暂不重写。
 
-## Chunked Refined Translation
+### 4.1 准确性与完整性
+- 逐段逐句与原文对照
+- 核实所有事实、数字、日期和专有名词
+- 标记任何意外添加、删除或更改的内容
+- 检查技术术语是否全文与术语表一致
+- 核实是否有段落或章节被跳过
 
-When content exceeds the chunk threshold (see Defaults in SKILL.md) and uses refined mode:
+### 4.2 翻译腔诊断（针对中日韩目标语言）
+- **不必要的连接词**：在上下文已暗示关系的情况下过度使用"因此/然而/此外/另外"
+- **被动语态滥用**：在主动语态更自然的地方过度使用"被/由/受到"
+- **名词堆叠**：应拆分为更短从句的长修饰语链
+- **分裂句**：从英语 "It is...that" 借译的不自然"是...的"结构
+- **过度名词化**：应使用动词或形容词的抽象名词（如"进行了讨论" → "讨论了"）
+- **生硬的代词**：在可以省略的地方过度使用他/她/它/我们/你
 
-1. Main agent runs analysis (Step 1) on the **entire** document first → `01-analysis.md`
-2. Main agent assembles translation prompt → `02-prompt.md`
-3. Split into chunks → `chunks/`
-4. Spawn one subagent per chunk in parallel (each reads `02-prompt.md` for shared context) → merge all results into `03-draft.md`
-5. Main agent critically reviews the merged draft → `04-critique.md`
-6. Main agent revises based on critique → `05-revision.md`
-7. Main agent polishes → `translation.md`
-7. Final cross-chunk consistency check:
-   - Check terminology consistency across chunk boundaries
-   - Verify narrative flow between chunks
-   - Fix any transition issues at chunk boundaries
+### 4.3 比喻语言与情感忠实
+- 对照 `01-analysis.md` 中的隐喻映射交叉检查：所有标记的比喻/习语是否按推荐的方式（意译/替换/保留）处理？
+- 标记被逐字翻译且在目标语言中不自然或失去预期含义的比喻或比喻性表达
+- 检查情感内涵：源语言中带有主观感受的词语（如 "alarming"、"haunting"、"striking"）在翻译中是否唤起了相同反应，还是被削弱为中性/客观描述？
+- 标记丢失的隐含意义：作者更深层次的意图未被传达的句子——因为译者过于贴近表面含义
+
+### 4.4 策略执行
+- 是否实际遵循了 `02-prompt.md` 中的翻译策略？
+- 译者是否应用了分析中识别的语调和语域？
+- `01-analysis.md` 中的理解挑战是否通过适当的注释加以处理？
+- 术语表术语是否使用一致？
+
+### 4.5 表达与逻辑
+- 标记读起来像"翻译腔"的句子——不自然的语序、借译表达、生硬措辞
+- 检查句子之间和段落之间的逻辑流畅性
+- 识别句子重组可以改善可读性的地方
+- 标注遗漏目标语言地道表达的地方
+
+### 4.6 译者注质量
+- 注释是否准确、简明且真正有帮助？
+- 识别需要注释但遗漏的理解挑战
+- 标记对目标受众来说显而易见的术语的过度注释
+- 检查在需要的地方是否解释了文化引用
+
+### 4.7 文化适应
+- 比喻和习语在目标语言中是否成立？
+- 是否有引用在目标文化中可能令人困惑或冒犯？
+- 是否有段落可能因文化背景差异而被误解？
+
+**保存 `04-critique.md`**，包含：
+```
+## 准确性与完整性
+- [问题]：[位置] — [描述]
+- ...
+
+## 翻译腔问题
+- [问题类型]：[初稿中的示例] → [建议修改]
+- ...
+
+## 比喻语言与情感忠实
+- [直译比喻]：[原文] → [初稿译文] → [建议意译]
+- [情感被削弱]：[原文词语/短语] → [初稿译文] → [如何恢复情感效果]
+- ...
+
+## 策略执行
+- [策略]：[已遵循/未遵循] — [详情]
+- ...
+
+## 表达与逻辑
+- [位置]：[问题] → [建议]
+- ...
+
+## 译者注
+- [添加/删除/修改]：[术语] — [原因]
+- ...
+
+## 文化适应
+- [问题]：[描述] — [建议]
+- ...
+
+## 总结
+[总体评估：X 个关键问题，Y 个改进项，Z 个次要建议]
+```
+
+## 步骤 5：修订
+
+将 `04-critique.md` 中的所有发现应用到初稿以生成修订翻译。保存到 `05-revision.md`。
+
+修订过程读取 `03-draft.md`（原始初稿）和 `04-critique.md`（审校发现），也可回溯参考源文本和 `01-analysis.md`：
+
+- 修复审校中识别的所有准确性问题
+- 将翻译腔表达改写为自然的目标语言模式
+- 按照隐喻映射重新处理被直译的比喻和比喻性表达；用传达预期含义和情感效果的自然目标语言表达替换
+- 恢复被削弱的情感内涵：确保带有主观感受的词语唤起与源文本相同的反应
+- 应用遗漏的翻译策略
+- 重组生硬或别扭的句子以提升流畅性
+- 按照审校建议添加、删除或修改译者注
+- 改善段落之间的过渡
+- 按照建议调整文化引用
+
+## 步骤 6：润色
+
+将最终版本保存到 `translation.md`。
+
+对 `05-revision.md` 进行最终通读以达到出版质量：
+
+- 将整篇翻译作为独立作品阅读——它是否像原生内容一样流畅？
+- 平滑任何残余的段落间生硬过渡
+- 确保叙事语调全文一致
+- 一致地应用所选翻译风格：叙事风格应如叙事般流畅，正式风格应保持中性的专业性，幽默风格应在目标语言中自然地展现笑点等
+- 最终扫描残余的直译比喻或被削弱的情感：任何读起来仍像"翻译的"而非"写的"比喻性表达都应重新转换为自然的目标语言表达
+- 全文最终术语一致性检查
+- 验证格式是否正确保留（标题、粗体、链接、代码块）
+- 清除任何残余的翻译腔痕迹
+
+## 子代理职责
+
+每个子代理（每个分块一个）**仅**负责生成其分块的初稿（步骤 3）。主代理组装共享提示词（步骤 2），并行生成所有子代理，然后接管审校（步骤 4）、修订（步骤 5）和润色（步骤 6）。主代理可自行决定是否将修订或润色委托给子代理。
+
+## 分块精细翻译
+
+当内容超过分块阈值（见 SKILL.md 中的默认值）且使用精细模式时：
+
+1. 主代理首先对**整个**文档进行分析（步骤 1）→ `01-analysis.md`
+2. 主代理组装翻译提示词 → `02-prompt.md`
+3. 拆分为分块 → `chunks/`
+4. 并行生成每个分块的子代理（每个读取 `02-prompt.md` 获取共享上下文）→ 合并所有结果为 `03-draft.md`
+5. 主代理审校合并后的初稿 → `04-critique.md`
+6. 主代理基于审校进行修订 → `05-revision.md`
+7. 主代理润色 → `translation.md`
+7. 最终跨分块一致性检查：
+   - 检查分块边界处的术语一致性
+   - 验证分块间的叙事流畅性
+   - 修复分块边界的任何过渡问题

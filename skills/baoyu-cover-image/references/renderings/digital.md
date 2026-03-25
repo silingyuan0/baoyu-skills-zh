@@ -1,42 +1,42 @@
-# digital
+# 数字风
 
-Polished, precise, modern
+精致、精确、现代
 
-## Core Characteristics
+## 核心特征
 
-Clean digital illustration with polished finish, precise edges, and subtle modern effects. Feels like a professional UI mockup or corporate illustration.
+干净的数字插图，以抛光的效果、精确的边缘和微妙的现代效果为特征。类似于专业的 UI 模型或企业级插图。
 
-## Lines
+## 线条
 
-- Clean, precise, computer-perfect edges
-- Consistent stroke weights
-- Sharp corners where appropriate
-- Anti-aliased smooth rendering
+- 干净、精确、计算机级别的完美边缘
+- 一致的笔画粗细
+- 适当的锐利转角
+- 抗锯齿平滑渲染
 
-## Texture
+## 纹理
 
-- Smooth surfaces with no visible texture
-- Subtle gradients permitted (soft, controlled)
-- Frosted glass and blur effects
-- Clean shadows with consistent direction
+- 光滑表面，无可视频理
+- 允许微妙渐变（柔和、可控）
+- 毛玻璃和模糊效果
+- 方向一致的干净阴影
 
-## Depth
+## 深度
 
-- Subtle gradients and soft drop shadows
-- Layered card-based layouts
-- Light 3D effects (subtle, not realistic)
-- Material Design-inspired elevation
+- 微妙渐变和柔和投影
+- 分层的卡片式布局
+- 轻度 3D 效果（微妙，非写实）
+- Material Design 风格的层级提升（elevation）
 
-## Element Vocabulary
+## 元素词汇
 
-- Polished icons and UI components
-- Data visualizations: charts, graphs, metrics
-- Card layouts and structured grids
-- Tag chips, progress bars, status indicators
-- Clean geometric shapes
+- 精致的图标和 UI 组件
+- 数据可视化：图表、图形、指标
+- 卡片布局和结构化网格
+- 标签芯片、进度条、状态指示器
+- 干净的几何形状
 
-## Typography Approach
+## 排版方式
 
-- System UI or modern sans-serif (Inter, SF Pro style)
-- Clean, functional, high readability
-- Structured hierarchy with consistent spacing
+- 系统 UI 或现代无衬线字体（Inter、SF Pro 风格）
+- 干净、功能性、高可读性
+- 结构化层级，一致的间距

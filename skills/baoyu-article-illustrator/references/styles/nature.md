@@ -1,58 +1,58 @@
 # nature
 
-Organic, earthy illustration style for environmental and wellness content
+适合环保与健康内容的有机、大地色调插图风格
 
-## Design Aesthetic
+## 设计美学
 
-Natural and organic visual approach inspired by the outdoors. Earth tones and natural textures that evoke calm and connection to nature. Flowing lines and organic shapes. Creates a sense of tranquility and environmental awareness.
+受户外灵感启发的自然有机视觉风格。大地色调和自然纹理唤起平静与对自然的连结。流动的线条和有机形状，营造宁静与环保意识。
 
-## Background
+## 背景
 
-- Color: Sand Beige (#F5E6D3) or Sky Blue wash (#E0F2FE)
-- Texture: Natural paper texture with organic feel
+- 颜色：沙米色（#F5E6D3）或天蓝色水洗（#E0F2FE）
+- 纹理：带有有机质感的手工纸张纹理
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
-|------|-------|-----|-------|
-| Background | Sand Beige | #F5E6D3 | Primary background |
-| Alt Background | Sky Blue | #E0F2FE | Alternative canvas |
-| Primary | Forest Green | #276749 | Main natural color |
-| Secondary | Sage | #9AE6B4 | Supporting green |
-| Tertiary | Earth Brown | #744210 | Grounding element |
-| Accent 1 | Sunset Orange | #ED8936 | Warm accent |
-| Accent 2 | Water Blue | #63B3ED | Cool accent |
-| Text | Deep Brown | #5D4E3C | Text elements |
+| 角色 | 颜色 | 色值 | 用途 |
+|------|------|------|------|
+| 背景 | 沙米色 | #F5E6D3 | 主背景 |
+| 备选背景 | 天蓝 | #E0F2FE | 替代画布 |
+| 主色 | 森林绿 | #276749 | 主要自然色 |
+| 次色 | 鼠尾草绿 | #9AE6B4 | 辅助绿色 |
+| 第三色 | 土棕 | #744210 | 稳重元素 |
+| 强调色 1 | 日落橙 | #ED8936 | 暖色点缀 |
+| 强调色 2 | 水蓝 | #63B3ED | 冷色点缀 |
+| 文字 | 深棕 | #5D4E3C | 文字元素 |
 
-## Visual Elements
+## 视觉元素
 
-- Leaf and plant motifs
-- Tree and branch silhouettes
-- Mountain and landscape shapes
-- Organic flowing lines
-- Natural textures (wood grain, stone)
-- Water and wave patterns
-- Animal silhouettes
-- Sun and moon symbols
+- 叶片和植物图案
+- 树木和枝干剪影
+- 山脉和风景形状
+- 有机流动线条
+- 自然纹理（木纹、石材）
+- 水面和波浪图案
+- 动物剪影
+- 太阳和月亮符号
 
-## Style Rules
+## 风格规则
 
-### Do
+### 推荐做法
 
-- Use earth-inspired colors
-- Create organic, flowing shapes
-- Include nature elements
-- Evoke outdoor atmosphere
-- Maintain calm and balance
+- 使用大地色调系色彩
+- 创建有机、流动的形状
+- 加入自然元素
+- 营造户外氛围
+- 保持平静与平衡
 
-### Don't
+### 避免做法
 
-- Use synthetic or neon colors
-- Create rigid geometric shapes
-- Add tech or digital elements
-- Use stark contrasts
-- Overcomplicate compositions
+- 使用合成或霓虹色彩
+- 创建刚硬的几何形状
+- 添加科技或数字元素
+- 使用强烈的对比
+- 构图过度复杂
 
-## Best For
+## 适用场景
 
-Sustainability articles, wellness content, outdoor topics, slow living, environmental issues, health and fitness, gardening, travel nature pieces
+可持续发展文章、健康内容、户外主题、慢生活、环保议题、健康与健身、园艺、自然旅行

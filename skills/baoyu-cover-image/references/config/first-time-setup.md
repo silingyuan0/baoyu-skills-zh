@@ -1,23 +1,18 @@
----
-name: first-time-setup
-description: First-time setup flow for baoyu-cover-image preferences
----
+# 首次设置
 
-# First-Time Setup
+## 概述
 
-## Overview
+当未找到 EXTEND.md 时，引导用户完成偏好设置。
 
-When no EXTEND.md is found, guide user through preference setup.
+**⛔ 阻塞操作**：此设置必须完成才能执行任何其他工作流步骤。不得：
+- 询问关于参考图
+- 询问关于内容/文章
+- 询问关于尺寸（类型、配色、渲染方式）
+- 继续进行内容分析
 
-**⛔ BLOCKING OPERATION**: This setup MUST complete before ANY other workflow steps. Do NOT:
-- Ask about reference images
-- Ask about content/article
-- Ask about dimensions (type, palette, rendering)
-- Proceed to content analysis
+仅询问此设置流程中的问题，保存 EXTEND.md，然后继续。
 
-ONLY ask the questions in this setup flow, save EXTEND.md, then continue.
-
-## Setup Flow
+## 设置流程
 
 ```
 No EXTEND.md found
@@ -37,13 +32,13 @@ No EXTEND.md found
     Continue to Step 1
 ```
 
-## Questions
+## 问题
 
-**Language**: Use user's input language or saved language preference.
+**语言**：使用用户的输入语言或保存的语言偏好。
 
-Use AskUserQuestion with ALL questions in ONE call:
+使用 AskUserQuestion 在一次调用中提出所有问题：
 
-### Question 1: Watermark
+### 问题 1：水印
 
 ```yaml
 header: "Watermark"
@@ -53,7 +48,7 @@ options:
     description: "Clean covers, can enable later in EXTEND.md"
 ```
 
-### Question 2: Preferred Type
+### 问题 2：首选类型
 
 ```yaml
 header: "Type"
@@ -67,7 +62,7 @@ options:
     description: "Concept visualization - technical, architecture"
 ```
 
-### Question 3: Preferred Palette
+### 问题 3：首选配色
 
 ```yaml
 header: "Palette"
@@ -83,7 +78,7 @@ options:
     description: "Technical - engineering blue, navy, cyan"
 ```
 
-### Question 4: Preferred Rendering
+### 问题 4：首选渲染方式
 
 ```yaml
 header: "Rendering"
@@ -99,7 +94,7 @@ options:
     description: "Polished precise digital illustration"
 ```
 
-### Question 5: Default Aspect Ratio
+### 问题 5：默认宽高比
 
 ```yaml
 header: "Aspect"
@@ -115,9 +110,9 @@ options:
     description: "Portrait - Xiaohongshu, Pinterest, mobile content"
 ```
 
-Note: More ratios (4:3, 3:2) available during generation. This sets the default recommendation.
+注：更多比例（4:3、3:2）在生成时可用。这设置默认推荐。
 
-### Question 6: Default Output Directory
+### 问题 6：默认输出目录
 
 ```yaml
 header: "Output"
@@ -131,7 +126,7 @@ options:
     description: "{article-dir}/imgs/ - images folder near article"
 ```
 
-### Question 7: Quick Mode
+### 问题 7：快速模式
 
 ```yaml
 header: "Quick"
@@ -143,7 +138,7 @@ options:
     description: "Skip confirmation, use auto-selection"
 ```
 
-### Question 8: Save Location
+### 问题 8：保存位置
 
 ```yaml
 header: "Save"
@@ -155,21 +150,21 @@ options:
     description: "~/.baoyu-skills/ (all projects)"
 ```
 
-## Save Locations
+## 保存位置
 
-| Choice | Path | Scope |
+| 选择 | 路径 | 范围 |
 |--------|------|-------|
-| Project | `.baoyu-skills/baoyu-cover-image/EXTEND.md` | Current project |
-| User | `~/.baoyu-skills/baoyu-cover-image/EXTEND.md` | All projects |
+| 项目 | `.baoyu-skills/baoyu-cover-image/EXTEND.md` | 当前项目 |
+| 用户 | `~/.baoyu-skills/baoyu-cover-image/EXTEND.md` | 所有项目 |
 
-## After Setup
+## 设置后
 
-1. Create directory if needed
-2. Write EXTEND.md with frontmatter
-3. Confirm: "Preferences saved to [path]"
-4. Continue to Step 1
+1. 如需要则创建目录
+2. 使用前置元数据写入 EXTEND.md
+3. 确认："偏好设置已保存到 [path]"
+4. 继续步骤 1
 
-## EXTEND.md Template
+## EXTEND.md 模板
 
 ```yaml
 ---
@@ -192,11 +187,11 @@ custom_palettes: []
 ---
 ```
 
-## Modifying Preferences Later
+## 之后修改偏好设置
 
-Users can edit EXTEND.md directly or run setup again:
-- Delete EXTEND.md to trigger setup
-- Edit YAML frontmatter for quick changes
-- Full schema: `preferences-schema.md`
+用户可以直接编辑 EXTEND.md 或重新运行设置：
+- 删除 EXTEND.md 以触发设置
+- 编辑 YAML 前置元数据进行快速更改
+- 完整 schema：`preferences-schema.md`
 
-**EXTEND.md Supports**: Watermark | Preferred type | Preferred palette | Preferred rendering | Preferred text | Preferred mood | Default aspect ratio | Default output directory | Quick mode | Custom palette definitions | Language preference
+**EXTEND.md 支持**：水印 | 首选类型 | 首选配色 | 首选渲染方式 | 首选文本 | 首选氛围 | 默认宽高比 | 默认输出目录 | 快速模式 | 自定义配色定义 | 语言偏好

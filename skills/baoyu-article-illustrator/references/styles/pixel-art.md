@@ -1,57 +1,57 @@
 # pixel-art
 
-Retro 8-bit pixel art aesthetic with nostalgic gaming style
+复古 8 位像素艺术与怀旧游戏风格
 
-## Design Aesthetic
+## 设计美学
 
-Pixelated retro aesthetic reminiscent of classic 8-bit and 16-bit era games. Chunky pixels, limited color palettes, and nostalgic gaming references. Simple geometric shapes rendered in blocky pixel form. Fun, playful, and immediately recognizable retro tech aesthetic.
+让人想起经典 8 位和 16 位游戏的像素化复古美学。像素块、有限调色板和怀旧游戏元素。简单几何形状以块状像素形式呈现。有趣、活泼且立即可识别的复古科技美学。
 
-## Background
+## 背景
 
-- Color: Light Blue (#87CEEB) or Soft Lavender (#E6E6FA)
-- Texture: Subtle pixel grid pattern, optional CRT scanline effect
+- 颜色：浅蓝色（#87CEEB）或柔和薰衣草色（#E6E6FA）
+- 纹理：细微像素网格图案，可选 CRT 扫描线效果
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex | Usage |
+| 角色 | 颜色 | Hex | 用途 |
 |------|-------|-----|-------|
-| Background | Light Blue | #87CEEB | Primary background |
-| Alt Background | Soft Lavender | #E6E6FA | Secondary backgrounds |
-| Primary Text | Dark Navy | #1A1A2E | Main elements |
-| Accent 1 | Pixel Green | #00FF00 | Success, highlights |
-| Accent 2 | Pixel Red | #FF0000 | Alerts, emphasis |
-| Accent 3 | Pixel Yellow | #FFFF00 | Warnings, energy |
-| Accent 4 | Pixel Cyan | #00FFFF | Info, tech elements |
-| Accent 5 | Pixel Magenta | #FF00FF | Special elements |
+| 背景 | 浅蓝色 | #87CEEB | 主背景 |
+| 替代背景 | 柔和薰衣草色 | #E6E6FA | 次要背景 |
+| 主文本 | 深藏青色 | #1A1A2E | 主要元素 |
+| 强调色 1 | 像素绿 | #00FF00 | 成功、高光 |
+| 强调色 2 | 像素红 | #FF0000 | 警报、强调 |
+| 强调色 3 | 像素黄 | #FFFF00 | 警告、能量 |
+| 强调色 4 | 像素青 | #00FFFF | 信息、科技元素 |
+| 强调色 5 | 像素品红 | #FF00FF | 特殊元素 |
 
-## Visual Elements
+## 视觉元素
 
-- All elements rendered with visible pixel structure
-- Simple iconography: notepad, checkboxes, gears, rockets
-- Text bubbles with pixel borders
-- 8-bit decorations: stars, hearts, arrows
-- Progress bars with chunky pixel segments
-- Dithering patterns for color transitions
-- Limited 16-32 color palette
+- 所有元素以可见像素结构呈现
+- 简单图标：笔记本、复选框、齿轮、火箭
+- 带像素边框的文字气泡
+- 8 位装饰：星星、心形、箭头
+- 带像素块段进度条
+- 颜色过渡的抖动（dithering）图案
+- 有限 16-32 色调色板
 
-## Style Rules
+## 风格规则
 
-### Do
+### 宜
 
-- Maintain consistent pixel grid throughout
-- Use limited color palette (16-32 colors max)
-- Create blocky, geometric shapes
-- Add nostalgic gaming references
-- Use dithering for color transitions
+- 始终保持一致的像素网格
+- 使用有限调色板（最多 16-32 色）
+- 创建块状、几何形状
+- 添加怀旧游戏元素
+- 使用抖动（dithering）实现颜色过渡
 
-### Don't
+### 忌
 
-- Use smooth gradients or anti-aliasing
-- Create photorealistic elements
-- Use thin lines or fine details
-- Add modern glossy effects
-- Break the pixel grid alignment
+- 使用平滑渐变或抗锯齿（anti-aliasing）
+- 创建写实元素
+- 使用细线或精细细节
+- 添加现代光面效果
+- 破坏像素网格对齐
 
-## Best For
+## 适用于
 
-Gaming articles, tech tutorials, nostalgic content, developer topics, retro-themed pieces, creative tech content
+游戏文章、技术教程、怀旧内容、开发者话题、复古主题文章、创意科技内容

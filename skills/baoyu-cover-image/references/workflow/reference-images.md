@@ -1,99 +1,99 @@
-# Reference Image Handling
+# 参考图处理
 
-Guide for processing user-provided reference images in cover generation.
+封面生成中处理用户提供的参考图的指南。
 
-## Input Detection
+## 输入检测
 
-| Input Type | Action |
+| 输入类型 | 操作 |
 |------------|--------|
-| Image file path provided | Copy to `refs/` → can use `--ref` |
-| Image in conversation (no path) | **ASK user for file path** with AskUserQuestion |
-| User can't provide path | Extract style/palette verbally → append to prompt (NO frontmatter references) |
+| 提供了图片文件路径 | 复制到 `refs/` → 可使用 `--ref` |
+| 对话中有图片（无路径） | **请用户提供文件路径**（使用 AskUserQuestion） |
+| 用户无法提供路径 | 口头提取风格/配色 → 追加到提示词（不引用前置元数据） |
 
-**CRITICAL**: Only add `references` to prompt frontmatter if files are ACTUALLY SAVED to `refs/` directory.
+**重要**：只有当文件实际保存到 `refs/` 目录时，才能将 `references` 添加到提示词前置元数据中。
 
-## File Saving
+## 文件保存
 
-**If user provides file path**:
-1. Copy to `refs/ref-NN-{slug}.{ext}` (NN = 01, 02, ...)
-2. Create description: `refs/ref-NN-{slug}.md`
-3. Verify files exist before proceeding
+**如果用户提供了文件路径**：
+1. 复制到 `refs/ref-NN-{slug}.{ext}`（NN = 01、02、...）
+2. 创建描述文件：`refs/ref-NN-{slug}.md`
+3. 在继续之前验证文件存在
 
-**Description File Format**:
+**描述文件格式**：
 ```yaml
 ---
 ref_id: NN
 filename: ref-NN-{slug}.{ext}
 usage: direct | style | palette
 ---
-[User's description or auto-generated description]
+[用户的描述或自动生成的描述]
 ```
 
-| Usage | When to Use |
+| 用途 | 使用时机 |
 |-------|-------------|
-| `direct` | Model sees reference image directly; required if people must appear in output |
-| `style` | Extract visual style only (not for people who must appear) |
-| `palette` | Extract color scheme only |
+| `direct` | 模型直接看到参考图；如必须在输出中出现人物则必须使用 |
+| `style` | 仅提取视觉风格特征（当人物不必须出现在输出中时） |
+| `palette` | 仅提取配色方案 |
 
-## Verbal Extraction (No File)
+## 口头提取（无文件时）
 
-When user can't provide file path:
-1. Analyze image visually, extract: colors, style, composition
-2. Create `refs/extracted-style.md` with extracted info
-3. DO NOT add `references` to prompt frontmatter
-4. Append extracted style/colors directly to prompt text
+当用户无法提供文件路径时：
+1. 视觉分析图片，提取：颜色、风格、构图
+2. 使用提取的信息创建 `refs/extracted-style.md`
+3. 不将 `references` 添加到提示词前置元数据
+4. 将提取的风格/颜色直接追加到提示词正文
 
-## Deep Analysis ⚠️ CRITICAL
+## 深度分析 ⚠️ 重要
 
-References are high-priority inputs. Extract **specific, concrete, reproducible** elements:
+参考图是高优先级输入。提取**具体、可复制、可重现**的元素：
 
-| Analysis | Description | Example (good vs bad) |
+| 分析维度 | 描述 | 示例（好 vs 差） |
 |----------|-------------|----------------------|
-| **Brand elements** | Logos, wordmarks, specific typography | Good: "Logo uses vertical parallel lines for 'm'" / Bad: "Has a logo" |
-| **Signature patterns** | Unique decorative motifs, textures | Good: "Woven intersecting curves forming diamond grid" / Bad: "Has patterns" |
-| **Color palette** | Exact hex values for key colors | Good: "#2D4A3E dark teal, #F5F0E0 cream" / Bad: "Dark and light colors" |
-| **Layout structure** | Specific spatial arrangement | Good: "Bottom 30% dark banner with branding" / Bad: "Has a banner" |
-| **Typography** | Font style, weight, spacing, case | Good: "Uppercase, wide letter-spacing" / Bad: "Has text" |
-| **Content/subject** | What the reference depicts | Factual description |
-| **Usage recommendation** | `direct` / `style` / `palette` | Based on analysis |
+| **品牌元素** | Logo、文字标识、特定排版 | 好："Logo 使用垂直平行线表示字母 'm'" / 差："有一个 Logo" |
+| **标志性图案** | 独特装饰图案、纹理 | 好："编织交叉曲线形成菱形网格" / 差："有图案" |
+| **配色方案** | 关键颜色的精确十六进制值 | 好："#2D4A3E 深青色，#F5F0E0 米色" / 差："深色和浅色" |
+| **布局结构** | 特定空间排列 | 好："底部 30% 为深色横幅带品牌标识" / 差："有条横幅" |
+| **排版** | 字体样式、粗细、间距、大小写 | 好："大写字母，宽字间距" / 差："有文字" |
+| **内容/主题** | 参考图所描绘的内容 | 事实性描述 |
+| **用途建议** | `direct` / `style` / `palette` | 基于分析的建议 |
 
-**Output format**: List each element as bullet that can be copy-pasted into prompt as mandatory instruction.
+**输出格式**：将每个元素作为要点列出，可直接复制到提示词中作为强制指令。
 
-### Character Analysis ⚠️ If Reference Contains People
+### 人物分析 ⚠️ 如果参考图包含人物
 
-Use `usage: direct` so model sees the reference image. Additionally describe per character: **appearance**, **pose**, **clothing** → with **transformation rules** (stylize to match rendering).
+使用 `usage: direct` 让模型看到参考图。另外按人物描述：**外貌**、**姿态**、**服装** → 附带**转换规则**（风格化以匹配渲染方式）。
 
-| Extract | Good | Bad |
+| 提取项 | 好 | 差 |
 |---------|------|-----|
-| Appearance | "Woman: long wavy blonde hair, friendly smile" | "A woman" |
-| Pose | "Standing, facing camera, confident posture" | "Standing" |
-| Clothing | "Dark T-shirt, business casual" | "Formal" |
-| Transform | "Flat-vector cartoon, keep hair color & clothing" | "Make cartoon" |
+| 外貌 | "女性：波浪金色长发，友善微笑" | "一位女性" |
+| 姿态 | "站立，面向镜头，自信姿态" | "站立" |
+| 服装 | "深色 T 恤，商务休闲" | "正式" |
+| 转换 | "扁平矢量卡通，保持发色和服装" | "做成卡通" |
 
-Use `usage: direct`. Output each character as MUST/REQUIRED prompt instruction.
+使用 `usage: direct`。将每个人物作为必须/必需的提示词指令输出。
 
-## Verification Output
+## 验证输出
 
-**For saved files**:
+**对于保存的文件**：
 ```
-Reference Images Saved:
-- ref-01-{slug}.png ✓ (can use --ref)
-- ref-02-{slug}.png ✓ (can use --ref)
-```
-
-**For extracted style**:
-```
-Reference Style Extracted (no file):
-- Colors: #E8756D coral, #7ECFC0 mint...
-- Style: minimal flat vector, clean lines...
-→ Will append to prompt text (not --ref)
+参考图已保存：
+- ref-01-{slug}.png ✓（可使用 --ref）
+- ref-02-{slug}.png ✓（可使用 --ref）
 ```
 
-## Priority Rules
+**对于提取的风格**：
+```
+参考风格已提取（无文件）：
+- 颜色：#E8756D 珊瑚色，#7ECFC0 薄荷色...
+- 风格：极简扁平矢量，简洁线条...
+→ 将追加到提示词正文（不使用 --ref）
+```
 
-When user provides references, they are **HIGH PRIORITY**:
+## 优先级规则
 
-- **References override defaults**: If reference conflicts with preferred palette/rendering, reference takes precedence
-- **Concrete > abstract**: Extract specific elements — not vague "clean style"
-- **Mandatory language**: Use "MUST", "REQUIRED" in prompt for reference elements
-- **Visible in output**: Verify elements are present after generation; strengthen prompt if not
+当用户提供参考图时，它们具有**高优先级**：
+
+- **参考图覆盖默认值**：如果参考图与首选配色/渲染方式冲突，参考图优先
+- **具体优于抽象**：提取具体元素——而非模糊的"简洁风格"
+- **强制性语言**：在提示词中对参考图元素使用"MUST"、"REQUIRED"
+- **输出中可见**：生成后验证元素存在；如不存在则加强提示词

@@ -1,26 +1,26 @@
-# vivid
+# 鲜艳色
 
-Energetic, bold, attention-grabbing
+活力、大胆、引人注目
 
-## Color Palette
+## 调色板
 
-| Role | Color | Hex |
-|------|-------|-----|
-| Primary 1 | Bright Red | #EF4444 |
-| Primary 2 | Neon Green | #22C55E |
-| Primary 3 | Electric Blue | #3B82F6 |
-| Background | Light Blue | #EFF6FF |
-| Background Alt | Soft Lavender | #F5F3FF |
-| Accent 1 | Bright Orange | #FB923C |
-| Accent 2 | Vivid Yellow | #FACC15 |
+| 角色 | 颜色 | 十六进制 |
+|------|------|----------|
+| 主色 1 | Bright Red（亮红） | #EF4444 |
+| 主色 2 | Neon Green（霓虹绿） | #22C55E |
+| 主色 3 | Electric Blue（电光蓝） | #3B82F6 |
+| 背景 | Light Blue（浅蓝） | #EFF6FF |
+| 备选背景 | Soft Lavender（柔和薰衣草） | #F5F3FF |
+| 强调色 1 | Bright Orange（亮橙） | #FB923C |
+| 强调色 2 | Vivid Yellow（鲜艳黄） | #FACC15 |
 
-## Decorative Hints
+## 装饰提示
 
-- Dynamic diagonal lines and angles
-- Bold geometric shapes and color blocks
-- Dramatic lighting effects
-- High-energy visual compositions
+- 动态对角线和角度
+- 大胆的几何形状和色块
+- 戏剧性光影效果
+- 高能量视觉构图
 
-## Best For
+## 适用场景
 
-Product launch, gaming, promotion, event, marketing, announcements, brand showcases
+产品发布、游戏、促销、活动、营销、公告、品牌展示

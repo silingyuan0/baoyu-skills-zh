@@ -1,6 +1,6 @@
 ---
-name: baoyu-translate
-description: Translates articles and documents between languages with three modes - quick (direct), normal (analyze then translate), and refined (analyze, translate, review, polish). Supports custom glossaries and terminology consistency via EXTEND.md. Use when user asks to "translate", "翻译", "精翻", "translate article", "translate to Chinese/English", "改成中文", "改成英文", "convert to Chinese", "localize", "本地化", or needs any document translation. Also triggers for "refined translation", "精细翻译", "proofread translation", "快速翻译", "快翻", "这篇文章翻译一下", or when a URL or file is provided with translation intent.
+sourceName: baoyu-translate
+sourceDescription: 在语言之间翻译文章和文档，提供三种模式——快速（直接翻译）、普通（先分析后翻译）和精细（分析、翻译、审校、润色）。通过 EXTEND.md 支持自定义术语表和术语一致性。当用户要求"translate"、"翻译"、"精翻"、"translate article"、"translate to Chinese/English"、"改成中文"、"改成英文"、"convert to Chinese"、"localize"、"本地化"，或需要任何文档翻译时使用。也适用于"refined translation"、"精细翻译"、"proofread translation"、"快速翻译"、"快翻"、"这篇文章翻译一下"，或当提供了带有翻译意图的 URL 或文件时触发。
 version: 1.56.1
 metadata:
   openclaw:
@@ -11,22 +11,22 @@ metadata:
         - npx
 ---
 
-# Translator
+# 翻译器
 
-Three-mode translation skill: **quick** for direct translation, **normal** for analysis-informed translation, **refined** for full publication-quality workflow with review and polish.
+三模式翻译技能：**快速模式**用于直接翻译，**普通模式**用于分析驱动的翻译，**精细模式**用于包含审校和润色的完整出版级工作流。
 
-## Script Directory
+## 脚本目录
 
-Scripts in `scripts/` subdirectory. `{baseDir}` = this SKILL.md's directory path. Resolve `${BUN_X}` runtime: if `bun` installed → `bun`; if `npx` available → `npx -y bun`; else suggest installing bun. Replace `{baseDir}` and `${BUN_X}` with actual values.
+脚本位于 `scripts/` 子目录。`{baseDir}` = 本 SKILL.md 所在目录路径。解析 `${BUN_X}` 运行时：如果已安装 `bun` 则使用 `bun`；如果 `npx` 可用则使用 `npx -y bun`；否则提示安装 bun。将 `{baseDir}` 和 `${BUN_X}` 替换为实际值。
 
-| Script | Purpose |
+| 脚本 | 用途 |
 |--------|---------|
-| `scripts/main.ts` | CLI entry point. Default action splits markdown into chunks; also supports explicit `chunk` subcommand |
-| `scripts/chunk.ts` | Markdown chunking implementation used by `main.ts` and kept compatible for direct invocation |
+| `scripts/main.ts` | CLI 入口点。默认操作将 Markdown 拆分为分块；也支持显式的 `chunk` 子命令 |
+| `scripts/chunk.ts` | Markdown 分块实现，被 `main.ts` 调用，同时保持兼容以供直接使用 |
 
-## Preferences (EXTEND.md)
+## 偏好设置（EXTEND.md）
 
-Check EXTEND.md existence (priority order):
+检查 EXTEND.md 是否存在（按优先级顺序）：
 
 ```bash
 # macOS, Linux, WSL, Git Bash
@@ -43,230 +43,230 @@ if (Test-Path "$xdg/baoyu-skills/baoyu-translate/EXTEND.md") { "xdg" }
 if (Test-Path "$HOME/.baoyu-skills/baoyu-translate/EXTEND.md") { "user" }
 ```
 
-| Path | Location |
+| 路径 | 位置 |
 |------|----------|
-| `.baoyu-skills/baoyu-translate/EXTEND.md` | Project directory |
-| `$HOME/.baoyu-skills/baoyu-translate/EXTEND.md` | User home |
+| `.baoyu-skills/baoyu-translate/EXTEND.md` | 项目目录 |
+| `$HOME/.baoyu-skills/baoyu-translate/EXTEND.md` | 用户主目录 |
 
-| Result | Action |
+| 结果 | 操作 |
 |--------|--------|
-| Found | Read, parse, apply settings. On first use in session, briefly remind: "Using preferences from [path]. You can edit EXTEND.md to customize glossary, audience, etc." |
-| Not found | **MUST** run first-time setup (see below) — do NOT silently use defaults |
+| 找到 | 读取、解析、应用设置。首次在会话中使用时，简要提示："Using preferences from [path]. You can edit EXTEND.md to customize glossary, audience, etc." |
+| 未找到 | **必须**运行首次设置（见下文）——不得静默使用默认值 |
 
-**EXTEND.md Supports**: Default target language | Default mode | Target audience | Custom glossaries (inline or file path) | Translation style | Chunk settings
+**EXTEND.md 支持的配置项**：默认目标语言 | 默认模式 | 目标受众 | 自定义术语表（内联或文件路径） | 翻译风格 | 分块设置
 
-Schema: [references/config/extend-schema.md](references/config/extend-schema.md)
+Schema 文档：[references/config/extend-schema.md](references/config/extend-schema.md)
 
-### First-Time Setup (BLOCKING)
+### 首次设置（阻塞操作）
 
-**CRITICAL**: When EXTEND.md is not found, you **MUST** run the first-time setup before ANY translation. This is a **BLOCKING** operation.
+**关键**：当 EXTEND.md 未找到时，你**必须**在执行任何翻译之前运行首次设置。这是一项**阻塞操作**。
 
-Full reference: [references/config/first-time-setup.md](references/config/first-time-setup.md)
+完整参考：[references/config/first-time-setup.md](references/config/first-time-setup.md)
 
-Use `AskUserQuestion` with all questions (target language, mode, audience, style, save location) in ONE call. After user answers, create EXTEND.md at the chosen location, confirm "Preferences saved to [path]", then continue.
+使用 `AskUserQuestion` 在一次调用中提出所有问题（目标语言、模式、受众、风格、保存位置）。用户回答后，在选定位置创建 EXTEND.md，确认"Preferences saved to [path]"，然后继续。
 
-## Defaults
+## 默认值
 
-All configurable values in one place. EXTEND.md overrides these; CLI flags override EXTEND.md.
+所有可配置值集中管理。EXTEND.md 覆盖这些默认值；CLI 标志覆盖 EXTEND.md。
 
-| Setting | Default | EXTEND.md key | CLI flag | Description |
+| 设置项 | 默认值 | EXTEND.md 键 | CLI 标志 | 说明 |
 |---------|---------|---------------|----------|-------------|
-| Target language | `zh-CN` | `target_language` | `--to` | Translation target language |
-| Mode | `normal` | `default_mode` | `--mode` | Translation mode |
-| Audience | `general` | `audience` | `--audience` | Target reader profile |
-| Style | `storytelling` | `style` | `--style` | Translation style preference |
-| Chunk threshold | `4000` | `chunk_threshold` | — | Word count to trigger chunked translation |
-| Chunk max words | `5000` | `chunk_max_words` | — | Max words per chunk |
+| 目标语言 | `zh-CN` | `target_language` | `--to` | 翻译目标语言 |
+| 模式 | `normal` | `default_mode` | `--mode` | 翻译模式 |
+| 受众 | `general` | `audience` | `--audience` | 目标读者画像 |
+| 风格 | `storytelling` | `style` | `--style` | 翻译风格偏好 |
+| 分块阈值 | `4000` | `chunk_threshold` | — | 触发分块翻译的词数 |
+| 分块最大词数 | `5000` | `chunk_max_words` | — | 每个分块的最大词数 |
 
-## Modes
+## 模式
 
-| Mode | Flag | Steps | When to Use |
+| 模式 | 标志 | 步骤 | 适用场景 |
 |------|------|-------|-------------|
-| Quick | `--mode quick` | Translate | Short texts, informal content, quick tasks |
-| Normal | `--mode normal` (default) | Analyze → Translate | Articles, blog posts, general content |
-| Refined | `--mode refined` | Analyze → Translate → Review → Polish | Publication-quality, important documents |
+| 快速 | `--mode quick` | 翻译 | 短文本、非正式内容、快速任务 |
+| 普通 | `--mode normal`（默认） | 分析 → 翻译 | 文章、博客文章、一般内容 |
+| 精细 | `--mode refined` | 分析 → 翻译 → 审校 → 润色 | 出版级、重要文档 |
 
-**Default mode**: Normal (can be overridden in EXTEND.md `default_mode` setting).
+**默认模式**：普通模式（可在 EXTEND.md 的 `default_mode` 设置中覆盖）。
 
-**Style presets** — control the voice and tone of the translation (independent of audience):
+**风格预设**——控制翻译的语调和语气（与受众独立）：
 
-| Value | Description | Effect |
+| 值 | 说明 | 效果 |
 |-------|-------------|--------|
-| `storytelling` | Engaging narrative flow (default) | Draws readers in, smooth transitions, vivid phrasing |
-| `formal` | Professional, structured | Neutral tone, clear organization, no colloquialisms |
-| `technical` | Precise, documentation-style | Concise, terminology-heavy, minimal embellishment |
-| `literal` | Close to original structure | Minimal restructuring, preserves source sentence patterns |
-| `academic` | Scholarly, rigorous | Formal register, complex clauses OK, citation-aware |
-| `business` | Concise, results-focused | Action-oriented, executive-friendly, bullet-point mindset |
-| `humorous` | Preserves and adapts humor | Witty, playful, recreates comedic effect in target language |
-| `conversational` | Casual, spoken-like | Friendly, approachable, as if explaining to a friend |
-| `elegant` | Literary, polished prose | Aesthetically refined, rhythmic, carefully crafted word choices |
+| `storytelling` | 引人入胜的叙事流畅性（默认） | 吸引读者，过渡平滑，措辞生动 |
+| `formal` | 专业、结构化 | 中性语调，组织清晰，不使用口语化表达 |
+| `technical` | 精确、文档风格 | 简洁，术语密集，最小化修饰 |
+| `literal` | 接近原文结构 | 最小化重组，保留源语言句式 |
+| `academic` | 学术、严谨 | 正式语域，允许复杂从句，注意引文格式 |
+| `business` | 简洁、结果导向 | 行动导向，适合管理层阅读，要点思维 |
+| `humorous` | 保留并改编幽默 | 机智俏皮，在目标语言中重现喜剧效果 |
+| `conversational` | 轻松、口语化 | 友好平易，如同向朋友解释 |
+| `elegant` | 文学、精炼的散文 | 美学精炼，富有节奏感，措辞讲究 |
 
-Custom style descriptions are also accepted, e.g., `--style "poetic and lyrical"`.
+也接受自定义风格描述，例如 `--style "poetic and lyrical"`。
 
-**Auto-detection**:
-- "快翻", "quick", "直接翻译" → quick mode
-- "精翻", "refined", "publication quality", "proofread" → refined mode
-- Otherwise → default mode (normal)
+**自动检测**：
+- "快翻"、"quick"、"直接翻译" → 快速模式
+- "精翻"、"refined"、"publication quality"、"proofread" → 精细模式
+- 其他 → 默认模式（普通模式）
 
-**Upgrade prompt**: After normal mode completes, display:
+**升级提示**：普通模式完成后，显示：
 > Translation saved. To further review and polish, reply "继续润色" or "refine".
 
-If user responds, continue with review → polish steps (same as refined mode Steps 4-6 in refined-workflow.md) on the existing output.
+如果用户回应，则继续执行审校 → 润色步骤（与精细模式 refined-workflow.md 中的步骤 4-6 相同），基于已有输出进行操作。
 
-## Usage
+## 用法
 
 ```
 /translate [--mode quick|normal|refined] [--from <lang>] [--to <lang>] [--audience <audience>] [--style <style>] [--glossary <file>] <source>
 ```
 
-- `<source>`: File path, URL, or inline text
-- `--from`: Source language (auto-detect if omitted)
-- `--to`: Target language (from EXTEND.md or default `zh-CN`)
-- `--audience`: Target reader profile (from EXTEND.md or default `general`)
-- `--style`: Translation style (from EXTEND.md or default `storytelling`)
-- `--glossary`: Additional glossary file to merge with EXTEND.md glossary
+- `<source>`：文件路径、URL 或内联文本
+- `--from`：源语言（省略时自动检测）
+- `--to`：目标语言（来自 EXTEND.md 或默认 `zh-CN`）
+- `--audience`：目标读者画像（来自 EXTEND.md 或默认 `general`）
+- `--style`：翻译风格（来自 EXTEND.md 或默认 `storytelling`）
+- `--glossary`：额外的术语表文件，与 EXTEND.md 术语表合并
 
-**Audience presets**:
+**受众预设**：
 
-| Value | Description | Effect |
+| 值 | 说明 | 效果 |
 |-------|-------------|--------|
-| `general` | General readers (default) | Plain language, more translator's notes for jargon |
-| `technical` | Developers / engineers | Less annotation on common tech terms |
-| `academic` | Researchers / scholars | Formal register, precise terminology |
-| `business` | Business professionals | Business-friendly tone, explain tech concepts |
+| `general` | 普通读者（默认） | 通俗语言，对术语添加更多译者注 |
+| `technical` | 开发者 / 工程师 | 对常见技术术语减少注释 |
+| `academic` | 研究者 / 学者 | 正式语域，精确术语 |
+| `business` | 商业专业人士 | 商务友好语调，解释技术概念 |
 
-Custom audience descriptions are also accepted, e.g., `--audience "AI感兴趣的普通读者"`.
+也接受自定义受众描述，例如 `--audience "AI感兴趣的普通读者"`。
 
-## Workflow
+## 工作流
 
-### Step 1: Load Preferences
+### 步骤 1：加载偏好设置
 
-1.1 Check EXTEND.md (see Preferences section above)
+1.1 检查 EXTEND.md（见上方偏好设置部分）
 
-1.2 Load built-in glossary for the language pair if available:
-- EN→ZH: [references/glossary-en-zh.md](references/glossary-en-zh.md)
+1.2 如果可用，加载语言对的内置术语表：
+- EN→ZH：[references/glossary-en-zh.md](references/glossary-en-zh.md)
 
-1.3 Merge glossaries: EXTEND.md `glossary` (inline) + EXTEND.md `glossary_files` (external files, paths relative to EXTEND.md location) + built-in glossary + `--glossary` file (CLI overrides all)
+1.3 合并术语表：EXTEND.md `glossary`（内联）+ EXTEND.md `glossary_files`（外部文件，路径相对于 EXTEND.md 位置）+ 内置术语表 + `--glossary` 文件（CLI 覆盖所有）
 
-### Step 2: Materialize Source & Create Output Directory
+### 步骤 2：准备源文件并创建输出目录
 
-Materialize source (file as-is, inline text/URL → save to `translate/{slug}.md`), then create output directory: `{source-dir}/{source-basename}-{target-lang}/`. Detect source language if `--from` not specified.
+准备源文件（文件原样使用，内联文本/URL 保存到 `translate/{slug}.md`），然后创建输出目录：`{source-dir}/{source-basename}-{target-lang}/`。如果未指定 `--from`，自动检测源语言。
 
-Full details: [references/workflow-mechanics.md](references/workflow-mechanics.md)
+完整详情：[references/workflow-mechanics.md](references/workflow-mechanics.md)
 
-**Output directory contents** (all intermediate and final files go here):
+**输出目录内容**（所有中间文件和最终文件均存放于此）：
 
-| File | Mode | Description |
+| 文件 | 模式 | 说明 |
 |------|------|-------------|
-| `translation.md` | All | Final translation (always this name) |
-| `01-analysis.md` | Normal, Refined | Content analysis (domain, tone, terminology) |
-| `02-prompt.md` | Normal, Refined | Assembled translation prompt |
-| `03-draft.md` | Refined | Initial draft before review |
-| `04-critique.md` | Refined | Critical review findings (diagnosis only) |
-| `05-revision.md` | Refined | Revised translation based on critique |
-| `chunks/` | Chunked | Source chunks + translated chunks |
+| `translation.md` | 所有 | 最终翻译（始终使用此文件名） |
+| `01-analysis.md` | 普通、精细 | 内容分析（领域、语调、术语） |
+| `02-prompt.md` | 普通、精细 | 组装的翻译提示词 |
+| `03-draft.md` | 精细 | 审校前的初稿 |
+| `04-critique.md` | 精细 | 审校发现（仅诊断） |
+| `05-revision.md` | 精细 | 基于审校的修订翻译 |
+| `chunks/` | 分块模式 | 源分块 + 已翻译分块 |
 
-### Step 3: Assess Content Length
+### 步骤 3：评估内容长度
 
-Quick mode does not chunk — translate directly regardless of length. Before translating, estimate word count. If content exceeds chunk threshold (default 4000 words), proactively warn: "This article is ~{N} words. Quick mode translates in one pass without chunking — for long content, `--mode normal` produces better results with terminology consistency." Then proceed if user doesn't switch.
+快速模式不分块——无论长度如何都直接翻译。翻译前估算词数。如果内容超过分块阈值（默认 4000 词），主动提醒："This article is ~{N} words. Quick mode translates in one pass without chunking — for long content, `--mode normal` produces better results with terminology consistency." 如果用户未切换模式则继续执行。
 
-For normal and refined modes:
+对于普通模式和精细模式：
 
-| Content | Action |
+| 内容 | 操作 |
 |---------|--------|
-| < chunk threshold | Translate as single unit |
-| >= chunk threshold | Chunk translation (see Step 3.1) |
+| < 分块阈值 | 作为整体翻译 |
+| >= 分块阈值 | 分块翻译（见步骤 3.1） |
 
-**3.1 Long Content Preparation** (normal/refined modes, >= chunk threshold only)
+**3.1 长内容准备**（普通/精细模式，仅当 >= 分块阈值时适用）
 
-Before translating chunks:
+翻译分块之前：
 
-1. **Extract terminology**: Scan entire document for proper nouns, technical terms, recurring phrases
-2. **Build session glossary**: Merge extracted terms with loaded glossaries, establish consistent translations
-3. **Split into chunks**: Use `${BUN_X} {baseDir}/scripts/main.ts <file> [--max-words <chunk_max_words>] [--output-dir <output-dir>]`
-   - Parses markdown blocks (headings, paragraphs, lists, code blocks, tables, etc.)
-   - Splits at markdown block boundaries to preserve structure
-   - If a single block exceeds the threshold, falls back to line splitting, then word splitting
-4. **Assemble translation prompt**:
-   - Main agent reads `01-analysis.md` (if exists) and assembles shared context using Part 1 of [references/subagent-prompt-template.md](references/subagent-prompt-template.md) — inlining the resolved style preset (from `--style` flag, EXTEND.md `style` setting, or default `storytelling`), content background, merged glossary, and comprehension challenges
-   - Save as `02-prompt.md` in the output directory (shared context only, no task instructions)
-5. **Draft translation via subagents** (if Agent tool available):
-   - Spawn one subagent **per chunk**, all in parallel (Part 2 of the template)
-   - Each subagent reads `02-prompt.md` for shared context, translates its chunk, saves to `chunks/chunk-NN-draft.md`
-   - Terminology consistency is guaranteed by the shared `02-prompt.md` (glossary + comprehension challenges from analysis)
-   - If no chunks (content under threshold): spawn one subagent for the entire source file
-   - If Agent tool is unavailable, translate chunks sequentially inline using `02-prompt.md`
-6. **Merge**: Once all subagents complete, combine translated chunks in order. If `chunks/frontmatter.md` exists, prepend it. Save as `03-draft.md` (refined) or `translation.md` (normal)
-7. All intermediate files (source chunks + translated chunks) are preserved in `chunks/`
+1. **提取术语**：扫描整个文档中的专有名词、技术术语和重复出现的短语
+2. **构建会话语义词表**：将提取的术语与已加载的术语表合并，确立一致的翻译
+3. **拆分为分块**：使用 `${BUN_X} {baseDir}/scripts/main.ts <file> [--max-words <chunk_max_words>] [--output-dir <output-dir>]`
+   - 解析 Markdown 块（标题、段落、列表、代码块、表格等）
+   - 在 Markdown 块边界处拆分以保留结构
+   - 如果单个块超过阈值，回退到按行拆分，然后按词拆分
+4. **组装翻译提示词**：
+   - 主代理读取 `01-analysis.md`（如果存在），使用 [references/subagent-prompt-template.md](references/subagent-prompt-template.md) 的第一部分组装共享上下文——内联解析后的风格预设（来自 `--style` 标志、EXTEND.md 的 `style` 设置或默认的 `storytelling`）、内容背景、合并的术语表和理解挑战
+   - 保存为输出目录中的 `02-prompt.md`（仅共享上下文，不含任务指令）
+5. **通过子代理起草翻译**（如果 Agent 工具可用）：
+   - **每个分块**生成一个子代理，全部并行执行（模板第二部分）
+   - 每个子代理读取 `02-prompt.md` 获取共享上下文，翻译其分块，保存到 `chunks/chunk-NN-draft.md`
+   - 术语一致性由共享的 `02-prompt.md`（术语表 + 分析中的理解挑战）保证
+   - 如果没有分块（内容低于阈值）：为整个源文件生成一个子代理
+   - 如果 Agent 工具不可用，使用 `02-prompt.md` 按顺序内联翻译各分块
+6. **合并**：所有子代理完成后，按顺序合并已翻译的分块。如果 `chunks/frontmatter.md` 存在，将其前置。保存为 `03-draft.md`（精细模式）或 `translation.md`（普通模式）
+7. 所有中间文件（源分块 + 已翻译分块）保留在 `chunks/` 目录中
 
-**After chunked draft is merged**, return control to main agent for critical review, revision, and polish (Step 4).
+**分块初稿合并后**，将控制权交回主代理进行审校、修订和润色（步骤 4）。
 
-### Step 4: Translate & Refine
+### 步骤 4：翻译与润色
 
-**Translation principles** (apply to all modes):
+**翻译原则**（适用于所有模式）：
 
-- **Accuracy first**: Facts, data, and logic must match the original exactly
-- **Meaning over words**: Translate what the author means, not just what the words say. When a literal translation sounds unnatural or fails to convey the intended effect, restructure freely to express the same meaning in idiomatic target language
-- **Figurative language**: Interpret metaphors, idioms, and figurative expressions by their intended meaning rather than translating them word-for-word. When a source-language image does not carry the same connotation in the target language, replace it with a natural expression that conveys the same idea and emotional effect
-- **Emotional fidelity**: Preserve the emotional connotations of word choices, not just their dictionary meanings. Words that carry subjective feelings (e.g., "alarming", "haunting") should be rendered to evoke the same response in target-language readers
-- **Natural flow**: Use idiomatic target language word order and sentence patterns; break or restructure sentences freely when the source structure doesn't work naturally in the target language
-- **Terminology**: Use standard translations; annotate with original term in parentheses on first occurrence
-- **Preserve format**: Keep all markdown formatting (headings, bold, italic, images, links, code blocks)
-- **Image-language awareness**: Preserve image references exactly during translation, but after the translation is complete, review referenced images and check whether their likely main text language still matches the translated article language
-- **Frontmatter transformation**: If the source has YAML frontmatter, preserve it in the translation with these changes: (1) Rename metadata fields that describe the *source* article — `url`→`sourceUrl`, `title`→`sourceTitle`, `description`→`sourceDescription`, `author`→`sourceAuthor`, `date`→`sourceDate`, and any similar origin-metadata fields — by adding a `source` prefix (camelCase). (2) Translate the values of text fields (title, description, etc.) and add them as new top-level fields. (3) Keep other fields (tags, categories, custom fields) as-is, translating their values where appropriate
-- **Respect original**: Maintain original meaning and intent; do not add, remove, or editorialize — but sentence structure and imagery may be adapted freely to serve the meaning
-- **Translator's notes**: For terms, concepts, or cultural references that target readers may not understand — due to jargon, cultural gaps, or domain-specific knowledge — add a concise explanatory note in parentheses immediately after the term. The note should explain *what it means* in plain language, not just provide the English original. Format: `译文（English original，通俗解释）`. Calibrate annotation depth to the target audience: general readers need more notes than technical readers. For short texts (< 5 sentences), further reduce annotations — only annotate non-common terms that the target audience is unlikely to know; skip terms that are widely recognized or self-explanatory in context. Only add notes where genuinely needed; do not over-annotate obvious terms.
+- **准确性优先**：事实、数据和逻辑必须与原文完全一致
+- **意译优先**：翻译作者要表达的意思，而非逐字翻译。当直译不自然或未能传达预期效果时，自由重组以用地道的目标语言表达相同的意思
+- **比喻语言**：按其含义而非逐字翻译来处理比喻、习语和比喻性表达。当源语言图像在目标语言中没有相同含义时，用自然表达替换以传达相同的思想和情感效果
+- **情感忠实**：保留词语选择中的情感内涵，而非仅仅保留字典含义。带有主观感受的词语（如 "alarming"、"haunting"）应在目标语言读者中唤起相同的反应
+- **自然流畅**：使用地道的目标语言语序和句式；当源语言结构在目标语言中不够自然时，自由拆分或重组句子
+- **术语**：使用标准翻译；首次出现时在括号中注释原文
+- **保留格式**：保持所有 Markdown 格式（标题、粗体、斜体、图片、链接、代码块）
+- **图片语言感知**：翻译过程中精确保留图片引用，但翻译完成后，检查引用的图片并确认其主要文本语言是否仍与翻译后的文章语言匹配
+- **前置元数据转换**：如果源文件有 YAML 前置元数据，在翻译中保留并做以下修改：(1) 重命名描述*源文章*的元数据字段——`url`→`sourceUrl`、`title`→`sourceTitle`、`description`→`sourceDescription`、`author`→`sourceAuthor`、`date`→`sourceDate`，以及任何类似的来源元数据字段——通过添加 `source` 前缀（驼峰命名）。(2) 翻译文本字段的值（title、description 等），并作为新的顶级字段添加。(3) 其他字段（tags、categories、自定义字段）保持原样，适当地翻译其值
+- **尊重原文**：保持原始含义和意图；不添加、删除或编辑观点——但句子结构和意象可自由调整以服务于含义
+- **译者注**：对于目标读者可能不理解的概念或文化引用（由于术语、文化差异或领域特定知识），在术语后立即添加简明的括号注释。注释应解释其*含义*，而非仅仅提供英文原文。格式：`译文（English original，通俗解释）`。根据目标受众调整注释深度：普通读者比技术读者需要更多注释。对于短文本（< 5 句），进一步减少注释——仅为目标读者不太可能知道的非常见术语添加注释；跳过广为人知或在上下文中不言自明的术语。仅在真正需要时添加注释；不要过度注释显而易见的术语
 
-#### Quick Mode
+#### 快速模式
 
-Translate directly → save to `translation.md`. No analysis file, but still apply all translation principles above — especially: interpret figurative language by meaning (not word-for-word), preserve emotional connotations, and restructure sentences for natural target-language flow.
+直接翻译，保存到 `translation.md`。不生成分析文件，但仍需应用上述所有翻译原则——尤其是：按含义（而非逐字）解释比喻语言，保留情感内涵，重组句子以实现自然的目标语言流畅性。
 
-#### Normal Mode
+#### 普通模式
 
-1. **Analyze** → `01-analysis.md` (domain, tone, audience, terminology, reader comprehension challenges, figurative language & metaphor mapping)
-2. **Assemble prompt** → `02-prompt.md` (translation instructions with inlined style preset, content background, glossary, and comprehension challenges)
-3. **Translate** (following `02-prompt.md`) → `translation.md`
+1. **分析** → `01-analysis.md`（领域、语调、受众、术语、读者理解挑战、比喻语言与隐喻映射）
+2. **组装提示词** → `02-prompt.md`（内联风格预设、内容背景、术语表和理解挑战的翻译指令）
+3. **翻译**（按照 `02-prompt.md`）→ `translation.md`
 
-After completion, prompt user: "Translation saved. To further review and polish, reply **继续润色** or **refine**."
+完成后提示用户："Translation saved. To further review and polish, reply **继续润色** or **refine**."
 
-If user continues, proceed with critical review → revision → polish (same as refined mode Steps 4-6 below), saving `03-draft.md` (rename current `translation.md`), `04-critique.md`, `05-revision.md`, and updated `translation.md`.
+如果用户继续，执行审校 → 修订 → 润色（与下方精细模式的步骤 4-6 相同），保存 `03-draft.md`（将当前 `translation.md` 重命名）、`04-critique.md`、`05-revision.md` 和更新后的 `translation.md`。
 
-#### Refined Mode
+#### 精细模式
 
-Full workflow for publication quality. See [references/refined-workflow.md](references/refined-workflow.md) for detailed guidelines per step.
+面向出版质量的完整工作流。每个步骤的详细指南见 [references/refined-workflow.md](references/refined-workflow.md)。
 
-The subagent (if used in Step 3.1) only handles the initial draft. All subsequent steps (critical review, revision, polish) are handled by the main agent, which may delegate to subagents at its discretion.
+子代理（如果在步骤 3.1 中使用）仅处理初稿。所有后续步骤（审校、修订、润色）由主代理处理，主代理可自行决定是否委托给子代理。
 
-Steps and saved files (all in output directory):
-1. **Analyze** → `01-analysis.md` (domain, tone, terminology, reader comprehension challenges, figurative language & metaphor mapping)
-2. **Assemble prompt** → `02-prompt.md` (translation instructions with inlined context)
-3. **Draft** → `03-draft.md` (initial translation with translator's notes; from subagent if chunked)
-4. **Critical review** → `04-critique.md` (diagnosis only: accuracy, Europeanized language, strategy execution, expression issues)
-5. **Revision** → `05-revision.md` (apply all critique findings to produce revised translation)
-6. **Polish** → `translation.md` (final publication-quality translation)
+步骤和保存的文件（全部在输出目录中）：
+1. **分析** → `01-analysis.md`（领域、语调、术语、读者理解挑战、比喻语言与隐喻映射）
+2. **组装提示词** → `02-prompt.md`（内联上下文的翻译指令）
+3. **初稿** → `03-draft.md`（包含译者注的初始翻译；分块模式下由子代理生成）
+4. **审校** → `04-critique.md`（仅诊断：准确性、翻译腔、策略执行、表达问题）
+5. **修订** → `05-revision.md`（应用所有审校发现以生成修订翻译）
+6. **润色** → `translation.md`（最终出版级翻译）
 
-Each step reads the previous step's file and builds on it.
+每个步骤读取上一步骤的文件并在此基础上构建。
 
-### Step 5: Output
+### 步骤 5：输出
 
-Final translation is always at `translation.md` in the output directory.
+最终翻译始终位于输出目录中的 `translation.md`。
 
-After the final translation is written, do a lightweight image-language pass:
+最终翻译写入后，执行轻量级的图片语言检查：
 
-1. Collect image references from the translated article
-2. Identify likely text-heavy images such as covers, screenshots, diagrams, charts, frameworks, and infographics
-3. If any image likely contains a main text language that does not match the translated article language, proactively remind the user
-4. The reminder must be a list only. Do not automatically localize those images unless the user asks
+1. 从翻译后的文章中收集图片引用
+2. 识别可能包含大量文字的图片，如封面、截图、图表、框架图和信息图
+3. 如果任何图片可能包含与翻译后文章语言不匹配的主要文本语言，主动提醒用户
+4. 提醒必须仅为列表形式。除非用户要求，否则不要自动本地化这些图片
 
-Reminder format (use whatever image syntax the article already uses — standard markdown or wikilink):
+提醒格式（使用文章已有的图片语法——标准 Markdown 或 wikilink）：
 ```text
 Possible image localization needed:
 - ![example cover](attachments/example-cover.png): likely still contains source-language text while the article is now in target language
 - ![example diagram](attachments/example-diagram.png): likely text-heavy framework graphic, check whether labels need translation
 ```
 
-Display summary:
+显示摘要：
 ```
 **Translation complete** ({mode} mode)
 
@@ -277,8 +277,8 @@ Final: {output-dir}/translation.md
 Glossary terms applied: {count}
 ```
 
-If mismatched image-language candidates were found, append a short note after the summary telling the user that some embedded images may still need image-text localization, followed by the candidate list.
+如果发现语言不匹配的图片候选，在摘要后追加一条简短说明，告知用户某些嵌入图片可能仍需要图片文本本地化，后跟候选列表。
 
-## Extension Support
+## 扩展支持
 
-Custom configurations via EXTEND.md. See **Preferences** section for paths and supported options.
+通过 EXTEND.md 进行自定义配置。路径和支持的选项见**偏好设置**部分。

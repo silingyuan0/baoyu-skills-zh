@@ -3,11 +3,11 @@ name: retro
 category: vintage
 ---
 
-# Retro Style
+# 复古风格
 
-Vintage, nostalgic, trendy aesthetic.
+复古、怀旧、时髦美学。
 
-## Element Combination
+## 元素组合
 
 ```yaml
 canvas:
@@ -31,42 +31,42 @@ decorations:
   frames: polaroid | film-strip | stamp-border
 ```
 
-## Color Palette
+## 调色板
 
-| Role | Colors | Hex |
+| 角色 | 颜色 | Hex |
 |------|--------|-----|
-| Primary | Muted orange, dusty pink, faded teal | #E07A4D, #D4A5A5, #6B9999 |
-| Background | Aged paper, sepia tones | #F5E6D3, #E8DCC8 |
-| Accents | Faded red, vintage gold | #C55A5A, #B8860B |
+| 主色 | 柔橙、灰粉、褪色青 | #E07A4D, #D4A5A5, #6B9999 |
+| 背景 | 做旧纸张、棕褐色调 | #F5E6D3, #E8DCC8 |
+| 点缀色 | 褪色红、复古金 | #C55A5A, #B8860B |
 
-## Visual Elements
+## 视觉元素
 
-- Halftone dots, vintage badges
-- Classic icons, tape effects
-- Aged texture overlays
-- Nostalgic decorative elements
+- 半调网点、复古徽章
+- 经典图标、胶带效果
+- 做旧纹理叠加
+- 怀旧装饰元素
 
-## Typography
+## 排版
 
-- Vintage-style hand lettering
-- Classic feel with imperfections
-- Aged texture on text
+- 复古风格手写体
+- 经典质感，带不完美细节
+- 文字做旧纹理
 
-## Best Layout Pairings
+## 最佳布局搭配
 
-| Layout | Compatibility | Use Case |
+| 布局 | 兼容性 | 适用场景 |
 |--------|---------------|----------|
-| sparse | ✓✓ | Vintage covers |
-| balanced | ✓✓ | Classic content |
-| dense | ✓ | Vintage knowledge cards |
-| list | ✓✓ | Classic rankings |
-| comparison | ✓ | Then vs now |
-| flow | ✓ | Historical timelines |
+| sparse | ✓✓ | 复古封面 |
+| balanced | ✓✓ | 经典内容 |
+| dense | ✓ | 复古知识卡 |
+| list | ✓✓ | 经典排行 |
+| comparison | ✓ | 今昔对比 |
+| flow | ✓ | 历史时间线 |
 
-## Best For
+## 最适合
 
-- Throwback content
-- Classic tips
-- Timeless advice
-- Vintage aesthetics
-- Nostalgic shares
+- 怀旧内容
+- 经典技巧
+- 历久弥新的建议
+- 复古美学
+- 怀旧分享

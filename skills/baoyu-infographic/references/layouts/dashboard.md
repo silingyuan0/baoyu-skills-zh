@@ -1,41 +1,41 @@
 # dashboard
 
-Multi-metric display with charts, numbers, and KPI indicators.
+带有图表、数字和 KPI 指标的多指标展示。
 
-## Structure
+## 结构
 
-- Multiple data widgets
-- Charts, graphs, numbers
-- Grid or modular layout
-- Key metrics prominent
-- Status indicators
+- 多个数据小组件
+- 图表、图形、数字
+- 网格或模块化布局
+- 关键指标突出显示
+- 状态指标
 
-## Best For
+## 适用场景
 
-- KPI summaries
-- Performance metrics
-- Analytics overviews
-- Status reports
-- Data snapshots
+- KPI 摘要
+- 绩效指标
+- 分析概览
+- 状态报告
+- 数据快照
 
-## Visual Elements
+## 视觉元素
 
-- Chart types (bar, line, pie, gauge)
-- Big numbers for KPIs
-- Trend arrows (up/down)
-- Color-coded status (green/red)
-- Clean data visualization
+- 图表类型（柱状图、折线图、饼图、仪表盘）
+- KPI 的大数字显示
+- 趋势箭头（上升/下降）
+- 颜色编码的状态（绿色/红色）
+- 清晰的数据可视化
 
-## Text Placement
+## 文字布局
 
-- Title at top
-- Widget titles above each section
-- Metric labels and values
-- Units clearly shown
-- Time period indicated
+- 标题置于顶部
+- 每个区域上方的小组件标题
+- 指标标签和数值
+- 清晰显示单位
+- 标明时间段
 
-## Recommended Pairings
+## 推荐风格搭配
 
-- `corporate-memphis`: Business dashboards
-- `ui-wireframe`: Technical dashboards
-- `cyberpunk-neon`: Futuristic displays
+- `corporate-memphis`：商务仪表盘
+- `ui-wireframe`：技术仪表盘
+- `cyberpunk-neon`：未来感展示

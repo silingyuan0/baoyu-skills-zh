@@ -1,52 +1,52 @@
-# Step 2: Confirm Options
+# 步骤 2：确认选项
 
-## Purpose
+## 目的
 
-Validate all 6 dimensions + aspect ratio.
+校验所有 6 个维度 + 宽高比。
 
-## Skip Conditions
+## 跳过条件
 
-| Condition | Skipped Questions | Still Asked |
+| 条件 | 跳过的提问 | 仍需提问 |
 |-----------|-------------------|-------------|
-| `--quick` flag | Type, Palette, Rendering, Text, Mood, Font | **Aspect Ratio** (unless `--aspect` specified) |
-| All 6 dimensions + `--aspect` specified | All | None |
-| `quick_mode: true` in EXTEND.md | Type, Palette, Rendering, Text, Mood, Font | **Aspect Ratio** (unless `--aspect` specified) |
-| Otherwise | None | All 7 questions |
+| `--quick` 标志 | 类型、配色、渲染方式、文本、氛围、字体 | **宽高比**（除非指定了 `--aspect`） |
+| 所有 6 个维度 + `--aspect` 已指定 | 全部 | 无 |
+| EXTEND.md 中 `quick_mode: true` | 类型、配色、渲染方式、文本、氛围、字体 | **宽高比**（除非指定了 `--aspect`） |
+| 其他情况 | 无 | 全部 7 个问题 |
 
-**Important**: Aspect ratio is ALWAYS asked unless explicitly specified via `--aspect` CLI flag. User presets in EXTEND.md are shown as recommended option, not auto-selected.
+**重要**：除非通过 `--aspect` CLI 标志明确指定，否则宽高比始终会被询问。EXTEND.md 中的用户预设显示为推荐选项，而非自动选择。
 
-## Quick Mode Output
+## 快速模式输出
 
-When skipping 6 dimensions:
+跳过 6 个维度时：
 
 ```
-Quick Mode: Auto-selected dimensions
-• Type: [type] ([reason])
-• Palette: [palette] ([reason])
-• Rendering: [rendering] ([reason])
-• Text: [text] ([reason])
-• Mood: [mood] ([reason])
-• Font: [font] ([reason])
+快速模式：自动选择的维度
+• 类型：[类型]（[原因]）
+• 配色：[配色]（[原因]）
+• 渲染方式：[渲染]（[原因]）
+• 文本：[文本]（[原因]）
+• 氛围：[氛围]（[原因]）
+• 字体：[字体]（[原因]）
 
-[Then ask Question 7: Aspect Ratio]
+[然后提问问题 7：宽高比]
 ```
 
-## Confirmation Flow
+## 确认流程
 
-**Language**: Auto-determined (user's input language > saved preference > source language). No need to ask.
+**语言**：自动确定（用户输入语言 > 保存的偏好 > 源语言）。无需询问。
 
-Present ALL options in a **single AskUserQuestion call** (4 questions max).
+在**单次 AskUserQuestion 调用**中呈现所有选项（最多 4 个问题）。
 
-Skip any question where the dimension is already specified via CLI flag or `--style` preset.
+对于已通过 CLI 标志或 `--style` 预设指定维度的任何问题予以跳过。
 
-### Q1: Type (skip if `--type`)
+### Q1：类型（如果指定了 `--type` 则跳过）
 
 ```yaml
 header: "Type"
 question: "Which cover type?"
 multiSelect: false
 options:
-  - label: "[auto-recommended type] (Recommended)"
+  - label: "[auto-recommended type] (推荐)"
     description: "[reason based on content signals]"
   - label: "hero"
     description: "Large visual impact, title overlay - product launch, announcements"
@@ -56,14 +56,14 @@ options:
     description: "Text-focused layout - opinions, quotes"
 ```
 
-### Q2: Palette (skip if `--palette` or `--style`)
+### Q2：配色（如果指定了 `--palette` 或 `--style` 则跳过）
 
 ```yaml
 header: "Palette"
 question: "Which color palette?"
 multiSelect: false
 options:
-  - label: "[auto-recommended palette] (Recommended)"
+  - label: "[auto-recommended palette] (推荐)"
     description: "[reason based on content signals]"
   - label: "warm"
     description: "Friendly - orange, golden yellow, terracotta"
@@ -73,16 +73,16 @@ options:
     description: "Technical - engineering blue, navy, cyan"
 ```
 
-### Q3: Rendering (skip if `--rendering` or `--style`)
+### Q3：渲染方式（如果指定了 `--rendering` 或 `--style` 则跳过）
 
-Show compatible renderings (✓✓ first from compatibility matrix):
+显示兼容的渲染方式（兼容性矩阵中 ✓✓ 优先）：
 
 ```yaml
 header: "Rendering"
 question: "Which rendering style?"
 multiSelect: false
 options:
-  - label: "[best compatible rendering] (Recommended)"
+  - label: "[best compatible rendering] (推荐)"
     description: "[reason based on palette + type + content]"
   - label: "flat-vector"
     description: "Clean outlines, flat fills, geometric icons"
@@ -92,14 +92,14 @@ options:
     description: "Polished, precise, subtle gradients"
 ```
 
-### Q4: Font (skip if `--font`)
+### Q4：字体（如果指定了 `--font` 则跳过）
 
 ```yaml
 header: "Font"
 question: "Which font style?"
 multiSelect: false
 options:
-  - label: "[auto-recommended font] (Recommended)"
+  - label: "[auto-recommended font] (推荐)"
     description: "[reason based on content signals]"
   - label: "clean"
     description: "Modern geometric sans-serif - tech, professional"
@@ -111,18 +111,18 @@ options:
     description: "Bold decorative - announcements, entertainment"
 ```
 
-### Q5: Other Settings (skip if all remaining dimensions already specified)
+### Q5：其他设置（如果所有剩余维度已指定则跳过）
 
-Combine remaining settings into one question. Include: Output Dir (if no preference + file path input), Text, Mood, Aspect. Show auto-selected values as recommended option. User can accept all or type adjustments via "Other".
+将剩余设置合并为一个问题。包括：输出目录（如果没有偏好 + 文件路径输入）、文本、氛围、宽高比。显示自动选择的值作为推荐选项。用户可以通过"其他"接受全部或输入调整。
 
-**When output dir needs asking** (no `default_output_dir` preference + file path input):
+**当需要询问输出目录时**（无 `default_output_dir` 偏好 + 文件路径输入）：
 
 ```yaml
 header: "Settings"
 question: "Output / Text / Mood / Aspect?"
 multiSelect: false
 options:
-  - label: "imgs/ / [auto-text] / [auto-mood] / [preset-aspect] (Recommended)"
+  - label: "imgs/ / [auto-text] / [auto-mood] / [preset-aspect] (推荐)"
     description: "{article-dir}/imgs/, [text reason], [mood reason], [aspect source]"
   - label: "same-dir / [auto-text] / [auto-mood] / [preset-aspect]"
     description: "{article-dir}/, same directory as article"
@@ -130,14 +130,14 @@ options:
     description: "cover-image/{topic-slug}/, separate from article"
 ```
 
-**When output dir already set** (preference exists or pasted content):
+**当输出目录已设置时**（存在偏好或粘贴内容）：
 
 ```yaml
 header: "Settings"
 question: "Text / Mood / Aspect?"
 multiSelect: false
 options:
-  - label: "[auto-text] / [auto-mood] / [preset-aspect] (Recommended)"
+  - label: "[auto-text] / [auto-mood] / [preset-aspect] (推荐)"
     description: "Auto-selected: [text reason], [mood reason], [aspect source]"
   - label: "[auto-text] / bold / [preset-aspect]"
     description: "High contrast, vivid — matches [content signal]"
@@ -145,8 +145,8 @@ options:
     description: "Low contrast, muted — calm, professional"
 ```
 
-*Note*: "Other" (auto-added) allows typing custom combo. Parse `/`-separated values matching the question format.
+*注*："其他"（自动添加）允许输入自定义组合。解析用 `/` 分隔的值以匹配问题格式。
 
-## After Response
+## 响应后
 
-Proceed to Step 3 with confirmed dimensions.
+使用确认的维度继续步骤 3。

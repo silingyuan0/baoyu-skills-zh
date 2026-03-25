@@ -2,88 +2,88 @@
 
 写实画风 - Digital painting with realistic proportions and lighting
 
-## Overview
+## 概述
 
-Full-color realistic manga style using digital painting techniques. Features anatomically accurate characters, rich gradients, and detailed environmental rendering. Sophisticated aesthetic for mature audiences.
+使用数字绘画技术的全彩写实漫画风格。具有解剖学准确的人物、丰富渐变和详细环境渲染。适合成熟受众的精致美学。
 
-## Line Work
+## 线条工作
 
-- Clean, precise outlines with clear contours
-- Uniform line weight for character definition
-- No excessive hatching - rely on color for depth
-- Smooth curves and realistic anatomical lines
-- Ligne Claire influence: clean but not simplified
+- 清晰、精确的轮廓线，轮廓清晰
+- 均匀的线条粗细定义人物
+- 不过度排线 - 依赖色彩表现深度
+- 流畅曲线和写实解剖线条
+- 清线影响：干净但不简化
 
-## Character Design
+## 人物设计
 
-- Realistic human proportions (7-8 head heights)
-- Anatomically accurate features and expressions
-- Detailed facial structure without exaggeration
-- Natural poses and body language
-- Consistent appearance across panels
-- Subtle expressions rather than manga-style
+- 写实人体比例（7-8 头身）
+- 解剖学准确的表情和特征
+- 无夸张的详细面部结构
+- 自然姿势和肢体语言
+- 跨面板一致的外观
+- 微妙的表达，而非漫画风格
 
-## Rendering Style
+## 渲染风格
 
-- Full-color digital painting with rich gradients
-- Soft shadow transitions on skin and fabric
-- Realistic material textures (glass, liquid, fabric, wood)
-- Detailed hair with natural shine and volume
-- Environmental lighting affects all elements
-- NOT flat cel-shading - smooth color blending
+- 带有丰富渐变的全彩数字绘画
+- 皮肤和布料的柔和阴影过渡
+- 写实材质纹理（玻璃、液体、布料、木材）
+- 带自然光泽和体积感的详细头发
+- 环境光照影响所有元素
+- 非扁平 cel-shading - 平滑色彩混合
 
-## Background Treatment
+## 背景处理
 
-- Highly detailed, realistic environments
-- Accurate perspective and spatial depth
-- Atmospheric lighting (warm indoor, cool outdoor)
-- Professional settings rendered with precision
-- Props and objects with realistic textures
+- 高度详细、写实环境
+- 准确的透视和空间深度
+- 氛围光照（温暖室内、冷调室外）
+- 专业设置精确渲染
+- 道具和物体具有写实纹理
 
-## Color Approach
+## 色彩方法
 
-- Rich gradients for depth and volume
-- Realistic lighting with warm/cool contrast
-- Material-specific rendering
-- Subtle color temperature shifts
-- Professional, sophisticated palette
+- 用于深度和体积感的丰富渐变
+- 带有暖/冷对比的写实光照
+- 材质特定渲染
+- 微妙的色温变化
+- 专业、精致的调色板
 
-## Default Color Palette
+## 默认调色板
 
-| Role | Color | Hex |
+| 角色 | 颜色 | Hex |
 |------|-------|-----|
-| Skin Light | Natural warm | #F5D6C6 |
-| Skin Shadow | Warm shadow | #E8C4B0 |
-| Environment | Warm wood | #8B7355 |
-| Environment Cool | Cool stone | #9CA3AF |
-| Accent | Wine red | #722F37 |
-| Accent Gold | Gold | #D4AF37 |
-| Light Warm | Amber | #FFB347 |
-| Light Cool | Cool blue | #B0C4DE |
+| 肤色亮色 | 自然暖色 | #F5D6C6 |
+| 肤色阴影 | 暖阴影 | #E8C4B0 |
+| 环境暖色 | 暖木色 | #8B7355 |
+| 环境冷色 | 冷石色 | #9CA3AF |
+| 强调色 | 酒红色 | #722F37 |
+| 强调金色 | 金色 | #D4AF37 |
+| 光暖色 | 琥珀色 | #FFB347 |
+| 光冷色 | 冷蓝色 | #B0C4DE |
 
-## Quality Markers
+## 质量标记
 
-- ✓ Anatomically accurate proportions
-- ✓ Smooth color gradients (not flat fills)
-- ✓ Realistic material textures
-- ✓ Detailed, atmospheric backgrounds
-- ✓ Natural lighting with soft shadows
-- ✓ Expressive but subtle expressions
-- ✓ Professional aesthetic
-- ✓ Clean speech bubbles
+- ✓ 解剖学准确的比例
+- ✓ 平滑色彩渐变（非扁平填充）
+- ✓ 写实材质纹理
+- ✓ 详细、氛围背景
+- ✓ 自然光照与柔和阴影
+- ✓ 表达但微妙的表达
+- ✓ 专业美学
+- ✓ 干净对话气泡
 
-## Compatibility
+## 兼容性
 
-| Tone | Fit | Notes |
+| 基调 | 适合度 | 备注 |
 |------|-----|-------|
-| neutral | ✓✓ | Professional content |
-| warm | ✓✓ | Nostalgic stories |
-| dramatic | ✓✓ | High drama |
-| vintage | ✓✓ | Period pieces |
-| romantic | ✗ | Style mismatch |
-| energetic | ✗ | Too refined |
-| action | ✓ | Serious action |
+| neutral | ✓✓ | 专业内容 |
+| warm | ✓✓ | 怀旧故事 |
+| dramatic | ✓✓ | 高戏剧性 |
+| vintage | ✓✓ | 时代作品 |
+| romantic | ✗ | 风格不匹配 |
+| energetic | ✗ | 过于精致 |
+| action | ✓ | 严肃动作 |
 
-## Best For
+## 适用于
 
-Professional topics (wine, food, business), lifestyle content, adult narratives, documentary-style, mature educational guides
+专业话题（葡萄酒、美食、商业）、生活方式内容、成人叙事、纪录片风格、成熟教育指南
